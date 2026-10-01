@@ -62,6 +62,8 @@ def rows(summaries: dict[str, dict]) -> list[tuple[str, list[str]]]:
         ("Files validated", lambda s: pct(get(s, "tables", "validation_coverage"))),
         ("Verifiable files", lambda s: str(get(s, "verifiable"))),
         ("l1_rate (conformant / verifiable)", lambda s: pct(get(s, "l1_rate"))),
+        ("Conformance by schema source", lambda s: ", ".join(f"{k} {v['conformant']}/{v['verifiable']}"
+                                                             for k, v in (get(s, "conformance_by_source", default={}) or {}).items())),
         ("Dictionaries", lambda s: str(get(s, "findings", "dictionaries", "total"))),
         ("  machine-readable and read", lambda s: str(get(s, "findings", "dictionaries", "machine_readable_and_read"))),
         ("  for people only", lambda s: str(get(s, "findings", "dictionaries", "human_readable"))),

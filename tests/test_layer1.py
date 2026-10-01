@@ -634,6 +634,7 @@ def test_summary_levels_rate_and_findings(tmp_root):
     assert s["tables"]["by_level"] == {"0": 1, "1": 0, "2": 0, "3": 0, "4": 1}
     assert s["datasets"]["by_level"]["0"] == 1                           # weakest table
     assert s["l1_rate"] == 1.0 and s["l1_pass"] is True
+    assert s["conformance_by_source"] == {"declared": {"verifiable": 1, "conformant": 1, "l1_rate": 1.0}}
     f = s["findings"]
     assert f["dictionaries"]["unreadable_by_reason"] == {"html-page": 1} and f["dictionaries"]["orphans"] == 1
     assert f["types"]["distinct_spellings"] == 2 and f["types"]["fields_with_recognised_type"] == round(2 / 3, 4)

@@ -259,6 +259,11 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
                    "errors": sum(1 for _, v in tables if (v or {}).get("status") == "error"),
                    "queue_remaining": len(queue)},
         "schema_sources": dict(Counter(v.get("schema_kind") for _, v in verifiable)),
+        # Conformance by where the schema came from: DataStore types are often inferred by the portal from
+        # the same data, so conformance against them is high by construction; compare like with like.
+        "conformance_by_source": {k: {"verifiable": n, "conformant": sum(1 for _, v in conformant if v.get("schema_kind") == k),
+                                      "l1_rate": _share(sum(1 for _, v in conformant if v.get("schema_kind") == k), n)}
+                                  for k, n in Counter(v.get("schema_kind") for _, v in verifiable).items()},
         "verifiable": len(verifiable), "conformant": len(conformant),
         "l1_rate": rate, "l1_pass": rate is not None and rate >= config.L1_PASS_THRESHOLD,
         "drift": {"observed": sum(e["kind"] == "observed" for e in log),
@@ -346,7 +351,8 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                          "tables": tables})
     return {"summary": {k: summary[k] for k in ("portal", "generated_at", "census_at", "datasets", "tables",
                                                  "verifiable", "conformant", "l1_rate", "l1_pass", "drift",
-                                                 "coverage", "network", "schema_sources", "findings", "method")},
+                                                 "coverage", "network", "schema_sources", "conformance_by_source",
+                                                 "findings", "method")},
             "datasets": datasets, "unreadable": unreadable_files(census, validation),
             "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census),
             "history": json.loads(config.HISTORY_FILE.read_text(encoding="utf-8")) if config.HISTORY_FILE.exists() else []}
