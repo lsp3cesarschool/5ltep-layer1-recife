@@ -1,0 +1,30 @@
+name: Tests
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['results/**', 'schemas/**', 'docs/data/**']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest-github-actions-annotate-failures
+      - name: Run tests
+        run: pytest tests/ -v --tb=short

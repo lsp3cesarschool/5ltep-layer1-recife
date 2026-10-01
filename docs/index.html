@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5L-TEP Layer 1 · Structural Contracts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Every label marked data-i18n is translated by app.js (English / Portuguese). -->
+<nav class="topbar">
+  <a id="repo-link" href="https://github.com/lsp3cesarschool/5ltep-layer1" data-i18n="back">← Back to the repository</a>
+  <span class="muted">·</span>
+  <a id="readme-link" href="https://github.com/lsp3cesarschool/5ltep-layer1#readme">README</a>
+  <span class="muted">·</span>
+  <a id="leiame-link" href="https://github.com/lsp3cesarschool/5ltep-layer1/blob/main/LEIAME.md" lang="pt">LEIAME</a>
+  <span class="lang-switch">
+    <a id="lang-en" href="?lang=en">English</a>
+    <span class="muted">·</span>
+    <a id="lang-pt" href="?lang=pt" lang="pt">Português</a>
+  </span>
+</nav>
+
+<header>
+  <div>
+    <p class="eyebrow" data-i18n="eyebrow">5L-TEP · Layer 1 · Structural Contracts</p>
+    <h1 id="title" data-i18n="loading">Loading…</h1>
+    <p class="muted" id="subtitle"></p>
+  </div>
+  <div class="actions">
+    <a class="button" id="run-link" target="_blank" rel="noopener" data-i18n="run">Run Layer 1 now ↗</a>
+    <a class="button secondary" id="issues-link" target="_blank" rel="noopener" data-i18n="issues">Drift issues ↗</a>
+    <a class="button secondary" id="prs-link" target="_blank" rel="noopener" data-i18n="prs">Suggested schemas ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="tiles" id="tiles" aria-label="Key numbers"></section>
+
+  <section>
+    <div class="section-head"><h2 data-i18n="maturity_h">Schema maturity</h2></div>
+    <p class="muted" data-i18n="maturity_note">How verifiable is the structure the portal declares for each file? A dataset is
+      as verifiable as its least documented file.</p>
+    <div id="maturity"></div>
+    <ul class="legend" id="maturity-legend"></ul>
+  </section>
+
+  <section>
+    <div class="section-head"><h2 data-i18n="findings_h">Documentation findings</h2></div>
+    <p class="muted" data-i18n="findings_note">The dictionaries themselves, measured every week: what format they come in,
+      why some cannot be read, how the portal links them to the files, how many ways it spells a type, and how often
+      dictionary and file disagree.</p>
+    <div class="findings" id="findings"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 data-i18n="datasets_h">Datasets</h2>
+      <div class="filters">
+        <input type="search" id="search" data-i18n-placeholder="search" placeholder="Search datasets or files">
+        <select id="level-filter">
+          <option value="" data-i18n="all_levels">All levels</option>
+          <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+          <option value="3">3</option><option value="4">4</option>
+        </select>
+        <label class="muted"><input type="checkbox" id="only-failing"> <span data-i18n="only_failing">only files that do not conform</span></label>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table id="datasets">
+        <thead><tr>
+          <th data-i18n="col_dataset">Dataset</th><th data-i18n="col_level">Level</th>
+          <th class="num" data-i18n="col_files">Files</th><th class="num" data-i18n="col_conform">Conform</th>
+          <th data-i18n="col_dicts">Dictionaries</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="muted small" data-i18n="privacy_note">Only counts and row numbers are kept: no cell value is ever stored or shown.</p>
+  </section>
+</main>
+
+<footer class="muted small" id="footer"></footer>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

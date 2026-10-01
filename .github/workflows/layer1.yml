@@ -1,0 +1,262 @@
+name: 5L-TEP Layer 1 Structural Contracts
+
+# Weekly: schemas change rarely, and a weekly census catches a change within days. Mondays at
+# 03:30 UTC, away from Layer 4 (every 6 h, on the hour) and Layer 3 (5th of the month, 06:00).
+# Manual: Actions > this workflow > Run workflow.
+#
+# Batches: batch 1 runs the census and plans the work queue; every batch validates files
+# until its time budget runs out and, while files or PDF dictionaries are still pending, starts
+# the next batch. The first run of a portal can take several batches (all of its files); later
+# weeks only re-check what changed, plus a monthly rotation.
+#
+# Three jobs, so that the LLM never runs where the repository can be written (SECURITY in README):
+#   plan     census, queue, status badge (writes; downloads dictionaries only; no model);
+#   analyse  downloads and validates files, extracts PDF dictionaries (deterministic, then the
+#            local LLM) with a READ-ONLY token, and hands the results over as an artifact;
+#   publish  accepts only well-formed results for known datasets (main.py accept-artifact),
+#            opens drift issues and the pull request with suggested schemas, builds the report
+#            and commits (writes; runs no model).
+on:
+  schedule:
+    - cron: '30 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      continue_batches:
+        description: 'Keep starting new batches until nothing is pending'
+        type: boolean
+        default: true
+      skip_llm:
+        description: 'Do not run the LLM stage of the PDF extraction'
+        type: boolean
+        default: false
+      batch:
+        description: 'Batch number in the chain (set automatically; 1 = new census)'
+        required: false
+        default: '1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: layer1-writes
+  cancel-in-progress: false
+
+env:
+  # 'auto' follows the Layer 1 model benchmark (5ltep-layer1-modeltest); a tag pins the model.
+  LLM_MODEL: ${{ vars.LLM_MODEL || 'auto' }}
+  LLM_THINK: ${{ vars.LLM_THINK || '' }}
+  LLM_DIGEST: ''            # set by resolve-model when the benchmark gives one
+  PYTHON_VERSION: '3.11'
+  VALIDATE_MAX_MINUTES: '240'
+  EXTRACT_MAX_MINUTES: '60'
+  MAX_BATCHES: 40
+  BATCH: ${{ inputs.batch || '1' }}
+  SKIP_LLM: ${{ inputs.skip_llm && 'true' || 'false' }}
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Check the batch number
+        run: '[[ "$BATCH" =~ ^[0-9]{1,3}$ ]] || { echo "::error::batch must be a number"; exit 1; }'
+      - uses: actions/setup-python@v6
+        if: ${{ env.BATCH == '1' }}
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - name: Census and work queue
+        if: ${{ env.BATCH == '1' }}
+        run: |
+          set -euo pipefail
+          pip install -q -r requirements.txt
+          python main.py status --state running
+          python main.py census
+          git config user.name "5L-TEP L1 Bot"
+          git config user.email "5ltep-l1-bot@users.noreply.github.com"
+          git add results/ schemas/ docs/data/
+          git diff --cached --quiet || git commit -m "chore(l1): census [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push
+
+  analyse:
+    needs: plan
+    runs-on: ubuntu-latest   # public repository: 4 vCPU / 16 GB RAM, no minute quota
+    timeout-minutes: 350
+    permissions:
+      contents: read           # downloads untrusted files and runs the model: no write access
+    outputs:
+      llm_needed: ${{ steps.det.outputs.llm_needed }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}   # the census committed by the plan job
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Validate files (time budget)
+        timeout-minutes: 280        # progress is saved after every file
+        continue-on-error: true
+        run: python main.py validate --minutes "$VALIDATE_MAX_MINUTES"
+
+      - name: "PDF dictionaries, stage 1: deterministic extraction"
+        id: det
+        continue-on-error: true
+        run: python main.py extract --stage deterministic
+
+      - name: Resolve the model (auto = the model benchmark's choice, checked)
+        if: ${{ env.SKIP_LLM != 'true' && steps.det.outputs.llm_needed > 0 }}
+        run: python main.py resolve-model
+
+      - name: Set up Ollama
+        if: ${{ env.SKIP_LLM != 'true' && steps.det.outputs.llm_needed > 0 }}
+        uses: ./.github/actions/setup-ollama
+        with:
+          model: ${{ env.LLM_MODEL }}
+          digest: ${{ env.LLM_DIGEST }}
+
+      - name: "PDF dictionaries, stage 2: local LLM"
+        id: llm
+        if: ${{ env.SKIP_LLM != 'true' && steps.det.outputs.llm_needed > 0 }}
+        timeout-minutes: 75
+        continue-on-error: true
+        run: python main.py extract --stage llm --minutes "$EXTRACT_MAX_MINUTES"
+
+      - name: Hand the results over to the publish job
+        if: ${{ always() }}
+        env:
+          LLM_NEEDED: ${{ steps.llm.outputs.llm_needed || steps.det.outputs.llm_needed || '0' }}
+        run: |
+          jq -n --argjson n "${LLM_NEEDED:-0}" '{llm_needed: $n}' > chain.json
+          mkdir -p suggestions
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: l1-results
+          if-no-files-found: warn
+          retention-days: 7
+          path: |
+            chain.json
+            results/validation.json
+            results/extraction.json
+            results/drift.json
+            results/run_log.jsonl
+            results/done.json
+            schemas/**/*.observed.json
+            schemas/**/*.extracted.json
+            suggestions/
+
+  publish:
+    needs: [plan, analyse]
+    if: ${{ always() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write            # to start the next batch
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Download the analysis results
+        id: download
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: l1-results
+          path: ${{ runner.temp }}/l1-artifact
+
+      - name: Accept the analysis results (checked)
+        id: accept
+        if: ${{ steps.download.outcome == 'success' }}
+        run: python main.py accept-artifact --dir "$RUNNER_TEMP/l1-artifact"
+
+      - name: Open drift issues
+        id: issues
+        if: ${{ steps.accept.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python main.py issues
+
+      - name: Build summary and dashboard data
+        if: ${{ steps.accept.outcome == 'success' }}
+        env:
+          CONTINUES: ${{ (github.event_name == 'workflow_dispatch' && !inputs.continue_batches) && 'no' || 'auto' }}
+        run: python main.py report --chain-continues "$CONTINUES"
+
+      - name: Commit results
+        if: ${{ steps.accept.outcome == 'success' }}
+        run: |
+          git config user.name "5L-TEP L1 Bot"
+          git config user.email "5ltep-l1-bot@users.noreply.github.com"
+          git add results/ schemas/ docs/data/
+          git diff --cached --quiet || git commit -m "chore(l1): results, batch $BATCH [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push
+
+      # Schemas the oracle did not confirm, or that the LLM produced: a person decides.
+      - name: Pull request with suggested schemas
+        if: ${{ steps.accept.outcome == 'success' && steps.accept.outputs.suggestions > 0 }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          N: ${{ steps.accept.outputs.suggestions }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          python main.py suggestions-pr --out "$RUNNER_TEMP/body.md"
+          branch="schemas/suggested-${RUN_ID}-${BATCH}"
+          git checkout -b "$branch"
+          cp -r suggestions/. schemas/
+          git add schemas/
+          git commit -m "schemas: $N suggested from PDF dictionaries (for review)"
+          git push origin "$branch"
+          gh pr create --base "${{ github.ref_name }}" --head "$branch" \
+            --title "Layer 1: $N schemas suggested from PDF dictionaries" --body-file "$RUNNER_TEMP/body.md"
+          git checkout "${{ github.ref_name }}"
+
+      - name: Start the next batch
+        if: >-
+          ${{ steps.accept.outcome == 'success' &&
+              (github.event_name != 'workflow_dispatch' || inputs.continue_batches) &&
+              (steps.accept.outputs.queue_remaining > 0 ||
+               (env.SKIP_LLM != 'true' && steps.accept.outputs.llm_needed > 0) ||
+               steps.issues.outputs.issues_remaining > 0) }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REF: ${{ github.ref_name }}
+          SKIP: ${{ env.SKIP_LLM }}
+        run: |
+          if [ "$BATCH" -ge "$MAX_BATCHES" ]; then
+            echo "::warning::Stopped after $MAX_BATCHES batches; run the workflow again to continue."
+            exit 0
+          fi
+          gh workflow run layer1.yml --ref "$REF" -f continue_batches=true -f skip_llm="$SKIP" -f batch="$((BATCH + 1))"
+
+      - name: Mark the chain as interrupted (status badge)
+        if: ${{ failure() || cancelled() || steps.download.outcome != 'success' }}
+        run: |
+          python main.py status --state interrupted
+          git config user.name "5L-TEP L1 Bot"
+          git config user.email "5ltep-l1-bot@users.noreply.github.com"
+          git add docs/data/
+          git diff --cached --quiet || git commit -m "chore(l1): interrupted [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push
