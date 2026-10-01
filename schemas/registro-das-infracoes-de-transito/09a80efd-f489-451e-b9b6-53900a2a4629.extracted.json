@@ -1,0 +1,91 @@
+{
+ "fields": [
+  {
+   "name": "DataInfracao",
+   "type": "date",
+   "description": "Date",
+   "declaredType": "Data em que ocorreu a infração",
+   "declaredSize": 10
+  },
+  {
+   "name": "HoraInfracao",
+   "type": "time",
+   "description": "Date",
+   "declaredType": "Hora de registro da infração",
+   "declaredSize": 10
+  },
+  {
+   "name": "DataImplantacao",
+   "type": "date",
+   "description": "Date",
+   "declaredType": "Data de implantação da multa",
+   "declaredSize": 10
+  },
+  {
+   "name": "AgenteEquipamento",
+   "type": "string",
+   "description": "Forma de autuação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Infracao",
+   "type": "number",
+   "description": "Código da Infração",
+   "declaredType": "NUMBER",
+   "declaredSize": 10
+  },
+  {
+   "name": "DescricaoInfracao",
+   "type": "string",
+   "description": "Descrição da infração",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "LocalCometimento",
+   "type": "string",
+   "description": "Local onde ocorreu a infração",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "AmparoLegal",
+   "type": "string",
+   "description": "Amparo legal para registro da infração",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  }
+ ],
+ "x5ltep": {
+  "status": "extracted",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "8e861ec8-614d-4ba0-a99d-60fafe8d46cc",
+   "dictionary_name": "Dicionário de Dados das Infrações de trânsito",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/8e861ec8-614d-4ba0-a99d-60fafe8d46cc/download/dicionario-de-dados-das-infracoes-de-transito.pdf",
+   "sha256": "155bc45314e5b4c4ab56ff852b8d1cd75b07c79ae781b13d1aa4d1d1706f4bda",
+   "oracle": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "exact_match": 0.0,
+    "levenshtein": 0.8583,
+    "missing_from_pdf": [],
+    "not_in_file": []
+   }
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "fields": [
+  {
+   "name": "datainfracao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horainfracao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dataimplantacao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "agenteequipamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "infracao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricaoinfracao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "amparolegal",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "localcometimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:58:42+00:00",
+  "sha256": "8d13ff822e359f67e6cd3ddd0810f10545b23ce37cd20d83284e1c34bb585a16",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

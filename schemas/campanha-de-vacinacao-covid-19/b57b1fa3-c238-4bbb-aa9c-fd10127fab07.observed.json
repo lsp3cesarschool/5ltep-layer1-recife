@@ -1,0 +1,54 @@
+{
+ "fields": [
+  {
+   "name": "Local",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fone",
+   "type": "integer",
+   "sampleEmptyShare": 0.9444
+  },
+  {
+   "name": "como_usar",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:01:41+00:00",
+  "sha256": "a813d7376e07a80fb0ee7985eb9c7cf25570efdf73d263e32fa92b23f6b8adc9",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 36,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

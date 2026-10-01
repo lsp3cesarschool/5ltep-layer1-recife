@@ -1,0 +1,24 @@
+{
+ "fields": [
+  {
+   "name": "codigo_disciplina",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_disciplinas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:03:32+00:00",
+  "sha256": "ef331c22f37f42011b341a65edf054338751bad47ede81550a4a88d2966c1aca",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 24,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

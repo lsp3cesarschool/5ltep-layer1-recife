@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "Nº Localidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome Localidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:02:52+00:00",
+  "sha256": "2055c6cbbd5ea096325d0b9e5aae50b5f3f9bc26278207b51f85e584ab28032d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 95,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

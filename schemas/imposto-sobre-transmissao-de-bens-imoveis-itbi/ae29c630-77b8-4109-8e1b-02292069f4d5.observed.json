@@ -1,0 +1,133 @@
+{
+ "fields": [
+  {
+   "name": "logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0862
+  },
+  {
+   "name": "valor_avaliacao",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano_construcao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_terreno",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_construida",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fracao_ideal",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "padrao_acabamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_construcao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_ocupacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_transacao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "estado_conservacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_imovel",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sfh",
+   "type": "number",
+   "sampleEmptyShare": 0.0038
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.2438
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.2438
+  },
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Distrito",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:25:56+00:00",
+  "sha256": "55adc95ba9cb4c876ec5078a1e5f7244407fa30eb40be8240a5369400d68ee5d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

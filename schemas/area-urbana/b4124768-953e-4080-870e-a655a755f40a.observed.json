@@ -1,0 +1,209 @@
+{
+ "fields": [
+  {
+   "name": "dsqf",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "distrito",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "setor",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quadra",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "face",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codlogradouro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cep",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codbairro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nomebairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_v0",
+   "type": "integer",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "codiluminacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desciluminacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codpavimentacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descpavimentacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_emplacamento",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_emplacamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codcoleta",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desccoleta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codarborizacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descarborizacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codredeagua",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descredeagua",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codlimpezaurbana",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desclimpezaurbana",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codredesgoto",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descredesgoto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codredetelefonica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descredetelefonica",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codguiasesarjetas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descguiasesarjetas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codgaleriapluviais",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descgaleriapluviais",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codredeeletrica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descredeeletrica",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_oficial_logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_logradouro_completo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_logradouro_concatenado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:01:04+00:00",
+  "sha256": "0ab8bfe444d190b21a805e14e285ede1b20bffd0832abde0df0940d70a0393ec",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

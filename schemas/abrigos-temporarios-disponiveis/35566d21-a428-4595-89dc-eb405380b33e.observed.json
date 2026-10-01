@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "equipamento_publico_disponivel",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "municipal_estadual",
+   "type": "string",
+   "sampleEmptyShare": 0.2353
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:00:09+00:00",
+  "sha256": "f939d334fdca71daece2487dff3e3797b0a3901c05f18aa84ee379207f76f79f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 17,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "fields": [
+  {
+   "name": "areatotalconstruida",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.8906
+  },
+  {
+   "name": "assunto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria_empreendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnpj",
+   "type": "string",
+   "sampleEmptyShare": 0.1496
+  },
+  {
+   "name": "data_conclusao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.002
+  },
+  {
+   "name": "data_emissao_licenca",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.7936
+  },
+  {
+   "name": "data_entrada",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_pagamento",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.6166
+  },
+  {
+   "name": "data_validade_licenca",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.7936
+  },
+  {
+   "name": "dsqfl",
+   "type": "string",
+   "sampleEmptyShare": 0.0166
+  },
+  {
+   "name": "empreendimento_de_impacto",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.8568
+  },
+  {
+   "name": "endereco_empreendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0162
+  },
+  {
+   "name": "inscricao_mercantil",
+   "type": "integer",
+   "sampleEmptyShare": 0.1496
+  },
+  {
+   "name": "licenciamento_ambiental",
+   "type": "string",
+   "sampleEmptyShare": 0.0274
+  },
+  {
+   "name": "licenciamento_sanitario",
+   "type": "string",
+   "sampleEmptyShare": 0.0274
+  },
+  {
+   "name": "licenciamento_urbanistico",
+   "type": "string",
+   "sampleEmptyShare": 0.0274
+  },
+  {
+   "name": "razao_social",
+   "type": "string",
+   "sampleEmptyShare": 0.1496
+  },
+  {
+   "name": "razao_social_mercantil",
+   "type": "string",
+   "sampleEmptyShare": 0.1496
+  },
+  {
+   "name": "num_licenca",
+   "type": "integer",
+   "sampleEmptyShare": 0.7368
+  },
+  {
+   "name": "num_processo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "porte_empreendimento",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "potencial_empreendimento",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "processo_automatizado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_processo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_mercantil",
+   "type": "string",
+   "sampleEmptyShare": 0.028
+  },
+  {
+   "name": "tipo_processo",
+   "type": "string",
+   "sampleEmptyShare": 0.1514
+  },
+  {
+   "name": "tipo_proc_licenciamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "uso_imovel",
+   "type": "string",
+   "sampleEmptyShare": 0.0654
+  },
+  {
+   "name": "valor_taxa",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.6166
+  },
+  {
+   "name": "valor_pago",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.6166
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1208
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1208
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:26:22+00:00",
+  "sha256": "84b8ccd45940383373f21a1aadd06a27a515b12269ad951eaf907e56fc37c43c",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

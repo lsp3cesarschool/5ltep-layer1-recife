@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "escolas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "manha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tarde",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "noite",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T22:10:17+00:00",
+  "sha256": "08f7c114cab41d550b609ba9f51909a7c5beeb0f41cc94112d8c2b11e6bb41dc",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 127,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

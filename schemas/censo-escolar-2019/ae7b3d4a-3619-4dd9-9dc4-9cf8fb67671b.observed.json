@@ -1,0 +1,429 @@
+{
+ "fields": [
+  {
+   "name": "NU_ANO_CENSO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ID_GESTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_MES",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_ANO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_IDADE_REFERENCIA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_IDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_SEXO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_COR_RACA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_NACIONALIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_PAIS_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_UF_NASC",
+   "type": "string",
+   "sampleEmptyShare": 0.0037
+  },
+  {
+   "name": "CO_MUNICIPIO_NASC",
+   "type": "string",
+   "sampleEmptyShare": 0.0037
+  },
+  {
+   "name": "IN_NECESSIDADE_ESPECIAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_BAIXA_VISAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_CEGUEIRA",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_DEF_AUDITIVA",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_DEF_FISICA",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_DEF_INTELECTUAL",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_SURDEZ",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_SURDOCEGUEIRA",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_DEF_MULTIPLA",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_AUTISMO",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "IN_SUPERDOTACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "TP_ESCOLARIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_ENSINO_MEDIO",
+   "type": "string",
+   "sampleEmptyShare": 0.5643
+  },
+  {
+   "name": "CO_AREA_CURSO_1",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "CO_CURSO_1",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "IN_LICENCIATURA_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_ANO_CONCLUSAO_1",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "TP_TIPO_IES_1",
+   "type": "string",
+   "sampleEmptyShare": 0.4439
+  },
+  {
+   "name": "CO_IES_1",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "CO_AREA_CURSO_2",
+   "type": "string",
+   "sampleEmptyShare": 0.9816
+  },
+  {
+   "name": "CO_CURSO_2",
+   "type": "string",
+   "sampleEmptyShare": 0.9816
+  },
+  {
+   "name": "IN_LICENCIATURA_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_ANO_CONCLUSAO_2",
+   "type": "string",
+   "sampleEmptyShare": 0.9816
+  },
+  {
+   "name": "TP_TIPO_IES_2",
+   "type": "string",
+   "sampleEmptyShare": 0.989
+  },
+  {
+   "name": "CO_IES_2",
+   "type": "string",
+   "sampleEmptyShare": 0.9816
+  },
+  {
+   "name": "IN_ESPECIALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "IN_MESTRADO",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "IN_DOUTORADO",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "IN_POS_NENHUM",
+   "type": "string",
+   "sampleEmptyShare": 0.1397
+  },
+  {
+   "name": "IN_ESPECIFICO_CRECHE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_PRE_ESCOLA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_ANOS_INICIAIS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_ANOS_FINAIS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_ENS_MEDIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_EJA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_ED_ESPECIAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_ED_INDIGENA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_CAMPO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_AMBIENTAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_DIR_HUMANOS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_DIV_SEXUAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_DIR_ADOLESC",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_AFRO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_GESTAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_OUTROS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_ESPECIFICO_NENHUM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_CARGO_GESTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_TIPO_ACESSO_CARGO",
+   "type": "string",
+   "sampleEmptyShare": 0.0469
+  },
+  {
+   "name": "TP_TIPO_CONTRATACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.5607
+  },
+  {
+   "name": "CO_ENTIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_REGIAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_MESORREGIAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_MICRORREGIAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_DISTRITO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_DEPENDENCIA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_LOCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_CATEGORIA_ESCOLA_PRIVADA",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_CONVENIADA_PP",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "TP_CONVENIO_PODER_PUBLICO",
+   "type": "string",
+   "sampleEmptyShare": 0.9752
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_EMP",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_ONG",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIV_ONG_OSCIP",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_OSCIP",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIND",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIST_S",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_S_FINS",
+   "type": "string",
+   "sampleEmptyShare": 0.4393
+  },
+  {
+   "name": "TP_REGULAMENTACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_LOCALIZACAO_DIFERENCIADA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_EDUCACAO_INDIGENA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:07:22+00:00",
+  "sha256": "dae7893ae8e26d179fe6c1f3b9ea02b22cb179ba3c77f4a981bdc0d6ffb69f6e",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1088,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

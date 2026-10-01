@@ -1,0 +1,59 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vacina",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quantidade",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "periodo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:01:32+00:00",
+  "sha256": "97bd6b52373eac49d794f868cca5f4aa7b8ca03f931322861fe14d944e0c47fd",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 152,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

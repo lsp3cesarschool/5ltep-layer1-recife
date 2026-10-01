@@ -1,0 +1,140 @@
+{
+ "fields": [
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade_orcamentria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "exercicio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_licitacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "identificacao_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.0764
+  },
+  {
+   "name": "numero_ano_convenio",
+   "type": "string",
+   "sampleEmptyShare": 0.5694
+  },
+  {
+   "name": "concedente_convenio",
+   "type": "string",
+   "sampleEmptyShare": 0.3993
+  },
+  {
+   "name": "repasse_convenio",
+   "type": "string",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "contrapartida_convenio",
+   "type": "string",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "cnpj_cpf_contratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "razao_social_contratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero_ano_contratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_inicio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "prazo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_contratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_conclusão_paralizacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0625
+  },
+  {
+   "name": "prazo_aditado",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.4236
+  },
+  {
+   "name": "valor_aditado_acumulado",
+   "type": "string",
+   "sampleEmptyShare": 0.6458
+  },
+  {
+   "name": "valor_reajuste",
+   "type": "string",
+   "sampleEmptyShare": 0.6632
+  },
+  {
+   "name": "natureza_despesa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_medio_acumulado",
+   "type": "string",
+   "sampleEmptyShare": 0.3785
+  },
+  {
+   "name": "valor_pago_acumulado_periodo",
+   "type": "string",
+   "sampleEmptyShare": 0.4444
+  },
+  {
+   "name": "valor_pago_acumulado_exercicio",
+   "type": "string",
+   "sampleEmptyShare": 0.3889
+  },
+  {
+   "name": "valor_pago_acumulado_na_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.1944
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:27:24+00:00",
+  "sha256": "14aa3675b4dc5c879bfa3bd6c2cfe0ec7e96a68c11f34804bb8b0f82216278bf",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 288,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

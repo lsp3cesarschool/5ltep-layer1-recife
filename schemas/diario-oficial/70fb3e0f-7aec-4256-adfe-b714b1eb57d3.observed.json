@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "edicao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "caderno",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "secao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "responsavel",
+   "type": "string",
+   "sampleEmptyShare": 0.17
+  },
+  {
+   "name": "titulo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "conteudo_ordem",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "conteudo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:17:51+00:00",
+  "sha256": "3ef25ccb6a44a034a53517c84731f65f5538206a4a5de63b16577791ba3b6161",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

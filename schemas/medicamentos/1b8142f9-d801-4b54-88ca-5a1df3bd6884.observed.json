@@ -1,0 +1,71 @@
+{
+ "fields": [
+  {
+   "name": "distrito",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0062
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "classe",
+   "type": "string",
+   "sampleEmptyShare": 0.3542
+  },
+  {
+   "name": "apresentacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_produto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_produto",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "produto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cadum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0518
+  },
+  {
+   "name": "data_carga",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quantidade",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:27:14+00:00",
+  "sha256": "01bbb960b39ae2be8886703c7e7f70a3dcaaca7b5a2e749e0e22d62c38f91e1a",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

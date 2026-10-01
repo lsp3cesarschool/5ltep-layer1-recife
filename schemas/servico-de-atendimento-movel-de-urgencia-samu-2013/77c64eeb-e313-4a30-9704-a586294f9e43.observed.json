@@ -1,0 +1,135 @@
+{
+ "fields": [
+  {
+   "name": "solicitacao_numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "solicitacao_data",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "paciente_sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "paciente_idadeanos",
+   "type": "number",
+   "sampleEmptyShare": 0.0042
+  },
+  {
+   "name": "paciente_idademeses",
+   "type": "number",
+   "sampleEmptyShare": 0.9918
+  },
+  {
+   "name": "bairrosaude_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairrosaude_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "origemchamado_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "origemchamado_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacaosolicitacao_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacaosolicitacao_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sistemasaude_codigo",
+   "type": "number",
+   "sampleEmptyShare": 0.6416
+  },
+  {
+   "name": "sistemasaude_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.6416
+  },
+  {
+   "name": "motivodescarte_codigo",
+   "type": "number",
+   "sampleEmptyShare": 0.631
+  },
+  {
+   "name": "motivodescarte_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.631
+  },
+  {
+   "name": "acompanhamento_medico",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_acionamento",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.5046
+  },
+  {
+   "name": "data_chegada",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.6096
+  },
+  {
+   "name": "data_conclusao",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "data_remocao",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.6622
+  },
+  {
+   "name": "tipoocorrencia_codigo",
+   "type": "number",
+   "sampleEmptyShare": 0.6324
+  },
+  {
+   "name": "tipoocorrencia_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.6324
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T22:03:42+00:00",
+  "sha256": "9cc0d9b413f8b4c3ca54a72627d61529fc8ec3b5c93140d6a5e1a3c2ef47f631",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,409 @@
+{
+ "fields": [
+  {
+   "name": "NU_ANO_CENSO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ID_TURMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NO_TURMA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_MEDIACAO_DIDATICO_PEDAGO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TX_HR_INICIAL",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "TX_MI_INICIAL",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_DOMINGO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_SEGUNDA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_TERCA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_QUARTA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_QUINTA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_SEXTA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "IN_DIA_SEMANA_SABADO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "NU_DIAS_ATIVIDADE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "NU_DURACAO_TURMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "TP_TIPO_ATENDIMENTO_TURMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_TIPO_LOCAL_TURMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_1",
+   "type": "string",
+   "sampleEmptyShare": 0.9922
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_2",
+   "type": "string",
+   "sampleEmptyShare": 0.9956
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_3",
+   "type": "string",
+   "sampleEmptyShare": 0.9976
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_4",
+   "type": "string",
+   "sampleEmptyShare": 0.9976
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_5",
+   "type": "string",
+   "sampleEmptyShare": 0.9984
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_6",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "TP_ETAPA_ENSINO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0314
+  },
+  {
+   "name": "CO_CURSO_EDUC_PROFISSIONAL",
+   "type": "string",
+   "sampleEmptyShare": 0.9404
+  },
+  {
+   "name": "IN_ESPECIAL_EXCLUSIVA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0314
+  },
+  {
+   "name": "IN_REGULAR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0314
+  },
+  {
+   "name": "IN_EJA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0314
+  },
+  {
+   "name": "IN_PROFISSIONALIZANTE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0314
+  },
+  {
+   "name": "QT_MATRICULAS",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_DISC_LINGUA_PORTUGUESA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_EDUCACAO_FISICA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_ARTES",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_LINGUA_INGLES",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_LINGUA_ESPANHOL",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_LINGUA_FRANCES",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_LINGUA_OUTRA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_LIBRAS",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_LINGUA_INDIGENA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_PORT_SEGUNDA_LINGUA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_MATEMATICA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_CIENCIAS",
+   "type": "integer",
+   "sampleEmptyShare": 0.472
+  },
+  {
+   "name": "IN_DISC_FISICA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6642
+  },
+  {
+   "name": "IN_DISC_QUIMICA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6642
+  },
+  {
+   "name": "IN_DISC_BIOLOGIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6642
+  },
+  {
+   "name": "IN_DISC_HISTORIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_GEOGRAFIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_SOCIOLOGIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6642
+  },
+  {
+   "name": "IN_DISC_FILOSOFIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_ESTUDOS_SOCIAIS",
+   "type": "integer",
+   "sampleEmptyShare": 0.6606
+  },
+  {
+   "name": "IN_DISC_EST_SOCIAIS_SOCIOLOGIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_INFORMATICA_COMPUTACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_ENSINO_RELIGIOSO",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "IN_DISC_PROFISSIONALIZANTE",
+   "type": "string",
+   "sampleEmptyShare": 0.9346
+  },
+  {
+   "name": "IN_DISC_ESTAGIO_SUPERVISIONADO",
+   "type": "string",
+   "sampleEmptyShare": 0.9346
+  },
+  {
+   "name": "IN_DISC_PEDAGOGICAS",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "IN_DISC_OUTRAS",
+   "type": "integer",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "CO_ENTIDADE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_REGIAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_MESORREGIAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_MICRORREGIAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_UF",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_MUNICIPIO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CO_DISTRITO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_DEPENDENCIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_LOCALIZACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_CATEGORIA_ESCOLA_PRIVADA",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_CONVENIADA_PP",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "TP_CONVENIO_PODER_PUBLICO",
+   "type": "string",
+   "sampleEmptyShare": 0.9834
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_EMP",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_ONG",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_OSCIP",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIV_ONG_OSCIP",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIND",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIST_S",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_S_FINS",
+   "type": "integer",
+   "sampleEmptyShare": 0.51
+  },
+  {
+   "name": "TP_REGULAMENTACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_LOCALIZACAO_DIFERENCIADA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IN_EDUCACAO_INDIGENA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:10:25+00:00",
+  "sha256": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

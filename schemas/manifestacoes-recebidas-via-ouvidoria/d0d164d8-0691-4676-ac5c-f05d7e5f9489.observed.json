@@ -1,0 +1,62 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Registro",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Prazo Resposta",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Resposta",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0202
+  },
+  {
+   "name": "Canal de Atendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Órgão/Entidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Natureza da Manifestação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Assunto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:27:03+00:00",
+  "sha256": "df5cb792e1c87b8745ec14650a750b72d808d81bf2518c679856f9cc1b9b4156",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

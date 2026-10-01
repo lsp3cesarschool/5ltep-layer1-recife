@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "codigo_regiao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_regiao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_uf",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_uf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "siga_uf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_messoregiao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_messoregiao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_microrregiao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_microrregiao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_municipio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:11:02+00:00",
+  "sha256": "adf08cf3fa8a5821ff0094a4e3f5f7432e979ef5df50f496e4403e77f62c53c0",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

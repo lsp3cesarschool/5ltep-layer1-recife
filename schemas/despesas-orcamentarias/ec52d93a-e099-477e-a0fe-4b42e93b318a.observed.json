@@ -1,0 +1,115 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mês",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código do órgão",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição do órgão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código da função",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição da função",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código da sub-função",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição da sub-função",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código do programa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição do programa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código da ação",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição da ação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código da categoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição da categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Dotação inicial",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Dotação atualizada",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Liquidado",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pago",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:15:49+00:00",
+  "sha256": "90e772a42fc24126a8ecb88e9a1e83d5cebb16ce4e8e810cb6893698ae371d3f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 4248,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

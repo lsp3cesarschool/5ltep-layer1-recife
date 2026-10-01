@@ -1,0 +1,99 @@
+{
+ "fields": [
+  {
+   "name": "nome_oficial",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rpa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "distrito_sanitario",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "microregiao",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_nat",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_servico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereço",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fone",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "servico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "especialidade",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "como_usar",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ordem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:56:12+00:00",
+  "sha256": "c444dc7727f16c061ca40dfd5afcc7ee074f31cc1525fe25e3900daf68677b2b",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

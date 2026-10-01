@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "idade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vacina",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "doenca_protecao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dose",
+   "type": "string",
+   "sampleEmptyShare": 0.027
+  },
+  {
+   "name": "dose_qtd",
+   "type": "string",
+   "sampleEmptyShare": 0.2973
+  },
+  {
+   "name": "via_administracao",
+   "type": "string",
+   "sampleEmptyShare": 0.2973
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:01:34+00:00",
+  "sha256": "4be5fd754e57783de53b9d9d28edcbb930bd725e5b445b75715ffb0afa3390c4",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 37,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

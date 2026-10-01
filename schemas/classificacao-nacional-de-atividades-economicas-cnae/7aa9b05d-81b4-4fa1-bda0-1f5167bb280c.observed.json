@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "codigo_cnae_2-1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_codigo_cnae",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "item_lista",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_item_lista",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:12:52+00:00",
+  "sha256": "c098abe333fd7b6d38092111011c19cd2c70ed14d9d0cb721519978dd33dcf0e",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 822,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

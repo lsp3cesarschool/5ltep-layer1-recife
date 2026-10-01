@@ -1,0 +1,479 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cep",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco_numero",
+   "type": "string",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "endereco_complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.8111
+  },
+  {
+   "name": "bairro_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "telefone",
+   "type": "integer",
+   "sampleEmptyShare": 0.0098
+  },
+  {
+   "name": "fax",
+   "type": "integer",
+   "sampleEmptyShare": 0.5081
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "sampleEmptyShare": 0.3941
+  },
+  {
+   "name": "orgao_regional",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regulamentacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento_predio_escolar",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento_templo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento_empresa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento_outras_escolas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento_galpao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento_outros",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "forma_ocupacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0651
+  },
+  {
+   "name": "agua_rede_publica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "agua_poco_artesiano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "agua_cacimba",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "agua_fonte",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "esgoto_rede_publica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "esgoto_fossa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "esgoto_inexistente",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "lixo_coleta_periodica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "lixo_outra area",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_diretoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_professores",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_secretaria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_laboratorio_informatica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_laboratorio_ciencias",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_aee",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_quadra_coberta",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_quadra_descoberta",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_cozinha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_biblioteca",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_leitura",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_parque_infantil",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_bercario",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_banheiro_fora",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_banheiro_dentro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_banheiro_infantil",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_banheiro_deficiencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_vias_adequadas_deficiencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_banheiro_chuveiro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_refeitorio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_despensa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_almoxarifado",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_auditorio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_patio_coberto",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_patio_descoberto",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_alojamento_aluno",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_alojamento_professor",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_area_verde",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dependencia_lavanderia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quantidade_salas_existentes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quantidade_salas_utilizadas_fora_e_dentro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "equipamentos_televisao",
+   "type": "integer",
+   "sampleEmptyShare": 0.1824
+  },
+  {
+   "name": "equipamentos_videocassete",
+   "type": "integer",
+   "sampleEmptyShare": 0.9511
+  },
+  {
+   "name": "equipamentos_dvd",
+   "type": "integer",
+   "sampleEmptyShare": 0.3355
+  },
+  {
+   "name": "equipamentos_antena_parabolica",
+   "type": "integer",
+   "sampleEmptyShare": 0.9837
+  },
+  {
+   "name": "equipamentos_copiadora",
+   "type": "integer",
+   "sampleEmptyShare": 0.9707
+  },
+  {
+   "name": "equipamentos_retroprojetor",
+   "type": "integer",
+   "sampleEmptyShare": 0.8013
+  },
+  {
+   "name": "equipamentos_impressora",
+   "type": "integer",
+   "sampleEmptyShare": 0.5505
+  },
+  {
+   "name": "equipamentos_aparelho_som",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "equipamentos_projetor_multimidia",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "equipamentos_fax",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "equipamentos_maquina_fotografica",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "equipamentos_computadores",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "computadores_quantidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0749
+  },
+  {
+   "name": "computadores_qtd_administrativo",
+   "type": "integer",
+   "sampleEmptyShare": 0.3192
+  },
+  {
+   "name": "computadores_qtd_alunos",
+   "type": "integer",
+   "sampleEmptyShare": 0.0749
+  },
+  {
+   "name": "acesso_internet",
+   "type": "integer",
+   "sampleEmptyShare": 0.0749
+  },
+  {
+   "name": "banda_larga",
+   "type": "integer",
+   "sampleEmptyShare": 0.2997
+  },
+  {
+   "name": "total_funcionarios",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "brasil_alfabetizado",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "abre_finais_semana",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "modalidade_regular",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "modalidade_especial",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "modalidade_eja",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "regular_creche",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "regular_preescolar",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "regular_fundamental9",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "especial_fundamental9",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "especial_eja_fundamental",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "eja_fundamental",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  },
+  {
+   "name": "eja_projovem",
+   "type": "integer",
+   "sampleEmptyShare": 0.0033
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:04:07+00:00",
+  "sha256": "ef5a8bda2e8faec7f0cb8e75cce080b5b96921016ca1f65fb1a288001a1e1ce9",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 307,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

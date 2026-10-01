@@ -1,0 +1,216 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_criacao",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "informacoes_pessoais",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_pedido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_solicitacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "arquivo_pedido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_resposta",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "arquivo_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "resposta_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_criacao_1o_recurso",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.9268
+  },
+  {
+   "name": "data_resposta_1o_recurso",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.9268
+  },
+  {
+   "name": "arquivo_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_criacao_2o_recurso",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.982
+  },
+  {
+   "name": "resposta_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situaçao_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_resposta_2o_recurso",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.982
+  },
+  {
+   "name": "motivo_pedido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sexo_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "escolaridade_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "profissao_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "uf_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "pais_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "anexo_resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "anexo_resposta_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "anexo_resposta_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:48:41+00:00",
+  "sha256": "6bb2e6e5af723b2bc6f3d1bbd4b0d6799bce6d6777488f01ac632eb672e80835",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 888,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

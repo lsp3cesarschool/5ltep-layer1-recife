@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "matricula_aluno",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "etapa",
+   "type": "integer",
+   "sampleEmptyShare": 0.9666
+  },
+  {
+   "name": "outro_espaco",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "transporte_publico",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:04:01+00:00",
+  "sha256": "5ab7768e1361e98d7e4349a05e2f593c7708ef02b78f896267acdb2353cd1e20",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

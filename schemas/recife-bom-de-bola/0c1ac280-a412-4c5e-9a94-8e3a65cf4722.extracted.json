@@ -1,0 +1,67 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "string",
+   "description": "Região Politico Administrativa – RPA",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "Char",
+   "declaredSize": 40
+  },
+  {
+   "name": "categoria",
+   "type": "string",
+   "description": "Categoria do Campeonato",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "equipe",
+   "type": "string",
+   "description": "Nome da Equipe",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "cartao_amarelo",
+   "type": "number",
+   "description": "Quantidade de cartões amarelos recebidos",
+   "declaredType": "Num",
+   "declaredSize": 100
+  },
+  {
+   "name": "cartao_vermelho",
+   "type": "number",
+   "description": "Quantidade de cartões vermelhos recebidos",
+   "declaredType": "Num",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "extracted",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "656ec63e-a353-4952-83e1-1adbc29933ce",
+   "dictionary_name": "Dicionário Equipes participantes Recife Bom de Bola 2014",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8d2b4558-9687-42c7-971d-f6eeeb2eac01/resource/656ec63e-a353-4952-83e1-1adbc29933ce/download/dicionario-equipes-participantes-recife-bom-de-bola-2014.pdf",
+   "sha256": "23577051bae9771bf7af3c55fc0897be3824c353e0c55d886770557083d624a6",
+   "oracle": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": []
+   }
+  }
+ }
+}

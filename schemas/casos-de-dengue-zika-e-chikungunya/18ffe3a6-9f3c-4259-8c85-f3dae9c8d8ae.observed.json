@@ -1,0 +1,679 @@
+{
+ "fields": [
+  {
+   "name": "nu_notific",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_not",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_agravo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_notific",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sem_not",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_ano",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sg_uf_not",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_municip",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_regiona",
+   "type": "number",
+   "sampleEmptyShare": 0.0023
+  },
+  {
+   "name": "id_unidade",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_sin_pri",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sem_pri",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_nasc",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0082
+  },
+  {
+   "name": "nu_idade_n",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cs_sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cs_gestant",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cs_raca",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cs_escol_n",
+   "type": "number",
+   "sampleEmptyShare": 0.1879
+  },
+  {
+   "name": "sg_uf",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_mn_resi",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_rg_resi",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_distrit",
+   "type": "number",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "id_bairro",
+   "type": "number",
+   "sampleEmptyShare": 0.0017
+  },
+  {
+   "name": "nm_bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0003
+  },
+  {
+   "name": "id_logrado",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nm_logrado",
+   "type": "string",
+   "sampleEmptyShare": 0.0153
+  },
+  {
+   "name": "nu_cep",
+   "type": "number",
+   "sampleEmptyShare": 0.3914
+  },
+  {
+   "name": "id_pais",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_invest",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "id_ocupa_n",
+   "type": "string",
+   "sampleEmptyShare": 0.9452
+  },
+  {
+   "name": "febre",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "mialgia",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "cefaleia",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "exantema",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "vomito",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "nausea",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "dor_costas",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "conjuntvit",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "artrite",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "artralgia",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "petequia_n",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "leucopenia",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "laco",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "dor_retro",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "diabetes",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "hematolog",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "hepatopat",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "renal",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "hipertensa",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "acido_pept",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "auto_imune",
+   "type": "number",
+   "sampleEmptyShare": 0.0043
+  },
+  {
+   "name": "dt_chik_s1",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9909
+  },
+  {
+   "name": "dt_chik_s2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "dt_prnt",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9997
+  },
+  {
+   "name": "res_chiks1",
+   "type": "number",
+   "sampleEmptyShare": 0.9586
+  },
+  {
+   "name": "res_chiks2",
+   "type": "number",
+   "sampleEmptyShare": 0.9605
+  },
+  {
+   "name": "resul_prnt",
+   "type": "number",
+   "sampleEmptyShare": 0.9583
+  },
+  {
+   "name": "dt_soro",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9168
+  },
+  {
+   "name": "resul_soro",
+   "type": "number",
+   "sampleEmptyShare": 0.7619
+  },
+  {
+   "name": "dt_ns1",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9875
+  },
+  {
+   "name": "resul_ns1",
+   "type": "number",
+   "sampleEmptyShare": 0.8212
+  },
+  {
+   "name": "dt_viral",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9986
+  },
+  {
+   "name": "resul_vi_n",
+   "type": "number",
+   "sampleEmptyShare": 0.7882
+  },
+  {
+   "name": "dt_pcr",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9895
+  },
+  {
+   "name": "resul_pcr_",
+   "type": "number",
+   "sampleEmptyShare": 0.778
+  },
+  {
+   "name": "sorotipo",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "histopa_n",
+   "type": "number",
+   "sampleEmptyShare": 0.8626
+  },
+  {
+   "name": "imunoh_n",
+   "type": "number",
+   "sampleEmptyShare": 0.8564
+  },
+  {
+   "name": "hospitaliz",
+   "type": "number",
+   "sampleEmptyShare": 0.3471
+  },
+  {
+   "name": "dt_interna",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9512
+  },
+  {
+   "name": "uf",
+   "type": "number",
+   "sampleEmptyShare": 0.9512
+  },
+  {
+   "name": "municipio",
+   "type": "number",
+   "sampleEmptyShare": 0.9515
+  },
+  {
+   "name": "hospital",
+   "type": "number",
+   "sampleEmptyShare": 0.9529
+  },
+  {
+   "name": "ddd_hosp",
+   "type": "number",
+   "sampleEmptyShare": 0.9742
+  },
+  {
+   "name": "tel_hosp",
+   "type": "number",
+   "sampleEmptyShare": 0.9742
+  },
+  {
+   "name": "tpautocto",
+   "type": "number",
+   "sampleEmptyShare": 0.805
+  },
+  {
+   "name": "coufinf",
+   "type": "number",
+   "sampleEmptyShare": 0.9327
+  },
+  {
+   "name": "copaisinf",
+   "type": "number",
+   "sampleEmptyShare": 0.9327
+  },
+  {
+   "name": "comuninf",
+   "type": "number",
+   "sampleEmptyShare": 0.9344
+  },
+  {
+   "name": "codisinf",
+   "type": "number",
+   "sampleEmptyShare": 0.9569
+  },
+  {
+   "name": "co_bainf",
+   "type": "number",
+   "sampleEmptyShare": 0.9699
+  },
+  {
+   "name": "nobaiinf",
+   "type": "string",
+   "sampleEmptyShare": 0.9691
+  },
+  {
+   "name": "classi_fin",
+   "type": "number",
+   "sampleEmptyShare": 0.0003
+  },
+  {
+   "name": "criterio",
+   "type": "number",
+   "sampleEmptyShare": 0.0219
+  },
+  {
+   "name": "doenca_tra",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "clinc_chik",
+   "type": "number",
+   "sampleEmptyShare": 0.8226
+  },
+  {
+   "name": "evolucao",
+   "type": "number",
+   "sampleEmptyShare": 0.0202
+  },
+  {
+   "name": "dt_obito",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.9966
+  },
+  {
+   "name": "dt_encerra",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0031
+  },
+  {
+   "name": "alrm_hipot",
+   "type": "number",
+   "sampleEmptyShare": 0.9844
+  },
+  {
+   "name": "alrm_plaq",
+   "type": "number",
+   "sampleEmptyShare": 0.9844
+  },
+  {
+   "name": "alrm_vom",
+   "type": "number",
+   "sampleEmptyShare": 0.9841
+  },
+  {
+   "name": "alrm_sang",
+   "type": "number",
+   "sampleEmptyShare": 0.9847
+  },
+  {
+   "name": "alrm_hemat",
+   "type": "number",
+   "sampleEmptyShare": 0.9847
+  },
+  {
+   "name": "alrm_abdom",
+   "type": "number",
+   "sampleEmptyShare": 0.9841
+  },
+  {
+   "name": "alrm_letar",
+   "type": "number",
+   "sampleEmptyShare": 0.9847
+  },
+  {
+   "name": "alrm_hepat",
+   "type": "number",
+   "sampleEmptyShare": 0.9847
+  },
+  {
+   "name": "alrm_liq",
+   "type": "number",
+   "sampleEmptyShare": 0.9847
+  },
+  {
+   "name": "dt_alrm",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9867
+  },
+  {
+   "name": "grav_pulso",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_conv",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_ench",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_insuf",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_taqui",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_extre",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_hipot",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_hemat",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_melen",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_metro",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_sang",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_ast",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_mioc",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_consc",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "grav_orgao",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "dt_grav",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "mani_hemor",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "epistaxe",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "gengivo",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "metro",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "petequias",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "hematura",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "sangram",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "laco_n",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "plasmatico",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "evidencia",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "plaq_menor",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "con_fhd",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "complica",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nu_lote_i",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ds_obs",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:02:24+00:00",
+  "sha256": "529345732689e8c0ba8c0566f1b9a9446ef2a663262ecf64c191616b11baa510",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 3523,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

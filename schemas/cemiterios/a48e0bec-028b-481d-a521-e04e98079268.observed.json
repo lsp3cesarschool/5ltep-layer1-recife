@@ -1,0 +1,64 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "capacidade_jazigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "capacidade_ossuario",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "disponível",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "area",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:03:20+00:00",
+  "sha256": "e2143a556d9d4c90c25c825d4f8b8093fc64562433beb6265a982ccbb5df81d5",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

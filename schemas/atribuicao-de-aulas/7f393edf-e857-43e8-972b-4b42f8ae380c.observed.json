@@ -1,0 +1,124 @@
+{
+ "fields": [
+  {
+   "name": "Ano Letivo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "RPA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade de Ensino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Matrícula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação Funcional",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Cargo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Carga Horária",
+   "type": "integer",
+   "sampleEmptyShare": 0.024
+  },
+  {
+   "name": "Componente Curricular",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Série",
+   "type": "string",
+   "sampleEmptyShare": 0.2705
+  },
+  {
+   "name": "Módulo",
+   "type": "string",
+   "sampleEmptyShare": 0.9452
+  },
+  {
+   "name": "Grupo",
+   "type": "string",
+   "sampleEmptyShare": 0.7842
+  },
+  {
+   "name": "Turma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Turno",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "INEP",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO DE UNIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LOGRADOURO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "N",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COMPLEMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.839
+  },
+  {
+   "name": "BAIRRO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CEP",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:01:15+00:00",
+  "sha256": "43132bd8083b8f6023cf617307b0fd8364775bec0f6c4fb1e8633c81c991e358",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 292,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

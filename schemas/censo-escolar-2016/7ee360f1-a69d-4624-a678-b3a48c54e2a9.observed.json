@@ -1,0 +1,24 @@
+{
+ "fields": [
+  {
+   "name": "Código",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Dependencias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:06:16+00:00",
+  "sha256": "89a0c193a6bb853491ad4eb906f9ede8c36dbec06a64de089d7e71ba225fafd4",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 30,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

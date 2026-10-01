@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "data_abertura",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hora_abertura",
+   "type": "string",
+   "sampleEmptyShare": 0.0015
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0022
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0095
+  },
+  {
+   "name": "tipo_ocorrencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0022
+  },
+  {
+   "name": "quantidade_vitimas",
+   "type": "string",
+   "sampleEmptyShare": 0.0007
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.038
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:00:41+00:00",
+  "sha256": "3617646272e6fda63e74358a3bd03ba9b54b2087f3586118adc0a09ac04e883b",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1369,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

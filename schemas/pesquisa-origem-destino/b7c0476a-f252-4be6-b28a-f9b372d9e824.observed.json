@@ -1,0 +1,269 @@
+{
+ "fields": [
+  {
+   "name": "sexo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "faixa_etaria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "renda",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mobilidade_reduzida",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "detalhe_mobilidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "internet_celular",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cep_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "possui_filho_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quant_filhos",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "meios_transporte_filhos",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "utiliza_app_taxi_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "resp_pesquisa_matricula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "escola_filho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "outras_escolas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "profissao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "trabalha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cep_trabalho",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "turno_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_fim_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_inicio_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "local_saida_trab",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "origem_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "freq_local_trabalho",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "meio_transporte_trab",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "utiliza_app_taxi_trabalho",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "utiliza_terminal_int_trabalho",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "terminal_int_trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "pesquisado_estuda",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cep_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade_escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro_escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro_escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "turno_aula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nivel_estudo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_instituicao_ensino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_fim_aula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_inicio_aula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "origem_ida_aula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "outros_aula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "freq_aula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "transporte_aula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "utiliza_app_taxi_aula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "utiliza_integracao_aula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "terminal_aula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "zona_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:54:49+00:00",
+  "sha256": "2a4f36f5b91482b2e9e4b8e256774e5afc2e30f38112abc62e9f9ce6dbdf799d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

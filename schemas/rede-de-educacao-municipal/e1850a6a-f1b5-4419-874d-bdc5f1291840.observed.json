@@ -1,0 +1,155 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_cod",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inep",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rua",
+   "type": "string",
+   "sampleEmptyShare": 0.0366
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_bairro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "metragem",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.1006
+  },
+  {
+   "name": "qtd_alunos",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_turmas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_professores",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "escola_climatizada",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_visita",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.6494
+  },
+  {
+   "name": "quadra_coberta",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quadra_descoberta",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "biblioteca",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sala_recurso",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "gestor",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0305
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0213
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:57:39+00:00",
+  "sha256": "8213da84f489908dc0a696cf731f70d5730b7e898fac0c3b64c16ae101086d96",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 328,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

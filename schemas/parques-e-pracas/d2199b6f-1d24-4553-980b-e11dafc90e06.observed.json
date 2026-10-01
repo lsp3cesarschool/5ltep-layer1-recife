@@ -1,0 +1,76 @@
+{
+ "fields": [
+  {
+   "name": "nome_equip_urbano",
+   "type": "string",
+   "sampleEmptyShare": 0.0574
+  },
+  {
+   "name": "tipo_equip_urbano",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco_equip_urbano",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_logradouro",
+   "type": "integer",
+   "sampleEmptyShare": 0.1406
+  },
+  {
+   "name": "lei_equip_urbano",
+   "type": "string",
+   "sampleEmptyShare": 0.7327
+  },
+  {
+   "name": "nome_oficial_equip_urbano",
+   "type": "string",
+   "sampleEmptyShare": 0.1406
+  },
+  {
+   "name": "area",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "perimetro",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_bairro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:27:58+00:00",
+  "sha256": "a53bfc252dd0e5d6ab08734ce9098150986de2f4098e749b69265193b9fdaef3",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 505,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

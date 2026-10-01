@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:02:54+00:00",
+  "sha256": "38ec411e1f935ca5c9ae9d77aaad3e57abcdc1335655fa4d775ec9c808d5f34f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 186,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

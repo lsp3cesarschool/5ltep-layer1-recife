@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data de abertura",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hora de abertura",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0146
+  },
+  {
+   "name": "tipo de ocorrencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0041
+  },
+  {
+   "name": "quantidade de vitimas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0195
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:00:17+00:00",
+  "sha256": "ef4e294a1db1696a3cab0356c0315f8e02c337c306d551cc1bbfad7048bb3f2e",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1231,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

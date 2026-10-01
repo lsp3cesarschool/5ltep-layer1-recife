@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ, CPF OU SEQUENCIAL DO IMÓVEL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "RAZÃO SOCIAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME FANTASIA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDEREÇO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA DA VISTORIA",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nº AUTO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "INFRAÇÕES",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1283
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1283
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:01:16+00:00",
+  "sha256": "0691c2a12802e4413f0a6fa0423b366ac7186b9f8806134aa2d0f6823e8bcc4f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1294,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

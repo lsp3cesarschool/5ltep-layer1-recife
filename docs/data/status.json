@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
  "label": "Layer 1",
- "message": "interrupted 2026-10-01 · see Actions",
- "color": "lightgrey"
+ "message": "done 2026-10-01 · 574/880 files conform",
+ "color": "brightgreen"
 }

@@ -1,0 +1,138 @@
+{
+ "fields": [
+  {
+   "name": "nome_popular",
+   "type": "string",
+   "description": "Nome polular da espécie",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "description": "Num",
+   "declaredType": "Número de Identificação da árvore",
+   "declaredSize": 3
+  },
+  {
+   "name": "familia",
+   "type": "string",
+   "description": "Família (biologia)",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "nome_cientifico",
+   "type": "string",
+   "description": "Nome Científico (biologia)",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "este",
+   "type": "number",
+   "description": "8 int 11 dec",
+   "declaredType": "real"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço / localização da árvore",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "norte",
+   "type": "number",
+   "description": "8 int 11 dec",
+   "declaredType": "real"
+  },
+  {
+   "name": "decreto",
+   "type": "string",
+   "description": "Decreto de Tombamento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "microregiao",
+   "type": "string",
+   "description": "Microregião",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "description": "Regiões Político-Administrativas",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "identifica",
+   "type": "number",
+   "description": "Sequencial de Identificação",
+   "declaredType": "Num",
+   "declaredSize": 9
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "description": "Observação",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "coordenada geográfica - Latitude",
+   "declaredType": "real"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenada geográfica - Longitude",
+   "declaredType": "real"
+  }
+ ],
+ "x5ltep": {
+  "status": "extracted",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "3b2c95b6-93dc-42ff-858f-206c6b511ce4",
+   "dictionary_name": "Dicionario de dados de Arvores Tombadas.pdf",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/42bbfbf1-57ad-4121-9087-ac52d0511a3a/resource/3b2c95b6-93dc-42ff-858f-206c6b511ce4/download/dicionario-de-dados-de-arvores-tombadas.pdf.pdf",
+   "sha256": "35976492ede36a486dc3938ef638fa5141eb789c1dbc0c03201f946aa126eddc",
+   "oracle": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": []
+   }
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "fields": [
+  {
+   "name": "código",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_etapa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regular_presencial_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "especial_presencial_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "eja_presencial_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "educ_profissional_presencial_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regular_semipresencial_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "especial_semipresencial_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "eja_semipresencial_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "educ_profissional_semipresencial_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regular_ead_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "especial_ead_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "eja_ead_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "educ_profissional_ead_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:05:45+00:00",
+  "sha256": "1067ea83fbb5c6cc5f00ba8085264c7fa20d2ef2a60061fb7bbc07619f46f8df",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 52,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

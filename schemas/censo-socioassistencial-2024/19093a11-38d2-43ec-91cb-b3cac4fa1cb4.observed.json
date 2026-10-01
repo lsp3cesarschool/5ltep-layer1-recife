@@ -1,0 +1,540 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_14",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q65_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaKm2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_9bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin4_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_10bin5_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_11bin4_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_trabalhador",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Gestão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PAIF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_SCFV",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PSB",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Cadastramento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Beneficios",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PCF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PBF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Outros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Gestão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PAIF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_SCFV",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PSB",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Cadastramento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Beneficios",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PCF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PBF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Outros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Gestao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PAIF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SCFV",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PSB",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Cadastramento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Beneficios",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PCF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PBF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Outros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Gestão_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PAIF_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_SCFV_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PSB_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Cadastramento_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Beneficios_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PCF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_PBF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_15_1bin_Outros_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Gestão_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PAIF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_SCFV_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PSB_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Cadastramento_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Beneficios_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PCF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_PBF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d65_16_2bin_Outros_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Gestao_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PAIF_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SCFV_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PSB_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Cadastramento_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Beneficios_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PCF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PBF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Outros_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:11:07+00:00",
+  "sha256": "ccfba7247b4f3aa262c0c80145542119a49c57155fdad68abf7248ad8425faa1",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 298,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

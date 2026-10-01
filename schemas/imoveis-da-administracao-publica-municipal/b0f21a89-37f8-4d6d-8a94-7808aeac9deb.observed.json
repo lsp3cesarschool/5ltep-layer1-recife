@@ -1,0 +1,301 @@
+{
+ "fields": [
+  {
+   "name": "ultimaAtualizacaoCadastral",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sequencialImovel",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "proprietarioPrincipal",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "natureza",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inscricaoImobiliaria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelNomeLogradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelMunicipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelEstado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelComplemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelCodigoLogradouro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelCep",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoImovelBairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoCorrespondenciaNumero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0242
+  },
+  {
+   "name": "enderecoCorrespondenciaNomeLogradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoCorrespondenciaMunicipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoCorrespondenciaEstado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoCorrespondenciaComplemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoCorrespondenciaCep",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecoCorrespondenciaBairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "documentoProprietario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cepProprietario",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "topografiaLote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "testadaPrincipalLote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "testadaFicticiaLote",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "superficieLote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "muradoLote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "formatoLote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "comCalcadaLote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaLote",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipoEmpreendimentoMultipla",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quantidadePavimentosMultipla",
+   "type": "integer",
+   "sampleEmptyShare": 0.4884
+  },
+  {
+   "name": "nomeSuperContemMultipla",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nomeEdificacaoMultipla",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaTotalConstruidaMultipla",
+   "type": "number",
+   "sampleEmptyShare": 0.4884
+  },
+  {
+   "name": "anoConstrucaoMultipla",
+   "type": "integer",
+   "sampleEmptyShare": 0.4884
+  },
+  {
+   "name": "tipoEstruturaSimples",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipoEmpreendimentoSimples",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipoConstrucaoSimples",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "padraoConstrucaoSimples",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numeroHabiteseSimples",
+   "type": "integer",
+   "sampleEmptyShare": 0.5112
+  },
+  {
+   "name": "fracaoIdealSimples",
+   "type": "number",
+   "sampleEmptyShare": 0.2418
+  },
+  {
+   "name": "estadoConservacaoSimples",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dataCadastroPrefeituraSimples",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.2418
+  },
+  {
+   "name": "coeficienteDepreciacao",
+   "type": "number",
+   "sampleEmptyShare": 0.2418
+  },
+  {
+   "name": "areaTotalConstruidaSimples",
+   "type": "number",
+   "sampleEmptyShare": 0.2418
+  },
+  {
+   "name": "valorVenal",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valorAreaConstruidaM2",
+   "type": "number",
+   "sampleEmptyShare": 0.2418
+  },
+  {
+   "name": "v0ValorTestadaFicticia",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipoAliquotaImposto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regimeTributacaoTLP",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regimeTributacaoIPTU",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "patrimonio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "aliquotaImposto",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacaoPavimentacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.6954
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.6954
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:19:56+00:00",
+  "sha256": "a6837d0c7e2de7c34b78d484e54525bd327236d3a3e29b7223ac676bfa1023dd",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

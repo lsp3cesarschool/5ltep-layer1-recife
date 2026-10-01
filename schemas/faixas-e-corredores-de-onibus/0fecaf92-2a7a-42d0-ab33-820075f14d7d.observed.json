@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "faixa_azul",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "detalhe",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "extensão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes_implantacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano_implantacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:19:33+00:00",
+  "sha256": "07c2ea4a3b41a2d8d7c8f7a53afb25a465442b6bd9c5199e56ace0afaa4e823a",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 9,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

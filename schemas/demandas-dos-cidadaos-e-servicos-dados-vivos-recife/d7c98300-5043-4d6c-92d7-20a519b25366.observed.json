@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "avaliador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vistoria_data",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vistoria_risco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vistoria_localidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vistoria_rpa_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vistoria_microrregiao",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vistoria_setor",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "processo_numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:13:20+00:00",
+  "sha256": "0e1fb9ec43d4639b173d9f268ffca5f428cfafba3c4c493d2ac8d0acbb11a519",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "rota",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipologia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sentido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "percurso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "extensao",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inauguracao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:26:37+00:00",
+  "sha256": "10bf4278a0cbd074cdacccb6c83eac21d3cef4c8954a6ef3562b7768054378a9",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 7,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

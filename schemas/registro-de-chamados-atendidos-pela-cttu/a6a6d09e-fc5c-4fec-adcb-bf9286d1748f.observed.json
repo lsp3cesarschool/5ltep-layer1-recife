@@ -1,0 +1,135 @@
+{
+ "fields": [
+  {
+   "name": "tipo_atendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0032
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "data_chamado",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0012
+  },
+  {
+   "name": "hora_chamado",
+   "type": "string",
+   "sampleEmptyShare": 0.003
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0072
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0148
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "sampleEmptyShare": 0.5228
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.044
+  },
+  {
+   "name": "tipo_ocorrencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0066
+  },
+  {
+   "name": "auto",
+   "type": "number",
+   "sampleEmptyShare": 0.7656
+  },
+  {
+   "name": "moto",
+   "type": "string",
+   "sampleEmptyShare": 0.7154
+  },
+  {
+   "name": "ciclomotor",
+   "type": "string",
+   "sampleEmptyShare": 0.9506
+  },
+  {
+   "name": "ciclista",
+   "type": "number",
+   "sampleEmptyShare": 0.9984
+  },
+  {
+   "name": "pedestre",
+   "type": "number",
+   "sampleEmptyShare": 0.998
+  },
+  {
+   "name": "onibus",
+   "type": "number",
+   "sampleEmptyShare": 0.9724
+  },
+  {
+   "name": "caminhao",
+   "type": "string",
+   "sampleEmptyShare": 0.9484
+  },
+  {
+   "name": "viatura",
+   "type": "string",
+   "sampleEmptyShare": 0.9788
+  },
+  {
+   "name": "outro",
+   "type": "number",
+   "sampleEmptyShare": 0.9958
+  },
+  {
+   "name": "vitimas",
+   "type": "string",
+   "sampleEmptyShare": 0.2028
+  },
+  {
+   "name": "hora_aviso_equipe",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "hora_chegada",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "hora_saida",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "detalhes",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tempo_total",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T22:01:28+00:00",
+  "sha256": "32a8a1faebe32dc6b38125bd415a067934148d444995a0f472fedb80971b113f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

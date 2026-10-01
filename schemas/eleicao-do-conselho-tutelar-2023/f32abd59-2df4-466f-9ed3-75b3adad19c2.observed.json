@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Local",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "urna",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "candidato",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_cedula",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "votos",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:18:51+00:00",
+  "sha256": "3a773466f51e9a4add644729a0a935a916f1d8b800cef1e161f62465176b6425",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

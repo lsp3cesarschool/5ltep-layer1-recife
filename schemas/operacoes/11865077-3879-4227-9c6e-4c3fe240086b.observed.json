@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "Operação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Despacho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "periodo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:27:46+00:00",
+  "sha256": "fd289d2667f9999fe07f786b8de74cc2380c8c3e95db8c2269827ceeba00afe6",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 174,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

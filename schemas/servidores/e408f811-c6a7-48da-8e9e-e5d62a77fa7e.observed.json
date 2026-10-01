@@ -1,0 +1,189 @@
+{
+ "fields": [
+  {
+   "name": "asalseanoo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "asalsemess",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "csalseccpf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "csalsematr",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nsalsenome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nsalseempr",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nsalsecate",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nsalsecarg",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nsalsefunc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vsalsecarg",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "vsalsefunc",
+   "type": "number",
+   "sampleEmptyShare": 0.932
+  },
+  {
+   "name": "vsalseremu",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vsalseferi",
+   "type": "number",
+   "sampleEmptyShare": 0.7138
+  },
+  {
+   "name": "vsalsenatl",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "vsalseoutr",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vsalseprov",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vsalsedxcd",
+   "type": "number",
+   "sampleEmptyShare": 0.9988
+  },
+  {
+   "name": "vsalsedrst",
+   "type": "number",
+   "sampleEmptyShare": 0.982
+  },
+  {
+   "name": "vsalsedprv",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "vsalsedrrf",
+   "type": "number",
+   "sampleEmptyShare": 0.2256
+  },
+  {
+   "name": "vsalsedtot",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vsalseliqd",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vsalsedife",
+   "type": "number",
+   "sampleEmptyShare": 0.9704
+  },
+  {
+   "name": "tslserulat",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "esalseunidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dslderadmissao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dslserdesligamento",
+   "type": "string",
+   "sampleEmptyShare": 0.8958
+  },
+  {
+   "name": "aslserjornadamensal",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "esalseinstrucao",
+   "type": "string",
+   "sampleEmptyShare": 0.006
+  },
+  {
+   "name": "esalsegenero",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dsalseaposentadoria",
+   "type": "string",
+   "sampleEmptyShare": 0.9984
+  },
+  {
+   "name": "esalseadministracao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "eslserlotacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "eselsesituacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T22:05:25+00:00",
+  "sha256": "50f566575f68efaf53b8dbffd0e0250f56a0bee63e5b1b73e66b1a3e110b456d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

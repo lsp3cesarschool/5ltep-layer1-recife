@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "item",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "origem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vencimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0189
+  },
+  {
+   "name": "dotacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:27:56+00:00",
+  "sha256": "7a5679c4cf9f22ad664278e498f4bedf8ca0c9aee8d16e00dc50a72a1b960dbb",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 53,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

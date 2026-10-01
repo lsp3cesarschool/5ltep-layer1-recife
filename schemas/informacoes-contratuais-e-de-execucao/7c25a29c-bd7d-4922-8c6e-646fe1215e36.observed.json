@@ -1,0 +1,77 @@
+{
+ "fields": [
+  {
+   "name": "orgao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "scc",
+   "type": "string",
+   "sampleEmptyShare": 0.0381
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "origem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fornecedor",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnpj_cpf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dituacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_assinatura",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9746
+  },
+  {
+   "name": "data_inicio",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "data_fim",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.5873
+  },
+  {
+   "name": "valor",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:26:07+00:00",
+  "sha256": "3e38be47ebb83c2812c5bb517c64d32dcba32b907c040cfa8ed8bf5e6278edf8",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 315,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,220 @@
+{
+ "fields": [
+  {
+   "name": "DATA",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hora",
+   "type": "string",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "natureza_acidente",
+   "type": "string",
+   "sampleEmptyShare": 0.01
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "sampleEmptyShare": 0.5338
+  },
+  {
+   "name": "detalhe_endereco_acidente",
+   "type": "string",
+   "sampleEmptyShare": 0.8572
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0062
+  },
+  {
+   "name": "endereco_cruzamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "numero_cruzamento",
+   "type": "string",
+   "sampleEmptyShare": 0.534
+  },
+  {
+   "name": "referencia_cruzamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0064
+  },
+  {
+   "name": "bairro_cruzamento",
+   "type": "string",
+   "sampleEmptyShare": 0.001
+  },
+  {
+   "name": "num_semaforo",
+   "type": "integer",
+   "sampleEmptyShare": 0.9996
+  },
+  {
+   "name": "sentido_via",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0162
+  },
+  {
+   "name": "auto",
+   "type": "integer",
+   "sampleEmptyShare": 0.0864
+  },
+  {
+   "name": "moto",
+   "type": "integer",
+   "sampleEmptyShare": 0.7666
+  },
+  {
+   "name": "ciclom",
+   "type": "integer",
+   "sampleEmptyShare": 0.9948
+  },
+  {
+   "name": "ciclista",
+   "type": "integer",
+   "sampleEmptyShare": 0.9886
+  },
+  {
+   "name": "pedestre",
+   "type": "integer",
+   "sampleEmptyShare": 0.984
+  },
+  {
+   "name": "onibus",
+   "type": "integer",
+   "sampleEmptyShare": 0.8472
+  },
+  {
+   "name": "caminhao",
+   "type": "integer",
+   "sampleEmptyShare": 0.891
+  },
+  {
+   "name": "viatura",
+   "type": "integer",
+   "sampleEmptyShare": 0.986
+  },
+  {
+   "name": "outros",
+   "type": "integer",
+   "sampleEmptyShare": 0.9898
+  },
+  {
+   "name": "vitimas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0012
+  },
+  {
+   "name": "vitimasfatais",
+   "type": "integer",
+   "sampleEmptyShare": 0.9978
+  },
+  {
+   "name": "acidente_verificado",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "tempo_clima",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "situacao_semaforo",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "sinalizacao",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "condicao_via",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "conservacao_via",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ponto_controle",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "situacao_placa",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "velocidade_max_via",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "mao_direcao",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "divisao_via1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "divisao_via2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "divisao_via3",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:00:33+00:00",
+  "sha256": "cb5442d7d550ca127f7f3e8e2be50264479df228bdcefbf6687aacad1126fecc",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

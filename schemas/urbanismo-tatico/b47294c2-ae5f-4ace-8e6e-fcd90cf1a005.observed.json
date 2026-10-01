@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "ruas_envolvidas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "metragem",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0196
+  },
+  {
+   "name": "inauguracao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T22:10:31+00:00",
+  "sha256": "dddd84b41d86df9456fb6d22a33ec821b41806d82571a8f25da4c8cf8ce6bea7",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 51,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

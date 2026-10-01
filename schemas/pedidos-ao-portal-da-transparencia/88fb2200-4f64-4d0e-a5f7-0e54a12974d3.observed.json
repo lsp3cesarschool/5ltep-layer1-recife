@@ -1,0 +1,16 @@
+{
+ "fields": [],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T21:44:30+00:00",
+  "sha256": "8e523fcfc1c0fe1df30485f43308b12ba81b773c40ea7b6c2f196728339b3065",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 15,
+  "tables": 2,
+  "distinct_headers": 2,
+  "members_with_other_headers": [
+   "2016_5861_623_0_R.txt"
+  ]
+ }
+}

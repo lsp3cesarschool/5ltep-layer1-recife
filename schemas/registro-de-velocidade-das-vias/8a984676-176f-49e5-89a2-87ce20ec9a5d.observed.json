@@ -1,0 +1,131 @@
+{
+ "fields": [
+  {
+   "name": "codequipamento",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "datahoraregistro",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f1_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f2_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f3_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f4_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contagem_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vel_f1_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vel_f2_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vel_f3_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vel_f4_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "velocmedia_15min",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f1_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f2_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f3_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cont_f4_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contagem_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inf_f1_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inf_f2_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inf_f3_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inf_f4_24h",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "infracao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ultimaatualizacao",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T22:01:30+00:00",
+  "sha256": "4059748c29e1f44e6e4dcfa3324d98ebf42f7b2048298369a58eb40968966e65",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}
