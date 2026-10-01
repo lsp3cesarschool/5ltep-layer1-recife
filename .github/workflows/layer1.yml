@@ -75,12 +75,25 @@ jobs:
         run: |
           set -euo pipefail
           pip install -q -r requirements.txt
-          python main.py status --state running
-          python main.py census
           git config user.name "5L-TEP L1 Bot"
           git config user.email "5ltep-l1-bot@users.noreply.github.com"
+          # The README badge says "running" from the first minute, not only after the survey.
+          python main.py status --state running
+          git add docs/data/
+          git diff --cached --quiet || git commit -m "chore(l1): running [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push
+          python main.py census
           git add results/ schemas/ docs/data/
           git diff --cached --quiet || git commit -m "chore(l1): survey of the portal [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git pull --rebase --autostash
+          git push
+      - name: Mark the chain as interrupted (status badge)
+        if: ${{ (failure() || cancelled()) && env.BATCH == '1' }}
+        run: |
+          python main.py status --state interrupted
+          git add docs/data/
+          git diff --cached --quiet || git commit -m "chore(l1): interrupted [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
           git pull --rebase --autostash
           git push
 
