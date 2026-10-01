@@ -86,7 +86,8 @@ def field_descriptor(name: str, declared_type: str = "", size=None, description:
     field = {"name": name, "type": ts_type, **extra}
     desc = re.sub(r"\s+", " ", str(description or "")).strip()
     if allowed and str(allowed).strip():
-        desc = (desc + " " if desc else "") + f"[Allowed values, as declared: {re.sub(r'\s+', ' ', str(allowed)).strip()}]"
+        allowed_text = re.sub(r"\s+", " ", str(allowed)).strip()
+        desc = (desc + " " if desc else "") + f"[Allowed values, as declared: {allowed_text}]"
     if desc:
         field["description"] = desc[:2000]
     n = _size(size)
