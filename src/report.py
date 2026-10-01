@@ -169,6 +169,54 @@ def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
     }
 
 
+def network(tables: list[tuple[dict, dict | None]]) -> dict:
+    """How fast and how reliably each server delivered the files (from the validation records).
+
+    end_to_end_mb_s: bytes over the total time per file (download and validation together, since a
+    CSV is validated while it streams); zip_download_mb_s: zips alone, which are downloaded whole
+    before they are read (pure network); first_byte_s: median time until the server answered.
+    """
+    hosts: dict[str, dict] = {}
+    for t, v in tables:
+        if not v or v.get("status") not in ("ok", "empty", "not-tabular", "error"):
+            continue
+        h = hosts.setdefault(v.get("host") or urlparse(t.get("url") or "").hostname or "—",
+                             {"files": 0, "bytes": 0, "seconds": 0.0, "zip_bytes": 0, "zip_seconds": 0.0,
+                              "first_byte": [], "failed_files": 0, "failures": Counter()})
+        h["files"] += 1
+        if v.get("status") == "error":
+            h["failed_files"] += 1
+        h["failures"].update(v.get("network_failures") or {})
+        if v.get("status") == "error" or not v.get("bytes") or not v.get("seconds"):
+            continue
+        h["bytes"] += v["bytes"]
+        h["seconds"] += v["seconds"]
+        timing = v.get("timing") or {}
+        if timing.get("first_byte_s") is not None:
+            h["first_byte"].append(timing["first_byte_s"])
+        if v.get("kind") == "zip" and timing.get("download_s"):
+            h["zip_bytes"] += v["bytes"]
+            h["zip_seconds"] += timing["download_s"]
+
+    def figures(h: dict) -> dict:
+        fb = sorted(h["first_byte"])
+        return {"files": h["files"], "failed_files": h["failed_files"], "gb": round(h["bytes"] / 1e9, 2),
+                "minutes": round(h["seconds"] / 60, 1),
+                "end_to_end_mb_s": round(h["bytes"] / h["seconds"] / 1e6, 2) if h["seconds"] else None,
+                "zip_download_mb_s": round(h["zip_bytes"] / h["zip_seconds"] / 1e6, 2) if h["zip_seconds"] else None,
+                "first_byte_s_median": fb[len(fb) // 2] if fb else None,
+                "request_failures": dict(h["failures"])}
+
+    total = {"files": 0, "bytes": 0, "seconds": 0.0, "zip_bytes": 0, "zip_seconds": 0.0, "first_byte": [],
+             "failed_files": 0, "failures": Counter()}
+    for h in hosts.values():
+        for k in ("files", "bytes", "seconds", "zip_bytes", "zip_seconds", "failed_files"):
+            total[k] += h[k]
+        total["first_byte"] += h["first_byte"]
+        total["failures"].update(h["failures"])
+    return {"total": figures(total), "by_host": {k: figures(h) for k, h in sorted(hosts.items(), key=lambda x: -x[1]["bytes"])}}
+
+
 def drift_baseline(validation: dict) -> dict:
     """Drift needs two observations: the first one of each file is its baseline."""
     seen = [v.get("validated_at") for v in validation.values() if v.get("status") == "ok" and v.get("header")]
@@ -215,6 +263,7 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
         "drift": {"observed": sum(e["kind"] == "observed" for e in log),
                   "declared": sum(e["kind"] == "declared" for e in log), **drift_baseline(validation)},
         "coverage": coverage(tables),
+        "network": network(tables),
         "findings": documentation_findings(census, validation, extraction),
         "per_dataset": per_dataset,
     }
@@ -296,7 +345,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                          "tables": tables})
     return {"summary": {k: summary[k] for k in ("portal", "generated_at", "census_at", "datasets", "tables",
                                                  "verifiable", "conformant", "l1_rate", "l1_pass", "drift",
-                                                 "coverage", "schema_sources", "findings", "method")},
+                                                 "coverage", "network", "schema_sources", "findings", "method")},
             "datasets": datasets, "unreadable": unreadable_files(census, validation),
             "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census),
             "history": json.loads(config.HISTORY_FILE.read_text(encoding="utf-8")) if config.HISTORY_FILE.exists() else []}

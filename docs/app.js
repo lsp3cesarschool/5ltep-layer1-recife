@@ -65,7 +65,9 @@ const I18N = {
     k_pdftypos: "PDFs with probable typos, by the oracle", f_typos: "probable typos (declared → file)", k_inferred: "formats inferred from the data (not declared)",
     k_validated: "files read", k_encodings: "encodings", k_delims: "delimiters", k_decode: "with bytes that do not decode",
     k_ragged: "with rows of the wrong width", k_multi: "zips whose members have different headers",
-    k_nottab: "not a CSV behind the link", k_unreach: "Files that could not be downloaded",
+    k_nottab: "not a CSV behind the link", k_gb: "data downloaded (GB)", k_minutes: "time downloading and validating (min)",
+    k_mbs: "throughput, download and validation (MB/s)", k_ttfb: "time to the server's first answer, median (s)",
+    k_reqfail: "requests that failed (and were retried)", k_unreach: "Files that could not be downloaded",
     k_pdflinked: "PDF dictionaries linked to a file", k_processed: "processed", k_stage: "Stage", k_n: "n",
     k_recall: "recall", k_precision: "precision", k_em: "exact match", k_ls: "Levenshtein",
     stage_det: "deterministic", stage_llm: "LLM", outcomes: "Outcomes",
@@ -142,7 +144,9 @@ const I18N = {
     k_pdftypos: "PDFs com prováveis erros de digitação, pelo oráculo", f_typos: "prováveis erros de digitação (declarado → arquivo)", k_inferred: "formatos inferidos dos dados (não declarados)",
     k_validated: "arquivos lidos", k_encodings: "codificações", k_delims: "delimitadores", k_decode: "com bytes que não decodificam",
     k_ragged: "com linhas de largura errada", k_multi: "zips com membros de cabeçalhos diferentes",
-    k_nottab: "sem CSV por trás do link", k_unreach: "Arquivos que não puderam ser baixados",
+    k_nottab: "sem CSV por trás do link", k_gb: "dados baixados (GB)", k_minutes: "tempo baixando e validando (min)",
+    k_mbs: "vazão, download e validação (MB/s)", k_ttfb: "tempo até a primeira resposta do servidor, mediana (s)",
+    k_reqfail: "pedidos que falharam (e foram repetidos)", k_unreach: "Arquivos que não puderam ser baixados",
     k_pdflinked: "dicionários em PDF ligados a um arquivo", k_processed: "processados", k_stage: "Etapa", k_n: "n",
     k_recall: "revocação", k_precision: "precisão", k_em: "correspondência exata", k_ls: "Levenshtein",
     stage_det: "determinística", stage_llm: "LLM", outcomes: "Resultados",
@@ -462,8 +466,10 @@ function bars(obj, labelOf = (k) => k) {
     + `<span class="bar"><span style="width:${(n / max) * 100}%"></span></span><span class="n">${fmt(n)}</span>`).join("")}</div>`;
 }
 
-function renderFindings(f) {
+function renderFindings(f, net) {
   const d = f.dictionaries, ty = f.types, vs = f.files_vs_dictionaries, fi = f.files, pdf = f.pdf_extraction;
+  const nt = (net || {}).total || {};
+  const num1 = (x) => (x == null ? "—" : Number(x).toLocaleString(LANG === "pt" ? "pt-BR" : "en", { maximumFractionDigits: 1 }));
   const label = (prefix) => (k) => T[`${prefix}_${k}`] || I18N.en[`${prefix}_${k}`] || k;
   const panels = [
     [t("p_dicts"), kv([[t("k_total"), fmt(d.total)], [t("k_machine"), fmt(d.machine_readable)],
@@ -482,7 +488,9 @@ function renderFindings(f) {
       + `<p class="small muted">${esc(t("k_inferred"))}</p>` + bars(vs.formats_inferred_from_data)],
     [t("p_files"), kv([[t("k_validated"), fmt(fi.validated)], [t("k_decode"), fmt(fi.with_decode_errors)],
       [t("k_ragged"), fmt(fi.with_ragged_rows)], [t("k_multi"), fmt(fi.zips_with_several_headers)],
-      [t("k_nottab"), fmt(fi.not_tabular)]])
+      [t("k_nottab"), fmt(fi.not_tabular)], [t("k_gb"), num1(nt.gb)], [t("k_minutes"), num1(nt.minutes)],
+      [t("k_mbs"), num1(nt.end_to_end_mb_s)], [t("k_ttfb"), num1(nt.first_byte_s_median)],
+      [t("k_reqfail"), fmt(Object.values(nt.request_failures || {}).reduce((a, b) => a + b, 0))]])
       + `<p class="small muted">${esc(t("k_encodings"))}: ${Object.entries(fi.encodings || {}).map(([k, n]) => `<code>${esc(k)}</code> ${fmt(n)}`).join(" · ") || "—"}<br>`
       + `${esc(t("k_delims"))}: ${Object.entries(fi.delimiters || {}).map(([k, n]) => `<code>${esc(k === "\t" ? "TAB" : k)}</code> ${fmt(n)}`).join(" · ") || "—"}</p>`
       + `<p class="small muted">${esc(t("k_unreach"))}</p>` + bars(fi.unreachable_by_reason)],
@@ -596,7 +604,7 @@ async function main() {
   renderCoverage(s);
   renderProgress(s);
   renderPdf();
-  renderFindings(s.findings);
+  renderFindings(s.findings, s.network);
   // ?level=d2 / f0 (same as clicking a maturity band) filters the table
   const lvl = new URLSearchParams(location.search).get("level");
   if (lvl && /^[df][0-4]$/.test(lvl)) el("level-filter").value = lvl;

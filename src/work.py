@@ -16,6 +16,7 @@ next batch continues. A resource enters the queue when:
 import logging
 import time
 from datetime import datetime, timedelta, timezone
+from urllib.parse import urlparse
 
 from src import ckan, config, drift, schemas, tabular, validate
 
@@ -74,6 +75,8 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     entry = {"dataset": dataset, "checked_at": now_iso(), "schema_kind": kind, "schema_fingerprint": fp,
              "ckan": {"url": t["url"], "last_modified": t.get("last_modified"), "size": t.get("size")}}
     started = time.monotonic()
+    failures_before = ckan.failures_snapshot()
+    entry["host"] = urlparse(t.get("url") or "").hostname
     try:
         with tabular.open_resource(t["url"]) as src:
             tables = [validate.check_table(tb, schema) for tb in src.tables]
@@ -87,6 +90,11 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
                     if k in prev} if prev else {})}, None, []
     tables_ok = [x for x in tables if not x.get("empty")]
     summary = validate.summarise(tables, schema)
+    entry["timing"] = digest.get("timing")
+    failed = {k: n - failures_before.get(k, 0) for k, n in ckan.failures_snapshot().items()
+              if n > failures_before.get(k, 0)}
+    if failed:
+        entry["network_failures"] = failed
     # Memory of the file: when it was first seen, and whether it conformed in its last validations.
     entry["first_seen"] = (prev or {}).get("first_seen") or entry["checked_at"]
     history = list((prev or {}).get("pass_history") or [])

@@ -765,3 +765,28 @@ def test_history_row_and_file_memory(tmp_root):
     c2 = {**c, "generated_at": "2026-10-19T03:30:00+00:00"}
     rows = report.update_history(c2, v, summary)
     assert len(rows) == 2 and rows[-1]["gone_files"] == 0            # removed already counted last week
+
+
+def test_network_figures_per_server():
+    tables = [
+        ({"url": "https://blob.example/a.zip"}, {"status": "ok", "kind": "zip", "bytes": 100e6, "seconds": 20,
+                                                "timing": {"first_byte_s": 0.5, "download_s": 10}}),
+        ({"url": "https://portal.example/b.csv"}, {"status": "ok", "kind": "csv", "bytes": 50e6, "seconds": 50,
+                                                  "timing": {"first_byte_s": 4.0},
+                                                  "network_failures": {"ConnectTimeout": 2}}),
+        ({"url": "https://portal.example/c.csv"}, {"status": "error", "error": "HTTPError: 404 Client Error"}),
+    ]
+    n = report.network(tables)
+    blob, portal = n["by_host"]["blob.example"], n["by_host"]["portal.example"]
+    assert blob["zip_download_mb_s"] == 10.0 and blob["end_to_end_mb_s"] == 5.0
+    assert portal["end_to_end_mb_s"] == 1.0 and portal["first_byte_s_median"] == 4.0
+    assert portal["failed_files"] == 1 and portal["request_failures"] == {"ConnectTimeout": 2}
+    assert n["total"]["files"] == 3 and n["total"]["gb"] == 0.15
+
+
+def test_open_resource_records_timing(monkeypatch):
+    serve(monkeypatch, {"u": _zip({"a.csv": b"x;y\n1;2\n"})})
+    with tabular.open_resource("u") as src:
+        for t in src.tables:
+            list(t.rows)
+    assert {"first_byte_s", "download_s"} <= set(src.digest["timing"])

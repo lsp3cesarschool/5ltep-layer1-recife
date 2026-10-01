@@ -75,6 +75,15 @@ def rows(summaries: dict[str, dict]) -> list[tuple[str, list[str]]]:
         ("Files with undeclared columns", lambda s: str(get(s, "findings", "files_vs_dictionaries", "with_undeclared_columns"))),
         ("PDF extraction, recall (deterministic)", lambda s: pct(get(s, "findings", "pdf_extraction", "deterministic", "recall"))),
         ("PDF extraction, recall (LLM)", lambda s: pct(get(s, "findings", "pdf_extraction", "llm", "recall"))),
+        ("Files read (of all tabular files)", lambda s: f"{get(s, 'coverage', 'read')} / {get(s, 'coverage', 'files')}"),
+        ("Data downloaded (GB)", lambda s: str(get(s, "network", "total", "gb"))),
+        ("Time downloading and validating (min)", lambda s: str(get(s, "network", "total", "minutes"))),
+        ("End-to-end throughput (MB/s)", lambda s: str(get(s, "network", "total", "end_to_end_mb_s"))),
+        ("Zip download only (MB/s, network)", lambda s: str(get(s, "network", "total", "zip_download_mb_s"))),
+        ("Time to first byte, median (s)", lambda s: str(get(s, "network", "total", "first_byte_s_median"))),
+        ("Files that could not be downloaded", lambda s: str(get(s, "network", "total", "failed_files"))),
+        ("Failed requests, by kind", lambda s: json.dumps(get(s, "network", "total", "request_failures", default={}))),
+        ("Main servers (GB)", lambda s: ", ".join(f"{h} {v['gb']}" for h, v in list(get(s, "network", "by_host", default={}).items())[:3])),
         ("Drift events (observed / declared)", lambda s: f"{get(s, 'drift', 'observed', default=0)} / {get(s, 'drift', 'declared', default=0)}"),
     ]
     return [(label, [fn(s) for s in summaries.values()]) for label, fn in spec]

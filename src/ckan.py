@@ -2,7 +2,9 @@
 
 import hashlib
 import logging
+import threading
 import time
+from collections import Counter
 
 import requests
 
@@ -19,6 +21,17 @@ SESSION = requests.Session()
 _adapter = requests.adapters.HTTPAdapter(pool_connections=16, pool_maxsize=16)
 SESSION.mount("https://", _adapter)
 SESSION.mount("http://", _adapter)
+
+
+# Failed attempts by kind (ConnectTimeout, ReadTimeout, ConnectionError...), for the network
+# figures of the report: how often each portal refused or dropped a request.
+FAILURES: Counter = Counter()
+_failures_lock = threading.Lock()
+
+
+def failures_snapshot() -> dict:
+    with _failures_lock:
+        return dict(FAILURES)
 
 
 def timeouts(read: float | None = None) -> tuple[float, float]:
@@ -38,6 +51,8 @@ def get(url: str, retries: int = 4, backoff: float = 10.0, **kwargs) -> requests
             return resp
         except requests.RequestException as exc:
             status = getattr(getattr(exc, "response", None), "status_code", None)
+            with _failures_lock:
+                FAILURES[f"HTTP {status}" if status else type(exc).__name__] += 1
             if attempt == retries or status in (401, 403, 404, 410):
                 raise
             wait = backoff * 2 ** (attempt - 1)

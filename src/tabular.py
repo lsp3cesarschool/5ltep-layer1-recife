@@ -14,6 +14,7 @@ import hashlib
 import io
 import sys
 import tempfile
+import time
 import zipfile
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -113,13 +114,18 @@ class Source:
 def open_resource(url: str):
     """Yields a Source; `digest` is complete once every table has been read to the end."""
     _decode_errors[0] = 0
+    t0 = time.monotonic()
     resp = ckan.get(url, stream=True, timeout=config.HTTP_TIMEOUT_S)
+    # Network figures: time until the server answered (connection, retries, first byte) and, for a
+    # zip, the download alone (a CSV is validated while it streams, so its time is the total).
+    timing = {"first_byte_s": round(time.monotonic() - t0, 2)}
     resp.raw.decode_content = True
     hashing = HashingReader(resp.raw)
     buffered = io.BufferedReader(hashing, PEEK * 4)
     h = resp.headers
     # Change signals of the server, compared with a HEAD request in later runs (work.py).
-    digest: dict = {"http": {"etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
+    digest: dict = {"timing": timing,
+                    "http": {"etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
                              "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None}}
     try:
         if buffered.peek(4)[:4] == b"PK\x03\x04":
@@ -133,6 +139,7 @@ def open_resource(url: str):
                         fh.write(chunk)
                         if hashing.size > config.MAX_ZIP_BYTES:
                             raise NotTabular("zip larger than MAX_ZIP_BYTES")
+                timing["download_s"] = round(time.monotonic() - t0, 2)
                 digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind="zip")
                 yield Source(_zip_tables(path, digest), digest)
         else:
