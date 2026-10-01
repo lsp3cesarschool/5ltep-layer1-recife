@@ -5,7 +5,7 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-01T23:41:06+00:00",
+ "generated_at": "2026-10-01T23:46:14+00:00",
  "census_at": "2026-10-01T20:59:48+00:00",
  "method": {
   "rotation_days": 28,
@@ -202,9 +202,8 @@
    "pdf_dictionaries_linked": 39,
    "processed": 39,
    "by_outcome": {
-    "suggested": 24,
-    "extracted": 12,
-    "llm-needed": 3
+    "suggested": 27,
+    "extracted": 12
    },
    "with_probable_typos": 6,
    "deterministic": {
@@ -215,11 +214,11 @@
     "levenshtein": 0.8161
    },
    "llm": {
-    "with_oracle": 10,
-    "recall": 0.3339,
-    "precision": 0.4013,
-    "exact_match": 0.216,
-    "levenshtein": 0.4916
+    "with_oracle": 13,
+    "recall": 0.4093,
+    "precision": 0.5028,
+    "exact_match": 0.2321,
+    "levenshtein": 0.5564
    }
   }
  },

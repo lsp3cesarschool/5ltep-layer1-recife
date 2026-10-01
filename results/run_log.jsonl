@@ -2,3 +2,6 @@
 {"at": "2026-10-01T22:26:48+00:00", "stage": "validate", "run_id": "36925192126", "done": 1081, "left": 0, "drift": 0}
 {"at": "2026-10-01T22:27:42+00:00", "stage": "extract-deterministic", "run_id": "36925192126", "processed": 39, "suggested": 37, "llm_needed": 13}
 {"at": "2026-10-01T23:28:25+00:00", "stage": "extract-llm", "run_id": "36925192126", "processed": 13, "suggested": 24, "llm_needed": 3}
+{"at": "2026-10-01T23:41:41+00:00", "stage": "validate", "run_id": "36942111923", "done": 0, "left": 0, "drift": 0}
+{"at": "2026-10-01T23:41:41+00:00", "stage": "extract-deterministic", "run_id": "36942111923", "processed": 0, "suggested": 0, "llm_needed": 3}
+{"at": "2026-10-01T23:45:49+00:00", "stage": "extract-llm", "run_id": "36942111923", "processed": 3, "suggested": 3, "llm_needed": 0}

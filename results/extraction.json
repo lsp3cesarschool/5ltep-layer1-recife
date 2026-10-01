@@ -2057,8 +2057,8 @@
   "linked_resources": [
    "0ac0e480-954c-41a5-b475-d96374e968e3"
   ],
-  "outcome": "llm-needed",
-  "stage": "deterministic",
+  "outcome": "suggested",
+  "stage": "llm",
   "deterministic": {
    "fields": 6,
    "oracle": {
@@ -2082,49 +2082,43 @@
    }
   },
   "at": "2026-10-01T22:27:29+00:00",
-  "candidate": [
-   {
-    "name": "rpa",
-    "type": "Char",
-    "size": "40",
-    "description": "Região Politico Administrativa – RPA",
-    "allowed": ""
+  "llm": {
+   "model": "qwen3:8b",
+   "model_source": "fallback",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "ollama_version": "0.35.0",
+   "prompt_version": "v1",
+   "fields": 7,
+   "oracle": {
+    "available": true,
+    "header_columns": 7,
+    "extracted": 7,
+    "recall": 0.8571,
+    "precision": 0.8571,
+    "exact_match": 0.8571,
+    "levenshtein": 0.9821,
+    "missing_from_pdf": [
+     "enderco"
+    ],
+    "not_in_file": [
+     "endereco"
+    ],
+    "probable_typos": {
+     "endereco": "enderco"
+    }
    },
-   {
-    "name": "endereco",
-    "type": "Char",
-    "size": "150",
-    "description": "Endereço dos Campos",
-    "allowed": ""
-   },
-   {
-    "name": "bairro",
-    "type": "Char",
-    "size": "100",
-    "description": "Descrição do Bairro",
-    "allowed": ""
-   },
-   {
-    "name": "latitude",
-    "type": "Num",
-    "size": "10",
-    "description": "Geocoordenadas - latitude",
-    "allowed": ""
-   },
-   {
-    "name": "longitude",
-    "type": "Num",
-    "size": "10",
-    "description": "Geocoordenadas - longitude",
-    "allowed": ""
-   },
-   {
-    "name": "privado",
-    "type": "Char",
-    "size": "3",
-    "description": "Condição do campo em privatividade",
-    "allowed": ""
-   }
+   "seconds": 76.7,
+   "pdf_chars": 417,
+   "truncated": false
+  },
+  "fields": [
+   "rpa",
+   "endereco",
+   "bairro",
+   "latitude",
+   "longitude",
+   "privado",
+   "nome"
   ]
  },
  "656ec63e-a353-4952-83e1-1adbc29933ce": {
@@ -2252,8 +2246,8 @@
   "linked_resources": [
    "7f822e13-e0ca-49ad-9d6d-5fdf44779747"
   ],
-  "outcome": "llm-needed",
-  "stage": "deterministic",
+  "outcome": "suggested",
+  "stage": "llm",
   "deterministic": {
    "fields": 6,
    "oracle": {
@@ -2276,49 +2270,42 @@
    }
   },
   "at": "2026-10-01T22:27:34+00:00",
-  "candidate": [
-   {
-    "name": "Mome",
-    "type": "Char",
-    "size": "50",
-    "description": "Nome do Museu",
-    "allowed": ""
+  "llm": {
+   "model": "qwen3:8b",
+   "model_source": "fallback",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "ollama_version": "0.35.0",
+   "prompt_version": "v1",
+   "fields": 6,
+   "oracle": {
+    "available": true,
+    "header_columns": 8,
+    "extracted": 6,
+    "recall": 0.625,
+    "precision": 0.8333,
+    "exact_match": 0.0,
+    "levenshtein": 0.7201,
+    "missing_from_pdf": [
+     "nome",
+     "site",
+     "telefone"
+    ],
+    "not_in_file": [
+     "Mome"
+    ],
+    "probable_typos": {}
    },
-   {
-    "name": "Descricao",
-    "type": "Char",
-    "size": "600",
-    "description": "Descrição sobre o museu",
-    "allowed": ""
-   },
-   {
-    "name": "Bairro",
-    "type": "Char",
-    "size": "50",
-    "description": "Bairro do Museu",
-    "allowed": ""
-   },
-   {
-    "name": "Logradouro",
-    "type": "Char",
-    "size": "100",
-    "description": "Logradouro do Museu",
-    "allowed": ""
-   },
-   {
-    "name": "Latitude",
-    "type": "Num",
-    "size": "20",
-    "description": "Coordenadas geográficas em graus decimais - Latitude",
-    "allowed": ""
-   },
-   {
-    "name": "Longitude",
-    "type": "Num",
-    "size": "20",
-    "description": "Coordenadas geográficas em graus decimais - Longitude",
-    "allowed": ""
-   }
+   "seconds": 57.2,
+   "pdf_chars": 392,
+   "truncated": false
+  },
+  "fields": [
+   "Mome",
+   "Descricao",
+   "Bairro",
+   "Logradouro",
+   "Latitude",
+   "Longitude"
   ]
  },
  "6c1e9936-8668-4bfb-a035-e9b3b8069359": {
@@ -2401,8 +2388,8 @@
   "linked_resources": [
    "d674f356-a47d-40d3-832a-006119e9927b"
   ],
-  "outcome": "llm-needed",
-  "stage": "deterministic",
+  "outcome": "suggested",
+  "stage": "llm",
   "deterministic": {
    "fields": 6,
    "oracle": {
@@ -2427,49 +2414,44 @@
    }
   },
   "at": "2026-10-01T22:27:38+00:00",
-  "candidate": [
-   {
-    "name": "Mome",
-    "type": "Char",
-    "size": "50",
-    "description": "Nome do centro de compras",
-    "allowed": ""
+  "llm": {
+   "model": "qwen3:8b",
+   "model_source": "fallback",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "ollama_version": "0.35.0",
+   "prompt_version": "v1",
+   "fields": 6,
+   "oracle": {
+    "available": true,
+    "header_columns": 10,
+    "extracted": 6,
+    "recall": 0.5,
+    "precision": 0.8333,
+    "exact_match": 0.0,
+    "levenshtein": 0.6142,
+    "missing_from_pdf": [
+     "funcionamento",
+     "funcionamentoDomingo",
+     "nome",
+     "site",
+     "telefone"
+    ],
+    "not_in_file": [
+     "Mome"
+    ],
+    "probable_typos": {}
    },
-   {
-    "name": "Descricao",
-    "type": "Char",
-    "size": "600",
-    "description": "Descrição sobre o centro de compra",
-    "allowed": ""
-   },
-   {
-    "name": "Bairro",
-    "type": "Char",
-    "size": "50",
-    "description": "",
-    "allowed": ""
-   },
-   {
-    "name": "Logradouro",
-    "type": "Char",
-    "size": "100",
-    "description": "",
-    "allowed": ""
-   },
-   {
-    "name": "Latitude",
-    "type": "Num",
-    "size": "20",
-    "description": "Coordenadas geográficas em graus decimais - Latitude",
-    "allowed": ""
-   },
-   {
-    "name": "Longitude",
-    "type": "Num",
-    "size": "20",
-    "description": "Coordenadas geográficas em graus decimais - Longitude",
-    "allowed": ""
-   }
+   "seconds": 56.2,
+   "pdf_chars": 421,
+   "truncated": false
+  },
+  "fields": [
+   "Mome",
+   "Descricao",
+   "Bairro",
+   "Logradouro",
+   "Latitude",
+   "Longitude"
   ]
  },
  "436ea9a3-2a5b-4f73-b53b-ce5f2a9ee96f": {

@@ -5,7 +5,7 @@
    "name": "Recife",
    "title": "Recife open data portal (Dados Recife)"
   },
-  "generated_at": "2026-10-01T23:41:06+00:00",
+  "generated_at": "2026-10-01T23:46:14+00:00",
   "census_at": "2026-10-01T20:59:48+00:00",
   "datasets": {
    "total": 223,
@@ -188,9 +188,8 @@
     "pdf_dictionaries_linked": 39,
     "processed": 39,
     "by_outcome": {
-     "suggested": 24,
-     "extracted": 12,
-     "llm-needed": 3
+     "suggested": 27,
+     "extracted": 12
     },
     "with_probable_typos": 6,
     "deterministic": {
@@ -201,11 +200,11 @@
      "levenshtein": 0.8161
     },
     "llm": {
-     "with_oracle": 10,
-     "recall": 0.3339,
-     "precision": 0.4013,
-     "exact_match": 0.216,
-     "levenshtein": 0.4916
+     "with_oracle": 13,
+     "recall": 0.4093,
+     "precision": 0.5028,
+     "exact_match": 0.2321,
+     "levenshtein": 0.5564
     }
    }
   },
@@ -55590,11 +55589,11 @@
    "dictionary": "Dicionário Campos Recife Bom de Bola",
    "url": "https://dados.recife.pe.gov.br:443/dataset/8d2b4558-9687-42c7-971d-f6eeeb2eac01/resource/320d38bc-b2a7-4541-b1e2-93855de62e24/download/dicionario-campos-recife-bom-de-bola.pdf",
    "files": 1,
-   "outcome": "llm-needed",
-   "stage": "deterministic",
-   "model": null,
-   "recall": 0.7143,
-   "precision": 0.8333,
+   "outcome": "suggested",
+   "stage": "llm",
+   "model": "qwen3:8b",
+   "recall": 0.8571,
+   "precision": 0.8571,
    "probable_typos": {
     "endereco": "enderco"
    },
@@ -55652,9 +55651,9 @@
    "dictionary": "Dicionário de Dados dos Museus",
    "url": "https://dados.recife.pe.gov.br:443/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd/resource/0f638f0a-7e5c-468e-983e-9ebc75a398c4/download/dicionario-de-dados-dos-museus.pdf",
    "files": 1,
-   "outcome": "llm-needed",
-   "stage": "deterministic",
-   "model": null,
+   "outcome": "suggested",
+   "stage": "llm",
+   "model": "qwen3:8b",
    "recall": 0.625,
    "precision": 0.8333,
    "probable_typos": {},
@@ -55697,9 +55696,9 @@
    "dictionary": "Dicionário de dados dos Centros de Compras",
    "url": "https://dados.recife.pe.gov.br:443/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd/resource/f97113b8-939f-4549-93d8-892dbad69a33/download/dicionario-de-dados-dos-centros-de-compras.pdf",
    "files": 1,
-   "outcome": "llm-needed",
-   "stage": "deterministic",
-   "model": null,
+   "outcome": "suggested",
+   "stage": "llm",
+   "model": "qwen3:8b",
    "recall": 0.5,
    "precision": 0.8333,
    "probable_typos": {},
@@ -55771,8 +55770,8 @@
  "history": [
   {
    "at": "2026-10-01T20:59:48+00:00",
-   "report_at": "2026-10-01T23:41:06+00:00",
-   "commit": "4ad3948",
+   "report_at": "2026-10-01T23:46:14+00:00",
+   "commit": "cb98727",
    "files": 1081,
    "read": 1035,
    "checked": 880,
