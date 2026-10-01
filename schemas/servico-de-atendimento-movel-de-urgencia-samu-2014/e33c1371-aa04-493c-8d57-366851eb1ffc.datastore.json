@@ -1,0 +1,35 @@
+{
+ "fields": [
+  {
+   "name": "viatura_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "viatura_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "distritosanitario_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tipoviatura_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tipoviatura_descricao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

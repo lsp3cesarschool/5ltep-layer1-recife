@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "mês",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código do órgão",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Descrição do órgão",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da função",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Descrição da função",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da sub-função",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Descrição da sub-função",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código do programa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Descrição do programa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da ação",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Descrição da ação",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da categoria",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Descrição da categoria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Dotação inicial",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Dotação atualizada",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Empenhado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Liquidado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Pago",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

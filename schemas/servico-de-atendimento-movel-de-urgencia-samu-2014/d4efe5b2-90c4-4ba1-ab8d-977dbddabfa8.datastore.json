@@ -1,0 +1,35 @@
+{
+ "fields": [
+  {
+   "name": "distritosanitario_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "distritosanitario_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "municipio_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "municipio_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "regiao",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

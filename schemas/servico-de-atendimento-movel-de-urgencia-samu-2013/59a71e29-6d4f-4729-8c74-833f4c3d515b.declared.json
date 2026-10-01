@@ -1,0 +1,41 @@
+{
+ "fields": [
+  {
+   "name": "bairrosaude_codigo",
+   "type": "number",
+   "description": "Código do bairro",
+   "declaredType": "NUMBER",
+   "declaredSize": 4
+  },
+  {
+   "name": "bairrosaude_descricao",
+   "type": "string",
+   "description": "Descrição do bairro",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "distritosanitario_codigo",
+   "type": "number",
+   "description": "Código do distrito sanitário [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Distrito Sanitário']",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8546ee26-3932-4d3a-8247-1732ae8411a8",
+   "dictionary_name": "Dicionário de dados do SAMU - Lista de Bairros",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/9d58e9ab-6640-442e-b0fc-3429d0f8b2d2/resource/8546ee26-3932-4d3a-8247-1732ae8411a8/download/dicionario-de-dados-do-samu-lista-de-bairros.json",
+   "sha256": "cb458fa948df61d1117e20828a3a706edf930b4d068bdbd8bf505d7eab69a9c0",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

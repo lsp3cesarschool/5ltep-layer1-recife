@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "codlogradouro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_logradouro_concatenado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_oficial_logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_logradouro_resumido",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_indica_pavimentacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "desc_indica_pavimentacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "indica_corredor_transporte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "indica_perimetral",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codbairro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nomeBairro",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

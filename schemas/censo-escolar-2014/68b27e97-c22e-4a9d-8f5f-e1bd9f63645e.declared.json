@@ -1,0 +1,64 @@
+{
+ "fields": [
+  {
+   "name": "codigo_area",
+   "type": "number",
+   "description": "Código da área [Allowed values, as declared: 1 a 9]",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "description": "Nome da área",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "codigo_instituicao",
+   "type": "string",
+   "description": "Código da instituição",
+   "constraints": {
+    "maxLength": 6
+   },
+   "declaredType": "Char",
+   "declaredSize": 6
+  },
+  {
+   "name": "nome_formacao",
+   "type": "string",
+   "description": "Nome da formação",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "grau_academico",
+   "type": "string",
+   "description": "Grau acadêmico [Allowed values, as declared: Licenciatura, bacharelado, tecnológico]",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "Char",
+   "declaredSize": 15
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "58787c18-0cd5-4931-9afd-d5cbbefd0c50",
+   "dictionary_name": "Dicionário de Dados do Censo Escolar (Lista de cursos de formação superior dos docentes)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/cfdd7814-fcbc-4a37-adc8-fdb8406171b7/resource/58787c18-0cd5-4931-9afd-d5cbbefd0c50/download/dicionario-de-dados-do-censo-escolar-lista-de-cursos-de-formacao-superior-dos-docentes.json",
+   "sha256": "13b8deb1acc4b8f78b834687f46040a8435569283a19abfec1c1562654728edf",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

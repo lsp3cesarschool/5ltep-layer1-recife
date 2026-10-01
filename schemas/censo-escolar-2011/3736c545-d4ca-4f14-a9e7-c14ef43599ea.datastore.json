@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "matricula_aluno",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "etapa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "outro_espaco",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "transporte_publico",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

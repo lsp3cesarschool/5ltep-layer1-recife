@@ -1,0 +1,131 @@
+{
+ "fields": [
+  {
+   "name": "data",
+   "type": "datetime",
+   "description": "Data e hora da solicitação (call center) [Allowed values, as declared: formato ISO, aaaa-mm-dd]",
+   "declaredType": "DATETIME",
+   "declaredSize": 10
+  },
+  {
+   "name": "hora_minuto",
+   "type": "datetime",
+   "description": "hora e minuto do chamado (call center) [Allowed values, as declared: formato hh24:mi]",
+   "declaredType": "DATETIME",
+   "declaredSize": 10
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "description": "município do chamado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro do Chamado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "endereço do Chamado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "origem_chamado",
+   "type": "string",
+   "description": "Origem do Chamado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Descrição da situação da solicitação",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "subtipo",
+   "type": "string",
+   "description": "Descrição do subtipo da situação da solicitação",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "description": "Sexo do paciente [Allowed values, as declared: feminino, masculino]",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "idade",
+   "type": "string",
+   "description": "Idade do paciente",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 3
+  },
+  {
+   "name": "motivo_finalizacao",
+   "type": "string",
+   "description": "Motivo da finalização do chamado",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "motivo_desfecho",
+   "type": "string",
+   "description": "Motivo do desfecho do atendimento",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1d6de563-2660-4b87-9dd2-80d811bc5b8c",
+   "dictionary_name": "Dicionário de Dados - Chamados Samu 2019",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/547b753e-602d-427b-b444-1a7f63166aec/resource/1d6de563-2660-4b87-9dd2-80d811bc5b8c/download/dicionario-de-dados-chamados-samu-2019.json",
+   "sha256": "44ee0679ef8944a91da980e7f63f0bd0e4627fe014ca517bcc7cf7f615cfdae1",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "single"
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "num_contrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "num_termoaditivo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "justificativa_termoaditivo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_inicio_vigencia",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_fim_vigencia",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "valor_termoaditivo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "situacao_termoaditivo",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "integer",
+   "description": "Ano de Competência",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Mês",
+   "type": "integer",
+   "description": "Mês de Competência",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Código da Função",
+   "type": "number",
+   "description": "Código da função",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Função",
+   "type": "string",
+   "description": "Descrição da função",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "String",
+   "declaredSize": 55
+  },
+  {
+   "name": "Código de Sub-função",
+   "type": "number",
+   "description": "Código da sub-função",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Sub-função",
+   "type": "string",
+   "description": "Descrição da sub-função",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "String",
+   "declaredSize": 120
+  },
+  {
+   "name": "Código de Programa",
+   "type": "integer",
+   "description": "Código do programa",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Programa",
+   "type": "string",
+   "description": "Descrição do programa",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "String",
+   "declaredSize": 120
+  },
+  {
+   "name": "Código da Ação",
+   "type": "integer",
+   "description": "Código da ação",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Ação",
+   "type": "string",
+   "description": "Descrição da ação",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "String",
+   "declaredSize": 200
+  },
+  {
+   "name": "Código da Fonte",
+   "type": "integer",
+   "description": "Código da fonte",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Fonte",
+   "type": "string",
+   "description": "Descrição da fonte",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "String",
+   "declaredSize": 55
+  },
+  {
+   "name": "Dotação Inicial",
+   "type": "number",
+   "description": "Dotação inicial",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Dotação Atualizada",
+   "type": "number",
+   "description": "Dotação atualizada",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "description": "Valor Empenhado",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Liquidado",
+   "type": "number",
+   "description": "Valor Liquidado",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Pago",
+   "type": "number",
+   "description": "Valor Pago",
+   "declaredType": "Number",
+   "declaredSize": 15
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "d3c73ee0-cb0e-466e-af4a-c0179252aac1",
+   "dictionary_name": "Metadados de Despesa Funcional Programática",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/63f7941b-9a1e-4a49-893b-d5f16e2134d8/resource/d3c73ee0-cb0e-466e-af4a-c0179252aac1/download/metadados-de-despesa-funcional-programatica.json",
+   "sha256": "34f807c1b54705e902d73ad33da2beaca824f603d802a502c511f54f475d21f4",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

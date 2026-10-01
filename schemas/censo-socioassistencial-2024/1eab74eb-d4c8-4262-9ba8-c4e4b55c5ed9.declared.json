@@ -1,0 +1,374 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "IBGE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_3",
+   "type": "any",
+   "description": "q74_3_Sexo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_5",
+   "type": "any",
+   "description": "q74_5_Escolaridade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_6",
+   "type": "any",
+   "description": "q74_6_Representação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_7",
+   "type": "any",
+   "description": "q74_7_Função",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_8",
+   "type": "any",
+   "description": "q74_8_Data de Início do mandato",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_9",
+   "type": "any",
+   "description": "q74_9_Data de término do mandato",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Região",
+   "type": "any",
+   "description": "Região",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "any",
+   "description": "Q_incompleto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DataCenso",
+   "type": "any",
+   "description": "COMPUTE DataCenso=\"31.08.2024\"",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "any",
+   "description": "DataCenso recodificada",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "any",
+   "description": "Faixas etárias dos Conselheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_8_rec",
+   "type": "any",
+   "description": "q74_8_Data de Início do mandato recodificada",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74_9_rec",
+   "type": "any",
+   "description": "q74_9_Data de término do mandato recodificada",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Tempo_Mandato",
+   "type": "any",
+   "description": "Tempo de mandato dos Conselheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_5",
+   "type": "any",
+   "description": "d74_5_Níveis de escolaridade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_5bin1",
+   "type": "any",
+   "description": "d74_5bin1_Nível fundamental - Conselheiros que possuem até o nível médio (inclui aqueles sem escolaridade)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_5bin2",
+   "type": "any",
+   "description": "d74_5bin2_Nível médio - Conselheiros com ensino superior incompleto e ensino médio completo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_5bin3",
+   "type": "any",
+   "description": "d74_5bin3_Nível superior - inclui Conselheiros graduados, com especialização, mestrado ou doutorado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin1",
+   "type": "any",
+   "description": "d74_6bin1_Representante de usuários e organização de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin2",
+   "type": "any",
+   "description": "d74_6bin2_.Representante de Entidades de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin3",
+   "type": "any",
+   "description": "d74_6bin3_Representante de organização dos trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin4",
+   "type": "any",
+   "description": "d74_6bin4_Representante do Governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin5",
+   "type": "any",
+   "description": "d74_6bin5_Representante da Sociedade Civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin1_TIT",
+   "type": "any",
+   "description": "d74_6bin1_TIT_Representante Titular de usuários e organização de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin1_SUPL",
+   "type": "any",
+   "description": "d74_6bin1_SUPL_Representante Suplente de usuários e organização de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin2_TIT",
+   "type": "any",
+   "description": "d74_6bin2_TIT_Representante Titular de Entidades de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin2_SUPL",
+   "type": "any",
+   "description": "d74_6bin2_SUPL_Representante Suplente de Entidades de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin3_TIT",
+   "type": "any",
+   "description": "d74_6bin3_TIT_Representante Titular de organização dos trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin3_SUPL",
+   "type": "any",
+   "description": "d74_6bin3_SUPL_Representante Suplente de organização dos trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin4_TIT",
+   "type": "any",
+   "description": "d74_6bin4_TIT_Representante Titular do Governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin4_SUPL",
+   "type": "any",
+   "description": "d74_6bin4_SUPL_Representante Suplente do Governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin5_TIT",
+   "type": "any",
+   "description": "d74_6bin5_TIT_Representante Titular da Sociedade Civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin5_SUPL",
+   "type": "any",
+   "description": "d74_6bin5_SUPL_Representante Suplente da Sociedade Civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin1_sum",
+   "type": "any",
+   "description": "d74_6bin1_sum_Representante de usuários e organização de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin2_sum",
+   "type": "any",
+   "description": "d74_6bin2_sum_Representante de Entidades de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin3_sum",
+   "type": "any",
+   "description": "d74_6bin3_sum_Representante de organização dos trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin4_sum",
+   "type": "any",
+   "description": "d74_6bin4_sum_Representante do Governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin5_sum",
+   "type": "any",
+   "description": "d74_6bin5_sum_Representante da Sociedade Civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin1_TIT_sum",
+   "type": "any",
+   "description": "d74_6bin1_TIT_sum.Representante Titular de usuários e organização de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin1_SUPL_sum",
+   "type": "any",
+   "description": "d74_6bin1_SUPL_sum.Representante Suplente de usuários e organização de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin2_TIT_sum",
+   "type": "any",
+   "description": "d74_6bin2_TIT_sum.Representante Titular de Entidades de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin2_SUPL_sum",
+   "type": "any",
+   "description": "d74_6bin2_SUPL_sum.Representante Suplente de Entidades de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin3_TIT_sum",
+   "type": "any",
+   "description": "d74_6bin3_TIT_sum.Representante Titular de organização dos trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin3_SUPL_sum",
+   "type": "any",
+   "description": "d74_6bin3_SUPL_sum.Representante Suplente de organização dos trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin4_TIT_sum",
+   "type": "any",
+   "description": "d74_6bin4_TIT_sum.Representante Titular do Governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin4_SUPL_sum",
+   "type": "any",
+   "description": "d74_6bin4_SUPL_sum.Representante Suplente do Governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin5_TIT_sum",
+   "type": "any",
+   "description": "d74_6bin5_TIT_sum.Representante Titular da Sociedade Civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d74_6bin5_SUPL_sum",
+   "type": "any",
+   "description": "d74_6bin5_SUPL_sum.Representante Suplente da Sociedade Civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "nu_conselheiros",
+   "type": "any",
+   "description": "Quantidade de conselheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "045e2c3d-86af-4a01-ac3e-898d54827218",
+   "dictionary_name": "Conselho Municipal Dicionario de variaveis.xlsx",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/045e2c3d-86af-4a01-ac3e-898d54827218/download/censo_suas_2024_conselho_municipal_dicionario_de_variaveis.xlsx",
+   "sha256": "01afe50dceca0b55729df5955c5bbf6a2c71a18c022887caae651da8215fdcdd",
+   "reader": "xlsx",
+   "part": "RH",
+   "link_method": "name"
+  }
+ }
+}

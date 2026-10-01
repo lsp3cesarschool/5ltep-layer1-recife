@@ -1,0 +1,132 @@
+{
+ "fields": [
+  {
+   "name": "tipo_equipamento",
+   "type": "string",
+   "description": "Tipo de Equipamento utilizado [Allowed values, as declared: FIXO, MÓVEL]",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "registro_inmetro",
+   "type": "string",
+   "description": "Registro do Equipamento junto ao Inmetro",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "numero_serie_fabricante",
+   "type": "string",
+   "description": "Númeração de série do equipamento",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "identificacao",
+   "type": "string",
+   "description": "Código de identificação do Equipamento",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "local_instalacao",
+   "type": "string",
+   "description": "Endereço de instação do Equipamento",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "sentifo_fiscalizacao",
+   "type": "string",
+   "description": "SEntido de fiscalização do Equipamento",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "faixas_fiscalizadas",
+   "type": "number",
+   "description": "Número de faixas fiscalizadas pelo Equipamento",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "fluxo_veiculo",
+   "type": "number",
+   "description": "Fluxo de carros",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "velocidade_fiscalizada",
+   "type": "string",
+   "description": "Velocidade máxima permitida na via",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "vmd",
+   "type": "number",
+   "description": "volume médio diário de veículos da via",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "periodo_vmd",
+   "type": "string",
+   "description": "Período de análise do volume médio diário de veículos da via",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "3e2ad9c3-349f-444a-84ab-ed823d86a5f5",
+   "dictionary_name": "Dicionário de dados dos Equipamentos de fiscalização de trânsito",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/9acffb30-ed06-4b16-84ff-710478f18760/resource/3e2ad9c3-349f-444a-84ab-ed823d86a5f5/download/dicionario-de-dados-dos-equipamentos-de-fiscalizacao-de-transito.json",
+   "sha256": "c781108772a82169fec40fc46ceb71370b11ca5e79674a6216c9264f0f40b934",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

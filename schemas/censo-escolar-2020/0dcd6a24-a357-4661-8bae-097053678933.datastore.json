@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "grupo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "area_conhecimento_componente_curricular",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome do Equipamento",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do Equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "5543f643-6bc1-4089-9a27-bf1611589302",
+   "dictionary_name": "Dicionário de dados dos Equipamentos de Monitoramento",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/9acffb30-ed06-4b16-84ff-710478f18760/resource/5543f643-6bc1-4089-9a27-bf1611589302/download/dicionario-de-dados-dos-equipamentos-de-monitoramento.json",
+   "sha256": "dae494a1463cd4f3d75c752f3caa6615009c10216e96f5d2c6db25311867f187",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

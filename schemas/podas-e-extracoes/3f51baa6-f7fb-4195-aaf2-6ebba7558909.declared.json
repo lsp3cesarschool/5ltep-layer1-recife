@@ -1,0 +1,71 @@
+{
+ "fields": [
+  {
+   "name": "cnpj",
+   "type": "string",
+   "description": "CNPJ da emprea que efetuou a ação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "nome da empresa que efeuou a ação",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "endereço da empresa que efetuou a erradicação",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "especie",
+   "type": "string",
+   "description": "espécie erradicada",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "qtd_podada",
+   "type": "number",
+   "description": "número de indivíduos podados",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "ano",
+   "type": "number",
+   "description": "Ano da ação",
+   "declaredType": "Num",
+   "declaredSize": 4
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "3779e181-16a8-428b-aaed-632496bcb047",
+   "dictionary_name": "Dicionário de dados - Podas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/c24bb36a-7d47-48de-a768-5133eb3a8326/resource/3779e181-16a8-428b-aaed-632496bcb047/download/dicionario-de-dados-podas.json",
+   "sha256": "54d260bf485820b1c8ccaea42e8f98ca97e890c2f5f27323f6cee0bad50a2f6b",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

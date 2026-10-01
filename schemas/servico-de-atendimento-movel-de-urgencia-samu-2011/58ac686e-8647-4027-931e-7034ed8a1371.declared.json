@@ -1,0 +1,58 @@
+{
+ "fields": [
+  {
+   "name": "viatura_codigo",
+   "type": "number",
+   "description": "Código da ambulância [Allowed values, as declared: Inteiro]",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "viatura_descricao",
+   "type": "string",
+   "description": "Descrição da ambulância",
+   "constraints": {
+    "maxLength": 230
+   },
+   "declaredType": "VARCHAR",
+   "declaredSize": 230
+  },
+  {
+   "name": "distritosanitario_codigo",
+   "type": "number",
+   "description": "Código do distrito [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela do distrito']",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "tipoviatura_codigo",
+   "type": "number",
+   "description": "Tipo da ambulância",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "tipoviatura_descricao",
+   "type": "string",
+   "description": "Descrição do tipo de viatura",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "VARCHAR",
+   "declaredSize": 250
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "9ccb346f-a216-4671-a1bc-c39a0022a0e9",
+   "dictionary_name": "Dicionário de dados do SAMU - Lista de viaturas de atendimento",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/2bce8023-352a-4b02-a818-4842141e5d84/resource/9ccb346f-a216-4671-a1bc-c39a0022a0e9/download/dicionario-de-dados-do-samu-lista-de-viaturas-de-atendimento.json",
+   "sha256": "74fb295131f7f26fadb9c27b0cfc7160e7037b16c6b55b04dadf96db7eaceefa",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

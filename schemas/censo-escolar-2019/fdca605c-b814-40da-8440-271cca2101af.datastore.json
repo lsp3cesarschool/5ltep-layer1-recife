@@ -1,0 +1,1180 @@
+{
+ "fields": [
+  {
+   "name": "NU_ANO_CENSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_ENTIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NO_ENTIDADE",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CO_ORGAO_REGIONAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_SITUACAO_FUNCIONAMENTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_ANO_LETIVO_INICIO",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "DT_ANO_LETIVO_TERMINO",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "CO_REGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MESORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MICRORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_DISTRITO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_DEPENDENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO_DIFERENCIADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_VINCULO_SECRETARIA_EDUCACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_VINCULO_SEGURANCA_PUBLICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_VINCULO_SECRETARIA_SAUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_VINCULO_OUTRO_ORGAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CATEGORIA_ESCOLA_PRIVADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_CONVENIADA_PP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CONVENIO_PODER_PUBLICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_EMP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_ONG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_OSCIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIV_ONG_OSCIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIND",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIST_S",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_S_FINS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_REGULAMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_RESPONSAVEL_REGULAMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_ESCOLA_SEDE_VINCULADA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CO_IES_OFERTANTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_PREDIO_ESCOLAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_OCUPACAO_PREDIO_ESCOLAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_SOCIOEDUCATIVO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_UNID_PRISIONAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_PRISIONAL_SOCIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_GALPAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_OCUPACAO_GALPAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_SALAS_OUTRA_ESC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LOCAL_FUNC_OUTROS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PREDIO_COMPARTILHADO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AGUA_POTAVEL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AGUA_REDE_PUBLICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AGUA_POCO_ARTESIANO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AGUA_CACIMBA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AGUA_FONTE_RIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AGUA_INEXISTENTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ENERGIA_REDE_PUBLICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ENERGIA_GERADOR_FOSSIL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ENERGIA_RENOVAVEL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ENERGIA_INEXISTENTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESGOTO_REDE_PUBLICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESGOTO_FOSSA_SEPTICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESGOTO_FOSSA_COMUM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESGOTO_FOSSA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESGOTO_INEXISTENTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LIXO_SERVICO_COLETA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LIXO_QUEIMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LIXO_ENTERRA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LIXO_DESTINO_FINAL_PUBLICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LIXO_DESCARTA_OUTRA_AREA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TRATAMENTO_LIXO_SEPARACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TRATAMENTO_LIXO_REUTILIZA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TRATAMENTO_LIXO_RECICLAGEM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TRATAMENTO_LIXO_INEXISTENTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ALMOXARIFADO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AREA_VERDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AUDITORIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BANHEIRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BANHEIRO_EI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BANHEIRO_PNE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BANHEIRO_FUNCIONARIOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BANHEIRO_CHUVEIRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BIBLIOTECA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BIBLIOTECA_SALA_LEITURA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COZINHA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DESPENSA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DORMITORIO_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DORMITORIO_PROFESSOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LABORATORIO_CIENCIAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_LABORATORIO_INFORMATICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PATIO_COBERTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PATIO_DESCOBERTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PARQUE_INFANTIL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PISCINA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_QUADRA_ESPORTES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_QUADRA_ESPORTES_COBERTA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_QUADRA_ESPORTES_DESCOBERTA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_REFEITORIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_ATELIE_ARTES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_MUSICA_CORAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_ESTUDIO_DANCA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_MULTIUSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_DIRETORIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_LEITURA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_PROFESSOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_REPOUSO_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SECRETARIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SALA_ATENDIMENTO_ESPECIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TERREIRAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_VIVEIRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEPENDENCIAS_OUTRAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_CORRIMAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_ELEVADOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_PISOS_TATEIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_VAO_LIVRE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_RAMPAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_SINAL_SONORO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_SINAL_TATIL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_SINAL_VISUAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSIBILIDADE_INEXISTENTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_SALAS_UTILIZADAS_DENTRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_SALAS_UTILIZADAS_FORA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_SALAS_UTILIZADAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_SALAS_UTILIZA_CLIMATIZADAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_SALAS_UTILIZADAS_ACESSIVEIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_PARABOLICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMPUTADOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_COPIADORA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_IMPRESSORA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_IMPRESSORA_MULT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_SCANNER",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_DVD",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_EQUIP_DVD",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_SOM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_EQUIP_SOM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_TV",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_EQUIP_TV",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_LOUSA_DIGITAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_EQUIP_LOUSA_DIGITAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EQUIP_MULTIMIDIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_EQUIP_MULTIMIDIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DESKTOP_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_DESKTOP_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMP_PORTATIL_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_COMP_PORTATIL_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TABLET_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_TABLET_ALUNO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_INTERNET",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_INTERNET_ALUNOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_INTERNET_ADMINISTRATIVO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_INTERNET_APRENDIZAGEM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_INTERNET_COMUNIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACESSO_INTERNET_COMPUTADOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ACES_INTERNET_DISP_PESSOAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_REDE_LOCAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BANDA_LARGA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_ADMINISTRATIVOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_SERVICOS_GERAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_BIBLIOTECARIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_SAUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_COORDENADOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_FONAUDIOLOGO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_NUTRICIONISTA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_PSICOLOGO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_ALIMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_PEDAGOGIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_SECRETARIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_SEGURANCA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "QT_PROF_MONITORES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ALIMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SERIE_ANO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PERIODOS_SEMESTRAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_FUNDAMENTAL_CICLOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_GRUPOS_NAO_SERIADOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MODULOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_FORMACAO_ALTERNANCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_MULTIMIDIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_INFANTIL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_CIENTIFICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_DIFUSAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_MUSICAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_JOGOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_ARTISTICAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_DESPORTIVA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_ETNICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MATERIAL_PED_CAMPO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EDUCACAO_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_INDIGENA_LINGUA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CO_LINGUA_INDIGENA_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CO_LINGUA_INDIGENA_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CO_LINGUA_INDIGENA_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_EXAME_SELECAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RESERVA_PPI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RESERVA_RENDA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RESERVA_PUBLICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RESERVA_PCD",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RESERVA_OUTROS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RESERVA_NENHUMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_REDES_SOCIAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPACO_ATIVIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPACO_EQUIPAMENTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORGAO_ASS_PAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORGAO_ASS_PAIS_MESTRES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORGAO_CONSELHO_ESCOLAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORGAO_GREMIO_ESTUDANTIL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORGAO_OUTROS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORGAO_NENHUM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_PROPOSTA_PEDAGOGICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_AEE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_ATIVIDADE_COMPLEMENTAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MEDIACAO_PRESENCIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MEDIACAO_SEMIPRESENCIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MEDIACAO_EAD",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIAL_EXCLUSIVA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_REGULAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EJA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PROFISSIONALIZANTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_CRECHE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_PRE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_FUND_AI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_FUND_AF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_MEDIO_MEDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_MEDIO_INTEGRADO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_MEDIO_NORMAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_CRECHE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_PRE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_FUND_AI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_FUND_AF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_MEDIO_MEDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_MEDIO_INTEGR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_MEDIO_NORMAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_EJA_FUND",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_EJA_MEDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_EJA_PROF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_EJA_FUND",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_EJA_MEDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_EJA_PROF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUM_PROF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESP_EXCLUSIVA_PROF",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

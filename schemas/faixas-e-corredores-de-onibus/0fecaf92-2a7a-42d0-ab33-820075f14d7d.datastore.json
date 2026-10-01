@@ -1,0 +1,40 @@
+{
+ "fields": [
+  {
+   "name": "faixa_azul",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "detalhe",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "extensão",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "mes_implantacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ano_implantacao",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

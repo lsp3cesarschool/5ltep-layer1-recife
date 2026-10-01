@@ -1,0 +1,120 @@
+{
+ "fields": [
+  {
+   "name": "cnpj",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "razao_social",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_fantasia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero_residencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero_lote",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_bairro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao_empresa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_abertura_empresa",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_encerramento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "cod_grupo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_grupo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cnae",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "desc_atividade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "atividade_principal",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "atividade_vig_sanitaria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "atividade_predominante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "incomodo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

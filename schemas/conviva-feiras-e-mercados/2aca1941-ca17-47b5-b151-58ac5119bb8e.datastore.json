@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "Nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Localização",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Dias",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Horário",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Observação",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

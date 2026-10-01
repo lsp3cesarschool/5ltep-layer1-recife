@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "mes",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cod_categoria",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "desc_categoria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_grupo_despesa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "desc_grupo_despesa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_modalidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "desc_modalidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_elemento",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "desc_elemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_sub_elemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "desc_sub_elemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_fonte",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "desc_fonte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Liquidação",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Pagamento",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dotacao_inicial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dotacao_atualizada",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

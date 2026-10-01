@@ -1,0 +1,35 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "categoria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "equipe",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cartao_amarelo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cartao_vermelho",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

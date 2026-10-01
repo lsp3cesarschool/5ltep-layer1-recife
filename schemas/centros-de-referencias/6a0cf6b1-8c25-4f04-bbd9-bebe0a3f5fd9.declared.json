@@ -1,0 +1,172 @@
+{
+ "fields": [
+  {
+   "name": "nome_oficial",
+   "type": "string",
+   "description": "Nome da Unidade de atendimento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "description": "Região Politico Administrativa",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "distrito_sanitario",
+   "type": "number",
+   "description": "distrito sanitário - compreende uma área geográfica que comporta uma população com características epidemiológicas e sociais e suas necessidades, e os recursos de saúde para atendê-la",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "micro_regiao",
+   "type": "string",
+   "description": "Subdivião de Região Político-Administrativa (Microrregião)",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "char",
+   "declaredSize": 3
+  },
+  {
+   "name": "cnes",
+   "type": "number",
+   "description": "Código no Cadastro Nacional de Estabelecimentos de Saúde",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "cod_nat",
+   "type": "string",
+   "description": "Natureza do Serviço [Allowed values, as declared: Próprio, Parceria]",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "tipo_servico",
+   "type": "string",
+   "description": "Tipo de serviço oferecido",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço (Logradouro, número da residência)",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Nome do Bairro",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "fone",
+   "type": "string",
+   "description": "Telefone de contato",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "servico",
+   "type": "string",
+   "description": "Tipo do serviço",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "especialidade",
+   "type": "string",
+   "description": "especialidade do serviço",
+   "constraints": {
+    "maxLength": 300
+   },
+   "declaredType": "Char",
+   "declaredSize": 300
+  },
+  {
+   "name": "como_usar",
+   "type": "string",
+   "description": "explica com utilizar o serviço",
+   "constraints": {
+    "maxLength": 300
+   },
+   "declaredType": "Char",
+   "declaredSize": 300
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "description": "Horário das aulas/exercício",
+   "constraints": {
+    "maxLength": 300
+   },
+   "declaredType": "Char",
+   "declaredSize": 300
+  },
+  {
+   "name": "ordem",
+   "type": "string",
+   "description": "número de ordem. Utilizado internamente",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "char",
+   "declaredSize": 15
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8ca94aa2-f86c-4b31-b1f6-f1781fe52243",
+   "dictionary_name": "Dicionário de dados dos Centros de Referência",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/92c2a3d3-1e3d-4036-b35f-0472181017d6/resource/8ca94aa2-f86c-4b31-b1f6-f1781fe52243/download/dicionario-de-dados-dos-centros-de-referencia.json",
+   "sha256": "4dbea48d61bce8320cd448cbfceaa52ab0f4d2869af8c4f889c77d83d8e280d1",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

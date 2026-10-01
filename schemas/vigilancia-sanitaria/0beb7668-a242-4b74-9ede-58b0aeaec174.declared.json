@@ -1,0 +1,71 @@
+{
+ "fields": [
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "Rua e complemento",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro da unidade.",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "description": "campo de observacao",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "abrangencia",
+   "type": "string",
+   "description": "Bairros por Unidade de Vigilância Sanitária",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1a057907-6f72-4ac3-953e-ec5ed8500f4c",
+   "dictionary_name": "Dicionário de Dados das Unidades da Vigilância Sanitária",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/fea902af-824f-4be0-b8e8-2310a44c21ea/resource/1a057907-6f72-4ac3-953e-ec5ed8500f4c/download/dicionario-de-dados-das-unidades-da-vigilancia-sanitaria.json",
+   "sha256": "89b9912b96db4d3bbd91058f6f78e52c18905cf865e398c08b3b14cd26737d62",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

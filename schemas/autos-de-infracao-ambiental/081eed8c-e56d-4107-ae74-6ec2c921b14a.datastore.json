@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ, CPF OU SEQUENCIAL DO IMÓVEL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "RAZÃO SOCIAL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "NOME FANTASIA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ENDEREÇO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "DATA DA VISTORIA",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "Nº AUTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "INFRAÇÕES",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

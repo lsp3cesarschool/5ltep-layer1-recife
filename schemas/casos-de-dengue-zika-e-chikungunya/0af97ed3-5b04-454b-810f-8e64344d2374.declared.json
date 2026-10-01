@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "Nº Localidade",
+   "type": "number",
+   "description": "Númeração da Localidade",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "Nome Localidade",
+   "type": "string",
+   "description": "Nome Localidade",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "Nome Município",
+   "type": "string",
+   "description": "Nome Município",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "ccd9e7f9-9187-446e-9382-beacf487c9a1",
+   "dictionary_name": "Metadados da Tabela de Bairros",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/ccd9e7f9-9187-446e-9382-beacf487c9a1/download/metadados-da-tabela-de-bairros.json",
+   "sha256": "9c4ca8b0d931b964a2d85a09daa73eaa2bcfe36eca9199bc4b493c4b0f7d7b39",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

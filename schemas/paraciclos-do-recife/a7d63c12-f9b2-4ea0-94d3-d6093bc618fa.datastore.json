@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "ano_implantacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "referencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "quantidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "vagas",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

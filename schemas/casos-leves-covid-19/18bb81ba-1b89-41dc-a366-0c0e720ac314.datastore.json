@@ -1,0 +1,90 @@
+{
+ "fields": [
+  {
+   "name": "sintomas",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "outros_sintomas",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "resultado_final",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "raca_cor",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "municipio_residencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "evolucao_caso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "profissional_saude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "idade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ds",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "classificacao_final",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_notificacao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_inicio_sintomas",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "etnia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cbo",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

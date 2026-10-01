@@ -1,0 +1,41 @@
+{
+ "fields": [
+  {
+   "name": "hospital_codigo",
+   "type": "number",
+   "description": "Código do hospital",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "hospital_nome",
+   "type": "string",
+   "description": "Nome da unidade hospitalar",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "bairrosaude_codigo",
+   "type": "number",
+   "description": "Código do bairro [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela do Bairro']",
+   "declaredType": "NUMBER",
+   "declaredSize": 4
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "f655d815-cd02-4ddf-954b-aad95269e7c5",
+   "dictionary_name": "Dicionário de dados do SAMU - Lista de hospitais",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/2bce8023-352a-4b02-a818-4842141e5d84/resource/f655d815-cd02-4ddf-954b-aad95269e7c5/download/dicionario-de-dados-do-samu-lista-de-hospitais.json",
+   "sha256": "2044390d34b6d034a124e45c06e7ab2e0ac1d08c399024f8472e99c559314a48",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "Eixo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_curso",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_educacao_prof_tecnica",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

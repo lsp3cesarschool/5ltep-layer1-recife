@@ -1,0 +1,20 @@
+{
+ "fields": [
+  {
+   "name": "Bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

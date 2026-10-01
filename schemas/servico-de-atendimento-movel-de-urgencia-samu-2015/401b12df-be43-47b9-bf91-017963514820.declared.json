@@ -1,0 +1,58 @@
+{
+ "fields": [
+  {
+   "name": "distritosanitario_codigo",
+   "type": "number",
+   "description": "Código do distrito sanitário",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "distritosanitario_descricao",
+   "type": "string",
+   "description": "Descrição do distrito sanitário",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "municipio_codigo",
+   "type": "number",
+   "description": "CEP das cidades",
+   "declaredType": "NUMBER",
+   "declaredSize": 8
+  },
+  {
+   "name": "municipio_descricao",
+   "type": "string",
+   "description": "Descrição do município",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 55
+  },
+  {
+   "name": "regiao",
+   "type": "number",
+   "description": "Código das regiões [Allowed values, as declared: 1=Recife, 2=Norte, 3=Sul]",
+   "declaredType": "NUMBER",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "d9463a84-391f-4992-8690-444d32aa1e32",
+   "dictionary_name": "Dicionário de dados do SAMU - Lista dos distritos sanitários",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/22707711-9039-45fa-99fe-8771a9b17f99/resource/d9463a84-391f-4992-8690-444d32aa1e32/download/dicionario-de-dados-do-samu-lista-dos-distritos-sanitarios.json",
+   "sha256": "6972b75661fcd2f5ea3148402202766f7666432d2472f29a0b2f47109aeb8bee",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

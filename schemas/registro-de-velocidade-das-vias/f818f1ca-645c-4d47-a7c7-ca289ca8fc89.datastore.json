@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "CODIGO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "LOCAL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "SENTIDO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "FAIXA",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

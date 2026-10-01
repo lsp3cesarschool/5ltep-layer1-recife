@@ -1,0 +1,110 @@
+{
+ "fields": [
+  {
+   "name": "tipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "hora",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "natureza",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "auto",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "moto",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ciclom",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ciclista",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "pedestre",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "onibus",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "caminhao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "viatura",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "outros",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "vitimas",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

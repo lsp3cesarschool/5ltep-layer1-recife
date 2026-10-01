@@ -1,0 +1,130 @@
+{
+ "fields": [
+  {
+   "name": "tipo_atendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_chamado",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "hora_chamado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_ocorrencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "auto",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "moto",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ciclomotor",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ciclista",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "pedestre",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "onibus",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "caminhao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "viatura",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "outro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "vitimas",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "hora_aviso_equipe",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "hora_chegada",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "hora_saida",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "detalhes",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tempo_total",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,635 @@
+{
+ "fields": [
+  {
+   "name": "nu_notificacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_notificacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_cid",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dt_notificacao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "ds_semana_notificacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "notificacao_ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_uf_notificacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_municipio_notificacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "id_regional",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_unidade_notificacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_diagnostico_sintoma",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "ds_semana_sintoma",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_nascimento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "nu_idade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_sexo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tp_gestante",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_raca_cor",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_escolaridade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_uf_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_municipio_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_regional_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_distrito_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_bairro_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "no_bairro_residencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "co_logradouro_residencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_logradouro_residencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nu_cep_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_zona_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_pais_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_investigacao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "co_cbo_ocupacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "febre",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "mialgia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cefaleia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "exantema",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "vomito",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nausea",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dor_costas",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "conjutivite",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "artrite",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "artralgia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "petequia_n",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "leucopenia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "laco",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dor_retro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "diabetes",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "hematolog",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "hepatopat",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "renal",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "hipertensao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "acido_pept",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "auto_imune",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_chil_s1",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "dt_chil_s2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dt_prnt",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "res_chiks1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "res_chiks2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "resul_prnt",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_coleta_exame",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "tp_result_exame",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_coleta_NS1",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "Tp_result_NS1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_coleta_isolamento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "tp_result_isolamento",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_coleta_rtpcr",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "tp_result_rtpcr",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_sorotipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tp_result_histopatologia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_result_imunohistoquimica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "st_ocorreu_hospitalizacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_internacao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "co_uf_hospital",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_municipio_hospital",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_autoctone_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_uf_infeccao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_pais_infeccao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_municipio_infeccao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_distrito_infeccao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "co_bairro_infeccao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "no_bairro_infeccao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tp_classificacao_final",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_criterio_confirmacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "st_doenca_trabalho",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "clinc_chik",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tp_evolucao_caso",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_obito",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "dt_encerramento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "alrm_hipot",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_plaq",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_vom",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_sang",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_hemat",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_abdom",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_letar",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_hepat",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alrm_liq",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dt_alrm",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "grav_pulso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_conv",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_ench",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_insuf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_taqui",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_extre",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_hipot",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_hemat",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_melen",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_metro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_sang",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_ast",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_mioc",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_consc",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grav_orgao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dt_grav",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "mani_hemor",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "epistaxe",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "gengivo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "metro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "petequias",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "hematura",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sangram",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "laco_n",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "plasmatico",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "evidencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "plaq_menor",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "con_fhd",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "fields": [
+  {
+   "name": "comissao_licitacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ano_processolicitatorio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "num_processolicitatorio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "numero_lote",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "modalidadeprocessolicitatorio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numerolicitacaomodalidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "anolicitacaomodalidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "orgao_licitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cnpj_contratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cpf_contratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "razao_nomecontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "logradouro_endcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "num_endcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "comp_endcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro_endcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cidade_endcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uf_endcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_total_estimado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_totalhomologadolicitacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_licitacao_lote",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_aberturaproposta",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_ultimafaseprocesso",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

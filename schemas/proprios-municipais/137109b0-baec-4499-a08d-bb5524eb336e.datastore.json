@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "numeroRGI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "inscricaoimovel",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "natureza",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "enderecorua",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "enderecobairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "areaconstruida",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "areatotal",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

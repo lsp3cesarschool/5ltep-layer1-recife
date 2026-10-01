@@ -1,0 +1,77 @@
+{
+ "fields": [
+  {
+   "name": "Operação",
+   "type": "string",
+   "description": "[Allowed values, as declared: Nome da operação]",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "Solicitante",
+   "type": "string",
+   "description": "Solicitante da operação",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "description": "Descrição da operaçao",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "Despacho",
+   "type": "string",
+   "description": "1Despacho de autorização",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "ação",
+   "type": "string",
+   "description": "Ação realizada",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "periodo",
+   "type": "string",
+   "description": "Período da operação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "adc87652-ec6b-408f-9cad-a3ba329ee189",
+   "dictionary_name": "Dicionário de dados - Operações",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/b28105eb-a3fb-4fc0-bd5c-54f1a6331d8f/resource/adc87652-ec6b-408f-9cad-a3ba329ee189/download/dicionario-de-dados-operacoes.json",
+   "sha256": "69fa9c3c556aec9f7ce2ecf8ca648e4a53b129ebd4c6a60df49e1b379bb86322",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

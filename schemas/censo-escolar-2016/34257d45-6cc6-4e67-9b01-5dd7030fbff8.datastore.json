@@ -1,0 +1,40 @@
+{
+ "fields": [
+  {
+   "name": "num_ordem",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tronco_linguistico",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "familia_linguistica",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "lingua_classificacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lingua_identificacao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Mês",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Poder",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código órgão",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Órgão setorial",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da unidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Unidade gestora",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da despesa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Categoria da despesa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código do grupo de despesa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Grupo de despesa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da modalidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Modalidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Dotação atualizada",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Dotação inicial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Liquidado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Pago",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

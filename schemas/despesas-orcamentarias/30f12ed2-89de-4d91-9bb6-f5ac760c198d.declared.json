@@ -1,0 +1,225 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "integer",
+   "description": "Ano de Competência",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Mês",
+   "type": "integer",
+   "description": "Mês de Competência",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Código da Unidade",
+   "type": "number",
+   "description": "Código da unidade",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Unidade",
+   "type": "string",
+   "description": "Descrição da unidade",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "String",
+   "declaredSize": 100
+  },
+  {
+   "name": "CPF/CNPJ",
+   "type": "number",
+   "description": "CPF ou CNPJ",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Nome do Credor",
+   "type": "string",
+   "description": "Nome do credor",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "String",
+   "declaredSize": 120
+  },
+  {
+   "name": "Código de Tipo de Licitação",
+   "type": "integer",
+   "description": "Código do tipo de licitação",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Tipo de Licitação",
+   "type": "string",
+   "description": "Descrição do tipo de licitação",
+   "constraints": {
+    "maxLength": 35
+   },
+   "declaredType": "String",
+   "declaredSize": 35
+  },
+  {
+   "name": "Data do Empenho",
+   "type": "date",
+   "description": "Data do empenho",
+   "declaredType": "Date"
+  },
+  {
+   "name": "Data de Pagamento",
+   "type": "string",
+   "description": "Data de pagamento",
+   "constraints": {
+    "maxLength": 34
+   },
+   "declaredType": "String",
+   "declaredSize": 34
+  },
+  {
+   "name": "Código da Modalidade do Empenho",
+   "type": "integer",
+   "description": "Código da modalidade do empenho",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Modadlidade do Empenho",
+   "type": "string",
+   "description": "Descrição da modalidade do empenho",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "String",
+   "declaredSize": 55
+  },
+  {
+   "name": "Poder",
+   "type": "string",
+   "description": "Poder",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "String",
+   "declaredSize": 50
+  },
+  {
+   "name": "Código do Órgão",
+   "type": "integer",
+   "description": "Código do órgão",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "Órgão",
+   "type": "string",
+   "description": "Descrição do órgão",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "String",
+   "declaredSize": 100
+  },
+  {
+   "name": "Grupo de Despesa",
+   "type": "string",
+   "description": "Grupo de despesa",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "String",
+   "declaredSize": 100
+  },
+  {
+   "name": "Código de Modalidade",
+   "type": "number",
+   "description": "Codigo da modalidade",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Modalidade",
+   "type": "string",
+   "description": "Descrição da modalidade",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "String",
+   "declaredSize": 100
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "description": "Valor empenhado",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Liquidação",
+   "type": "number",
+   "description": "Valor liquidado",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Pagamento",
+   "type": "number",
+   "description": "Valor pago",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Anulação Empenho",
+   "type": "number",
+   "description": "Valor anulado do empenho",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Anulação Liquidação",
+   "type": "number",
+   "description": "Valor anulado da liquidação",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Anulação Pagamento",
+   "type": "number",
+   "description": "Valor anulado do pagamento",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Dotação Inicial",
+   "type": "number",
+   "description": "Dotação Inicial",
+   "declaredType": "Number",
+   "declaredSize": 15
+  },
+  {
+   "name": "Dotação Atualizada",
+   "type": "number",
+   "description": "Dotação Atualizada",
+   "declaredType": "Number",
+   "declaredSize": 15
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "fcc19504-c185-4a8e-b1ff-646727e3ece0",
+   "dictionary_name": "Metadados de Despesa por Credor Empenho",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/63f7941b-9a1e-4a49-893b-d5f16e2134d8/resource/fcc19504-c185-4a8e-b1ff-646727e3ece0/download/metadados-de-despesa-por-credor-empenho.json",
+   "sha256": "274543046b9ea08c740ffed2c9ce8cc61d17dbeac9bd3370a50e492191e58a2a",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

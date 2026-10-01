@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "codigo_ies",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_instituicao_ensino_superior",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_uf",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_municipio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cod_dependencia_administrativa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_dependencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_instituicao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "condicao_funcionamento",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

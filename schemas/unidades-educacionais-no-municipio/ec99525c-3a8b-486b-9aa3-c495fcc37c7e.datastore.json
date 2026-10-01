@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "CODESCOLA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NOMEESCOLA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "INEP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LOGRADOURO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "N",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "COMPLEMENTO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "BAIRRO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CEP",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "LATITUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "SITUACAOPREDIAL",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

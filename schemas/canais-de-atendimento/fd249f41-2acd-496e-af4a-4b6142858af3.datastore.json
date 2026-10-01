@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "orgao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cep",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "responsavel",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "horario_funcionamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "abrangencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "referencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "servicos_atendidos",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "sede",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

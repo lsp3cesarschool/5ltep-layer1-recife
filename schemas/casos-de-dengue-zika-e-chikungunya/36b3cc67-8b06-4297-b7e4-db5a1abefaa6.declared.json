@@ -1,0 +1,37 @@
+{
+ "fields": [
+  {
+   "name": "sigla",
+   "type": "string",
+   "description": "sigla do estado",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "description": "descricao do estado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "76179f61-2b31-4401-b569-90f6c563c85c",
+   "dictionary_name": "Metadados da Tabela UF",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/76179f61-2b31-4401-b569-90f6c563c85c/download/metadados-da-tabela-uf.json",
+   "sha256": "e7464ccd20fbd3fe2f8c389659258eba6c88105f1919235a5bd60e26b638a30e",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

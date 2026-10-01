@@ -1,0 +1,180 @@
+{
+ "fields": [
+  {
+   "name": "Número do contribuinte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ano do exercício",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data do cadastramento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "tipo de contribuinte",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CPF/CNPJ mascarado do contribuinte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "estado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fração ideal",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "AREA TERRENO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "AREA CONSTRUIDA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "área ocupada",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor do m2 do terreno",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor do m2 de construção",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ano da construção corrigido",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "quantidade de pavimentos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tipo de uso do imóvel",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo de padrão da construção",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fator de obsolescência",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ano e mês de início da contribuição",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "valor total do imóvel estimado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor cobrado de IPTU",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CEP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Regime de Tributação do iptu",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Regime de Tributação da trsd",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Tipo de Construção",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Tipo de Empreendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Tipo de Estrutura",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código Logradouro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "etapa_ensino",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "etapa_ensino_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "modalidade",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

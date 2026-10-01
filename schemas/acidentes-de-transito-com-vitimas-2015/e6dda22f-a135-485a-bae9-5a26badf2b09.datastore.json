@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "data_abertura",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "hora_abertura",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_ocorrencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "quantidade_vitimas",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

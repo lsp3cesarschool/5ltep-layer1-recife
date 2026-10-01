@@ -1,0 +1,111 @@
+{
+ "fields": [
+  {
+   "name": "RPA_EQUIPE",
+   "type": "number",
+   "description": "Região Politico Administrativa",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "MODALIDADE_EQUIPE",
+   "type": "string",
+   "description": "Modalidade das equipes",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "NOME_EQUIPE",
+   "type": "string",
+   "description": "Nome da equipe",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "REPRESENTANTE_EQUIPE",
+   "type": "string",
+   "description": "Nome do representante da equipe",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "TECNICO",
+   "type": "string",
+   "description": "Nome do técnico do time",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "NOME_JOGADOR",
+   "type": "string",
+   "description": "Nome do Jogador",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "NUMERO_JOGADOR",
+   "type": "number",
+   "description": "Número do Jogador",
+   "declaredType": "Num",
+   "declaredSize": 100
+  },
+  {
+   "name": "BAIRRO_JOGADOR",
+   "type": "string",
+   "description": "Bairro do Jogador",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "CIDADE_JOGADOR",
+   "type": "string",
+   "description": "Cidade do Jogador",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "DTNASCIMENTO_JOGADOR",
+   "type": "string",
+   "description": "Data de Nascimento do Jogador",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "19a25e6d-1f86-4e84-b1f4-b89dd697a328",
+   "dictionary_name": "Dicionário dos Dados dos Jogadores",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8d2b4558-9687-42c7-971d-f6eeeb2eac01/resource/19a25e6d-1f86-4e84-b1f4-b89dd697a328/download/dicionario-dos-dados-dos-jogadores.json",
+   "sha256": "0e1a8a2eafe6e129b886d112f405f3d4ae7ac900fc2f18a5d866751f77db1cfe",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

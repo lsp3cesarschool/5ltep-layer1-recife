@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "inep_aluno",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "matricula_aluno",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "multietapa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "outro_espaco",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "transporte_publico",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "resp_transporte_publico",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

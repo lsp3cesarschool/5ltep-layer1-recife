@@ -1,0 +1,190 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data_pedido",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "informacoes_pessoais",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao_pedido",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_solicitacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "arquivo_pedido",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "resposta",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_resposta",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao_resposta",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_resposta",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "arquivo_1o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao_1o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "resposta_1o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_1o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao_1o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_resposta_1o_recurso",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "arquivo_2o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao_2o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero_recurso",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "resposta_2o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_2o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situaçao_2o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_resposta_2o_recurso",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "motivo_pedido",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sexo_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "escolaridade_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "profissao_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cidade_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uf_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "pais_solicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "anexo_resposta",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "anexo_resposta_1o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "anexo_resposta_2o_recurso",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

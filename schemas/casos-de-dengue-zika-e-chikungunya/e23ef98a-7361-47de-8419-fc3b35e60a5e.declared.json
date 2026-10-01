@@ -1,0 +1,37 @@
+{
+ "fields": [
+  {
+   "name": "Código CID",
+   "type": "string",
+   "description": "Código CID",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "Agravo",
+   "type": "string",
+   "description": "Agravo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "54a8df9f-7bb2-405c-83c9-db5bd64ce1a9",
+   "dictionary_name": "Metadados da Tabela dos Agravos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/54a8df9f-7bb2-405c-83c9-db5bd64ce1a9/download/metadados-da-tabela-dos-agravos.json",
+   "sha256": "5ae386ca38181d3aabe1d7d445ec75f20a2d1064e078ed5a5f558d543d71817d",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

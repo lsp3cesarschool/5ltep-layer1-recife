@@ -1,0 +1,68 @@
+{
+ "fields": [
+  {
+   "name": "codigo_atividade",
+   "type": "number",
+   "description": "Código da atividade complementar",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "nome_atividade",
+   "type": "string",
+   "description": "Nome da área de atividade complementar",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "codigo_area",
+   "type": "number",
+   "description": "Código da área de atividade complementar",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "description": "Nome da área de atividade complementar",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "Char",
+   "declaredSize": 40
+  },
+  {
+   "name": "codigo_subarea",
+   "type": "number",
+   "description": "Código da sub área de atividade complementar",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "nome_subarea",
+   "type": "string",
+   "description": "Nome da sub área de atividade complementar [Allowed values, as declared: 1 - Em hospital, 2 - Em domicílio, 3 - Não recebe]",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "7ae383c1-0a4e-4b7e-9750-aed9d60f1f74",
+   "dictionary_name": "Dicionário de Dados do Censo Escolar (Lista das atividades complementares)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/cfdd7814-fcbc-4a37-adc8-fdb8406171b7/resource/7ae383c1-0a4e-4b7e-9750-aed9d60f1f74/download/dicionario-de-dados-do-censo-escolar-lista-das-atividades-complementares.json",
+   "sha256": "0e72c9e1df21e2f20c992cd672096f88eba1daa46b1bdacbab2494bc4bf51498",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}
