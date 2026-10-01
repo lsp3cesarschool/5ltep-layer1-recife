@@ -1,0 +1,89 @@
+{
+ "fields": [
+  {
+   "name": "A",
+   "type": "string",
+   "description": "A Defesa Civil possui 6 Escritórios distribuídos pelo município, chamados de Regionais. São eles: A região foi dividida por setores, Nordeste, Noroeste, Norte, Oeste, Regional os quais cada Regional tem responsabilidades sobre essas áreas. Char 15 Planície e Sul.",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "Char",
+   "declaredSize": 15
+  },
+  {
+   "name": "Endereço",
+   "type": "string",
+   "description": "Endereço relacionado a descrição do serviço realizado. Char 80",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "description": "Bairro relacionado a descrição do serviço realizado. Char 80",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "Localidade",
+   "type": "string",
+   "description": "Localidade relacionado a descrição do serviço realizado. Char 80",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "Descrição",
+   "type": "string",
+   "description": "Descrição do tipo de serviço ou classificação realizada pela Defesa CiviCl.har 80",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "description": "Áreas de Risco em Coodenadas Geográficas Real 21",
+   "declaredType": "Real",
+   "declaredSize": 21
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "219a92f2-9cd1-4a6e-870c-f1059b94c4fc",
+   "dictionary_name": "Dicionário de Dados das Áreas de Risco",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/c1d733d9-5867-481e-9c18-5fe572300ab2/resource/219a92f2-9cd1-4a6e-870c-f1059b94c4fc/download/dicionario-de-dados-das-areas-de-risco.pdf",
+   "sha256": "7c43a1d300c4ba93280c90080265e5087c82f9fa8ffd5a6ecef1173176427454",
+   "oracle": {
+    "recall": 0.7143,
+    "precision": 0.8333,
+    "exact_match": 0.0,
+    "levenshtein": 0.6881,
+    "missing_from_pdf": [
+     "latitude",
+     "regional"
+    ],
+    "not_in_file": [
+     "A"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

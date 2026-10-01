@@ -1,0 +1,256 @@
+{
+ "fields": [
+  {
+   "name": "numero",
+   "type": "string",
+   "description": "Número do protocolo do pedido de acesso à informação",
+   "declaredType": "Char"
+  },
+  {
+   "name": "ano",
+   "type": "number",
+   "description": "Ano que foi realizado o pedido",
+   "declaredType": "num"
+  },
+  {
+   "name": "data_pedido",
+   "type": "number",
+   "description": "Data da solicitação",
+   "declaredType": "num"
+  },
+  {
+   "name": "Recurso",
+   "type": "number",
+   "description": "Recurso impetrados",
+   "declaredType": "num"
+  },
+  {
+   "name": "situacao_pedido",
+   "type": "string",
+   "description": "Status da solicitação",
+   "declaredType": "Char"
+  },
+  {
+   "name": "orgao_solicitacao",
+   "type": "string",
+   "description": "Órgão/entidade que foi direcionado o pedido",
+   "declaredType": "Char"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "description": "Descrição da solicitação realizada pelo requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "arquivo_pedido",
+   "type": "string",
+   "description": "Número gerado para o anexo incluído no momento do registro do pedido",
+   "declaredType": "Char"
+  },
+  {
+   "name": "resposta",
+   "type": "string",
+   "description": "Resposta fornecida pelo órgão/entidade ao requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "orgao_resposta",
+   "type": "string",
+   "description": "Órgão/entidade que respondeu o pedido",
+   "declaredType": "Char"
+  },
+  {
+   "name": "situacao_resposta",
+   "type": "string",
+   "description": "Status do pedido após incluído o retorno ao requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "data_resposta",
+   "type": "number",
+   "description": "Data em que o pedido foi respondido",
+   "declaredType": "num"
+  },
+  {
+   "name": "arquivos_resposta_pedido",
+   "type": "number",
+   "description": "Número gerado para o anexo incluído no momento da reposta do pedido",
+   "declaredType": "num"
+  },
+  {
+   "name": "arquivo_1o_recurso",
+   "type": "number",
+   "description": "Número gerado para o anexo incluído no momento do registro do 1º recurso",
+   "declaredType": "num"
+  },
+  {
+   "name": "descricao_1o_recurso",
+   "type": "string",
+   "description": "Descrição do recurso interposto pelo requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "resposta_1o_recurso",
+   "type": "string",
+   "description": "Resposta do 1º recurso fornecida pelo órgão/entidade ao requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "orgao_1o_recurso",
+   "type": "string",
+   "description": "Órgão/entidade para o qual foi direcionado o 1º recurso",
+   "declaredType": "Char"
+  },
+  {
+   "name": "situacao_1o_recurso",
+   "type": "string",
+   "description": "Status da solicitação",
+   "declaredType": "Char"
+  },
+  {
+   "name": "data_resp_1o_recurso",
+   "type": "number",
+   "description": "Data em que o 1º recurso foi respondido",
+   "declaredType": "num"
+  },
+  {
+   "name": "arquivos_resposta_1o_recurso",
+   "type": "number",
+   "description": "Número gerado para o anexo incluído no momento da reposta do 1º recurso",
+   "declaredType": "num"
+  },
+  {
+   "name": "arquivo_2o_recurso",
+   "type": "number",
+   "description": "Número gerado para o anexo incluído no momento da interposição do 2º recurso",
+   "declaredType": "num"
+  },
+  {
+   "name": "descricao_2o_recurso",
+   "type": "string",
+   "description": "Descrição da solicitação realizada pelo requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "resposta_2o_recurso",
+   "type": "string",
+   "description": "Resposta do 2º recurso fornecida pelo órgão/entidade ao requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "orgao_2o_recurso",
+   "type": "string",
+   "description": "Órgão/entidade para o qual foi direcionado o 2º recurso",
+   "declaredType": "Char"
+  },
+  {
+   "name": "situacao_2o_recurso",
+   "type": "string",
+   "description": "Status da solicitação",
+   "declaredType": "Char"
+  },
+  {
+   "name": "data_resp_2o_recurso",
+   "type": "number",
+   "description": "Data em que o 2º recurso foi respondido",
+   "declaredType": "num"
+  },
+  {
+   "name": "arquivos_resposta_2o_recurso",
+   "type": "number",
+   "description": "Número gerado para o anexo incluído no momento da resposta do 2º recurso",
+   "declaredType": "num"
+  },
+  {
+   "name": "motivo_pedido",
+   "type": "string",
+   "description": "Motivo pelo qual se está realizando o pedido",
+   "declaredType": "Char"
+  },
+  {
+   "name": "sexo_solicitante",
+   "type": "string",
+   "description": "Informação sobre o sexo fornecida pelo requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "escolaridade_solicitante",
+   "type": "string",
+   "description": "Grau de instrução do requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "profissao_solicitante",
+   "type": "string",
+   "description": "Labor exercido pelo requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "bairro_solicitante",
+   "type": "string",
+   "description": "Bairro onde mora o requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "cidade_solicitante",
+   "type": "string",
+   "description": "Cidade de residência do requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "uf_solicitante",
+   "type": "string",
+   "description": "Estado onde reside o requerente",
+   "declaredType": "Char"
+  },
+  {
+   "name": "pais_solicitante",
+   "type": "string",
+   "description": "País em que reside o requerente",
+   "declaredType": "Char"
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "08cd106b-3651-406e-8740-e529e5b9e88d",
+   "dictionary_name": "metadados dos Pedidos de Informação",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/08cd106b-3651-406e-8740-e529e5b9e88d/download/metadados-dos-pedidos-de-informacao.pdf",
+   "sha256": "ce4e7fcdde942cbadd8a8228c736dcfae3667981481fa24f8920581381e2c479",
+   "oracle": {
+    "recall": 0.7368,
+    "precision": 0.8,
+    "exact_match": 0.7368,
+    "levenshtein": 0.9227,
+    "missing_from_pdf": [
+     "anexo_resposta",
+     "anexo_resposta_1o_recurso",
+     "anexo_resposta_2o_recurso",
+     "data_criacao",
+     "data_criacao_1o_recurso",
+     "data_criacao_2o_recurso",
+     "data_resposta_1o_recurso",
+     "data_resposta_2o_recurso",
+     "informacoes_pessoais",
+     "numero_recurso"
+    ],
+    "not_in_file": [
+     "Recurso",
+     "arquivos_resposta_1o_recurso",
+     "arquivos_resposta_2o_recurso",
+     "arquivos_resposta_pedido",
+     "data_pedido",
+     "data_resp_1o_recurso",
+     "data_resp_2o_recurso"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

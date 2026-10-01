@@ -1,0 +1,502 @@
+{
+ "fields": [
+  {
+   "name": "SEXO",
+   "type": "number",
+   "description": "Sexo declarado pelo respondente",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "FAIXA ETÁRIA",
+   "type": "number",
+   "description": "Faixa etária declarada pelo respondente",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "RENDA (SALÁRIO MÍNIMO)",
+   "type": "number",
+   "description": "Faixa de renda individual declarada pelo respondente",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "MOBILIDADE REDUZIDA OU DIFICULDADE DE LOCOMOÇÃO?",
+   "type": "number",
+   "description": "Informa se o respondente possui mobilidade reduzida ou dificuldade de locomoção",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "CASO:",
+   "type": "number",
+   "description": "Selecione a opção que melhor descreve sua mobilidade reduzida ou dificuldade de locomoção",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "POSSUI CELULAR COM ACESSO À INTERNET?",
+   "type": "number",
+   "description": "Se o respondente possui celular com acesso à internet",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "CEP (RESIDÊNCIA)",
+   "type": "number",
+   "description": "CEP de residência",
+   "declaredType": "NUM",
+   "declaredSize": 11
+  },
+  {
+   "name": "CIDADE (RESIDÊNCIA)",
+   "type": "string",
+   "description": "Cidade de residência",
+   "constraints": {
+    "maxLength": 41
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 41
+  },
+  {
+   "name": "BAIRRO (RESIDÊNCIA)",
+   "type": "string",
+   "description": "Bairro de residência",
+   "constraints": {
+    "maxLength": 35
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 35
+  },
+  {
+   "name": "LOGRADOURO (RESIDÊNCIA)",
+   "type": "string",
+   "description": "Logradouro de residência",
+   "constraints": {
+    "maxLength": 72
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 72
+  },
+  {
+   "name": "POSSUI FILHO EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?",
+   "type": "number",
+   "description": "O respondente declara se possui filho estudando em escola de ensino fundamental ou médio",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "QUANTOS FILHOS",
+   "type": "string",
+   "description": "Quantidade de filhos estudando em escola de ensino fundamental ou médio",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 2
+  },
+  {
+   "name": "QUAIS OS MEIOS DE TRANSPORTE OS SEUS FILHOS UTILIZAM PARA IR A ESCOLA?",
+   "type": "number",
+   "description": "Meios de transporte utilizados pelo(s) filho(s) para ir à escola",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (ESCOLA)",
+   "type": "number",
+   "description": "Se seu(s) filho(s) utiliza(m) aplicativos para solicitar o taxi para ir à escola",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ JÁ RESPONDEU ESTA PESQUISA PARA A MATRÍCULA DE SEU FILHO?",
+   "type": "number",
+   "description": "Se já responderam esta pesquisa para a matrícula do(s) seu(s) filho(s) (solicitada pela escola)",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "QUAL ESCOLA SEUS FILHOS ESTUDAM?",
+   "type": "string",
+   "description": "Nome da escola em que seus filhos estudam",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 60
+  },
+  {
+   "name": "OUTRAS ESCOLAS",
+   "type": "string",
+   "description": "Nome da outra escola, diferente da declarada no campo \"QUAL ESCOLA SEUS FILHOS ESTUDAM?\"",
+   "constraints": {
+    "maxLength": 104
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 104
+  },
+  {
+   "name": "QUAL SUA PROFISSÃO?",
+   "type": "string",
+   "description": "O respondente declara sua profissão",
+   "constraints": {
+    "maxLength": 89
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 89
+  },
+  {
+   "name": "VOCÊ TRABALHA?",
+   "type": "number",
+   "description": "O respondente declara se trabalha",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "CEP (TRABALHO)",
+   "type": "number",
+   "description": "CEP do trabalho do respondente",
+   "declaredType": "NUM",
+   "declaredSize": 8
+  },
+  {
+   "name": "CIDADE (TRABALHO)",
+   "type": "string",
+   "description": "Cidade do trabalho do respondente",
+   "constraints": {
+    "maxLength": 37
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 37
+  },
+  {
+   "name": "BAIRRO (TRABALHO)",
+   "type": "string",
+   "description": "Bairro do trabalho do respondente",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 60
+  },
+  {
+   "name": "LOGRADOURO (TRABALHO)",
+   "type": "string",
+   "description": "Logradouro do trabalho do respondente",
+   "constraints": {
+    "maxLength": 116
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 116
+  },
+  {
+   "name": "QUAL O TURNO DO SEU TRABALHO?",
+   "type": "number",
+   "description": "Turno do trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "HORÁRIO DE FIM DO TRABALHO",
+   "type": "number",
+   "description": "Horário de fim do trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 6
+  },
+  {
+   "name": "HORÁRIO DE INÍCIO DO TRABALHO",
+   "type": "number",
+   "description": "Horário de início do trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 6
+  },
+  {
+   "name": "DE ONDE VOCÊ SAI PARA IR AO TRABALHO?",
+   "type": "number",
+   "description": "Local de origem da viagem ao trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "ORIGEM TRABALHO",
+   "type": "string",
+   "description": "Local de origem da viagem ao trabalho diferente das opções apresentadas anteriormente",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 80
+  },
+  {
+   "name": "COM QUAL FREQUÊNCIA VOCÊ VAI PARA O TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?",
+   "type": "number",
+   "description": "Número de vezes por semana que vão ao trabalho a partir do local de origem declarado",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM ATÉ O TRABALHO?",
+   "type": "number",
+   "description": "Meios de transporte utilizados para ir ao trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (TRABALHO)",
+   "type": "number",
+   "description": "Se utilizam aplicativos para solicitar o taxi para ir ao trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA O TRABALHO?",
+   "type": "number",
+   "description": "Se utilizam terminais de integração no caminho para o trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "INDIQUE O TERMINAL (TRABALHO) NO CAMINHO PARA O TRABALHO?",
+   "type": "number",
+   "description": "Terminais de integração utilizados no caminho para o trabalho",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ ESTUDA?",
+   "type": "number",
+   "description": "O respondente declara se estuda",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "CEP (ESCOLA)",
+   "type": "number",
+   "description": "CEP da escola do respondente",
+   "declaredType": "NUM",
+   "declaredSize": 9
+  },
+  {
+   "name": "CIDADE (ESCOLA)",
+   "type": "string",
+   "description": "Cidade da escola do respondente",
+   "constraints": {
+    "maxLength": 23
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 23
+  },
+  {
+   "name": "BAIRRO (ESCOLA)",
+   "type": "string",
+   "description": "Bairro da escola do respondente",
+   "constraints": {
+    "maxLength": 34
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 34
+  },
+  {
+   "name": "LOGRADOURO (ESCOLA)",
+   "type": "string",
+   "description": "Logradouro da escola do respondente",
+   "constraints": {
+    "maxLength": 77
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 77
+  },
+  {
+   "name": "QUAL O TURNO DAS SUAS AULAS?",
+   "type": "number",
+   "description": "Turno da aula",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "QUAL O NÍVEL DA SUA ATIVIDADE DE ESTUDO?",
+   "type": "number",
+   "description": "Nível da atividade de estudo",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "QUAL O NOME DA INSTITUIÇÃO DE ENSINO?",
+   "type": "string",
+   "description": "Nome da instituição de ensino em que estudam",
+   "constraints": {
+    "maxLength": 113
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 113
+  },
+  {
+   "name": "HORÁRIO DE FIM DAS AULAS",
+   "type": "number",
+   "description": "Horário de fim da aula",
+   "declaredType": "NUM",
+   "declaredSize": 6
+  },
+  {
+   "name": "HORÁRIO DE INÍCIO DAS AULAS",
+   "type": "number",
+   "description": "Horário de início da aula",
+   "declaredType": "NUM",
+   "declaredSize": 6
+  },
+  {
+   "name": "DE ONDE VOCÊ SAI PARA IR À AULA?",
+   "type": "number",
+   "description": "Local de origem da viagem à instituição de ensino",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "ORIGEM PARA A AULA",
+   "type": "string",
+   "description": "Local de origem da viagem à instituição de ensino diferente das opções apresentadas",
+   "constraints": {
+    "maxLength": 96
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 96
+  },
+  {
+   "name": "COM QUAL FREQUÊNCIA VOCÊ VAI PARA A AULA A PARTIR DESTE LOCAL DE ORIGEM?",
+   "type": "number",
+   "description": "Número de vezes por semana que vão à instituição de ensino a partir do local de origem declarado",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM PARA A AULA?",
+   "type": "number",
+   "description": "Meios de transporte utilizados para ir à instituição de ensino",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (AULA)",
+   "type": "number",
+   "description": "Se utilizam aplicativos para solicitar o taxi para ir à aula",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA A AULA?",
+   "type": "number",
+   "description": "Se utilizam terminais de integração no caminho para a aula",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "INDIQUE O TERMINAL (AULA) NO CAMINHO PARA A AULA?",
+   "type": "number",
+   "description": "Terminais de integração utilizados no caminho para a aula",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  },
+  {
+   "name": "ZONA_RESIDÊNCIA",
+   "type": "number",
+   "description": "Zona de tráfego aonde a residência do respondente está incluída",
+   "declaredType": "NUM",
+   "declaredSize": 3
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "5707ca29-64d5-44cc-8536-66e6ffffc532",
+   "dictionary_name": "Dicionário de Dados da Pesquisa Origem Destino",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8eed6404-a20a-4e5e-8cdb-630a49a84fb8/resource/5707ca29-64d5-44cc-8536-66e6ffffc532/download/dicionario-de-dados-da-pesquisa-origem-destino.pdf",
+   "sha256": "ef7e5f096ff023c66e4d6a8f1c50d65e5114142d6d7cb061b864e18dafff5345",
+   "oracle": {
+    "recall": 0.3333,
+    "precision": 0.3333,
+    "exact_match": 0.0,
+    "levenshtein": 0.0256,
+    "missing_from_pdf": [
+     "detalhe_mobilidade",
+     "escola_filho",
+     "freq_aula",
+     "freq_local_trabalho",
+     "horario_fim_aula",
+     "horario_fim_trabalho",
+     "horario_inicio_aula",
+     "horario_inicio_trabalho",
+     "internet_celular",
+     "local_saida_trab",
+     "meio_transporte_trab",
+     "meios_transporte_filhos",
+     "mobilidade_reduzida",
+     "nivel_estudo",
+     "nome_instituicao_ensino",
+     "origem_ida_aula",
+     "outros_aula",
+     "pesquisado_estuda",
+     "possui_filho_escola",
+     "profissao",
+     "quant_filhos",
+     "renda",
+     "resp_pesquisa_matricula",
+     "terminal_aula",
+     "terminal_int_trabalho",
+     "trabalha",
+     "transporte_aula",
+     "turno_aula",
+     "turno_trabalho",
+     "utiliza_app_taxi_aula",
+     "utiliza_app_taxi_escola",
+     "utiliza_app_taxi_trabalho",
+     "utiliza_integracao_aula",
+     "utiliza_terminal_int_trabalho"
+    ],
+    "not_in_file": [
+     "CASO:",
+     "COM QUAL FREQUÊNCIA VOCÊ VAI PARA A AULA A PARTIR DESTE LOCAL DE ORIGEM?",
+     "COM QUAL FREQUÊNCIA VOCÊ VAI PARA O TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?",
+     "DE ONDE VOCÊ SAI PARA IR AO TRABALHO?",
+     "DE ONDE VOCÊ SAI PARA IR À AULA?",
+     "HORÁRIO DE FIM DAS AULAS",
+     "HORÁRIO DE FIM DO TRABALHO",
+     "HORÁRIO DE INÍCIO DAS AULAS",
+     "HORÁRIO DE INÍCIO DO TRABALHO",
+     "INDIQUE O TERMINAL (AULA) NO CAMINHO PARA A AULA?",
+     "INDIQUE O TERMINAL (TRABALHO) NO CAMINHO PARA O TRABALHO?",
+     "MOBILIDADE REDUZIDA OU DIFICULDADE DE LOCOMOÇÃO?",
+     "ORIGEM PARA A AULA",
+     "POSSUI CELULAR COM ACESSO À INTERNET?",
+     "POSSUI FILHO EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?",
+     "QUAIS OS MEIOS DE TRANSPORTE OS SEUS FILHOS UTILIZAM PARA IR A ESCOLA?",
+     "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM ATÉ O TRABALHO?",
+     "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM PARA A AULA?",
+     "QUAL ESCOLA SEUS FILHOS ESTUDAM?",
+     "QUAL O NOME DA INSTITUIÇÃO DE ENSINO?",
+     "QUAL O NÍVEL DA SUA ATIVIDADE DE ESTUDO?",
+     "QUAL O TURNO DAS SUAS AULAS?",
+     "QUAL O TURNO DO SEU TRABALHO?",
+     "QUAL SUA PROFISSÃO?",
+     "QUANTOS FILHOS",
+     "RENDA (SALÁRIO MÍNIMO)",
+     "VOCÊ ESTUDA?",
+     "VOCÊ JÁ RESPONDEU ESTA PESQUISA PARA A MATRÍCULA DE SEU FILHO?",
+     "VOCÊ TRABALHA?",
+     "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA A AULA?",
+     "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA O TRABALHO?",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (AULA)",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (ESCOLA)",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (TRABALHO)"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

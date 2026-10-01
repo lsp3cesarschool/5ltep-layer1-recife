@@ -1,0 +1,131 @@
+{
+ "fields": [
+  {
+   "name": "numerocontrato",
+   "type": "number",
+   "description": "Char",
+   "declaredType": "Número do contrato",
+   "declaredSize": 20
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "description": "Órgão municipal responsável pela contratação",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "description": "Descrição da contratação tanto de conteúdo quanto de objetivo",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "string",
+   "description": "CNPJ do fornecedor contratado",
+   "constraints": {
+    "maxLength": 14
+   },
+   "declaredType": "Char",
+   "declaredSize": 14
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "string",
+   "description": "CPF do fornecedor contratado",
+   "constraints": {
+    "maxLength": 11
+   },
+   "declaredType": "Char",
+   "declaredSize": 11
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "description": "Razão social ou nome do fornecedor contratado",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "num_termoaditivo",
+   "type": "number",
+   "description": "Num",
+   "declaredType": "Número sequencial do termo aditivo do contrato",
+   "declaredSize": 2
+  },
+  {
+   "name": "justificativa_termoaditivo",
+   "type": "string",
+   "description": "Justificativa da necessidade de criação do termo aditivo",
+   "constraints": {
+    "maxLength": 500
+   },
+   "declaredType": "Char",
+   "declaredSize": 500
+  },
+  {
+   "name": "data_inicio_vigencia",
+   "type": "date",
+   "description": "Data de início de vigência do termo aditivo. o prazo de vigência é o período de duração do contrato que não pode ultrapassar o respectivo crédito orçamentário, exceto em casos especiais previstos na Lei.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "data_fim_vigencia",
+   "type": "date",
+   "description": "date",
+   "declaredType": "Data de fim de vigência do termo aditivo",
+   "declaredSize": 10
+  },
+  {
+   "name": "valor_termoaditivo",
+   "type": "number",
+   "description": "Valor do Aditivo quando se refere a uma alteração financeira contratual já prevista no contrato",
+   "declaredType": "Num"
+  },
+  {
+   "name": "situacao_termoaditivo",
+   "type": "string",
+   "description": "Última Situação do Aditivo – pode ser ‘Cadastrado’, ‘Em Execução’",
+   "constraints": {
+    "maxLength": 11
+   },
+   "declaredType": "Char",
+   "declaredSize": 11
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "10eba1cb-55c6-4a2e-8761-aca521b8fdff",
+   "dictionary_name": "Dicionário de Dados - Termo Aditivo",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/10eba1cb-55c6-4a2e-8761-aca521b8fdff/download/dicionario-de-dados-termo-aditivo.pdf",
+   "sha256": "96a6be1d87ac1a9c301c39b123ef2410ad72d875df334862e44e134d56c7a3fe",
+   "oracle": {
+    "recall": 0.9167,
+    "precision": 0.9167,
+    "exact_match": 0.9167,
+    "levenshtein": 0.9821,
+    "missing_from_pdf": [
+     "num_contrato"
+    ],
+    "not_in_file": [
+     "numerocontrato"
+    ]
+   }
+  }
+ }
+}

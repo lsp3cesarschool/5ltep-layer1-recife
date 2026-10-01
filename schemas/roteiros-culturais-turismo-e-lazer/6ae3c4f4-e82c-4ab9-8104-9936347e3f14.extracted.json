@@ -1,0 +1,90 @@
+{
+ "fields": [
+  {
+   "name": "Mome",
+   "type": "string",
+   "description": "Nome do Teatro",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "description": "Descrição sobre o Teatro",
+   "constraints": {
+    "maxLength": 600
+   },
+   "declaredType": "Char",
+   "declaredSize": 600
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "description": "Bairro do Teatro",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Logradouro",
+   "type": "string",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "Telefone",
+   "type": "string",
+   "description": "Telefone de contato",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "6c1e9936-8668-4bfb-a035-e9b3b8069359",
+   "dictionary_name": "Dicionário de Dados dos Teatros",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd/resource/6c1e9936-8668-4bfb-a035-e9b3b8069359/download/dicionario-de-dados-dos-teatros.pdf",
+   "sha256": "967605d7f8fee6bbcb880a6b8be6b18dd4eaaac707febf4b1918501040b7b1c3",
+   "oracle": {
+    "recall": 0.8571,
+    "precision": 0.8571,
+    "exact_match": 0.1429,
+    "levenshtein": 0.8766,
+    "missing_from_pdf": [
+     "nome"
+    ],
+    "not_in_file": [
+     "Mome"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "fields": [
+  {
+   "name": "quando tipo for Área verde, o nome não",
+   "type": "string",
+   "description": "nome do equipamento urbano",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "CDTIPO",
+   "type": "string",
+   "description": "tipo do equipamento urbano",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "ED",
+   "type": "string",
+   "description": "endereco do equipamento urbano",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "CLOGRACOD",
+   "type": "number",
+   "description": "Código do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife. Logradouro é um termo que designa qualquer espaço público reconhecido pela administração de um município",
+   "declaredType": "num",
+   "declaredSize": 10
+  },
+  {
+   "name": "CDLEI",
+   "type": "string",
+   "description": "Lei que sancionou a criação do equipamento urbano",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "char",
+   "declaredSize": 15
+  },
+  {
+   "name": "NOMEBAIRR",
+   "type": "string",
+   "description": "Nome do bairro que está associado ao código do bairro.",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  },
+  {
+   "name": "CBAIRRCODI",
+   "type": "number",
+   "description": "Código do Bairro que identifica unicamente a região.Bairro é uma comunidade ou região dentro de uma cidade ou município.",
+   "declaredType": "num",
+   "declaredSize": 10
+  },
+  {
+   "name": "NMNOMEOFIC",
+   "type": "string",
+   "description": "nome oficial designado ao equipamento público",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "AREA",
+   "type": "number",
+   "description": "nome oficial designado ao equipamento público",
+   "declaredType": "num"
+  },
+  {
+   "name": "PERIMETER",
+   "type": "number",
+   "description": "valor do perímetro, em metros, do equipamento urbano",
+   "declaredType": "num"
+  },
+  {
+   "name": "GEOMETRIA",
+   "type": "any",
+   "description": "Coordenadas geográficas em graus decimais - Poligonal",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "1f89b132-cc44-4962-a972-dc209d73c761",
+   "dictionary_name": "Metadados de Parques e Praças Geo",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/b3a3a033-3611-485c-8d18-d02c5a42563d/resource/1f89b132-cc44-4962-a972-dc209d73c761/download/metadados-de-parques-e-pracas-geo.pdf",
+   "sha256": "c4894105479f3720651a9a81056eeec8eafa5ce34421c42295d027963fcb42be",
+   "oracle": {
+    "recall": 0.0833,
+    "precision": 0.0909,
+    "exact_match": 0.0,
+    "levenshtein": 0.1601,
+    "missing_from_pdf": [
+     "codigo_bairro",
+     "codigo_logradouro",
+     "endereco_equip_urbano",
+     "latitude",
+     "lei_equip_urbano",
+     "longitude",
+     "nome_bairro",
+     "nome_equip_urbano",
+     "nome_oficial_equip_urbano",
+     "perimetro",
+     "tipo_equip_urbano"
+    ],
+    "not_in_file": [
+     "CBAIRRCODI",
+     "CDLEI",
+     "CDTIPO",
+     "CLOGRACOD",
+     "ED",
+     "GEOMETRIA",
+     "NMNOMEOFIC",
+     "NOMEBAIRR",
+     "PERIMETER",
+     "quando tipo for Área verde, o nome não"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

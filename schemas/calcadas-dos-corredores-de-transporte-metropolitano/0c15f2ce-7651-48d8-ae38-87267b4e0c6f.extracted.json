@@ -1,0 +1,64 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "string",
+   "description": "Regiões Político Administrativa (RPA) da via principal",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "vias_principais",
+   "type": "string",
+   "description": "Nome da via principal",
+   "constraints": {
+    "maxLength": 65
+   },
+   "declaredType": "Char",
+   "declaredSize": 65
+  },
+  {
+   "name": "extensao",
+   "type": "number",
+   "description": "Extensão da calçada em metros",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "largura_ambos_lados",
+   "type": "string",
+   "description": "Largura média da calçada em metros (ambos os lados)",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "22323176-d380-4bff-932c-00510333d4b3",
+   "dictionary_name": "Dicionário de dados das Calçadas das Vias Principais",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/85f271d5-5d63-4510-ac51-d524ce731515/resource/22323176-d380-4bff-932c-00510333d4b3/download/dicionario-de-dados-das-calcadas-das-vias-principais.pdf",
+   "sha256": "1b24178720600add14a58f99f0343fd6632e2937308e5c360daaef27af68b4d6",
+   "oracle": {
+    "recall": 0.75,
+    "precision": 0.75,
+    "exact_match": 0.75,
+    "levenshtein": 0.95,
+    "missing_from_pdf": [
+     "via_principal"
+    ],
+    "not_in_file": [
+     "vias_principais"
+    ]
+   }
+  }
+ }
+}

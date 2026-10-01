@@ -1,0 +1,133 @@
+{
+ "fields": [
+  {
+   "name": "num_dispensa",
+   "type": "string",
+   "description": "É o número de cada dispensa de licitação dentro do órgão de origem",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "situacao_dispensa",
+   "type": "string",
+   "description": "Identifica se a dispensa sofreu retificação, revogação, anulação ou suspensão.",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "description": "Unidade que está realizando a dispensa licitação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "description": "Descrição do bem ou serviço que poderá ser adquirido pela dispensa.",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 200
+  },
+  {
+   "name": "local_de_execucao",
+   "type": "string",
+   "description": "Local que será prestado o serviço ou entregue o bem.",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "data_de_empenho_contrato",
+   "type": "date",
+   "description": "Data em que o contrato foi firmado ou que o empenho foi emitido.",
+   "declaredType": "DATE"
+  },
+  {
+   "name": "data_vigencia",
+   "type": "date",
+   "description": "DATE",
+   "declaredType": "Data de vigência da dispensa"
+  },
+  {
+   "name": "cnpj_cpf",
+   "type": "string",
+   "description": "CNPJ ou CPF do Fornecedor da dispensa",
+   "constraints": {
+    "maxLength": 18
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 18
+  },
+  {
+   "name": "nome_fornecedor",
+   "type": "string",
+   "description": "Nome do Fornecedor da dispensa",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "valor_fornecedor",
+   "type": "number",
+   "description": "NUMERIC",
+   "declaredType": "Valor da dispensa"
+  },
+  {
+   "name": "Arquivo_dispensa",
+   "type": "string",
+   "description": "Arquivo da publicação em Diário Oficial Municipal do termo de ratificação da dispensa",
+   "constraints": {
+    "maxLength": 300
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 300
+  },
+  {
+   "name": "arquivo_situacao",
+   "type": "string",
+   "description": "Arquivo da publicação em Diário Oficial Municipal da retificação, revogação, anulação ou suspensão da dispensa.",
+   "constraints": {
+    "maxLength": 300
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 300
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "2331305e-11e4-4139-b269-b663bc23f1f8",
+   "dictionary_name": "Dicionário de Dados - Processos de Aquisições de Bens e Serviços - COVID19",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/eddcb08a-64c3-4874-a9bd-c4799254d2c0/resource/2331305e-11e4-4139-b269-b663bc23f1f8/download/dicionario-de-dados-processos-de-aquisicoes-de-bens-e-servicos-covid19.pdf",
+   "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d",
+   "oracle": {
+    "recall": 1.0,
+    "precision": 0.9167,
+    "exact_match": 0.9091,
+    "levenshtein": 0.9943,
+    "missing_from_pdf": [],
+    "not_in_file": [
+     "arquivo_situacao"
+    ]
+   }
+  }
+ }
+}

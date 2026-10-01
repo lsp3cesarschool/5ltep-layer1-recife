@@ -1,0 +1,118 @@
+{
+ "fields": [
+  {
+   "name": "GRUPOSERVICO_CODIGO",
+   "type": "number",
+   "description": "Código do Grupo de Serviço",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "GRUPOSERVICO_DESCRICAO",
+   "type": "string",
+   "description": "Descrição do Grupo de Serviço",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  },
+  {
+   "name": "SERVICO_CODIGO",
+   "type": "number",
+   "description": "Código do Serviço",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "SERVICO_DESCRICAO",
+   "type": "string",
+   "description": "Descrição do Serviço",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  },
+  {
+   "name": "LOGRADOURO",
+   "type": "string",
+   "description": "Endereço da reclamação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "NUMERO",
+   "type": "number",
+   "description": "Num",
+   "declaredType": "Numero do endereço",
+   "declaredSize": 10
+  },
+  {
+   "name": "BAIRRO",
+   "type": "number",
+   "description": "Descrição do bairro",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "RPA",
+   "type": "string",
+   "description": "Região Politico Administrativa – RPA",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "Char",
+   "declaredSize": 40
+  },
+  {
+   "name": "DATA_DEMANDA",
+   "type": "date",
+   "description": "Data (AAAA-MM-DD)",
+   "declaredType": "Data de Cadastro",
+   "declaredSize": 10
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "description": "Descrição da Situação Atual",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Texto",
+   "declaredSize": 50
+  },
+  {
+   "name": "DATA_ULT_SITUACAO",
+   "type": "date",
+   "description": "Data (AAAA-MM-DD)",
+   "declaredType": "Data que ocorreu a ultima movimentação",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "5a836fa8-6b23-48fd-b6b3-c56100c781ab",
+   "dictionary_name": "Dicionário de Dados de Central de Atendimento de Serviços da Emlurb – 156",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/331e88a9-d878-464b-b0bb-cb803d7091b3/resource/5a836fa8-6b23-48fd-b6b3-c56100c781ab/download/dicionario-de-dados-de-central-de-atendimento-de-servicos-da-emlurb-156.pdf",
+   "sha256": "11cdee21da0c44631d8a8d142cbc6f8bca99507372539640619f883498a9e406",
+   "oracle": {
+    "recall": 0.8462,
+    "precision": 1.0,
+    "exact_match": 0.8462,
+    "levenshtein": 0.8462,
+    "missing_from_pdf": [
+     "latitude",
+     "longitude"
+    ],
+    "not_in_file": []
+   }
+  }
+ }
+}

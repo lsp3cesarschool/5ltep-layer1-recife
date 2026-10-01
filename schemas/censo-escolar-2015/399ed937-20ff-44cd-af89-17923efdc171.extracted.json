@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "codigo_instituicao",
+   "type": "number",
+   "description": "Codigo da instituição de ensino superior",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "nome_instituicao",
+   "type": "string",
+   "description": "Nome da instituição de ensino superior",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "uf",
+   "type": "number",
+   "description": "Código do Estado",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "municipio",
+   "type": "number",
+   "description": "Código do municipio",
+   "declaredType": "Num",
+   "declaredSize": 7
+  },
+  {
+   "name": "codigo_dependencia",
+   "type": "number",
+   "description": "Código da Dependência Administrativa",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "nome_dependencia",
+   "type": "string",
+   "description": "federal, estadual, privado, publica",
+   "constraints": {
+    "maxLength": 9
+   },
+   "declaredType": "Char",
+   "declaredSize": 9
+  },
+  {
+   "name": "tipo_instituicao",
+   "type": "string",
+   "description": "Tipo de Instituição",
+   "constraints": {
+    "maxLength": 8
+   },
+   "declaredType": "Char",
+   "declaredSize": 8
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "description": "Condição de Funcionamento",
+   "constraints": {
+    "maxLength": 12
+   },
+   "declaredType": "Char",
+   "declaredSize": 12
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "72f94a94-dc99-41b9-a1f6-7963107c541f",
+   "dictionary_name": "Dicionário de Dados Censo Escolar 2015 (Lista das instituições de formação superior dos docentes)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/463bf158-fad9-43ad-a642-afba60e46f5d/resource/72f94a94-dc99-41b9-a1f6-7963107c541f/download/dicionario-de-dados-censo-escolar-2015-lista-das-instituicoes-de-formacao-superior-dos-docentes.pdf",
+   "sha256": "cc1f0ae6125f9b1f5867cb8bbadb88c1b225e0fcc9822e6dcaf532c03f69d34a",
+   "oracle": {
+    "recall": 0.875,
+    "precision": 0.875,
+    "exact_match": 0.875,
+    "levenshtein": 0.9609,
+    "missing_from_pdf": [
+     "instituicao"
+    ],
+    "not_in_file": [
+     "situacao"
+    ]
+   }
+  }
+ }
+}

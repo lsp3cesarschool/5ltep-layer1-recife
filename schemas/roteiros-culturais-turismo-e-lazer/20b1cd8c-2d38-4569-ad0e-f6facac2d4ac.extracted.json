@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "Mome",
+   "type": "string",
+   "description": "Nome da Ponte",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "description": "Descrição sobre a Ponte",
+   "constraints": {
+    "maxLength": 600
+   },
+   "declaredType": "Char",
+   "declaredSize": 600
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "4e5e94ba-47c3-4a73-a250-ac5e7771a2f1",
+   "dictionary_name": "Dicionário de Dados - Pontes do Recife",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd/resource/4e5e94ba-47c3-4a73-a250-ac5e7771a2f1/download/dicionario-de-dados-pontes-do-recife.pdf",
+   "sha256": "5650ce6ce0cb521fba0a5ef4cf721e3ad9527fb54aa971c9891a07fd123b98fd",
+   "oracle": {
+    "recall": 0.8,
+    "precision": 0.8,
+    "exact_match": 0.0,
+    "levenshtein": 0.8472,
+    "missing_from_pdf": [
+     "Nome"
+    ],
+    "not_in_file": [
+     "Mome"
+    ]
+   }
+  }
+ }
+}

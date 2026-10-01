@@ -1,0 +1,123 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "string",
+   "description": "Código de identificação do semáforo",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "localizacao",
+   "type": "string",
+   "description": "Endereço onde semáforo está instalado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "localizacao2",
+   "type": "string",
+   "description": "Endereço do cruzamento do semáforo ou contendo ponto de referência",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "description": "Tipo de funcionamento do semáforo. GIT = Gerenciador Inteligente de Trânsito, E = Eletrônico (CES), M = Funcionamento Eletromecânico, E/E = Eletroeletrônico",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "utilizacao",
+   "type": "string",
+   "description": "Destinação do semáforo, que podem ser: Ocasional/Ped = Ocasional de Pedestre, Veic.C/Ped. = Veicular com Pedestre, Veic.C/Ped.Ocas = Veicular com Pedestre Ocasional, Ve. C/Ped.Paral = Veicular com Pedestre Paralelo, Veic.C/Laço Det = Veicular com laço Detector",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "sinalsorono",
+   "type": "string",
+   "description": "Identifica se o semáforo possui sinal sonoro de alerta",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "sinalizadorciclista",
+   "type": "string",
+   "description": "Identifica se o semáforo possui sinalização para o ciclista",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Latitude em coordenadas geográficas em graus decimais",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Longitude em coordenadas geográficas em graus decimais",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "2ea42f23-f405-4fdc-b06e-d70af7bbb375",
+   "dictionary_name": "Dicionário de Dados dos Semáforos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/289c2371-31f4-49ed-9226-059de68d2bae/resource/2ea42f23-f405-4fdc-b06e-d70af7bbb375/download/dicionario-de-dados-dos-semaforos.pdf",
+   "sha256": "75c17ba2db4a6e3de6504d94caa85547665f9f81cb4f2f51ed684a052e70b073",
+   "oracle": {
+    "recall": 0.4444,
+    "precision": 0.4444,
+    "exact_match": 0.4444,
+    "levenshtein": 0.6983,
+    "missing_from_pdf": [
+     "Unnamed: 8",
+     "bairro",
+     "localizacao1",
+     "semaforo",
+     "tipo"
+    ],
+    "not_in_file": [
+     "codigo",
+     "localizacao",
+     "sinalizadorciclista",
+     "sinalsorono",
+     "utilizacao"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}
