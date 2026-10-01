@@ -18,7 +18,9 @@ schema from a PDF (that makes conformance checkable, which is reported separatel
 """
 
 import logging
+import time
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 from src import ckan, config, dictionaries, drift, linker, schemas, tabular, types_map
@@ -192,9 +194,22 @@ def run(validation: dict, packages: list[dict] | None = None) -> tuple[dict, lis
     headers = {rid: v["header"] for rid, v in validation.items() if v.get("header")}
     written: set = set()
     datasets, events = [], []
-    for i, pkg in enumerate(packages, 1):
-        logger.info("[%d/%d] %s", i, len(packages), pkg["name"])
-        datasets.append(census_dataset(pkg, portal["portal_url"], headers, written, events))
+
+    def one(pkg: dict):
+        # Each dataset has its own sets, merged below: nothing is shared between threads.
+        own_written, own_events, t0 = set(), [], time.monotonic()
+        ds = census_dataset(pkg, portal["portal_url"], headers, own_written, own_events)
+        if time.monotonic() - t0 > 60:
+            logger.info("slow dataset %s: %.0f s", pkg["name"], time.monotonic() - t0)
+        return ds, own_written, own_events
+
+    # The census is network-bound (API calls, dictionary downloads): several datasets at a time.
+    with ThreadPoolExecutor(max_workers=config.CENSUS_WORKERS) as pool:
+        for i, (ds, own_written, own_events) in enumerate(pool.map(one, packages), 1):
+            logger.info("[%d/%d] %s", i, len(packages), ds["name"])
+            datasets.append(ds)
+            written |= own_written
+            events += own_events
     # Schemas the portal no longer declares are removed, so the Git history shows the change.
     for kind in MANAGED_KINDS:
         for p in config.SCHEMAS.glob(f"*/*.{kind}.json"):

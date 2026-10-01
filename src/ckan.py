@@ -75,7 +75,11 @@ def fetch_bytes(url: str, limit: int) -> tuple[bytes, str]:
     """Small files (dictionaries): content and SHA-256; larger than `limit` raises ValueError."""
     resp = get(url, stream=True)
     sha, chunks, size = hashlib.sha256(), [], 0
+    deadline = time.monotonic() + config.DICTIONARY_DEADLINE_S
     for chunk in resp.iter_content(1 << 16):
+        if time.monotonic() > deadline:
+            resp.close()
+            raise requests.Timeout(f"still downloading after {config.DICTIONARY_DEADLINE_S} s")
         size += len(chunk)
         if size > limit:
             resp.close()

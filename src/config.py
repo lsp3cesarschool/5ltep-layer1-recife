@@ -50,6 +50,8 @@ DASHBOARD_FILE = ROOT / "docs" / "data" / "layer1.json"
 HTTP_TIMEOUT_S = _env("HTTP_TIMEOUT_S", 120)
 MAX_DICTIONARY_BYTES = _env("MAX_DICTIONARY_BYTES", 20_000_000)   # a dictionary larger than this is not read
 CHECK_DATASTORE = _env("CHECK_DATASTORE", "true").lower() == "true"
+CENSUS_WORKERS = _env("CENSUS_WORKERS", 8)            # datasets read at the same time (network-bound)
+DICTIONARY_DEADLINE_S = _env("DICTIONARY_DEADLINE_S", 180)   # a dictionary that trickles longer is given up
 
 # --- Validation ---------------------------------------------------------------
 # Time budget of one batch (the GitHub job limit is 6 h; the rest of the job needs some minutes).
