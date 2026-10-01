@@ -17,8 +17,9 @@ import platform
 from collections import Counter
 from datetime import datetime, timezone
 from statistics import mean
+from urllib.parse import urlparse
 
-from src import config, drift
+from src import config, drift, schemas
 
 LEVELS = (0, 1, 2, 3, 4)
 
@@ -144,6 +145,36 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
     }
 
 
+def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
+    """From all tabular files to conformant ones, with the reason at every step (the dashboard's funnel)."""
+    status = Counter((v or {}).get("status") or "pending" for _, v in tables)
+    errors = [(t, v) for t, v in tables if (v or {}).get("status") == "error"]
+    ok = [(t, v) for t, v in tables if (v or {}).get("status") == "ok"]
+    checked = [(t, v) for t, v in ok if (v.get("summary") or {}).get("conformance")]
+    failing = [v["summary"]["conformance"] for _, v in checked if not v["summary"]["conformance"]["pass"]]
+    over = lambda c: c["error_rate"] > config.L1_MAX_ERROR_RATE
+    return {
+        "files": len(tables), "read": len(ok), "empty": status.get("empty", 0),
+        "not_tabular": status.get("not-tabular", 0), "not_downloaded": len(errors), "pending": status.get("pending", 0),
+        "not_downloaded_by_reason": dict(Counter(_error_kind(v.get("error")) for _, v in errors).most_common()),
+        "not_downloaded_by_host": dict(Counter(f"{_error_kind(v.get('error'))} · {urlparse(t.get('url') or '').hostname or '—'}"
+                                               for t, v in errors).most_common()),
+        "read_without_schema": len(ok) - len(checked), "checked": len(checked),
+        "conform": len(checked) - len(failing),
+        "fail_missing_fields": sum(bool(c["missing"]) for c in failing),
+        "fail_undeclared_columns": sum(bool(c["undeclared"]) for c in failing),
+        "fail_cells_over_limit": sum(over(c) for c in failing),
+        "fail_only_cells": sum(over(c) and not c["missing"] and not c["undeclared"] for c in failing),
+    }
+
+
+def drift_baseline(validation: dict) -> dict:
+    """Drift needs two observations: the first one of each file is its baseline."""
+    seen = [v.get("validated_at") for v in validation.values() if v.get("status") == "ok" and v.get("header")]
+    return {"files_with_baseline": len(seen), "first_baseline_at": min(seen) if seen else None,
+            "last_observed_at": max(seen) if seen else None}
+
+
 def build_summary(census: dict, validation: dict, extraction: dict, queue: list) -> dict:
     tables, per_dataset = [], []
     ds_levels: Counter = Counter()
@@ -181,7 +212,8 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
         "verifiable": len(verifiable), "conformant": len(conformant),
         "l1_rate": rate, "l1_pass": rate is not None and rate >= config.L1_PASS_THRESHOLD,
         "drift": {"observed": sum(e["kind"] == "observed" for e in log),
-                  "declared": sum(e["kind"] == "declared" for e in log)},
+                  "declared": sum(e["kind"] == "declared" for e in log), **drift_baseline(validation)},
+        "coverage": coverage(tables),
         "findings": documentation_findings(census, validation, extraction),
         "per_dataset": per_dataset,
     }
@@ -211,6 +243,9 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                 | {"errors_by_field": {f: {k: e["count"] for k, e in kinds.items()}
                                        for f, kinds in c.get("errors_by_field", {}).items()}} if c else None,
                 "drift_events": drift_count.get(t["id"], 0),
+                # the Table Schemas of this file in the repository (declared, extracted, observed...)
+                "schema_files": {k: schemas.path(ds["name"], t["id"], k).relative_to(config.ROOT).as_posix()
+                                 for k in schemas.KINDS if schemas.path(ds["name"], t["id"], k).exists()},
             })
         datasets.append({"name": ds["name"], "title": ds["title"], "organization": ds.get("organization"),
                          "url": ds["url"], "level": next((p["level"] for p in summary["per_dataset"]
@@ -221,8 +256,53 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                          "tables": tables})
     return {"summary": {k: summary[k] for k in ("portal", "generated_at", "census_at", "datasets", "tables",
                                                  "verifiable", "conformant", "l1_rate", "l1_pass", "drift",
-                                                 "schema_sources", "findings", "method")},
-            "datasets": datasets}
+                                                 "coverage", "schema_sources", "findings", "method")},
+            "datasets": datasets, "unreadable": unreadable_files(census, validation),
+            "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census)}
+
+
+def unreadable_files(census: dict, validation: dict) -> list[dict]:
+    out = []
+    for ds in census["datasets"]:
+        for t in ds["tables"]:
+            v = validation.get(t["id"]) or {}
+            if v.get("status") in ("error", "not-tabular", "empty"):
+                out.append({"dataset": ds["name"], "title": ds["title"], "file": t["name"], "id": t["id"],
+                            "url": t.get("url"), "host": urlparse(t.get("url") or "").hostname,
+                            "status": v["status"],
+                            "reason": _error_kind(v.get("error")) if v["status"] == "error" else v["status"],
+                            "detail": (v.get("error") or "")[:200]})
+    return out
+
+
+def pdf_dictionaries(census: dict, extraction: dict) -> list[dict]:
+    """Every PDF dictionary linked to a file, and what became of it (schema on main, or pull request)."""
+    out = []
+    for ds in census["datasets"]:
+        for d in ds["dictionaries"]:
+            if d.get("format") != "PDF" or not d.get("linked_resources"):
+                continue
+            rec = extraction.get(d["id"]) or {}
+            stage = rec.get("stage")
+            oracle = ((rec.get("llm") if stage == "llm" else rec.get("deterministic")) or {}).get("oracle") or {}
+            first = d["linked_resources"][0]
+            path = schemas.path(ds["name"], first, "extracted")
+            status = (schemas.load(path) or {}).get("x5ltep", {}).get("status") if path.exists() else None
+            out.append({"dataset": ds["name"], "title": ds["title"], "dictionary": d["name"], "url": d.get("url"),
+                        "files": len(d["linked_resources"]), "outcome": rec.get("outcome") or "pending",
+                        "stage": stage, "model": (rec.get("llm") or {}).get("model") if stage == "llm" else None,
+                        "recall": oracle.get("recall"), "precision": oracle.get("precision"),
+                        "probable_typos": oracle.get("probable_typos") or {},
+                        "schema": path.relative_to(config.ROOT).as_posix() if path.exists() else None,
+                        "schema_status": status})
+    return out
+
+
+def drift_events(census: dict) -> list[dict]:
+    names = {t["id"]: t["name"] for ds in census["datasets"] for t in ds["tables"]}
+    return [{"kind": e["kind"], "dataset": e["dataset"], "resource_id": e["resource_id"],
+             "file": e.get("resource_name") or names.get(e["resource_id"]), "at": e.get("at"),
+             "changes": sorted(e.get("changes", {}))} for e in drift.load()[-100:]]
 
 
 # --- status badge (shields.io endpoint), English and Portuguese ---------------------------

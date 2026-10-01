@@ -88,7 +88,7 @@ section.tiles { background: none; border: 0; padding: 0; display: grid; grid-tem
 .bars .bar { height: 12px; display: flex; }
 .bars .bar > span { display: block; background: var(--bar); border-radius: 0 4px 4px 0; min-width: 2px; }
 .bars .n { font-variant-numeric: tabular-nums; color: var(--text-2); text-align: right; }
-.bars .lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bars .lbl { overflow-wrap: anywhere; line-height: 1.25; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
 .chip { font-size: .78rem; border: 1px solid var(--border); border-radius: 10px; padding: 0 7px; color: var(--text-2); }
 table.mini { width: 100%; border-collapse: collapse; font-size: .85rem; }
@@ -125,3 +125,13 @@ footer { padding-bottom: 30px; }
   .findings { gap: 10px; }
   .lang-switch { margin-left: 0; }
 }
+
+/* coverage funnel and sub-sections */
+.funnel { display: grid; grid-template-columns: minmax(120px, 30%) 1fr auto; gap: 6px 10px; align-items: center; margin: 10px 0 14px; font-size: .9rem; }
+.funnel .bar { height: 18px; display: flex; }
+.funnel .bar > span { display: block; background: var(--bar); border-radius: 0 4px 4px 0; min-width: 2px; }
+.funnel .n { font-variant-numeric: tabular-nums; text-align: right; color: var(--text-2); white-space: nowrap; }
+details.more { margin-top: 12px; }
+details.more summary { cursor: pointer; font-weight: 600; }
+h3.sub { margin-top: 18px; }
+.tile a.more { font-size: .8rem; }

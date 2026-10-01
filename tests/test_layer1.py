@@ -705,3 +705,24 @@ def test_model_follows_the_benchmark_or_falls_back(monkeypatch):
     monkeypatch.setattr(config, "LLM_MODEL", "bad name!")
     with pytest.raises(ValueError):
         model_select.resolve()
+
+
+def test_coverage_funnel_and_reasons(tmp_root):
+    conf = lambda **kw: {"pass": False, "missing": [], "undeclared": [], "error_rate": 0.0, **kw}
+    tables = [
+        ({"url": "https://a.gov/x.csv"}, {"status": "ok", "summary": {"conformance": {**conf(), "pass": True}}}),
+        ({"url": "https://a.gov/y.csv"}, {"status": "ok", "summary": {"conformance": conf(missing=["X"])}}),
+        ({"url": "https://a.gov/z.csv"}, {"status": "ok", "summary": {"conformance": conf(error_rate=0.5)}}),
+        ({"url": "https://a.gov/w.csv"}, {"status": "ok", "summary": {}}),
+        ({"url": "https://geo.gov/ows"}, {"status": "error", "error": "HTTPError: 404 Client Error: Not Found"}),
+        ({"url": ""}, {"status": "error", "error": "MissingSchema: Invalid URL ''"}),
+        ({"url": "https://a.gov/e.csv"}, {"status": "empty"}),
+        ({"url": "https://a.gov/p.csv"}, None),
+    ]
+    c = report.coverage(tables)
+    assert (c["files"], c["read"], c["checked"], c["conform"], c["read_without_schema"]) == (8, 4, 3, 1, 1)
+    assert (c["not_downloaded"], c["empty"], c["pending"]) == (2, 1, 1)
+    assert c["not_downloaded_by_host"] == {"HTTP 404 · geo.gov": 1, "no URL · —": 1}
+    assert (c["fail_missing_fields"], c["fail_cells_over_limit"], c["fail_only_cells"]) == (1, 1, 1)
+    b = report.drift_baseline({"r1": {"status": "ok", "header": ["a"], "validated_at": "2026-10-01T10:00:00+00:00"}})
+    assert b["files_with_baseline"] == 1 and b["first_baseline_at"].startswith("2026-10-01")

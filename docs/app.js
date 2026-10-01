@@ -14,7 +14,32 @@ const I18N = {
     col_dataset: "Dataset", col_level: "Level", col_files: "Files", col_conform: "Conform", col_dicts: "Dictionaries",
     privacy_note: "Only counts and row numbers are kept: no cell value is ever stored or shown.",
     subtitle: "Census of {date} · report of {gen}",
-    t_datasets: "Datasets", t_files: "Tabular files", t_checked: "Files checked", t_conf: "Files that conform",
+    read_note: "{n} of {t} · not downloaded {nd} · empty {e} · not a CSV {nt}",
+    "rk_no URL": "no URL", "rk_redirect loop": "redirect loop (the link points to itself)",
+    "rk_batch time limit": "did not finish within a batch", rk_other: "other error",
+    conf_tile_note: "{c} of {k} files with a declared schema · {w} read without one",
+    drift_baseline: "first run: baseline of {n} files on {d}; next comparison {next}",
+    drift_since: "baseline since {d} · {o} in files · {dd} in declared schemas",
+    details: "details ↓",
+    coverage_h: "Reading and conformance", unreadable_h: "Files that could not be read", drift_h: "Schema drift",
+    coverage_note: "From every tabular file of the portal to the ones that follow their declared schema, with the reason at each step.",
+    f_all: "tabular files", f_read: "read", f_with_schema: "read, with a declared schema", f_conform: "conform",
+    p_notread: "Why files were not read", p_notconform: "Why checked files do not conform",
+    nc_missing: "declared fields missing from the file", nc_undeclared: "columns not declared",
+    nc_cells: "more than {r} of the cells break type or constraints", nc_only_cells: "of them, only because of the cells",
+    nc_overlap: "A file can fail for more than one reason.",
+    s_empty_f: "empty file", s_nottab: "not a CSV behind the link",
+    u_file: "File", u_reason: "Reason", u_host: "Server",
+    drift_none_yet: "Drift needs two observations: the first run records each file's structure as its baseline ({n} files on {d}). The next weekly run ({next}) compares against it; any change opens an issue.",
+    drift_none: "No change in structure since the baseline ({n} files, first observed on {d}).",
+    d_kind: "Kind", d_changes: "What changed", d_when: "When",
+    pdf_h: "PDF dictionaries turned into schemas",
+    pdf_note: "Each PDF dictionary linked to a file, what the three stages made of it (deterministic reading, local LLM, people) and how well the file's own header confirms it. Schemas are Frictionless Table Schema files in this repository; suggested ones wait in a pull request.",
+    x_pdf: "PDF", x_outcome: "Outcome", x_stage: "Stage", x_schema: "Schema", x_typos: "Probable typos",
+    o_extracted: "confirmed by the header", o_suggested: "suggested (pull request)", "o_llm-needed": "waiting for the LLM",
+    o_failed: "not extracted", o_pending: "waiting for the file's header",
+    open_pr: "pull request ↗", schemas_label: "schemas",
+    t_datasets: "Datasets", t_files: "Tabular files", t_checked: "Files read", t_conf: "Files that conform",
     t_drift: "Schema drift events", of_total: "{n} of {t}", conf_note: "{n} of {t} files with a declared schema",
     pass: "Layer 1 passes", fail: "Layer 1 does not pass", threshold: "threshold {t}",
     drift_note: "{o} in files · {d} in declared schemas",
@@ -57,7 +82,32 @@ const I18N = {
     col_dataset: "Conjunto", col_level: "Nível", col_files: "Arquivos", col_conform: "Conformes", col_dicts: "Dicionários",
     privacy_note: "Só contagens e números de linha são guardados: nenhum valor de célula é armazenado ou exibido.",
     subtitle: "Censo de {date} · relatório de {gen}",
-    t_datasets: "Conjuntos de dados", t_files: "Arquivos tabulares", t_checked: "Arquivos verificados",
+    read_note: "{n} de {t} · não baixados {nd} · vazios {e} · não são CSV {nt}",
+    "rk_no URL": "sem URL", "rk_redirect loop": "redirecionamento em laço (o link aponta para si mesmo)",
+    "rk_batch time limit": "não terminou dentro de um lote", rk_other: "outro erro",
+    conf_tile_note: "{c} de {k} arquivos com esquema declarado · {w} lidos sem esquema",
+    drift_baseline: "primeira execução: linha de base de {n} arquivos em {d}; próxima comparação {next}",
+    drift_since: "linha de base desde {d} · {o} nos arquivos · {dd} nos esquemas declarados",
+    details: "detalhes ↓",
+    coverage_h: "Leitura e conformidade", unreadable_h: "Arquivos que não puderam ser lidos", drift_h: "Deriva de esquema",
+    coverage_note: "De todos os arquivos tabulares do portal até os que seguem o esquema declarado, com o motivo em cada etapa.",
+    f_all: "arquivos tabulares", f_read: "lidos", f_with_schema: "lidos, com esquema declarado", f_conform: "conformes",
+    p_notread: "Por que arquivos não foram lidos", p_notconform: "Por que arquivos verificados não estão conformes",
+    nc_missing: "campos declarados ausentes do arquivo", nc_undeclared: "colunas não declaradas",
+    nc_cells: "mais de {r} das células violam tipo ou restrições", nc_only_cells: "destes, só por causa das células",
+    nc_overlap: "Um arquivo pode falhar por mais de um motivo.",
+    s_empty_f: "arquivo vazio", s_nottab: "sem CSV por trás do link",
+    u_file: "Arquivo", u_reason: "Motivo", u_host: "Servidor",
+    drift_none_yet: "A deriva precisa de duas observações: a primeira execução registra a estrutura de cada arquivo como linha de base ({n} arquivos em {d}). A próxima execução semanal ({next}) compara com ela; qualquer mudança abre uma issue.",
+    drift_none: "Nenhuma mudança de estrutura desde a linha de base ({n} arquivos, primeira observação em {d}).",
+    d_kind: "Tipo", d_changes: "O que mudou", d_when: "Quando",
+    pdf_h: "Dicionários em PDF transformados em esquemas",
+    pdf_note: "Cada dicionário em PDF ligado a um arquivo, o que as três etapas fizeram dele (leitura determinística, LLM local, pessoas) e quanto o próprio cabeçalho do arquivo o confirma. Os esquemas são arquivos Frictionless Table Schema neste repositório; os sugeridos aguardam num pull request.",
+    x_pdf: "PDF", x_outcome: "Resultado", x_stage: "Etapa", x_schema: "Esquema", x_typos: "Prováveis erros de digitação",
+    o_extracted: "confirmado pelo cabeçalho", o_suggested: "sugerido (pull request)", "o_llm-needed": "aguardando o LLM",
+    o_failed: "não extraído", o_pending: "aguardando o cabeçalho do arquivo",
+    open_pr: "pull request ↗", schemas_label: "esquemas",
+    t_datasets: "Conjuntos de dados", t_files: "Arquivos tabulares", t_checked: "Arquivos lidos",
     t_conf: "Arquivos conformes", t_drift: "Eventos de deriva de esquema", of_total: "{n} de {t}",
     conf_note: "{n} de {t} arquivos com esquema declarado",
     pass: "A Camada 1 passa", fail: "A Camada 1 não passa", threshold: "limiar {t}",
@@ -164,20 +214,117 @@ function tile(label, value, note = "", meter = null, extra = "") {
     + `<div class="note">${note}</div>${extra}</div>`;
 }
 
+function nextMonday(iso) {
+  // The weekly run: Mondays 03:30 UTC (layer1.yml).
+  const d = new Date(iso || Date.now());
+  const n = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 3, 30));
+  do { n.setUTCDate(n.getUTCDate() + 1); } while (n.getUTCDay() !== 1);
+  return n.toISOString().slice(0, 10);
+}
+
 function renderTiles(s) {
+  const c = s.coverage || {};
   const status = s.l1_rate == null ? "" : s.l1_pass
     ? `<div class="status good">✓ ${esc(t("pass"))}</div>`
     : `<div class="status bad">✗ ${esc(t("fail"))}</div>`;
+  const more = (anchor) => ` <a class="more" href="#${anchor}">${esc(t("details"))}</a>`;
+  const d = s.drift || {};
+  const day = (x) => (x || "").slice(0, 10);
+  const driftNote = (d.observed + d.declared === 0 && d.first_baseline_at)
+    ? t("drift_baseline", { n: fmt(d.files_with_baseline), d: day(d.first_baseline_at), next: nextMonday(s.generated_at) })
+    : t("drift_since", { d: day(d.first_baseline_at), o: fmt(d.observed), dd: fmt(d.declared) });
   el("tiles").innerHTML = [
     tile(t("t_datasets"), fmt(s.datasets.total)),
     tile(t("t_files"), fmt(s.tables.total)),
-    tile(t("t_checked"), pct(s.tables.validation_coverage),
-      esc(t("of_total", { n: fmt(s.tables.validated), t: fmt(s.tables.total) })), s.tables.validation_coverage ?? 0),
-    tile(t("t_conf"), pct(s.l1_rate), esc(t("conf_note", { n: fmt(s.conformant), t: fmt(s.verifiable) }))
-      + ` · ${esc(t("threshold", { t: pct(s.method.l1_pass_threshold) }))}`, s.l1_rate ?? 0, status),
-    tile(t("t_drift"), fmt(s.drift.observed + s.drift.declared),
-      esc(t("drift_note", { o: fmt(s.drift.observed), d: fmt(s.drift.declared) }))),
+    tile(t("t_checked"), fmt(c.read), esc(t("read_note", { n: fmt(c.read), t: fmt(c.files), nd: fmt(c.not_downloaded),
+      e: fmt(c.empty), nt: fmt(c.not_tabular) })) + more("coverage"), c.files ? c.read / c.files : 0),
+    tile(t("t_conf"), pct(s.l1_rate), esc(t("conf_tile_note", { c: fmt(c.conform), k: fmt(c.checked), w: fmt(c.read_without_schema) }))
+      + ` · ${esc(t("threshold", { t: pct(s.method.l1_pass_threshold) }))}` + more("coverage"), s.l1_rate ?? 0, status),
+    tile(t("t_drift"), fmt(d.observed + d.declared), esc(driftNote) + more("drift")),
   ].join("");
+}
+
+// --- reading and conformance ---------------------------------------------------------------
+function renderCoverage(s) {
+  const c = s.coverage || {};
+  const steps = [["f_all", c.files], ["f_read", c.read], ["f_with_schema", c.checked], ["f_conform", c.conform]];
+  const max = c.files || 1;
+  el("funnel").innerHTML = `<div class="funnel">${steps.map(([k, n]) =>
+    `<span>${esc(t(k))}</span><span class="bar"><span style="width:${((n || 0) / max) * 100}%"></span></span>`
+    + `<span class="n">${fmt(n)} · ${pct((n || 0) / max)}</span>`).join("")}</div>`;
+  // "reason · host": the reason in the page's language (HTTP codes stay as they are)
+  const reason = (r) => (T[`rk_${r}`] || r);
+  const notRead = {};
+  for (const [k, n] of Object.entries(c.not_downloaded_by_host || {})) {
+    const [r, host] = k.split(" · ");
+    notRead[host && host !== "—" ? `${reason(r)} · ${host}` : reason(r)] = n;
+  }
+  if (c.empty) notRead[t("s_empty_f")] = c.empty;
+  if (c.not_tabular) notRead[t("s_nottab")] = c.not_tabular;
+  const notConform = {
+    [t("nc_missing")]: c.fail_missing_fields, [t("nc_undeclared")]: c.fail_undeclared_columns,
+    [t("nc_cells", { r: pct(s.method.l1_max_error_rate) })]: c.fail_cells_over_limit,
+    [`↳ ${t("nc_only_cells")}`]: c.fail_only_cells,
+  };
+  el("coverage-panels").innerHTML = `<div class="panel"><h3>${esc(t("p_notread"))}</h3>${bars(notRead)}</div>`
+    + `<div class="panel"><h3>${esc(t("p_notconform"))}</h3>${bars(notConform)}<p class="small muted">${esc(t("nc_overlap"))}</p></div>`;
+  const u = DATA.unreadable || [];
+  el("unreadable-wrap").hidden = !u.length;
+  el("unreadable").innerHTML = `<thead><tr><th>${esc(t("col_dataset"))}</th><th>${esc(t("u_file"))}</th>`
+    + `<th>${esc(t("u_reason"))}</th><th>${esc(t("u_host"))}</th></tr></thead><tbody>`
+    + u.map((x) => `<tr><td><a href="#" data-open="${esc(x.dataset)}">${esc(x.title)}</a></td>`
+      + `<td><a href="${esc(x.url)}" rel="noopener">${esc(x.file)}</a></td><td title="${esc(x.detail)}">${esc(T[`rk_${x.reason}`] || x.reason)}</td>`
+      + `<td>${esc(x.host || "—")}</td></tr>`).join("") + "</tbody>";
+  el("unreadable").querySelectorAll("a[data-open]").forEach((a) => a.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    OPEN.add(a.dataset.open);
+    renderDatasets();
+    document.getElementById("datasets").scrollIntoView();
+  }));
+  // drift
+  const d = s.drift || {};
+  const day = (x) => (x || "").slice(0, 10);
+  const events = DATA.drift_events || [];
+  el("drift-text").textContent = events.length ? t("drift_since", { d: day(d.first_baseline_at), o: fmt(d.observed), dd: fmt(d.declared) })
+    : (d.files_with_baseline && day(d.first_baseline_at) === day(d.last_observed_at))
+      ? t("drift_none_yet", { n: fmt(d.files_with_baseline), d: day(d.first_baseline_at), next: nextMonday(s.generated_at) })
+      : t("drift_none", { n: fmt(d.files_with_baseline), d: day(d.first_baseline_at) });
+  el("drift-table").innerHTML = events.length ? `<thead><tr><th>${esc(t("d_when"))}</th><th>${esc(t("d_kind"))}</th>`
+    + `<th>${esc(t("u_file"))}</th><th>${esc(t("d_changes"))}</th></tr></thead><tbody>`
+    + events.slice().reverse().map((e) => `<tr><td>${esc(day(e.at))}</td><td>${esc(e.kind)}</td>`
+      + `<td><a href="?resource=${esc(e.resource_id)}">${esc(e.file || e.resource_id)}</a></td>`
+      + `<td>${e.changes.map((x) => `<code>${esc(x)}</code>`).join(" ")}</td></tr>`).join("") + "</tbody>" : "";
+}
+
+function schemaLinks(files) {
+  return Object.entries(files || {}).map(([kind, path]) =>
+    `<a href="${repo()}/blob/main/${encodeURI(path)}" rel="noopener">${esc(kind)}</a>`).join(" · ") || "—";
+}
+
+function renderPdf() {
+  const rows = DATA.pdf || [];
+  el("pdf").hidden = !rows.length;
+  if (!rows.length) return;
+  const prs = `${repo()}/pulls?q=is%3Apr+schemas+suggested`;
+  el("pdf-table").innerHTML = `<thead><tr><th>${esc(t("col_dataset"))}</th><th>${esc(t("x_pdf"))}</th>`
+    + `<th>${esc(t("x_outcome"))}</th><th>${esc(t("x_stage"))}</th><th>${esc(t("k_recall"))}</th>`
+    + `<th>${esc(t("k_precision"))}</th><th>${esc(t("x_schema"))}</th><th>${esc(t("x_typos"))}</th></tr></thead><tbody>`
+    + rows.map((x) => {
+      const schema = x.schema && x.schema_status !== "suggested"
+        ? `<a href="${repo()}/blob/main/${encodeURI(x.schema)}" rel="noopener">${esc(x.schema_status || "schema")} ↗</a>`
+        : x.outcome === "suggested" ? `<a href="${prs}" rel="noopener">${esc(t("open_pr"))}</a>` : "—";
+      const typos = Object.entries(x.probable_typos || {}).map(([a, b]) => `<code>${esc(a)}</code> → <code>${esc(b)}</code>`).join("<br>");
+      return `<tr><td><a href="#" data-open="${esc(x.dataset)}">${esc(x.title)}</a></td>`
+        + `<td><a href="${esc(x.url)}" rel="noopener">${esc(x.dictionary)}</a></td>`
+        + `<td>${esc(t(`o_${x.outcome}`))}</td><td>${esc(x.stage ? (x.stage === "llm" ? `LLM (${x.model || "?"})` : t("stage_det")) : "—")}</td>`
+        + `<td class="num">${pct(x.recall)}</td><td class="num">${pct(x.precision)}</td><td>${schema}</td><td>${typos || "—"}</td></tr>`;
+    }).join("") + "</tbody>";
+  el("pdf-table").querySelectorAll("a[data-open]").forEach((a) => a.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    OPEN.add(a.dataset.open);
+    renderDatasets();
+    document.getElementById("datasets").scrollIntoView();
+  }));
 }
 
 // --- maturity: one stacked bar per unit --------------------------------------------
@@ -289,7 +436,7 @@ function fileDetail(f) {
   }
   if (f.error) more += `<div class="small muted">${esc(f.error)}</div>`;
   return `<tr id="file-${esc(f.id)}"><td><a href="${esc(f.url)}" rel="noopener">${esc(f.name || f.id)}</a>${more}</td>`
-    + `<td>${levelBadge(f.level)}</td><td>${dict}</td><td>${esc(f.schema_kind || "—")}</td>`
+    + `<td>${levelBadge(f.level)}</td><td>${dict}</td><td class="small">${esc(f.schema_kind || "—")}<br>${schemaLinks(f.schema_files)}</td>`
     + `<td>${esc(status)}</td><td class="num">${fmt(f.rows)}</td><td>${conf}</td><td class="num">${fmt(f.drift_events)}</td></tr>`;
 }
 
@@ -348,6 +495,8 @@ async function main() {
   el("subtitle").textContent = t("subtitle", { date: day(s.census_at), gen: day(s.generated_at) });
   renderTiles(s);
   renderMaturity(s);
+  renderCoverage(s);
+  renderPdf();
   renderFindings(s.findings);
   // ?resource=<id> (links in the drift issues) opens its dataset and highlights the file
   const wanted = new URLSearchParams(location.search).get("resource");

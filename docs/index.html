@@ -45,6 +45,29 @@
     <ul class="legend" id="maturity-legend"></ul>
   </section>
 
+  <section id="coverage">
+    <div class="section-head"><h2 data-i18n="coverage_h">Reading and conformance</h2></div>
+    <p class="muted" data-i18n="coverage_note">From every tabular file of the portal to the ones that follow their declared
+      schema, with the reason at each step.</p>
+    <div id="funnel"></div>
+    <div class="findings" id="coverage-panels"></div>
+    <details class="more" id="unreadable-wrap">
+      <summary data-i18n="unreadable_h">Files that could not be read</summary>
+      <div class="table-wrap"><table class="files" id="unreadable"></table></div>
+    </details>
+    <h3 class="sub" id="drift" data-i18n="drift_h">Schema drift</h3>
+    <p class="muted" id="drift-text"></p>
+    <div class="table-wrap"><table class="files" id="drift-table"></table></div>
+  </section>
+
+  <section id="pdf" hidden>
+    <div class="section-head"><h2 data-i18n="pdf_h">PDF dictionaries turned into schemas</h2></div>
+    <p class="muted" data-i18n="pdf_note">Each PDF dictionary linked to a file, what the three stages made of it
+      (deterministic reading, local LLM, people) and how well the file's own header confirms it. Schemas are
+      Frictionless Table Schema files in this repository; suggested ones wait in a pull request.</p>
+    <div class="table-wrap"><table class="files" id="pdf-table"></table></div>
+  </section>
+
   <section>
     <div class="section-head"><h2 data-i18n="findings_h">Documentation findings</h2></div>
     <p class="muted" data-i18n="findings_note">The dictionaries themselves, measured every week: what format they come in,

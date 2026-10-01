@@ -57,8 +57,8 @@ As observed when this instance was set up (01/10/2026); the dashboard has the cu
 | `portal.json` | `portal_url` = `https://dados.recife.pe.gov.br` |
 | `README.md`, `LEIAME.md`, `CITATION.cff` | this text and the citation of this repository |
 
-Everything else is the code of `5ltep-layer1` at commit `219b8b9`
-([219b8b97f0e8d83b8bb8a7ed922be9d10a2b4dc8](https://github.com/lsp3cesarschool/5ltep-layer1/commit/219b8b97f0e8d83b8bb8a7ed922be9d10a2b4dc8)).
+Everything else is the code of `5ltep-layer1` at commit `af17564`
+([af17564ba4f83cfee5c7c8cab53ef1e61b032d5f](https://github.com/lsp3cesarschool/5ltep-layer1/commit/af17564ba4f83cfee5c7c8cab53ef1e61b032d5f)).
 
 ## Running it, and adapting it again
 
