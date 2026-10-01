@@ -1,16 +1,16 @@
 name: 5L-TEP Layer 1 Structural Contracts
 
-# Weekly: schemas change rarely, and a weekly census catches a change within days. Mondays at
+# Weekly: schemas change rarely, and a weekly survey of the portal catches a change within days. Mondays at
 # 03:30 UTC, away from Layer 4 (every 6 h, on the hour) and Layer 3 (5th of the month, 06:00).
 # Manual: Actions > this workflow > Run workflow.
 #
-# Batches: batch 1 runs the census and plans the work queue; every batch validates files
+# Batches: batch 1 surveys the portal and plans the work queue; every batch validates files
 # until its time budget runs out and, while files or PDF dictionaries are still pending, starts
 # the next batch. The first run of a portal can take several batches (all of its files); later
 # weeks only re-check what changed, plus a monthly rotation.
 #
 # Three jobs, so that the LLM never runs where the repository can be written (SECURITY in README):
-#   plan     census, queue, status badge (writes; downloads dictionaries only; no model);
+#   plan     survey of the portal, queue, status badge (writes; downloads dictionaries only; no model);
 #   analyse  downloads and validates files, extracts PDF dictionaries (deterministic, then the
 #            local LLM) with a READ-ONLY token, and hands the results over as an artifact;
 #   publish  accepts only well-formed results for known datasets (main.py accept-artifact),
@@ -30,7 +30,7 @@ on:
         type: boolean
         default: false
       batch:
-        description: 'Batch number in the chain (set automatically; 1 = new census)'
+        description: 'Batch number in the chain (set automatically; 1 = new survey of the portal)'
         required: false
         default: '1'
 
@@ -56,7 +56,7 @@ env:
 jobs:
   plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 300        # a large portal's census (hundreds of dictionaries) can take a while
+    timeout-minutes: 300        # surveying a large portal (hundreds of dictionaries) can take a while
     permissions:
       contents: write
     steps:
@@ -70,7 +70,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
-      - name: Census and work queue
+      - name: Survey of the portal and work queue
         if: ${{ env.BATCH == '1' }}
         run: |
           set -euo pipefail
@@ -80,7 +80,7 @@ jobs:
           git config user.name "5L-TEP L1 Bot"
           git config user.email "5ltep-l1-bot@users.noreply.github.com"
           git add results/ schemas/ docs/data/
-          git diff --cached --quiet || git commit -m "chore(l1): census [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git diff --cached --quiet || git commit -m "chore(l1): survey of the portal [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
           git pull --rebase --autostash
           git push
 
@@ -95,7 +95,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          ref: ${{ github.ref_name }}   # the census committed by the plan job
+          ref: ${{ github.ref_name }}   # the survey committed by the plan job
           persist-credentials: false
       - uses: actions/setup-python@v6
         with:

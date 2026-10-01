@@ -4,7 +4,7 @@ title: "5LTEP-L1 · Recife instance: 5L-TEP Layer 1 Structural Contracts Toolkit
 abstract: >-
   Reference implementation of Layer 1 (Structural Contracts) of the Five-Layer
   Trust Engineering Pyramid (5L-TEP, SOFTENG 2026) for open government data: a
-  census of every dataset of a CKAN portal on a schema maturity scale (from no
+  survey of every dataset of a CKAN portal on a schema maturity scale (from no
   dictionary to a machine-verifiable Table Schema), readers for the dictionaries
   portals publish (CSV, JSON, XML, XLSX, resource descriptions and PDF, the last
   through deterministic extraction, a local LLM and human review, with the
