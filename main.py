@@ -205,6 +205,8 @@ def cmd_report(args) -> None:
     queue = _load(config.QUEUE_FILE, [])
     summary = report.build_summary(census, validation, extraction, queue)
     report.write_json(config.SUMMARY_FILE, summary)
+    if not queue:      # the weekly chain is complete: one row of history
+        report.update_history(census, validation, summary)
     report.write_json(config.DASHBOARD_FILE, report.dashboard_data(census, validation, extraction, summary))
     state, info = report.status_from_summary(summary, args.chain_continues != "no")
     report.write_status(state, **info)

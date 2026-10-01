@@ -111,6 +111,14 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
              "url": r.get("url"), "candidate": cand, "last_modified": r.get("last_modified") or r.get("metadata_modified"),
              "size": r.get("size"), "attached": False, "datastore": None, "described": 0}
         described = dictionaries.from_description(r.get("description") or "")
+        described_from = r["id"]
+        if not described:
+            # The same data in another format (XML, JSON, HTML) may carry the field list the CSV lacks.
+            sibling = next((x for x in data_res if x is not r and linker.jaccard(x.get("name") or "", r.get("name") or "") >= 0.99
+                            and dictionaries.from_description(x.get("description") or "")), None)
+            if sibling:
+                described = dictionaries.from_description(sibling.get("description") or "")
+                described_from = sibling["id"]
         if r.get("schema"):
             attached = schemas.from_attached(r["schema"])
             t["attached"] = attached is not None
@@ -126,6 +134,7 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
         tables.append(t)
         if described:
             t["described"] = len(described)
+            t["described_from"] = described_from
             t["_described"] = described
 
     link_input = [{"id": d["id"], "name": d["name"], "declared_resource_ids": d.get("declared_resource_ids"),
@@ -149,7 +158,8 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
         lk = links.get(t["id"])
         described = t.pop("_described", None)
         if lk is None and described:
-            lk = {"dictionary": None, "part": None, "method": "description", "score": 1.0}
+            lk = {"dictionary": None, "part": None, "score": 1.0, "resource_id": t["described_from"],
+                  "method": "description" if t["described_from"] == t["id"] else "description-sibling"}
         t["link"] = lk
         dentry = by_id.get(lk["dictionary"]) if lk else None
         t["level"] = level_of(t, dentry)
@@ -162,7 +172,7 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
             _write(pkg["name"], t, "declared", declared, written, events)
         elif described:
             _write(pkg["name"], t, "described", schemas.from_fields(described, "described", {
-                "kind": "description", "resource_id": t["id"]}), written, events)
+                "kind": "description", "resource_id": t["described_from"]}), written, events)
 
     levels = [t["level"] for t in tables]
     return {

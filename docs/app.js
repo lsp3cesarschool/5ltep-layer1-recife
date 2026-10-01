@@ -8,7 +8,15 @@ const I18N = {
     back: "← Back to the repository", eyebrow: "5L-TEP · Layer 1 · Structural Contracts", loading: "Loading…",
     run: "Run Layer 1 now ↗", issues: "Drift issues ↗", prs: "Suggested schemas ↗",
     maturity_h: "Schema maturity", findings_h: "Documentation findings", datasets_h: "Datasets",
-    maturity_note: "How verifiable is the structure the portal declares for each file? A dataset is as verifiable as its least documented file.",
+    maturity_note: "A dataset is a page of the portal; its files are the tables (CSV, ZIP) published in it. The level says how verifiable the structure the portal declares for each file is, which shows where documentation work pays off first; a dataset takes the level of its least documented file. Click a band to see its items.",
+    progress_h: "Progress over time",
+    progress_note: "One row per weekly run: how many files the portal publishes, reads, declares and gets right, and what changed since the run before (files fixed or broken, new or removed, drift).",
+    pg_first: "History starts on {d}: the next weekly run ({next}) adds the first comparison.",
+    pg_conform: "conform (of the files with a declared schema)", pg_checkable: "files with a declared schema (of all)",
+    pg_date: "Run", pg_files: "Files", pg_read: "Read", pg_checked: "With schema", pg_conf: "Conform",
+    pg_fixed: "Fixed", pg_broken: "Broke", pg_new: "New", pg_gone: "Removed", pg_drift: "Drift",
+    filter_d: "datasets at level {l}", filter_f: "files at level {l}", dict_page: "page on the portal ↗",
+    m_description_sibling: "list in the description of another format", "m_description-sibling": "list in the description of another format",
     findings_note: "The dictionaries themselves, measured every week: what format they come in, why some cannot be read, how the portal links them to the files, how many ways it spells a type, and how often dictionary and file disagree.",
     search: "Search datasets or files", all_levels: "All levels", only_failing: "only files that do not conform",
     col_dataset: "Dataset", col_level: "Level", col_files: "Files", col_conform: "Conform", col_dicts: "Dictionaries",
@@ -63,7 +71,7 @@ const I18N = {
     stage_det: "deterministic", stage_llm: "LLM", outcomes: "Outcomes",
     m_name: "by name", m_single: "only dictionary", "m_declared-id": "declared by the dictionary", m_header: "by columns",
     m_description: "list in the description", m_none: "no dictionary",
-    r_html: "an HTML page instead of the file", "r_html-page": "an HTML page instead of the file", r_malformed: "malformed file",
+    "r_html-page": "an HTML page instead of the file", r_malformed: "malformed file",
     "r_no-field-table": "no field table recognised", "r_format-not-read": "format not read yet", "r_too-large": "too large",
     "r_download-failed": "download failed", r_other: "other",
     none: "none", f_rows: "rows", f_schema: "schema", f_status: "status", f_dict: "dictionary", f_conf: "conforms",
@@ -76,7 +84,15 @@ const I18N = {
     back: "← Voltar ao repositório", eyebrow: "5L-TEP · Camada 1 · Contratos Estruturais", loading: "Carregando…",
     run: "Rodar a Camada 1 agora ↗", issues: "Issues de deriva ↗", prs: "Esquemas sugeridos ↗",
     maturity_h: "Maturidade do esquema", findings_h: "Achados de documentação", datasets_h: "Conjuntos de dados",
-    maturity_note: "Quão verificável é a estrutura que o portal declara para cada arquivo? Um conjunto é tão verificável quanto o seu arquivo menos documentado.",
+    maturity_note: "Um conjunto é uma página do portal; seus arquivos são as tabelas (CSV, ZIP) publicadas nele. O nível diz quão verificável é a estrutura que o portal declara para cada arquivo, o que mostra onde a documentação compensa primeiro; o conjunto fica com o nível do seu arquivo menos documentado. Clique numa faixa para ver os itens.",
+    progress_h: "Progresso ao longo do tempo",
+    progress_note: "Uma linha por execução semanal: quantos arquivos o portal publica, quantos lemos, quantos têm esquema declarado e quantos estão conformes, e o que mudou desde a execução anterior (arquivos consertados ou quebrados, novos ou removidos, deriva).",
+    pg_first: "O histórico começa em {d}: a próxima execução semanal ({next}) traz a primeira comparação.",
+    pg_conform: "conformes (dos arquivos com esquema declarado)", pg_checkable: "arquivos com esquema declarado (de todos)",
+    pg_date: "Execução", pg_files: "Arquivos", pg_read: "Lidos", pg_checked: "Com esquema", pg_conf: "Conformes",
+    pg_fixed: "Consertados", pg_broken: "Quebrados", pg_new: "Novos", pg_gone: "Removidos", pg_drift: "Deriva",
+    filter_d: "conjuntos no nível {l}", filter_f: "arquivos no nível {l}", dict_page: "página no portal ↗",
+    m_description_sibling: "lista na descrição de outro formato", "m_description-sibling": "lista na descrição de outro formato",
     findings_note: "Os próprios dicionários, medidos toda semana: em que formato vêm, por que alguns não podem ser lidos, como o portal os liga aos arquivos, de quantos jeitos escreve um tipo e com que frequência dicionário e arquivo discordam.",
     search: "Buscar conjuntos ou arquivos", all_levels: "Todos os níveis", only_failing: "só arquivos não conformes",
     col_dataset: "Conjunto", col_level: "Nível", col_files: "Arquivos", col_conform: "Conformes", col_dicts: "Dicionários",
@@ -175,6 +191,10 @@ function translatePage() {
   document.documentElement.lang = LANG === "pt" ? "pt-BR" : "en";
   document.querySelectorAll("[data-i18n]").forEach((n) => { n.textContent = t(n.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((n) => { n.placeholder = t(n.dataset.i18nPlaceholder); });
+  document.querySelectorAll("[data-i18n-label]").forEach((n) => { n.label = t(n.dataset.i18nLabel); });
+  document.querySelectorAll("#level-filter option[value^='d'], #level-filter option[value^='f']").forEach((o) => {
+    o.textContent = t(o.value[0] === "d" ? "filter_d" : "filter_f", { l: o.value.slice(1) });
+  });
   for (const lang of ["en", "pt"]) {
     const link = el(`lang-${lang}`);
     const u = new URL(location.href);
@@ -296,6 +316,65 @@ function renderCoverage(s) {
       + `<td>${e.changes.map((x) => `<code>${esc(x)}</code>`).join(" ")}</td></tr>`).join("") + "</tbody>" : "";
 }
 
+function renderProgress(s) {
+  const rows = DATA.history || [];
+  const box = el("progress-chart");
+  const day = (x) => (x || "").slice(0, 10);
+  if (rows.length < 2) {
+    box.innerHTML = `<p class="muted">${esc(t("pg_first", { d: day((rows[0] || {}).at || s.census_at), next: nextMonday(s.generated_at) }))}</p>`;
+  } else {
+    const series = [
+      { key: "pg_conform", color: "var(--series-1)", value: (r) => (r.l1_rate == null ? null : r.l1_rate * 100) },
+      { key: "pg_checkable", color: "var(--series-2)", value: (r) => (r.files ? (r.checked / r.files) * 100 : null) },
+    ];
+    const W = 720, H = 220, L = 40, R = 150, T = 12, B = 28;
+    const x = (i) => L + (rows.length === 1 ? 0 : (i * (W - L - R)) / (rows.length - 1));
+    const y = (v) => T + (1 - v / 100) * (H - T - B);
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(t("progress_h"))}">`;
+    for (const g of [0, 25, 50, 75, 100]) {
+      svg += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(g)}" y2="${y(g)}"/><text class="axis-label" x="${L - 6}" y="${y(g) + 4}" text-anchor="end">${g}%</text>`;
+    }
+    const step = Math.max(1, Math.ceil(rows.length / 8));
+    rows.forEach((r, i) => {
+      if (i % step === 0 || i === rows.length - 1) svg += `<text class="axis-label" x="${x(i)}" y="${H - 8}" text-anchor="middle">${esc(day(r.at).slice(5))}</text>`;
+    });
+    for (const sr of series) {
+      const pts = rows.map((r, i) => [x(i), sr.value(r)]).filter(([, v]) => v != null);
+      svg += `<polyline class="line" stroke="${sr.color}" points="${pts.map(([px, v]) => `${px},${y(v)}`).join(" ")}"/>`;
+      svg += pts.map(([px, v]) => `<circle class="dot" r="4" cx="${px}" cy="${y(v)}" fill="${sr.color}"/>`).join("");
+      const [lx, lv] = pts[pts.length - 1] || [0, 0];
+      svg += `<text class="label" x="${lx + 8}" y="${y(lv) + 4}">${pct(lv / 100)}</text>`;
+    }
+    svg += `<line class="cross" id="pg-cross" y1="${T}" y2="${H - B}" x1="0" x2="0" visibility="hidden"/>`;
+    const band = (W - L - R) / Math.max(1, rows.length - 1);
+    rows.forEach((r, i) => {
+      svg += `<rect data-i="${i}" x="${x(i) - band / 2}" y="${T}" width="${band}" height="${H - T - B}" fill="transparent"/>`;
+    });
+    svg += "</svg>";
+    box.innerHTML = `<div class="chart-legend">${series.map((sr) => `<span><span class="key" style="background:${sr.color}"></span>${esc(t(sr.key))}</span>`).join("")}</div>`
+      + `<div class="chart">${svg}</div>`;
+    const cross = box.querySelector("#pg-cross");
+    box.querySelectorAll("rect[data-i]").forEach((rect) => {
+      const r = rows[Number(rect.dataset.i)];
+      const html = `<strong>${esc(day(r.at))}</strong><br>` + series.map((sr) => `${esc(t(sr.key))}: ${pct(sr.value(r) == null ? null : sr.value(r) / 100)}`).join("<br>")
+        + `<br>${esc(t("pg_fixed"))} ${fmt(r.fixed)} · ${esc(t("pg_broken"))} ${fmt(r.broken)}`;
+      bindTip(rect, html);
+      rect.addEventListener("mouseenter", () => { cross.setAttribute("x1", x(Number(rect.dataset.i))); cross.setAttribute("x2", x(Number(rect.dataset.i))); cross.setAttribute("visibility", "visible"); });
+      rect.addEventListener("mouseleave", () => cross.setAttribute("visibility", "hidden"));
+    });
+  }
+  const cols = ["pg_date", "pg_files", "pg_read", "pg_checked", "pg_conf", "pg_fixed", "pg_broken", "pg_new", "pg_gone", "pg_drift"];
+  el("progress-table").innerHTML = rows.length ? `<thead><tr>${cols.map((c, i) => `<th${i ? ' class="num"' : ""}>${esc(t(c))}</th>`).join("")}</tr></thead><tbody>`
+    + rows.slice().reverse().map((r, i, all) => {
+      const before = all[i + 1];
+      const drift = (r.drift_observed + r.drift_declared) - (before ? before.drift_observed + before.drift_declared : 0);
+      return `<tr><td>${esc(day(r.at))}${r.commit ? ` <code>${esc(r.commit)}</code>` : ""}</td><td class="num">${fmt(r.files)}</td>`
+        + `<td class="num">${fmt(r.read)}</td><td class="num">${fmt(r.checked)}</td><td class="num">${fmt(r.conform)} (${pct(r.l1_rate)})</td>`
+        + `<td class="num">${fmt(r.fixed)}</td><td class="num">${fmt(r.broken)}</td><td class="num">${fmt(r.new_files)}</td>`
+        + `<td class="num">${fmt(r.gone_files)}</td><td class="num">${fmt(drift)}</td></tr>`;
+    }).join("") + "</tbody>" : "";
+}
+
 function schemaLinks(files) {
   return Object.entries(files || {}).map(([kind, path]) =>
     `<a href="${repo()}/blob/main/${encodeURI(path)}" rel="noopener">${esc(kind)}</a>`).join(" · ") || "—";
@@ -342,6 +421,9 @@ function renderMaturity(s) {
       const n = counts[String(l)] || 0;
       if (!n) continue;
       const seg = document.createElement("div");
+      seg.setAttribute("role", "button");
+      seg.addEventListener("click", () => filterLevel(name === t("u_files") ? "f" : "d", l));
+      seg.addEventListener("keydown", (ev) => { if (ev.key === "Enter") filterLevel(name === t("u_files") ? "f" : "d", l); });
       seg.style.flex = `${n} 0 0`;
       seg.style.background = levelColor(l);
       seg.style.color = `var(--ink-${l})`;
@@ -353,8 +435,17 @@ function renderMaturity(s) {
     box.appendChild(row);
   }
   el("maturity-legend").innerHTML = T.lv.map((label, l) =>
-    `<li><span class="swatch" style="background:${levelColor(l)}"></span>${esc(label)}`
+    `<li data-level="${l}" tabindex="0"><span class="swatch" style="background:${levelColor(l)}"></span>${esc(label)}`
     + ` (${fmt(s.datasets.by_level[l])} · ${fmt(s.tables.by_level[l])})</li>`).join("");
+  el("maturity-legend").querySelectorAll("li").forEach((li) =>
+    li.addEventListener("click", () => filterLevel("d", Number(li.dataset.level))));
+}
+
+function filterLevel(scope, level) {
+  el("level-filter").value = `${scope}${level}`;
+  el("search").value = "";
+  renderDatasets();
+  el("datasets-head").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // --- findings ----------------------------------------------------------------------
@@ -415,7 +506,11 @@ function levelBadge(l) {
 function fileDetail(f) {
   const c = f.conformance;
   const status = f.status ? t(`s_${f.status}`) : t("s_pending");
-  const dict = f.dictionary ? `${esc(f.dictionary.format || "")} · ${esc(t(`m_${f.dictionary.method}`))}` : esc(t("m_none"));
+  const dm = f.dictionary;
+  const dict = dm ? `${dm.url ? `<a href="${esc(dm.url)}" rel="noopener">${esc(dm.format || "")}</a>` : esc(dm.format || "")}`
+    + ` · ${esc(t(`m_${(dm.method || "").replace("-", "_")}`))}`
+    + (dm.page ? `<br><a class="small" href="${esc(dm.page)}" rel="noopener">${esc(t("dict_page"))}</a>` : "")
+    : esc(t("m_none"));
   let conf = "—";
   let more = "";
   if (c) {
@@ -445,24 +540,27 @@ const OPEN = new Set();
 
 function renderDatasets() {
   const q = el("search").value.trim().toLowerCase();
-  const level = el("level-filter").value;
+  const lf = el("level-filter").value;
+  const scope = lf ? lf[0] : "", level = lf ? lf.slice(1) : "";
   const failing = el("only-failing").checked;
   const body = document.querySelector("#datasets tbody");
   const rows = [];
   for (const ds of DATA.datasets) {
     let files = ds.tables;
     if (failing) files = files.filter((f) => f.conformance && !f.conformance.pass);
+    if (scope === "f") files = files.filter((f) => String(f.level) === level);
     const hit = !q || ds.name.toLowerCase().includes(q) || (ds.title || "").toLowerCase().includes(q)
       || files.some((f) => (f.name || "").toLowerCase().includes(q));
-    if (!hit || (level !== "" && String(ds.level) !== level) || (failing && !files.length)) continue;
+    if (!hit || (scope === "d" && String(ds.level) !== level) || ((failing || scope === "f") && !files.length)) continue;
     const ver = ds.tables.filter((f) => f.conformance);
     const ok = ver.filter((f) => f.conformance.pass);
-    const dicts = ds.dictionaries.map((d) => `${esc(d.format)}${d.readable === false ? " ✗" : ""}`).join(", ") || "—";
+    const dicts = ds.dictionaries.map((d) => `<a href="${esc(d.page || d.url)}" rel="noopener" title="${esc(d.name)}">`
+      + `${esc(d.format)}</a>${d.readable === false ? " ✗" : ""}`).join(", ") || "—";
     rows.push(`<tr class="ds" data-name="${esc(ds.name)}" tabindex="0"><td><strong>${esc(ds.title)}</strong><br>`
       + `<a class="small" href="${esc(ds.url)}" rel="noopener">${esc(ds.name)}</a></td><td>${levelBadge(ds.level)}</td>`
       + `<td class="num">${fmt(ds.tables.length)}</td><td class="num">${ver.length ? `${fmt(ok.length)}/${fmt(ver.length)}` : "—"}</td>`
       + `<td class="small">${dicts}</td></tr>`);
-    if (OPEN.has(ds.name)) {
+    if (OPEN.has(ds.name) || scope === "f") {      // a filter on files shows the matching files right away
       rows.push(`<tr class="detail"><td colspan="5"><div class="table-wrap"><table class="files"><thead><tr>`
         + [t("col_files"), t("col_level"), t("f_dict"), t("f_schema"), t("f_status"), t("f_rows"), t("f_conf"), t("f_drift")]
           .map((h) => `<th>${esc(h)}</th>`).join("")
@@ -496,8 +594,12 @@ async function main() {
   renderTiles(s);
   renderMaturity(s);
   renderCoverage(s);
+  renderProgress(s);
   renderPdf();
   renderFindings(s.findings);
+  // ?level=d2 / f0 (same as clicking a maturity band) filters the table
+  const lvl = new URLSearchParams(location.search).get("level");
+  if (lvl && /^[df][0-4]$/.test(lvl)) el("level-filter").value = lvl;
   // ?resource=<id> (links in the drift issues) opens its dataset and highlights the file
   const wanted = new URLSearchParams(location.search).get("resource");
   if (wanted) {

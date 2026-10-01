@@ -42,6 +42,7 @@ EXTRACTION_FILE = RESULTS / "extraction.json"
 QUEUE_FILE = RESULTS / "queue.json"
 DRIFT_FILE = RESULTS / "drift.json"
 SUMMARY_FILE = RESULTS / "layer1_summary.json"
+HISTORY_FILE = RESULTS / "history.json"          # one compact row per weekly chain
 RUN_LOG = RESULTS / "run_log.jsonl"
 DASHBOARD_FILE = ROOT / "docs" / "data" / "layer1.json"
 

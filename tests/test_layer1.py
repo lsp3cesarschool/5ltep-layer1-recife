@@ -35,7 +35,7 @@ def tmp_root(tmp_path, monkeypatch):
     for name, rel in [("CENSUS_FILE", "census.json"), ("VALIDATION_FILE", "validation.json"),
                       ("EXTRACTION_FILE", "extraction.json"), ("QUEUE_FILE", "queue.json"),
                       ("DRIFT_FILE", "drift.json"), ("SUMMARY_FILE", "layer1_summary.json"),
-                      ("RUN_LOG", "run_log.jsonl")]:
+                      ("RUN_LOG", "run_log.jsonl"), ("HISTORY_FILE", "history.json")]:
         monkeypatch.setattr(config, name, tmp_path / "results" / rel)
     monkeypatch.setattr(config, "DASHBOARD_FILE", tmp_path / "docs" / "data" / "layer1.json")
     return tmp_path
@@ -726,3 +726,42 @@ def test_coverage_funnel_and_reasons(tmp_root):
     assert (c["fail_missing_fields"], c["fail_cells_over_limit"], c["fail_only_cells"]) == (1, 1, 1)
     b = report.drift_baseline({"r1": {"status": "ok", "header": ["a"], "validated_at": "2026-10-01T10:00:00+00:00"}})
     assert b["files_with_baseline"] == 1 and b["first_baseline_at"].startswith("2026-10-01")
+
+
+def test_field_list_from_another_format_of_the_same_data(tmp_root, monkeypatch):
+    """IBAMA: the field list of 'Termo de apreensão - anexo' is only in its XML and JSON copies."""
+    monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
+    desc = "Dicionário de dados:\n* SEQ_TAD – Chave.\n* NUM_TAD – Número.\n"
+    pkg = {"name": "termo-de-apreensao", "title": "T", "resources": [
+        {"id": "csv1", "name": "Termo de apreensão - anexo", "format": "CSV", "url": "https://p/a.csv", "description": ""},
+        {"id": "xml1", "name": "Termo de apreensão - anexo", "format": "XML", "url": "https://p/a.xml", "description": desc},
+        {"id": "csv2", "name": "Termo de apreensão - bem", "format": "CSV", "url": "https://p/b.csv", "description": ""}]}
+    result, _ = census.run({}, packages=[pkg])
+    t = {x["id"]: x for x in result["datasets"][0]["tables"]}
+    assert t["csv1"]["level"] == 1 and t["csv1"]["link"]["method"] == "description-sibling"
+    assert t["csv1"]["link"]["resource_id"] == "xml1"
+    assert t["csv2"]["level"] == 0                                     # another table: not borrowed
+    kind, schema = schemas.select("termo-de-apreensao", "csv1")
+    assert kind == "described" and schema["x5ltep"]["source"]["resource_id"] == "xml1"
+
+
+def test_history_row_and_file_memory(tmp_root):
+    c = {"generated_at": "2026-10-12T03:30:00+00:00", "datasets": [{"name": "a", "tables": [
+        {"id": "fixed"}, {"id": "broken"}, {"id": "same"}, {"id": "new"}]}]}
+    v = {"fixed": {"pass_history": [["2026-10-05", False], ["2026-10-12", True]], "first_seen": "2026-10-01"},
+         "broken": {"pass_history": [["2026-10-05", True], ["2026-10-12", False]], "first_seen": "2026-10-01"},
+         "same": {"pass_history": [["2026-10-05", True]], "first_seen": "2026-10-01"},
+         "new": {"pass_history": [["2026-10-12", True]], "first_seen": "2026-10-12T04:00:00+00:00"},
+         "removed": {"pass_history": [], "first_seen": "2026-10-01"}}
+    summary = {"generated_at": "x", "l1_rate": 0.5, "coverage": {"files": 4, "read": 4, "checked": 4, "conform": 3,
+                                                               "not_downloaded": 0},
+               "tables": {"by_level": {str(k): 0 for k in range(5)}}, "datasets": {"by_level": {str(k): 0 for k in range(5)}},
+               "drift": {"observed": 1, "declared": 0}}
+    row = report.history_row(c, v, summary, None)
+    assert (row["fixed"], row["broken"], row["new_files"], row["gone_files"]) == (1, 1, 1, 1)
+    rows = report.update_history(c, v, summary)
+    rows = report.update_history(c, v, summary)                      # same chain reports again: replaced
+    assert len(rows) == 1
+    c2 = {**c, "generated_at": "2026-10-19T03:30:00+00:00"}
+    rows = report.update_history(c2, v, summary)
+    assert len(rows) == 2 and rows[-1]["gone_files"] == 0            # removed already counted last week

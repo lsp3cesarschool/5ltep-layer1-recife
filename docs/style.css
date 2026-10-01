@@ -8,6 +8,7 @@
   --level-0: #86b6ef; --level-1: #5598e7; --level-2: #2a78d6; --level-3: #1c5cab; --level-4: #104281;
   --ink-0: #0b0b0b; --ink-1: #ffffff; --ink-2: #ffffff; --ink-3: #ffffff; --ink-4: #ffffff;
   --good: #0ca30c; --good-text: #006300; --critical: #d03b3b;
+  --series-1: #2a78d6; --series-2: #eb6834;
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
@@ -17,7 +18,7 @@
     --accent: #3987e5; --accent-text: #0b0b0b; --bar: #3987e5;
     --level-0: #184f95; --level-1: #256abf; --level-2: #3987e5; --level-3: #6da7ec; --level-4: #9ec5f4;
     --ink-0: #ffffff; --ink-1: #ffffff; --ink-2: #0b0b0b; --ink-3: #0b0b0b; --ink-4: #0b0b0b;
-    --good-text: #0ca30c;
+    --good-text: #0ca30c; --series-1: #3987e5; --series-2: #d95926;
   }
 }
 :root[data-theme="dark"] {
@@ -27,7 +28,7 @@
   --accent: #3987e5; --accent-text: #0b0b0b; --bar: #3987e5;
   --level-0: #184f95; --level-1: #256abf; --level-2: #3987e5; --level-3: #6da7ec; --level-4: #9ec5f4;
     --ink-0: #ffffff; --ink-1: #ffffff; --ink-2: #0b0b0b; --ink-3: #0b0b0b; --ink-4: #0b0b0b;
-  --good-text: #0ca30c;
+  --good-text: #0ca30c; --series-1: #3987e5; --series-2: #d95926;
 }
 
 * { box-sizing: border-box; }
@@ -135,3 +136,20 @@ details.more { margin-top: 12px; }
 details.more summary { cursor: pointer; font-weight: 600; }
 h3.sub { margin-top: 18px; }
 .tile a.more { font-size: .8rem; }
+
+/* maturity bands are filters */
+.stack > div { cursor: pointer; }
+.legend li { cursor: pointer; }
+.legend li:hover, .stack > div:hover { opacity: .85; }
+
+/* progress chart (one axis, thin lines, recessive grid) */
+.chart svg { width: 100%; height: auto; display: block; }
+.chart .grid { stroke: var(--grid); stroke-width: 1; }
+.chart .axis-label { fill: var(--muted); font-size: 11px; }
+.chart .line { fill: none; stroke-width: 2; }
+.chart .dot { stroke: var(--surface); stroke-width: 2; }
+.chart .label { font-size: 11px; fill: var(--text-2); }
+.chart .cross { stroke: var(--axis); stroke-width: 1; }
+.chart-legend { display: flex; gap: 16px; font-size: .85rem; color: var(--text-2); margin: 6px 0; flex-wrap: wrap; }
+.chart-legend .key { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.chart svg { max-width: 860px; }

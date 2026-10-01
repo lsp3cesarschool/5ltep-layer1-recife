@@ -12,6 +12,7 @@ disagree), recomputed every week, so the numbers in the dissertation come from a
 """
 
 import json
+import os
 import re
 import platform
 from collections import Counter
@@ -219,11 +220,45 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
     }
 
 
+def history_row(census: dict, validation: dict, summary: dict, previous: dict | None) -> dict:
+    """What one weekly chain measured, and what changed since the previous one (a few hundred bytes)."""
+    start = census.get("generated_at") or ""
+    ids = {t["id"] for ds in census["datasets"] for t in ds["tables"]}
+    changed_now = lambda v: (v.get("pass_history") or [[""]])[-1][0] >= start[:10] and len(v.get("pass_history") or []) >= 2
+    trans = Counter((tuple(p for _, p in v["pass_history"][-2:])) for rid, v in validation.items()
+                    if rid in ids and changed_now(v))
+    gone_total = sum(1 for rid in validation if rid not in ids)
+    c = summary["coverage"]
+    return {
+        "at": start, "report_at": summary["generated_at"], "commit": (os.environ.get("GITHUB_SHA") or "")[:7] or None,
+        "files": c["files"], "read": c["read"], "checked": c["checked"], "conform": c["conform"],
+        "l1_rate": summary["l1_rate"], "not_downloaded": c["not_downloaded"],
+        "levels": [summary["tables"]["by_level"][str(k)] for k in LEVELS],
+        "dataset_levels": [summary["datasets"]["by_level"][str(k)] for k in LEVELS],
+        "fixed": trans.get((False, True), 0), "broken": trans.get((True, False), 0),
+        "new_files": sum(1 for rid, v in validation.items() if rid in ids and (v.get("first_seen") or "") >= start),
+        "gone_files": max(0, gone_total - (previous or {}).get("gone_total", 0)), "gone_total": gone_total,
+        "drift_observed": summary["drift"]["observed"], "drift_declared": summary["drift"]["declared"],
+    }
+
+
+def update_history(census: dict, validation: dict, summary: dict, path=None) -> list[dict]:
+    """Append the row of this chain (or replace it, when the same chain reports again)."""
+    path = path or config.HISTORY_FILE
+    rows = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    if rows and rows[-1]["at"] == census.get("generated_at"):
+        rows = rows[:-1]
+    rows.append(history_row(census, validation, summary, rows[-1] if rows else None))
+    write_json(path, rows)
+    return rows
+
+
 def dashboard_data(census: dict, validation: dict, extraction: dict, summary: dict) -> dict:
     drift_count = Counter(e["resource_id"] for e in drift.load())
     datasets = []
     for ds in census["datasets"]:
         dicts = {d["id"]: d for d in ds["dictionaries"]}
+        page = lambda rid: f"{census['portal']['portal_url']}/dataset/{ds['name']}/resource/{rid}" if rid else None
         tables = []
         for t in ds["tables"]:
             v = validation.get(t["id"]) or {}
@@ -233,8 +268,12 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
             d = dicts.get(lk.get("dictionary"), {})
             tables.append({
                 "id": t["id"], "name": t["name"], "level": table_level(t, v), "url": t["url"],
-                "dictionary": {"name": d.get("name"), "format": d.get("format"), "method": lk.get("method"),
-                               "readable": d.get("readable"), "error_kind": d.get("error_kind")} if d else None,
+                "dictionary": ({"name": d.get("name"), "format": d.get("format"), "method": lk.get("method"),
+                                "readable": d.get("readable"), "error_kind": d.get("error_kind"), "url": d.get("url"),
+                                "page": page(d["id"])} if d else
+                               {"name": None, "format": "description", "method": lk.get("method"),
+                                "page": page(lk.get("resource_id"))} if lk.get("method", "").startswith("description")
+                               else None),
                 "status": v.get("status"), "validated_at": v.get("validated_at"), "rows": s.get("rows"),
                 "schema_kind": v.get("schema_kind"), "error": v.get("error"),
                 "encodings": s.get("encodings"), "distinct_headers": s.get("distinct_headers"),
@@ -252,13 +291,15 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                                                           if p["name"] == ds["name"]), None),
                          "dictionaries": [{"name": d["name"], "format": d["format"], "kind": d["kind"],
                                            "readable": d.get("readable"), "error_kind": d.get("error_kind"),
-                                           "linked": len(d.get("linked_resources") or [])} for d in ds["dictionaries"]],
+                                           "linked": len(d.get("linked_resources") or []), "url": d.get("url"),
+                                           "page": page(d["id"])} for d in ds["dictionaries"]],
                          "tables": tables})
     return {"summary": {k: summary[k] for k in ("portal", "generated_at", "census_at", "datasets", "tables",
                                                  "verifiable", "conformant", "l1_rate", "l1_pass", "drift",
                                                  "coverage", "schema_sources", "findings", "method")},
             "datasets": datasets, "unreadable": unreadable_files(census, validation),
-            "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census)}
+            "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census),
+            "history": json.loads(config.HISTORY_FILE.read_text(encoding="utf-8")) if config.HISTORY_FILE.exists() else []}
 
 
 def unreadable_files(census: dict, validation: dict) -> list[dict]:

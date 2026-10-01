@@ -39,8 +39,9 @@
 
   <section>
     <div class="section-head"><h2 data-i18n="maturity_h">Schema maturity</h2></div>
-    <p class="muted" data-i18n="maturity_note">How verifiable is the structure the portal declares for each file? A dataset is
-      as verifiable as its least documented file.</p>
+    <p class="muted" data-i18n="maturity_note">A dataset is a page of the portal; its files are the tables (CSV, ZIP) published
+      in it. The level says how verifiable the structure the portal declares for each file is, which shows where
+      documentation work pays off first; a dataset takes the level of its least documented file. Click a band to see its items.</p>
     <div id="maturity"></div>
     <ul class="legend" id="maturity-legend"></ul>
   </section>
@@ -60,6 +61,14 @@
     <div class="table-wrap"><table class="files" id="drift-table"></table></div>
   </section>
 
+  <section id="progress">
+    <div class="section-head"><h2 data-i18n="progress_h">Progress over time</h2></div>
+    <p class="muted" data-i18n="progress_note">One row per weekly run: how many files the portal publishes, reads, declares
+      and gets right, and what changed since the run before (files fixed or broken, new or removed, drift).</p>
+    <div id="progress-chart"></div>
+    <div class="table-wrap"><table class="files" id="progress-table"></table></div>
+  </section>
+
   <section id="pdf" hidden>
     <div class="section-head"><h2 data-i18n="pdf_h">PDF dictionaries turned into schemas</h2></div>
     <p class="muted" data-i18n="pdf_note">Each PDF dictionary linked to a file, what the three stages made of it
@@ -77,14 +86,20 @@
   </section>
 
   <section>
-    <div class="section-head">
+    <div class="section-head" id="datasets-head">
       <h2 data-i18n="datasets_h">Datasets</h2>
       <div class="filters">
         <input type="search" id="search" data-i18n-placeholder="search" placeholder="Search datasets or files">
         <select id="level-filter">
           <option value="" data-i18n="all_levels">All levels</option>
-          <option value="0">0</option><option value="1">1</option><option value="2">2</option>
-          <option value="3">3</option><option value="4">4</option>
+          <optgroup data-i18n-label="u_datasets" label="Datasets">
+            <option value="d0">0</option><option value="d1">1</option><option value="d2">2</option>
+            <option value="d3">3</option><option value="d4">4</option>
+          </optgroup>
+          <optgroup data-i18n-label="u_files" label="Files">
+            <option value="f0">0</option><option value="f1">1</option><option value="f2">2</option>
+            <option value="f3">3</option><option value="f4">4</option>
+          </optgroup>
         </select>
         <label class="muted"><input type="checkbox" id="only-failing"> <span data-i18n="only_failing">only files that do not conform</span></label>
       </div>

@@ -83,9 +83,16 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     except Exception as exc:
         logger.warning("%s: %s", t["id"], exc)
         return {**entry, "status": "error", "error": f"{type(exc).__name__}: {str(exc)[:300]}",
-                **({k: prev[k] for k in ("header", "summary", "validated_at", "sha256") if k in prev} if prev else {})}, None, []
+                **({k: prev[k] for k in ("header", "summary", "validated_at", "sha256", "pass_history", "first_seen")
+                    if k in prev} if prev else {})}, None, []
     tables_ok = [x for x in tables if not x.get("empty")]
     summary = validate.summarise(tables, schema)
+    # Memory of the file: when it was first seen, and whether it conformed in its last validations.
+    entry["first_seen"] = (prev or {}).get("first_seen") or entry["checked_at"]
+    history = list((prev or {}).get("pass_history") or [])
+    if summary.get("conformance"):
+        history = (history + [[entry["checked_at"][:10], summary["conformance"]["pass"]]])[-12:]
+    entry["pass_history"] = history
     entry.update(status="ok" if tables_ok else "empty", validated_at=entry["checked_at"],
                  seconds=round(time.monotonic() - started, 1), sha256=digest.get("sha256"),
                  bytes=digest.get("bytes"), kind=digest.get("kind"), http=digest.get("http"),
