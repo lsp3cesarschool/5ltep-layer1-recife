@@ -47,10 +47,11 @@ RUN_LOG = RESULTS / "run_log.jsonl"
 DASHBOARD_FILE = ROOT / "docs" / "data" / "layer1.json"
 
 # --- Census -----------------------------------------------------------------
-HTTP_TIMEOUT_S = _env("HTTP_TIMEOUT_S", 120)
+HTTP_TIMEOUT_S = _env("HTTP_TIMEOUT_S", 120)          # reading an answer
+CONNECT_TIMEOUT_S = _env("CONNECT_TIMEOUT_S", 15)      # opening a connection
 MAX_DICTIONARY_BYTES = _env("MAX_DICTIONARY_BYTES", 20_000_000)   # a dictionary larger than this is not read
 CHECK_DATASTORE = _env("CHECK_DATASTORE", "true").lower() == "true"
-CENSUS_WORKERS = _env("CENSUS_WORKERS", 8)            # datasets read at the same time (network-bound)
+CENSUS_WORKERS = _env("CENSUS_WORKERS", 4)            # datasets read at the same time (network-bound; polite)
 DICTIONARY_DEADLINE_S = _env("DICTIONARY_DEADLINE_S", 180)   # a dictionary that trickles longer is given up
 
 # --- Validation ---------------------------------------------------------------

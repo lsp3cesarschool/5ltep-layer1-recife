@@ -13,13 +13,27 @@ logger = logging.getLogger(__name__)
 USER_AGENT = "5ltep-layer1/0.1 (+https://github.com/lsp3cesarschool/5ltep-layer1)"
 HEADERS = {"User-Agent": USER_AGENT}
 
+# One session for the whole run: connections are kept alive and reused (a portal that drops some new
+# connections, as seen from GitHub's runners, is then asked to open far fewer of them).
+SESSION = requests.Session()
+_adapter = requests.adapters.HTTPAdapter(pool_connections=16, pool_maxsize=16)
+SESSION.mount("https://", _adapter)
+SESSION.mount("http://", _adapter)
+
+
+def timeouts(read: float | None = None) -> tuple[float, float]:
+    """(connect, read): a connection that cannot be opened fails fast; a slow answer may take longer."""
+    read = read or config.HTTP_TIMEOUT_S
+    return min(config.CONNECT_TIMEOUT_S, read), read
+
 
 def get(url: str, retries: int = 4, backoff: float = 10.0, **kwargs) -> requests.Response:
     """GET with retries: portals go down for minutes at a time."""
-    kwargs.setdefault("timeout", config.HTTP_TIMEOUT_S)
+    t = kwargs.pop("timeout", None)
+    kwargs["timeout"] = t if isinstance(t, tuple) else timeouts(t)
     for attempt in range(1, retries + 1):
         try:
-            resp = requests.get(url, headers=HEADERS, **kwargs)
+            resp = SESSION.get(url, headers=HEADERS, **kwargs)
             resp.raise_for_status()
             return resp
         except requests.RequestException as exc:
@@ -63,7 +77,7 @@ def datastore_fields(portal_url: str, resource_id: str) -> list[dict] | None:
 def head(url: str) -> dict:
     """Change signals the file server gives without a download (any of them may be missing)."""
     try:
-        resp = requests.head(url, headers=HEADERS, timeout=60, allow_redirects=True)
+        resp = SESSION.head(url, headers=HEADERS, timeout=timeouts(60), allow_redirects=True)
     except requests.RequestException as exc:
         return {"error": str(exc)[:200]}
     h = resp.headers
