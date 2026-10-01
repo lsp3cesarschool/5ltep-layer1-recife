@@ -1,0 +1,87 @@
+{
+ "fields": [
+  {
+   "name": "Mome",
+   "type": "string",
+   "description": "Nome do Museu",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "description": "Descrição sobre o museu",
+   "constraints": {
+    "maxLength": 600
+   },
+   "declaredType": "Char",
+   "declaredSize": 600
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "description": "Bairro do Museu",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Logradouro",
+   "type": "string",
+   "description": "Logradouro do Museu",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "0f638f0a-7e5c-468e-983e-9ebc75a398c4",
+   "dictionary_name": "Dicionário de Dados dos Museus",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd/resource/0f638f0a-7e5c-468e-983e-9ebc75a398c4/download/dicionario-de-dados-dos-museus.pdf",
+   "sha256": "0bf35a86fb6a1ed3fd90dd32cf4f79817614a22e393715124a6877a85e6252f0",
+   "oracle": {
+    "recall": 0.625,
+    "precision": 0.8333,
+    "exact_match": 0.0,
+    "levenshtein": 0.7201,
+    "missing_from_pdf": [
+     "nome",
+     "site",
+     "telefone"
+    ],
+    "not_in_file": [
+     "Mome"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

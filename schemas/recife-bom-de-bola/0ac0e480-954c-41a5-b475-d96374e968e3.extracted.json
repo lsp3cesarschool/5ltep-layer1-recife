@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "string",
+   "description": "Região Politico Administrativa – RPA",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "Char",
+   "declaredSize": 40
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço dos Campos",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Descrição do Bairro",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Geocoordenadas - latitude",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Geocoordenadas - longitude",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "privado",
+   "type": "string",
+   "description": "Condição do campo em privatividade",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome do Campo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "320d38bc-b2a7-4541-b1e2-93855de62e24",
+   "dictionary_name": "Dicionário Campos Recife Bom de Bola",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8d2b4558-9687-42c7-971d-f6eeeb2eac01/resource/320d38bc-b2a7-4541-b1e2-93855de62e24/download/dicionario-campos-recife-bom-de-bola.pdf",
+   "sha256": "c4e2d19ba70c3de8a172391792c1d48b0ecc93dc1f8bc3d90bfce1f8b5ff2b9d",
+   "oracle": {
+    "recall": 0.8571,
+    "precision": 0.8571,
+    "exact_match": 0.8571,
+    "levenshtein": 0.9821,
+    "missing_from_pdf": [
+     "enderco"
+    ],
+    "not_in_file": [
+     "endereco"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}
