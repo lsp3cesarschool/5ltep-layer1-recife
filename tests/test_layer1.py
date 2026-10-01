@@ -817,3 +817,10 @@ def test_one_malformed_schema_does_not_lose_the_batch(tmp_root):
     accepted = safety.accept_artifact(src, tmp_root / "repo", c, [])
     assert accepted == ["results/validation.json"]               # the batch survives, the bad file is refused
     assert not (tmp_root / "repo/schemas/ds/r1.observed.json").exists()
+
+
+def test_line_breaks_inside_header_names_are_cleaned():
+    out = validate.observed_schema(["Origem\nDestino", "ok", "\t"], [["1", "2", "3"]])
+    names = [f["name"] for f in out["fields"]]
+    assert names == ["Origem Destino", "ok", "_column_3"]
+    safety.check_schema({**out, "x5ltep": {"status": "observed"}}, {"observed"})

@@ -84,6 +84,7 @@ def infer_type(values: list[str]) -> dict:
 
 
 MAX_NAME = 512
+CONTROL_RE = re.compile(r"[\x00-\x1f\x7f]+")
 
 
 def observed_schema(header: list[str], sample: list[list[str]]) -> dict:
@@ -94,6 +95,10 @@ def observed_schema(header: list[str], sample: list[list[str]]) -> dict:
         col = [r[i] for r in sample if i < len(r)]
         empty = sum(1 for v in col if v == "")
         field = {"name": name, **infer_type(col), "sampleEmptyShare": round(empty / len(col), 4) if col else None}
+        clean = CONTROL_RE.sub(" ", name).strip()
+        if clean != name:            # a line break or tab inside a header cell
+            field.update(name=clean, headerNameCleaned=True)
+            name = clean
         if not name:
             field.update(name=f"_column_{i + 1}", headerWithoutName=True)
         elif len(name) > MAX_NAME:
