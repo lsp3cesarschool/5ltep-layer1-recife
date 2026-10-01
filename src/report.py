@@ -126,6 +126,7 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
             "with_decode_errors": sum(v["summary"].get("decode_errors", 0) > 0 for _, v in checked),
             "with_ragged_rows": sum(v["summary"].get("ragged_rows", 0) > 0 for _, v in checked),
             "zips_with_several_headers": sum(v["summary"].get("distinct_headers", 1) > 1 for _, v in checked),
+            "with_columns_without_name": sum(v["summary"].get("columns_without_name", 0) > 0 for _, v in checked),
             "not_tabular": sum((validation.get(t["id"]) or {}).get("status") == "not-tabular" for t in tables),
             "unreachable_by_reason": dict(Counter(_error_kind((validation.get(t["id"]) or {}).get("error"))
                                                   for t in tables

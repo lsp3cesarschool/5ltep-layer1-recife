@@ -72,7 +72,7 @@ def check_schema(schema: dict, status: set[str]) -> None:
         for key, value in f.items():
             if isinstance(value, str) and (len(value) > MAX_TEXT or CONTROL_RE.search(value)):
                 raise ValueError(f"schema: {key} too long or with control characters")
-        if not isinstance(f.get("name"), str) or not 0 < len(f["name"]) <= 128:
+        if not isinstance(f.get("name"), str) or not 0 < len(f["name"]) <= 512:
             raise ValueError("schema: bad field name")
     Schema.from_descriptor({k: v for k, v in schema.items() if k != "x5ltep"})
 
@@ -114,7 +114,12 @@ def accept_artifact(src: Path, root: Path, census: dict, committed_drift: list[d
             if folder == "suggestions" and kind != "extracted":
                 raise ValueError(f"{rel}: only extracted schemas can be suggested")
             status = {"observed"} if kind == "observed" else {"extracted"} if folder == "schemas" else {"suggested"}
-            check_schema(json.loads(path.read_text(encoding="utf-8")), status)
+            try:
+                check_schema(json.loads(path.read_text(encoding="utf-8")), status)
+            except Exception as exc:
+                # One malformed schema is refused (never written), not the whole batch of results.
+                print(f"::warning::refused {rel}: {exc}")
+                continue
         elif rel == "results/validation.json":
             data = json.loads(path.read_text(encoding="utf-8"))
             if not isinstance(data, dict):

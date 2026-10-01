@@ -602,7 +602,6 @@ def test_schemas_of_unknown_resources_are_never_written(tmp_root):
 @pytest.mark.parametrize("files", [
     {".github/workflows/x.yml": "on: push"},
     {"schemas/Bad Name/r1.observed.json": {"fields": [], "x5ltep": {"status": "observed"}}},
-    {"schemas/ds/r1.extracted.json": {"fields": [{"name": "A"}], "x5ltep": {"status": "suggested"}}},
     {"suggestions/ds/r1.observed.json": {"fields": [{"name": "A"}], "x5ltep": {"status": "observed"}}},
     {"results/validation.json": {"r1": {"status": "pwned"}}},
     {"results/drift.json": []},
@@ -790,3 +789,31 @@ def test_open_resource_records_timing(monkeypatch):
         for t in src.tables:
             list(t.rows)
     assert {"first_byte_s", "download_s"} <= set(src.digest["timing"])
+
+
+def test_columns_without_name_are_a_finding_not_a_crash(tmp_root):
+    """Recife, casos-de-dengue: 23 columns without a name in the header."""
+    text = "a;;b;" + ";" * 0 + "\n1;2;3;4\n"
+    out = validate.check_table(Table(text), None)
+    names = [f["name"] for f in out["observed"]["fields"]]
+    assert names == ["a", "_column_2", "b", "_column_4"]
+    assert out["observed"]["fields"][1]["headerWithoutName"] is True
+    assert validate.summarise([out], None)["columns_without_name"] == 2
+    safety.check_schema({**out["observed"], "x5ltep": {"status": "observed"}}, {"observed"})
+
+
+def test_a_suggested_schema_never_reaches_main(tmp_root):
+    c, _ = _pdf_census()
+    sneaky = {"fields": [{"name": "A"}], "x5ltep": {"status": "suggested"}}
+    src = _artifact(tmp_root, {"schemas/ds/r1.extracted.json": sneaky})
+    assert safety.accept_artifact(src, tmp_root / "repo", c, []) == []
+    assert not (tmp_root / "repo/schemas/ds/r1.extracted.json").exists()
+
+
+def test_one_malformed_schema_does_not_lose_the_batch(tmp_root):
+    c, _ = _pdf_census()
+    bad = {"fields": [{"name": ""}], "x5ltep": {"status": "observed"}}
+    src = _artifact(tmp_root, {"results/validation.json": {"r1": {"status": "ok"}}, "schemas/ds/r1.observed.json": bad})
+    accepted = safety.accept_artifact(src, tmp_root / "repo", c, [])
+    assert accepted == ["results/validation.json"]               # the batch survives, the bad file is refused
+    assert not (tmp_root / "repo/schemas/ds/r1.observed.json").exists()

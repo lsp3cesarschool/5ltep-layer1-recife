@@ -65,6 +65,7 @@ const I18N = {
     k_pdftypos: "PDFs with probable typos, by the oracle", f_typos: "probable typos (declared → file)", k_inferred: "formats inferred from the data (not declared)",
     k_validated: "files read", k_encodings: "encodings", k_delims: "delimiters", k_decode: "with bytes that do not decode",
     k_ragged: "with rows of the wrong width", k_multi: "zips whose members have different headers",
+    k_noname: "with columns without a name in the header",
     k_nottab: "not a CSV behind the link", k_gb: "data downloaded (GB)", k_minutes: "time downloading and validating (min)",
     k_mbs: "throughput, download and validation (MB/s)", k_ttfb: "time to the server's first answer, median (s)",
     k_reqfail: "requests that failed (and were retried)", k_unreach: "Files that could not be downloaded",
@@ -144,6 +145,7 @@ const I18N = {
     k_pdftypos: "PDFs com prováveis erros de digitação, pelo oráculo", f_typos: "prováveis erros de digitação (declarado → arquivo)", k_inferred: "formatos inferidos dos dados (não declarados)",
     k_validated: "arquivos lidos", k_encodings: "codificações", k_delims: "delimitadores", k_decode: "com bytes que não decodificam",
     k_ragged: "com linhas de largura errada", k_multi: "zips com membros de cabeçalhos diferentes",
+    k_noname: "com colunas sem nome no cabeçalho",
     k_nottab: "sem CSV por trás do link", k_gb: "dados baixados (GB)", k_minutes: "tempo baixando e validando (min)",
     k_mbs: "vazão, download e validação (MB/s)", k_ttfb: "tempo até a primeira resposta do servidor, mediana (s)",
     k_reqfail: "pedidos que falharam (e foram repetidos)", k_unreach: "Arquivos que não puderam ser baixados",
@@ -488,6 +490,7 @@ function renderFindings(f, net) {
       + `<p class="small muted">${esc(t("k_inferred"))}</p>` + bars(vs.formats_inferred_from_data)],
     [t("p_files"), kv([[t("k_validated"), fmt(fi.validated)], [t("k_decode"), fmt(fi.with_decode_errors)],
       [t("k_ragged"), fmt(fi.with_ragged_rows)], [t("k_multi"), fmt(fi.zips_with_several_headers)],
+      [t("k_noname"), fmt(fi.with_columns_without_name)],
       [t("k_nottab"), fmt(fi.not_tabular)], [t("k_gb"), num1(nt.gb)], [t("k_minutes"), num1(nt.minutes)],
       [t("k_mbs"), num1(nt.end_to_end_mb_s)], [t("k_ttfb"), num1(nt.first_byte_s_median)],
       [t("k_reqfail"), fmt(Object.values(nt.request_failures || {}).reduce((a, b) => a + b, 0))]])

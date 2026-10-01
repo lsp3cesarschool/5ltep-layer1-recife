@@ -83,13 +83,22 @@ def infer_type(values: list[str]) -> dict:
     return {"type": "string"}
 
 
+MAX_NAME = 512
+
+
 def observed_schema(header: list[str], sample: list[list[str]]) -> dict:
+    """A valid Table Schema of what the file shows. A column without a name in the header (a finding
+    in itself) gets the name _column_<n>; a name longer than MAX_NAME characters is cut; both are flagged."""
     fields = []
     for i, name in enumerate(header):
         col = [r[i] for r in sample if i < len(r)]
         empty = sum(1 for v in col if v == "")
-        fields.append({"name": name, **infer_type(col),
-                       "sampleEmptyShare": round(empty / len(col), 4) if col else None})
+        field = {"name": name, **infer_type(col), "sampleEmptyShare": round(empty / len(col), 4) if col else None}
+        if not name:
+            field.update(name=f"_column_{i + 1}", headerWithoutName=True)
+        elif len(name) > MAX_NAME:
+            field.update(name=name[:MAX_NAME], headerNameCut=len(name))
+        fields.append(field)
     return {"fields": fields}
 
 
@@ -258,6 +267,7 @@ def summarise(tables: list[dict], declared: dict | None) -> dict:
            "ragged_rows": sum(t["ragged_rows"] for t in tables),
            "decode_errors": max((t["decode_errors"] for t in tables), default=0),
            "distinct_headers": len(headers),
+           "columns_without_name": max((sum(1 for h in t["header"] if not h) for t in tables), default=0),
            "encodings": sorted({t["encoding"] for t in tables}),
            "delimiters": sorted({t["delimiter"] for t in tables})}
     if not declared or not tables:
