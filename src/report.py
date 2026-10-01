@@ -42,6 +42,8 @@ def _error_kind(error: str | None) -> str:
     m = re.search(r"\b([45]\d\d) (Client|Server) Error", error or "")
     if m:
         return f"HTTP {m.group(1)}"
+    if any(k in (error or "") for k in ("MissingSchema", "InvalidURL", "InvalidSchema")):
+        return "no URL"                  # the resource has no usable download address
     if "TooManyRedirects" in (error or ""):
         return "redirect loop"           # the download link redirects to itself
     if "did not finish within the batch" in (error or ""):
