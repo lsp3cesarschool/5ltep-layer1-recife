@@ -1,0 +1,4646 @@
+{
+ "fields": [
+  {
+   "name": "N_Identificador",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Latitude",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_5",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q0_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_13",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q0_14",
+   "type": "datetime",
+   "format": "%Y-%m-%dT%H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_3",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_4",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_5",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_6",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_7",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_8",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_99",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q4_99_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_3",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_4",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_5",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_6",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_7",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_8",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_9",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_10",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_11",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_12",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_13",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_14",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q5_99",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q6_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_10",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_14",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_15",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_16",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_1_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_2_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_3_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q8_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_4_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_5_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_6_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q8_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_7_1",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q8_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_8_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_10_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_11_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_12_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_13",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_13_1",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q8_14",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_14_1",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q8_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_15_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_16_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_17",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_17_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q8_18",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_18_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_19",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_20",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_2_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_2_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_2_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_2_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_2_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_2_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_6",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_99",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q13_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_10",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_14",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_17",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_18",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_19",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_20",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_21",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_22",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_23",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_24",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_25",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_99",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q14_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q15_99_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q16_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_99",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q17_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_1_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q17_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q17_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_3_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q18_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_6",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_11",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_12",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_99_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q19",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_3",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_4",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_5",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_6",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_7",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_8",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_9",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_10",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_11",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_12",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_13",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_14",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q20_0",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q21",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q22",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q23_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q23_2",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_3",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_4",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_5",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_6",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_7",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_8",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_9",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_10",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_11",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_12",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q23_99",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q24_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q24_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q24_3",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q24_4",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q24_5",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q24_99",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q24_99_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q25",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_99",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.75
+  },
+  {
+   "name": "q28",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30_99_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_2",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_4",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_5",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_6",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_7",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_8",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_8_0",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_6",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_1",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_3",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_4",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_5",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_6",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_7",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_8",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_9",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_10_0",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_6",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_3",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_4",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_5",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_6",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_7",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_8",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_9",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_13_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_1",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_4",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_5",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_6",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_8",
+   "type": "string",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q31_14_0",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_7",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_1",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_2",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_4",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_5",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_6",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_7",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_8",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_9",
+   "type": "string",
+   "sampleEmptyShare": 0.5
+  },
+  {
+   "name": "q31_17_0",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaKm2",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_10_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_11_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_12_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_13_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_14_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_5_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_10_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_11_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_12_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_13_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_14_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q22_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.25
+  },
+  {
+   "name": "q23_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_10_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_11_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_12_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q25_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q28_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q29_1_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q29_2_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q29_3_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q29_4_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q29_5_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q29_0_velha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "q31_1_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_1_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_2_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_3_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_4_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_5_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_6_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_7_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_8_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_9_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_10_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_11_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_12_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_13_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_14_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_15_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_16_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_17_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_atend",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_atend_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_adm_atend",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_adm_atend_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_6_banheiros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_7_banheiros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_6_8_box",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d9_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-02T14:06:26+00:00",
+  "sha256": "c72cc5518403ac0dd2381333a6041f930c36025f8174fe8fd932441399243652",
+  "encoding": null,
+  "delimiter": null,
+  "sample_rows": 999,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

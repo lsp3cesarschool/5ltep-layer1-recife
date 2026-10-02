@@ -5,8 +5,8 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-01T23:46:14+00:00",
- "census_at": "2026-10-01T20:59:48+00:00",
+ "generated_at": "2026-10-02T14:40:51+00:00",
+ "census_at": "2026-10-02T13:56:26+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -25,79 +25,387 @@
   "total": 223,
   "with_tables": 203,
   "by_level": {
-   "0": 37,
-   "1": 4,
-   "2": 23,
-   "3": 71,
-   "4": 68
+   "0": 22,
+   "1": 3,
+   "2": 40,
+   "3": 82,
+   "4": 56
   }
  },
  "tables": {
-  "total": 1081,
+  "total": 1043,
   "by_level": {
-   "0": 186,
-   "1": 15,
-   "2": 63,
-   "3": 252,
-   "4": 565
+   "0": 60,
+   "1": 3,
+   "2": 160,
+   "3": 453,
+   "4": 367
   },
-  "validated": 1081,
+  "validated": 1043,
   "validation_coverage": 1.0,
   "errors": 0,
   "queue_remaining": 0
  },
  "schema_sources": {
-  "datastore": 531,
-  "declared": 349
+  "datastore": 202,
+  "declared": 775,
+  "extracted": 3
  },
- "verifiable": 880,
- "conformant": 574,
- "l1_rate": 0.6523,
+ "conformance_by_source": {
+  "datastore": {
+   "verifiable": 202,
+   "conformant": 182,
+   "l1_rate": 0.901
+  },
+  "declared": {
+   "verifiable": 775,
+   "conformant": 231,
+   "l1_rate": 0.2981
+  },
+  "extracted": {
+   "verifiable": 3,
+   "conformant": 0,
+   "l1_rate": 0.0
+  }
+ },
+ "verifiable": 980,
+ "conformant": 413,
+ "l1_rate": 0.4214,
  "l1_pass": false,
  "drift": {
   "observed": 0,
-  "declared": 0,
-  "files_with_baseline": 1031,
+  "declared": 11,
+  "files_with_baseline": 1039,
   "first_baseline_at": "2026-10-01T21:00:09+00:00",
-  "last_observed_at": "2026-10-01T22:26:45+00:00"
+  "last_observed_at": "2026-10-02T14:40:04+00:00"
  },
  "coverage": {
-  "files": 1081,
-  "read": 1035,
+  "files": 1043,
+  "read": 1043,
   "empty": 0,
-  "not_tabular": 46,
+  "not_tabular": 0,
   "not_downloaded": 0,
   "pending": 0,
   "not_downloaded_by_reason": {},
   "not_downloaded_by_host": {},
-  "read_without_schema": 155,
-  "checked": 880,
-  "conform": 574,
-  "fail_missing_fields": 217,
-  "fail_undeclared_columns": 216,
-  "fail_cells_over_limit": 178,
-  "fail_only_cells": 73
+  "read_without_schema": 63,
+  "checked": 980,
+  "conform": 413,
+  "fail_missing_fields": 297,
+  "fail_undeclared_columns": 413,
+  "fail_cells_over_limit": 367,
+  "fail_only_cells": 129
+ },
+ "not_tables": {
+  "count": 46,
+  "resources": [
+   {
+    "dataset": "area-urbana",
+    "id": "b014a450-1e3d-4515-9d30-d5a21fe392b9",
+    "name": "Edificações 3D",
+    "contents": "zip without CSV members (first entries: ['Edificacoes 3D.qmd', 'Edificacoes 3D.geojson'])"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "356f4d60-8e70-427f-b0c1-5b92c72193f5",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2012",
+    "contents": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "af6fb6b9-a334-4c17-a9e5-37dfc081dd69",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2012",
+    "contents": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "685af35b-54e3-4dcb-a1fe-0696257de2f5",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2012",
+    "contents": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "3374b2c5-a3fc-4de6-b9fe-329b9a822e7f",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2014",
+    "contents": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pd"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "610a4786-725b-4c57-88e9-8a97a01af64e",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2014",
+    "contents": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pd"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "924a2947-fde6-45f9-83d9-ee10b8c9bf93",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2014",
+    "contents": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pd"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "9e6b4c3d-6859-4b99-a3ac-6869f7f742b8",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2018",
+    "contents": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "34203d95-9e7a-45f2-ae2a-09ae10109f69",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2018",
+    "contents": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "bb5501f3-8de4-4c15-89de-e3c370bd5e04",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2018",
+    "contents": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "8fb11add-2ccc-4eea-b60b-84e2066d543f",
+    "name": "Anexos 2019 - Parte I",
+    "contents": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '201900003000"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "2b81d35f-975a-4c8e-ae05-4137006e4821",
+    "name": "Anexos 2019 - Parte I",
+    "contents": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '201900003000"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "72fa0e53-e42d-4dd2-80e2-371fe0fac718",
+    "name": "Anexos 2019 - Parte I",
+    "contents": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '201900003000"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "594d6f64-4eba-4ea0-a0aa-25403f611c58",
+    "name": "Anexos 2019 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "528f667c-b55e-429d-93f9-c674d8fa13df",
+    "name": "Anexos 2019 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "e47ec32b-cfe1-480f-80cd-45fe6965ebfe",
+    "name": "Anexos 2019 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "25524baa-0635-4ad1-82ef-8d1a228bec39",
+    "name": "Anexos 2019 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "42f9e9ca-a6b8-4572-b7de-0fd2cf4df069",
+    "name": "Anexos 2019 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "9ed7f6c0-5fe9-4949-806a-0fe7a4d713f8",
+    "name": "Anexos 2019 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "b4aa8ae1-16c5-4b3d-9ff1-d9305ef5c777",
+    "name": "Anexos 2020 - Parte I",
+    "contents": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/20200045"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "bf7261b9-302c-4d37-9b03-6d2985cabc1d",
+    "name": "Anexos 2020 - Parte I",
+    "contents": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/20200045"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "b0a695fa-a5fc-4ea4-b79a-7bd1fe0fd227",
+    "name": "Anexos 2020 - Parte I",
+    "contents": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/20200045"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "ce284c6a-40e5-4728-8ada-ff6e9002ccac",
+    "name": "Anexos 2021 - Parte I",
+    "contents": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '20210000300600101"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "6fa2c589-676f-408e-8daf-9e3806ca4a26",
+    "name": "Anexos 2021 - Parte I",
+    "contents": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '20210000300600101"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "d821809a-1466-4c5e-8df3-6a3de629ab53",
+    "name": "Anexos 2021 - Parte I",
+    "contents": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '20210000300600101"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "c016c394-b453-4261-8a75-a0f98f822575",
+    "name": "Anexos 2021 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', "
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "777b67b5-2051-4247-b4ba-db40c5138b93",
+    "name": "Anexos 2021 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', "
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "89ba0792-7a5a-43b9-b21d-38ac629a648a",
+    "name": "Anexos 2021 - Parte II",
+    "contents": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', "
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "1670684e-e5d9-4d52-a104-c21028556d6e",
+    "name": "Anexos 2022 - Parte I",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/202200383002000"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "b591df14-939b-4e74-8fa9-406a11e9d13a",
+    "name": "Anexos 2022 - Parte I",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/202200383002000"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "a76b335d-d865-47e4-9e28-abd6c3b8337f",
+    "name": "Anexos 2022 - Parte I",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/202200383002000"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "73cba8e2-6df2-46f5-bc0c-532693ffea61",
+    "name": "Anexos 2022 - Parte II",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos P"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "cb95f60c-9504-4cfb-a1c1-c0d04499c6f4",
+    "name": "Anexos 2022 - Parte II",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos P"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "e5128dd9-776e-4bd4-98f0-deced9b2d53b",
+    "name": "Anexos 2022 - Parte II",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos P"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "e8d27795-d7e1-4ba9-bd92-8a09c25b40c9",
+    "name": "Anexos 2023 - Janeiro a Abril",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "ebf09be6-9c1c-4910-b8eb-5f8388e9d011",
+    "name": "Anexos 2023 - Janeiro a Abril",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "e3491ac2-c6a5-490e-b9fc-1fdfe6b8a809",
+    "name": "Anexos 2023 - Janeiro a Abril",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "d767bf5a-203a-4b27-b2fc-40dceb235c89",
+    "name": "Anexos 2023 - Maio a Agosto",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "04c25357-b59b-4594-bbb8-deaff15a09a9",
+    "name": "Anexos 2023 - Maio a Agosto",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "a1bab81c-7af8-4c7f-9aff-a9afd31075c3",
+    "name": "Anexos 2023 - Maio a Agosto",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "4b1211a9-c00b-46fa-b811-bddc269ad46a",
+    "name": "Anexos 2023 - Setembro a Dezembro",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "df4901e4-fb7e-4644-a946-036eaba3c878",
+    "name": "Anexos 2023 - Setembro a Dezembro",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "72f787ee-e70e-4e95-8fa1-6d5fb301d508",
+    "name": "Anexos 2023 - Setembro a Dezembro",
+    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "4169e93f-23cd-4215-b50d-85ce11291cd7",
+    "name": "Anexos 2024 - Parte I",
+    "contents": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/20240"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "15a00ee0-a2e5-4bfc-ae2f-ea0a9d860c3f",
+    "name": "Anexos 2024 - Parte I",
+    "contents": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/20240"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "e6f94138-81d8-4a82-849c-dc56e644902c",
+    "name": "Anexos 2024 - Parte I",
+    "contents": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/20240"
+   }
+  ]
+ },
+ "distributions": {
+  "tables_with_other_formats": 5,
+  "other_formats": 0,
+  "compared": 0,
+  "same_columns": 0,
+  "different_columns": 0,
+  "not_compared": {},
+  "by_format": {}
  },
  "network": {
   "total": {
-   "files": 1081,
+   "files": 1043,
    "failed_files": 0,
    "gb": 27.83,
-   "minutes": 65.4,
-   "end_to_end_mb_s": 7.09,
+   "minutes": 67.5,
+   "end_to_end_mb_s": 6.87,
    "zip_download_mb_s": null,
-   "first_byte_s_median": null,
+   "first_byte_s_median": 0.88,
    "request_failures": {}
   },
   "by_host": {
    "dados.recife.pe.gov.br": {
-    "files": 1081,
+    "files": 1043,
     "failed_files": 0,
     "gb": 27.83,
-    "minutes": 65.4,
-    "end_to_end_mb_s": 7.09,
+    "minutes": 67.5,
+    "end_to_end_mb_s": 6.87,
     "zip_download_mb_s": null,
-    "first_byte_s_median": null,
+    "first_byte_s_median": 0.88,
     "request_failures": {}
    }
   }
@@ -120,17 +428,17 @@
     "too-large": 1
    },
    "pdf_link_not_a_pdf": 0,
-   "orphans": 186,
+   "orphans": 149,
    "declaring_resource_ids": 294,
    "broken_declared_links": 290,
    "naming_another_dataset": 50
   },
   "links": {
-   "tables": 1081,
+   "tables": 1089,
    "by_method": {
-    "none": 591,
-    "name": 450,
-    "single": 23,
+    "header": 704,
+    "none": 275,
+    "name": 93,
     "declared-id": 17
    },
    "fields_listed_in_description": 0
@@ -166,23 +474,23 @@
    "date_fields_with_declared_format": 0.0367
   },
   "files_vs_dictionaries": {
-   "checked": 880,
-   "with_declared_fields_missing": 217,
-   "with_undeclared_columns": 216,
-   "with_spelling_differences": 77,
-   "with_probable_typos": 153,
-   "probable_typos": 293,
-   "declared_fields_missing": 1954,
+   "checked": 980,
+   "with_declared_fields_missing": 297,
+   "with_undeclared_columns": 413,
+   "with_spelling_differences": 134,
+   "with_similar_names": 170,
+   "similar_names": 316,
+   "declared_fields_missing": 2458,
    "formats_inferred_from_data": {
-    "format": 697,
-    "decimalChar": 239,
-    "type": 20
+    "format": 748,
+    "decimalChar": 360,
+    "type": 22
    }
   },
   "files": {
-   "validated": 1035,
+   "validated": 1043,
    "encodings": {
-    "utf-8": 1001,
+    "utf-8": 1003,
     "cp1252": 35,
     "utf-8-sig": 2
    },
@@ -192,20 +500,27 @@
     "\t": 9
    },
    "with_decode_errors": 12,
-   "with_ragged_rows": 19,
+   "with_ragged_rows": 20,
    "zips_with_several_headers": 12,
    "with_columns_without_name": 0,
-   "not_tabular": 46,
+   "not_tabular": 0,
+   "not_tables": 46,
+   "formats": {
+    "csv": 1035,
+    "xlsx": 3,
+    "json": 2,
+    "ods": 3
+   },
    "unreachable_by_reason": {}
   },
   "pdf_extraction": {
-   "pdf_dictionaries_linked": 39,
+   "pdf_dictionaries_linked": 18,
    "processed": 39,
    "by_outcome": {
     "suggested": 27,
     "extracted": 12
    },
-   "with_probable_typos": 6,
+   "with_similar_names": 6,
    "deterministic": {
     "with_oracle": 39,
     "recall": 0.7529,
@@ -265,11 +580,11 @@
   },
   {
    "name": "acidentes-de-transito-com-e-sem-vitimas",
-   "level": 4,
+   "level": 3,
    "tables": 10,
    "verifiable": 10,
-   "conformant": 10,
-   "l1_rate": 1.0
+   "conformant": 3,
+   "l1_rate": 0.3
   },
   {
    "name": "acidentes-de-transito-com-vitimas-2014",
@@ -281,11 +596,11 @@
   },
   {
    "name": "acidentes-de-transito-com-vitimas-2015",
-   "level": 4,
+   "level": 3,
    "tables": 3,
    "verifiable": 3,
-   "conformant": 3,
-   "l1_rate": 1.0
+   "conformant": 2,
+   "l1_rate": 0.6667
   },
   {
    "name": "acoes-e-programas-para-emprego-e-renda",
@@ -297,11 +612,11 @@
   },
   {
    "name": "agremiacoes-carnavalescas",
-   "level": 4,
+   "level": 3,
    "tables": 1,
    "verifiable": 1,
-   "conformant": 1,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "alunos-matriculados-2023",
@@ -329,19 +644,19 @@
   },
   {
    "name": "area-urbana",
-   "level": 0,
-   "tables": 4,
+   "level": 4,
+   "tables": 3,
    "verifiable": 3,
    "conformant": 3,
    "l1_rate": 1.0
   },
   {
    "name": "arvores-tombadas",
-   "level": 4,
+   "level": 3,
    "tables": 1,
    "verifiable": 1,
-   "conformant": 1,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "atendimentos_cultura",
@@ -377,11 +692,11 @@
   },
   {
    "name": "bares-e-restaurantes",
-   "level": 1,
+   "level": 2,
    "tables": 1,
-   "verifiable": 0,
-   "conformant": 0,
-   "l1_rate": null
+   "verifiable": 1,
+   "conformant": 1,
+   "l1_rate": 1.0
   },
   {
    "name": "bens-moveis",
@@ -428,8 +743,8 @@
    "level": 2,
    "tables": 5,
    "verifiable": 5,
-   "conformant": 2,
-   "l1_rate": 0.4
+   "conformant": 1,
+   "l1_rate": 0.2
   },
   {
    "name": "campanha-de-vacinacao-contra-a-influenza",
@@ -556,15 +871,15 @@
    "level": 3,
    "tables": 11,
    "verifiable": 11,
-   "conformant": 3,
-   "l1_rate": 0.2727
+   "conformant": 1,
+   "l1_rate": 0.0909
   },
   {
    "name": "censo-escolar-2016",
    "level": 0,
    "tables": 26,
-   "verifiable": 24,
-   "conformant": 24,
+   "verifiable": 25,
+   "conformant": 25,
    "l1_rate": 1.0
   },
   {
@@ -577,43 +892,43 @@
   },
   {
    "name": "censo-escolar-2018",
-   "level": 0,
+   "level": 2,
    "tables": 4,
-   "verifiable": 3,
+   "verifiable": 4,
    "conformant": 3,
-   "l1_rate": 1.0
+   "l1_rate": 0.75
   },
   {
    "name": "censo-escolar-2019",
-   "level": 0,
+   "level": 2,
    "tables": 5,
-   "verifiable": 2,
-   "conformant": 1,
-   "l1_rate": 0.5
+   "verifiable": 5,
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "censo-escolar-2020",
    "level": 0,
    "tables": 36,
-   "verifiable": 34,
-   "conformant": 34,
-   "l1_rate": 1.0
+   "verifiable": 35,
+   "conformant": 15,
+   "l1_rate": 0.4286
   },
   {
    "name": "censo-socioassistencial-2024",
-   "level": 3,
-   "tables": 16,
-   "verifiable": 16,
-   "conformant": 9,
-   "l1_rate": 0.5625
+   "level": 1,
+   "tables": 19,
+   "verifiable": 18,
+   "conformant": 10,
+   "l1_rate": 0.5556
   },
   {
    "name": "central-de-atendimento-de-servicos-da-emlurb-156",
-   "level": 4,
+   "level": 3,
    "tables": 24,
    "verifiable": 24,
-   "conformant": 24,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "centro-comunitario-da-paz-compaz",
@@ -716,16 +1031,16 @@
    "level": 3,
    "tables": 3,
    "verifiable": 3,
-   "conformant": 2,
-   "l1_rate": 0.6667
+   "conformant": 1,
+   "l1_rate": 0.3333
   },
   {
    "name": "contratos-de-gestao",
    "level": 0,
    "tables": 2,
-   "verifiable": 0,
+   "verifiable": 1,
    "conformant": 0,
-   "l1_rate": null
+   "l1_rate": 0.0
   },
   {
    "name": "conviva-feiras-e-mercados",
@@ -745,11 +1060,11 @@
   },
   {
    "name": "defesa-civil",
-   "level": 4,
+   "level": 3,
    "tables": 1,
    "verifiable": 1,
-   "conformant": 1,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja",
@@ -761,19 +1076,19 @@
   },
   {
    "name": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
-   "level": 3,
-   "tables": 6,
+   "level": 0,
+   "tables": 8,
    "verifiable": 6,
-   "conformant": 2,
-   "l1_rate": 0.3333
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "despesas-orcamentarias",
-   "level": 0,
+   "level": 2,
    "tables": 36,
-   "verifiable": 33,
-   "conformant": 28,
-   "l1_rate": 0.8485
+   "verifiable": 36,
+   "conformant": 6,
+   "l1_rate": 0.1667
   },
   {
    "name": "destinacao-de-residuos-solidos",
@@ -828,8 +1143,8 @@
    "level": 3,
    "tables": 2,
    "verifiable": 2,
-   "conformant": 1,
-   "l1_rate": 0.5
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "equipamentos-culturais",
@@ -889,11 +1204,11 @@
   },
   {
    "name": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
-   "level": 4,
+   "level": 3,
    "tables": 8,
    "verifiable": 8,
-   "conformant": 8,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "faixas-e-corredores-de-onibus",
@@ -945,11 +1260,11 @@
   },
   {
    "name": "gabpe-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
-   "level": 4,
+   "level": 3,
    "tables": 1,
    "verifiable": 1,
-   "conformant": 1,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
@@ -1025,11 +1340,11 @@
   },
   {
    "name": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
-   "level": 0,
+   "level": 2,
    "tables": 12,
-   "verifiable": 11,
-   "conformant": 11,
-   "l1_rate": 1.0
+   "verifiable": 12,
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "informacoes-contratuais-e-de-execucao",
@@ -1092,8 +1407,8 @@
    "level": 3,
    "tables": 4,
    "verifiable": 4,
-   "conformant": 1,
-   "l1_rate": 0.25
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "mae-coruja",
@@ -1242,9 +1557,9 @@
   {
    "name": "paraciclos-do-recife",
    "level": 4,
-   "tables": 1,
-   "verifiable": 1,
-   "conformant": 1,
+   "tables": 4,
+   "verifiable": 4,
+   "conformant": 4,
    "l1_rate": 1.0
   },
   {
@@ -1268,8 +1583,8 @@
    "level": 3,
    "tables": 2,
    "verifiable": 2,
-   "conformant": 1,
-   "l1_rate": 0.5
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "passaporte-da-vacina-relacao-dos-estabelecimentos-com-descontos",
@@ -1290,7 +1605,7 @@
   {
    "name": "pedidos-ao-portal-da-transparencia",
    "level": 0,
-   "tables": 72,
+   "tables": 27,
    "verifiable": 15,
    "conformant": 15,
    "l1_rate": 1.0
@@ -1332,8 +1647,8 @@
    "level": 3,
    "tables": 6,
    "verifiable": 6,
-   "conformant": 4,
-   "l1_rate": 0.6667
+   "conformant": 3,
+   "l1_rate": 0.5
   },
   {
    "name": "pesquisa-origem-destino",
@@ -1449,19 +1764,19 @@
   },
   {
    "name": "receitas",
-   "level": 4,
+   "level": 3,
    "tables": 25,
    "verifiable": 25,
-   "conformant": 25,
-   "l1_rate": 1.0
+   "conformant": 22,
+   "l1_rate": 0.88
   },
   {
    "name": "recife-bom-de-bola",
    "level": 2,
    "tables": 3,
    "verifiable": 3,
-   "conformant": 3,
-   "l1_rate": 1.0
+   "conformant": 2,
+   "l1_rate": 0.6667
   },
   {
    "name": "rede-credenciada",
@@ -1513,11 +1828,11 @@
   },
   {
    "name": "registro-das-infracoes-de-transito",
-   "level": 1,
+   "level": 2,
    "tables": 20,
-   "verifiable": 10,
-   "conformant": 6,
-   "l1_rate": 0.6
+   "verifiable": 20,
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "registro-de-atendimentos-da-defesa-civil",
@@ -1529,11 +1844,11 @@
   },
   {
    "name": "registro-de-chamados-atendidos-pela-cttu",
-   "level": 0,
+   "level": 2,
    "tables": 2,
-   "verifiable": 1,
-   "conformant": 1,
-   "l1_rate": 1.0
+   "verifiable": 2,
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "registro-de-velocidade-das-vias",
@@ -1555,9 +1870,9 @@
    "name": "relacao-de-pessoas-vacinadas-covid-19",
    "level": 0,
    "tables": 5,
-   "verifiable": 3,
-   "conformant": 3,
-   "l1_rate": 1.0
+   "verifiable": 4,
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "roteiro-de-coleta",
@@ -1569,11 +1884,11 @@
   },
   {
    "name": "roteiros-culturais-turismo-e-lazer",
-   "level": 4,
+   "level": 3,
    "tables": 4,
    "verifiable": 4,
-   "conformant": 4,
-   "l1_rate": 1.0
+   "conformant": 1,
+   "l1_rate": 0.25
   },
   {
    "name": "seduc-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
@@ -1612,40 +1927,40 @@
    "level": 3,
    "tables": 7,
    "verifiable": 7,
-   "conformant": 6,
-   "l1_rate": 0.8571
+   "conformant": 5,
+   "l1_rate": 0.7143
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2012",
    "level": 3,
    "tables": 7,
    "verifiable": 7,
-   "conformant": 6,
-   "l1_rate": 0.8571
+   "conformant": 5,
+   "l1_rate": 0.7143
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2013",
    "level": 3,
    "tables": 7,
    "verifiable": 7,
-   "conformant": 6,
-   "l1_rate": 0.8571
+   "conformant": 5,
+   "l1_rate": 0.7143
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2014",
    "level": 3,
    "tables": 7,
    "verifiable": 7,
-   "conformant": 6,
-   "l1_rate": 0.8571
+   "conformant": 5,
+   "l1_rate": 0.7143
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2015",
    "level": 2,
    "tables": 7,
    "verifiable": 7,
-   "conformant": 6,
-   "l1_rate": 0.8571
+   "conformant": 5,
+   "l1_rate": 0.7143
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2016",
@@ -1753,10 +2068,10 @@
   },
   {
    "name": "situacao-final-dos-alunos-por-periodo-letivo",
-   "level": 0,
+   "level": 2,
    "tables": 13,
-   "verifiable": 11,
-   "conformant": 11,
+   "verifiable": 13,
+   "conformant": 13,
    "l1_rate": 1.0
   },
   {
@@ -1825,11 +2140,11 @@
   },
   {
    "name": "unidades-de-saude",
-   "level": 4,
+   "level": 3,
    "tables": 1,
    "verifiable": 1,
-   "conformant": 1,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "unidades-de-seguranca-publica-no-municipio",
@@ -1889,91 +2204,91 @@
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media",
-   "level": 4,
+   "level": 3,
    "tables": 2,
    "verifiable": 2,
-   "conformant": 2,
-   "l1_rate": 1.0
+   "conformant": 1,
+   "l1_rate": 0.5
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2016",
-   "level": 0,
+   "level": 2,
    "tables": 2,
-   "verifiable": 1,
+   "verifiable": 2,
    "conformant": 1,
-   "l1_rate": 1.0
+   "l1_rate": 0.5
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2017",
-   "level": 0,
+   "level": 2,
    "tables": 2,
-   "verifiable": 1,
+   "verifiable": 2,
    "conformant": 1,
-   "l1_rate": 1.0
+   "l1_rate": 0.5
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
-   "level": 0,
+   "level": 2,
    "tables": 25,
-   "verifiable": 20,
-   "conformant": 20,
-   "l1_rate": 1.0
+   "verifiable": 25,
+   "conformant": 12,
+   "l1_rate": 0.48
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
-   "level": 0,
+   "level": 2,
    "tables": 47,
-   "verifiable": 34,
-   "conformant": 34,
-   "l1_rate": 1.0
+   "verifiable": 47,
+   "conformant": 23,
+   "l1_rate": 0.4894
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
-   "level": 0,
+   "level": 2,
    "tables": 25,
-   "verifiable": 20,
-   "conformant": 20,
-   "l1_rate": 1.0
+   "verifiable": 25,
+   "conformant": 12,
+   "l1_rate": 0.48
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
-   "level": 0,
+   "level": 2,
    "tables": 24,
-   "verifiable": 16,
-   "conformant": 15,
-   "l1_rate": 0.9375
+   "verifiable": 24,
+   "conformant": 11,
+   "l1_rate": 0.4583
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
-   "level": 0,
+   "level": 2,
    "tables": 24,
-   "verifiable": 9,
-   "conformant": 8,
-   "l1_rate": 0.8889
+   "verifiable": 24,
+   "conformant": 9,
+   "l1_rate": 0.375
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
-   "level": 0,
+   "level": 2,
    "tables": 16,
-   "verifiable": 11,
-   "conformant": 10,
-   "l1_rate": 0.9091
+   "verifiable": 16,
+   "conformant": 11,
+   "l1_rate": 0.6875
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
-   "level": 0,
+   "level": 2,
    "tables": 35,
-   "verifiable": 19,
-   "conformant": 19,
-   "l1_rate": 1.0
+   "verifiable": 35,
+   "conformant": 17,
+   "l1_rate": 0.4857
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
-   "level": 4,
+   "level": 3,
    "tables": 7,
    "verifiable": 7,
-   "conformant": 7,
-   "l1_rate": 1.0
+   "conformant": 0,
+   "l1_rate": 0.0
   },
   {
    "name": "vigilancia-de-zoonoses",

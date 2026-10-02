@@ -60,7 +60,7 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-01T21:12:08+00:00",
+  "observed_at": "2026-10-02T14:12:02+00:00",
   "sha256": "54eb5634e55abd3eb7328f55fb98e10e9a3914b396fa590722391e5782b702b6",
   "encoding": "utf-8",
   "delimiter": ";",
