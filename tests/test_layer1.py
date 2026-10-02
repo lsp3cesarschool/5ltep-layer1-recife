@@ -423,6 +423,11 @@ def test_a_parse_error_keeps_no_piece_of_the_file(tmp_root, monkeypatch):
     entry, _, _ = work.validate_one("ds", t, None)
     assert entry["status"] == "error"
     assert "Maria" not in json.dumps(entry, ensure_ascii=False)
+    # a record written before first_seen existed is not "new" when it is validated again
+    serve(monkeypatch, {"https://p/t.csv": b"A;B\n1;2\n"})
+    old = {"status": "ok", "checked_at": "2026-09-01T00:00:00+00:00"}
+    again, _, _ = work.validate_one("ds", {**t, "url": "https://p/t.csv", "format": "CSV"}, old)
+    assert again["first_seen"] == "2026-09-01T00:00:00+00:00"
     import requests
     assert "https://p/x" in safety.error_text(requests.HTTPError("404 Client Error: Not Found for url: https://p/x"))
 

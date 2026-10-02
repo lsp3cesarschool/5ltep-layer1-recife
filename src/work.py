@@ -107,7 +107,9 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     if failed:
         entry["network_failures"] = failed
     # Memory of the file: when it was first seen, and whether it conformed in its last validations.
-    entry["first_seen"] = (prev or {}).get("first_seen") or entry["checked_at"]
+    # (records written before first_seen existed date from their first check, not from today)
+    entry["first_seen"] = next((prev[k] for k in ("first_seen", "validated_at", "checked_at") if prev and prev.get(k)),
+                               entry["checked_at"])
     history = list((prev or {}).get("pass_history") or [])
     if summary.get("conformance"):
         history = (history + [[entry["checked_at"][:10], summary["conformance"]["pass"]]])[-12:]
