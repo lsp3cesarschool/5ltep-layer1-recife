@@ -6892,7 +6892,7 @@
    "sha256": "f562a28582608ab7f77385c525b46240cab4f1aa11401b8127964fdc9e3d5280",
    "reader": "xlsx",
    "part": "Dados Gerais",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

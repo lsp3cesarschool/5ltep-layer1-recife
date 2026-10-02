@@ -4,7 +4,7 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-02T13:56:26+00:00",
+ "generated_at": "2026-10-02T16:00:27+00:00",
  "datasets": [
   {
    "name": "abrigos-temporarios-disponiveis",
@@ -11523,8 +11523,8 @@
      "link": {
       "dictionary": "27c18853-c3d9-4cad-9a48-39c6b7659366",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.99
      },
      "level": 2
     },
@@ -11564,7 +11564,7 @@
      "link": {
       "dictionary": "5f42e32f-0833-480f-81cc-6ff44387fa9f",
       "part": 2,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
