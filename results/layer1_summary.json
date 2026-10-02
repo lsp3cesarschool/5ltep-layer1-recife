@@ -5,8 +5,8 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-02T16:41:49+00:00",
- "census_at": "2026-10-02T16:00:27+00:00",
+ "generated_at": "2026-10-02T17:07:44+00:00",
+ "census_at": "2026-10-02T16:47:29+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -41,9 +41,9 @@
    "3": 453,
    "4": 367
   },
-  "validated": 1073,
-  "validation_coverage": 0.9972,
-  "errors": 3,
+  "validated": 1076,
+  "validation_coverage": 1.0,
+  "errors": 0,
   "queue_remaining": 0
  },
  "schema_sources": {
@@ -75,24 +75,20 @@
  "drift": {
   "observed": 0,
   "declared": 11,
-  "files_with_baseline": 1069,
+  "files_with_baseline": 1072,
   "first_baseline_at": "2026-10-01T21:00:09+00:00",
-  "last_observed_at": "2026-10-02T16:40:04+00:00"
+  "last_observed_at": "2026-10-02T17:06:34+00:00"
  },
  "coverage": {
   "files": 1076,
-  "read": 1073,
+  "read": 1076,
   "empty": 0,
   "not_tabular": 0,
-  "not_downloaded": 3,
+  "not_downloaded": 0,
   "pending": 0,
-  "not_downloaded_by_reason": {
-   "other": 3
-  },
-  "not_downloaded_by_host": {
-   "other · dados.recife.pe.gov.br": 3
-  },
-  "read_without_schema": 93,
+  "not_downloaded_by_reason": {},
+  "not_downloaded_by_host": {},
+  "read_without_schema": 96,
   "checked": 980,
   "conform": 413,
   "fail_missing_fields": 297,
@@ -199,22 +195,22 @@
  "network": {
   "total": {
    "files": 1076,
-   "failed_files": 3,
-   "gb": 41.73,
-   "minutes": 85.4,
-   "end_to_end_mb_s": 8.14,
-   "zip_download_mb_s": 13.47,
+   "failed_files": 0,
+   "gb": 42.77,
+   "minutes": 86.8,
+   "end_to_end_mb_s": 8.22,
+   "zip_download_mb_s": 13.46,
    "first_byte_s_median": 0.88,
    "request_failures": {}
   },
   "by_host": {
    "dados.recife.pe.gov.br": {
     "files": 1076,
-    "failed_files": 3,
-    "gb": 41.73,
-    "minutes": 85.4,
-    "end_to_end_mb_s": 8.14,
-    "zip_download_mb_s": 13.47,
+    "failed_files": 0,
+    "gb": 42.77,
+    "minutes": 86.8,
+    "end_to_end_mb_s": 8.22,
+    "zip_download_mb_s": 13.46,
     "first_byte_s_median": 0.88,
     "request_failures": {}
    }
@@ -298,7 +294,7 @@
    }
   },
   "files": {
-   "validated": 1073,
+   "validated": 1076,
    "encodings": {
     "utf-8": 1009,
     "cp1252": 35,
@@ -311,21 +307,19 @@
    },
    "with_decode_errors": 12,
    "with_ragged_rows": 20,
-   "zips_with_several_headers": 42,
-   "with_columns_without_name": 30,
+   "zips_with_several_headers": 45,
+   "with_columns_without_name": 33,
    "not_tabular": 0,
    "not_tables": 13,
    "formats": {
     "csv": 1035,
-    "xlsx": 12,
+    "xlsx": 15,
     "json": 2,
     "ods": 3,
-    "xls": 30,
+    "xls": 33,
     "xml": 6
    },
-   "unreachable_by_reason": {
-    "other": 3
-   }
+   "unreachable_by_reason": {}
   },
   "pdf_extraction": {
    "pdf_dictionaries_linked": 18,

@@ -5,8 +5,8 @@
    "name": "Recife",
    "title": "Recife open data portal (Dados Recife)"
   },
-  "generated_at": "2026-10-02T16:41:49+00:00",
-  "census_at": "2026-10-02T16:00:27+00:00",
+  "generated_at": "2026-10-02T17:07:44+00:00",
+  "census_at": "2026-10-02T16:47:29+00:00",
   "datasets": {
    "total": 223,
    "with_tables": 203,
@@ -27,9 +27,9 @@
     "3": 453,
     "4": 367
    },
-   "validated": 1073,
-   "validation_coverage": 0.9972,
-   "errors": 3,
+   "validated": 1076,
+   "validation_coverage": 1.0,
+   "errors": 0,
    "queue_remaining": 0
   },
   "verifiable": 980,
@@ -39,24 +39,20 @@
   "drift": {
    "observed": 0,
    "declared": 11,
-   "files_with_baseline": 1069,
+   "files_with_baseline": 1072,
    "first_baseline_at": "2026-10-01T21:00:09+00:00",
-   "last_observed_at": "2026-10-02T16:40:04+00:00"
+   "last_observed_at": "2026-10-02T17:06:34+00:00"
   },
   "coverage": {
    "files": 1076,
-   "read": 1073,
+   "read": 1076,
    "empty": 0,
    "not_tabular": 0,
-   "not_downloaded": 3,
+   "not_downloaded": 0,
    "pending": 0,
-   "not_downloaded_by_reason": {
-    "other": 3
-   },
-   "not_downloaded_by_host": {
-    "other · dados.recife.pe.gov.br": 3
-   },
-   "read_without_schema": 93,
+   "not_downloaded_by_reason": {},
+   "not_downloaded_by_host": {},
+   "read_without_schema": 96,
    "checked": 980,
    "conform": 413,
    "fail_missing_fields": 297,
@@ -163,22 +159,22 @@
   "network": {
    "total": {
     "files": 1076,
-    "failed_files": 3,
-    "gb": 41.73,
-    "minutes": 85.4,
-    "end_to_end_mb_s": 8.14,
-    "zip_download_mb_s": 13.47,
+    "failed_files": 0,
+    "gb": 42.77,
+    "minutes": 86.8,
+    "end_to_end_mb_s": 8.22,
+    "zip_download_mb_s": 13.46,
     "first_byte_s_median": 0.88,
     "request_failures": {}
    },
    "by_host": {
     "dados.recife.pe.gov.br": {
      "files": 1076,
-     "failed_files": 3,
-     "gb": 41.73,
-     "minutes": 85.4,
-     "end_to_end_mb_s": 8.14,
-     "zip_download_mb_s": 13.47,
+     "failed_files": 0,
+     "gb": 42.77,
+     "minutes": 86.8,
+     "end_to_end_mb_s": 8.22,
+     "zip_download_mb_s": 13.46,
      "first_byte_s_median": 0.88,
      "request_failures": {}
     }
@@ -284,7 +280,7 @@
     }
    },
    "files": {
-    "validated": 1073,
+    "validated": 1076,
     "encodings": {
      "utf-8": 1009,
      "cp1252": 35,
@@ -297,21 +293,19 @@
     },
     "with_decode_errors": 12,
     "with_ragged_rows": 20,
-    "zips_with_several_headers": 42,
-    "with_columns_without_name": 30,
+    "zips_with_several_headers": 45,
+    "with_columns_without_name": 33,
     "not_tabular": 0,
     "not_tables": 13,
     "formats": {
      "csv": 1035,
-     "xlsx": 12,
+     "xlsx": 15,
      "json": 2,
      "ods": 3,
-     "xls": 30,
+     "xls": 33,
      "xml": 6
     },
-    "unreachable_by_reason": {
-     "other": 3
-    }
+    "unreachable_by_reason": {}
    },
    "pdf_extraction": {
     "pdf_dictionaries_linked": 18,
@@ -39413,18 +39407,20 @@
      "level": 0,
      "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/d767bf5a-203a-4b27-b2fc-40dceb235c89/download/anexos-2023-maio-a-agosto.zip",
      "dictionary": null,
-     "status": "error",
-     "validated_at": "2026-10-01T21:34:11+00:00",
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T17:05:40+00:00",
+     "rows": 9065,
      "schema_kind": null,
-     "error": "CompDocError: Workbook corruption: seen[2] == 4",
-     "encodings": null,
-     "distinct_headers": null,
+     "error": null,
+     "encodings": [],
+     "distinct_headers": 7,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/pedidos-ao-portal-da-transparencia/d767bf5a-203a-4b27-b2fc-40dceb235c89.observed.json"
+     }
     },
     {
      "id": "04c25357-b59b-4594-bbb8-deaff15a09a9",
@@ -39432,18 +39428,20 @@
      "level": 0,
      "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/04c25357-b59b-4594-bbb8-deaff15a09a9/download/anexos-2023-maio-a-agosto.zip",
      "dictionary": null,
-     "status": "error",
-     "validated_at": "2026-10-01T21:42:03+00:00",
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T17:06:08+00:00",
+     "rows": 9065,
      "schema_kind": null,
-     "error": "CompDocError: Workbook corruption: seen[2] == 4",
-     "encodings": null,
-     "distinct_headers": null,
+     "error": null,
+     "encodings": [],
+     "distinct_headers": 7,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/pedidos-ao-portal-da-transparencia/04c25357-b59b-4594-bbb8-deaff15a09a9.observed.json"
+     }
     },
     {
      "id": "a1bab81c-7af8-4c7f-9aff-a9afd31075c3",
@@ -39451,18 +39449,20 @@
      "level": 0,
      "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/a1bab81c-7af8-4c7f-9aff-a9afd31075c3/download/anexos-2023-maio-a-agosto.zip",
      "dictionary": null,
-     "status": "error",
-     "validated_at": "2026-10-01T21:49:55+00:00",
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T17:06:34+00:00",
+     "rows": 9065,
      "schema_kind": null,
-     "error": "CompDocError: Workbook corruption: seen[2] == 4",
-     "encodings": null,
-     "distinct_headers": null,
+     "error": null,
+     "encodings": [],
+     "distinct_headers": 7,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/pedidos-ao-portal-da-transparencia/a1bab81c-7af8-4c7f-9aff-a9afd31075c3.observed.json"
+     }
     },
     {
      "id": "4b1211a9-c00b-46fa-b811-bddc269ad46a",
@@ -64668,39 +64668,6 @@
    "status": "not-tabular",
    "reason": "not-a-table",
    "detail": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/20"
-  },
-  {
-   "dataset": "pedidos-ao-portal-da-transparencia",
-   "title": "Pedidos de Acesso à Informação",
-   "file": "Anexos 2023 - Maio a Agosto",
-   "id": "d767bf5a-203a-4b27-b2fc-40dceb235c89",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/d767bf5a-203a-4b27-b2fc-40dceb235c89/download/anexos-2023-maio-a-agosto.zip",
-   "host": "dados.recife.pe.gov.br",
-   "status": "error",
-   "reason": "other",
-   "detail": "CompDocError: Workbook corruption: seen[2] == 4"
-  },
-  {
-   "dataset": "pedidos-ao-portal-da-transparencia",
-   "title": "Pedidos de Acesso à Informação",
-   "file": "Anexos 2023 - Maio a Agosto",
-   "id": "04c25357-b59b-4594-bbb8-deaff15a09a9",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/04c25357-b59b-4594-bbb8-deaff15a09a9/download/anexos-2023-maio-a-agosto.zip",
-   "host": "dados.recife.pe.gov.br",
-   "status": "error",
-   "reason": "other",
-   "detail": "CompDocError: Workbook corruption: seen[2] == 4"
-  },
-  {
-   "dataset": "pedidos-ao-portal-da-transparencia",
-   "title": "Pedidos de Acesso à Informação",
-   "file": "Anexos 2023 - Maio a Agosto",
-   "id": "a1bab81c-7af8-4c7f-9aff-a9afd31075c3",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/fbec59e0-4a58-42db-9084-f3976ebe8346/resource/a1bab81c-7af8-4c7f-9aff-a9afd31075c3/download/anexos-2023-maio-a-agosto.zip",
-   "host": "dados.recife.pe.gov.br",
-   "status": "error",
-   "reason": "other",
-   "detail": "CompDocError: Workbook corruption: seen[2] == 4"
   }
  ],
  "pdf": [
@@ -68360,6 +68327,38 @@
    "fixed": 0,
    "broken": 201,
    "new_files": 30,
+   "gone_files": 0,
+   "gone_total": 0,
+   "drift_observed": 0,
+   "drift_declared": 11
+  },
+  {
+   "at": "2026-10-02T16:47:29+00:00",
+   "report_at": "2026-10-02T17:07:44+00:00",
+   "commit": "f60190e",
+   "files": 1076,
+   "read": 1076,
+   "checked": 980,
+   "conform": 413,
+   "l1_rate": 0.4214,
+   "not_downloaded": 0,
+   "levels": [
+    93,
+    3,
+    160,
+    453,
+    367
+   ],
+   "dataset_levels": [
+    22,
+    3,
+    40,
+    82,
+    56
+   ],
+   "fixed": 0,
+   "broken": 201,
+   "new_files": 3,
    "gone_files": 0,
    "gone_total": 0,
    "drift_observed": 0,

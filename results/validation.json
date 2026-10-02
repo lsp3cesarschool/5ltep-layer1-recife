@@ -74538,7 +74538,7 @@
  },
  "d767bf5a-203a-4b27-b2fc-40dceb235c89": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-02T16:24:04+00:00",
+  "checked_at": "2026-10-02T17:05:40+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74547,10 +74547,63 @@
    "size": 347798120
   },
   "host": "dados.recife.pe.gov.br",
-  "status": "error",
-  "error": "CompDocError: Workbook corruption: seen[2] == 4",
-  "validated_at": "2026-10-01T21:34:11+00:00",
-  "reason": "reader"
+  "timing": {
+   "first_byte_s": 3.93,
+   "download_s": 26.8
+  },
+  "first_seen": "2026-10-02T17:05:40+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T17:05:40+00:00",
+  "seconds": 27.9,
+  "sha256": "f11b3e36907a0a143772fcb1e6a2e17ef31bfd156d71494a8153473b0e776e5e",
+  "bytes": 347798120,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 347798120
+  },
+  "summary": {
+   "tables": 10,
+   "rows": 9065,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 7,
+   "columns_without_name": 22,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx"
+   ]
+  },
+  "header": [
+   "SECRETARIA DE SANEAMENTO - JUNHO/2023",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "error"
  },
  "4b1211a9-c00b-46fa-b811-bddc269ad46a": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75899,7 +75952,7 @@
  },
  "04c25357-b59b-4594-bbb8-deaff15a09a9": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-02T16:31:39+00:00",
+  "checked_at": "2026-10-02T17:06:08+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75908,10 +75961,63 @@
    "size": 347798120
   },
   "host": "dados.recife.pe.gov.br",
-  "status": "error",
-  "error": "CompDocError: Workbook corruption: seen[2] == 4",
-  "validated_at": "2026-10-01T21:42:03+00:00",
-  "reason": "reader"
+  "timing": {
+   "first_byte_s": 0.87,
+   "download_s": 24.47
+  },
+  "first_seen": "2026-10-02T17:06:08+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T17:06:08+00:00",
+  "seconds": 25.3,
+  "sha256": "f11b3e36907a0a143772fcb1e6a2e17ef31bfd156d71494a8153473b0e776e5e",
+  "bytes": 347798120,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 347798120
+  },
+  "summary": {
+   "tables": 10,
+   "rows": 9065,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 7,
+   "columns_without_name": 22,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx"
+   ]
+  },
+  "header": [
+   "SECRETARIA DE SANEAMENTO - JUNHO/2023",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "error"
  },
  "df4901e4-fb7e-4644-a946-036eaba3c878": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -77260,7 +77366,7 @@
  },
  "a1bab81c-7af8-4c7f-9aff-a9afd31075c3": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-02T16:39:16+00:00",
+  "checked_at": "2026-10-02T17:06:34+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -77269,10 +77375,63 @@
    "size": 347798120
   },
   "host": "dados.recife.pe.gov.br",
-  "status": "error",
-  "error": "CompDocError: Workbook corruption: seen[2] == 4",
-  "validated_at": "2026-10-01T21:49:55+00:00",
-  "reason": "reader"
+  "timing": {
+   "first_byte_s": 0.73,
+   "download_s": 26.8
+  },
+  "first_seen": "2026-10-02T17:06:34+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T17:06:34+00:00",
+  "seconds": 27.6,
+  "sha256": "f11b3e36907a0a143772fcb1e6a2e17ef31bfd156d71494a8153473b0e776e5e",
+  "bytes": 347798120,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 347798120
+  },
+  "summary": {
+   "tables": 10,
+   "rows": 9065,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 7,
+   "columns_without_name": 22,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx"
+   ]
+  },
+  "header": [
+   "SECRETARIA DE SANEAMENTO - JUNHO/2023",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "error"
  },
  "72f787ee-e70e-4e95-8fa1-6d5fb301d508": {
   "dataset": "pedidos-ao-portal-da-transparencia",
