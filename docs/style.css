@@ -134,6 +134,7 @@ footer { padding-bottom: 30px; }
 .funnel .bar > span { display: block; background: var(--bar); border-radius: 0 4px 4px 0; min-width: 2px; }
 .funnel .n { font-variant-numeric: tabular-nums; text-align: right; color: var(--text-2); white-space: nowrap; }
 details.more { margin-top: 12px; }
+.similar-wrap { max-height: 480px; overflow: auto; }
 details.more summary { cursor: pointer; font-weight: 600; }
 h3.sub { margin-top: 18px; }
 .tile a.more { font-size: .8rem; }

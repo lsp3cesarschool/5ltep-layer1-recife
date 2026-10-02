@@ -142,15 +142,15 @@ def oracle(fields: list[dict], header: list[str]) -> dict:
         "levenshtein": round(sum(ls) / len(ls), 4),
         "missing_from_pdf": sorted(h for h in header if dictionaries.norm(h) not in en)[:50],
         "not_in_file": sorted(n for n in names if dictionaries.norm(n) not in hn)[:50],
-        "probable_typos": _typos([n for n in names if dictionaries.norm(n) not in hn],
+        "similar_names": _similar([n for n in names if dictionaries.norm(n) not in hn],
                                  [h for h in header if dictionaries.norm(h) not in en]),
     }
 
 
-def _typos(pdf_only: list[str], file_only: list[str]) -> dict[str, str]:
-    from src.validate import probable_typos
+def _similar(pdf_only: list[str], file_only: list[str]) -> dict[str, str]:
+    from src.validate import similar_names
 
-    return probable_typos(pdf_only, file_only)
+    return similar_names(pdf_only, file_only)
 
 
 def agreement(o: dict) -> float:

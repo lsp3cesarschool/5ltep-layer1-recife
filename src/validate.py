@@ -168,12 +168,14 @@ def match_fields(declared_names: list[str], header: list[str]) -> dict:
     missing = [n for n in declared_names if n not in matched]
     undeclared = [h for h in header if h not in used]
     return {"exact": exact, "spelling": spelling, "missing": missing, "undeclared": undeclared,
-            "probable_typos": probable_typos(missing, undeclared)}
+            "similar_names": similar_names(missing, undeclared)}
 
 
-def probable_typos(missing: list[str], undeclared: list[str], threshold: float = 0.8) -> dict[str, str]:
-    """A declared name missing from the file and an undeclared column that differ by a small edit
-    (IdeNuceloCEG / IdeNucleoCEG): most likely a typo in the dictionary, or in the file."""
+def similar_names(missing: list[str], undeclared: list[str], threshold: float = 0.8) -> dict[str, str]:
+    """A declared name missing from the file and an undeclared column whose names are alike
+    (normalised Levenshtein similarity >= threshold, e.g. IdeNuceloCEG / IdeNucleoCEG). Often a typo in
+    the dictionary or in the file, but not always (DatCadastro / AnoCadastro are different fields): a
+    heuristic for people to check, not a verdict. The threshold was not calibrated."""
     from src.pdf_extract import similarity
 
     out, free = {}, list(undeclared)
@@ -281,7 +283,7 @@ def summarise(tables: list[dict], declared: dict | None) -> dict:
     missing = sorted({m for c in confs for m in c["matches"]["missing"]})
     undeclared = sorted({u for c in confs for u in c["matches"]["undeclared"]})
     spelling = {k: v for c in confs for k, v in c["matches"]["spelling"].items()}
-    typos = {k: v for c in confs for k, v in c["matches"].get("probable_typos", {}).items()}
+    similar = {k: v for c in confs for k, v in c["matches"].get("similar_names", {}).items()}
     cells = sum(c["cells_checked"] for c in confs)
     bad = sum(c["cells_with_errors"] for c in confs)
     by_field: dict[str, dict] = {}
@@ -294,7 +296,7 @@ def summarise(tables: list[dict], declared: dict | None) -> dict:
     rate = bad / cells if cells else 0.0
     out["conformance"] = {
         "declared_fields": len(declared["fields"]), "missing": missing, "undeclared": undeclared,
-        "spelling": spelling, "probable_typos": typos, "cells_checked": cells, "cells_with_errors": bad,
+        "spelling": spelling, "similar_names": similar, "cells_checked": cells, "cells_with_errors": bad,
         "error_rate": round(rate, 6), "errors_by_field": by_field,
         "inferred_formats": {k: v for c in confs for k, v in c["inferred_formats"].items()},
         "pass": not missing and not undeclared and rate <= config.L1_MAX_ERROR_RATE,

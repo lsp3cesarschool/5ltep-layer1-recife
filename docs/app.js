@@ -43,7 +43,7 @@ const I18N = {
     d_kind: "Kind", d_changes: "What changed", d_when: "When",
     pdf_h: "PDF dictionaries turned into schemas",
     pdf_note: "Each PDF dictionary linked to a file, what the three stages made of it (deterministic reading, local LLM, people) and how well the file's own header confirms it. Schemas are Frictionless Table Schema files in this repository; suggested ones wait in a pull request.",
-    x_pdf: "PDF", x_outcome: "Outcome", x_stage: "Stage", x_schema: "Schema", x_typos: "Probable typos",
+    x_pdf: "PDF", x_outcome: "Outcome", x_stage: "Stage", x_schema: "Schema", x_typos: "Similar names (dictionary ≈ file)",
     o_extracted: "confirmed by the header", o_suggested: "suggested (pull request)", "o_llm-needed": "waiting for the LLM",
     o_failed: "not extracted", o_pending: "waiting for the file's header",
     open_pr: "pull request ↗", schemas_label: "schemas",
@@ -61,11 +61,15 @@ const I18N = {
     k_fields: "declared fields", k_spell: "different spellings of a type", k_recog: "fields with a recognised type",
     k_dates: "date fields with a declared format", k_unrec: "Spellings not recognised",
     k_checked: "files checked against a schema", k_missing: "lack declared fields", k_undecl: "have undeclared columns",
-    k_spelling: "spell a column differently", k_typos: "have probable typos (declared ≈ file column)",
-    k_pdftypos: "PDFs with probable typos, by the oracle", f_typos: "probable typos (declared → file)", k_inferred: "formats inferred from the data (not declared)",
+    k_spelling: "spell a column differently", k_typos: "with similar names (declared ≈ file column)",
+    k_pdftypos: "PDFs with similar names, by the oracle", f_typos: "similar names (declared → file)", k_inferred: "formats inferred from the data (not declared)",
     k_validated: "files read", k_encodings: "encodings", k_delims: "delimiters", k_decode: "with bytes that do not decode",
     k_ragged: "with rows of the wrong width", k_multi: "zips whose members have different headers",
     k_noname: "with columns without a name in the header",
+    similar_h: "Similar names between dictionary and file", similar_search: "Filter by dataset, file or name",
+    similar_note: "Pairs of a name the dictionary declares but the file lacks and a column the file has but the dictionary does not declare, whose names are alike (normalised Levenshtein similarity of at least 0.8). Often a typo on one side, but not always: two different fields can have alike names. A heuristic for people to check, not a verdict.",
+    similar_count: "{n} pairs in {f} files", s_declared: "Declared in the dictionary", s_column: "Column in the file",
+    s_similarity: "Similarity", s_source: "Schema source",
     k_nottab: "not a CSV behind the link", k_gb: "data downloaded (GB)", k_minutes: "time downloading and validating (min)",
     k_mbs: "throughput, download and validation (MB/s)", k_ttfb: "time to the server's first answer, median (s)",
     k_reqfail: "requests that failed (and were retried)", k_unreach: "Files that could not be downloaded",
@@ -122,7 +126,7 @@ const I18N = {
     d_kind: "Tipo", d_changes: "O que mudou", d_when: "Quando",
     pdf_h: "Dicionários em PDF transformados em esquemas",
     pdf_note: "Cada dicionário em PDF ligado a um arquivo, o que as três etapas fizeram dele (leitura determinística, LLM local, pessoas) e quanto o próprio cabeçalho do arquivo o confirma. Os esquemas são arquivos Frictionless Table Schema neste repositório; os sugeridos aguardam num pull request.",
-    x_pdf: "PDF", x_outcome: "Resultado", x_stage: "Etapa", x_schema: "Esquema", x_typos: "Prováveis erros de digitação",
+    x_pdf: "PDF", x_outcome: "Resultado", x_stage: "Etapa", x_schema: "Esquema", x_typos: "Nomes parecidos (dicionário ≈ arquivo)",
     o_extracted: "confirmado pelo cabeçalho", o_suggested: "sugerido (pull request)", "o_llm-needed": "aguardando o LLM",
     o_failed: "não extraído", o_pending: "aguardando o cabeçalho do arquivo",
     open_pr: "pull request ↗", schemas_label: "esquemas",
@@ -141,11 +145,15 @@ const I18N = {
     k_fields: "campos declarados", k_spell: "grafias diferentes de um tipo", k_recog: "campos com tipo reconhecido",
     k_dates: "campos de data com formato declarado", k_unrec: "Grafias não reconhecidas",
     k_checked: "arquivos verificados contra um esquema", k_missing: "não têm campos declarados", k_undecl: "têm colunas não declaradas",
-    k_spelling: "grafam uma coluna de outro jeito", k_typos: "têm prováveis erros de digitação (declarado ≈ coluna)",
-    k_pdftypos: "PDFs com prováveis erros de digitação, pelo oráculo", f_typos: "prováveis erros de digitação (declarado → arquivo)", k_inferred: "formatos inferidos dos dados (não declarados)",
+    k_spelling: "grafam uma coluna de outro jeito", k_typos: "com nomes parecidos (declarado ≈ coluna)",
+    k_pdftypos: "PDFs com nomes parecidos, pelo oráculo", f_typos: "nomes parecidos (declarado → arquivo)", k_inferred: "formatos inferidos dos dados (não declarados)",
     k_validated: "arquivos lidos", k_encodings: "codificações", k_delims: "delimitadores", k_decode: "com bytes que não decodificam",
     k_ragged: "com linhas de largura errada", k_multi: "zips com membros de cabeçalhos diferentes",
     k_noname: "com colunas sem nome no cabeçalho",
+    similar_h: "Nomes parecidos entre dicionário e arquivo", similar_search: "Filtrar por conjunto, arquivo ou nome",
+    similar_note: "Pares formados por um nome que o dicionário declara mas o arquivo não tem e uma coluna que o arquivo tem mas o dicionário não declara, quando os nomes se parecem (similaridade de Levenshtein normalizada de pelo menos 0,8). Muitas vezes é erro de digitação de um dos lados, mas nem sempre: dois campos diferentes podem ter nomes parecidos. É uma heurística para pessoas conferirem, não um veredito.",
+    similar_count: "{n} pares em {f} arquivos", s_declared: "Declarado no dicionário", s_column: "Coluna no arquivo",
+    s_similarity: "Similaridade", s_source: "Fonte do esquema",
     k_nottab: "sem CSV por trás do link", k_gb: "dados baixados (GB)", k_minutes: "tempo baixando e validando (min)",
     k_mbs: "vazão, download e validação (MB/s)", k_ttfb: "tempo até a primeira resposta do servidor, mediana (s)",
     k_reqfail: "pedidos que falharam (e foram repetidos)", k_unreach: "Arquivos que não puderam ser baixados",
@@ -381,6 +389,26 @@ function renderProgress(s) {
     }).join("") + "</tbody>" : "";
 }
 
+function renderSimilar() {
+  const rows = DATA.similar_names || [];
+  el("similar").hidden = !rows.length;
+  if (!rows.length) return;
+  const draw = () => {
+    const q = el("similar-search").value.trim().toLowerCase();
+    const shown = rows.filter((x) => !q || [x.title, x.dataset, x.file, x.declared, x.column]
+      .some((v) => (v || "").toLowerCase().includes(q)));
+    el("similar-count").textContent = t("similar_count", { n: fmt(shown.length), f: fmt(new Set(shown.map((x) => x.id)).size) });
+    el("similar-table").innerHTML = `<thead><tr><th>${esc(t("col_dataset"))}</th><th>${esc(t("u_file"))}</th>`
+      + `<th>${esc(t("s_declared"))}</th><th>${esc(t("s_column"))}</th><th class="num">${esc(t("s_similarity"))}</th>`
+      + `<th>${esc(t("s_source"))}</th></tr></thead><tbody>`
+      + shown.map((x) => `<tr><td>${esc(x.title)}</td><td><a href="?resource=${esc(x.id)}">${esc(x.file)}</a></td>`
+        + `<td><code>${esc(x.declared)}</code></td><td><code>${esc(x.column)}</code></td>`
+        + `<td class="num">${pct(x.similarity)}</td><td>${esc(x.schema_kind || "—")}</td></tr>`).join("") + "</tbody>";
+  };
+  el("similar-search").addEventListener("input", draw);
+  draw();
+}
+
 function schemaLinks(files) {
   return Object.entries(files || {}).map(([kind, path]) =>
     `<a href="${repo()}/blob/main/${encodeURI(path)}" rel="noopener">${esc(kind)}</a>`).join(" · ") || "—";
@@ -398,7 +426,7 @@ function renderPdf() {
       const schema = x.schema && x.schema_status !== "suggested"
         ? `<a href="${repo()}/blob/main/${encodeURI(x.schema)}" rel="noopener">${esc(x.schema_status || "schema")} ↗</a>`
         : x.outcome === "suggested" ? `<a href="${prs}" rel="noopener">${esc(t("open_pr"))}</a>` : "—";
-      const typos = Object.entries(x.probable_typos || {}).map(([a, b]) => `<code>${esc(a)}</code> → <code>${esc(b)}</code>`).join("<br>");
+      const typos = Object.entries(x.similar_names || {}).map(([a, b]) => `<code>${esc(a)}</code> → <code>${esc(b)}</code>`).join("<br>");
       return `<tr><td><a href="#" data-open="${esc(x.dataset)}">${esc(x.title)}</a></td>`
         + `<td><a href="${esc(x.url)}" rel="noopener">${esc(x.dictionary)}</a></td>`
         + `<td>${esc(t(`o_${x.outcome}`))}</td><td>${esc(x.stage ? (x.stage === "llm" ? `LLM (${x.model || "?"})` : t("stage_det")) : "—")}</td>`
@@ -486,7 +514,7 @@ function renderFindings(f, net) {
       + (ty.unrecognised_spellings?.length ? `<p class="small muted">${esc(t("k_unrec"))}: ${ty.unrecognised_spellings.map((x) => `<code>${esc(x)}</code>`).join(" ")}</p>` : "")],
     [t("p_vs"), kv([[t("k_checked"), fmt(vs.checked)], [t("k_missing"), fmt(vs.with_declared_fields_missing)],
       [t("k_undecl"), fmt(vs.with_undeclared_columns)], [t("k_spelling"), fmt(vs.with_spelling_differences)],
-      [t("k_typos"), fmt(vs.with_probable_typos)]])
+      [t("k_typos"), fmt(vs.with_similar_names)]])
       + `<p class="small muted">${esc(t("k_inferred"))}</p>` + bars(vs.formats_inferred_from_data)],
     [t("p_files"), kv([[t("k_validated"), fmt(fi.validated)], [t("k_decode"), fmt(fi.with_decode_errors)],
       [t("k_ragged"), fmt(fi.with_ragged_rows)], [t("k_multi"), fmt(fi.zips_with_several_headers)],
@@ -498,7 +526,7 @@ function renderFindings(f, net) {
       + `${esc(t("k_delims"))}: ${Object.entries(fi.delimiters || {}).map(([k, n]) => `<code>${esc(k === "\t" ? "TAB" : k)}</code> ${fmt(n)}`).join(" · ") || "—"}</p>`
       + `<p class="small muted">${esc(t("k_unreach"))}</p>` + bars(fi.unreachable_by_reason)],
     [t("p_pdf"), kv([[t("k_pdflinked"), fmt(pdf.pdf_dictionaries_linked)], [t("k_processed"), fmt(pdf.processed)],
-      [t("k_pdftypos"), fmt(pdf.with_probable_typos)]])
+      [t("k_pdftypos"), fmt(pdf.with_similar_names)]])
       + `<table class="mini"><thead><tr><th>${esc(t("k_stage"))}</th><th>${esc(t("k_n"))}</th><th>${esc(t("k_recall"))}</th>`
       + `<th>${esc(t("k_precision"))}</th><th>${esc(t("k_em"))}</th><th>${esc(t("k_ls"))}</th></tr></thead><tbody>`
       + [["stage_det", pdf.deterministic], ["stage_llm", pdf.llm]].map(([k, r]) =>
@@ -531,7 +559,7 @@ function fileDetail(f) {
       ? `<div class="small"><span class="muted">${esc(t(key))}:</span> ${items.slice(0, 30).map((x) => `<code>${esc(x)}</code>`).join(" ")}${items.length > 30 ? " …" : ""}</div>` : "");
     more += list("f_missing", c.missing) + list("f_undecl", c.undeclared)
       + list("f_spelling", Object.entries(c.spelling || {}).map(([a, b]) => `${a} → ${b}`))
-      + list("f_typos", Object.entries(c.probable_typos || {}).map(([a, b]) => `${a} → ${b}`));
+      + list("f_typos", Object.entries(c.similar_names || {}).map(([a, b]) => `${a} → ${b}`));
     const errs = Object.entries(c.errors_by_field || {}).map(([field, kinds]) =>
       [field, Object.entries(kinds).map(([k, n]) => `${k} ${fmt(n)}`).join(", "), Object.values(kinds).reduce((a, b) => a + b, 0)])
       .sort((a, b) => b[2] - a[2]).slice(0, 8);
@@ -606,6 +634,7 @@ async function main() {
   renderMaturity(s);
   renderCoverage(s);
   renderProgress(s);
+  renderSimilar();
   renderPdf();
   renderFindings(s.findings, s.network);
   // ?level=d2 / f0 (same as clicking a maturity band) filters the table

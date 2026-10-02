@@ -193,7 +193,7 @@ def test_oracle_compares_extracted_names_with_the_header():
     o = pdf_extract.oracle(fields, header)
     assert o["recall"] == 0.8 and o["precision"] == 0.8 and o["exact_match"] == 0.8
     assert o["missing_from_pdf"] == ["DatLavraturaTE"] and o["not_in_file"] == ["DatLavramentoTE"]
-    assert o["probable_typos"] == {}       # "lavramento" x "lavratura": another word (0.67), not a typo
+    assert o["similar_names"] == {}       # "lavramento" x "lavratura": another word (0.67), not a typo
     assert 0.8 < o["levenshtein"] < 1.0
     assert pdf_extract.agreement(o) == 0.8
     assert pdf_extract.oracle(fields, [])["available"] is False
@@ -397,8 +397,8 @@ def test_conformance_counts_errors_and_infers_undeclared_formats():
     c = out["conformance"]
     assert c["matches"]["missing"] == ["SUMIU"] and c["matches"]["undeclared"] == ["EXTRA"]
     assert c["matches"]["spelling"] == {"Descrição": "DESCRICAO"}
-    assert c["matches"]["probable_typos"] == {}                     # SUMIU and EXTRA are not alike
-    assert validate.match_fields(["IdeNuceloCEG", "UF"], ["IdeNucleoCEG", "UF", "Outra"])["probable_typos"] ==         {"IdeNuceloCEG": "IdeNucleoCEG"}
+    assert c["matches"]["similar_names"] == {}                     # SUMIU and EXTRA are not alike
+    assert validate.match_fields(["IdeNuceloCEG", "UF"], ["IdeNucleoCEG", "UF", "Outra"])["similar_names"] ==         {"IdeNuceloCEG": "IdeNucleoCEG"}
     assert c["inferred_formats"]["DATA"] == {"format": "%d/%m/%Y"}
     assert c["inferred_formats"]["VALOR"] == {"decimalChar": ",", "groupChar": "."}
     errs = {f: {k: e["count"] for k, e in kinds.items()} for f, kinds in c["errors"].items()}
@@ -825,3 +825,13 @@ def test_line_breaks_inside_header_names_are_cleaned():
     names = [f["name"] for f in out["fields"]]
     assert names == ["Origem Destino", "ok", "_column_3"]
     safety.check_schema({**out, "x5ltep": {"status": "observed"}}, {"observed"})
+
+
+def test_similar_name_pairs_for_the_dashboard(tmp_root):
+    c = {"datasets": [{"name": "ds", "title": "DS", "tables": [{"id": "r1", "name": "T"}, {"id": "r2", "name": "U"}]}]}
+    v = {"r1": {"schema_kind": "declared", "summary": {"conformance": {"similar_names": {"IdeNuceloCEG": "IdeNucleoCEG"}}}},
+         "r2": {"schema_kind": "extracted", "summary": {"conformance": {"probable_typos": {"NumCPFCNPJ": "NumCPF_CNPJ"}}}}}
+    pairs = report.similar_name_pairs(c, v)                       # r2: record written before the rename
+    assert {(p["declared"], p["column"]) for p in pairs} == {("NumCPFCNPJ", "NumCPF_CNPJ"), ("IdeNuceloCEG", "IdeNucleoCEG")}
+    sims = [p["similarity"] for p in pairs]
+    assert sims == sorted(sims, reverse=True) and all(0.8 <= x < 1.0 for x in sims)

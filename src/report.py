@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from statistics import mean
 from urllib.parse import urlparse
 
-from src import config, drift, schemas
+from src import config, dictionaries, drift, schemas
 
 LEVELS = (0, 1, 2, 3, 4)
 
@@ -37,6 +37,27 @@ def table_level(t: dict, v: dict | None) -> int:
 
 def _share(n: int, d: int) -> float | None:
     return round(n / d, 4) if d else None
+
+
+def similar_of(record: dict) -> dict:
+    """Pairs of alike names (declared -> file); records written before the rename used another key."""
+    return (record or {}).get("similar_names") or (record or {}).get("probable_typos") or {}
+
+
+def similar_name_pairs(census: dict, validation: dict) -> list[dict]:
+    """Every pair of alike names, for the dashboard section where people can check them."""
+    from src.pdf_extract import similarity
+
+    out = []
+    for ds in census["datasets"]:
+        for t in ds["tables"]:
+            v = validation.get(t["id"]) or {}
+            c = (v.get("summary") or {}).get("conformance") or {}
+            for declared, column in similar_of(c).items():
+                out.append({"dataset": ds["name"], "title": ds["title"], "file": t["name"], "id": t["id"],
+                            "declared": declared, "column": column, "schema_kind": v.get("schema_kind"),
+                            "similarity": round(similarity(dictionaries.norm(declared), dictionaries.norm(column)), 3)})
+    return sorted(out, key=lambda x: (-x["similarity"], x["dataset"], x["declared"]))
 
 
 def _error_kind(error: str | None) -> str:
@@ -115,8 +136,8 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
             "with_declared_fields_missing": sum(bool(c["missing"]) for _, c in confs),
             "with_undeclared_columns": sum(bool(c["undeclared"]) for _, c in confs),
             "with_spelling_differences": sum(bool(c.get("spelling")) for _, c in confs),
-            "with_probable_typos": sum(bool(c.get("probable_typos")) for _, c in confs),
-            "probable_typos": sum(len(c.get("probable_typos") or {}) for _, c in confs),
+            "with_similar_names": sum(bool(similar_of(c)) for _, c in confs),
+            "similar_names": sum(len(similar_of(c)) for _, c in confs),
             "declared_fields_missing": sum(len(c["missing"]) for _, c in confs),
             "formats_inferred_from_data": dict(inferred),
         },
@@ -136,7 +157,7 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
             "pdf_dictionaries_linked": sum(d.get("format") == "PDF" and bool(d.get("linked_resources")) for d in dicts),
             "processed": len(pdf_recs),
             "by_outcome": dict(Counter(r.get("outcome") for r in pdf_recs)),
-            "with_probable_typos": sum(bool(r["deterministic"]["oracle"].get("probable_typos")) for r in pdf_recs),
+            "with_similar_names": sum(bool(similar_of(r["deterministic"]["oracle"])) for r in pdf_recs),
             "deterministic": {"with_oracle": len(det_oracles), "recall": avg(det_oracles, "recall"),
                               "precision": avg(det_oracles, "precision"),
                               "exact_match": avg(det_oracles, "exact_match"), "levenshtein": avg(det_oracles, "levenshtein")},
@@ -332,7 +353,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                 "status": v.get("status"), "validated_at": v.get("validated_at"), "rows": s.get("rows"),
                 "schema_kind": v.get("schema_kind"), "error": v.get("error"),
                 "encodings": s.get("encodings"), "distinct_headers": s.get("distinct_headers"),
-                "conformance": {k: c.get(k) for k in ("pass", "error_rate", "missing", "undeclared", "spelling", "probable_typos",
+                "conformance": {k: c.get(k) for k in ("pass", "error_rate", "missing", "undeclared", "spelling", "similar_names",
                                                       "declared_fields", "inferred_formats")}
                 | {"errors_by_field": {f: {k: e["count"] for k, e in kinds.items()}
                                        for f, kinds in c.get("errors_by_field", {}).items()}} if c else None,
@@ -355,6 +376,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                                                  "findings", "method")},
             "datasets": datasets, "unreadable": unreadable_files(census, validation),
             "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census),
+            "similar_names": similar_name_pairs(census, validation),
             "history": json.loads(config.HISTORY_FILE.read_text(encoding="utf-8")) if config.HISTORY_FILE.exists() else []}
 
 
@@ -389,7 +411,7 @@ def pdf_dictionaries(census: dict, extraction: dict) -> list[dict]:
                         "files": len(d["linked_resources"]), "outcome": rec.get("outcome") or "pending",
                         "stage": stage, "model": (rec.get("llm") or {}).get("model") if stage == "llm" else None,
                         "recall": oracle.get("recall"), "precision": oracle.get("precision"),
-                        "probable_typos": oracle.get("probable_typos") or {},
+                        "similar_names": similar_of(oracle),
                         "schema": path.relative_to(config.ROOT).as_posix() if path.exists() else None,
                         "schema_status": status})
     return out

@@ -67,6 +67,19 @@
     <div class="table-wrap"><table class="files" id="progress-table"></table></div>
   </section>
 
+  <section id="similar" hidden>
+    <div class="section-head">
+      <h2 data-i18n="similar_h">Similar names between dictionary and file</h2>
+      <input type="search" id="similar-search" data-i18n-placeholder="similar_search" placeholder="Filter by dataset, file or name">
+    </div>
+    <p class="muted" data-i18n="similar_note">Pairs of a name the dictionary declares but the file lacks and a column the
+      file has but the dictionary does not declare, whose names are alike (normalised Levenshtein similarity of at least
+      0.8). Often a typo on one side, but not always: two different fields can have alike names. A heuristic for people
+      to check, not a verdict.</p>
+    <p class="small muted" id="similar-count"></p>
+    <div class="table-wrap similar-wrap"><table class="files" id="similar-table"></table></div>
+  </section>
+
   <section id="pdf" hidden>
     <div class="section-head"><h2 data-i18n="pdf_h">PDF dictionaries turned into schemas</h2></div>
     <p class="muted" data-i18n="pdf_note">Each PDF dictionary linked to a file, what the three stages made of it
