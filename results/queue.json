@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "id": "d767bf5a-203a-4b27-b2fc-40dceb235c89",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "error",
+  "since": "2026-10-01T21:34:11+00:00"
+ },
+ {
+  "id": "04c25357-b59b-4594-bbb8-deaff15a09a9",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "error",
+  "since": "2026-10-01T21:42:03+00:00"
+ },
+ {
+  "id": "a1bab81c-7af8-4c7f-9aff-a9afd31075c3",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "error",
+  "since": "2026-10-01T21:49:55+00:00"
+ }
+]
