@@ -23,7 +23,7 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
-from src import ckan, config, dictionaries, drift, linker, schemas, tabular, types_map
+from src import ckan, config, dictionaries, drift, linker, safety, schemas, tabular, types_map
 
 logger = logging.getLogger(__name__)
 MANAGED_KINDS = ("attached", "declared", "described", "datastore")   # written by the census; others are not touched
@@ -57,7 +57,7 @@ def read_dictionary(res: dict) -> tuple[dict, dictionaries.Dictionary | None]:
             entry.update(readable=False, error=str(exc), error_kind="too-large")
             return entry, None
         except Exception as exc:
-            entry.update(readable=False, error=f"{type(exc).__name__}: {str(exc)[:160]}", error_kind="download-failed")
+            entry.update(readable=False, error=safety.error_text(exc, 160), error_kind="download-failed")
             return entry, None
         entry.update(sha256=sha, bytes=len(data))
         if entry["format"] == "PDF":

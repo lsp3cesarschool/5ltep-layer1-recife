@@ -19,7 +19,7 @@ import logging
 import time
 from collections import Counter
 
-from src import ckan, config, pdf_extract, schemas
+from src import ckan, config, pdf_extract, safety, schemas
 
 logger = logging.getLogger(__name__)
 
@@ -113,7 +113,7 @@ def run_llm(todo: list[dict], extraction: dict, client, minutes: float) -> dict:
         try:
             fields, meta = pdf_extract.llm(_pdf(task), client)
         except Exception as exc:
-            fields, meta = [], {"error": f"{type(exc).__name__}: {str(exc)[:200]}"}
+            fields, meta = [], {"error": safety.error_text(exc, 200)}
         oracle = pdf_extract.oracle(fields, task["header"]) if task["header"] else {"available": False}
         rec["llm"] = {"model": config.LLM_MODEL, "model_source": config.LLM_MODEL_SOURCE,
                       "model_digest": info.get("model_digest"),

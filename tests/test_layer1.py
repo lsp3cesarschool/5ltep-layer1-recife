@@ -415,6 +415,18 @@ def test_no_cell_value_is_ever_kept():
         assert value not in dumped
 
 
+def test_a_parse_error_keeps_no_piece_of_the_file(tmp_root, monkeypatch):
+    # A JSON exported with NaN is not JSON: the parser's message quotes the text around the fault.
+    data = b'[{"NOME": "Maria da Silva", "DAP": NaN}]'
+    serve(monkeypatch, {"https://p/t.json": data})
+    t = {"id": "r1", "name": "T", "url": "https://p/t.json", "format": "JSON"}
+    entry, _, _ = work.validate_one("ds", t, None)
+    assert entry["status"] == "error"
+    assert "Maria" not in json.dumps(entry, ensure_ascii=False)
+    import requests
+    assert "https://p/x" in safety.error_text(requests.HTTPError("404 Client Error: Not Found for url: https://p/x"))
+
+
 def test_a_clean_file_passes():
     text = "ID;DATA;VALOR;UF;Descrição;SUMIU\n1;2022-05-03;1.5;PE;a;b\n2;2022-05-04;2;SP;c;d\n"
     s = validate.summarise([validate.check_table(Table(text), DECLARED)], DECLARED)["conformance"]

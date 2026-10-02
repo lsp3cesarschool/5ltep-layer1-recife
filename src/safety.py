@@ -47,6 +47,23 @@ def clean_text(text, limit: int) -> str:
     return text if len(text) <= limit else text[:limit] + " […]"
 
 
+QUOTED_RE = re.compile(r"\"[^\"]*\"|'[^']*'")
+
+
+def error_text(exc: BaseException, limit: int = 200) -> str:
+    """An exception as stored in results: no piece of the portal's file may ride along with it.
+    Network errors keep their message (a URL, a status, a host); any other error may quote the
+    file it was reading (a JSON parser shows the text around the fault), so only its first line
+    is kept, with quoted fragments masked."""
+    import requests
+
+    name = type(exc).__name__
+    if isinstance(exc, (requests.RequestException, ConnectionError, TimeoutError)):
+        return clean_text(f"{name}: {exc}", limit)
+    first = (str(exc).strip().splitlines() or [""])[0]
+    return clean_text(f"{name}: {QUOTED_RE.sub('…', first)}", limit)
+
+
 def safe_markdown(text, limit: int = 300) -> str:
     """Untrusted text inside a GitHub Issue: no HTML, links, images, mentions, references or tables."""
     text = clean_text(text, limit).replace("\r", " ").replace("\n", " ")

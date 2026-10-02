@@ -23,6 +23,8 @@ import re
 import unicodedata
 from dataclasses import dataclass, field
 
+from src import safety
+
 DICT_NAME_RE = re.compile(r"metadad|dicion[aá]rio|dicionario|dictionary|\besquema\b|\bschema\b|\blayout\b", re.I)
 MACHINE_FORMATS = {"CSV", "JSON", "XML", "XLSX", "XLS", "ODS", "TXT"}
 HUMAN_FORMATS = {"PDF", "HTML", "HTM", "DOC", "DOCX", "ODT", "RTF"}
@@ -229,7 +231,7 @@ def read(data: bytes, fmt: str) -> Dictionary:
             return Dictionary(reader="csv", error="no header with field and type/description columns", error_kind="no-field-table")
         return Dictionary(reader="csv", parts=[Part("", fields)])
     except Exception as exc:  # malformed files are a finding, not a crash
-        return Dictionary(error=f"{type(exc).__name__}: {str(exc)[:160]}", error_kind="malformed")
+        return Dictionary(error=safety.error_text(exc, 160), error_kind="malformed")
 
 
 # --- dictionaries written in the resource description (Markdown) ------------------

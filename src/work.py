@@ -21,7 +21,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
-from src import ckan, config, drift, schemas, tabular, validate
+from src import ckan, config, drift, safety, schemas, tabular, validate
 
 logger = logging.getLogger(__name__)
 ORDER = {"new": 0, "schema": 1, "changed": 2, "error": 3, "reader": 4, "rotation": 5}
@@ -93,8 +93,8 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
         return {**entry, "status": "not-tabular", "not_tabular_kind": exc.kind, "error": str(exc)[:300],
                 "validated_at": entry["checked_at"]}, None, []
     except Exception as exc:
-        logger.warning("%s: %s", t["id"], exc)
-        return {**entry, "status": "error", "error": f"{type(exc).__name__}: {str(exc)[:300]}",
+        logger.warning("%s: %s", t["id"], safety.error_text(exc, 300))
+        return {**entry, "status": "error", "error": safety.error_text(exc, 300),
                 **({k: prev[k] for k in ("header", "summary", "validated_at", "sha256", "pass_history", "first_seen")
                     if k in prev} if prev else {})}, None, []
     tables_ok = [x for x in tables if not x.get("empty")]
@@ -156,7 +156,7 @@ def check_distributions(distributions: list[dict], header: list[str]) -> list[di
         except tabular.NotTabular as exc:
             rec.update(status="not-tabular", reason=str(exc)[:200])
         except Exception as exc:
-            rec.update(status="error", reason=f"{type(exc).__name__}: {str(exc)[:160]}")
+            rec.update(status="error", reason=safety.error_text(exc, 160))
         out.append(rec)
     return out
 
