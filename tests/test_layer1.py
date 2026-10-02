@@ -450,6 +450,15 @@ def test_queue_reasons(tmp_root):
     assert work.plan(_census_one(), prev, now, head=lambda url: {"etag": '"b"'})[0]["reason"] == "changed"
     old = {"r1": {**prev["r1"], "validated_at": (now - timedelta(days=40)).isoformat()}}
     assert work.plan(_census_one(), old, now, head=no_change)[0]["reason"] == "rotation"
+    before_kinds = {"r1": {**prev["r1"], "status": "not-tabular", "error": "zip without CSV members"}}
+    assert work.plan(_census_one(), before_kinds, now, head=no_change)[0]["reason"] == "reader"
+    kind_known = {"r1": {**before_kinds["r1"], "not_tabular_kind": "no-tables"}}
+    assert work.plan(_census_one(), kind_known, now, head=no_change) == []
+    census = _census_one()
+    census["datasets"][0]["tables"][0]["distributions"] = [{"id": "r2", "format": "XLSX", "url": "https://p/t.xlsx"}]
+    assert work.plan(census, prev, now, head=no_change)[0]["reason"] == "reader"
+    compared = {"r1": {**prev["r1"], "distributions": []}}
+    assert work.plan(census, compared, now, head=no_change) == []
     schemas.write(schemas.path("ds", "r1", "declared"), DECLARED)
     assert work.plan(_census_one(), prev, now, head=no_change)[0]["reason"] == "schema"
 

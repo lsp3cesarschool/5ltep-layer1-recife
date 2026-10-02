@@ -9,6 +9,9 @@ next batch continues. A resource enters the queue when:
   changed   the portal says it changed: URL, CKAN last_modified/size, or the server's ETag,
             Last-Modified or Content-Length (HEAD request, no download);
   error     the last attempt failed;
+  reader    the last result came from a reader that has since learned more: "not tabular" before
+            the kind was recorded (a zip of spreadsheets was "without CSV members" then), or a table
+            whose other formats were never compared with it;
   rotation  it was last validated more than ROTATION_DAYS ago (a full re-check, since some
             servers give no change signal at all).
 """
@@ -21,7 +24,7 @@ from urllib.parse import urlparse
 from src import ckan, config, drift, schemas, tabular, validate
 
 logger = logging.getLogger(__name__)
-ORDER = {"new": 0, "schema": 1, "changed": 2, "error": 3, "rotation": 4}
+ORDER = {"new": 0, "schema": 1, "changed": 2, "error": 3, "reader": 4, "rotation": 5}
 
 
 def now_iso() -> str:
@@ -45,6 +48,9 @@ def reason_for(dataset: str, t: dict, prev: dict | None, now: datetime, head=cka
         return "changed"
     if prev.get("status") == "error":
         return "error"
+    if (prev.get("status") == "not-tabular" and not prev.get("not_tabular_kind")) \
+            or (t.get("distributions") and prev.get("status") == "ok" and "distributions" not in prev):
+        return "reader"
     validated = prev.get("validated_at") or prev.get("checked_at")
     if not validated or datetime.fromisoformat(validated) < now - timedelta(days=config.ROTATION_DAYS):
         return "rotation"
