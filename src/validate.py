@@ -223,7 +223,8 @@ def check_table(table, declared: dict | None) -> dict:
         if len(sample) >= config.SAMPLE_ROWS:
             break
     observed = observed_schema(header, sample)
-    result = {"member": table.member, "encoding": table.encoding, "delimiter": table.delimiter,
+    result = {"member": table.member, "format": getattr(table, "fmt", "csv"),
+              "encoding": table.encoding, "delimiter": table.delimiter,
               "header": header, "observed": observed}
     checks, inferred, matches = [], {}, None
     if declared:
@@ -275,8 +276,9 @@ def summarise(tables: list[dict], declared: dict | None) -> dict:
            "decode_errors": max((t["decode_errors"] for t in tables), default=0),
            "distinct_headers": len(headers),
            "columns_without_name": max((sum(1 for h in t["header"] if not h) for t in tables), default=0),
-           "encodings": sorted({t["encoding"] for t in tables}),
-           "delimiters": sorted({t["delimiter"] for t in tables})}
+           "encodings": sorted({t["encoding"] for t in tables if t.get("encoding")}),
+           "delimiters": sorted({t["delimiter"] for t in tables if t.get("delimiter")}),
+           "formats": sorted({t.get("format", "csv") for t in tables})}
     if not declared or not tables:
         return out
     confs = [t["conformance"] for t in tables]

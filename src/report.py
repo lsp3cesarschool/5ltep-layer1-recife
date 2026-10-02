@@ -39,6 +39,15 @@ def _share(n: int, d: int) -> float | None:
     return round(n / d, 4) if d else None
 
 
+def not_a_table(v: dict | None) -> bool:
+    """A resource published as data that holds no table (a zip of PDFs or maps): left out of the
+    tabular universe and listed apart. Records before 02/10/2026 only have the message."""
+    if not v or v.get("status") != "not-tabular":
+        return False
+    return v.get("not_tabular_kind") == "no-tables" or "without CSV members" in (v.get("error") or "") \
+        or "without tables" in (v.get("error") or "")
+
+
 def similar_of(record: dict) -> dict:
     """Pairs of alike names (declared -> file); records written before the rename used another key."""
     return (record or {}).get("similar_names") or (record or {}).get("probable_typos") or {}
@@ -148,7 +157,10 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
             "with_ragged_rows": sum(v["summary"].get("ragged_rows", 0) > 0 for _, v in checked),
             "zips_with_several_headers": sum(v["summary"].get("distinct_headers", 1) > 1 for _, v in checked),
             "with_columns_without_name": sum(v["summary"].get("columns_without_name", 0) > 0 for _, v in checked),
-            "not_tabular": sum((validation.get(t["id"]) or {}).get("status") == "not-tabular" for t in tables),
+            "not_tabular": sum((validation.get(t["id"]) or {}).get("status") == "not-tabular"
+                               and not not_a_table(validation.get(t["id"])) for t in tables),
+            "not_tables": sum(not_a_table(validation.get(t["id"])) for t in tables),
+            "formats": dict(Counter(f for _, v in checked for f in v["summary"].get("formats", ["csv"]))),
             "unreachable_by_reason": dict(Counter(_error_kind((validation.get(t["id"]) or {}).get("error"))
                                                   for t in tables
                                                   if (validation.get(t["id"]) or {}).get("status") == "error").most_common()),
@@ -166,6 +178,18 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
                     "exact_match": avg(llm_oracles, "exact_match"), "levenshtein": avg(llm_oracles, "levenshtein")},
         },
     }
+
+
+def distributions(tables: list[tuple[dict, dict | None]]) -> dict:
+    """The same table in other formats: how many could be compared, and whether their columns match."""
+    recs = [d for _, v in tables for d in (v or {}).get("distributions") or []]
+    ok = [d for d in recs if d.get("status") == "ok"]
+    return {"tables_with_other_formats": sum(1 for t, _ in tables if t.get("distributions")),
+            "other_formats": len(recs), "compared": len(ok),
+            "same_columns": sum(1 for d in ok if d.get("same_columns")),
+            "different_columns": sum(1 for d in ok if not d.get("same_columns")),
+            "not_compared": dict(Counter(d.get("status") for d in recs if d.get("status") != "ok")),
+            "by_format": dict(Counter(d.get("format") for d in recs))}
 
 
 def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
@@ -249,7 +273,10 @@ def drift_baseline(validation: dict) -> dict:
 def build_summary(census: dict, validation: dict, extraction: dict, queue: list) -> dict:
     tables, per_dataset = [], []
     ds_levels: Counter = Counter()
+    non_tables = []
     for ds in census["datasets"]:
+        non_tables += [(ds, t) for t in ds["tables"] if not_a_table(validation.get(t["id"]))]
+        ds = {**ds, "tables": [t for t in ds["tables"] if not not_a_table(validation.get(t["id"]))]}
         lv = [table_level(t, validation.get(t["id"])) for t in ds["tables"]]
         verifiable = [t for t in ds["tables"] if ((validation.get(t["id"]) or {}).get("summary") or {}).get("conformance")]
         ok = [t for t in verifiable if validation[t["id"]]["summary"]["conformance"]["pass"]]
@@ -290,6 +317,11 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
         "drift": {"observed": sum(e["kind"] == "observed" for e in log),
                   "declared": sum(e["kind"] == "declared" for e in log), **drift_baseline(validation)},
         "coverage": coverage(tables),
+        "not_tables": {"count": len(non_tables),
+                       "resources": [{"dataset": ds["name"], "id": t["id"], "name": t["name"],
+                                      "contents": (validation.get(t["id"]) or {}).get("error", "")[:200]}
+                                     for ds, t in non_tables][:200]},
+        "distributions": distributions(tables),
         "network": network(tables),
         "findings": documentation_findings(census, validation, extraction),
         "per_dataset": per_dataset,
@@ -358,6 +390,8 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                 | {"errors_by_field": {f: {k: e["count"] for k, e in kinds.items()}
                                        for f, kinds in c.get("errors_by_field", {}).items()}} if c else None,
                 "drift_events": drift_count.get(t["id"], 0),
+                "not_a_table": not_a_table(v),
+                "distributions": v.get("distributions") or t.get("distributions") or [],
                 # the Table Schemas of this file in the repository (declared, extracted, observed...)
                 "schema_files": {k: schemas.path(ds["name"], t["id"], k).relative_to(config.ROOT).as_posix()
                                  for k in schemas.KINDS if schemas.path(ds["name"], t["id"], k).exists()},
@@ -372,7 +406,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                          "tables": tables})
     return {"summary": {k: summary[k] for k in ("portal", "generated_at", "census_at", "datasets", "tables",
                                                  "verifiable", "conformant", "l1_rate", "l1_pass", "drift",
-                                                 "coverage", "network", "schema_sources", "conformance_by_source",
+                                                 "coverage", "not_tables", "distributions", "network", "schema_sources", "conformance_by_source",
                                                  "findings", "method")},
             "datasets": datasets, "unreadable": unreadable_files(census, validation),
             "pdf": pdf_dictionaries(census, extraction), "drift_events": drift_events(census),
@@ -389,7 +423,8 @@ def unreadable_files(census: dict, validation: dict) -> list[dict]:
                 out.append({"dataset": ds["name"], "title": ds["title"], "file": t["name"], "id": t["id"],
                             "url": t.get("url"), "host": urlparse(t.get("url") or "").hostname,
                             "status": v["status"],
-                            "reason": _error_kind(v.get("error")) if v["status"] == "error" else v["status"],
+                            "reason": _error_kind(v.get("error")) if v["status"] == "error"
+                            else "not-a-table" if not_a_table(v) else v["status"],
                             "detail": (v.get("error") or "")[:200]})
     return out
 

@@ -835,3 +835,108 @@ def test_similar_name_pairs_for_the_dashboard(tmp_root):
     assert {(p["declared"], p["column"]) for p in pairs} == {("NumCPFCNPJ", "NumCPF_CNPJ"), ("IdeNuceloCEG", "IdeNucleoCEG")}
     sims = [p["similarity"] for p in pairs]
     assert sims == sorted(sims, reverse=True) and all(0.8 <= x < 1.0 for x in sims)
+
+
+# --- formats other than CSV ----------------------------------------------------------------
+
+def _read_all(monkeypatch, data: bytes):
+    serve(monkeypatch, {"u": data})
+    out = []
+    with tabular.open_resource("u") as src:
+        for t in src.tables:
+            out.append((t.fmt, t.member, list(t.rows)))
+    return out, src.digest
+
+
+def test_json_records_in_utf8_and_utf16(monkeypatch):
+    recs = [{"A": 1, "B": "x"}, {"A": 2, "B": None, "C": [1, 2]}]
+    out, digest = _read_all(monkeypatch, json.dumps(recs).encode("utf-8"))
+    assert out == [("json", None, [["A", "B", "C"], ["1", "x", ""], ["2", "", "[1, 2]"]])]
+    assert digest["kind"] == "json"
+    out, _ = _read_all(monkeypatch, json.dumps({"dados": recs}, ensure_ascii=False).encode("utf-16"))
+    assert out[0][2][0] == ["A", "B", "C"] and out[0][2][2][0] == "2"
+
+
+def test_xml_records(monkeypatch):
+    xml = b"<root><item><A>1</A><B>x</B></item><item><A>2</A><B>y</B></item></root>"
+    out, _ = _read_all(monkeypatch, xml)
+    assert out == [("xml", None, [["A", "B"], ["1", "x"], ["2", "y"]])]
+
+
+def test_spreadsheets_and_parquet(monkeypatch):
+    import openpyxl
+    import pandas as pd
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+
+    wb = openpyxl.Workbook()
+    wb.active.title = "Plan1"
+    wb.active.append(["A", "B"])
+    wb.active.append([1, 2.5])
+    buf = io.BytesIO()
+    wb.save(buf)
+    out, digest = _read_all(monkeypatch, buf.getvalue())
+    assert out == [("xlsx", "Plan1", [["A", "B"], ["1", "2.5"]])] and digest["kind"] == "xlsx"
+
+    buf = io.BytesIO()
+    pd.DataFrame({"A": ["1"], "B": ["x"]}).to_excel(buf, engine="odf", index=False, sheet_name="S")
+    out, digest = _read_all(monkeypatch, buf.getvalue())
+    assert out == [("ods", "S", [["A", "B"], ["1", "x"]])] and digest["kind"] == "ods"
+
+    buf = io.BytesIO()
+    pq.write_table(pa.table({"A": [1, 2], "B": ["x", None]}), buf)
+    out, digest = _read_all(monkeypatch, buf.getvalue())
+    assert out == [("parquet", None, [["A", "B"], ["1", "x"], ["2", ""]])] and digest["kind"] == "parquet"
+
+
+def test_zip_inside_zip_and_zip_without_tables(monkeypatch):
+    inner = _zip({"2007.csv": b"a;b\n1;2\n"})
+    out, digest = _read_all(monkeypatch, _zip({"2007.zip": inner, "leia.pdf": b"%PDF-1"}))
+    assert out == [("csv", "2007.zip/2007.csv", [["a", "b"], ["1", "2"]])] and digest["members"] == 1
+    serve(monkeypatch, {"d": _zip({"doc.pdf": b"%PDF-1", "__MACOSX/._doc.pdf": b"x"})})
+    with pytest.raises(tabular.NotTabular) as exc:
+        with tabular.open_resource("d") as src:
+            list(src.tables)
+    assert exc.value.kind == "no-tables"
+
+
+def test_a_page_instead_of_the_table_is_a_link_failure(monkeypatch):
+    serve(monkeypatch, {"h": b"<!DOCTYPE html><html>erro</html>"})
+    with pytest.raises(tabular.NotTabular) as exc:
+        with tabular.open_resource("h") as src:
+            list(src.tables)
+    assert exc.value.kind == "html"
+
+
+def test_same_table_in_several_formats_is_one_table():
+    mk = lambda i, name, fmt: {"id": i, "name": name, "candidate": fmt, "url": f"https://p/{i}"}
+    tables = [mk("x", "Autos de infração", "xml"), mk("c", "Autos de infração", "csv"), mk("j", "Autos de infração", "json"),
+              mk("a1", "auto-infracao.csv", "csv"), mk("a2", "auto-infracao.parquet", "parquet"),
+              mk("y1", "Dados", "csv"), mk("y2", "Dados", "csv")]
+    out = census.group_distributions(tables)
+    by_id = {t["id"]: t for t in out}
+    assert set(by_id) == {"c", "a1", "y1", "y2"}
+    assert [d["format"] for d in by_id["c"]["distributions"]] == ["json", "xml"]
+    assert [d["format"] for d in by_id["a1"]["distributions"]] == ["parquet"]
+    assert "distributions" not in by_id["y1"]                         # two CSVs: two different files
+
+
+def test_other_formats_are_checked_for_their_columns(monkeypatch):
+    monkeypatch.setattr(work.ckan, "head", lambda url: {"content_length": 10})
+    headers = {"https://p/j": ("json", ["A", "B"]), "https://p/x": ("xml", ["A", "C"])}
+    monkeypatch.setattr(work.tabular, "peek_header", lambda url: headers[url])
+    out = work.check_distributions([{"id": "j", "format": "json", "url": "https://p/j"},
+                                    {"id": "x", "format": "xml", "url": "https://p/x"}], ["A", "B"])
+    assert out[0]["same_columns"] is True
+    assert out[1]["same_columns"] is False and out[1]["missing"] == ["b"] and out[1]["extra"] == ["c"]
+
+
+def test_zips_without_tables_leave_the_tabular_universe(tmp_root):
+    c = {"portal": {"portal_url": "https://p", "name": "P", "title": "P"}, "generated_at": "t", "datasets": [
+        {"name": "a", "title": "A", "url": "u", "dictionaries": [], "tables": [
+            {"id": "t1", "name": "T1", "url": "u", "level": 0, "link": None},
+            {"id": "z1", "name": "Z1", "url": "u", "level": 0, "link": None}]}]}
+    v = {"t1": {"status": "ok", "summary": {"rows": 1}},
+         "z1": {"status": "not-tabular", "not_tabular_kind": "no-tables", "error": "zip without tables"}}
+    s = report.build_summary(c, v, {}, [])
+    assert s["tables"]["total"] == 1 and s["coverage"]["files"] == 1 and s["not_tables"]["count"] == 1

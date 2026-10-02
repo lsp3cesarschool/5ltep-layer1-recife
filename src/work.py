@@ -82,7 +82,10 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
             tables = [validate.check_table(tb, schema) for tb in src.tables]
         digest = src.digest
     except tabular.NotTabular as exc:
-        return {**entry, "status": "not-tabular", "error": str(exc)[:300], "validated_at": entry["checked_at"]}, None, []
+        # "no-tables": a container of documents or maps, not tabular data (left out of the universe);
+        # "html"/"pdf": the link returns a page or a document instead of the table (a failure).
+        return {**entry, "status": "not-tabular", "not_tabular_kind": exc.kind, "error": str(exc)[:300],
+                "validated_at": entry["checked_at"]}, None, []
     except Exception as exc:
         logger.warning("%s: %s", t["id"], exc)
         return {**entry, "status": "error", "error": f"{type(exc).__name__}: {str(exc)[:300]}",
@@ -91,6 +94,8 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     tables_ok = [x for x in tables if not x.get("empty")]
     summary = validate.summarise(tables, schema)
     entry["timing"] = digest.get("timing")
+    if t.get("distributions") and tables_ok:
+        entry["distributions"] = check_distributions(t["distributions"], tables_ok[0]["header"])
     failed = {k: n - failures_before.get(k, 0) for k, n in ckan.failures_snapshot().items()
               if n > failures_before.get(k, 0)}
     if failed:
@@ -122,6 +127,32 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     previous = schemas.load(schemas.path(dataset, t["id"], "observed"))
     events = drift.compare(dataset, t, previous, observed)
     return entry, observed, events
+
+
+def check_distributions(distributions: list[dict], header: list[str]) -> list[dict]:
+    """The same table in other formats: are its columns the same as in the one validated in full?"""
+    from src import dictionaries
+
+    norm = lambda names: {dictionaries.norm(n) for n in names if n}
+    out = []
+    for d in distributions:
+        rec = {"id": d["id"], "format": d.get("format"), "name": d.get("name")}
+        try:
+            size = ckan.head(d["url"]).get("content_length") or 0
+            if size > config.DISTRIBUTION_CHECK_MAX_BYTES:
+                rec.update(status="not-checked", reason=f"{size / 1e9:.1f} GB")
+            else:
+                fmt, cols = tabular.peek_header(d["url"])
+                missing = sorted(norm(header) - norm(cols))
+                extra = sorted(norm(cols) - norm(header))
+                rec.update(status="ok", read_as=fmt, same_columns=not missing and not extra,
+                           missing=missing[:30], extra=extra[:30])
+        except tabular.NotTabular as exc:
+            rec.update(status="not-tabular", reason=str(exc)[:200])
+        except Exception as exc:
+            rec.update(status="error", reason=f"{type(exc).__name__}: {str(exc)[:160]}")
+        out.append(rec)
+    return out
 
 
 def run_batch(census: dict, queue: list[dict], validation: dict, minutes: float, on_progress=None) -> dict:

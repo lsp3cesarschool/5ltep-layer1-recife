@@ -62,6 +62,10 @@ VALIDATE_MAX_MINUTES = _env("VALIDATE_MAX_MINUTES", 270.0)
 ROTATION_DAYS = _env("ROTATION_DAYS", 28)
 SAMPLE_ROWS = _env("SAMPLE_ROWS", 5000)            # rows used to infer the observed types
 MAX_ZIP_BYTES = _env("MAX_ZIP_BYTES", 12_000_000_000)  # zip files must go to disk (runner: ~14 GB free)
+MAX_SHEET_BYTES = _env("MAX_SHEET_BYTES", 300_000_000)  # XLS and ODS are read whole, in memory
+# Other formats of a table validated in full are only checked for their columns; a file larger than
+# this is not downloaded for that check (a zip or a Parquet must be read whole to see its columns).
+DISTRIBUTION_CHECK_MAX_BYTES = _env("DISTRIBUTION_CHECK_MAX_BYTES", 500_000_000)
 ERROR_ROWS_KEPT = _env("ERROR_ROWS_KEPT", 5)        # row numbers kept per field and error kind (never values)
 # A resource conforms when every declared field is in the file, the file has no undeclared
 # field, and at most this share of the checked cells breaks the declared type or constraints.

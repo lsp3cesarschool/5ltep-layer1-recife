@@ -8,7 +8,7 @@ const I18N = {
     back: "← Back to the repository", eyebrow: "5L-TEP · Layer 1 · Structural Contracts", loading: "Loading…",
     run: "Run Layer 1 now ↗", issues: "Drift issues ↗", prs: "Suggested schemas ↗",
     maturity_h: "Schema maturity", findings_h: "Documentation findings", datasets_h: "Datasets",
-    maturity_note: "Each dataset is a page of the portal and can publish several data files (CSV or ZIP), for example one per year or one per table. Each file gets a level for how well the portal describes its structure, from 0 (no dictionary) to 4 (types in the API and the file conforms); a dataset gets the level of its least documented file. This shows where documentation work pays off first. Click a band to see its items.",
+    maturity_note: "Each dataset is a page of the portal and can publish several data files (CSV, ZIP, spreadsheet, Parquet, JSON or XML), for example one per year or one per table; the same table published in several formats counts once. Each file gets a level for how well the portal describes its structure, from 0 (no dictionary) to 4 (types in the API and the file conforms); a dataset gets the level of its least documented file. This shows where documentation work pays off first. Click a band to see its items.",
     progress_h: "Progress over time",
     progress_note: "One row per weekly run: how many files the portal publishes, reads, declares and gets right, and what changed since the run before (files fixed or broken, new or removed, drift).",
     pg_first: "History starts on {d}: the next weekly run ({next}) adds the first comparison.",
@@ -22,9 +22,11 @@ const I18N = {
     col_dataset: "Dataset", col_level: "Level", col_files: "Files", col_conform: "Conform", col_dicts: "Dictionaries",
     privacy_note: "Only counts and row numbers are kept: no cell value is ever stored or shown.",
     subtitle: "Survey of {date} · report of {gen}",
-    read_note: "{n} of {t} · not downloaded {nd} · empty {e} · not a CSV {nt}",
+    read_note: "{n} of {t} · not downloaded {nd} · empty {e} · a page or PDF instead of the table {nt}",
     "rk_no URL": "no URL", "rk_redirect loop": "redirect loop (the link points to itself)",
     "rk_batch time limit": "did not finish within a batch", rk_other: "other error",
+    "rk_not-tabular": "a page or PDF instead of the table", rk_empty: "empty file",
+    "rk_not-a-table": "not a table (zip of documents or maps; outside the tabular universe)",
     conf_tile_note: "{c} of {k} files with a declared schema · {w} read without one",
     drift_baseline: "first run: baseline of {n} files on {d}; next comparison {next}",
     drift_since: "baseline since {d} · {o} in files · {dd} in declared schemas",
@@ -36,7 +38,7 @@ const I18N = {
     nc_missing: "declared fields missing from the file", nc_undeclared: "columns not declared",
     nc_cells: "more than {r} of the cells break type or constraints", nc_only_cells: "of them, only because of the cells",
     nc_overlap: "A file can fail for more than one reason.",
-    s_empty_f: "empty file", s_nottab: "not a CSV behind the link",
+    s_empty_f: "empty file", s_nottab: "a page or PDF instead of the table",
     u_file: "File", u_reason: "Reason", u_host: "Server",
     drift_none_yet: "Drift needs two observations: the first run records each file's structure as its baseline ({n} files on {d}). The next weekly run ({next}) compares against it; any change opens an issue.",
     drift_none: "No change in structure since the baseline ({n} files, first observed on {d}).",
@@ -66,11 +68,14 @@ const I18N = {
     k_validated: "files read", k_encodings: "encodings", k_delims: "delimiters", k_decode: "with bytes that do not decode",
     k_ragged: "with rows of the wrong width", k_multi: "zips whose members have different headers",
     k_noname: "with columns without a name in the header",
+    k_nottables: "published as data, but not tables (zips of documents or maps)", k_formats: "formats read",
+    k_dist: "other formats of the same table: compared · same columns", f_dist: "other formats",
+    d_same: "same columns", d_diff: "other columns", d_missing: "missing", d_extra: "extra", d_notchecked: "not compared",
     similar_h: "Similar names between dictionary and file", similar_search: "Filter by dataset, file or name",
     similar_note: "Pairs of a name the dictionary declares but the file lacks and a column the file has but the dictionary does not declare, whose names are alike (normalised Levenshtein similarity of at least 0.8). Often a typo on one side, but not always: two different fields can have alike names. A heuristic for people to check, not a verdict.",
     similar_count: "{n} pairs in {f} files", s_declared: "Declared in the dictionary", s_column: "Column in the file",
     s_similarity: "Similarity", s_source: "Schema source",
-    k_nottab: "not a CSV behind the link", k_gb: "data downloaded (GB)", k_minutes: "time downloading and validating (min)",
+    k_nottab: "a page or PDF instead of the table", k_gb: "data downloaded (GB)", k_minutes: "time downloading and validating (min)",
     k_mbs: "throughput, download and validation (MB/s)", k_ttfb: "time to the server's first answer, median (s)",
     k_reqfail: "requests that failed (and were retried)", k_unreach: "Files that could not be downloaded",
     k_pdflinked: "PDF dictionaries linked to a file", k_processed: "processed", k_stage: "Stage", k_n: "n",
@@ -84,14 +89,14 @@ const I18N = {
     none: "none", f_rows: "rows", f_schema: "schema", f_status: "status", f_dict: "dictionary", f_conf: "conforms",
     f_missing: "declared, not in the file", f_undecl: "in the file, not declared", f_spelling: "spelled differently",
     f_errors: "cells that break the declared type or constraints", f_drift: "drift events", yes: "yes", no: "no",
-    s_ok: "read", s_error: "could not be read", "s_not-tabular": "not a CSV", s_empty: "empty", s_pending: "not checked yet",
+    s_ok: "read", s_error: "could not be read", "s_not-tabular": "not a table", s_empty: "empty", s_pending: "not checked yet",
     footer: "Method: {m}. Summary for Layer 5:",
   },
   pt: {
     back: "← Voltar ao repositório", eyebrow: "5L-TEP · Camada 1 · Contratos Estruturais", loading: "Carregando…",
     run: "Rodar a Camada 1 agora ↗", issues: "Issues de deriva ↗", prs: "Esquemas sugeridos ↗",
     maturity_h: "Maturidade do esquema", findings_h: "Achados de documentação", datasets_h: "Conjuntos de dados",
-    maturity_note: "Cada conjunto de dados é uma página do portal e pode publicar vários arquivos de dados (CSV ou ZIP), por exemplo um por ano ou um por tabela. Cada arquivo recebe um nível conforme o quanto o portal descreve a sua estrutura, de 0 (sem dicionário) a 4 (tipos na API e arquivo conforme); o conjunto fica com o nível do seu arquivo menos documentado. Assim fica claro onde documentar primeiro. Clique numa faixa para ver os itens.",
+    maturity_note: "Cada conjunto de dados é uma página do portal e pode publicar vários arquivos de dados (CSV, ZIP, planilha, Parquet, JSON ou XML), por exemplo um por ano ou um por tabela; a mesma tabela publicada em vários formatos conta uma vez. Cada arquivo recebe um nível conforme o quanto o portal descreve a sua estrutura, de 0 (sem dicionário) a 4 (tipos na API e arquivo conforme); o conjunto fica com o nível do seu arquivo menos documentado. Assim fica claro onde documentar primeiro. Clique numa faixa para ver os itens.",
     progress_h: "Progresso ao longo do tempo",
     progress_note: "Uma linha por execução semanal: quantos arquivos o portal publica, quantos lemos, quantos têm esquema declarado e quantos estão conformes, e o que mudou desde a execução anterior (arquivos consertados ou quebrados, novos ou removidos, deriva).",
     pg_first: "O histórico começa em {d}: a próxima execução semanal ({next}) traz a primeira comparação.",
@@ -105,9 +110,11 @@ const I18N = {
     col_dataset: "Conjunto", col_level: "Nível", col_files: "Arquivos", col_conform: "Conformes", col_dicts: "Dicionários",
     privacy_note: "Só contagens e números de linha são guardados: nenhum valor de célula é armazenado ou exibido.",
     subtitle: "Levantamento de {date} · relatório de {gen}",
-    read_note: "{n} de {t} · não baixados {nd} · vazios {e} · não são CSV {nt}",
+    read_note: "{n} de {t} · não baixados {nd} · vazios {e} · página ou PDF no lugar da tabela {nt}",
     "rk_no URL": "sem URL", "rk_redirect loop": "redirecionamento em laço (o link aponta para si mesmo)",
     "rk_batch time limit": "não terminou dentro de um lote", rk_other: "outro erro",
+    "rk_not-tabular": "página ou PDF no lugar da tabela", rk_empty: "arquivo vazio",
+    "rk_not-a-table": "não é tabela (zip de documentos ou mapas; fora do universo tabular)",
     conf_tile_note: "{c} de {k} arquivos com esquema declarado · {w} lidos sem esquema",
     drift_baseline: "primeira execução: linha de base de {n} arquivos em {d}; próxima comparação {next}",
     drift_since: "linha de base desde {d} · {o} nos arquivos · {dd} nos esquemas declarados",
@@ -119,7 +126,7 @@ const I18N = {
     nc_missing: "campos declarados ausentes do arquivo", nc_undeclared: "colunas não declaradas",
     nc_cells: "mais de {r} das células violam tipo ou restrições", nc_only_cells: "destes, só por causa das células",
     nc_overlap: "Um arquivo pode falhar por mais de um motivo.",
-    s_empty_f: "arquivo vazio", s_nottab: "sem CSV por trás do link",
+    s_empty_f: "arquivo vazio", s_nottab: "página ou PDF no lugar da tabela",
     u_file: "Arquivo", u_reason: "Motivo", u_host: "Servidor",
     drift_none_yet: "A deriva precisa de duas observações: a primeira execução registra a estrutura de cada arquivo como linha de base ({n} arquivos em {d}). A próxima execução semanal ({next}) compara com ela; qualquer mudança abre uma issue.",
     drift_none: "Nenhuma mudança de estrutura desde a linha de base ({n} arquivos, primeira observação em {d}).",
@@ -150,11 +157,14 @@ const I18N = {
     k_validated: "arquivos lidos", k_encodings: "codificações", k_delims: "delimitadores", k_decode: "com bytes que não decodificam",
     k_ragged: "com linhas de largura errada", k_multi: "zips com membros de cabeçalhos diferentes",
     k_noname: "com colunas sem nome no cabeçalho",
+    k_nottables: "publicados como dados, mas não são tabelas (zips de documentos ou mapas)", k_formats: "formatos lidos",
+    k_dist: "outros formatos da mesma tabela: comparados · mesmas colunas", f_dist: "outros formatos",
+    d_same: "mesmas colunas", d_diff: "colunas diferentes", d_missing: "faltam", d_extra: "sobram", d_notchecked: "não comparado",
     similar_h: "Nomes parecidos entre dicionário e arquivo", similar_search: "Filtrar por conjunto, arquivo ou nome",
     similar_note: "Pares formados por um nome que o dicionário declara mas o arquivo não tem e uma coluna que o arquivo tem mas o dicionário não declara, quando os nomes se parecem (similaridade de Levenshtein normalizada de pelo menos 0,8). Muitas vezes é erro de digitação de um dos lados, mas nem sempre: dois campos diferentes podem ter nomes parecidos. É uma heurística para pessoas conferirem, não um veredito.",
     similar_count: "{n} pares em {f} arquivos", s_declared: "Declarado no dicionário", s_column: "Coluna no arquivo",
     s_similarity: "Similaridade", s_source: "Fonte do esquema",
-    k_nottab: "sem CSV por trás do link", k_gb: "dados baixados (GB)", k_minutes: "tempo baixando e validando (min)",
+    k_nottab: "página ou PDF no lugar da tabela", k_gb: "dados baixados (GB)", k_minutes: "tempo baixando e validando (min)",
     k_mbs: "vazão, download e validação (MB/s)", k_ttfb: "tempo até a primeira resposta do servidor, mediana (s)",
     k_reqfail: "pedidos que falharam (e foram repetidos)", k_unreach: "Arquivos que não puderam ser baixados",
     k_pdflinked: "dicionários em PDF ligados a um arquivo", k_processed: "processados", k_stage: "Etapa", k_n: "n",
@@ -168,7 +178,7 @@ const I18N = {
     none: "nenhum", f_rows: "linhas", f_schema: "esquema", f_status: "situação", f_dict: "dicionário", f_conf: "conforme",
     f_missing: "declarados, ausentes do arquivo", f_undecl: "no arquivo, não declarados", f_spelling: "grafados de outro jeito",
     f_errors: "células que violam o tipo ou as restrições declaradas", f_drift: "eventos de deriva", yes: "sim", no: "não",
-    s_ok: "lido", s_error: "não pôde ser lido", "s_not-tabular": "não é CSV", s_empty: "vazio", s_pending: "ainda não verificado",
+    s_ok: "lido", s_error: "não pôde ser lido", "s_not-tabular": "não é tabela", s_empty: "vazio", s_pending: "ainda não verificado",
     footer: "Método: {m}. Resumo para a Camada 5:",
   },
 };
@@ -496,7 +506,7 @@ function bars(obj, labelOf = (k) => k) {
     + `<span class="bar"><span style="width:${(n / max) * 100}%"></span></span><span class="n">${fmt(n)}</span>`).join("")}</div>`;
 }
 
-function renderFindings(f, net) {
+function renderFindings(f, net, dist) {
   const d = f.dictionaries, ty = f.types, vs = f.files_vs_dictionaries, fi = f.files, pdf = f.pdf_extraction;
   const nt = (net || {}).total || {};
   const num1 = (x) => (x == null ? "—" : Number(x).toLocaleString(LANG === "pt" ? "pt-BR" : "en", { maximumFractionDigits: 1 }));
@@ -519,10 +529,13 @@ function renderFindings(f, net) {
     [t("p_files"), kv([[t("k_validated"), fmt(fi.validated)], [t("k_decode"), fmt(fi.with_decode_errors)],
       [t("k_ragged"), fmt(fi.with_ragged_rows)], [t("k_multi"), fmt(fi.zips_with_several_headers)],
       [t("k_noname"), fmt(fi.with_columns_without_name)],
+      [t("k_nottables"), fmt(fi.not_tables)],
+      [t("k_dist"), `${fmt((dist || {}).compared)} · ${fmt((dist || {}).same_columns)}`],
       [t("k_nottab"), fmt(fi.not_tabular)], [t("k_gb"), num1(nt.gb)], [t("k_minutes"), num1(nt.minutes)],
       [t("k_mbs"), num1(nt.end_to_end_mb_s)], [t("k_ttfb"), num1(nt.first_byte_s_median)],
       [t("k_reqfail"), fmt(Object.values(nt.request_failures || {}).reduce((a, b) => a + b, 0))]])
       + `<p class="small muted">${esc(t("k_encodings"))}: ${Object.entries(fi.encodings || {}).map(([k, n]) => `<code>${esc(k)}</code> ${fmt(n)}`).join(" · ") || "—"}<br>`
+      + `${esc(t("k_formats"))}: ${Object.entries(fi.formats || {}).map(([k, n]) => `<code>${esc(k)}</code> ${fmt(n)}`).join(" · ") || "—"}<br>`
       + `${esc(t("k_delims"))}: ${Object.entries(fi.delimiters || {}).map(([k, n]) => `<code>${esc(k === "\t" ? "TAB" : k)}</code> ${fmt(n)}`).join(" · ") || "—"}</p>`
       + `<p class="small muted">${esc(t("k_unreach"))}</p>` + bars(fi.unreachable_by_reason)],
     [t("p_pdf"), kv([[t("k_pdflinked"), fmt(pdf.pdf_dictionaries_linked)], [t("k_processed"), fmt(pdf.processed)],
@@ -568,9 +581,17 @@ function fileDetail(f) {
         + errs.map(([field, kinds]) => `<li><code>${esc(field)}</code>: ${esc(kinds)}</li>`).join("") + "</ul>";
     }
   }
+  if ((f.distributions || []).length) {
+    more += `<div class="small"><span class="muted">${esc(t("f_dist"))}:</span> ` + f.distributions.map((d) => {
+      const what = d.status !== "ok" ? t("d_notchecked") : d.same_columns ? t("d_same")
+        : `${t("d_diff")} (${[d.missing && d.missing.length ? `${t("d_missing")} ${d.missing.join(", ")}` : "",
+            d.extra && d.extra.length ? `${t("d_extra")} ${d.extra.join(", ")}` : ""].filter(Boolean).join("; ")})`;
+      return `<code>${esc(d.format || "?")}</code> ${esc(what)}`;
+    }).join(" · ") + "</div>";
+  }
   if (f.error) more += `<div class="small muted">${esc(f.error)}</div>`;
   return `<tr id="file-${esc(f.id)}"><td><a href="${esc(f.url)}" rel="noopener">${esc(f.name || f.id)}</a>${more}</td>`
-    + `<td>${levelBadge(f.level)}</td><td>${dict}</td><td class="small">${esc(f.schema_kind || "—")}<br>${schemaLinks(f.schema_files)}</td>`
+    + `<td>${f.not_a_table ? "—" : levelBadge(f.level)}</td><td>${dict}</td><td class="small">${esc(f.schema_kind || "—")}<br>${schemaLinks(f.schema_files)}</td>`
     + `<td>${esc(status)}</td><td class="num">${fmt(f.rows)}</td><td>${conf}</td><td class="num">${fmt(f.drift_events)}</td></tr>`;
 }
 
@@ -636,7 +657,7 @@ async function main() {
   renderProgress(s);
   renderSimilar();
   renderPdf();
-  renderFindings(s.findings, s.network);
+  renderFindings(s.findings, s.network, s.distributions);
   // ?level=d2 / f0 (same as clicking a maturity band) filters the table
   const lvl = new URLSearchParams(location.search).get("level");
   if (lvl && /^[df][0-4]$/.test(lvl)) el("level-filter").value = lvl;

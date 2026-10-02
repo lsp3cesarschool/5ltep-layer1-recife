@@ -84,6 +84,43 @@ def _write(dataset: str, t: dict, kind: str, schema: dict, written: set, events:
     written.add(p)
 
 
+FORMAT_WORDS = {"csv", "tsv", "txt", "json", "xml", "xlsx", "xls", "ods", "parquet", "zip", "formato", "format",
+                "arquivo", "file", "dados", "data"}
+
+
+def _table_key(name: str) -> tuple:
+    return tuple(sorted(w for w in dictionaries.norm(name).split() if w not in FORMAT_WORDS))
+
+
+def group_distributions(tables: list[dict]) -> list[dict]:
+    """The same table published in several formats ("Autos de infração" as CSV, JSON and XML;
+    "auto-infracao.csv" and "auto-infracao.parquet") becomes one table: the preferred format is
+    validated in full and the others are listed as its distributions (only their columns are
+    checked). A group needs one resource per format; otherwise the resources stay separate tables
+    (several CSVs with the same name are different files)."""
+    buckets: dict[tuple, list[dict]] = {}
+    order: list[tuple] = []
+    for t in tables:
+        key = _table_key(t["name"]) or ("__id__", t["id"])
+        if key not in buckets:
+            buckets[key] = []
+            order.append(key)
+        buckets[key].append(t)
+    out = []
+    for key in order:
+        items = buckets[key]
+        formats = [i["candidate"] for i in items]
+        if len(items) > 1 and len(set(formats)) == len(formats):
+            items = sorted(items, key=lambda i: tabular.PRIORITY.get(i["candidate"], 99))
+            primary = dict(items[0])
+            primary["distributions"] = [{"id": i["id"], "name": i["name"], "format": i["candidate"], "url": i["url"]}
+                                        for i in items[1:]]
+            out.append(primary)
+        else:
+            out.extend(items)
+    return out
+
+
 def level_of(resource: dict, dict_entry: dict | None) -> int:
     if resource.get("attached") or (resource.get("datastore") or {}).get("typed"):
         return 3
@@ -139,6 +176,7 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
             t["described_from"] = described_from
             t["_described"] = described
 
+    tables = group_distributions(tables)
     link_input = [{"id": d["id"], "name": d["name"], "declared_resource_ids": d.get("declared_resource_ids"),
                    "parts": [{"label": p.label, "names": [f["name"] for f in p.fields]} for p in parsed[d["id"]].parts]
                    if d["id"] in parsed and parsed[d["id"]].parts else None}
