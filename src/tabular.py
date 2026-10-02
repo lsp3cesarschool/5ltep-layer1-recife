@@ -273,7 +273,9 @@ def _xls_tables(path: Path, member: str | None):
 
     if path.stat().st_size > config.MAX_SHEET_BYTES:
         raise NotTabular("spreadsheet too large to read in memory", "too-large")
-    book = xlrd.open_workbook(str(path), on_demand=True)
+    # Files saved by tools other than Excel often trip xlrd's strict check of the compound document
+    # ("Workbook corruption: seen[2] == 4") while their cells read fine.
+    book = xlrd.open_workbook(str(path), on_demand=True, ignore_workbook_corruption=True)
     for sheet in book.sheets():
         rows = ([cell(v) for v in sheet.row_values(i)] for i in range(sheet.nrows))
         yield Table(_name(member, sheet.name), None, None, rows, fmt="xls")
