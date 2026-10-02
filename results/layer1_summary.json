@@ -5,8 +5,8 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-02T14:40:51+00:00",
- "census_at": "2026-10-02T13:56:26+00:00",
+ "generated_at": "2026-10-02T16:41:49+00:00",
+ "census_at": "2026-10-02T16:00:27+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -33,17 +33,17 @@
   }
  },
  "tables": {
-  "total": 1043,
+  "total": 1076,
   "by_level": {
-   "0": 60,
+   "0": 93,
    "1": 3,
    "2": 160,
    "3": 453,
    "4": 367
   },
-  "validated": 1043,
-  "validation_coverage": 1.0,
-  "errors": 0,
+  "validated": 1073,
+  "validation_coverage": 0.9972,
+  "errors": 3,
   "queue_remaining": 0
  },
  "schema_sources": {
@@ -75,20 +75,24 @@
  "drift": {
   "observed": 0,
   "declared": 11,
-  "files_with_baseline": 1039,
+  "files_with_baseline": 1069,
   "first_baseline_at": "2026-10-01T21:00:09+00:00",
-  "last_observed_at": "2026-10-02T14:40:04+00:00"
+  "last_observed_at": "2026-10-02T16:40:04+00:00"
  },
  "coverage": {
-  "files": 1043,
-  "read": 1043,
+  "files": 1076,
+  "read": 1073,
   "empty": 0,
   "not_tabular": 0,
-  "not_downloaded": 0,
+  "not_downloaded": 3,
   "pending": 0,
-  "not_downloaded_by_reason": {},
-  "not_downloaded_by_host": {},
-  "read_without_schema": 63,
+  "not_downloaded_by_reason": {
+   "other": 3
+  },
+  "not_downloaded_by_host": {
+   "other · dados.recife.pe.gov.br": 3
+  },
+  "read_without_schema": 93,
   "checked": 980,
   "conform": 413,
   "fail_missing_fields": 297,
@@ -97,314 +101,120 @@
   "fail_only_cells": 129
  },
  "not_tables": {
-  "count": 46,
+  "count": 13,
   "resources": [
    {
     "dataset": "area-urbana",
     "id": "b014a450-1e3d-4515-9d30-d5a21fe392b9",
     "name": "Edificações 3D",
-    "contents": "zip without CSV members (first entries: ['Edificacoes 3D.qmd', 'Edificacoes 3D.geojson'])"
+    "contents": "zip without tables (first entries: ['Edificacoes 3D.qmd', 'Edificacoes 3D.geojson'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "356f4d60-8e70-427f-b0c1-5b92c72193f5",
     "name": "Anexos dos Pedidos de Acesso à Informação 2012",
-    "contents": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
+    "contents": "zip without tables (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "af6fb6b9-a334-4c17-a9e5-37dfc081dd69",
     "name": "Anexos dos Pedidos de Acesso à Informação 2012",
-    "contents": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
+    "contents": "zip without tables (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "685af35b-54e3-4dcb-a1fe-0696257de2f5",
     "name": "Anexos dos Pedidos de Acesso à Informação 2012",
-    "contents": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
+    "contents": "zip without tables (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "3374b2c5-a3fc-4de6-b9fe-329b9a822e7f",
     "name": "Anexos dos Pedidos de Acesso à Informação 2014",
-    "contents": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pd"
+    "contents": "zip without tables (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "610a4786-725b-4c57-88e9-8a97a01af64e",
     "name": "Anexos dos Pedidos de Acesso à Informação 2014",
-    "contents": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pd"
+    "contents": "zip without tables (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "924a2947-fde6-45f9-83d9-ee10b8c9bf93",
     "name": "Anexos dos Pedidos de Acesso à Informação 2014",
-    "contents": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pd"
+    "contents": "zip without tables (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "9e6b4c3d-6859-4b99-a3ac-6869f7f742b8",
     "name": "Anexos dos Pedidos de Acesso à Informação 2018",
-    "contents": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/"
+    "contents": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "34203d95-9e7a-45f2-ae2a-09ae10109f69",
     "name": "Anexos dos Pedidos de Acesso à Informação 2018",
-    "contents": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/"
+    "contents": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "bb5501f3-8de4-4c15-89de-e3c370bd5e04",
     "name": "Anexos dos Pedidos de Acesso à Informação 2018",
-    "contents": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "8fb11add-2ccc-4eea-b60b-84e2066d543f",
-    "name": "Anexos 2019 - Parte I",
-    "contents": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '201900003000"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "2b81d35f-975a-4c8e-ae05-4137006e4821",
-    "name": "Anexos 2019 - Parte I",
-    "contents": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '201900003000"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "72fa0e53-e42d-4dd2-80e2-371fe0fac718",
-    "name": "Anexos 2019 - Parte I",
-    "contents": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '201900003000"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "594d6f64-4eba-4ea0-a0aa-25403f611c58",
-    "name": "Anexos 2019 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "528f667c-b55e-429d-93f9-c674d8fa13df",
-    "name": "Anexos 2019 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "e47ec32b-cfe1-480f-80cd-45fe6965ebfe",
-    "name": "Anexos 2019 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "25524baa-0635-4ad1-82ef-8d1a228bec39",
-    "name": "Anexos 2019 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "42f9e9ca-a6b8-4572-b7de-0fd2cf4df069",
-    "name": "Anexos 2019 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "9ed7f6c0-5fe9-4949-806a-0fe7a4d713f8",
-    "name": "Anexos 2019 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "b4aa8ae1-16c5-4b3d-9ff1-d9305ef5c777",
-    "name": "Anexos 2020 - Parte I",
-    "contents": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/20200045"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "bf7261b9-302c-4d37-9b03-6d2985cabc1d",
-    "name": "Anexos 2020 - Parte I",
-    "contents": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/20200045"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "b0a695fa-a5fc-4ea4-b79a-7bd1fe0fd227",
-    "name": "Anexos 2020 - Parte I",
-    "contents": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/20200045"
+    "contents": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "ce284c6a-40e5-4728-8ada-ff6e9002ccac",
     "name": "Anexos 2021 - Parte I",
-    "contents": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '20210000300600101"
+    "contents": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/20"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "6fa2c589-676f-408e-8daf-9e3806ca4a26",
     "name": "Anexos 2021 - Parte I",
-    "contents": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '20210000300600101"
+    "contents": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/20"
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "d821809a-1466-4c5e-8df3-6a3de629ab53",
     "name": "Anexos 2021 - Parte I",
-    "contents": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '20210000300600101"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "c016c394-b453-4261-8a75-a0f98f822575",
-    "name": "Anexos 2021 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', "
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "777b67b5-2051-4247-b4ba-db40c5138b93",
-    "name": "Anexos 2021 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', "
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "89ba0792-7a5a-43b9-b21d-38ac629a648a",
-    "name": "Anexos 2021 - Parte II",
-    "contents": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', "
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "1670684e-e5d9-4d52-a104-c21028556d6e",
-    "name": "Anexos 2022 - Parte I",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/202200383002000"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "b591df14-939b-4e74-8fa9-406a11e9d13a",
-    "name": "Anexos 2022 - Parte I",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/202200383002000"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "a76b335d-d865-47e4-9e28-abd6c3b8337f",
-    "name": "Anexos 2022 - Parte I",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/202200383002000"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "73cba8e2-6df2-46f5-bc0c-532693ffea61",
-    "name": "Anexos 2022 - Parte II",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos P"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "cb95f60c-9504-4cfb-a1c1-c0d04499c6f4",
-    "name": "Anexos 2022 - Parte II",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos P"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "e5128dd9-776e-4bd4-98f0-deced9b2d53b",
-    "name": "Anexos 2022 - Parte II",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos P"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "e8d27795-d7e1-4ba9-bd92-8a09c25b40c9",
-    "name": "Anexos 2023 - Janeiro a Abril",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "ebf09be6-9c1c-4910-b8eb-5f8388e9d011",
-    "name": "Anexos 2023 - Janeiro a Abril",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "e3491ac2-c6a5-490e-b9fc-1fdfe6b8a809",
-    "name": "Anexos 2023 - Janeiro a Abril",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "d767bf5a-203a-4b27-b2fc-40dceb235c89",
-    "name": "Anexos 2023 - Maio a Agosto",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "04c25357-b59b-4594-bbb8-deaff15a09a9",
-    "name": "Anexos 2023 - Maio a Agosto",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "a1bab81c-7af8-4c7f-9aff-a9afd31075c3",
-    "name": "Anexos 2023 - Maio a Agosto",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "4b1211a9-c00b-46fa-b811-bddc269ad46a",
-    "name": "Anexos 2023 - Setembro a Dezembro",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "df4901e4-fb7e-4644-a946-036eaba3c878",
-    "name": "Anexos 2023 - Setembro a Dezembro",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "72f787ee-e70e-4e95-8fa1-6d5fb301d508",
-    "name": "Anexos 2023 - Setembro a Dezembro",
-    "contents": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "4169e93f-23cd-4215-b50d-85ce11291cd7",
-    "name": "Anexos 2024 - Parte I",
-    "contents": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/20240"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "15a00ee0-a2e5-4bfc-ae2f-ea0a9d860c3f",
-    "name": "Anexos 2024 - Parte I",
-    "contents": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/20240"
-   },
-   {
-    "dataset": "pedidos-ao-portal-da-transparencia",
-    "id": "e6f94138-81d8-4a82-849c-dc56e644902c",
-    "name": "Anexos 2024 - Parte I",
-    "contents": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/20240"
+    "contents": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/20"
    }
   ]
  },
  "distributions": {
   "tables_with_other_formats": 5,
-  "other_formats": 0,
-  "compared": 0,
-  "same_columns": 0,
-  "different_columns": 0,
+  "other_formats": 5,
+  "compared": 5,
+  "same_columns": 4,
+  "different_columns": 1,
   "not_compared": {},
-  "by_format": {}
+  "by_format": {
+   "xlsx": 2,
+   "xls": 2,
+   "json": 1
+  }
  },
  "network": {
   "total": {
-   "files": 1043,
-   "failed_files": 0,
-   "gb": 27.83,
-   "minutes": 67.5,
-   "end_to_end_mb_s": 6.87,
-   "zip_download_mb_s": null,
+   "files": 1076,
+   "failed_files": 3,
+   "gb": 41.73,
+   "minutes": 85.4,
+   "end_to_end_mb_s": 8.14,
+   "zip_download_mb_s": 13.47,
    "first_byte_s_median": 0.88,
    "request_failures": {}
   },
   "by_host": {
    "dados.recife.pe.gov.br": {
-    "files": 1043,
-    "failed_files": 0,
-    "gb": 27.83,
-    "minutes": 67.5,
-    "end_to_end_mb_s": 6.87,
-    "zip_download_mb_s": null,
+    "files": 1076,
+    "failed_files": 3,
+    "gb": 41.73,
+    "minutes": 85.4,
+    "end_to_end_mb_s": 8.14,
+    "zip_download_mb_s": 13.47,
     "first_byte_s_median": 0.88,
     "request_failures": {}
    }
@@ -436,9 +246,9 @@
   "links": {
    "tables": 1089,
    "by_method": {
-    "header": 704,
+    "header": 706,
     "none": 275,
-    "name": 93,
+    "name": 91,
     "declared-id": 17
    },
    "fields_listed_in_description": 0
@@ -488,9 +298,9 @@
    }
   },
   "files": {
-   "validated": 1043,
+   "validated": 1073,
    "encodings": {
-    "utf-8": 1003,
+    "utf-8": 1009,
     "cp1252": 35,
     "utf-8-sig": 2
    },
@@ -501,17 +311,21 @@
    },
    "with_decode_errors": 12,
    "with_ragged_rows": 20,
-   "zips_with_several_headers": 12,
-   "with_columns_without_name": 0,
+   "zips_with_several_headers": 42,
+   "with_columns_without_name": 30,
    "not_tabular": 0,
-   "not_tables": 46,
+   "not_tables": 13,
    "formats": {
     "csv": 1035,
-    "xlsx": 3,
+    "xlsx": 12,
     "json": 2,
-    "ods": 3
+    "ods": 3,
+    "xls": 30,
+    "xml": 6
    },
-   "unreachable_by_reason": {}
+   "unreachable_by_reason": {
+    "other": 3
+   }
   },
   "pdf_extraction": {
    "pdf_dictionaries_linked": 18,
@@ -1605,7 +1419,7 @@
   {
    "name": "pedidos-ao-portal-da-transparencia",
    "level": 0,
-   "tables": 27,
+   "tables": 60,
    "verifiable": 15,
    "conformant": 15,
    "l1_rate": 1.0

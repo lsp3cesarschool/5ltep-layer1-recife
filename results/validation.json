@@ -3374,7 +3374,7 @@
  },
  "b014a450-1e3d-4515-9d30-d5a21fe392b9": {
   "dataset": "area-urbana",
-  "checked_at": "2026-10-01T21:01:07+00:00",
+  "checked_at": "2026-10-02T16:18:08+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -3382,10 +3382,12 @@
    "last_modified": "2026-03-02T13:50:38.882068",
    "size": 97595760
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Edificacoes 3D.qmd', 'Edificacoes 3D.geojson'])",
-  "validated_at": "2026-10-01T21:01:07+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['Edificacoes 3D.qmd', 'Edificacoes 3D.geojson'])",
+  "validated_at": "2026-10-02T16:18:08+00:00",
+  "reason": "reader"
  },
  "a652ee4e-832b-4d61-a304-50a78ce25995": {
   "dataset": "arvores-tombadas",
@@ -38633,7 +38635,7 @@
  },
  "779bde79-29bf-44df-ac5c-f88c01e04278": {
   "dataset": "censo-socioassistencial-2024",
-  "checked_at": "2026-10-01T21:11:10+00:00",
+  "checked_at": "2026-10-02T16:18:22+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "e5266ce52082690b",
   "ckan": {
@@ -38641,16 +38643,36 @@
    "last_modified": "2026-05-28T10:35:08.117837",
    "size": 69442
   },
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.86
+  },
+  "distributions": [
+   {
+    "id": "84c11f0e-b779-449c-a353-8d38be0bfb57",
+    "format": "xlsx",
+    "name": "CRAS Dados Gerais",
+    "status": "ok",
+    "read_as": "xlsx",
+    "same_columns": true,
+    "missing": [],
+    "extra": []
+   }
+  ],
   "first_seen": "2026-10-01T21:11:10+00:00",
   "pass_history": [
    [
     "2026-10-01",
     true
+   ],
+   [
+    "2026-10-02",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-01T21:11:10+00:00",
-  "seconds": 1.7,
+  "validated_at": "2026-10-02T16:18:22+00:00",
+  "seconds": 3.2,
   "sha256": "9f185c275ec23e1aefa8b6c8488d5474e983f61a56fb650286093f2f710790c5",
   "bytes": 69442,
   "kind": "csv",
@@ -38665,18 +38687,22 @@
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
+   "columns_without_name": 0,
    "encodings": [
     "cp1252"
    ],
    "delimiters": [
     ";"
    ],
+   "formats": [
+    "csv"
+   ],
    "conformance": {
     "declared_fields": 898,
     "missing": [],
     "undeclared": [],
     "spelling": {},
-    "probable_typos": {},
+    "similar_names": {},
     "cells_checked": 0,
     "cells_with_errors": 0,
     "error_rate": 0.0,
@@ -39585,11 +39611,11 @@
    "d51_1",
    "d51_2"
   ],
-  "reason": "new"
+  "reason": "reader"
  },
  "f3dc31e1-f27e-459b-bb8b-21dfda0d3d25": {
   "dataset": "censo-socioassistencial-2024",
-  "checked_at": "2026-10-01T21:11:12+00:00",
+  "checked_at": "2026-10-02T16:18:25+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "15b7a32d3a531dc9",
   "ckan": {
@@ -39597,16 +39623,36 @@
    "last_modified": "2026-05-28T10:37:18.609838",
    "size": 94746
   },
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 1.06
+  },
+  "distributions": [
+   {
+    "id": "9efb6379-931d-4e59-aec0-c4f31c93a688",
+    "format": "xlsx",
+    "name": "CREAS RH",
+    "status": "ok",
+    "read_as": "xlsx",
+    "same_columns": true,
+    "missing": [],
+    "extra": []
+   }
+  ],
   "first_seen": "2026-10-01T21:11:12+00:00",
   "pass_history": [
    [
     "2026-10-01",
     true
+   ],
+   [
+    "2026-10-02",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-01T21:11:12+00:00",
-  "seconds": 1.5,
+  "validated_at": "2026-10-02T16:18:25+00:00",
+  "seconds": 3.5,
   "sha256": "02ad9d80d4a6761e099ab223acb7c4081e51b5442a4bafa3f3b0ac1b289277ed",
   "bytes": 94746,
   "kind": "csv",
@@ -39621,18 +39667,22 @@
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
+   "columns_without_name": 0,
    "encodings": [
     "cp1252"
    ],
    "delimiters": [
     ";"
    ],
+   "formats": [
+    "csv"
+   ],
    "conformance": {
     "declared_fields": 92,
     "missing": [],
     "undeclared": [],
     "spelling": {},
-    "probable_typos": {},
+    "similar_names": {},
     "cells_checked": 0,
     "cells_with_errors": 0,
     "error_rate": 0.0,
@@ -39735,7 +39785,7 @@
    "d_47_15_2bin_PCF_sum",
    "d_47_15_2bin_Outros_sum"
   ],
-  "reason": "new"
+  "reason": "reader"
  },
  "a580414d-679b-46c9-bbb0-5c55c4937cd2": {
   "dataset": "censo-socioassistencial-2024",
@@ -41903,7 +41953,7 @@
  },
  "84923ae3-ca33-41de-95f1-ed2a3d8c1f82": {
   "dataset": "censo-socioassistencial-2024",
-  "checked_at": "2026-10-01T21:11:20+00:00",
+  "checked_at": "2026-10-02T16:18:29+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "cdb0ad7edc4f81cc",
   "ckan": {
@@ -41911,16 +41961,36 @@
    "last_modified": "2026-05-28T10:53:46.614201",
    "size": 16091
   },
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.76
+  },
+  "distributions": [
+   {
+    "id": "a1867d75-0008-4e1e-b44a-4a2f50078521",
+    "format": "xls",
+    "name": " Posto Cadastro Unico RH",
+    "status": "ok",
+    "read_as": "xls",
+    "same_columns": true,
+    "missing": [],
+    "extra": []
+   }
+  ],
   "first_seen": "2026-10-01T21:11:20+00:00",
   "pass_history": [
    [
     "2026-10-01",
     false
+   ],
+   [
+    "2026-10-02",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-01T21:11:20+00:00",
-  "seconds": 1.3,
+  "validated_at": "2026-10-02T16:18:29+00:00",
+  "seconds": 2.9,
   "sha256": "3768f74544166ad92cece985af967d72d12a729ba4310a5a29d05e9e8a555833",
   "bytes": 16091,
   "kind": "csv",
@@ -41935,11 +42005,15 @@
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
+   "columns_without_name": 0,
    "encodings": [
     "cp1252"
    ],
    "delimiters": [
     ";"
+   ],
+   "formats": [
+    "csv"
    ],
    "conformance": {
     "declared_fields": 48,
@@ -41957,7 +42031,7 @@
     "spelling": {
      "Município": "Municipio"
     },
-    "probable_typos": {
+    "similar_names": {
      "DataCenso_2023": "DataCenso_2024"
     },
     "cells_checked": 0,
@@ -42017,11 +42091,11 @@
    "d17_11bin4_sum",
    "nu_trabalhador"
   ],
-  "reason": "new"
+  "reason": "reader"
  },
  "b70532d9-99e8-46b8-b0e7-c070bc195533": {
   "dataset": "censo-socioassistencial-2024",
-  "checked_at": "2026-10-01T21:11:21+00:00",
+  "checked_at": "2026-10-02T16:18:32+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "867aa95d6c5c9b0e",
   "ckan": {
@@ -42029,16 +42103,36 @@
    "last_modified": "2026-05-28T10:54:43.987530",
    "size": 2964
   },
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.9
+  },
+  "distributions": [
+   {
+    "id": "9c55915b-5c03-4f2d-ac49-1218c1a080a0",
+    "format": "xls",
+    "name": "Posto Cadastro Unico Dados Gerais",
+    "status": "ok",
+    "read_as": "xls",
+    "same_columns": true,
+    "missing": [],
+    "extra": []
+   }
+  ],
   "first_seen": "2026-10-01T21:11:21+00:00",
   "pass_history": [
    [
     "2026-10-01",
     false
+   ],
+   [
+    "2026-10-02",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-01T21:11:21+00:00",
-  "seconds": 1.0,
+  "validated_at": "2026-10-02T16:18:32+00:00",
+  "seconds": 2.5,
   "sha256": "20f6dc4076316d9868a9912abca1eb076eb01d8298ffe96d0e2c046739eeb79d",
   "bytes": 2964,
   "kind": "csv",
@@ -42053,11 +42147,15 @@
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
+   "columns_without_name": 0,
    "encodings": [
     "cp1252"
    ],
    "delimiters": [
     ";"
+   ],
+   "formats": [
+    "csv"
    ],
    "conformance": {
     "declared_fields": 160,
@@ -42079,7 +42177,7 @@
      "q19_4_4"
     ],
     "spelling": {},
-    "probable_typos": {},
+    "similar_names": {},
     "cells_checked": 0,
     "cells_with_errors": 0,
     "error_rate": 0.0,
@@ -42257,7 +42355,7 @@
    "d11_3",
    "d11_4"
   ],
-  "reason": "new"
+  "reason": "reader"
  },
  "a8d0af07-ca8c-42c7-8f7f-f3293ddd4157": {
   "dataset": "censo-socioassistencial-2024",
@@ -60032,7 +60130,7 @@
  },
  "f4b7c345-af6b-4405-b6f5-416d4af19efb": {
   "dataset": "imoveis-especiais-de-preservacao-ieps",
-  "checked_at": "2026-10-01T21:20:01+00:00",
+  "checked_at": "2026-10-02T16:18:35+00:00",
   "schema_kind": "datastore",
   "schema_fingerprint": "5354bf5b9fc828c6",
   "ckan": {
@@ -60040,16 +60138,49 @@
    "last_modified": "2026-03-02T14:45:04.524876",
    "size": 24204
   },
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.63
+  },
+  "distributions": [
+   {
+    "id": "acc586a2-1e6a-416e-a95b-a7d37b4483ad",
+    "format": "json",
+    "name": "Imóveis Especiais de Preservação",
+    "status": "ok",
+    "read_as": "json",
+    "same_columns": false,
+    "missing": [
+     "bairro",
+     "codigo iep",
+     "dtanoconstrucao",
+     "dtanotombamento",
+     "logradouro",
+     "nmlei",
+     "regional"
+    ],
+    "extra": [
+     "alias",
+     "length",
+     "name",
+     "type"
+    ]
+   }
+  ],
   "first_seen": "2026-10-01T21:20:01+00:00",
   "pass_history": [
    [
     "2026-10-01",
     true
+   ],
+   [
+    "2026-10-02",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-01T21:20:01+00:00",
-  "seconds": 0.9,
+  "validated_at": "2026-10-02T16:18:35+00:00",
+  "seconds": 3.4,
   "sha256": "f090ebe262abbfdada983fca37a06d8c13899a853baed620b7036ccd7b92ed65",
   "bytes": 24204,
   "kind": "csv",
@@ -60064,18 +60195,22 @@
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
+   "columns_without_name": 0,
    "encodings": [
     "utf-8"
    ],
    "delimiters": [
     ";"
    ],
+   "formats": [
+    "csv"
+   ],
    "conformance": {
     "declared_fields": 7,
     "missing": [],
     "undeclared": [],
     "spelling": {},
-    "probable_typos": {},
+    "similar_names": {},
     "cells_checked": 1813,
     "cells_with_errors": 0,
     "error_rate": 0.0,
@@ -60093,7 +60228,7 @@
    "bairro",
    "regional"
   ],
-  "reason": "new"
+  "reason": "reader"
  },
  "9a847338-92a6-4b74-b3e8-c8f8b57aff2d": {
   "dataset": "imposto-predial-e-territorial-urbano-iptu",
@@ -73183,7 +73318,7 @@
  },
  "356f4d60-8e70-427f-b0c1-5b92c72193f5": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:28:02+00:00",
+  "checked_at": "2026-10-02T16:18:38+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73191,10 +73326,12 @@
    "last_modified": "2026-03-04T12:27:27.485233",
    "size": 4290
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])",
-  "validated_at": "2026-10-01T21:28:02+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])",
+  "validated_at": "2026-10-02T16:18:38+00:00",
+  "reason": "reader"
  },
  "d0eed5d7-9467-415b-8df6-e2b2bc99cfbb": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -73247,7 +73384,7 @@
  },
  "3374b2c5-a3fc-4de6-b9fe-329b9a822e7f": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:28:07+00:00",
+  "checked_at": "2026-10-02T16:18:39+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73255,10 +73392,12 @@
    "last_modified": "2026-03-04T12:27:34.521461",
    "size": 105477977
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])",
-  "validated_at": "2026-10-01T21:28:07+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])",
+  "validated_at": "2026-10-02T16:18:39+00:00",
+  "reason": "reader"
  },
  "30aadf59-beaf-441c-a25a-65330d3eadbe": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -73390,7 +73529,7 @@
  },
  "9e6b4c3d-6859-4b99-a3ac-6869f7f742b8": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:29:24+00:00",
+  "checked_at": "2026-10-02T16:18:49+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73398,10 +73537,12 @@
    "last_modified": "2026-03-04T12:28:33.153499",
    "size": 428153936
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
-  "validated_at": "2026-10-01T21:29:24+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
+  "validated_at": "2026-10-02T16:18:49+00:00",
+  "reason": "reader"
  },
  "cef78b5c-ae44-4c5e-805f-681322e3007e": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -73502,7 +73643,7 @@
  },
  "8fb11add-2ccc-4eea-b60b-84e2066d543f": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:29:54+00:00",
+  "checked_at": "2026-10-02T16:19:21+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73510,14 +73651,51 @@
    "last_modified": "2026-03-04T12:28:56.067201",
    "size": 680138492
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '20190000300030060_doc_2.pdf'])",
-  "validated_at": "2026-10-01T21:29:54+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.93,
+   "download_s": 46.83
+  },
+  "first_seen": "2026-10-02T16:19:21+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:19:21+00:00",
+  "seconds": 54.0,
+  "sha256": "67a2d4d75fa4d00fad58c8c1f776e7ad08bdcad720039fdaa59f0d7bbaacd06a",
+  "bytes": 680138492,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 680138492
+  },
+  "summary": {
+   "tables": 43,
+   "rows": 169725,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 4,
+   "columns_without_name": 7,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "594d6f64-4eba-4ea0-a0aa-25403f611c58": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:30:42+00:00",
+  "checked_at": "2026-10-02T16:20:15+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73525,10 +73703,57 @@
    "last_modified": "2026-03-04T12:29:20.744459",
    "size": 382225677
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019003380003000065_doc_1.pdf'])",
-  "validated_at": "2026-10-01T21:30:42+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.8,
+   "download_s": 27.62
+  },
+  "first_seen": "2026-10-02T16:20:15+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:20:15+00:00",
+  "seconds": 27.7,
+  "sha256": "978e1fb73bb27ca2c5bc9a68b88b190fa25436a35b9d7b58ab128c7cf456cfb1",
+  "bytes": 382225677,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 382225677
+  },
+  "summary": {
+   "tables": 2,
+   "rows": 88,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 2,
+   "columns_without_name": 16,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "DADOS DA PLATAFORMA DE DENUNCIAS LGBTFobicas DE MAIO 2018 A JULHO 2019",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "3dbbf484-b421-40b2-83d0-9a0efe605074": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -73639,7 +73864,7 @@
  },
  "b4aa8ae1-16c5-4b3d-9ff1-d9305ef5c777": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:31:07+00:00",
+  "checked_at": "2026-10-02T16:20:43+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73647,14 +73872,49 @@
    "last_modified": "2026-03-04T12:29:41.492436",
    "size": 485556928
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/2020004520034010510_doc_3.pdf', '2020004520034010510/2020004520034010510_doc_4.pdf'])",
-  "validated_at": "2026-10-01T21:31:07+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.85,
+   "download_s": 38.42
+  },
+  "first_seen": "2026-10-02T16:20:43+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:20:43+00:00",
+  "seconds": 39.0,
+  "sha256": "2e33c28b506118895bb8a13ac506d572cf364e9ce77ced4b474e2f9b4620545e",
+  "bytes": 485556928,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 485556928
+  },
+  "summary": {
+   "tables": 26,
+   "rows": 2455,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 14,
+   "columns_without_name": 52,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "SERVIDORES AADEEs DESLIGADOS",
+   "",
+   "",
+   "SERVIDORES AADEEs COM PEDIDO DE DESLIGAMENTO EM TRÂMITE",
+   ""
+  ],
+  "reason": "reader"
  },
  "528f667c-b55e-429d-93f9-c674d8fa13df": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:31:42+00:00",
+  "checked_at": "2026-10-02T16:21:22+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73662,10 +73922,47 @@
    "last_modified": "2026-03-04T12:30:03.261533",
    "size": 321513959
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020004530034010517/2020004530034010517_doc_2.pdf'])",
-  "validated_at": "2026-10-01T21:31:42+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.83,
+   "download_s": 21.82
+  },
+  "first_seen": "2026-10-02T16:21:22+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:21:22+00:00",
+  "seconds": 22.6,
+  "sha256": "7d1666d5b54abc1e20669cd5f757ea912a18156c9a74701abcdd2b8a5d513e38",
+  "bytes": 321513959,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 321513959
+  },
+  "summary": {
+   "tables": 18,
+   "rows": 21083,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 17,
+   "columns_without_name": 19,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "UE-39 PAVIMENTAÇÕES",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "a76e903d-4688-4273-a3b6-ed0401ad728c": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -73776,7 +74073,7 @@
  },
  "ce284c6a-40e5-4728-8ada-ff6e9002ccac": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:32:07+00:00",
+  "checked_at": "2026-10-02T16:21:45+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73784,14 +74081,16 @@
    "last_modified": "2026-03-04T12:30:24.615999",
    "size": 298967243
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/2021000030060010137_doc_2.pdf', '2021000030060010137/desktop.ini'])",
-  "validated_at": "2026-10-01T21:32:07+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/2021000030060010137_doc_2.pdf', '2021000030060010137/desktop.ini'])",
+  "validated_at": "2026-10-02T16:21:45+00:00",
+  "reason": "reader"
  },
  "c016c394-b453-4261-8a75-a0f98f822575": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:32:28+00:00",
+  "checked_at": "2026-10-02T16:22:10+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73799,10 +74098,50 @@
    "last_modified": "2026-03-04T12:30:31.714901",
    "size": 329411225
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', '2021004270034009996/2021004270034009996_doc_4.pdf', '2021004270034009996/2021004270034009996_doc_5.",
-  "validated_at": "2026-10-01T21:32:28+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.82,
+   "download_s": 25.84
+  },
+  "first_seen": "2026-10-02T16:22:10+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:22:10+00:00",
+  "seconds": 26.0,
+  "sha256": "0463841b6ce9b228fc0fbb4ca7d27af19adca745af2cdb9bbb9622defaf9ae79",
+  "bytes": 329411225,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 329411225
+  },
+  "summary": {
+   "tables": 25,
+   "rows": 666,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 3,
+   "columns_without_name": 9,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "PREFEITURA DA CIDADE DO RECIFE\nPERIODO DE REFERENCIA : JANEIRO A DEZEMBRO/2020",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "7b1c93a9-a842-4b12-b199-59fb93406494": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -73921,7 +74260,7 @@
  },
  "1670684e-e5d9-4d52-a104-c21028556d6e": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:32:53+00:00",
+  "checked_at": "2026-10-02T16:22:36+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73929,14 +74268,56 @@
    "last_modified": "2026-03-04T12:31:16.051508",
    "size": 395166379
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/2022003830020009995/2022003830020009995_doc_1.pdf', 'Anexos Pedidos 2022_1/2022003860034010011/2022003860034010011_",
-  "validated_at": "2026-10-01T21:32:53+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.81,
+   "download_s": 28.45
+  },
+  "first_seen": "2026-10-02T16:22:36+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:22:36+00:00",
+  "seconds": 28.9,
+  "sha256": "60907414eb530ed4f177620d21236103b11ced2cc4c1af3e4aa1264367f8c48f",
+  "bytes": 395166379,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 395166379
+  },
+  "summary": {
+   "tables": 10,
+   "rows": 971,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 10,
+   "columns_without_name": 26,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "73cba8e2-6df2-46f5-bc0c-532693ffea61": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:33:19+00:00",
+  "checked_at": "2026-10-02T16:23:05+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -73944,10 +74325,46 @@
    "last_modified": "2026-03-04T12:31:34.276669",
    "size": 411257659
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008850034000040/2022008850034000040_doc_1.pdf', 'Anexos Pedidos 2022_2/20220083000",
-  "validated_at": "2026-10-01T21:33:19+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.91,
+   "download_s": 31.97
+  },
+  "first_seen": "2026-10-02T16:23:05+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:23:05+00:00",
+  "seconds": 32.1,
+  "sha256": "6c729b53c7eacf4b542506d665bb183c03b974052bbf894580f95fc5744362c2",
+  "bytes": 411257659,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 411257659
+  },
+  "summary": {
+   "tables": 5,
+   "rows": 284,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 5,
+   "columns_without_name": 16,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx",
+    "xml"
+   ]
+  },
+  "header": [
+   "Auditor do Tesouro Municipal",
+   ""
+  ],
+  "reason": "reader"
  },
  "0cfca7c3-cded-4cac-8f0a-9b9c00190569": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74066,7 +74483,7 @@
  },
  "e8d27795-d7e1-4ba9-bd92-8a09c25b40c9": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:33:47+00:00",
+  "checked_at": "2026-10-02T16:23:38+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74074,14 +74491,54 @@
    "last_modified": "2026-03-04T12:32:05.324160",
    "size": 348851769
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003520043009998/2023003520043009998_doc_1.pdf', 'Anexos Pe",
-  "validated_at": "2026-10-01T21:33:47+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.82,
+   "download_s": 25.12
+  },
+  "first_seen": "2026-10-02T16:23:38+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:23:38+00:00",
+  "seconds": 26.2,
+  "sha256": "7019ca264fae46cc1b81fbadb07ac71c880b15ab903ad7fe64614149868d7f09",
+  "bytes": 348851769,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 348851769
+  },
+  "summary": {
+   "tables": 29,
+   "rows": 5056,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 20,
+   "columns_without_name": 10,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx",
+    "xml"
+   ]
+  },
+  "header": [
+   "Nº",
+   "RPA’s",
+   "MGP",
+   "EQUIPAMENTO",
+   "ENDEREÇO",
+   "REQUALIFICAÇÃO (2021-2022)"
+  ],
+  "reason": "reader"
  },
  "d767bf5a-203a-4b27-b2fc-40dceb235c89": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:34:11+00:00",
+  "checked_at": "2026-10-02T16:24:04+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74089,14 +74546,15 @@
    "last_modified": "2026-03-04T12:32:12.558179",
    "size": 347798120
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070009994_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007690034000257/2023007690034000257_doc_",
+  "host": "dados.recife.pe.gov.br",
+  "status": "error",
+  "error": "CompDocError: Workbook corruption: seen[2] == 4",
   "validated_at": "2026-10-01T21:34:11+00:00",
-  "reason": "new"
+  "reason": "reader"
  },
  "4b1211a9-c00b-46fa-b811-bddc269ad46a": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:34:35+00:00",
+  "checked_at": "2026-10-02T16:24:31+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74104,14 +74562,73 @@
    "last_modified": "2026-03-04T12:32:19.545848",
    "size": 305247841
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060010313_doc_2.xls', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060010313_doc_",
-  "validated_at": "2026-10-01T21:34:35+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.79,
+   "download_s": 22.72
+  },
+  "first_seen": "2026-10-02T16:24:31+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:24:31+00:00",
+  "seconds": 22.8,
+  "sha256": "5cdfbcb3a99de78f60e0edb3699fbee063df143b4c3773fe598ef2bb29777493",
+  "bytes": 305247841,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 305247841
+  },
+  "summary": {
+   "tables": 8,
+   "rows": 509,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 6,
+   "columns_without_name": 27,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx"
+   ]
+  },
+  "header": [
+   "HABITACIONAIS PAC1 - LOTE 01",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "4169e93f-23cd-4215-b50d-85ce11291cd7": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:34:59+00:00",
+  "checked_at": "2026-10-02T16:24:54+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74119,14 +74636,50 @@
    "last_modified": "2026-03-04T12:32:34.473685",
    "size": 973221171
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/2024007580034000051/2024007580034000051_doc_1.pdf', 'Pedidos 2024_1/2024007840020000534/20240078400200005",
-  "validated_at": "2026-10-01T21:34:59+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.76,
+   "download_s": 77.41
+  },
+  "first_seen": "2026-10-02T16:24:54+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:24:54+00:00",
+  "seconds": 78.5,
+  "sha256": "434b4df3ec882399b0c0accdb6a57a08b17f9a4796b518d3b2e73392ea0be0ed",
+  "bytes": 973221171,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 973221171
+  },
+  "summary": {
+   "tables": 27,
+   "rows": 6924,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 20,
+   "columns_without_name": 17,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "SECRETARIA DE INFRAESTRUTURA",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "af6fb6b9-a334-4c17-a9e5-37dfc081dd69": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:36:03+00:00",
+  "checked_at": "2026-10-02T16:26:13+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74134,10 +74687,12 @@
    "last_modified": "2026-03-05T14:33:52.809463",
    "size": 4290
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])",
-  "validated_at": "2026-10-01T21:36:03+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])",
+  "validated_at": "2026-10-02T16:26:13+00:00",
+  "reason": "reader"
  },
  "bec80427-37d4-4fcc-a867-00cbb2cd78e8": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74190,7 +74745,7 @@
  },
  "610a4786-725b-4c57-88e9-8a97a01af64e": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:36:08+00:00",
+  "checked_at": "2026-10-02T16:26:14+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74198,10 +74753,12 @@
    "last_modified": "2026-03-05T14:33:58.320971",
    "size": 105477977
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])",
-  "validated_at": "2026-10-01T21:36:08+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])",
+  "validated_at": "2026-10-02T16:26:14+00:00",
+  "reason": "reader"
  },
  "5ba1c703-8025-4d39-a4a4-6d668dc7d091": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74333,7 +74890,7 @@
  },
  "34203d95-9e7a-45f2-ae2a-09ae10109f69": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:37:22+00:00",
+  "checked_at": "2026-10-02T16:26:23+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74341,10 +74898,12 @@
    "last_modified": "2026-03-05T14:35:07.041572",
    "size": 428153936
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
-  "validated_at": "2026-10-01T21:37:22+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
+  "validated_at": "2026-10-02T16:26:23+00:00",
+  "reason": "reader"
  },
  "0d0c245c-01c7-4699-8f0b-b347c1382f82": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74445,7 +75004,7 @@
  },
  "2b81d35f-975a-4c8e-ae05-4137006e4821": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:37:54+00:00",
+  "checked_at": "2026-10-02T16:26:59+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74453,14 +75012,51 @@
    "last_modified": "2026-03-05T14:35:36.459656",
    "size": 680138492
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '20190000300030060_doc_2.pdf'])",
-  "validated_at": "2026-10-01T21:37:54+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.76,
+   "download_s": 49.75
+  },
+  "first_seen": "2026-10-02T16:26:59+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:26:59+00:00",
+  "seconds": 56.8,
+  "sha256": "67a2d4d75fa4d00fad58c8c1f776e7ad08bdcad720039fdaa59f0d7bbaacd06a",
+  "bytes": 680138492,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 680138492
+  },
+  "summary": {
+   "tables": 43,
+   "rows": 169725,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 4,
+   "columns_without_name": 7,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "e47ec32b-cfe1-480f-80cd-45fe6965ebfe": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:38:44+00:00",
+  "checked_at": "2026-10-02T16:27:56+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74468,10 +75064,57 @@
    "last_modified": "2026-03-05T14:35:58.488843",
    "size": 382225677
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019003380003000065_doc_1.pdf'])",
-  "validated_at": "2026-10-01T21:38:44+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.97,
+   "download_s": 28.11
+  },
+  "first_seen": "2026-10-02T16:27:56+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:27:56+00:00",
+  "seconds": 28.2,
+  "sha256": "978e1fb73bb27ca2c5bc9a68b88b190fa25436a35b9d7b58ab128c7cf456cfb1",
+  "bytes": 382225677,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 382225677
+  },
+  "summary": {
+   "tables": 2,
+   "rows": 88,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 2,
+   "columns_without_name": 16,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "DADOS DA PLATAFORMA DE DENUNCIAS LGBTFobicas DE MAIO 2018 A JULHO 2019",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "f76ad42f-6349-4266-b999-603809ec21fa": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74582,7 +75225,7 @@
  },
  "bf7261b9-302c-4d37-9b03-6d2985cabc1d": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:39:10+00:00",
+  "checked_at": "2026-10-02T16:28:25+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74590,14 +75233,49 @@
    "last_modified": "2026-03-05T14:36:22.814367",
    "size": 485556928
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/2020004520034010510_doc_3.pdf', '2020004520034010510/2020004520034010510_doc_4.pdf'])",
-  "validated_at": "2026-10-01T21:39:10+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.79,
+   "download_s": 33.82
+  },
+  "first_seen": "2026-10-02T16:28:25+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:28:25+00:00",
+  "seconds": 34.5,
+  "sha256": "2e33c28b506118895bb8a13ac506d572cf364e9ce77ced4b474e2f9b4620545e",
+  "bytes": 485556928,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 485556928
+  },
+  "summary": {
+   "tables": 26,
+   "rows": 2455,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 14,
+   "columns_without_name": 52,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "SERVIDORES AADEEs DESLIGADOS",
+   "",
+   "",
+   "SERVIDORES AADEEs COM PEDIDO DE DESLIGAMENTO EM TRÂMITE",
+   ""
+  ],
+  "reason": "reader"
  },
  "25524baa-0635-4ad1-82ef-8d1a228bec39": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:39:39+00:00",
+  "checked_at": "2026-10-02T16:28:59+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74605,10 +75283,47 @@
    "last_modified": "2026-03-05T14:36:39.999035",
    "size": 321513959
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020004530034010517/2020004530034010517_doc_2.pdf'])",
-  "validated_at": "2026-10-01T21:39:39+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 1.12,
+   "download_s": 25.3
+  },
+  "first_seen": "2026-10-02T16:28:59+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:28:59+00:00",
+  "seconds": 26.0,
+  "sha256": "7d1666d5b54abc1e20669cd5f757ea912a18156c9a74701abcdd2b8a5d513e38",
+  "bytes": 321513959,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 321513959
+  },
+  "summary": {
+   "tables": 18,
+   "rows": 21083,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 17,
+   "columns_without_name": 19,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "UE-39 PAVIMENTAÇÕES",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "c4dfb864-8fb5-4a28-8640-47a7c1e6baaa": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74719,7 +75434,7 @@
  },
  "6fa2c589-676f-408e-8daf-9e3806ca4a26": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:40:02+00:00",
+  "checked_at": "2026-10-02T16:29:25+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74727,14 +75442,16 @@
    "last_modified": "2026-03-05T14:36:56.975480",
    "size": 298967243
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/2021000030060010137_doc_2.pdf', '2021000030060010137/desktop.ini'])",
-  "validated_at": "2026-10-01T21:40:02+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/2021000030060010137_doc_2.pdf', '2021000030060010137/desktop.ini'])",
+  "validated_at": "2026-10-02T16:29:25+00:00",
+  "reason": "reader"
  },
  "777b67b5-2051-4247-b4ba-db40c5138b93": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:40:21+00:00",
+  "checked_at": "2026-10-02T16:29:51+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74742,10 +75459,50 @@
    "last_modified": "2026-03-05T14:37:10.696115",
    "size": 329411225
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', '2021004270034009996/2021004270034009996_doc_4.pdf', '2021004270034009996/2021004270034009996_doc_5.",
-  "validated_at": "2026-10-01T21:40:21+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.99,
+   "download_s": 25.25
+  },
+  "first_seen": "2026-10-02T16:29:51+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:29:51+00:00",
+  "seconds": 25.4,
+  "sha256": "0463841b6ce9b228fc0fbb4ca7d27af19adca745af2cdb9bbb9622defaf9ae79",
+  "bytes": 329411225,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 329411225
+  },
+  "summary": {
+   "tables": 25,
+   "rows": 666,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 3,
+   "columns_without_name": 9,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "PREFEITURA DA CIDADE DO RECIFE\nPERIODO DE REFERENCIA : JANEIRO A DEZEMBRO/2020",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "1ed49849-bcd4-49c7-a10b-be2a41e313b1": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -74864,7 +75621,7 @@
  },
  "b591df14-939b-4e74-8fa9-406a11e9d13a": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:40:47+00:00",
+  "checked_at": "2026-10-02T16:30:17+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74872,14 +75629,56 @@
    "last_modified": "2026-03-05T14:37:52.670987",
    "size": 395166379
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/2022003830020009995/2022003830020009995_doc_1.pdf', 'Anexos Pedidos 2022_1/2022003860034010011/2022003860034010011_",
-  "validated_at": "2026-10-01T21:40:47+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.99,
+   "download_s": 26.94
+  },
+  "first_seen": "2026-10-02T16:30:17+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:30:17+00:00",
+  "seconds": 27.4,
+  "sha256": "60907414eb530ed4f177620d21236103b11ced2cc4c1af3e4aa1264367f8c48f",
+  "bytes": 395166379,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 395166379
+  },
+  "summary": {
+   "tables": 10,
+   "rows": 971,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 10,
+   "columns_without_name": 26,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "cb95f60c-9504-4cfb-a1c1-c0d04499c6f4": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:41:12+00:00",
+  "checked_at": "2026-10-02T16:30:44+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -74887,10 +75686,46 @@
    "last_modified": "2026-03-05T14:38:10.484926",
    "size": 411257659
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008850034000040/2022008850034000040_doc_1.pdf', 'Anexos Pedidos 2022_2/20220083000",
-  "validated_at": "2026-10-01T21:41:12+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.83,
+   "download_s": 28.51
+  },
+  "first_seen": "2026-10-02T16:30:44+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:30:44+00:00",
+  "seconds": 28.7,
+  "sha256": "6c729b53c7eacf4b542506d665bb183c03b974052bbf894580f95fc5744362c2",
+  "bytes": 411257659,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 411257659
+  },
+  "summary": {
+   "tables": 5,
+   "rows": 284,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 5,
+   "columns_without_name": 16,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx",
+    "xml"
+   ]
+  },
+  "header": [
+   "Auditor do Tesouro Municipal",
+   ""
+  ],
+  "reason": "reader"
  },
  "45305e37-09f1-4b2e-b7eb-269cfe51e3f8": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75009,7 +75844,7 @@
  },
  "ebf09be6-9c1c-4910-b8eb-5f8388e9d011": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:41:39+00:00",
+  "checked_at": "2026-10-02T16:31:13+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75017,14 +75852,54 @@
    "last_modified": "2026-03-05T14:38:28.101299",
    "size": 348851769
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003520043009998/2023003520043009998_doc_1.pdf', 'Anexos Pe",
-  "validated_at": "2026-10-01T21:41:39+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.74,
+   "download_s": 24.47
+  },
+  "first_seen": "2026-10-02T16:31:13+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:31:13+00:00",
+  "seconds": 25.5,
+  "sha256": "7019ca264fae46cc1b81fbadb07ac71c880b15ab903ad7fe64614149868d7f09",
+  "bytes": 348851769,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 348851769
+  },
+  "summary": {
+   "tables": 29,
+   "rows": 5056,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 20,
+   "columns_without_name": 10,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx",
+    "xml"
+   ]
+  },
+  "header": [
+   "Nº",
+   "RPA’s",
+   "MGP",
+   "EQUIPAMENTO",
+   "ENDEREÇO",
+   "REQUALIFICAÇÃO (2021-2022)"
+  ],
+  "reason": "reader"
  },
  "04c25357-b59b-4594-bbb8-deaff15a09a9": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:42:03+00:00",
+  "checked_at": "2026-10-02T16:31:39+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75032,14 +75907,15 @@
    "last_modified": "2026-03-05T14:38:42.005502",
    "size": 347798120
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070009994_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007690034000257/2023007690034000257_doc_",
+  "host": "dados.recife.pe.gov.br",
+  "status": "error",
+  "error": "CompDocError: Workbook corruption: seen[2] == 4",
   "validated_at": "2026-10-01T21:42:03+00:00",
-  "reason": "new"
+  "reason": "reader"
  },
  "df4901e4-fb7e-4644-a946-036eaba3c878": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:42:25+00:00",
+  "checked_at": "2026-10-02T16:32:03+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75047,14 +75923,73 @@
    "last_modified": "2026-03-05T14:38:54.289640",
    "size": 305247841
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060010313_doc_2.xls', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060010313_doc_",
-  "validated_at": "2026-10-01T21:42:25+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.97,
+   "download_s": 22.62
+  },
+  "first_seen": "2026-10-02T16:32:03+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:32:03+00:00",
+  "seconds": 22.7,
+  "sha256": "5cdfbcb3a99de78f60e0edb3699fbee063df143b4c3773fe598ef2bb29777493",
+  "bytes": 305247841,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 305247841
+  },
+  "summary": {
+   "tables": 8,
+   "rows": 509,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 6,
+   "columns_without_name": 27,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx"
+   ]
+  },
+  "header": [
+   "HABITACIONAIS PAC1 - LOTE 01",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "15a00ee0-a2e5-4bfc-ae2f-ea0a9d860c3f": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:42:45+00:00",
+  "checked_at": "2026-10-02T16:32:26+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75062,14 +75997,50 @@
    "last_modified": "2026-03-05T14:39:30.045693",
    "size": 973221171
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/2024007580034000051/2024007580034000051_doc_1.pdf', 'Pedidos 2024_1/2024007840020000534/20240078400200005",
-  "validated_at": "2026-10-01T21:42:45+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.93,
+   "download_s": 75.18
+  },
+  "first_seen": "2026-10-02T16:32:26+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:32:26+00:00",
+  "seconds": 76.2,
+  "sha256": "434b4df3ec882399b0c0accdb6a57a08b17f9a4796b518d3b2e73392ea0be0ed",
+  "bytes": 973221171,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 973221171
+  },
+  "summary": {
+   "tables": 27,
+   "rows": 6924,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 20,
+   "columns_without_name": 17,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "SECRETARIA DE INFRAESTRUTURA",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "685af35b-54e3-4dcb-a1fe-0696257de2f5": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:43:54+00:00",
+  "checked_at": "2026-10-02T16:33:42+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75077,10 +76048,12 @@
    "last_modified": "2026-03-07T02:24:33.319401",
    "size": 4290
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])",
-  "validated_at": "2026-10-01T21:43:54+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['2012_347_51_0_R.pdf', '__MACOSX/', '__MACOSX/._2012_347_51_0_R.pdf'])",
+  "validated_at": "2026-10-02T16:33:42+00:00",
+  "reason": "reader"
  },
  "dd0ab18f-1344-4691-8e7f-1bdd4d9348cb": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75133,7 +76106,7 @@
  },
  "924a2947-fde6-45f9-83d9-ee10b8c9bf93": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:43:59+00:00",
+  "checked_at": "2026-10-02T16:33:44+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75141,10 +76114,12 @@
    "last_modified": "2026-03-07T02:24:51.103924",
    "size": 105477977
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])",
-  "validated_at": "2026-10-01T21:43:59+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['20140121_180220140001103.pdf', '__MACOSX/', '__MACOSX/._20140121_180220140001103.pdf', '20140121_181220140001203.pdf', '__MACOSX/._20140121_181220140001203.pdf'])",
+  "validated_at": "2026-10-02T16:33:44+00:00",
+  "reason": "reader"
  },
  "21717943-3438-4a16-a14a-e7cb09e475f9": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75276,7 +76251,7 @@
  },
  "bb5501f3-8de4-4c15-89de-e3c370bd5e04": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:45:17+00:00",
+  "checked_at": "2026-10-02T16:33:53+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75284,10 +76259,12 @@
    "last_modified": "2026-03-07T02:26:32.186861",
    "size": 428153936
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
-  "validated_at": "2026-10-01T21:45:17+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
+  "validated_at": "2026-10-02T16:33:53+00:00",
+  "reason": "reader"
  },
  "7b02cb0a-5273-4a66-a819-736fe14132f0": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75388,7 +76365,7 @@
  },
  "72fa0e53-e42d-4dd2-80e2-371fe0fac718": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:45:49+00:00",
+  "checked_at": "2026-10-02T16:34:23+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75396,14 +76373,51 @@
    "last_modified": "2026-03-07T02:27:17.514451",
    "size": 680138492
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['20190000101020536_doc_1.pdf', '__MACOSX/._20190000101020536_doc_1.pdf', '20190000300030060_doc_1.pdf', '__MACOSX/._20190000300030060_doc_1.pdf', '20190000300030060_doc_2.pdf'])",
-  "validated_at": "2026-10-01T21:45:49+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.87,
+   "download_s": 46.01
+  },
+  "first_seen": "2026-10-02T16:34:23+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:34:23+00:00",
+  "seconds": 53.2,
+  "sha256": "67a2d4d75fa4d00fad58c8c1f776e7ad08bdcad720039fdaa59f0d7bbaacd06a",
+  "bytes": 680138492,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 680138492
+  },
+  "summary": {
+   "tables": 43,
+   "rows": 169725,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 4,
+   "columns_without_name": 7,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "42f9e9ca-a6b8-4572-b7de-0fd2cf4df069": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:46:33+00:00",
+  "checked_at": "2026-10-02T16:35:16+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75411,10 +76425,57 @@
    "last_modified": "2026-03-07T02:27:49.427302",
    "size": 382225677
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2019003270070000043_doc_1.pdf', '__MACOSX/._2019003270070000043_doc_1.pdf', '2019003340029000071_doc_1.pdf', '__MACOSX/._2019003340029000071_doc_1.pdf', '2019003380003000065_doc_1.pdf'])",
-  "validated_at": "2026-10-01T21:46:33+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.88,
+   "download_s": 28.1
+  },
+  "first_seen": "2026-10-02T16:35:16+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:35:16+00:00",
+  "seconds": 28.2,
+  "sha256": "978e1fb73bb27ca2c5bc9a68b88b190fa25436a35b9d7b58ab128c7cf456cfb1",
+  "bytes": 382225677,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 382225677
+  },
+  "summary": {
+   "tables": 2,
+   "rows": 88,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 2,
+   "columns_without_name": 16,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "DADOS DA PLATAFORMA DE DENUNCIAS LGBTFobicas DE MAIO 2018 A JULHO 2019",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "b51a174c-d009-46d6-b253-aa45dc097524": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75525,7 +76586,7 @@
  },
  "b0a695fa-a5fc-4ea4-b79a-7bd1fe0fd227": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:47:03+00:00",
+  "checked_at": "2026-10-02T16:35:45+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75533,14 +76594,49 @@
    "last_modified": "2026-03-07T02:28:11.899731",
    "size": 485556928
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2020004520034010510/', '2020004520034010510/2020004520034010510_doc_1.pdf', '2020004520034010510/2020004520034010510_doc_2.pdf', '2020004520034010510/2020004520034010510_doc_3.pdf', '2020004520034010510/2020004520034010510_doc_4.pdf'])",
-  "validated_at": "2026-10-01T21:47:03+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.83,
+   "download_s": 32.53
+  },
+  "first_seen": "2026-10-02T16:35:45+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:35:45+00:00",
+  "seconds": 33.1,
+  "sha256": "2e33c28b506118895bb8a13ac506d572cf364e9ce77ced4b474e2f9b4620545e",
+  "bytes": 485556928,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 485556928
+  },
+  "summary": {
+   "tables": 26,
+   "rows": 2455,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 14,
+   "columns_without_name": 52,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "SERVIDORES AADEEs DESLIGADOS",
+   "",
+   "",
+   "SERVIDORES AADEEs COM PEDIDO DE DESLIGAMENTO EM TRÂMITE",
+   ""
+  ],
+  "reason": "reader"
  },
  "9ed7f6c0-5fe9-4949-806a-0fe7a4d713f8": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:47:35+00:00",
+  "checked_at": "2026-10-02T16:36:18+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75548,10 +76644,47 @@
    "last_modified": "2026-03-07T02:28:25.100382",
    "size": 321513959
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2020008290079000789/', '2020008290079000789/2020008290079000789_doc_1.pdf', '2020004530034010517/', '2020004530034010517/2020004530034010517_doc_1.pdf', '2020004530034010517/2020004530034010517_doc_2.pdf'])",
-  "validated_at": "2026-10-01T21:47:35+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.81,
+   "download_s": 23.18
+  },
+  "first_seen": "2026-10-02T16:36:18+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:36:18+00:00",
+  "seconds": 23.9,
+  "sha256": "7d1666d5b54abc1e20669cd5f757ea912a18156c9a74701abcdd2b8a5d513e38",
+  "bytes": 321513959,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 321513959
+  },
+  "summary": {
+   "tables": 18,
+   "rows": 21083,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 17,
+   "columns_without_name": 19,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "UE-39 PAVIMENTAÇÕES",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "c4172725-9b58-49b8-8cec-1f63e1793e21": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75662,7 +76795,7 @@
  },
  "d821809a-1466-4c5e-8df3-6a3de629ab53": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:47:59+00:00",
+  "checked_at": "2026-10-02T16:36:42+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75670,14 +76803,16 @@
    "last_modified": "2026-03-07T02:28:44.224572",
    "size": 298967243
   },
+  "host": "dados.recife.pe.gov.br",
   "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/2021000030060010137_doc_2.pdf', '2021000030060010137/desktop.ini'])",
-  "validated_at": "2026-10-01T21:47:59+00:00",
-  "reason": "new"
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/2021000030060010137_doc_2.pdf', '2021000030060010137/desktop.ini'])",
+  "validated_at": "2026-10-02T16:36:42+00:00",
+  "reason": "reader"
  },
  "89ba0792-7a5a-43b9-b21d-38ac629a648a": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:48:19+00:00",
+  "checked_at": "2026-10-02T16:37:11+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75685,10 +76820,50 @@
    "last_modified": "2026-03-07T02:28:52.999741",
    "size": 329411225
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['2021004270034009996/2021004270034009996_doc_1.pdf', '2021004270034009996/2021004270034009996_doc_2.pdf', '2021004270034009996/2021004270034009996_doc_3.pdf', '2021004270034009996/2021004270034009996_doc_4.pdf', '2021004270034009996/2021004270034009996_doc_5.",
-  "validated_at": "2026-10-01T21:48:19+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.97,
+   "download_s": 26.93
+  },
+  "first_seen": "2026-10-02T16:37:11+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:37:11+00:00",
+  "seconds": 27.1,
+  "sha256": "0463841b6ce9b228fc0fbb4ca7d27af19adca745af2cdb9bbb9622defaf9ae79",
+  "bytes": 329411225,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 329411225
+  },
+  "summary": {
+   "tables": 25,
+   "rows": 666,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 3,
+   "columns_without_name": 9,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "PREFEITURA DA CIDADE DO RECIFE\nPERIODO DE REFERENCIA : JANEIRO A DEZEMBRO/2020",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "e5b990d4-7c5b-424c-a70e-08f6ca5c086e": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75807,7 +76982,7 @@
  },
  "a76b335d-d865-47e4-9e28-abd6c3b8337f": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:48:44+00:00",
+  "checked_at": "2026-10-02T16:37:39+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75815,14 +76990,56 @@
    "last_modified": "2026-03-07T02:29:35.778304",
    "size": 395166379
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2022_1/2022003700034000024/', 'Anexos Pedidos 2022_1/2022003930060010303/2022003930060010303_doc_1.pdf', 'Anexos Pedidos 2022_1/2022003830020009995/2022003830020009995_doc_1.pdf', 'Anexos Pedidos 2022_1/2022003860034010011/2022003860034010011_",
-  "validated_at": "2026-10-01T21:48:44+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.83,
+   "download_s": 36.67
+  },
+  "first_seen": "2026-10-02T16:37:39+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:37:39+00:00",
+  "seconds": 37.3,
+  "sha256": "60907414eb530ed4f177620d21236103b11ced2cc4c1af3e4aa1264367f8c48f",
+  "bytes": 395166379,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 395166379
+  },
+  "summary": {
+   "tables": 10,
+   "rows": 971,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 10,
+   "columns_without_name": 26,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "e5128dd9-776e-4bd4-98f0-deced9b2d53b": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:49:08+00:00",
+  "checked_at": "2026-10-02T16:38:16+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75830,10 +77047,46 @@
    "last_modified": "2026-03-07T02:29:46.751007",
    "size": 411257659
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2022_2/2022008600060000053/2022008600060000053_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008680034000260/2022008680034000260_doc_1.pdf', 'Anexos Pedidos 2022_2/2022008850034000040/2022008850034000040_doc_1.pdf', 'Anexos Pedidos 2022_2/20220083000",
-  "validated_at": "2026-10-01T21:49:08+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.91,
+   "download_s": 31.99
+  },
+  "first_seen": "2026-10-02T16:38:16+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:38:16+00:00",
+  "seconds": 32.1,
+  "sha256": "6c729b53c7eacf4b542506d665bb183c03b974052bbf894580f95fc5744362c2",
+  "bytes": 411257659,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 411257659
+  },
+  "summary": {
+   "tables": 5,
+   "rows": 284,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 5,
+   "columns_without_name": 16,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx",
+    "xml"
+   ]
+  },
+  "header": [
+   "Auditor do Tesouro Municipal",
+   ""
+  ],
+  "reason": "reader"
  },
  "070ef8c3-dfff-4eed-b057-33890348e643": {
   "dataset": "pedidos-ao-portal-da-transparencia",
@@ -75952,7 +77205,7 @@
  },
  "e3491ac2-c6a5-490e-b9fc-1fdfe6b8a809": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:49:34+00:00",
+  "checked_at": "2026-10-02T16:38:48+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75960,14 +77213,54 @@
    "last_modified": "2026-03-07T02:30:13.035626",
    "size": 348851769
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_ATE_ABRIL/2023003580079010280/2023003580079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003720079010280/2023003720079010280_doc_1.pdf', 'Anexos Pedidos 2023_ATE_ABRIL/2023003520043009998/2023003520043009998_doc_1.pdf', 'Anexos Pe",
-  "validated_at": "2026-10-01T21:49:34+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 1.17,
+   "download_s": 26.58
+  },
+  "first_seen": "2026-10-02T16:38:48+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:38:48+00:00",
+  "seconds": 27.6,
+  "sha256": "7019ca264fae46cc1b81fbadb07ac71c880b15ab903ad7fe64614149868d7f09",
+  "bytes": 348851769,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 348851769
+  },
+  "summary": {
+   "tables": 29,
+   "rows": 5056,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 20,
+   "columns_without_name": 10,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx",
+    "xml"
+   ]
+  },
+  "header": [
+   "Nº",
+   "RPA’s",
+   "MGP",
+   "EQUIPAMENTO",
+   "ENDEREÇO",
+   "REQUALIFICAÇÃO (2021-2022)"
+  ],
+  "reason": "reader"
  },
  "a1bab81c-7af8-4c7f-9aff-a9afd31075c3": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:49:55+00:00",
+  "checked_at": "2026-10-02T16:39:16+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75975,14 +77268,15 @@
    "last_modified": "2026-03-07T02:30:21.276352",
    "size": 347798120
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_2º quadrimestre/2023007550050000686/2023007550050000686_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007480070009994/2023007480070009994_doc_1.pdf', 'Anexos Pedidos 2023_2º quadrimestre/2023007690034000257/2023007690034000257_doc_",
+  "host": "dados.recife.pe.gov.br",
+  "status": "error",
+  "error": "CompDocError: Workbook corruption: seen[2] == 4",
   "validated_at": "2026-10-01T21:49:55+00:00",
-  "reason": "new"
+  "reason": "reader"
  },
  "72f787ee-e70e-4e95-8fa1-6d5fb301d508": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:50:19+00:00",
+  "checked_at": "2026-10-02T16:39:42+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -75990,14 +77284,73 @@
    "last_modified": "2026-03-07T02:30:38.008280",
    "size": 305247841
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Anexos Pedidos 2023_3º quadrimestre/2023010900020000055/2023010900020000055_doc_1.pdf', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060010313_doc_2.xls', 'Anexos Pedidos 2023_3º quadrimestre/2023010840060010313/2023010840060010313_doc_",
-  "validated_at": "2026-10-01T21:50:19+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.75,
+   "download_s": 22.3
+  },
+  "first_seen": "2026-10-02T16:39:42+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:39:42+00:00",
+  "seconds": 22.4,
+  "sha256": "5cdfbcb3a99de78f60e0edb3699fbee063df143b4c3773fe598ef2bb29777493",
+  "bytes": 305247841,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 305247841
+  },
+  "summary": {
+   "tables": 8,
+   "rows": 509,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 6,
+   "columns_without_name": 27,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls",
+    "xlsx"
+   ]
+  },
+  "header": [
+   "HABITACIONAIS PAC1 - LOTE 01",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "e6f94138-81d8-4a82-849c-dc56e644902c": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-01T21:50:38+00:00",
+  "checked_at": "2026-10-02T16:40:04+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -76005,10 +77358,46 @@
    "last_modified": "2026-03-07T02:31:00.997833",
    "size": 973221171
   },
-  "status": "not-tabular",
-  "error": "zip without CSV members (first entries: ['Pedidos 2024_1/2024007880020009999/2024007880020009999_doc_1_.pdf', 'Pedidos 2024_1/ 2024007810020000532/2024007810020000532_doc_1.pdf', 'Pedidos 2024_1/2024007580034000051/2024007580034000051_doc_1.pdf', 'Pedidos 2024_1/2024007840020000534/20240078400200005",
-  "validated_at": "2026-10-01T21:50:38+00:00",
-  "reason": "new"
+  "host": "dados.recife.pe.gov.br",
+  "timing": {
+   "first_byte_s": 0.83,
+   "download_s": 71.46
+  },
+  "first_seen": "2026-10-02T16:40:04+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-02T16:40:04+00:00",
+  "seconds": 72.5,
+  "sha256": "434b4df3ec882399b0c0accdb6a57a08b17f9a4796b518d3b2e73392ea0be0ed",
+  "bytes": 973221171,
+  "kind": "zip",
+  "http": {
+   "etag": null,
+   "last_modified": null,
+   "content_length": 973221171
+  },
+  "summary": {
+   "tables": 27,
+   "rows": 6924,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 20,
+   "columns_without_name": 17,
+   "encodings": [],
+   "delimiters": [],
+   "formats": [
+    "xls"
+   ]
+  },
+  "header": [
+   "",
+   "",
+   "SECRETARIA DE INFRAESTRUTURA",
+   "",
+   "",
+   ""
+  ],
+  "reason": "reader"
  },
  "da596cdc-a53f-4484-9856-14f0c06432e2": {
   "dataset": "perfil-das-pessoas-vacinadas-covid-19",

@@ -464,7 +464,7 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-01T21:11:12+00:00",
+  "observed_at": "2026-10-02T16:18:25+00:00",
   "sha256": "02ad9d80d4a6761e099ab223acb7c4081e51b5442a4bafa3f3b0ac1b289277ed",
   "encoding": "cp1252",
   "delimiter": ";",
