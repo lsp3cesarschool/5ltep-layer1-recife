@@ -78,13 +78,13 @@
   "status": "declared",
   "source": {
    "kind": "dictionary",
-   "dictionary_id": "93c05f82-4dc3-4916-b454-a01e7f56eb52",
-   "dictionary_name": "Metadados dos semáforos equipados com iluminação para pedestre",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/289c2371-31f4-49ed-9226-059de68d2bae/resource/93c05f82-4dc3-4916-b454-a01e7f56eb52/download/metadados-dos-semaforos-equipados-com-iluminacao-para-pedestre.json",
-   "sha256": "928c618be297c5f5b41adb838dd336b0f4274a0e1c0eb21e9006b4a5d19609d9",
+   "dictionary_id": "195dd8e0-a78e-436b-a862-b057834b9884",
+   "dictionary_name": "Dicionário de Dados dos Semáforos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/289c2371-31f4-49ed-9226-059de68d2bae/resource/195dd8e0-a78e-436b-a862-b057834b9884/download/dicionario-de-dados-dos-semaforos.json",
+   "sha256": "ef71df9e4a6108a4ed8cc28e77359d094c45547f1865d5234af31ef95885cae1",
    "reader": "json",
    "part": "metadados.campos",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

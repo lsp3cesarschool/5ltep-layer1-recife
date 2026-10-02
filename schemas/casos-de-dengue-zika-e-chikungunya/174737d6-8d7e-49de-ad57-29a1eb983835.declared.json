@@ -735,132 +735,6 @@
    "declaredSize": 10
   },
   {
-   "name": "grav_pulso",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_conv",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_ench",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_insuf",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_taqui",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_extre",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_hipot",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_hemat",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_melen",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_metro",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_sang",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_ast",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_mioc",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_consc",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "grav_orgao",
-   "type": "number",
-   "description": "Informar qual sinal de gravidade foi encontrado [Allowed values, as declared: 1 – Sim, 2 – Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
-   "name": "dt_grav",
-   "type": "date",
-   "description": "Informar data de início dos sinais de alarme. Considerar a data do primeiro sinal de alarme manifestado.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "tp_sistema",
-   "type": "number",
-   "description": "tipo de sistema",
-   "declaredType": "num",
-   "declaredSize": 5
-  },
-  {
-   "name": "tp_duplicidade",
-   "type": "number",
-   "description": "tipo duplicidade",
-   "declaredType": "num",
-   "declaredSize": 5
-  },
-  {
    "name": "mani_hemor",
    "type": "number",
    "description": "manifestações hemorrágicas [Allowed values, as declared: 1- Sim, 2- Não, 9- Ignorado]",
@@ -952,73 +826,18 @@
    "declaredSize": 1
   },
   {
+   "name": "tp_duplicidade",
+   "type": "number",
+   "description": "tipo duplicidade",
+   "declaredType": "num",
+   "declaredSize": 5
+  },
+  {
    "name": "dt_digitacao",
    "type": "date",
    "description": "Data de digitação",
    "declaredType": "date",
    "declaredSize": 10
-  },
-  {
-   "name": "dt_transf_us",
-   "type": "date",
-   "description": "Data de Transferência do registro da Unidade de Saúde para do nível superior do sistema.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "dt_transf_dm",
-   "type": "date",
-   "description": "Data de Transferência do registro do Distrito Municipal para do nível superior do sistema.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "dt_transf_sm",
-   "type": "date",
-   "description": "Data de Transferência do registro da secretaria municipal para do nível superior do sistema.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "dt_transf_rm",
-   "type": "date",
-   "description": "Data de Transferência do registro da Regional Municipal para do nível superior do sistema.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "dt_transf_rs",
-   "type": "date",
-   "description": "Data de Transferência do registro da Regional de Saúde para do nível superior do sistema.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "dt_transf_se",
-   "type": "date",
-   "description": "Data de Transferência do registro da Secretaria Estadual para do nível superior do sistema.",
-   "declaredType": "date",
-   "declaredSize": 10
-  },
-  {
-   "name": "nu_lote_vertical",
-   "type": "string",
-   "description": "Identifica o Lote da transferência da notificação um nível do sistema para outro (transferência vertical)",
-   "constraints": {
-    "maxLength": 7
-   },
-   "declaredType": "Char",
-   "declaredSize": 7
-  },
-  {
-   "name": "nu_lote_horizontal",
-   "type": "string",
-   "description": "Identifica do Lote da transferência de registros dentro de um mesmo nível do sistema (transferência Horizontal)",
-   "constraints": {
-    "maxLength": 7
-   },
-   "declaredType": "Char",
-   "declaredSize": 7
   },
   {
    "name": "tp_fluxo_retorno",
@@ -1028,38 +847,24 @@
    "declaredSize": 1
   },
   {
-   "name": "st_fluxo_retorno_recebido",
-   "type": "number",
-   "description": "Identifica se o registro foi recebido pelo fluxo de retorno [Allowed values, as declared: 1 – Sim, 2 - Não]",
-   "declaredType": "Num",
-   "declaredSize": 1
-  },
-  {
    "name": "ds_identificador_registro",
    "type": "number",
    "description": "Corresponde ao código de instalação do sistema: código do município",
    "declaredType": "Num",
    "declaredSize": 50
-  },
-  {
-   "name": "st_importado",
-   "type": "number",
-   "description": "Identifica se o registro é oriundo da rotina de migração da base Windows. [Allowed values, as declared: 1-migrado do Sinan Windows, nada - se não for]",
-   "declaredType": "Num",
-   "declaredSize": 1
   }
  ],
  "x5ltep": {
   "status": "declared",
   "source": {
    "kind": "dictionary",
-   "dictionary_id": "3565cac5-0ac7-46cd-9c01-beb7b062a03e",
-   "dictionary_name": "Metadados dos Casos Confirmados de Dengue 2013-2015",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/3565cac5-0ac7-46cd-9c01-beb7b062a03e/download/metadados-dos-casos-confirmados-de-dengue-2013-2015.json",
-   "sha256": "e5ecb948f8e014571a62889cd8de905e6feac2e3805bdf16a43dbc88b0e21800",
+   "dictionary_id": "705f7da8-6d85-4fd6-9005-d5f168293d0b",
+   "dictionary_name": "Metadados dos Casos Confirmados de Dengue a partir de 2016",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/705f7da8-6d85-4fd6-9005-d5f168293d0b/download/metadados-dos-casos-confirmados-de-dengue-a-partir-de-2016.json",
+   "sha256": "f9b16db9ce2138d953740ebb3a0432aca0462e5693e2d0018e98959609cca26e",
    "reader": "json",
    "part": "metadados.campos",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

@@ -347,7 +347,7 @@
    "sha256": "2abf9a8cee6c2e8616e466e7d7af1e5d7fefff9f761d00614e334f2ff47b319c",
    "reader": "xlsx",
    "part": "RH",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

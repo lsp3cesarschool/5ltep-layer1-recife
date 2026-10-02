@@ -5128,7 +5128,7 @@
    "sha256": "f7668680971615bc2d14d31c6005fb87d8e2d292b95dc6e41aac0496a455ebc8",
    "reader": "xlsx",
    "part": "Dados Gerais",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

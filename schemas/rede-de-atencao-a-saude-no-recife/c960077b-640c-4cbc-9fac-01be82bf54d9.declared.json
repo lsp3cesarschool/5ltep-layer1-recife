@@ -176,7 +176,7 @@
    "sha256": "eac8a88eef3f7283cb0de7785e5804c3450a746db82c6e7daf0513b2df9cf0f0",
    "reader": "json",
    "part": "metadados.campos",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

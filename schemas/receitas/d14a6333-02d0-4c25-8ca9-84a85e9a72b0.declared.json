@@ -1,0 +1,239 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "description": "Ano de Referência",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "mes",
+   "type": "number",
+   "description": "Mês de Referência",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "mes_nome",
+   "type": "string",
+   "description": "Nome do Mês de Refência",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "orgao_codigo",
+   "type": "number",
+   "description": "Código do Órgão",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "orgao_nome",
+   "type": "string",
+   "description": "Nome do Órgão",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "unidade_codigo",
+   "type": "string",
+   "description": "Código da Unidade Orçamentária",
+   "constraints": {
+    "maxLength": 5
+   },
+   "declaredType": "Char",
+   "declaredSize": 5
+  },
+  {
+   "name": "unidade_nome",
+   "type": "string",
+   "description": "Nome da Unidade Orçamentária",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "fonte_recurso_codigo",
+   "type": "number",
+   "description": "Código da Fonte de Recurso",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "fonte_recurso_nome",
+   "type": "string",
+   "description": "Nome da Fonte de Recurso",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "categoria_receita_codigo",
+   "type": "number",
+   "description": "Código da Categoria de Receita",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "categoria_receita_nome",
+   "type": "string",
+   "description": "Nome da Categoria de Receita",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "fonte_origem_receita_codigo",
+   "type": "number",
+   "description": "Código da Fonte de Origem",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "fonte_origem_receita_nome",
+   "type": "string",
+   "description": "Nome da Fonte de Origem",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "subfonte_receita_codigo",
+   "type": "number",
+   "description": "Código da Subfonte de Receita",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "subfonte_receita_nome",
+   "type": "string",
+   "description": "Nome da Subfonte de Receita",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "rubrica_receita_codigo",
+   "type": "number",
+   "description": "Código da Rubrica",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "rubrica_receita_nome",
+   "type": "string",
+   "description": "Nome da Rubrica",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "alinea_receita_codigo",
+   "type": "number",
+   "description": "Código de Alinea",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "alinea_receita_nome",
+   "type": "string",
+   "description": "Nome de Alinea",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "subalinea_receita_codigo",
+   "type": "number",
+   "description": "Código da Subalinea",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "subalinea_receita_nome",
+   "type": "string",
+   "description": "Nome da Subalinea",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "receita_local_codigo",
+   "type": "number",
+   "description": "Código da Receita Local",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "receita_local_nome",
+   "type": "string",
+   "description": "Nome da Receita Local",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "receita_prevista",
+   "type": "number",
+   "description": "Valor da Receita Prevista",
+   "declaredType": "Num"
+  },
+  {
+   "name": "receita_prevista_acrescimo",
+   "type": "number",
+   "description": "Valor do Acrescimo de Receita Prevista",
+   "declaredType": "Num"
+  },
+  {
+   "name": "receita_prevista_atualizada",
+   "type": "number",
+   "description": "Valor da Receita Arrecadada",
+   "declaredType": "Num"
+  },
+  {
+   "name": "receita_arrecadada",
+   "type": "number",
+   "description": "Código da Receita Local",
+   "declaredType": "Num",
+   "declaredSize": 4
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "7a1aaf87-d00d-412b-b119-898602836dda",
+   "dictionary_name": "Dicionário de Dados de Receitas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/d620f79b-ab87-42ff-825c-0ce2a25694fe/resource/7a1aaf87-d00d-412b-b119-898602836dda/download/dicionario-de-dados-de-receitas.json",
+   "sha256": "27088e657817b2cbd686907aec39d93cfef6fd813f2595942a2facb831d04971",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

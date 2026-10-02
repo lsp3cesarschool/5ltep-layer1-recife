@@ -1,1 +1,2678 @@
-[]
+[
+ {
+  "id": "c0fb1f67-152f-491a-8d57-9cb6100871ff",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a3cc6e23-e53d-4131-8dd2-c00134295837",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "26e4adca-6065-41a1-bfb7-1e5a1a076622",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "be197123-cbb1-4541-880a-89e4fefb7961",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ff971c3c-e4da-4d63-a285-f6354414c19b",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8dc513a1-af58-4f4e-9dec-a4529b48c508",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d4c33d8b-350e-41b5-9120-d8ecc3d851d9",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "19eb359d-ada2-45b8-9389-5ec271caf9b6",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "87ac4237-f5f9-44d2-bcf1-927aaa0a2d31",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:19+00:00"
+ },
+ {
+  "id": "dbb9165a-7539-4fdd-943a-acffe12df3e0",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:22+00:00"
+ },
+ {
+  "id": "c2281788-2e8c-472c-8812-67c4f85e9272",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:24+00:00"
+ },
+ {
+  "id": "b2594588-2aa8-42c4-b96d-246102ecde3c",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:28+00:00"
+ },
+ {
+  "id": "d364e034-7e00-41a7-b557-0b16c21814e7",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:35+00:00"
+ },
+ {
+  "id": "edc820d6-0f01-4fd2-b8a4-5a8c95f7e743",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:37+00:00"
+ },
+ {
+  "id": "58816e1f-18bc-4335-82bf-80ff080cb0e5",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:39+00:00"
+ },
+ {
+  "id": "e6dda22f-a135-485a-bae9-5a26badf2b09",
+  "dataset": "acidentes-de-transito-com-vitimas-2015",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:41+00:00"
+ },
+ {
+  "id": "36ff5fc9-bd8c-465a-8e40-5b8909e305fe",
+  "dataset": "agremiacoes-carnavalescas",
+  "reason": "schema",
+  "since": "2026-10-01T21:00:46+00:00"
+ },
+ {
+  "id": "a652ee4e-832b-4d61-a304-50a78ce25995",
+  "dataset": "arvores-tombadas",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:13+00:00"
+ },
+ {
+  "id": "a0a5f130-e7d0-4cdc-8746-5b5e014c853d",
+  "dataset": "bares-e-restaurantes",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:20+00:00"
+ },
+ {
+  "id": "5d8c80f0-fb22-4a43-a67a-a2f12f5ca4fa",
+  "dataset": "calendario-de-vacinacao",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:36+00:00"
+ },
+ {
+  "id": "f0d2363a-5b8f-4a65-ab12-58d0015178e8",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:53+00:00"
+ },
+ {
+  "id": "55ddeebc-7e15-431a-8136-5faf1fc3d788",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:54+00:00"
+ },
+ {
+  "id": "a7efb4d3-1942-4497-95fc-7a88273b8500",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:56+00:00"
+ },
+ {
+  "id": "99cf777e-2d1d-45bd-85a7-960dbdca7f9f",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:57+00:00"
+ },
+ {
+  "id": "49028273-234c-4acf-9c3e-a0e1dd21a03a",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:01:59+00:00"
+ },
+ {
+  "id": "7b1d7398-4e69-4e84-b912-144a93748ad2",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:02:02+00:00"
+ },
+ {
+  "id": "2fc67253-7580-48a0-b0ba-618fdbbf7307",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:02:34+00:00"
+ },
+ {
+  "id": "174737d6-8d7e-49de-ad57-29a1eb983835",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:02:37+00:00"
+ },
+ {
+  "id": "f30d05cb-04e5-40ac-918f-6fb7659986eb",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:02:46+00:00"
+ },
+ {
+  "id": "b59bab01-4b76-4328-b9d7-0d16dca20252",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "schema",
+  "since": "2026-10-01T21:02:48+00:00"
+ },
+ {
+  "id": "c0ba2bba-6fde-4764-9909-532a8a29ab58",
+  "dataset": "censo-escolar-2012",
+  "reason": "schema",
+  "since": "2026-10-01T21:04:11+00:00"
+ },
+ {
+  "id": "399ed937-20ff-44cd-af89-17923efdc171",
+  "dataset": "censo-escolar-2015",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:05+00:00"
+ },
+ {
+  "id": "1d6eb8e6-7fcb-40bc-95f2-54e8be101581",
+  "dataset": "censo-escolar-2015",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:08+00:00"
+ },
+ {
+  "id": "aaf2e01e-5a9d-414c-ac2a-10cc0aa6d860",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:09+00:00"
+ },
+ {
+  "id": "c0403751-fad3-445f-b655-84d7a0a539e2",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:11+00:00"
+ },
+ {
+  "id": "639bf37b-a942-40d9-94ad-330305501ca7",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:14+00:00"
+ },
+ {
+  "id": "67e01b15-ade7-4bbd-b4a2-95a6d291ba36",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:20+00:00"
+ },
+ {
+  "id": "34c84886-36cb-4b93-9983-b587bb844ceb",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:47+00:00"
+ },
+ {
+  "id": "4316ef5d-d4fe-444c-9638-5b2f1ca3f9a4",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:49+00:00"
+ },
+ {
+  "id": "c69e736b-0641-4b0e-b2a9-e69c4fc416ef",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:51+00:00"
+ },
+ {
+  "id": "4063a0d5-eb11-41cc-a893-e7f0cf0ca6ab",
+  "dataset": "censo-escolar-2016",
+  "reason": "schema",
+  "since": "2026-10-01T21:05:58+00:00"
+ },
+ {
+  "id": "19d03d50-f656-48e8-a015-8cc91ebd79a3",
+  "dataset": "censo-escolar-2017",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:19+00:00"
+ },
+ {
+  "id": "06ccaf4a-1a9c-4020-97f6-5ecf0cbb850c",
+  "dataset": "censo-escolar-2017",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:25+00:00"
+ },
+ {
+  "id": "2b7187bf-bd9b-4224-bdda-a0636d3dbb77",
+  "dataset": "censo-escolar-2017",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:29+00:00"
+ },
+ {
+  "id": "f1f837fb-6f46-4bf2-86ab-aa8b60357a2b",
+  "dataset": "censo-escolar-2017",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:35+00:00"
+ },
+ {
+  "id": "a1242986-00f5-4fb8-80f1-5ad4f47f44be",
+  "dataset": "censo-escolar-2018",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:52+00:00"
+ },
+ {
+  "id": "a6b6c8e3-522e-4b91-9cc7-db243c064431",
+  "dataset": "censo-escolar-2018",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:54+00:00"
+ },
+ {
+  "id": "afbaf546-f6a9-48b8-b3d6-0f9d0c1db373",
+  "dataset": "censo-escolar-2018",
+  "reason": "schema",
+  "since": "2026-10-01T21:06:56+00:00"
+ },
+ {
+  "id": "5e929537-d1e8-46dc-9b84-cf27599b36b9",
+  "dataset": "censo-escolar-2018",
+  "reason": "schema",
+  "since": "2026-10-01T21:07:02+00:00"
+ },
+ {
+  "id": "fdca605c-b814-40da-8440-271cca2101af",
+  "dataset": "censo-escolar-2019",
+  "reason": "schema",
+  "since": "2026-10-01T21:07:16+00:00"
+ },
+ {
+  "id": "76e98da9-4e7b-4eb1-9a19-65000139e768",
+  "dataset": "censo-escolar-2019",
+  "reason": "schema",
+  "since": "2026-10-01T21:07:26+00:00"
+ },
+ {
+  "id": "48791585-daf5-4148-8097-789f779c4196",
+  "dataset": "censo-escolar-2019",
+  "reason": "schema",
+  "since": "2026-10-01T21:07:32+00:00"
+ },
+ {
+  "id": "c0f8f68a-34ab-4ede-85a6-c9b03dcb5504",
+  "dataset": "censo-escolar-2019",
+  "reason": "schema",
+  "since": "2026-10-01T21:07:35+00:00"
+ },
+ {
+  "id": "a3cfa023-c016-4942-bdc8-c148feceac65",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:07:54+00:00"
+ },
+ {
+  "id": "89e8f805-a54f-411e-b449-130d35a26ea3",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:05+00:00"
+ },
+ {
+  "id": "f6f84a48-0415-48eb-a7bf-06242b9cb447",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:15+00:00"
+ },
+ {
+  "id": "de6bf854-d2c4-40b2-844f-c7d52fac4a43",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:24+00:00"
+ },
+ {
+  "id": "ffc97cee-8b37-49fb-930d-63e15ee24328",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:34+00:00"
+ },
+ {
+  "id": "63ceb66f-2557-47d4-a673-43ebc884d9ce",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:37+00:00"
+ },
+ {
+  "id": "ff372e2e-f052-4a34-9083-e3af3f26f26b",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:46+00:00"
+ },
+ {
+  "id": "5741e020-7d93-4d6b-8cae-a5ce08a5b344",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:08:48+00:00"
+ },
+ {
+  "id": "b4696fcf-5c75-4d61-99f4-71ca776faaf2",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:11+00:00"
+ },
+ {
+  "id": "65d381f1-060d-4d08-9d6a-cbe99a8bc96e",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:14+00:00"
+ },
+ {
+  "id": "41d63717-1e2e-4233-8857-be3917d8dae4",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:22+00:00"
+ },
+ {
+  "id": "6fdab6c2-1410-482e-acc2-cc293bbdb708",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:24+00:00"
+ },
+ {
+  "id": "484bc575-b589-40a5-a5a0-890c09c69f24",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:47+00:00"
+ },
+ {
+  "id": "f0bb7626-487c-4d9c-a12d-e30dd0747f8a",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:51+00:00"
+ },
+ {
+  "id": "623aefd1-ba73-43cc-829c-47b6c21ac8f0",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:09:59+00:00"
+ },
+ {
+  "id": "cc4c0d7a-138c-46eb-ac16-eaa3a861616b",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:10:01+00:00"
+ },
+ {
+  "id": "3c171694-811e-47a2-9078-9f716a10ffb1",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:10:25+00:00"
+ },
+ {
+  "id": "cfbce95a-6dc7-4fd2-9d1f-4fdc686d65ae",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:10:28+00:00"
+ },
+ {
+  "id": "5705fb50-958e-4af3-a132-5457b36d8139",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:10:37+00:00"
+ },
+ {
+  "id": "3da9fcb9-86fb-4912-9eb4-478390636deb",
+  "dataset": "censo-escolar-2020",
+  "reason": "schema",
+  "since": "2026-10-01T21:10:39+00:00"
+ },
+ {
+  "id": "80c5b3cd-d4f7-466e-9031-e636ef56dd99",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:27+00:00"
+ },
+ {
+  "id": "06872af2-9350-4c34-aa39-6337a1822ff7",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:30+00:00"
+ },
+ {
+  "id": "031c3ad3-265f-4d9c-830a-7d1f85f830fa",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:32+00:00"
+ },
+ {
+  "id": "30ba6cc0-17a8-4f38-8c86-55184c87ead1",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:35+00:00"
+ },
+ {
+  "id": "6c7fceed-3495-449c-bbd6-01bcd3e760bd",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:39+00:00"
+ },
+ {
+  "id": "192dc99d-b248-4671-8b3d-a8fe7210bf3c",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:42+00:00"
+ },
+ {
+  "id": "aba3d1a0-c456-4a3b-91e1-4aaf30704717",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:45+00:00"
+ },
+ {
+  "id": "3d3a200a-2b65-4341-ba3c-cc5ef9042d1b",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:48+00:00"
+ },
+ {
+  "id": "83869325-c259-467d-9f49-13faa285a479",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:52+00:00"
+ },
+ {
+  "id": "c4a473cc-02f6-4c19-a003-d02e9342df67",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:56+00:00"
+ },
+ {
+  "id": "e3e03c80-4e59-4bd0-80bd-d3c3b3955d11",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:11:59+00:00"
+ },
+ {
+  "id": "bb8cc160-c9b2-433b-9203-24256ceb4306",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:02+00:00"
+ },
+ {
+  "id": "a69a01ec-bc64-4d9b-a5b2-284ad9e1ec15",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:05+00:00"
+ },
+ {
+  "id": "a9f267cf-5607-4be8-8b3c-2ee2fb05a589",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:08+00:00"
+ },
+ {
+  "id": "d526a4c5-c229-4085-90ed-1c6b676c84c6",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:11+00:00"
+ },
+ {
+  "id": "e40fc8b9-49b7-4f08-8b9f-60ba6ed35519",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:14+00:00"
+ },
+ {
+  "id": "2e67fb3a-fb50-43e6-8b28-071f5b59fd1c",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:18+00:00"
+ },
+ {
+  "id": "b4a942f8-86d2-4542-96b5-97f50dc85219",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:23+00:00"
+ },
+ {
+  "id": "f9f44c11-f3b2-43c6-a99c-72f2a86e5be9",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:26+00:00"
+ },
+ {
+  "id": "dc5c4d10-c207-4036-9490-453945ffecad",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:30+00:00"
+ },
+ {
+  "id": "1fb0a243-13f2-4e6b-a617-5cc9628bdf75",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:33+00:00"
+ },
+ {
+  "id": "8487dfde-373f-4ed8-b80e-0be3d44e2136",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:36+00:00"
+ },
+ {
+  "id": "17269692-667b-4180-8bc2-5dbeff79d092",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:39+00:00"
+ },
+ {
+  "id": "23bdf8f3-f134-4a58-9e13-ed78cbe94582",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "schema",
+  "since": "2026-10-01T21:12:42+00:00"
+ },
+ {
+  "id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+  "dataset": "contratos",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:04+00:00"
+ },
+ {
+  "id": "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859",
+  "dataset": "contratos",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:08+00:00"
+ },
+ {
+  "id": "e016ea66-8bd1-4aec-bda1-afafa56017ed",
+  "dataset": "contratos-de-gestao",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:09+00:00"
+ },
+ {
+  "id": "75344435-aca8-4aef-ab2c-9521d6e5ff18",
+  "dataset": "defesa-civil",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:14+00:00"
+ },
+ {
+  "id": "f3b3a0ab-ac8f-4fe8-a1cc-c3afdd20081a",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:17+00:00"
+ },
+ {
+  "id": "c394160a-ea01-4ea4-a6f5-afae75ca2246",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:21+00:00"
+ },
+ {
+  "id": "c1f96596-830f-4933-9c14-d5199644471b",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:24+00:00"
+ },
+ {
+  "id": "0aad91e2-04b4-463a-8202-44e51a84f2f4",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:32+00:00"
+ },
+ {
+  "id": "6e441aa8-23a7-427e-8971-2018fda922f1",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:38+00:00"
+ },
+ {
+  "id": "a1a35923-f027-4e07-a6f5-04a164eb2dfd",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:44+00:00"
+ },
+ {
+  "id": "700fdec2-31ff-4e9c-8fd1-a7b3c56331c7",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:49+00:00"
+ },
+ {
+  "id": "2cb6a68c-c930-46ad-a0a6-635d486950c2",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:13:55+00:00"
+ },
+ {
+  "id": "ca3d1086-f36e-4cfc-9d5f-e9b79f1192ff",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:01+00:00"
+ },
+ {
+  "id": "25416f0e-a0c0-4104-ba72-75d3390073fa",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:07+00:00"
+ },
+ {
+  "id": "6808a3a2-7c0d-463e-8176-bc058cd43f95",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:13+00:00"
+ },
+ {
+  "id": "8da2af22-dc61-43a8-8854-2480eeb3decb",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:19+00:00"
+ },
+ {
+  "id": "9dca9a83-e033-4b4f-97d0-c194e8c2f4a5",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:24+00:00"
+ },
+ {
+  "id": "4be4b148-c6d1-4b26-ac18-f66e6bce1429",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:30+00:00"
+ },
+ {
+  "id": "69fa0c8a-27a5-4eb7-a9f3-5eef7c64c055",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:35+00:00"
+ },
+ {
+  "id": "e88761a1-5ce0-4389-83be-67ca865c3832",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:40+00:00"
+ },
+ {
+  "id": "9e562881-21d1-4ca2-a84c-1015b99a9569",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:45+00:00"
+ },
+ {
+  "id": "bdc5103e-a34c-4530-8395-88362e4e18f5",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:51+00:00"
+ },
+ {
+  "id": "a5b295c0-e2d5-4637-bc04-6e75352f72a3",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:14:56+00:00"
+ },
+ {
+  "id": "120654a5-77ba-486b-a77f-6960de204ccd",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:03+00:00"
+ },
+ {
+  "id": "993e972d-125a-4d38-a18b-3754cb30c660",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:10+00:00"
+ },
+ {
+  "id": "74acf548-e343-44dd-a708-fbb0a5cdd909",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:16+00:00"
+ },
+ {
+  "id": "3d7b31ed-7def-4b8e-9a9b-09f22342d741",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:21+00:00"
+ },
+ {
+  "id": "ba29bffc-6478-4dd7-80a4-4c3ab6157f59",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:23+00:00"
+ },
+ {
+  "id": "b236d75e-75b9-4665-9432-66afc2469d10",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:38+00:00"
+ },
+ {
+  "id": "d6ebddce-bcf5-48ed-8596-f91ae56efb73",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:47+00:00"
+ },
+ {
+  "id": "f5060212-f6b4-404b-b0e7-ae8aaa1807a5",
+  "dataset": "despesas-orcamentarias",
+  "reason": "schema",
+  "since": "2026-10-01T21:15:54+00:00"
+ },
+ {
+  "id": "e080550e-7238-444b-a821-8f5acfd82df2",
+  "dataset": "empresas-da-cidade-do-recife",
+  "reason": "schema",
+  "since": "2026-10-01T21:18:53+00:00"
+ },
+ {
+  "id": "537f0b95-4eb7-4912-9d7c-32caf9fd68ac",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:21+00:00"
+ },
+ {
+  "id": "30e87813-b5a3-4cbd-b35e-b09156f52698",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:23+00:00"
+ },
+ {
+  "id": "832ae42d-0163-45e8-82c1-a4e00a5ec1b6",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:24+00:00"
+ },
+ {
+  "id": "a4d419a8-4355-4ae9-b116-9cc35b914f50",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:26+00:00"
+ },
+ {
+  "id": "77040c32-2a39-4416-ba93-5c7386b46dcb",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:27+00:00"
+ },
+ {
+  "id": "ac869f94-a655-4388-871b-9957b0a642a4",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:29+00:00"
+ },
+ {
+  "id": "97109f18-a189-4084-acaf-b3aff6e65d51",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:30+00:00"
+ },
+ {
+  "id": "2e411ebc-0bef-4e03-ae34-2b792b5468c2",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:31+00:00"
+ },
+ {
+  "id": "dbd00afd-dc42-4643-babc-923ed694f154",
+  "dataset": "gabpe-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:49+00:00"
+ },
+ {
+  "id": "a473ea72-be05-481a-8bd3-05d139a1ccc4",
+  "dataset": "hoteis",
+  "reason": "schema",
+  "since": "2026-10-01T21:19:55+00:00"
+ },
+ {
+  "id": "fc95e204-a121-4b7a-94b2-e4420539c0d1",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:40+00:00"
+ },
+ {
+  "id": "1d705d4a-f67a-4914-971f-01f9b1685d1b",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:43+00:00"
+ },
+ {
+  "id": "756d9a7e-33aa-4fdd-a541-0f5dc97c7502",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:44+00:00"
+ },
+ {
+  "id": "47dfea23-81ec-455e-83a0-3e451e5b5ca6",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:46+00:00"
+ },
+ {
+  "id": "5226cf6f-ed06-4956-b133-a0c788a5d494",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:48+00:00"
+ },
+ {
+  "id": "f3a083a1-aa48-416d-b3aa-c022192219e6",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:50+00:00"
+ },
+ {
+  "id": "6f79d820-b764-4cde-939f-83d80e728c53",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:52+00:00"
+ },
+ {
+  "id": "6a8a8f7e-8d3d-4729-aaf9-fcc43ae2827a",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:54+00:00"
+ },
+ {
+  "id": "ae29c630-77b8-4109-8e1b-02292069f4d5",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:56+00:00"
+ },
+ {
+  "id": "53617998-09e8-420c-9399-75d859c8528e",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:25:58+00:00"
+ },
+ {
+  "id": "210db9b0-4ea5-49cb-8084-135ebfca848d",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:26:00+00:00"
+ },
+ {
+  "id": "87caf0ce-5f05-4952-abe5-83fa46eece4c",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "schema",
+  "since": "2026-10-01T21:26:02+00:00"
+ },
+ {
+  "id": "03995e83-91a3-4719-bedd-488886f103a1",
+  "dataset": "localizacao-dos-semaforos",
+  "reason": "schema",
+  "since": "2026-10-01T21:26:31+00:00"
+ },
+ {
+  "id": "d2199b6f-1d24-4553-980b-e11dafc90e06",
+  "dataset": "parques-e-pracas",
+  "reason": "schema",
+  "since": "2026-10-01T21:27:58+00:00"
+ },
+ {
+  "id": "45d0acc9-6fe0-4c4f-bce4-568a571beb0f",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "schema",
+  "since": "2026-10-01T21:54:22+00:00"
+ },
+ {
+  "id": "1c6901ad-863b-4ee7-9cc1-4b0afb6c6458",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "schema",
+  "since": "2026-10-01T21:54:23+00:00"
+ },
+ {
+  "id": "97622c28-79dd-4273-89a6-9958bf398ade",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "schema",
+  "since": "2026-10-01T21:54:28+00:00"
+ },
+ {
+  "id": "bf281fbc-167b-4602-994b-30772b11987f",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "schema",
+  "since": "2026-10-01T21:54:32+00:00"
+ },
+ {
+  "id": "c81ded9f-aeb1-4aca-9b68-0a1f72241b37",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "schema",
+  "since": "2026-10-01T21:54:37+00:00"
+ },
+ {
+  "id": "63d0e1db-c07f-44a1-a8d2-9fd89fa75eb5",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "schema",
+  "since": "2026-10-01T21:54:43+00:00"
+ },
+ {
+  "id": "b68ff504-bbe3-4827-8bbe-b03de22866c2",
+  "dataset": "postos-do-sistema-publico-de-emprego-trabalho-e-renda",
+  "reason": "schema",
+  "since": "2026-10-01T21:55:55+00:00"
+ },
+ {
+  "id": "9ea7be3e-595e-4763-a427-5364d871321a",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:29+00:00"
+ },
+ {
+  "id": "b5361f41-98a2-4b41-9dc9-0b3ec6927cec",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:31+00:00"
+ },
+ {
+  "id": "4b99433d-082a-43c2-8897-91a4c40e22c3",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:33+00:00"
+ },
+ {
+  "id": "58930e91-c8a8-432c-b9a2-568b9c6a0495",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:35+00:00"
+ },
+ {
+  "id": "ad7052eb-239e-4848-a233-a030fee17bad",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:37+00:00"
+ },
+ {
+  "id": "2797a465-9d65-4efe-9dd7-be7621d5ca8e",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:40+00:00"
+ },
+ {
+  "id": "b4e6656b-7c01-48c9-96b6-57af4dd12070",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:42+00:00"
+ },
+ {
+  "id": "c95f070c-1d3e-4dd8-8cf1-0b36b134b4eb",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:44+00:00"
+ },
+ {
+  "id": "082bf657-2f34-47ae-928e-573befb025b0",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:46+00:00"
+ },
+ {
+  "id": "a181ab4a-669d-493f-a26e-7dd71a31f71d",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:48+00:00"
+ },
+ {
+  "id": "d14a6333-02d0-4c25-8ca9-84a85e9a72b0",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:50+00:00"
+ },
+ {
+  "id": "fd0c6f4e-8632-420b-a6dd-bc87b74ad309",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:52+00:00"
+ },
+ {
+  "id": "34d0529b-b76d-4af4-a149-da2f69c8d9f7",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:56+00:00"
+ },
+ {
+  "id": "b049d350-d850-4777-bf34-3757665cdc30",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:56:58+00:00"
+ },
+ {
+  "id": "0d192ef2-907f-43a1-b59b-938252f11faf",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:00+00:00"
+ },
+ {
+  "id": "011b166f-5509-4f82-9d25-211d49fc17ec",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:02+00:00"
+ },
+ {
+  "id": "85ac34d9-77ae-49fe-8e44-05a5b4b72a78",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:04+00:00"
+ },
+ {
+  "id": "7c879ac7-b93a-4df5-b8fd-fb9c3fb22176",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:12+00:00"
+ },
+ {
+  "id": "bd0b74cf-32ec-4151-a5ef-131ce9e9b8bf",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:14+00:00"
+ },
+ {
+  "id": "8b123bf2-2442-42e2-870e-3d8912d20f5c",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:16+00:00"
+ },
+ {
+  "id": "a1b28cfe-1a02-4a02-9ea0-1375e094be61",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:19+00:00"
+ },
+ {
+  "id": "614f2150-0bcc-48bf-9861-2671598c1b83",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:21+00:00"
+ },
+ {
+  "id": "79026c79-2143-4d79-8925-0b981e872dba",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:23+00:00"
+ },
+ {
+  "id": "9ece874b-740a-41ca-87c1-36440c6a2811",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:25+00:00"
+ },
+ {
+  "id": "158eb450-9dc5-4f19-9fe5-21b7343fe7e7",
+  "dataset": "receitas",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:27+00:00"
+ },
+ {
+  "id": "0c1ac280-a412-4c5e-9a94-8e3a65cf4722",
+  "dataset": "recife-bom-de-bola",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:29+00:00"
+ },
+ {
+  "id": "0ac0e480-954c-41a5-b475-d96374e968e3",
+  "dataset": "recife-bom-de-bola",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:30+00:00"
+ },
+ {
+  "id": "16db0dcc-f871-46ee-8e0e-457072b5f940",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:43+00:00"
+ },
+ {
+  "id": "fd97260b-4a91-4c6a-ad14-7285e5f6ed9a",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:49+00:00"
+ },
+ {
+  "id": "9eabe813-a17c-4e8f-b91d-66ba7d4c269f",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:57:58+00:00"
+ },
+ {
+  "id": "896622f2-4104-4c6b-acc5-bded85fa8a26",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:58:09+00:00"
+ },
+ {
+  "id": "6bf55076-5aaa-4bf5-9f45-5a57352ac0c8",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:58:20+00:00"
+ },
+ {
+  "id": "6dd9f09e-f38a-482d-8a24-2b599ad25786",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:58:30+00:00"
+ },
+ {
+  "id": "3fa3f7b1-a829-4733-9a41-c1650a3e02a5",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:58:42+00:00"
+ },
+ {
+  "id": "d8ee485a-d1c7-4eda-9caa-e82f58afd590",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:58:59+00:00"
+ },
+ {
+  "id": "2460865c-ab1f-4bbe-b1a6-4caf3dd2e9d5",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:59:12+00:00"
+ },
+ {
+  "id": "09a80efd-f489-451e-b9b6-53900a2a4629",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:59:21+00:00"
+ },
+ {
+  "id": "84d405b8-9d36-457a-8e8d-790c844a8246",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:59:32+00:00"
+ },
+ {
+  "id": "5daac33d-b7b4-4667-93ed-96bf390ca671",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:59:45+00:00"
+ },
+ {
+  "id": "93fbf043-4d0c-4d03-85e0-e79e3ca11672",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:59:52+00:00"
+ },
+ {
+  "id": "b218c5f1-70cf-4995-9535-77db1243cfea",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T21:59:58+00:00"
+ },
+ {
+  "id": "a7557569-156d-4430-9fd4-c40504c64608",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T22:00:04+00:00"
+ },
+ {
+  "id": "06ff94fa-cdc8-4f3e-8807-92fcfe8fd67c",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T22:00:10+00:00"
+ },
+ {
+  "id": "d9da558a-14f8-4186-abb5-4e82b2f7242d",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T22:00:15+00:00"
+ },
+ {
+  "id": "91794ce3-63bd-4b4c-a126-c8df51115211",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T22:00:19+00:00"
+ },
+ {
+  "id": "48d40fa4-1707-41a2-bd4a-69ad2a0db4eb",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T22:00:23+00:00"
+ },
+ {
+  "id": "b666b401-c35c-41f3-bc09-3398ee2dd542",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "schema",
+  "since": "2026-10-01T22:00:25+00:00"
+ },
+ {
+  "id": "5767160f-f27a-43f1-9fe0-40ebd4742e3f",
+  "dataset": "registro-de-chamados-atendidos-pela-cttu",
+  "reason": "schema",
+  "since": "2026-10-01T22:01:26+00:00"
+ },
+ {
+  "id": "a6a6d09e-fc5c-4fec-adcb-bf9286d1748f",
+  "dataset": "registro-de-chamados-atendidos-pela-cttu",
+  "reason": "schema",
+  "since": "2026-10-01T22:01:28+00:00"
+ },
+ {
+  "id": "2c65f298-71d4-45aa-abc4-2fcca9c348df",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "schema",
+  "since": "2026-10-01T22:02:42+00:00"
+ },
+ {
+  "id": "53d64890-a485-4500-bd76-6a07d3ebe577",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "schema",
+  "since": "2026-10-01T22:02:46+00:00"
+ },
+ {
+  "id": "a854651c-28db-4f99-a51f-c042725b0786",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "schema",
+  "since": "2026-10-01T22:02:52+00:00"
+ },
+ {
+  "id": "cce28a39-57a9-4142-b2e0-bbda00214894",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "schema",
+  "since": "2026-10-01T22:02:58+00:00"
+ },
+ {
+  "id": "2a0dd9cf-86f4-4ceb-83c1-7e39ff239cb0",
+  "dataset": "roteiro-de-coleta",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:04+00:00"
+ },
+ {
+  "id": "7f822e13-e0ca-49ad-9d6d-5fdf44779747",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:05+00:00"
+ },
+ {
+  "id": "6ae3c4f4-e82c-4ab9-8104-9936347e3f14",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:07+00:00"
+ },
+ {
+  "id": "20b1cd8c-2d38-4569-ad0e-f6facac2d4ac",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:09+00:00"
+ },
+ {
+  "id": "d674f356-a47d-40d3-832a-006119e9927b",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:10+00:00"
+ },
+ {
+  "id": "9ac82c8f-02cd-4da5-a5d0-49335868697d",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:16+00:00"
+ },
+ {
+  "id": "61c441a7-90af-479c-b398-acf5c14113b0",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:29+00:00"
+ },
+ {
+  "id": "77c64eeb-e313-4a30-9704-a586294f9e43",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:42+00:00"
+ },
+ {
+  "id": "eb164432-7396-4494-9fae-cf0d12e7da2e",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "schema",
+  "since": "2026-10-01T22:03:56+00:00"
+ },
+ {
+  "id": "bef58232-0ce0-4501-9938-26da7e520f04",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "schema",
+  "since": "2026-10-01T22:04:11+00:00"
+ },
+ {
+  "id": "5a1886b1-ac1a-411f-92bb-34370bb9118f",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:38+00:00"
+ },
+ {
+  "id": "91999211-0837-410d-908c-4135ae2c409a",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:43+00:00"
+ },
+ {
+  "id": "9fef4678-67cf-49a6-8e22-d1b415296da8",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:46+00:00"
+ },
+ {
+  "id": "5d998f5d-eae6-4876-843a-1f9c648ed28e",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:49+00:00"
+ },
+ {
+  "id": "a31c576c-1bcd-485a-8546-734a8b828e4b",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:51+00:00"
+ },
+ {
+  "id": "ffc04018-955f-475a-a44c-e6f1bd5ee3e0",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:54+00:00"
+ },
+ {
+  "id": "6d0f4ef3-4cba-42dd-8504-6a65a11d0a02",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:56+00:00"
+ },
+ {
+  "id": "dc994740-914a-4b7c-906b-98544cfd2112",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:09:59+00:00"
+ },
+ {
+  "id": "b4b131b0-fbd1-4895-b595-407a0da63a40",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:01+00:00"
+ },
+ {
+  "id": "65f214c7-5745-4043-9cba-9d9468a2cc30",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:04+00:00"
+ },
+ {
+  "id": "01503e1d-7384-4fea-bae2-fb4551a01793",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:07+00:00"
+ },
+ {
+  "id": "07fc9aaa-12ef-4c72-adc3-57653a8bb75d",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:09+00:00"
+ },
+ {
+  "id": "f818c52c-8628-4649-862d-560ddf5cfa36",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:11+00:00"
+ },
+ {
+  "id": "c727e8f8-40e9-415e-b14d-2c46406abb60",
+  "dataset": "unidades-de-saude",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:22+00:00"
+ },
+ {
+  "id": "3e67a327-db30-4d4c-bd44-928e26e33c3f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media",
+  "reason": "schema",
+  "since": "2026-10-01T22:10:32+00:00"
+ },
+ {
+  "id": "b9350d37-1f6e-4abc-b8b0-b9968e6810ca",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:00+00:00"
+ },
+ {
+  "id": "f11bc729-a1da-4bde-880f-82f455993fcd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2016",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:02+00:00"
+ },
+ {
+  "id": "dc1e5a74-c053-4205-8c51-e5d7874b8b4f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2016",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:17+00:00"
+ },
+ {
+  "id": "da5378f5-81a7-4792-a718-e0bbfa03f586",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2017",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:18+00:00"
+ },
+ {
+  "id": "5df6f0ef-4437-468c-bce1-0cb9abcf35c4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2017",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:34+00:00"
+ },
+ {
+  "id": "f0ca82d6-8606-4147-93dc-0c8f0ffd2681",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:35+00:00"
+ },
+ {
+  "id": "177e9100-b5d1-44b7-82b2-f16902aecb71",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:36+00:00"
+ },
+ {
+  "id": "a6868466-b913-42f0-a876-63c9efeca133",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:42+00:00"
+ },
+ {
+  "id": "6be9d59d-9d1a-4110-9f28-d7e19d761eaf",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:45+00:00"
+ },
+ {
+  "id": "6da827f7-fd2e-41f0-a098-8763cc3463ae",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:50+00:00"
+ },
+ {
+  "id": "ba326583-bd47-42f9-9ea5-c31267fd398e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:11:55+00:00"
+ },
+ {
+  "id": "2db09361-ba51-41d1-b125-a0878c029ec3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:00+00:00"
+ },
+ {
+  "id": "d88beae5-3477-4e64-9f4e-074824299fb4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:05+00:00"
+ },
+ {
+  "id": "d5e20bc1-5a87-4fd8-addf-e791846ab1cd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:08+00:00"
+ },
+ {
+  "id": "fb6cd866-01f3-45f9-b779-d3e4662708e6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:12+00:00"
+ },
+ {
+  "id": "b6df8668-c6e9-4830-b3d8-58fdd8844fd9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:18+00:00"
+ },
+ {
+  "id": "2c48188a-f0c7-4d29-b33e-de5c5364a686",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:23+00:00"
+ },
+ {
+  "id": "e760432b-fe6b-4353-bbed-e1221fd3aa03",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:28+00:00"
+ },
+ {
+  "id": "29b31161-1836-4b8a-8bd8-4ee6a0ab5562",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:33+00:00"
+ },
+ {
+  "id": "d2749435-80d4-45ce-937c-34af2027754a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:38+00:00"
+ },
+ {
+  "id": "5932d029-7f6a-4e0e-a8cd-4ad02d322fa3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:44+00:00"
+ },
+ {
+  "id": "3fccbf68-d917-4140-b7a9-6c9b3bd6442e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:49+00:00"
+ },
+ {
+  "id": "f5ee5bae-ab6e-45c1-983c-36c3aa1a9e57",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:54+00:00"
+ },
+ {
+  "id": "d4a4a23e-665e-4f5c-93f1-27fa2ce64e3c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:12:59+00:00"
+ },
+ {
+  "id": "07e016d4-7ed3-40af-95d2-d7840c098b29",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:05+00:00"
+ },
+ {
+  "id": "d83e4cb1-2319-40a0-93b0-735fa828e99c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:08+00:00"
+ },
+ {
+  "id": "07c09cb9-98cf-4094-b9a8-fd90523ae503",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:10+00:00"
+ },
+ {
+  "id": "f130cb0d-8b2c-4c03-9fc1-0eca813b2be0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:13+00:00"
+ },
+ {
+  "id": "458fe852-b33f-47bb-ad4c-3c61f5a0ae5b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:15+00:00"
+ },
+ {
+  "id": "8b769d57-70b9-4fe0-81a1-d7ed8d569c45",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:17+00:00"
+ },
+ {
+  "id": "12469446-a9c6-4129-b7b1-8ef70c9b8f89",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:22+00:00"
+ },
+ {
+  "id": "c5d90dee-3d81-4230-b7ce-c0a548e9926d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:23+00:00"
+ },
+ {
+  "id": "39bbfe53-c87c-4c09-90be-bc1b6f7b1946",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:28+00:00"
+ },
+ {
+  "id": "43991b73-2ab5-4d4c-b9fb-ffe0f1453700",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:33+00:00"
+ },
+ {
+  "id": "fcf02308-b6d0-421e-8040-27ccf357dba2",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:38+00:00"
+ },
+ {
+  "id": "b83a09c9-8fef-4fd2-a382-92b5352d1f85",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:43+00:00"
+ },
+ {
+  "id": "cbd0cf6a-683e-4d4d-9897-907cd6f9ba2f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:46+00:00"
+ },
+ {
+  "id": "4f314665-d8f6-4a0e-af32-a703c1c27ec6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:50+00:00"
+ },
+ {
+  "id": "d225f838-44f3-4225-91b1-29426b43e64d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:52+00:00"
+ },
+ {
+  "id": "046ed235-9c59-4ccd-90d0-846003adaccd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:54+00:00"
+ },
+ {
+  "id": "80808b18-9aad-4470-89ce-b1038afc9a95",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:55+00:00"
+ },
+ {
+  "id": "6105b0dd-e0d4-41c7-9b41-4c3e817ded18",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:13:58+00:00"
+ },
+ {
+  "id": "a1febbf8-728a-4434-8313-d5d7a734b971",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:00+00:00"
+ },
+ {
+  "id": "edb7f728-dfda-4ef3-be43-1c61217ec02a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:03+00:00"
+ },
+ {
+  "id": "761ff626-0a4a-4db2-9280-5a8dea04a13a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:05+00:00"
+ },
+ {
+  "id": "b5f69c8c-3763-4ef7-9ea3-846c667c87ab",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:09+00:00"
+ },
+ {
+  "id": "d74c11f8-0ec2-4735-8d2c-e5b4c980c578",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:12+00:00"
+ },
+ {
+  "id": "e0396cf2-d8c3-4721-b76b-bfcd17e77768",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:16+00:00"
+ },
+ {
+  "id": "a630e9ae-05b0-423e-b5dd-63dc9ca90952",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:19+00:00"
+ },
+ {
+  "id": "bf7a3ee4-e845-4460-8c1a-7511a27b2194",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:24+00:00"
+ },
+ {
+  "id": "074ee25b-15c3-4d91-91d0-34c62c389b34",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:27+00:00"
+ },
+ {
+  "id": "3fb01705-d5d9-4248-80ed-466db4352cb6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:31+00:00"
+ },
+ {
+  "id": "b2f96deb-5845-4a99-8fa6-0ce90fc18005",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:34+00:00"
+ },
+ {
+  "id": "684e1bb3-282c-42ee-a6c1-1dbbcfddf563",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:35+00:00"
+ },
+ {
+  "id": "34108fa1-9d01-4dce-a3d5-1d50f4c3fb2f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:40+00:00"
+ },
+ {
+  "id": "d193d53f-34a1-4e75-aee7-50b610f9e4d0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:45+00:00"
+ },
+ {
+  "id": "e95b2469-c443-4052-a3ac-6626cfd82054",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:50+00:00"
+ },
+ {
+  "id": "30d74c99-d013-4d25-b88c-23e978ea5de9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:55+00:00"
+ },
+ {
+  "id": "5af2adc9-2688-4240-874c-4bd7d1e4568f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:14:59+00:00"
+ },
+ {
+  "id": "2b305eef-c65e-4c24-a3e1-426ce6689a15",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:04+00:00"
+ },
+ {
+  "id": "8f601439-06c7-4ef3-a237-e8b0a54e31dd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:07+00:00"
+ },
+ {
+  "id": "bda7b808-4c5a-4946-a84f-6246240e6472",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:10+00:00"
+ },
+ {
+  "id": "0d201826-34c0-4744-b192-ec4cb25ca27b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:13+00:00"
+ },
+ {
+  "id": "9ada3cab-c8ae-4cc7-9c60-8d9a27108e6a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:18+00:00"
+ },
+ {
+  "id": "6709aa34-20b5-4f1d-87a7-2fdeba50f543",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:20+00:00"
+ },
+ {
+  "id": "45c0f7ca-7dfb-4222-b493-3e7bd45600a9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:22+00:00"
+ },
+ {
+  "id": "22cee491-810a-4f73-b167-228b6f091318",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:23+00:00"
+ },
+ {
+  "id": "776628c5-f868-46de-b061-04d793c0f1aa",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:26+00:00"
+ },
+ {
+  "id": "503cb08f-7a91-4149-95e9-17c4ed1d1c30",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:27+00:00"
+ },
+ {
+  "id": "6d825476-f36c-487b-9e98-cc448efc578f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:31+00:00"
+ },
+ {
+  "id": "8de624ca-e92d-435d-be37-b129f2e912df",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:34+00:00"
+ },
+ {
+  "id": "4ef3338a-24a2-4939-bb40-5a4c16ce2d63",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:37+00:00"
+ },
+ {
+  "id": "e10cd707-a3a5-48d9-a6b4-27eaa983d78f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:40+00:00"
+ },
+ {
+  "id": "6d64fdc4-8c4b-4e08-9c5d-39bcf647219c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:43+00:00"
+ },
+ {
+  "id": "77a6b4de-aff1-40c6-8c02-2767c1d2c310",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:45+00:00"
+ },
+ {
+  "id": "d65dbfa3-8236-4d7b-959f-33cf17f345e1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:49+00:00"
+ },
+ {
+  "id": "9ee49311-29fb-48ca-9e5b-f4e0575a92d5",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:53+00:00"
+ },
+ {
+  "id": "bf6e28b0-a0f3-46e5-9bcf-0dec3162e972",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:58+00:00"
+ },
+ {
+  "id": "31a89737-fa20-4ff6-b536-b09056dbfb53",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:15:59+00:00"
+ },
+ {
+  "id": "5e858ec9-0cc2-4bb4-881b-22b049182361",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:04+00:00"
+ },
+ {
+  "id": "bba1eef0-1e98-4612-ab16-974a98d22235",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:07+00:00"
+ },
+ {
+  "id": "09d68ad5-765e-418c-b58f-abfb787d231a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:11+00:00"
+ },
+ {
+  "id": "30eaab41-d384-49c5-a307-ca1c41353552",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:16+00:00"
+ },
+ {
+  "id": "695ff4aa-8261-4db9-803f-fd76cc0bba7b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:21+00:00"
+ },
+ {
+  "id": "cf236fb7-744c-49fb-aaf7-5b639901acdb",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:26+00:00"
+ },
+ {
+  "id": "8bdf9987-2fb2-4d75-8424-c31663fb9373",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:30+00:00"
+ },
+ {
+  "id": "c0140f2f-9ec0-4df7-a3ee-3926f0bc0a2d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:34+00:00"
+ },
+ {
+  "id": "518c68b5-1c82-45d1-a131-eb250f77b819",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:38+00:00"
+ },
+ {
+  "id": "baac098c-e060-4a36-83ac-dfae23c1254f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:42+00:00"
+ },
+ {
+  "id": "e16eef12-2d96-4403-ba4b-8e26fc539f5f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:47+00:00"
+ },
+ {
+  "id": "a180cc4a-14fc-4e9e-82ce-937048a85409",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:52+00:00"
+ },
+ {
+  "id": "e80bf7e1-54e7-412d-9923-a8ccbeb3f499",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:16:57+00:00"
+ },
+ {
+  "id": "abc6a3b2-fa9d-4a37-b567-9d1f2980d285",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:01+00:00"
+ },
+ {
+  "id": "9e05fa52-5387-422b-ba41-597b490a206c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:06+00:00"
+ },
+ {
+  "id": "ad8f22f2-59ad-4a92-bada-505d45e6fae4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:11+00:00"
+ },
+ {
+  "id": "0520cb7c-ea24-4762-b042-1b556589ebfc",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:17+00:00"
+ },
+ {
+  "id": "f219563e-bf9f-40d8-9e54-6aa5f938fe79",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:22+00:00"
+ },
+ {
+  "id": "315c8c58-807d-4cba-a332-2daf8a2afb81",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:25+00:00"
+ },
+ {
+  "id": "47177255-ceca-44cf-a10b-040247c6a3ea",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:30+00:00"
+ },
+ {
+  "id": "9fde3b84-c610-4d8d-8abc-cc8a5a149295",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:34+00:00"
+ },
+ {
+  "id": "addd20c3-e307-4dbb-b85f-cca390bc0057",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:39+00:00"
+ },
+ {
+  "id": "2a9693fe-ee56-42fd-9742-8ac8fd20b016",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:44+00:00"
+ },
+ {
+  "id": "fbd1a3d4-6426-4260-9c3e-b2eb4e4c7054",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:48+00:00"
+ },
+ {
+  "id": "c432bef6-1b75-4b4f-90fc-7e6166d3a8b0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:53+00:00"
+ },
+ {
+  "id": "cf6c19b2-9ea9-46ab-95eb-eea1f3bddf27",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:17:58+00:00"
+ },
+ {
+  "id": "38d3ea34-0789-44b7-b7e0-385eb7b4a91e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:04+00:00"
+ },
+ {
+  "id": "c4c337c4-cb80-4db9-8b36-368e903b8376",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:09+00:00"
+ },
+ {
+  "id": "381313a9-0d84-4a60-a059-1bbf99d72da4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:15+00:00"
+ },
+ {
+  "id": "10406924-b541-4f5f-acde-2a4059eb83aa",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:21+00:00"
+ },
+ {
+  "id": "a6c8f874-7598-4266-bce8-841d9776e99d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:27+00:00"
+ },
+ {
+  "id": "aefcf5a4-dfe6-40a2-8781-9367ba6892b0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:33+00:00"
+ },
+ {
+  "id": "13aa2190-37ff-43f6-b4c9-2497323edb97",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:39+00:00"
+ },
+ {
+  "id": "d9239aed-cbed-49ef-bd08-8ec30675e833",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:44+00:00"
+ },
+ {
+  "id": "f0f5f105-116c-4069-9f31-257f3f20dab7",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:48+00:00"
+ },
+ {
+  "id": "f9739869-527b-4a16-aa2b-a29abce1026f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:51+00:00"
+ },
+ {
+  "id": "78545f61-378a-4a97-9839-3b6bc06c3214",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:55+00:00"
+ },
+ {
+  "id": "33a29100-5c0c-4eca-adfe-2296a80224df",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:18:57+00:00"
+ },
+ {
+  "id": "ce7c5b17-a7ac-408a-80f8-a2aef0e5628e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:04+00:00"
+ },
+ {
+  "id": "b190f1ab-a8a4-4400-8348-f55e1bde86dc",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:09+00:00"
+ },
+ {
+  "id": "bd07fcfd-f423-4a3c-99a6-72fdc2cdb3ac",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:13+00:00"
+ },
+ {
+  "id": "bdf27d7d-7d54-44fc-8ab3-2756de613759",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:15+00:00"
+ },
+ {
+  "id": "f4be8cf7-3329-45b9-9f70-6ce6b0efa744",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:21+00:00"
+ },
+ {
+  "id": "89b44e2a-f866-4938-9d4d-8cf42d2b91a3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:25+00:00"
+ },
+ {
+  "id": "e919534b-6abc-4192-8cbf-aea47845ae06",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:31+00:00"
+ },
+ {
+  "id": "ae5b66e0-7b28-4c4a-b833-c61c84a60776",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:37+00:00"
+ },
+ {
+  "id": "5962267f-2f2c-457b-8aff-67b2f35b9551",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:43+00:00"
+ },
+ {
+  "id": "446acfd9-7d13-48e2-9514-159e555149e9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:47+00:00"
+ },
+ {
+  "id": "e814ff04-c9df-4486-bc78-90729c0d4b39",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:49+00:00"
+ },
+ {
+  "id": "b6fd6306-d908-419e-90a3-2a5645d8fddf",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:52+00:00"
+ },
+ {
+  "id": "2dac5f78-380f-4cbc-bf5a-eb92ab81112f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:19:55+00:00"
+ },
+ {
+  "id": "014d7b6d-d256-4b7d-b470-f3dbbd4e6fd4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:01+00:00"
+ },
+ {
+  "id": "35fa3703-9512-4da3-8247-94981a5a0997",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:05+00:00"
+ },
+ {
+  "id": "4ba9982a-ee77-463e-8596-7cb16a32f597",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:07+00:00"
+ },
+ {
+  "id": "3a2cb0da-57c6-4565-b1c3-edfa4d2249fa",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:10+00:00"
+ },
+ {
+  "id": "51eacdbc-30b3-4f69-9d4a-793094b8321a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:13+00:00"
+ },
+ {
+  "id": "eb877bc9-1f08-4f2b-a4ad-ac6894aca10d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:15+00:00"
+ },
+ {
+  "id": "48a9fddf-4fa5-4eae-b07a-621cdf844ff0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:21+00:00"
+ },
+ {
+  "id": "398da1f7-b9c2-4705-969b-f6137c65412c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:25+00:00"
+ },
+ {
+  "id": "bdf2d83a-c489-4b09-8890-e628d6a2450a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:27+00:00"
+ },
+ {
+  "id": "4f631aaa-8913-40c7-b292-88b8c1c085c7",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:30+00:00"
+ },
+ {
+  "id": "5d7a11a6-06e5-4bd6-bd71-d58fc7f7d734",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:32+00:00"
+ },
+ {
+  "id": "137881df-0392-41c1-bb75-88a907deea92",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:35+00:00"
+ },
+ {
+  "id": "5e2b4044-033a-49fa-8918-76dd912f4941",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:41+00:00"
+ },
+ {
+  "id": "a68e2c4c-2832-4a9a-9419-8876e53f5477",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:44+00:00"
+ },
+ {
+  "id": "236f10b8-d0ce-4dfd-9403-82873824398f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:50+00:00"
+ },
+ {
+  "id": "4a0e0766-1bf7-4ac5-8575-88019e289d82",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:52+00:00"
+ },
+ {
+  "id": "742b89ea-be18-4620-88c1-733fc0bf3e62",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:20:58+00:00"
+ },
+ {
+  "id": "ed003324-8a1b-4e89-8809-aa1a6403bca1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:01+00:00"
+ },
+ {
+  "id": "4b572a69-6c70-4ba4-869c-82a1c7a53c96",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:04+00:00"
+ },
+ {
+  "id": "76472250-3361-4ac4-8c8c-9607743b4c86",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:06+00:00"
+ },
+ {
+  "id": "69261374-1795-4d45-851c-55b2ab3ed2de",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:12+00:00"
+ },
+ {
+  "id": "aa7e14da-f098-436c-ab8f-533a200988b0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:14+00:00"
+ },
+ {
+  "id": "f0850d9c-7b98-4dfd-9d1c-415e30916679",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:20+00:00"
+ },
+ {
+  "id": "030bde41-e7d2-424c-9a6a-8c4b875968a1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:23+00:00"
+ },
+ {
+  "id": "e772bbc9-268d-43d9-a1b4-0f4c2073a097",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:29+00:00"
+ },
+ {
+  "id": "32866a80-1746-4171-bc5a-d4f799ecd8f1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:31+00:00"
+ },
+ {
+  "id": "4980b7ed-e305-4f8a-aa78-e5bbb2ac6f6f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:34+00:00"
+ },
+ {
+  "id": "6aabe426-0e91-4036-b0e4-2a6a9f920ef6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:36+00:00"
+ },
+ {
+  "id": "e47ee114-80a2-4ce8-a270-d1837abeb869",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:41+00:00"
+ },
+ {
+  "id": "be407778-f636-43a0-b267-d31e3ffcf294",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:48+00:00"
+ },
+ {
+  "id": "6a09bb99-1576-4fa3-8401-06fa22956d7c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:21:55+00:00"
+ },
+ {
+  "id": "4e0e3636-2309-4864-a3f0-ba507227aeec",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:02+00:00"
+ },
+ {
+  "id": "bd0b2b1a-0b0e-4d3c-8af1-b647443f35e8",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:09+00:00"
+ },
+ {
+  "id": "9aa173be-36dd-4703-8a2b-839a3d2f1c35",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:16+00:00"
+ },
+ {
+  "id": "d6da9d4f-21d3-4277-9782-d8cf711e5db6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:23+00:00"
+ },
+ {
+  "id": "8d45a269-6a3e-4e88-bafd-2c58f4793653",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:28+00:00"
+ },
+ {
+  "id": "82448416-7e34-48ca-8814-c7dbce9edf72",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:32+00:00"
+ },
+ {
+  "id": "64ea5df7-6278-4982-b337-76afa12ba755",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:38+00:00"
+ },
+ {
+  "id": "b9ca3810-bda7-40ab-a78f-d7abee2e4105",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:45+00:00"
+ },
+ {
+  "id": "98511425-9936-4adc-a864-e721229e14b9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:51+00:00"
+ },
+ {
+  "id": "bbd17050-36b6-4435-b060-9835ab3149bd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:22:58+00:00"
+ },
+ {
+  "id": "4b4e9c97-261e-4a04-a52f-b9fa088839b5",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:05+00:00"
+ },
+ {
+  "id": "f1b25318-49a4-4ee0-b3ab-7c5f5babc82c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:13+00:00"
+ },
+ {
+  "id": "76698cb4-e5d8-41b2-a942-b33141b3dbbf",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:19+00:00"
+ },
+ {
+  "id": "f71846ba-9145-410c-a8cf-97dc815b0f02",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:26+00:00"
+ },
+ {
+  "id": "9398f515-144d-43ca-a6f1-454e0ff4cb31",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:33+00:00"
+ },
+ {
+  "id": "62f4addc-3e59-4dac-9f58-a99b8ec38336",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:37+00:00"
+ },
+ {
+  "id": "7937d6d3-810b-4581-bb98-c88b24e0a030",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:42+00:00"
+ },
+ {
+  "id": "21593c1f-827c-48ee-85d7-61d63f2f7cb3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:48+00:00"
+ },
+ {
+  "id": "5dff1753-32b3-4bb1-a4c5-50d2a01c0188",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:23:55+00:00"
+ },
+ {
+  "id": "941d0d9b-d654-4a40-8cc6-6a616cba56b4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:02+00:00"
+ },
+ {
+  "id": "fe8bcd7d-2010-42f3-b0f7-ff26644012a1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:09+00:00"
+ },
+ {
+  "id": "101d55e8-6a66-4699-9a0c-a6381752ca93",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:16+00:00"
+ },
+ {
+  "id": "5a811f41-2b55-434c-bb9a-cb842952c29b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:23+00:00"
+ },
+ {
+  "id": "fdac4bad-fa08-4e03-a506-59c9668e92ea",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:30+00:00"
+ },
+ {
+  "id": "b559545e-fd18-4ed8-8b8c-1fd9b84b33e3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:37+00:00"
+ },
+ {
+  "id": "8b0ad1c0-829b-4c89-91a7-631960f12b91",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:41+00:00"
+ },
+ {
+  "id": "100ed0d0-b7f4-4221-94a8-2f045f8b6ce8",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:44+00:00"
+ },
+ {
+  "id": "ade58fbf-d2a8-4e0b-bf1d-759e2e409788",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:50+00:00"
+ },
+ {
+  "id": "c5a61cf6-5b63-4ffb-ab3a-568391ecc58b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:24:57+00:00"
+ },
+ {
+  "id": "9141d951-7586-49c9-b307-d63b551f7c6b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:01+00:00"
+ },
+ {
+  "id": "bc3de36d-7134-4348-a39a-5404eab8eeef",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:04+00:00"
+ },
+ {
+  "id": "45d9e9ce-afe1-40d9-a7ed-6a8012116049",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:07+00:00"
+ },
+ {
+  "id": "5b1b5eda-c20b-4462-b2d2-1a271d58795a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:10+00:00"
+ },
+ {
+  "id": "ef5f7a69-0ca2-4de8-a044-d235afd7369a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:13+00:00"
+ },
+ {
+  "id": "88ffc13a-11e5-41d9-9e66-d9f6894cb2c8",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:16+00:00"
+ },
+ {
+  "id": "de8868fb-34e7-4ac1-bba1-a12fe0b42f66",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:19+00:00"
+ },
+ {
+  "id": "7e03ee54-766c-4706-b943-1e7345c1b884",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:22+00:00"
+ },
+ {
+  "id": "b775a2f3-322b-4c7f-a952-162b3d8a38c9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:24+00:00"
+ },
+ {
+  "id": "e28c1159-2b6e-483a-a38d-d7c0abd5fd23",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:27+00:00"
+ },
+ {
+  "id": "c2d9c049-6511-4dc4-9691-b76a43e4f7e3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:30+00:00"
+ },
+ {
+  "id": "c335dc09-38e3-4c10-91ec-fa1d0ae7f03a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:33+00:00"
+ },
+ {
+  "id": "7efe6eea-36ef-4923-9394-bf141921e528",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:40+00:00"
+ },
+ {
+  "id": "23c0e276-a584-4603-ab38-9db234fe60c3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:47+00:00"
+ },
+ {
+  "id": "f4c1dc94-2347-4151-b194-428b5d2ef387",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:25:55+00:00"
+ },
+ {
+  "id": "b5d78564-2a1e-42b9-8ffa-3487aa857d93",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:26:03+00:00"
+ },
+ {
+  "id": "611de90b-9994-49d4-bbf7-292448d8145a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:26:11+00:00"
+ },
+ {
+  "id": "7a43d9b7-024d-4f46-ae3c-3179437536d4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "schema",
+  "since": "2026-10-01T22:26:18+00:00"
+ }
+]

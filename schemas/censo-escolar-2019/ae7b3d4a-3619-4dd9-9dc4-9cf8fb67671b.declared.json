@@ -431,7 +431,7 @@
    "sha256": "3e9a9e7e5fddf030d78fddc714d9678b4604122824892486aa81ef08badf0ee6",
    "reader": "xlsx",
    "part": "Tabela de Gestor",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

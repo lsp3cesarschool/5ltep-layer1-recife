@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome da pessoa vacinada",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "grupo",
+   "type": "string",
+   "description": "Grupo prioritário a qual a pessoa foi priorizada na vacinação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "Vacina",
+   "type": "string",
+   "description": "Vacina recebida",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "lote",
+   "type": "string",
+   "description": "Lote da vacina",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "Char",
+   "declaredSize": 15
+  },
+  {
+   "name": "dose",
+   "type": "number",
+   "description": "descrição do horário de atendimento",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "data_vacinacao",
+   "type": "date",
+   "description": "Data de recebimento da vacina",
+   "declaredType": "Date",
+   "declaredSize": 100
+  },
+  {
+   "name": "local_vacinacao",
+   "type": "string",
+   "description": "Local onde a vacina foi aplicada",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "69804fb7-5b15-4d50-9e7a-9ab2f37b91ca",
+   "dictionary_name": "Dicionário de Dados - Relação de Vacinados",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/c00cccd8-bf7f-4a70-a8c9-2aaad7e01ac2/resource/69804fb7-5b15-4d50-9e7a-9ab2f37b91ca/download/dicionario-de-dados-relacao-de-vacinados.json",
+   "sha256": "dad41f4737baf2b319373bed464c3f86ddb438f13ac0cede57ad9ec74dd66266",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

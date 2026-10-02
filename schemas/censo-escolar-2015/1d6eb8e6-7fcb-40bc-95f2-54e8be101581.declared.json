@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "etapa_ensino",
+   "type": "number",
+   "description": "Código da Etapa de Ensino",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "etapa_ensino_nome",
+   "type": "string",
+   "description": "Nome da Etapa de Ensino",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  },
+  {
+   "name": "modalidade",
+   "type": "string",
+   "description": "Modalidade",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "26830361-9311-40e0-bda6-5c8741405009",
+   "dictionary_name": "Dicionário de Dados Censo Escolar 2015 (Etapas)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/463bf158-fad9-43ad-a642-afba60e46f5d/resource/26830361-9311-40e0-bda6-5c8741405009/download/dicionario-de-dados-censo-escolar-2015-etapas.json",
+   "sha256": "a1bf33ff2d7b24c8abc9c01843cc683fa871a2a7576dfae6e1e79ef522e8d727",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

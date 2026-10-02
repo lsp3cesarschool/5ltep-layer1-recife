@@ -746,7 +746,7 @@
    "sha256": "5c11ab60bfeb78d403304016c768102d67bd9e81a5cf87014320b25cdd6ac34b",
    "reader": "xlsx",
    "part": "RH",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

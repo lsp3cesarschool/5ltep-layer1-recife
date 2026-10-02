@@ -3,7 +3,7 @@
   {
    "name": "nome_oficial",
    "type": "string",
-   "description": "Nome da Unidade de Odontológica de Urgência",
+   "description": "Nome da Unidade de especialidades odontológicas",
    "constraints": {
     "maxLength": 100
    },
@@ -160,13 +160,13 @@
   "status": "declared",
   "source": {
    "kind": "dictionary",
-   "dictionary_id": "a011aeb6-c969-4218-b1af-9d7cd46609f9",
-   "dictionary_name": "Dicionário de dados do serviço odontológico de urgência",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/f8d50ec0-757d-4dc0-829c-d39297448c14/resource/a011aeb6-c969-4218-b1af-9d7cd46609f9/download/dicionario-de-dados-do-servico-odontologico-de-urgencia.json",
-   "sha256": "33ada4dc800e99c5b1b785cb6b892380e85fc04081b0655c7fa6db0e27d6291e",
+   "dictionary_id": "9acd70a5-e552-4145-ba05-62bb1aea1d08",
+   "dictionary_name": "metadados - Especialidades Odontológicas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/f8d50ec0-757d-4dc0-829c-d39297448c14/resource/9acd70a5-e552-4145-ba05-62bb1aea1d08/download/metadados-especialidades-odontologicas.json",
+   "sha256": "839690c61d5177c1bdedc6c4c754cb5fa193d49e49e5576aa6fd92eee178d880",
    "reader": "json",
    "part": "metadados.campos",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }

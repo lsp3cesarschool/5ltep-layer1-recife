@@ -1,0 +1,142 @@
+{
+ "fields": [
+  {
+   "name": "mes",
+   "type": "number",
+   "description": "Mes de leitura do equipamento [Allowed values, as declared: 1,2,3,4,5,6,7,8,9,10,11,12]",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "equipamento",
+   "type": "string",
+   "description": "Código do equipamento da via",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "faixa",
+   "type": "number",
+   "description": "Faixa da via lida pelo equipamento [Allowed values, as declared: 1,2,3,4]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "data",
+   "type": "date",
+   "description": "Data de leitura pelo equipamento",
+   "declaredType": "Date",
+   "declaredSize": 10
+  },
+  {
+   "name": "hora",
+   "type": "number",
+   "description": "Hora de leitura pelo equipamento",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "minutos_intervalo",
+   "type": "string",
+   "description": "Intervalo dos Minutos considerado para leitura, dentro da hora informada, para a contagem de veículos [Allowed values, as declared: 0-15, 16-30,31-45,46-59]",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "char",
+   "declaredSize": 10
+  },
+  {
+   "name": "qtd_0a10km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_11a20km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_21a30km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_31a40km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_41a50km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_51a60km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_61a70km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_71a80km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_81a90km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_91a100km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "qtd_acimade100km",
+   "type": "number",
+   "description": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+   "declaredType": "Num",
+   "declaredSize": 5
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "6d9b69b0-5b3a-453c-9b37-042ddf38090e",
+   "dictionary_name": "Dicionário de Dados - Velocidade das Vias",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/e6a6b669-ba47-40d6-adb6-dd2c63547a48/resource/6d9b69b0-5b3a-453c-9b37-042ddf38090e/download/dicionario-de-dados-velocidade-das-vias.json",
+   "sha256": "b0cb0f8993c5ba2473edf586d43f9e87705222c4991eb39141e8029ab3199604",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}
