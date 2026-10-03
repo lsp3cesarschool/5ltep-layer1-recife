@@ -50,6 +50,11 @@ const I18N = {
     o_failed: "not extracted", o_pending: "waiting for the file's header",
     open_pr: "pull request ↗", schemas_label: "schemas",
     t_datasets: "Datasets", t_files: "Tabular files", t_checked: "Files read", t_conf: "Files that conform",
+    t_queue: "In the queue", queue_note: "{gb} GB declared on the portal", s_queued: "in the queue", queue_big: "largest in the queue",
+    live_for: "{what} for {d}", live_since: "since {t}", live_run: "see the run",
+    live_wait: "waiting for a GitHub machine", live_prep: "preparing", live_survey: "surveying the portal",
+    live_pdf: "reading PDF dictionaries", live_llm: "reading PDF dictionaries with the local model",
+    live_validate: "downloading and validating files", live_publish: "publishing the results",
     t_dicts: "Dictionaries", dicts_note: "{m} machine-readable ({r} read) · {p} PDF · {o} not linked to any file",
     files_size: "{gb} GB declared on the portal", files_unknown: "{n} without a declared size",
     t_drift: "Schema drift events", of_total: "{n} of {t}", conf_note: "{n} of {t} files with a declared schema",
@@ -153,6 +158,11 @@ const I18N = {
     o_failed: "não extraído", o_pending: "aguardando o cabeçalho do arquivo",
     open_pr: "pull request ↗", schemas_label: "esquemas",
     t_datasets: "Conjuntos de dados", t_files: "Arquivos tabulares", t_checked: "Arquivos lidos",
+    t_queue: "Na fila", queue_note: "{gb} GB declarados no portal", s_queued: "na fila", queue_big: "maiores na fila",
+    live_for: "{what} há {d}", live_since: "desde {t}", live_run: "ver a execução",
+    live_wait: "aguardando uma máquina do GitHub", live_prep: "preparando", live_survey: "levantamento do portal",
+    live_pdf: "lendo dicionários em PDF", live_llm: "lendo dicionários em PDF com o modelo local",
+    live_validate: "baixando e validando arquivos", live_publish: "publicando os resultados",
     t_dicts: "Dicionários", dicts_note: "{m} legíveis por máquina ({r} lidos) · {p} em PDF · {o} sem ligação com arquivo",
     files_size: "{gb} GB declarados no portal", files_unknown: "{n} sem tamanho declarado",
     t_conf: "Arquivos conformes", t_drift: "Eventos de deriva de esquema", of_total: "{n} de {t}",
@@ -317,12 +327,22 @@ function renderTiles(s) {
   const dictTile = dc.total == null ? "" : tile(t("t_dicts"), fmt(dc.total), esc(t("dicts_note", {
     m: fmt(dc.machine_readable), r: fmt(dc.machine_readable_and_read), p: fmt(dc.human_readable), o: fmt(dc.orphans) }))
     + more("findings"));
+  // the largest files still to read, the same name and size counted once (a file published twice)
+  const big = [];
+  for (const x of tb.queue_largest || []) {
+    const same = big.find((b) => b.name === x.name && b.gb === x.gb);
+    same ? same.n++ : big.push({ ...x, n: 1 });
+  }
+  const queueTile = !tb.queue_remaining ? "" : tile(t("t_queue"), fmt(tb.queue_remaining),
+    esc(t("queue_note", { gb: gb(tb.queue_gb || 0) }))
+    + (big.length ? `<br>${esc(t("queue_big"))}: ` + big.map((x) => esc(`${x.name} (${gb(x.gb)} GB)${x.n > 1 ? ` ×${x.n}` : ""}`)).join(" · ") : ""));
   el("tiles").innerHTML = [
     tile(t("t_datasets"), fmt(s.datasets.total)),
     dictTile,
     tile(t("t_files"), fmt(tb.total), esc(filesNote)),
     tile(t("t_checked"), fmt(c.read), esc(t("read_note", { n: fmt(c.read), t: fmt(c.files), nd: fmt(c.not_downloaded),
       e: fmt(c.empty), nt: fmt(c.not_tabular), tl: fmt(c.too_large || 0) })) + more("coverage"), c.files ? c.read / c.files : 0),
+    queueTile,
     tile(t("t_conf"), pct(s.l1_rate), esc(t("conf_tile_note", { c: fmt(c.conform), k: fmt(c.checked), w: fmt(c.read_without_schema) }))
       + ` · ${esc(t("threshold", { t: pct(s.method.l1_pass_threshold) }))}` + more("coverage"), s.l1_rate ?? 0, status),
     tile(t("t_drift"), fmt(d.observed + d.declared), esc(driftNote) + more("drift")),
@@ -626,13 +646,20 @@ function renderDelivery(dv) {
 }
 
 // --- datasets ----------------------------------------------------------------------
+function bytes(n) {
+  if (!n) return "";
+  const [v, u] = n >= 1e9 ? [n / 1e9, "GB"] : n >= 1e6 ? [n / 1e6, "MB"] : [n / 1e3, "KB"];
+  return `${v.toLocaleString(LANG === "pt" ? "pt-BR" : "en", { maximumFractionDigits: v < 10 ? 1 : 0 })} ${u}`;
+}
+
 function levelBadge(l) {
   return l == null ? "—" : `<span class="level"><span class="swatch" style="background:${levelColor(l)}"></span>${l}</span>`;
 }
 
 function fileDetail(f) {
   const c = f.conformance;
-  const status = f.status ? t(`s_${f.status}`) : t("s_pending");
+  const queued = f.queued ? [t("s_queued"), bytes(f.size)].filter(Boolean).join(" · ") : "";
+  const status = [f.status ? t(`s_${f.status}`) : queued ? "" : t("s_pending"), queued].filter(Boolean).join(" · ");
   const dm = f.dictionary;
   const dict = dm ? `${dm.url ? `<a href="${esc(dm.url)}" rel="noopener">${esc(dm.format || "")}</a>` : esc(dm.format || "")}`
     + ` · ${esc(t(`m_${(dm.method || "").replace("-", "_")}`))}`
@@ -714,6 +741,58 @@ function renderDatasets() {
   });
 }
 
+// --- a run in progress -------------------------------------------------------------
+// Read by the browser from GitHub's public API (no token: 60 requests an hour per visitor, so every
+// 5 minutes). The job that downloads the files has no write access to the repository by design, so
+// what it is doing is known from the step it is in, not from a file it writes.
+const LIVE = { since: null, what: "", url: "" };
+
+function liveWhat(job, step) {
+  const n = `${job ? job.name : ""} ${step ? step.name : ""}`;
+  if (!job || job.status === "queued" || job.status === "waiting") return "live_wait";
+  if (/publish/.test(n)) return "live_publish";
+  if (/Survey/.test(n)) return "live_survey";
+  if (/stage 2|Ollama|Resolve the model/.test(n)) return "live_llm";
+  if (/PDF dictionaries/.test(n)) return "live_pdf";
+  if (/Validate files/.test(n)) return "live_validate";
+  return "live_prep";
+}
+
+function duration(ms) {
+  const m = Math.max(0, Math.floor(ms / 60000));
+  return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, "0")} min`;
+}
+
+function drawLive() {
+  const node = el("live");
+  if (!LIVE.since) { node.hidden = true; return; }
+  const at = new Date(LIVE.since);
+  node.innerHTML = `<span class="dot" aria-hidden="true"></span><span>${esc(t("live_for", { what: t(LIVE.what), d: duration(Date.now() - at) }))}`
+    + ` <span class="muted">(${esc(t("live_since", { t: at.toLocaleString(LANG === "pt" ? "pt-BR" : "en", { dateStyle: "short", timeStyle: "short" }) }))})</span></span>`
+    + ` <a href="${esc(LIVE.url)}" target="_blank" rel="noopener">${esc(t("live_run"))} ↗</a>`;
+  node.hidden = false;
+}
+
+async function refreshLive() {
+  const m = repo().match(/github\.com\/([^/]+)\/([^/]+)/);
+  if (!m) return;
+  try {
+    const api = `https://api.github.com/repos/${m[1]}/${m[2]}/actions`;
+    const runs = await (await fetch(`${api}/workflows/layer1.yml/runs?per_page=1`)).json();
+    const run = (runs.workflow_runs || [])[0];
+    if (!run || run.status === "completed") { LIVE.since = null; drawLive(); return; }
+    const jobs = (await (await fetch(`${api}/runs/${run.id}/jobs`)).json()).jobs || [];
+    const job = jobs.find((j) => j.status === "in_progress") || jobs.find((j) => j.status !== "completed");
+    const step = job && (job.steps || []).find((s) => s.status === "in_progress");
+    LIVE.what = liveWhat(job, step);
+    LIVE.since = (step && step.started_at) || (job && job.started_at) || run.run_started_at || run.created_at;
+    LIVE.url = (job && job.html_url) || run.html_url;
+  } catch (e) {
+    return;           // no answer (offline, rate limit): the badge keeps what it had
+  }
+  drawLive();
+}
+
 async function main() {
   translatePage();
   try {
@@ -749,6 +828,9 @@ async function main() {
     if (row) { row.classList.add("highlight"); row.scrollIntoView({ block: "center" }); }
   }
   ["search", "level-filter", "only-failing"].forEach((id) => el(id).addEventListener("input", renderDatasets));
+  refreshLive();
+  setInterval(refreshLive, 5 * 60 * 1000);
+  setInterval(drawLive, 60 * 1000);
   const m = s.method || {};
   el("footer").innerHTML = esc(t("footer", { m: `L1_MAX_ERROR_RATE=${m.l1_max_error_rate}, L1_PASS_THRESHOLD=${m.l1_pass_threshold}, ROTATION_DAYS=${m.rotation_days}, LLM=${m.llm_model}` }))
     + ` <a href="${repo()}/blob/main/results/layer1_summary.json">results/layer1_summary.json</a>`;

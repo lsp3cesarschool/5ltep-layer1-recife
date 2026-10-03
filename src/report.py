@@ -232,6 +232,17 @@ def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
     }
 
 
+def queued(tables: list[tuple[dict, dict | None]], queue: list) -> dict:
+    """What is left in the queue, by its declared size: how long the chain may still take."""
+    ids = {q["id"] for q in queue}
+    left = [t for t, _ in tables if t["id"] in ids]
+    size = lambda t: int(t["size"]) if str(t.get("size") or "").isdigit() else 0
+    largest = sorted(left, key=size, reverse=True)[:5]
+    return {"queue_gb": round(sum(size(t) for t in left) / 1e9, 2),
+            "queue_largest": [{"id": t["id"], "name": t["name"], "gb": round(size(t) / 1e9, 2)}
+                              for t in largest if size(t)]}
+
+
 def sizes(tables: list[dict]) -> dict:
     """Files and size by format, as the portal declares them (CKAN `size`, known before any download)."""
     by: dict[str, dict] = {}
@@ -439,7 +450,7 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
         "tables": {"total": len(tables), "by_level": {str(k): t_levels.get(k, 0) for k in LEVELS},
                    "validated": len(validated), "validation_coverage": _share(len(validated), len(tables)),
                    "errors": sum(1 for _, v in tables if (v or {}).get("status") == "error"),
-                   "queue_remaining": len(queue), **sizes([t for t, _ in tables])},
+                   "queue_remaining": len(queue), **sizes([t for t, _ in tables]), **queued(tables, queue)},
         "schema_sources": dict(Counter(v.get("schema_kind") for _, v in verifiable)),
         # Conformance by where the schema came from: DataStore types are often inferred by the portal from
         # the same data, so conformance against them is high by construction; compare like with like.
@@ -495,8 +506,9 @@ def update_history(census: dict, validation: dict, summary: dict, path=None) -> 
     return rows
 
 
-def dashboard_data(census: dict, validation: dict, extraction: dict, summary: dict) -> dict:
+def dashboard_data(census: dict, validation: dict, extraction: dict, summary: dict, queue: list = ()) -> dict:
     drift_count = Counter(e["resource_id"] for e in drift.load())
+    in_queue = {q["id"] for q in queue}
     datasets = []
     for ds in census["datasets"]:
         dicts = {d["id"]: d for d in ds["dictionaries"]}
@@ -510,6 +522,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
             d = dicts.get(lk.get("dictionary"), {})
             tables.append({
                 "id": t["id"], "name": t["name"], "level": table_level(t, v), "url": t["url"],
+                "size": int(t["size"]) if str(t.get("size") or "").isdigit() else None, "queued": t["id"] in in_queue,
                 "dictionary": ({"name": d.get("name"), "format": d.get("format"), "method": lk.get("method"),
                                 "readable": d.get("readable"), "error_kind": d.get("error_kind"), "url": d.get("url"),
                                 "page": page(d["id"])} if d else

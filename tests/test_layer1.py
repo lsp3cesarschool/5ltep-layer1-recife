@@ -1499,3 +1499,11 @@ def test_a_pdf_column_without_grid_lines_is_read_from_the_words_in_its_place():
     # a type that is a phrase still wins over a description that starts with a type word
     aneel = pdf_extract.fields_from_table_rows([["DscVersao", "Cadeia de caracteres", "15", "Número da versão."]])
     assert aneel[0]["type"] == "Cadeia de caracteres"
+
+
+def test_what_is_left_in_the_queue_by_its_declared_size():
+    tables = [({"id": "a", "name": "A", "size": 3_000_000_000}, None), ({"id": "b", "name": "B", "size": None}, None),
+              ({"id": "c", "name": "C", "size": "1000000000"}, None), ({"id": "d", "name": "D", "size": 5}, None)]
+    out = report.queued(tables, [{"id": "a"}, {"id": "b"}, {"id": "c"}])
+    assert out["queue_gb"] == 4.0
+    assert [x["name"] for x in out["queue_largest"]] == ["A", "C"]          # B: no declared size
