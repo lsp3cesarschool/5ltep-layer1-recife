@@ -83,8 +83,10 @@ NOT_ASKED = "not asked: the file server stopped answering in this survey"
 
 
 def unreachable(ds: dict) -> list[str]:
-    """Ids of the dataset's dictionaries whose server did not answer in this survey."""
-    return [d["id"] for d in ds.get("dictionaries") or [] if d.get("error_kind") == "unreachable"]
+    """Ids of the dataset's dictionaries, and of its files whose header was needed for the link, whose
+    server did not answer in this survey: the link to a dictionary is not known without them."""
+    return ([d["id"] for d in ds.get("dictionaries") or [] if d.get("error_kind") == "unreachable"]
+            + [t["id"] for t in ds.get("tables") or [] if t.get("header_unreachable")])
 
 
 def read_dictionary(res: dict) -> tuple[dict, dictionaries.Dictionary | None]:
@@ -181,20 +183,22 @@ def level_of(resource: dict, dict_entry: dict | None) -> int:
     return 1
 
 
-def peek_header(t: dict) -> list[str] | None:
-    """The column names of a table (no row is kept), or None when it cannot be read now (it is then
-    linked by its header from its first validation on). A text file is read only to its first line;
-    a zip, a spreadsheet or a Parquet is downloaded whole (its columns are only known that way)."""
+def peek_header(t: dict) -> tuple[list[str] | None, bool]:
+    """(the column names of a table, or None; whether the server did not answer). No row is kept. A
+    file that cannot be read as a table is linked by its header from its first validation on; one
+    whose server did not answer is asked again (see `run`). A text file is read only to its first
+    line; a zip, a spreadsheet or a Parquet is downloaded whole (its columns are only known that way)."""
     if BREAKER.is_open():
-        return None
+        return None, True
     try:
         h = tabular.peek_header(t["url"], rows=0)[1] or None
     except Exception as exc:
-        BREAKER.record(_download_error_kind(exc) != "unreachable")
+        answered = _download_error_kind(exc) != "unreachable"
+        BREAKER.record(answered)
         logger.info("header of %s not read in the survey: %s", t["id"], safety.error_text(exc, 160))
-        return None
+        return None, not answered
     BREAKER.record(True)
-    return h
+    return h, False
 
 
 def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], written: set, events: list) -> dict:
@@ -248,9 +252,11 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
     if any(d.get("format") == "PDF" or d["id"] in parsed for d in dicts):
         for t in tables:
             if t["id"] not in headers:
-                h = peek_header(t)
+                h, missed = peek_header(t)
                 if h:
                     t["header_peeked"] = h
+                elif missed:
+                    t["header_unreachable"] = True
     headers = {**headers, **{t["id"]: t["header_peeked"] for t in tables if t.get("header_peeked")}}
     link_input = [{"id": d["id"], "name": d["name"], "declared_resource_ids": d.get("declared_resource_ids"),
                    "parts": [{"label": p.label, "names": [f["name"] for f in p.fields]} for p in parsed[d["id"]].parts]
@@ -351,9 +357,9 @@ def run(validation: dict, packages: list[dict] | None = None, previous: dict | N
             kept.add(ds["name"])
             if ds["name"] in before:
                 ds = {**before[ds["name"]], "kept_from": (previous or {}).get("generated_at"),
-                      "unreachable_dictionaries": missing}
+                      "unreachable": missing}
             else:
-                ds["unreachable_dictionaries"] = missing
+                ds["unreachable"] = missing
         datasets.append(ds)
         written |= own_written
         events += own_events
