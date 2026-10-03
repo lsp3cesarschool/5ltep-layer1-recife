@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 import requests
+import urllib3
 
 from src import (census, config, dictionaries, drift, extract, linker, pdf_extract, report, safety, schemas,
                  tabular, types_map, validate, work)
@@ -1185,3 +1186,26 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0: (_ for _ in ()).throw(requests.ConnectTimeout("x")))
     result, _ = census.run({}, packages=[pkg])
     assert result["datasets"][0]["unreachable"] == ["r-a"] and work.plan(result, {}) == []
+
+
+def test_waiting_for_a_server_is_bounded_and_a_redirect_loop_is_the_portals(tmp_root, monkeypatch):
+    monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
+    monkeypatch.setattr(census.config, "DICTIONARY_RETRY_WAIT_S", 0)
+    serve(monkeypatch, {})
+    monkeypatch.setattr(census.ckan, "fetch_bytes", lambda url, limit: (_ for _ in ()).throw(requests.ConnectTimeout("x")))
+    first, _ = census.run({}, packages=[_package()])
+    assert first["datasets"][0]["hold"] is True and work.plan(first, {}) == []
+    # a file waits once: the next run uses what it observed
+    second, _ = census.run({}, packages=[_package()], previous=first)
+    assert "hold" not in second["datasets"][0] and [q["id"] for q in work.plan(second, {})] == ["r-data"]
+    # a reading is kept for at most ROTATION_DAYS
+    serve(monkeypatch, {"https://p/d.csv": IBAMA_DICT})
+    good, _ = census.run({}, packages=[_package()])
+    monkeypatch.setattr(census.ckan, "fetch_bytes", lambda url, limit: (_ for _ in ()).throw(requests.ConnectTimeout("x")))
+    kept, _ = census.run({}, packages=[_package()], previous=good)
+    assert kept["datasets"][0]["kept_from"] == good["generated_at"]
+    old = {**kept, "datasets": [{**kept["datasets"][0], "kept_from": "2020-01-01T00:00:00+00:00"}]}
+    late, _ = census.run({}, packages=[_package()], previous=old)
+    assert "kept_from" not in late["datasets"][0]
+    assert census._download_error_kind(requests.TooManyRedirects("Exceeded 30 redirects")) == "download-failed"
+    assert census._download_error_kind(urllib3.exceptions.ProtocolError("IncompleteRead")) == "unreachable"

@@ -22,9 +22,10 @@ import threading
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import requests
+import urllib3
 
 from src import ckan, config, dictionaries, drift, linker, safety, schemas, tabular, types_map
 
@@ -48,11 +49,17 @@ def _type_findings(fields: list[dict]) -> dict:
 
 
 def _download_error_kind(exc: Exception) -> str:
-    """'unreachable' when the server did not answer (connection, timeout, 5xx): a fact about that
-    moment, asked again later, never a finding about the dictionary. 'download-failed' when the
-    server answered that the file is not there (401, 403, 404, 410): a broken link of the portal."""
+    """'unreachable' when the server did not answer (no connection, a timeout, a download cut short,
+    a 5xx): a fact about that moment, asked again later, never a finding about the dictionary.
+    'download-failed' for every answer that is the portal's (404, a redirect loop, a bad
+    certificate, an invalid address): a broken link."""
     status = getattr(getattr(exc, "response", None), "status_code", None)
-    if isinstance(exc, requests.RequestException) and status not in (401, 403, 404, 410):
+    if status is not None:
+        return "unreachable" if status >= 500 else "download-failed"
+    if isinstance(exc, requests.exceptions.SSLError):
+        return "download-failed"
+    if isinstance(exc, (requests.ConnectionError, requests.Timeout, requests.exceptions.ChunkedEncodingError,
+                        urllib3.exceptions.ProtocolError)):
         return "unreachable"
     return "download-failed"
 
@@ -347,19 +354,25 @@ def run(validation: dict, packages: list[dict] | None = None, previous: dict | N
     # Still no answer: the dataset keeps its last reading (marked), and its committed schemas stay.
     # Otherwise the server's absence would read as the portal's: the declared schema removed (a false
     # drift issue), the file checked against a weaker schema, the dataset's level lowered.
+    # With no reading yet, its files wait one run ("hold"). Neither lasts: a reading is kept for at
+    # most ROTATION_DAYS, and a file waits once; a server that never answers is then the portal's fact.
     before = {d["name"]: d for d in (previous or {}).get("datasets") or []}
+    now = datetime.now(timezone.utc)
     kept: set[str] = set()
     datasets = []
     for i in range(len(packages)):
         ds, own_written, own_events = results[i]
         missing = unreachable(ds)
+        last = before.get(ds["name"])
         if missing:
-            kept.add(ds["name"])
-            if ds["name"] in before:
-                ds = {**before[ds["name"]], "kept_from": (previous or {}).get("generated_at"),
-                      "unreachable": missing}
+            since = (last or {}).get("kept_from") or (previous or {}).get("generated_at")
+            if last and not last.get("hold") and since                     and now - datetime.fromisoformat(since) <= timedelta(days=config.ROTATION_DAYS):
+                ds = {**last, "kept_from": since, "unreachable": missing}
+                kept.add(ds["name"])
+            elif last is None:
+                ds = {**ds, "unreachable": missing, "hold": True}
             else:
-                ds["unreachable"] = missing
+                ds = {**ds, "unreachable": missing}
         datasets.append(ds)
         written |= own_written
         events += own_events

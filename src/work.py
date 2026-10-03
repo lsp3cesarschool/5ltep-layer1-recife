@@ -66,10 +66,10 @@ def plan(census: dict, validation: dict, now: datetime | None = None, head=ckan.
     now = now or datetime.now(timezone.utc)
     queue = []
     for ds in census["datasets"]:
-        if ds.get("unreachable") and not ds.get("kept_from"):
-            # Its dictionary did not answer and there is no earlier reading: which schema its files
-            # follow is unknown. They wait (pending) for the next run, instead of being checked
-            # against a weaker schema and counted as if that were the portal's documentation.
+        if ds.get("hold"):
+            # Its dictionary (or a header) did not answer and there is no earlier reading: which schema
+            # its files follow is unknown. They wait (pending) for the next run, instead of being
+            # checked against a weaker schema and counted as if that were the portal's documentation.
             continue
         for t in ds["tables"]:
             prev = validation.get(t["id"])
