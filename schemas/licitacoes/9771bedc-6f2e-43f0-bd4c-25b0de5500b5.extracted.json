@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "comissaolicitacao",
+   "type": "number",
+   "description": "Nome do grupo formado por servidores especializados para conduzir todas as etapas do processo licitatório",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "anoprocessolicitatorio",
+   "type": "number",
+   "description": "Ano de criação do processo licitatório",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "numeroprocessolicitatorio",
+   "type": "number",
+   "description": "Número sequencial do processo licitatório na comissão de licitação específica no ano",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "modalidadeprocessolicitatorio",
+   "type": "string",
+   "description": "Forma que será conduzida o processo licitatório baseada na legislação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "numerolicitacaomodalidade",
+   "type": "number",
+   "description": "Número sequencial do processo licitatório na comissão de licitação específica no ano e de acordo com a modalidade",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "anolicitacaomodalidade",
+   "type": "number",
+   "description": "Ano do processo licitatório na comissão de licitação específica no ano e de acordo com a modalidade",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "orgaolicitante",
+   "type": "string",
+   "description": "Órgão municipal responsável pelo processo licitatório",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "description": "Descrição do objetivo do processo licitatório tanto de conteúdo quanto de objetivo",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "valorestimado",
+   "type": "number",
+   "description": "Num",
+   "declaredType": "Valor estimado da licitação"
+  },
+  {
+   "name": "dataaberturaproposta",
+   "type": "date",
+   "description": "Data de recebimento das propostas dos fornecedores participantes do processo licitatório contendo os preços e demais condições solicitadas no edital",
+   "declaredType": "Data",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "9e6e185f-d111-44ab-830b-db02c12cb707",
+   "dictionary_name": "Dicionário de Dados - Licitações em andamento",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/e30eb7ea-a35d-4510-a0dd-1387e5459e64/resource/9e6e185f-d111-44ab-830b-db02c12cb707/download/dicionario-de-dados-licitacoes-em-andamento.pdf",
+   "sha256": "d6cb5c91435059f7dee747be01a1f0b987c5cbe22f003aa83e7f5cf899d1958e",
+   "oracle": {
+    "recall": 0.9,
+    "precision": 0.9,
+    "exact_match": 0.9,
+    "levenshtein": 0.975,
+    "missing_from_pdf": [
+     "valor_estipulado"
+    ],
+    "not_in_file": [
+     "valorestimado"
+    ]
+   }
+  }
+ }
+}
