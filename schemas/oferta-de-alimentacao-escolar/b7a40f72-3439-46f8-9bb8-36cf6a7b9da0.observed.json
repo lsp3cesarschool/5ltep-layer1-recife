@@ -1,0 +1,86 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_ensino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "servico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cadum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "lote",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vlr_unitario",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quantidade",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vlr_total",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_60",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_40",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vlr_60",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vlr_40",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:30:50+00:00",
+  "sha256": "91e17eba206eab1b50a227af31042335c80cc4f4b625f8ae1477994f43162cc7",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 238,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

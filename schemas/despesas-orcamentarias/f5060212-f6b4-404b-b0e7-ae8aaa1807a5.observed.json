@@ -1,0 +1,114 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_categoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_grupo_despesa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_grupo_despesa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_modalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_modalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_sub_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_sub_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_fonte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_fonte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "sampleEmptyShare": 0.2263
+  },
+  {
+   "name": "Liquidação",
+   "type": "number",
+   "sampleEmptyShare": 0.2263
+  },
+  {
+   "name": "Pagamento",
+   "type": "number",
+   "sampleEmptyShare": 0.2263
+  },
+  {
+   "name": "dotacao_inicial",
+   "type": "number",
+   "sampleEmptyShare": 0.7737
+  },
+  {
+   "name": "dotacao_atualizada",
+   "type": "number",
+   "sampleEmptyShare": 0.7737
+  },
+  {
+   "name": "resto_pago_grupo",
+   "type": "number",
+   "sampleEmptyShare": 0.015
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:13:41+00:00",
+  "sha256": "14fcde9014440a08ea76fa6d941ffe4aecc2d5d24651d044a698134cc1ca0691",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 4524,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:17:41+00:00",
+  "sha256": "85ecb92457065255b318a6a0ce62c2e5ca423baef0405fb34afc3809b877950f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 51,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

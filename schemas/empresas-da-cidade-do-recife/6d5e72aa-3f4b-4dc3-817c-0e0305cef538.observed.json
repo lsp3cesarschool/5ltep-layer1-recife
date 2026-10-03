@@ -1,0 +1,143 @@
+{
+ "fields": [
+  {
+   "name": "cnpj",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "razao_social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_fantasia",
+   "type": "string",
+   "sampleEmptyShare": 0.159
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.8004
+  },
+  {
+   "name": "numero_lote",
+   "type": "integer",
+   "sampleEmptyShare": 0.1676
+  },
+  {
+   "name": "cod_bairro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_empresa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_abertura_empresa",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_encerramento",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "cod_grupo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_grupo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnae",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "atividade_principal",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "atividade_vig_sanitaria",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "atividade_predominante",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "incomodo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:17:37+00:00",
+  "sha256": "c9c9234af5d3f456de7284780d75959421df18f446ce82f8211d755c5b36ae94",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

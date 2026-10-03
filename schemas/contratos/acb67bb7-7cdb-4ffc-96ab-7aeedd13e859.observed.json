@@ -1,0 +1,64 @@
+{
+ "fields": [
+  {
+   "name": "num_contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.1391
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.8609
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "num_apostilamento",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_apostilamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_apostilamento",
+   "type": "number",
+   "sampleEmptyShare": 0.2268
+  },
+  {
+   "name": "situacao_apostilamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0224
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:07:38+00:00",
+  "sha256": "49eefd42185ffd97c789e9de92ff9d7441660cf9ef7bbc2d85f74c3da7c6c826",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 2235,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

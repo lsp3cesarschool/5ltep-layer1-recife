@@ -1,0 +1,13 @@
+{
+ "fields": [],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:28:01+00:00",
+  "sha256": "70766e53982fc4553b1f4e8cafb921a5870c124c5797fcb09f58fa8335a5ae52",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

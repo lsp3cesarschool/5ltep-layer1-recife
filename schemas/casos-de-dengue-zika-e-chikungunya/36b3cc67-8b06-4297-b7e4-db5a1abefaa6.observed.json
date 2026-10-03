@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sigla",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:52:11+00:00",
+  "sha256": "0df13da4c1848aac2548bae2823522c9a78a1810150bc5ec6e13c3f9c095cf05",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 27,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

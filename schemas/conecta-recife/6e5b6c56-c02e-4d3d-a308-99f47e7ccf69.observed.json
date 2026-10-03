@@ -1,0 +1,54 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano_mes",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regiao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rpa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "circuito",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_acesso",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:07:23+00:00",
+  "sha256": "392bce65d6c1c61bc23efec8199b60e90e92bbe541276d3941b6b4651bacaccc",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 429,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

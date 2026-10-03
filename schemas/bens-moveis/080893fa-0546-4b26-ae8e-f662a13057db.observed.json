@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "Bem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição Sucinta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Dt. Aquisição",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vl. Original MC",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vl. Original MA",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vl. DPR UMC",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vl. DPR UMA",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vl. Corrigido",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estabelecimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Conta",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CCUSTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CC GERENCIAL",
+   "type": "string",
+   "sampleEmptyShare": 0.1134
+  },
+  {
+   "name": "DATA NOTA FISCAL",
+   "type": "string",
+   "sampleEmptyShare": 0.625
+  },
+  {
+   "name": "NOTA DE EMPENHO",
+   "type": "string",
+   "sampleEmptyShare": 0.6302
+  },
+  {
+   "name": "Área de Risco",
+   "type": "string",
+   "sampleEmptyShare": 0.4882
+  },
+  {
+   "name": "orgao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:49:16+00:00",
+  "sha256": "6e991e76bceeaae13ec7cce4c68515f5f87538c278deaf62a8b884cd84a95b33",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

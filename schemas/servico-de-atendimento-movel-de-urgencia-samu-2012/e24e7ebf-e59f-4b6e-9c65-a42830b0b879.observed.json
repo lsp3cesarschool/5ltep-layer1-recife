@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "hospital_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hospital_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairrosaude_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:20:10+00:00",
+  "sha256": "4584901b6d365e20e5adad296fe89afd2d88d95237ac33e3d3baecbbda3e1b60",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 96,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

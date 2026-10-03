@@ -1,0 +1,39 @@
+{
+ "fields": [
+  {
+   "name": "cnes",
+   "type": "integer",
+   "sampleEmptyShare": 0.7436
+  },
+  {
+   "name": "Estabelecimento",
+   "type": "string",
+   "sampleEmptyShare": 0.746
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.746
+  },
+  {
+   "name": "Subgrupo",
+   "type": "string",
+   "sampleEmptyShare": 0.746
+  },
+  {
+   "name": "quantidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.7691
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:07:30+00:00",
+  "sha256": "9b7b3227d1d42bfe1b1024d41d49f8bdfb6c6236b68ac46d502097fc55ad3b41",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 433,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

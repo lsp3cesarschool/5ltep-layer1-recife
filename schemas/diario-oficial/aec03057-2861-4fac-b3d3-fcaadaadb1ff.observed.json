@@ -1,0 +1,18 @@
+{
+ "fields": [],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:17:10+00:00",
+  "sha256": "edd713d8ccad6634da79a858f947e442b7f56c14276f3ad3a8189883acaf9182",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 0,
+  "tables": 4,
+  "distinct_headers": 3,
+  "members_with_other_headers": [
+   "diario-oficial-2019.xml",
+   "diario-oficial-completo-2019-ISO-8859-1.csv",
+   "diario-oficial-completo-2019-UTF8.csv"
+  ]
+ }
+}

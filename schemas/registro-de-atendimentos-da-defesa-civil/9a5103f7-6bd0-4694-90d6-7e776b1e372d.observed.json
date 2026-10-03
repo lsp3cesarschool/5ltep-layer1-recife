@@ -1,0 +1,96 @@
+{
+ "fields": [
+  {
+   "name": "Regional",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Mês",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data",
+   "type": "string",
+   "sampleEmptyShare": 0.9784
+  },
+  {
+   "name": "Ocorrencia",
+   "type": "string",
+   "sampleEmptyShare": 0.3334
+  },
+  {
+   "name": "Solicitacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Localidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Grau_de_Risco",
+   "type": "string",
+   "sampleEmptyShare": 0.4278
+  },
+  {
+   "name": "Data_da_Acao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo_da_Acao",
+   "type": "string",
+   "sampleEmptyShare": 0.191
+  },
+  {
+   "name": "Quantidade",
+   "type": "number",
+   "sampleEmptyShare": 0.8932
+  },
+  {
+   "name": "Altura",
+   "type": "number",
+   "sampleEmptyShare": 0.8932
+  },
+  {
+   "name": "Largura",
+   "type": "number",
+   "sampleEmptyShare": 0.8932
+  },
+  {
+   "name": "Area_m",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:17:31+00:00",
+  "sha256": "fcf9d84cdc3e10e749005ec6ea52ede6e92a48d814647c2aac5882fc3b3b9f53",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

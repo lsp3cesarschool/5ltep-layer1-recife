@@ -1,0 +1,850 @@
+{
+ "fields": [
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Latitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_14",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_2_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_3_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_4_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_10_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_4_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_4_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_4_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19_3",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19_4_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19_4_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19_4_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19_4_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_2022_num",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_5_atend",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_5_atend_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_5_adm_atend",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_5_adm_atend_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d_5_7_banheiros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d7_1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d7_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d7_3_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d7_4_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d7_9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d7_10_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d8_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d8_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d10_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d10_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d10_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d11_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d11_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d11_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d11_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:04:33+00:00",
+  "sha256": "20f6dc4076316d9868a9912abca1eb076eb01d8298ffe96d0e2c046739eeb79d",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 1,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

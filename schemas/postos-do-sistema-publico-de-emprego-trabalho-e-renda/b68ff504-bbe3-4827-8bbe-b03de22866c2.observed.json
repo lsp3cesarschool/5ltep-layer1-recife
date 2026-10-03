@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "sampleEmptyShare": 0.1667
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:09:09+00:00",
+  "sha256": "94ff576137e50df67e99970e66d7b694aaf0af33ad4bdc4c91103ddfb0b0db20",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 6,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

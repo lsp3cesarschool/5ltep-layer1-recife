@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "especialidade",
+   "type": "string",
+   "sampleEmptyShare": 0.2154
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "sampleEmptyShare": 0.7538
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "sampleEmptyShare": 0.9385
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:49:10+00:00",
+  "sha256": "0e22afc8f14c9e8a3abf5ea231f456d0c6bdd39b6c3102dff78a9477127fa627",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 130,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

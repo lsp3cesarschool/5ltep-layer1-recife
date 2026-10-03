@@ -1,0 +1,209 @@
+{
+ "fields": [
+  {
+   "name": "ano_movimentacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes_movimentacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade_codigo",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria_economica_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria_economica_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "grupo_despesa_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "grupo_despesa_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_aplicacao_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_aplicacao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "elemento_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "elemento_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subelemento_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subelemento_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcao_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subfuncao_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subfuncao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "programa_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "programa_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "acao_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "acao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte_recurso_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte_recurso_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "empenho_ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "empenho_modalidade_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "empenho_modalidade_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "empenho_numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subempenho",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "indicador_subempenho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "credor_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "credor_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_licitacao_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_licitacao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_empenhado",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_liquidado",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_pago",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:10:26+00:00",
+  "sha256": "2e4fbf483366fc5c40cc267ae5ee279ddc0d3ece33eac12a07a551445881f696",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

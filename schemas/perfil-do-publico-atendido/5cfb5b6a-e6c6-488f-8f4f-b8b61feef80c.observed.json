@@ -1,0 +1,516 @@
+{
+ "fields": [
+  {
+   "name": "d.cod_familiar_fam",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d.vlr_renda_media_fam",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d.fx_rfpc",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d.vlr_renda_total_fam",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.cod_sexo_pessoa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.dta_nasc_pessoa",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.cod_raca_cor_pessoa",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.nom_pais_origem_pessoa",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "p.cod_pais_origem_pessoa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_idade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.marc_pbf",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.cod_deficiencia_memb",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.ind_def_cegueira_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9964
+  },
+  {
+   "name": "p.ind_def_baixa_visao_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9956
+  },
+  {
+   "name": "p.ind_def_surdez_profunda_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.997
+  },
+  {
+   "name": "p.ind_def_surdez_leve_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9982
+  },
+  {
+   "name": "p.ind_def_fisica_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9612
+  },
+  {
+   "name": "p.ind_def_mental_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9664
+  },
+  {
+   "name": "p.ind_def_sindrome_down_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9988
+  },
+  {
+   "name": "p.ind_def_transtorno_mental_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9936
+  },
+  {
+   "name": "p.ind_ajuda_nao_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.974
+  },
+  {
+   "name": "p.ind_ajuda_familia_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9424
+  },
+  {
+   "name": "p.ind_ajuda_especializado_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9946
+  },
+  {
+   "name": "p.ind_ajuda_vizinho_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9992
+  },
+  {
+   "name": "p.ind_ajuda_instituicao_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9976
+  },
+  {
+   "name": "p.ind_ajuda_outra_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "p.cod_sabe_ler_escrever_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.ind_frequenta_escola_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.nom_escola_memb",
+   "type": "string",
+   "sampleEmptyShare": 0.7116
+  },
+  {
+   "name": "p.cod_escola_local_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.7118
+  },
+  {
+   "name": "p.sig_uf_escola_memb",
+   "type": "string",
+   "sampleEmptyShare": 0.7118
+  },
+  {
+   "name": "p.nom_munic_escola_memb",
+   "type": "string",
+   "sampleEmptyShare": 0.7118
+  },
+  {
+   "name": "p.cod_ibge_munic_escola_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.7118
+  },
+  {
+   "name": "p.cod_curso_frequenta_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.7116
+  },
+  {
+   "name": "p.cod_ano_serie_frequenta_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.735
+  },
+  {
+   "name": "p.cod_curso_frequentou_pessoa_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.3986
+  },
+  {
+   "name": "p.cod_ano_serie_frequentou_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.4162
+  },
+  {
+   "name": "p.cod_concluiu_frequentou_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.4162
+  },
+  {
+   "name": "p.grau_instrucao",
+   "type": "number",
+   "sampleEmptyShare": 0.0302
+  },
+  {
+   "name": "p.cod_trabalhou_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.2032
+  },
+  {
+   "name": "p.cod_afastado_trab_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.5068
+  },
+  {
+   "name": "p.cod_agricultura_trab_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.6912
+  },
+  {
+   "name": "p.cod_principal_trab_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.6912
+  },
+  {
+   "name": "p.cod_trabalho_12_meses_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.2032
+  },
+  {
+   "name": "p.qtd_meses_12_meses_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.678
+  },
+  {
+   "name": "p.fx_renda_individual_805",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_renda_individual_808",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_renda_individual_809_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_renda_individual_809_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_renda_individual_809_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_renda_individual_809_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.fx_renda_individual_809_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.marc_sit_rua",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.ind_dormir_rua_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.qtd_dormir_freq_rua_memb",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "p.ind_dormir_albergue_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.qtd_dormir_freq_albergue_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dormir_dom_part_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.qtd_dormir_freq_dom_part_memb",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "p.ind_outro_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.qtd_freq_outro_memb",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "p.cod_tempo_rua_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_perda_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_ameaca_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_probs_fam_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_alcool_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_desemprego_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_trabalho_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_saude_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_pref_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_outro_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_nao_sabe_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_motivo_nao_resp_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.cod_tempo_cidade_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.cod_vive_fam_rua_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.cod_contato_parente_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_ativ_com_escola_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_ativ_com_coop_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_ativ_com_mov_soc_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_ativ_com_nao_sabe_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_ativ_com_nao_resp_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_cras_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_creas_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_centro_ref_rua_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_inst_gov_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_inst_nao_gov_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_hospital_geral_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.cod_cart_assinada_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_const_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_flanelhinha_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_carregador_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_catador_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_servs_gerais_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_pede_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_vendas_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_outro_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_dinh_nao_resp_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ind_atend_nenhum_memb",
+   "type": "number",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "p.ref_cad",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "p.ref_pbf",
+   "type": "number",
+   "sampleEmptyShare": 0.333
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:07:29+00:00",
+  "sha256": "a3b156c0c4f52534db83900a05e2b09a6681f36768bdbdd3f4eeb071e61de432",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

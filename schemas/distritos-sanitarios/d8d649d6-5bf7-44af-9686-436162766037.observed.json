@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "distrito_sanitario",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_distrito",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:17:12+00:00",
+  "sha256": "bdc888954de606ea75a642db77225da0e77094a20cfa8a9ae50d980be510c561",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 94,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

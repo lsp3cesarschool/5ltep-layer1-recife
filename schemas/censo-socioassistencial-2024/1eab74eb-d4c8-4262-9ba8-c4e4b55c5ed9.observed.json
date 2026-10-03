@@ -1,0 +1,299 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaKm2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_8_rec",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q74_9_rec",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tempo_Mandato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_5bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_5bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_5bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin1_TIT",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin1_SUPL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin2_TIT",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin2_SUPL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin3_TIT",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin3_SUPL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin4_TIT",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin4_SUPL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin5_TIT",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin5_SUPL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin4_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin5_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin1_TIT_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin1_SUPL_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin2_TIT_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin2_SUPL_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin3_TIT_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin3_SUPL_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin4_TIT_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin4_SUPL_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin5_TIT_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d74_6bin5_SUPL_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_conselheiros",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:02:11+00:00",
+  "sha256": "3a983b5a42273873823b8f7bac0ceafb4ccc252be3d617097144503b84e0f613",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 44,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

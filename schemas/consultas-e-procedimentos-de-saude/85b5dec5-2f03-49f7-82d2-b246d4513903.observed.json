@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "ine",
+   "type": "integer",
+   "sampleEmptyShare": 0.0373
+  },
+  {
+   "name": "equipe",
+   "type": "string",
+   "sampleEmptyShare": 0.0373
+  },
+  {
+   "name": "cnes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "usf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "especialidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "consultas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0243
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "procedimentos",
+   "type": "integer",
+   "sampleEmptyShare": 0.0243
+  },
+  {
+   "name": "atencao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "periodo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:07:26+00:00",
+  "sha256": "a2e3fadfa8bbf5f878e76db7bc77da15754fcdc237bbe55936088188aafb96f3",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 536,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

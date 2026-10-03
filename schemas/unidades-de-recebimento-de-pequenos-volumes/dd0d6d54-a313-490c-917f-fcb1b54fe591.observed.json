@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "item",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "lat",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "long",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:27:30+00:00",
+  "sha256": "4253598e5675dfc1221257449c806edec0513c733667a941526b0a674dfac620",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 10,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

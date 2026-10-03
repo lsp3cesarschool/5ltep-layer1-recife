@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "equipamento",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "faixa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hora",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "minutos_intervalo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_0a10km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_11a20km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_21a30km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_31a40km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_41a50km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_51a60km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_61a70km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_71a80km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_81a90km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_91a100km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_acimade100km",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:33:50+00:00",
+  "sha256": "35b243eda850c29772db5cbde1e78e7332f2396b67cb5cf39b9c0faa90b6522e",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

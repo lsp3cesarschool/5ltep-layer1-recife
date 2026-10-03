@@ -1,0 +1,72 @@
+{
+ "fields": [
+  {
+   "name": "objeto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_abertura",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "hora_abertura",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "fase",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "processo",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "modalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "licitacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.4931
+  },
+  {
+   "name": "vencedor",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "valor_estimado",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "valor_logrado",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0218
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:09:30+00:00",
+  "sha256": "8722399f5de5698d8769eca6437e0250dd612a65706a4eb4084b91f88d7c517c",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 505,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

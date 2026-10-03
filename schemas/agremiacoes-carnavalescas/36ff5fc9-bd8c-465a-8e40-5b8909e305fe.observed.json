@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_sede",
+   "type": "string",
+   "sampleEmptyShare": 0.1988
+  },
+  {
+   "name": "data_fundacao",
+   "type": "string",
+   "sampleEmptyShare": 0.1486
+  },
+  {
+   "name": "cnpj",
+   "type": "string",
+   "sampleEmptyShare": 0.1767
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0281
+  },
+  {
+   "name": "cidade",
+   "type": "string",
+   "sampleEmptyShare": 0.006
+  },
+  {
+   "name": "rpa",
+   "type": "string",
+   "sampleEmptyShare": 0.0221
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "sampleEmptyShare": 0.006
+  },
+  {
+   "name": "filiacao",
+   "type": "string",
+   "sampleEmptyShare": 0.1847
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:47:46+00:00",
+  "sha256": "9118f388db6dcc554752eeecbb8ddd6fa5af5de938585fabed58e3dc12410fe4",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 498,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

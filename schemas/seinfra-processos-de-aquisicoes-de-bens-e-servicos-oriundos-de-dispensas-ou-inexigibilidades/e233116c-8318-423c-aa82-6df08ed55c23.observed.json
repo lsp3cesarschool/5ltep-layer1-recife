@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "num_dispensa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_dispensa",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "local_de_execucao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_de_empenho_contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_vigencia",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnpj_cpf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_fornecedor",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor_fornecedor",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Arquivo_dispensa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:19:40+00:00",
+  "sha256": "5bcce0e2258f18db34502b6faecc48520a9e595e3b0db1b33be44e32ddf7e6b6",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 3,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

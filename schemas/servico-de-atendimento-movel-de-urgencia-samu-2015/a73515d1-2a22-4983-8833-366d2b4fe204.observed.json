@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "bairrosaude_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairrosaude_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "distritosanitario_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:22:24+00:00",
+  "sha256": "4b13139041cd4cb600dcbacca232ab0352190ab37123d259e4c139f2d41c954d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1518,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

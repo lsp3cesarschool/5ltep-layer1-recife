@@ -1,0 +1,66 @@
+{
+ "fields": [
+  {
+   "name": "numeroRGI",
+   "type": "integer",
+   "sampleEmptyShare": 0.989
+  },
+  {
+   "name": "inscricaoimovel",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "natureza",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecorua",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "enderecobairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaconstruida",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.2541
+  },
+  {
+   "name": "areatotal",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.2541
+  },
+  {
+   "name": "latitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:09:41+00:00",
+  "sha256": "063051d91fc1842abb7b89c7fff3cf974bac5068d73c381d950720cf0c252b42",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1460,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

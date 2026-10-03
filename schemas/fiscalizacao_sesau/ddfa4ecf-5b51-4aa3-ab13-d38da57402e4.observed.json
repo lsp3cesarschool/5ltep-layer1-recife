@@ -1,0 +1,111 @@
+{
+ "fields": [
+  {
+   "name": "sequencial",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "processo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cpf_cnpj_responsavel",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cpf_cnpj_mercantil",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "razao_social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fantasia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "infracao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "legislacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "legislacao_penalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qtd_infracoes",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano_arrecadacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.996
+  },
+  {
+   "name": "multa",
+   "type": "integer",
+   "sampleEmptyShare": 0.996
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:18:06+00:00",
+  "sha256": "23aa1d18181b58d90aa30fdccd1c4adeca289c9a3a82ae20e7e628b791fdf864",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 251,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "codigo_atividade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_area",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_subarea",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_subarea",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:54:09+00:00",
+  "sha256": "be735ab263ab256806aae7f0bbf11f541ef2ed6b1dd8abb77b02650028f61e90",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 65,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

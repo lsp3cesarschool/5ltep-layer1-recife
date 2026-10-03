@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "Unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.6667
+  },
+  {
+   "name": "VALOR MÊS",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "Contratada",
+   "type": "string",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "Contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "Objeto",
+   "type": "string",
+   "sampleEmptyShare": 0.5833
+  },
+  {
+   "name": "Observaçoes",
+   "type": "string",
+   "sampleEmptyShare": 0.9167
+  },
+  {
+   "name": "Tipo de Repasse",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:07:40+00:00",
+  "sha256": "36d1a1470878d900eb5f5b9bdbb975d9475df19d50de06830b411aec2b52cab9",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 12,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

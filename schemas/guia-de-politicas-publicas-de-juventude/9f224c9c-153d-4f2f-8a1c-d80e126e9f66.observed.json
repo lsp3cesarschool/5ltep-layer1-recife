@@ -1,0 +1,119 @@
+{
+ "fields": [
+  {
+   "name": "programa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "secretaria_responsavel",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "telefones_contato",
+   "type": "string",
+   "sampleEmptyShare": 0.0268
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "sampleEmptyShare": 0.349
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.4161
+  },
+  {
+   "name": "direito1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "direito2",
+   "type": "string",
+   "sampleEmptyShare": 0.047
+  },
+  {
+   "name": "direito3",
+   "type": "string",
+   "sampleEmptyShare": 0.443
+  },
+  {
+   "name": "direito4",
+   "type": "string",
+   "sampleEmptyShare": 0.7718
+  },
+  {
+   "name": "direito5",
+   "type": "string",
+   "sampleEmptyShare": 0.9262
+  },
+  {
+   "name": "direito6",
+   "type": "string",
+   "sampleEmptyShare": 0.9597
+  },
+  {
+   "name": "direito7",
+   "type": "string",
+   "sampleEmptyShare": 0.9597
+  },
+  {
+   "name": "direito8",
+   "type": "string",
+   "sampleEmptyShare": 0.9597
+  },
+  {
+   "name": "direito9",
+   "type": "string",
+   "sampleEmptyShare": 0.9597
+  },
+  {
+   "name": "direito10",
+   "type": "string",
+   "sampleEmptyShare": 0.9933
+  },
+  {
+   "name": "direito11",
+   "type": "string",
+   "sampleEmptyShare": 0.9933
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:19:50+00:00",
+  "sha256": "7edf3f162e5c25dfc6985235d7c2b2c8de452544d6806e9615a267f1738bef76",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 149,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

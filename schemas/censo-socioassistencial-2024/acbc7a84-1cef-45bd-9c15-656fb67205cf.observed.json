@@ -1,0 +1,750 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Latitude",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Longitude",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_12",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_1",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_2",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_3",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_4",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_4_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_6_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_7",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_7_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_1",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_2",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_3",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_4_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_6_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_7",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_7_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_1",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_2",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_3",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_4",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_4_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_6_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_7",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_7_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_1",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_2",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_3",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_4_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_6_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_7",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_7_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaKm2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_1_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_1_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_1_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_1_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_2_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_2_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_2_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_2_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_3_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_3_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_3_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_3_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_4_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_4_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_1_7_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_2_7_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_3_7_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_4_7_velha",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Limp_q12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_0_velha",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:04:19+00:00",
+  "sha256": "75b9329178a7397193d76438ded34b9fa86d4ee710c5845ba09b7bd773fa16a7",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 1,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

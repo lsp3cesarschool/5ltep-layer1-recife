@@ -1,0 +1,319 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_turma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_hora_inicial",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_minuto_inicial",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_hora_final",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario_minuto_final",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "domingo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "segundafeira",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tercafeira",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quartafeira",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "quintafeira",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sextafeira",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sabado",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_atendimento",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mais_educacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.2852
+  },
+  {
+   "name": "codigo_atividade1",
+   "type": "integer",
+   "sampleEmptyShare": 0.83
+  },
+  {
+   "name": "codigo_atividade2",
+   "type": "integer",
+   "sampleEmptyShare": 0.8454
+  },
+  {
+   "name": "codigo_atividade3",
+   "type": "integer",
+   "sampleEmptyShare": 0.862
+  },
+  {
+   "name": "codigo_atividade4",
+   "type": "integer",
+   "sampleEmptyShare": 0.8716
+  },
+  {
+   "name": "codigo_atividade5",
+   "type": "integer",
+   "sampleEmptyShare": 0.895
+  },
+  {
+   "name": "codigo_atividade6",
+   "type": "integer",
+   "sampleEmptyShare": 0.9346
+  },
+  {
+   "name": "braille",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "recurso_otico_naootico",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "estrategia_desenvolvimento_mentais",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "tecnicas_orientacao_mobilidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "libras",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "caa",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "estrategias_enriquecimento_curricular",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "soroban",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "informatica_acessivel",
+   "type": "integer",
+   "sampleEmptyShare": 0.967
+  },
+  {
+   "name": "lingua_portuguesa_escrita",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "modalidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.203
+  },
+  {
+   "name": "etapa_ensino",
+   "type": "integer",
+   "sampleEmptyShare": 0.203
+  },
+  {
+   "name": "disciplina_quimica",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_fisica",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_matematica",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_biologia",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_ciencias",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_portugues",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_ingles",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_espanhol",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_frances",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_outralingua",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_artes",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_educacao_fisica",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_historia",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_geografia",
+   "type": "integer",
+   "sampleEmptyShare": 0.203
+  },
+  {
+   "name": "disciplina_filosofia",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_estudos_sociais",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_socilogia",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_informatica",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_profissionalizante",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_especiais",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_sociocultural",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_libras",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_pedagogicas",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_religiao",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_indigena",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  },
+  {
+   "name": "disciplina_outras",
+   "type": "integer",
+   "sampleEmptyShare": 0.3368
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:54:33+00:00",
+  "sha256": "04c05bb0369acf2058b4a1ca91ddab7577d96347e8abf4bf1c182b89b1ad75be",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,250 @@
+{
+ "fields": [
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_14",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_Numerico_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_9bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin3_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin4_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_10bin5_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin2_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d17_11bin4_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_trabalhador",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:04:30+00:00",
+  "sha256": "3768f74544166ad92cece985af967d72d12a729ba4310a5a29d05e9e8a555833",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 38,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

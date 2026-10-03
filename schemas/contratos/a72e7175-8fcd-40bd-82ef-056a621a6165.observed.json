@@ -1,0 +1,114 @@
+{
+ "fields": [
+  {
+   "name": "numerocontrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "anocontrato",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "origemcontrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sequencialcompra",
+   "type": "integer",
+   "sampleEmptyShare": 0.023
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0508
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.9492
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouroendcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0202
+  },
+  {
+   "name": "numeroendcontratado",
+   "type": "integer",
+   "sampleEmptyShare": 0.043
+  },
+  {
+   "name": "complementoendcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.3762
+  },
+  {
+   "name": "bairroendcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "cidadeendcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0202
+  },
+  {
+   "name": "estadoendcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0208
+  },
+  {
+   "name": "datainiciovigencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "datafimvigencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0014
+  },
+  {
+   "name": "valorcontrato1",
+   "type": "number",
+   "sampleEmptyShare": 0.6046
+  },
+  {
+   "name": "valorcontrato2",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacaocontrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0094
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:07:35+00:00",
+  "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

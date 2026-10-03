@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "equipamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "velocidade_via",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T17:28:44+00:00",
+  "sha256": "f9e77a743743c6eef571a1f9a1d14e13074e3cc7bdfe5de9b800f3aeadf08438",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 62,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

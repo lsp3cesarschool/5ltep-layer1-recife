@@ -1,0 +1,233 @@
+{
+ "fields": [
+  {
+   "name": "nu_notificacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_cid",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_notificacao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ds_semana_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_uf_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_municipio_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_regional",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_unidade_notificacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_diagnostico_sintoma",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ds_semana_sintoma",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_nascimento",
+   "type": "string",
+   "sampleEmptyShare": 0.8478
+  },
+  {
+   "name": "nu_idade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_gestante",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_raca_cor",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_escolaridade",
+   "type": "string",
+   "sampleEmptyShare": 0.0196
+  },
+  {
+   "name": "co_uf_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_municipio_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_rg_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_distrito_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.004
+  },
+  {
+   "name": "co_bairro_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0026
+  },
+  {
+   "name": "no_bairro_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0012
+  },
+  {
+   "name": "co_logradouro_residencia",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nm_logradouro_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0079
+  },
+  {
+   "name": "nu_cep_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.9811
+  },
+  {
+   "name": "tp_zona_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.035
+  },
+  {
+   "name": "co_pais_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_investigacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0077
+  },
+  {
+   "name": "tp_classificacao_final",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_criterio_confirmacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0105
+  },
+  {
+   "name": "tp_autoctone_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.943
+  },
+  {
+   "name": "co_uf_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.9774
+  },
+  {
+   "name": "co_pais_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_municipio_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.9774
+  },
+  {
+   "name": "co_distrito_infeccao",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "co_bairro_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "no_bairro_infeccao",
+   "type": "string",
+   "sampleEmptyShare": 0.9958
+  },
+  {
+   "name": "st_doenca_trabalho",
+   "type": "integer",
+   "sampleEmptyShare": 0.9575
+  },
+  {
+   "name": "tp_evolucao_caso",
+   "type": "integer",
+   "sampleEmptyShare": 0.0119
+  },
+  {
+   "name": "dt_obito",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9977
+  },
+  {
+   "name": "dt_encerra",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T15:51:47+00:00",
+  "sha256": "1634d59f8e008452849ba0b2a9d76d13d8911ad570da78a47d60dda788439140",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 4284,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

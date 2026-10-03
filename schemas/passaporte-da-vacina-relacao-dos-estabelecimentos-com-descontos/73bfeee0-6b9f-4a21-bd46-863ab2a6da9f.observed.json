@@ -1,0 +1,64 @@
+{
+ "fields": [
+  {
+   "name": "nome_estabelecimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_estabelecimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco_estabelecimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro_estabelecimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "percentual_desconto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_desconto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "regras_uso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T16:31:15+00:00",
+  "sha256": "ceab26c5755bfe94f8ad4adee1c5d808b6db72a593c2b16a61de41a0f865664f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 118,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}
