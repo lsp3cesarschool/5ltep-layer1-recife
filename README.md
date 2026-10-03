@@ -80,7 +80,7 @@ upstream commit above; the schemas and results are committed by the workflow.
 
 ## Limitations
 
-The limitations of the main instance apply. Specific to Recife: the portal does not answer partial
+The limitations of the main instance apply, including its [size and time limits](https://github.com/lsp3cesarschool/5ltep-layer1#size-and-time-limits) (what GitHub and the system accept). Specific to Recife: the portal does not answer partial
 downloads, so every file is read from the start; the first run of the whole portal takes several
 chained batches.
 

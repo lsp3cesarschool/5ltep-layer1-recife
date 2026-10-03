@@ -81,7 +81,7 @@ origem acima; os esquemas e resultados são commitados pelo workflow.
 
 ## Limitações
 
-Valem as limitações da instância principal. Específico do Recife: o portal não atende downloads
+Valem as limitações da instância principal, inclusive os [limites de tamanho e de tempo](https://github.com/lsp3cesarschool/5ltep-layer1/blob/main/LEIAME.md#limites-de-tamanho-e-de-tempo) (o que o GitHub e o sistema aceitam). Específico do Recife: o portal não atende downloads
 parciais, então cada arquivo é lido desde o início; a primeira execução do portal inteiro leva vários
 lotes encadeados.
 
