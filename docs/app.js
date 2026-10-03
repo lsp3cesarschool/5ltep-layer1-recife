@@ -69,8 +69,8 @@ const I18N = {
     k_ragged: "with rows of the wrong width", k_multi: "zips whose members have different headers",
     k_noname: "with columns without a name in the header",
     k_nottables: "published as data, but not tables (zips of documents or maps)", k_formats: "formats read",
-    k_dist: "other formats of the same table: compared · same columns", f_dist: "other formats",
-    d_same: "same columns", d_diff: "other columns", d_missing: "missing", d_extra: "extra", d_notchecked: "not compared",
+    k_dist: "other formats of the same table: compared · same columns · only spelling differs", f_dist: "other formats",
+    d_same: "same columns", d_spelling: "same columns, other spelling", d_diff: "other columns", d_missing: "missing", d_extra: "extra", d_notchecked: "not compared",
     similar_h: "Similar names between dictionary and file", similar_search: "Filter by dataset, file or name",
     similar_note: "Pairs of a name the dictionary declares but the file lacks and a column the file has but the dictionary does not declare, whose names are alike (normalised Levenshtein similarity of at least 0.8). Often a typo on one side, but not always: two different fields can have alike names. A heuristic for people to check, not a verdict.",
     similar_count: "{n} pairs in {f} files", s_declared: "Declared in the dictionary", s_column: "Column in the file",
@@ -158,8 +158,8 @@ const I18N = {
     k_ragged: "com linhas de largura errada", k_multi: "zips com membros de cabeçalhos diferentes",
     k_noname: "com colunas sem nome no cabeçalho",
     k_nottables: "publicados como dados, mas não são tabelas (zips de documentos ou mapas)", k_formats: "formatos lidos",
-    k_dist: "outros formatos da mesma tabela: comparados · mesmas colunas", f_dist: "outros formatos",
-    d_same: "mesmas colunas", d_diff: "colunas diferentes", d_missing: "faltam", d_extra: "sobram", d_notchecked: "não comparado",
+    k_dist: "outros formatos da mesma tabela: comparados · mesmas colunas · só a grafia difere", f_dist: "outros formatos",
+    d_same: "mesmas colunas", d_spelling: "mesmas colunas, outra grafia", d_diff: "colunas diferentes", d_missing: "faltam", d_extra: "sobram", d_notchecked: "não comparado",
     similar_h: "Nomes parecidos entre dicionário e arquivo", similar_search: "Filtrar por conjunto, arquivo ou nome",
     similar_note: "Pares formados por um nome que o dicionário declara mas o arquivo não tem e uma coluna que o arquivo tem mas o dicionário não declara, quando os nomes se parecem (similaridade de Levenshtein normalizada de pelo menos 0,8). Muitas vezes é erro de digitação de um dos lados, mas nem sempre: dois campos diferentes podem ter nomes parecidos. É uma heurística para pessoas conferirem, não um veredito.",
     similar_count: "{n} pares em {f} arquivos", s_declared: "Declarado no dicionário", s_column: "Coluna no arquivo",
@@ -530,7 +530,7 @@ function renderFindings(f, net, dist) {
       [t("k_ragged"), fmt(fi.with_ragged_rows)], [t("k_multi"), fmt(fi.zips_with_several_headers)],
       [t("k_noname"), fmt(fi.with_columns_without_name)],
       [t("k_nottables"), fmt(fi.not_tables)],
-      [t("k_dist"), `${fmt((dist || {}).compared)} · ${fmt((dist || {}).same_columns)}`],
+      [t("k_dist"), `${fmt((dist || {}).compared)} · ${fmt((dist || {}).same_columns)} · ${fmt((dist || {}).spelling_only)}`],
       [t("k_nottab"), fmt(fi.not_tabular)], [t("k_gb"), num1(nt.gb)], [t("k_minutes"), num1(nt.minutes)],
       [t("k_mbs"), num1(nt.end_to_end_mb_s)], [t("k_ttfb"), num1(nt.first_byte_s_median)],
       [t("k_reqfail"), fmt(Object.values(nt.request_failures || {}).reduce((a, b) => a + b, 0))]])
@@ -583,7 +583,7 @@ function fileDetail(f) {
   }
   if ((f.distributions || []).length) {
     more += `<div class="small"><span class="muted">${esc(t("f_dist"))}:</span> ` + f.distributions.map((d) => {
-      const what = d.status !== "ok" ? t("d_notchecked") : d.same_columns ? t("d_same")
+      const what = d.status !== "ok" ? t("d_notchecked") : d.same_columns ? t("d_same") : d.spelling_only ? t("d_spelling")
         : `${t("d_diff")} (${[d.missing && d.missing.length ? `${t("d_missing")} ${d.missing.join(", ")}` : "",
             d.extra && d.extra.length ? `${t("d_extra")} ${d.extra.join(", ")}` : ""].filter(Boolean).join("; ")})`;
       return `<code>${esc(d.format || "?")}</code> ${esc(what)}`;

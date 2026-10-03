@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from statistics import mean
 from urllib.parse import urlparse
 
-from src import config, dictionaries, drift, schemas
+from src import config, dictionaries, drift, schemas, validate
 
 LEVELS = (0, 1, 2, 3, 4)
 
@@ -180,14 +180,24 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
     }
 
 
+def with_spelling(d: dict) -> dict:
+    """A compared format whose columns differ from the table's only in spelling (Ano Debito / anoDebito)
+    is reported as such, as in the validation: a difference of spelling is not a different structure."""
+    if d.get("status") != "ok" or d.get("same_columns"):
+        return d
+    pairs, missing, extra = validate.pair_spelling(d.get("missing") or [], d.get("extra") or [])
+    return {**d, "spelling": pairs, "spelling_only": not missing and not extra, "missing": missing, "extra": extra}
+
+
 def distributions(tables: list[tuple[dict, dict | None]]) -> dict:
     """The same table in other formats: how many could be compared, and whether their columns match."""
-    recs = [d for _, v in tables for d in (v or {}).get("distributions") or []]
+    recs = [with_spelling(d) for _, v in tables for d in (v or {}).get("distributions") or []]
     ok = [d for d in recs if d.get("status") == "ok"]
     return {"tables_with_other_formats": sum(1 for t, _ in tables if t.get("distributions")),
             "other_formats": len(recs), "compared": len(ok),
             "same_columns": sum(1 for d in ok if d.get("same_columns")),
-            "different_columns": sum(1 for d in ok if not d.get("same_columns")),
+            "spelling_only": sum(1 for d in ok if d.get("spelling_only")),
+            "different_columns": sum(1 for d in ok if not d.get("same_columns") and not d.get("spelling_only")),
             "not_compared": dict(Counter(d.get("status") for d in recs if d.get("status") != "ok")),
             "by_format": dict(Counter(d.get("format") for d in recs))}
 
@@ -391,7 +401,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
                                        for f, kinds in c.get("errors_by_field", {}).items()}} if c else None,
                 "drift_events": drift_count.get(t["id"], 0),
                 "not_a_table": not_a_table(v),
-                "distributions": v.get("distributions") or t.get("distributions") or [],
+                "distributions": [with_spelling(d) for d in v.get("distributions") or t.get("distributions") or []],
                 # the Table Schemas of this file in the repository (declared, extracted, observed...)
                 "schema_files": {k: schemas.path(ds["name"], t["id"], k).relative_to(config.ROOT).as_posix()
                                  for k in schemas.KINDS if schemas.path(ds["name"], t["id"], k).exists()},

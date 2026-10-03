@@ -957,6 +957,20 @@ def test_other_formats_are_checked_for_their_columns(monkeypatch):
     assert out[1]["same_columns"] is False and out[1]["missing"] == ["b"] and out[1]["extra"] == ["c"]
 
 
+def test_other_formats_differing_only_in_spelling_are_not_another_structure():
+    # IBAMA: the CSV says "Ano Debito" and "Classe de Risco", the JSON says anoDebito and classeRisco
+    d = {"status": "ok", "same_columns": False, "missing": ["ano debito", "classe de risco", "ano"],
+         "extra": ["anodebito", "classe risco"]}
+    out = report.with_spelling(d)
+    assert out["spelling"] == {"ano debito": "anodebito", "classe de risco": "classe risco"}
+    assert report.with_spelling({**d, "missing": ["numero de gru", "valor pago r"], "extra": ["numerogru", "valorpago"]})["spelling_only"]
+    assert out["spelling_only"] is False and out["missing"] == ["ano"] and out["extra"] == []
+    only = report.with_spelling({**d, "missing": ["ano debito"], "extra": ["anodebito"]})
+    assert only["spelling_only"] is True
+    s = report.distributions([({"distributions": [{}]}, {"distributions": [d, only]})])
+    assert (s["spelling_only"], s["different_columns"]) == (1, 1)
+
+
 def test_zips_without_tables_leave_the_tabular_universe(tmp_root):
     c = {"portal": {"portal_url": "https://p", "name": "P", "title": "P"}, "generated_at": "t", "datasets": [
         {"name": "a", "title": "A", "url": "u", "dictionaries": [], "tables": [

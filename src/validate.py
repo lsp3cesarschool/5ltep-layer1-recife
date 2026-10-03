@@ -189,6 +189,28 @@ def similar_names(missing: list[str], undeclared: list[str], threshold: float = 
     return out
 
 
+def pair_spelling(missing: list[str], extra: list[str]) -> tuple[dict[str, str], list[str], list[str]]:
+    """Columns of one format missing from another, paired by spelling: the same letters without spaces,
+    connectives and loose letters (Ano Debito / anoDebito, Numero de GRU / numeroGRU, Valor Pago (R$) /
+    valorPago), then alike names the same way (Codigo da Categoria / codCategoria, similarity >= 0.8).
+    Returns (pairs, still missing, still extra)."""
+    from src.pdf_extract import similarity
+
+    compact = lambda n: "".join(w for w in dictionaries.norm(n).split() if len(w) > 1 and w not in CONNECTIVES)
+    by_compact = {compact(e): e for e in extra}
+    pairs = {m: by_compact[compact(m)] for m in missing if compact(m) and compact(m) in by_compact}
+    free = [e for e in extra if e not in pairs.values()]
+    for m in [m for m in missing if m not in pairs]:
+        scored = [(similarity(compact(m), compact(e)), e) for e in free]
+        if scored and max(scored)[0] >= 0.8:
+            pairs[m] = max(scored)[1]
+            free.remove(pairs[m])
+    return pairs, [m for m in missing if m not in pairs], [e for e in extra if e not in pairs.values()]
+
+
+CONNECTIVES = {"de", "da", "do", "das", "dos", "e", "of", "the"}
+
+
 TS_KEYS = {"name", "type", "format", "decimalChar", "groupChar", "trueValues", "falseValues", "constraints",
            "description", "title"}
 
