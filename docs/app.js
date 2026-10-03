@@ -22,7 +22,7 @@ const I18N = {
     col_dataset: "Dataset", col_level: "Level", col_files: "Files", col_conform: "Conform", col_dicts: "Dictionaries",
     privacy_note: "Only counts and row numbers are kept: no cell value is ever stored or shown.",
     subtitle: "Survey of {date} · report of {gen}",
-    read_note: "{n} of {t} · not downloaded {nd} · empty {e} · a page or PDF instead of the table {nt}",
+    read_note: "{n} of {t} · not downloaded {nd} · empty {e} · a page or PDF instead of the table {nt} · larger than the machine holds {tl}",
     "rk_no URL": "no URL", "rk_redirect loop": "redirect loop (the link points to itself)",
     "rk_batch time limit": "did not finish within a batch", rk_other: "other error",
     "rk_not-tabular": "a page or PDF instead of the table", rk_empty: "empty file",
@@ -38,7 +38,7 @@ const I18N = {
     nc_missing: "declared fields missing from the file", nc_undeclared: "columns not declared",
     nc_cells: "more than {r} of the cells break type or constraints", nc_only_cells: "of them, only because of the cells",
     nc_overlap: "A file can fail for more than one reason.",
-    s_empty_f: "empty file", s_nottab: "a page or PDF instead of the table",
+    s_empty_f: "empty file", s_nottab: "a page or PDF instead of the table", s_toolarge: "larger than the machine holds (see the README, Size and time limits)",
     u_file: "File", u_reason: "Reason", u_host: "Server",
     drift_none_yet: "Drift needs two observations: the first run records each file's structure as its baseline ({n} files on {d}). The next weekly run ({next}) compares against it; any change opens an issue.",
     drift_none: "No change in structure since the baseline ({n} files, first observed on {d}).",
@@ -110,7 +110,7 @@ const I18N = {
     col_dataset: "Conjunto", col_level: "Nível", col_files: "Arquivos", col_conform: "Conformes", col_dicts: "Dicionários",
     privacy_note: "Só contagens e números de linha são guardados: nenhum valor de célula é armazenado ou exibido.",
     subtitle: "Levantamento de {date} · relatório de {gen}",
-    read_note: "{n} de {t} · não baixados {nd} · vazios {e} · página ou PDF no lugar da tabela {nt}",
+    read_note: "{n} de {t} · não baixados {nd} · vazios {e} · página ou PDF no lugar da tabela {nt} · maiores do que a máquina comporta {tl}",
     "rk_no URL": "sem URL", "rk_redirect loop": "redirecionamento em laço (o link aponta para si mesmo)",
     "rk_batch time limit": "não terminou dentro de um lote", rk_other: "outro erro",
     "rk_not-tabular": "página ou PDF no lugar da tabela", rk_empty: "arquivo vazio",
@@ -126,7 +126,7 @@ const I18N = {
     nc_missing: "campos declarados ausentes do arquivo", nc_undeclared: "colunas não declaradas",
     nc_cells: "mais de {r} das células violam tipo ou restrições", nc_only_cells: "destes, só por causa das células",
     nc_overlap: "Um arquivo pode falhar por mais de um motivo.",
-    s_empty_f: "arquivo vazio", s_nottab: "página ou PDF no lugar da tabela",
+    s_empty_f: "arquivo vazio", s_nottab: "página ou PDF no lugar da tabela", s_toolarge: "maior do que a máquina comporta (ver o LEIAME, Limites de tamanho e de tempo)",
     u_file: "Arquivo", u_reason: "Motivo", u_host: "Servidor",
     drift_none_yet: "A deriva precisa de duas observações: a primeira execução registra a estrutura de cada arquivo como linha de base ({n} arquivos em {d}). A próxima execução semanal ({next}) compara com ela; qualquer mudança abre uma issue.",
     drift_none: "Nenhuma mudança de estrutura desde a linha de base ({n} arquivos, primeira observação em {d}).",
@@ -281,7 +281,7 @@ function renderTiles(s) {
     tile(t("t_datasets"), fmt(s.datasets.total)),
     tile(t("t_files"), fmt(s.tables.total)),
     tile(t("t_checked"), fmt(c.read), esc(t("read_note", { n: fmt(c.read), t: fmt(c.files), nd: fmt(c.not_downloaded),
-      e: fmt(c.empty), nt: fmt(c.not_tabular) })) + more("coverage"), c.files ? c.read / c.files : 0),
+      e: fmt(c.empty), nt: fmt(c.not_tabular), tl: fmt(c.too_large || 0) })) + more("coverage"), c.files ? c.read / c.files : 0),
     tile(t("t_conf"), pct(s.l1_rate), esc(t("conf_tile_note", { c: fmt(c.conform), k: fmt(c.checked), w: fmt(c.read_without_schema) }))
       + ` · ${esc(t("threshold", { t: pct(s.method.l1_pass_threshold) }))}` + more("coverage"), s.l1_rate ?? 0, status),
     tile(t("t_drift"), fmt(d.observed + d.declared), esc(driftNote) + more("drift")),
@@ -305,6 +305,7 @@ function renderCoverage(s) {
   }
   if (c.empty) notRead[t("s_empty_f")] = c.empty;
   if (c.not_tabular) notRead[t("s_nottab")] = c.not_tabular;
+  if (c.too_large) notRead[t("s_toolarge")] = c.too_large;
   const notConform = {
     [t("nc_missing")]: c.fail_missing_fields, [t("nc_undeclared")]: c.fail_undeclared_columns,
     [t("nc_cells", { r: pct(s.method.l1_max_error_rate) })]: c.fail_cells_over_limit,

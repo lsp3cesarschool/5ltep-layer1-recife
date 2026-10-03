@@ -227,7 +227,9 @@ class OllamaClient:
             payload.pop("think")  # model without a thinking mode
             resp = requests.post(f"{self.url}/api/generate", json=payload, timeout=config.LLM_TIMEOUT_S)
         resp.raise_for_status()
-        return resp.json()["response"], time.monotonic() - t0
+        data = resp.json()
+        self.last_done_reason = data.get("done_reason")    # "length": the answer hit num_predict
+        return data["response"], time.monotonic() - t0
 
 
 def parse_llm(text: str) -> list[dict]:
@@ -253,13 +255,18 @@ def llm(pdf: bytes, client: OllamaClient) -> tuple[list[dict], dict]:
     text = pdf_text(pdf)
     if not text.strip():
         return [], {"error": "the PDF has no text layer (a scan): OCR is not attempted"}
-    fields, seen, total = [], set(), 0.0
-    pieces = chunks(text, config.LLM_MAX_PDF_CHARS)
-    for piece in pieces:
+    fields, seen, total, asked = [], set(), 0.0, 0
+    todo = chunks(text, config.LLM_MAX_PDF_CHARS)
+    while todo:
+        piece = todo.pop(0)
         answer, seconds = client.generate(SYSTEM, llm_prompt(piece))
-        total += seconds
+        total, asked = total + seconds, asked + 1
+        if getattr(client, "last_done_reason", None) == "length" and len(piece) > 200:
+            # the answer was cut by the output limit: ask again with the piece in halves
+            todo[:0] = chunks(piece, len(piece) // 2 + 1)
+            continue
         for f in parse_llm(answer):
             if f["name"] not in seen:                 # a field repeated across pieces counts once
                 seen.add(f["name"])
                 fields.append(f)
-    return fields, {"seconds": round(total, 1), "pdf_chars": len(text), "pieces": len(pieces)}
+    return fields, {"seconds": round(total, 1), "pdf_chars": len(text), "pieces": asked}

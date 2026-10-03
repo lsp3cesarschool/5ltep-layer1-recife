@@ -228,6 +228,14 @@ def test_a_long_pdf_goes_to_the_model_whole_in_pieces(monkeypatch):
     assert [f["name"] for f in fields] == [f"CAMPO_{i:03d}" for i in range(300)]   # none lost, none twice
     assert meta["pieces"] == len(pieces)
 
+    class CutClient(Client):          # the answer is cut whenever the piece is larger than 600 characters
+        def generate(self, system, prompt):
+            self.last_done_reason = "length" if len(prompt) > 700 else "stop"
+            return super().generate(system, prompt) if self.last_done_reason == "stop" else ('{"fields": [', 1.0)
+
+    fields, meta = pdf_extract.llm(b"%PDF", CutClient())
+    assert [f["name"] for f in fields] == [f"CAMPO_{i:03d}" for i in range(300)] and meta["pieces"] > len(pieces)
+
 
 # --- linking --------------------------------------------------------------------
 

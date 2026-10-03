@@ -91,7 +91,10 @@ LLM_SEED = _env("LLM_SEED", 42)
 LLM_NUM_CTX = _env("LLM_NUM_CTX", 16384)
 LLM_NUM_PREDICT = _env("LLM_NUM_PREDICT", 6000)
 LLM_TIMEOUT_S = _env("LLM_TIMEOUT_S", 1800)
-LLM_MAX_PDF_CHARS = _env("LLM_MAX_PDF_CHARS", 30000)   # size of each piece of a PDF sent to the model (never a cut)
+# A PDF goes to the model whole, in pieces of at most this many characters: ~7,000 tokens, which with the
+# instructions and an answer of up to LLM_NUM_PREDICT tokens fits in LLM_NUM_CTX (Ollama would otherwise
+# drop the start of the input). An answer cut by LLM_NUM_PREDICT is asked again with the piece in halves.
+LLM_MAX_PDF_CHARS = _env("LLM_MAX_PDF_CHARS", 20000)
 EXTRACT_MAX_MINUTES = _env("EXTRACT_MAX_MINUTES", 120.0)
 # Bump when the extraction prompt changes meaning; earlier suggestions keep the version they had.
 EXTRACTION_PROMPT_VERSION = "v1"

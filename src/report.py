@@ -205,6 +205,8 @@ def distributions(tables: list[tuple[dict, dict | None]]) -> dict:
 def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
     """From all tabular files to conformant ones, with the reason at every step (the dashboard's funnel)."""
     status = Counter((v or {}).get("status") or "pending" for _, v in tables)
+    # a file above what the machine holds (disk or memory): listed apart, never mixed with broken links
+    too_large = sum((v or {}).get("status") == "not-tabular" and v.get("not_tabular_kind") == "too-large" for _, v in tables)
     errors = [(t, v) for t, v in tables if (v or {}).get("status") == "error"]
     ok = [(t, v) for t, v in tables if (v or {}).get("status") == "ok"]
     checked = [(t, v) for t, v in ok if (v.get("summary") or {}).get("conformance")]
@@ -212,7 +214,8 @@ def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
     over = lambda c: c["error_rate"] > config.L1_MAX_ERROR_RATE
     return {
         "files": len(tables), "read": len(ok), "empty": status.get("empty", 0),
-        "not_tabular": status.get("not-tabular", 0), "not_downloaded": len(errors), "pending": status.get("pending", 0),
+        "not_tabular": status.get("not-tabular", 0) - too_large, "too_large": too_large,
+        "not_downloaded": len(errors), "pending": status.get("pending", 0),
         "not_downloaded_by_reason": dict(Counter(_error_kind(v.get("error")) for _, v in errors).most_common()),
         "not_downloaded_by_host": dict(Counter(f"{_error_kind(v.get('error'))} · {urlparse(t.get('url') or '').hostname or '—'}"
                                                for t, v in errors).most_common()),
