@@ -120,8 +120,12 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
             "machine_readable": len(machine), "human_readable": sum(d["kind"] == "human" for d in dicts),
             "machine_readable_and_read": len(readable),
             "unreadable_by_reason": dict(Counter(d.get("error_kind") or "other" for d in dicts
-                                                 if d["kind"] == "machine" and not d.get("readable")).most_common()),
-            "pdf_link_not_a_pdf": sum(d.get("format") == "PDF" and d.get("readable") is False for d in dicts),
+                                                 if d["kind"] == "machine" and not d.get("readable")
+                                                 and d.get("error_kind") != "unreachable").most_common()),
+            "pdf_link_not_a_pdf": sum(d.get("format") == "PDF" and d.get("error_kind") in ("html-page", "malformed")
+                                      for d in dicts),
+            # the server did not answer in this survey (not a finding about the portal's dictionaries)
+            "unreachable": sum(d.get("error_kind") == "unreachable" for d in dicts),
             "orphans": sum(not d.get("linked_resources") for d in dicts),
             "declaring_resource_ids": sum(bool(d.get("declared_resource_ids")) for d in dicts),
             "broken_declared_links": sum(bool(d.get("broken_declared_links")) for d in dicts),

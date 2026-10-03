@@ -7,6 +7,7 @@ import zipfile
 from datetime import datetime, timedelta, timezone
 
 import pytest
+import requests
 
 from src import (census, config, dictionaries, drift, extract, linker, pdf_extract, report, safety, schemas,
                  tabular, types_map, validate, work)
@@ -1094,3 +1095,67 @@ def test_zips_without_tables_leave_the_tabular_universe(tmp_root):
          "z1": {"status": "not-tabular", "not_tabular_kind": "no-tables", "error": "zip without tables"}}
     s = report.build_summary(c, v, {}, [])
     assert s["tables"]["total"] == 1 and s["coverage"]["files"] == 1 and s["not_tables"]["count"] == 1
+
+
+def test_a_dictionary_server_that_does_not_answer_is_asked_again_and_never_read_as_drift(tmp_root, monkeypatch):
+    # Recife, 03/10/2026: the file server timed out for 69 dictionaries during one survey; their files
+    # were checked against the DataStore instead, and a weekly run would have removed the declared
+    # schemas (a false drift issue).
+    monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
+    monkeypatch.setattr(census.config, "DICTIONARY_RETRY_WAIT_S", 0)
+    serve(monkeypatch, {"https://p/d.csv": IBAMA_DICT})
+    first, _ = census.run({}, packages=[_package()])
+    calls = []
+
+    def down(url, limit):
+        calls.append(url)
+        raise requests.ConnectTimeout("Max retries exceeded")
+
+    monkeypatch.setattr(census.ckan, "fetch_bytes", down)
+    second, events = census.run({}, packages=[_package()], previous=first)
+    assert len(calls) == 1 + census.config.DICTIONARY_RETRY_ROUNDS
+    ds = second["datasets"][0]
+    assert ds["unreachable_dictionaries"] == ["r-dict"] and ds["kept_from"] == first["generated_at"]
+    assert ds["tables"] == first["datasets"][0]["tables"]
+    assert events == [] and schemas.select("termo-de-doacao", "r-data")[0] == "declared"
+    # it answers on a retry: the fresh reading is used
+    answers = iter([requests.ConnectTimeout("x")])
+
+    def flaky(url, limit):
+        e = next(answers, None)
+        if e:
+            raise e
+        return IBAMA_DICT, hashlib.sha256(IBAMA_DICT).hexdigest()
+
+    monkeypatch.setattr(census.ckan, "fetch_bytes", flaky)
+    third, _ = census.run({}, packages=[_package()], previous=second)
+    assert "kept_from" not in third["datasets"][0] and third["datasets"][0]["tables"][0]["level"] == 2
+    # a 404 is the portal's broken link, not a server that did not answer
+    resp = requests.Response()
+    resp.status_code = 404
+    assert census._download_error_kind(requests.HTTPError(response=resp)) == "download-failed"
+    assert census._download_error_kind(requests.ConnectTimeout("x")) == "unreachable"
+
+
+def test_a_survey_stops_asking_a_file_server_that_is_down_and_its_files_wait(tmp_root, monkeypatch):
+    # Recife, 03/10/2026: the file server was down for the whole survey (almost five hours of retries).
+    monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
+    monkeypatch.setattr(census.config, "DICTIONARY_RETRY_WAIT_S", 0)
+    monkeypatch.setattr(census.config, "UNREACHABLE_STREAK", 2)
+    monkeypatch.setattr(census.config, "CENSUS_WORKERS", 1)
+    calls = []
+
+    def down(url, limit):
+        calls.append(url)
+        raise requests.ConnectTimeout("Max retries exceeded")
+
+    serve(monkeypatch, {})
+    monkeypatch.setattr(census.ckan, "fetch_bytes", down)
+    pkgs = [{**_package(dict_url=f"https://p/d{i}.csv"), "name": f"ds-{i}"} for i in range(5)]
+    result, _ = census.run({}, packages=pkgs)
+    # per round: two failures open the breaker, the other three datasets are not asked
+    assert len(calls) == 2 * (1 + census.config.DICTIONARY_RETRY_ROUNDS)
+    assert all(ds["unreachable_dictionaries"] == ["r-dict"] for ds in result["datasets"])
+    assert result["datasets"][4]["dictionaries"][0]["error"] == census.NOT_ASKED
+    # with no earlier reading, the files are not checked against a weaker schema: they wait
+    assert work.plan(result, {}) == []

@@ -65,12 +65,18 @@ def reason_for(dataset: str, t: dict, prev: dict | None, now: datetime, head=cka
 def plan(census: dict, validation: dict, now: datetime | None = None, head=ckan.head) -> list[dict]:
     now = now or datetime.now(timezone.utc)
     queue = []
-    for dataset, t in tables_of(census):
-        prev = validation.get(t["id"])
-        reason = reason_for(dataset, t, prev, now, head)
-        if reason:
-            queue.append({"id": t["id"], "dataset": dataset, "reason": reason,
-                          "since": (prev or {}).get("validated_at") or ""})
+    for ds in census["datasets"]:
+        if ds.get("unreachable_dictionaries") and not ds.get("kept_from"):
+            # Its dictionary did not answer and there is no earlier reading: which schema its files
+            # follow is unknown. They wait (pending) for the next run, instead of being checked
+            # against a weaker schema and counted as if that were the portal's documentation.
+            continue
+        for t in ds["tables"]:
+            prev = validation.get(t["id"])
+            reason = reason_for(ds["name"], t, prev, now, head)
+            if reason:
+                queue.append({"id": t["id"], "dataset": ds["name"], "reason": reason,
+                              "since": (prev or {}).get("validated_at") or ""})
     return sorted(queue, key=lambda q: (ORDER[q["reason"]], q["since"]))
 
 

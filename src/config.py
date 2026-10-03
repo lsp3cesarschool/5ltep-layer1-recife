@@ -53,6 +53,10 @@ MAX_DICTIONARY_BYTES = _env("MAX_DICTIONARY_BYTES", 2_000_000_000)   # read in m
 CHECK_DATASTORE = _env("CHECK_DATASTORE", "true").lower() == "true"
 CENSUS_WORKERS = _env("CENSUS_WORKERS", 4)            # datasets read at the same time (network-bound; polite)
 DICTIONARY_DEADLINE_S = _env("DICTIONARY_DEADLINE_S", 180)   # a dictionary that trickles longer is given up
+# A dictionary whose server did not answer is asked again after 5, 10 and 20 minutes (35 in all).
+DICTIONARY_RETRY_ROUNDS = _env("DICTIONARY_RETRY_ROUNDS", 3)
+DICTIONARY_RETRY_WAIT_S = _env("DICTIONARY_RETRY_WAIT_S", 300)
+UNREACHABLE_STREAK = _env("UNREACHABLE_STREAK", 8)     # failures in a row before the survey stops asking the file server
 
 # --- Validation ---------------------------------------------------------------
 # Time budget of one batch (the GitHub job limit is 6 h; the rest of the job needs some minutes).

@@ -56,6 +56,7 @@ const I18N = {
     u_datasets: "Datasets", u_files: "Files",
     lv: ["0 · no dictionary", "1 · for people only", "2 · machine-readable", "3 · types in the API", "4 · level 3 and conforms"],
     tip_level: "Level {l}: {n} ({p})",
+    k_unreachable: "{n} dictionaries did not answer in this survey (the server, not the portal's documentation): asked again in the next run; their datasets keep the last reading.",
     p_dicts: "Dictionaries", p_unread: "Why dictionaries cannot be read", p_links: "How files are linked to a dictionary",
     p_types: "Declared types", p_vs: "Files against their dictionaries", p_files: "The files", p_pdf: "PDF dictionaries",
     k_total: "dictionaries", k_machine: "machine-readable", k_read: "read by the toolkit", k_human: "for people only (PDF, HTML)",
@@ -145,6 +146,7 @@ const I18N = {
     u_datasets: "Conjuntos", u_files: "Arquivos",
     lv: ["0 · sem dicionário", "1 · só para pessoas", "2 · legível por máquina", "3 · tipos na API", "4 · nível 3 e conforme"],
     tip_level: "Nível {l}: {n} ({p})",
+    k_unreachable: "{n} dicionários não responderam neste levantamento (o servidor, não a documentação do portal): pedidos de novo na próxima execução; os conjuntos ficam com a última leitura.",
     p_dicts: "Dicionários", p_unread: "Por que dicionários não podem ser lidos", p_links: "Como os arquivos são ligados a um dicionário",
     p_types: "Tipos declarados", p_vs: "Arquivos contra seus dicionários", p_files: "Os arquivos", p_pdf: "Dicionários em PDF",
     k_total: "dicionários", k_machine: "legíveis por máquina", k_read: "lidos pela ferramenta", k_human: "só para pessoas (PDF, HTML)",
@@ -517,7 +519,8 @@ function renderFindings(f, net, dist) {
       [t("k_read"), fmt(d.machine_readable_and_read)], [t("k_human"), fmt(d.human_readable)],
       [t("k_orphans"), fmt(d.orphans)], [t("k_ids"), fmt(d.declaring_resource_ids)],
       [t("k_broken"), fmt(d.broken_declared_links)], [t("k_other_ds"), fmt(d.naming_another_dataset)]]) + bars(d.by_format)],
-    [t("p_unread"), bars(d.unreadable_by_reason, label("r"))],
+    [t("p_unread"), bars(d.unreadable_by_reason, label("r"))
+      + (d.unreachable ? `<p class="small muted">${esc(t("k_unreachable").replace("{n}", fmt(d.unreachable)))}</p>` : "")],
     [t("p_links"), bars(f.links.by_method, label("m"))],
     [t("p_types"), kv([[t("k_fields"), fmt(ty.fields_declared)], [t("k_spell"), fmt(ty.distinct_spellings)],
       [t("k_recog"), pct(ty.fields_with_recognised_type)], [t("k_dates"), pct(ty.date_fields_with_declared_format)]])

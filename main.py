@@ -54,7 +54,7 @@ def _log_run(stage: str, info: dict) -> None:
 
 def cmd_census(args) -> None:
     validation = _load(config.VALIDATION_FILE, {})
-    census, events = census_mod.run(validation)
+    census, events = census_mod.run(validation, previous=_load(config.CENSUS_FILE, {}))
     report.write_json(config.CENSUS_FILE, census)
     new_events = drift.append(events)
     queue = work.plan(census, validation)

@@ -18,10 +18,13 @@ schema from a PDF (that makes conformance checkable, which is reported separatel
 """
 
 import logging
+import threading
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+
+import requests
 
 from src import ckan, config, dictionaries, drift, linker, safety, schemas, tabular, types_map
 
@@ -44,6 +47,46 @@ def _type_findings(fields: list[dict]) -> dict:
             "date_fields": dates, "date_fields_with_format": dates_with_format}
 
 
+def _download_error_kind(exc: Exception) -> str:
+    """'unreachable' when the server did not answer (connection, timeout, 5xx): a fact about that
+    moment, asked again later, never a finding about the dictionary. 'download-failed' when the
+    server answered that the file is not there (401, 403, 404, 410): a broken link of the portal."""
+    status = getattr(getattr(exc, "response", None), "status_code", None)
+    if isinstance(exc, requests.RequestException) and status not in (401, 403, 404, 410):
+        return "unreachable"
+    return "download-failed"
+
+
+class _Breaker:
+    """Stops asking the file server once it stopped answering (UNREACHABLE_STREAK failures in a row):
+    each request that times out costs minutes of retries, and a whole survey (Recife, 03/10/2026)
+    spent almost five hours waiting for a server that was down. What was not asked is asked again in
+    the retry rounds, each of which starts by probing the server again."""
+
+    def __init__(self):
+        self.misses, self.lock = 0, threading.Lock()
+
+    def is_open(self) -> bool:
+        return self.misses >= config.UNREACHABLE_STREAK
+
+    def record(self, answered: bool) -> None:
+        with self.lock:
+            self.misses = 0 if answered else self.misses + 1
+
+    def reset(self) -> None:
+        with self.lock:
+            self.misses = 0
+
+
+BREAKER = _Breaker()
+NOT_ASKED = "not asked: the file server stopped answering in this survey"
+
+
+def unreachable(ds: dict) -> list[str]:
+    """Ids of the dataset's dictionaries whose server did not answer in this survey."""
+    return [d["id"] for d in ds.get("dictionaries") or [] if d.get("error_kind") == "unreachable"]
+
+
 def read_dictionary(res: dict) -> tuple[dict, dictionaries.Dictionary | None]:
     fmt = (res.get("format") or "").upper().strip(". ")
     entry = {"id": res["id"], "name": res.get("name") or "", "format": fmt, "url": res.get("url"),
@@ -51,14 +94,21 @@ def read_dictionary(res: dict) -> tuple[dict, dictionaries.Dictionary | None]:
     if entry["kind"] == "other" and (res.get("url") or "").lower().split("?")[0].endswith(".pdf"):
         entry["format"], entry["kind"] = "PDF", "human"
     if entry["kind"] == "machine" or entry["format"] == "PDF":
+        if BREAKER.is_open():
+            entry.update(readable=False, error=NOT_ASKED, error_kind="unreachable")
+            return entry, None
         try:
             data, sha = ckan.fetch_bytes(res["url"], config.MAX_DICTIONARY_BYTES)
         except ValueError as exc:
+            BREAKER.record(True)
             entry.update(readable=False, error=str(exc), error_kind="too-large")
             return entry, None
         except Exception as exc:
-            entry.update(readable=False, error=safety.error_text(exc, 160), error_kind="download-failed")
+            kind = _download_error_kind(exc)
+            BREAKER.record(kind != "unreachable")
+            entry.update(readable=False, error=safety.error_text(exc, 160), error_kind=kind)
             return entry, None
+        BREAKER.record(True)
         entry.update(sha256=sha, bytes=len(data))
         if entry["format"] == "PDF":
             if data[:5] != b"%PDF-":
@@ -135,11 +185,16 @@ def peek_header(t: dict) -> list[str] | None:
     """The column names of a table (no row is kept), or None when it cannot be read now (it is then
     linked by its header from its first validation on). A text file is read only to its first line;
     a zip, a spreadsheet or a Parquet is downloaded whole (its columns are only known that way)."""
+    if BREAKER.is_open():
+        return None
     try:
-        return tabular.peek_header(t["url"], rows=0)[1] or None
+        h = tabular.peek_header(t["url"], rows=0)[1] or None
     except Exception as exc:
+        BREAKER.record(_download_error_kind(exc) != "unreachable")
         logger.info("header of %s not read in the survey: %s", t["id"], safety.error_text(exc, 160))
         return None
+    BREAKER.record(True)
+    return h
 
 
 def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], written: set, events: list) -> dict:
@@ -245,13 +300,16 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
     }
 
 
-def run(validation: dict, packages: list[dict] | None = None) -> tuple[dict, list[dict]]:
-    """(census, declared drift events)."""
+def run(validation: dict, packages: list[dict] | None = None, previous: dict | None = None) -> tuple[dict, list[dict]]:
+    """(census, declared drift events). `previous` is the last census: a dataset whose dictionary
+    server does not answer, even after the retries, keeps its last reading (see below)."""
     portal = config.portal()
     packages = packages if packages is not None else ckan.packages(portal["portal_url"])
     headers = {rid: v["header"] for rid, v in validation.items() if v.get("header")}
     written: set = set()
-    datasets, events = [], []
+    events: list = []
+    results: dict[int, tuple] = {}
+    BREAKER.reset()
 
     def one(pkg: dict):
         # Each dataset has its own sets, merged below: nothing is shared between threads.
@@ -263,15 +321,46 @@ def run(validation: dict, packages: list[dict] | None = None) -> tuple[dict, lis
 
     # The census is network-bound (API calls, dictionary downloads): several datasets at a time.
     with ThreadPoolExecutor(max_workers=config.CENSUS_WORKERS) as pool:
-        for i, (ds, own_written, own_events) in enumerate(pool.map(one, packages), 1):
-            logger.info("[%d/%d] %s", i, len(packages), ds["name"])
-            datasets.append(ds)
-            written |= own_written
-            events += own_events
+        for i, res in enumerate(pool.map(one, packages)):
+            logger.info("[%d/%d] %s", i + 1, len(packages), res[0]["name"])
+            results[i] = res
+        # Portals' file servers go down for minutes or hours (Recife, 03/10/2026: 69 dictionaries
+        # timed out in one survey and answered again later). A dictionary that did not answer is
+        # asked again, with growing pauses, before the survey is written.
+        for attempt in range(config.DICTIONARY_RETRY_ROUNDS):
+            waiting = [i for i, (ds, _, _) in results.items() if unreachable(ds)]
+            if not waiting:
+                break
+            pause = config.DICTIONARY_RETRY_WAIT_S * 2 ** attempt
+            logger.warning("%d dataset(s) with a dictionary whose server did not answer; asking again in %d s",
+                           len(waiting), pause)
+            time.sleep(pause)
+            BREAKER.reset()
+            for i, res in zip(waiting, pool.map(one, [packages[i] for i in waiting])):
+                results[i] = res
+    # Still no answer: the dataset keeps its last reading (marked), and its committed schemas stay.
+    # Otherwise the server's absence would read as the portal's: the declared schema removed (a false
+    # drift issue), the file checked against a weaker schema, the dataset's level lowered.
+    before = {d["name"]: d for d in (previous or {}).get("datasets") or []}
+    kept: set[str] = set()
+    datasets = []
+    for i in range(len(packages)):
+        ds, own_written, own_events = results[i]
+        missing = unreachable(ds)
+        if missing:
+            kept.add(ds["name"])
+            if ds["name"] in before:
+                ds = {**before[ds["name"]], "kept_from": (previous or {}).get("generated_at"),
+                      "unreachable_dictionaries": missing}
+            else:
+                ds["unreachable_dictionaries"] = missing
+        datasets.append(ds)
+        written |= own_written
+        events += own_events
     # Schemas the portal no longer declares are removed, so the Git history shows the change.
     for kind in MANAGED_KINDS:
         for p in config.SCHEMAS.glob(f"*/*.{kind}.json"):
-            if p not in written:
+            if p not in written and p.parent.name not in kept:
                 rid = p.name.split(".")[0]
                 events += drift.compare_declared(p.parent.name, {"id": rid}, kind, schemas.load(p), None)
                 p.unlink()
