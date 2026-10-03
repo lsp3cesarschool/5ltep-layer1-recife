@@ -57,6 +57,9 @@ DICTIONARY_DEADLINE_S = _env("DICTIONARY_DEADLINE_S", 180)   # a dictionary that
 DICTIONARY_RETRY_ROUNDS = _env("DICTIONARY_RETRY_ROUNDS", 3)
 DICTIONARY_RETRY_WAIT_S = _env("DICTIONARY_RETRY_WAIT_S", 300)
 UNREACHABLE_STREAK = _env("UNREACHABLE_STREAK", 8)     # failures in a row before the survey stops asking the file server
+# Reading the headers of files never validated (a zip is downloaded whole) stops after this long: the
+# survey runs in one job of at most 300 minutes, and its work is lost if the job is stopped.
+SURVEY_HEADER_MAX_MINUTES = _env("SURVEY_HEADER_MAX_MINUTES", 180)
 
 # --- Validation ---------------------------------------------------------------
 # Time budget of one batch (the GitHub job limit is 6 h; the rest of the job needs some minutes).

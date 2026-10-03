@@ -80,6 +80,16 @@ def link(dicts: list[dict], tables: list[dict], headers: dict[str, list[str]]) -
     return out
 
 
+def header_decides(dicts: list[dict], link: dict | None) -> bool:
+    """Whether a file's header could change its link (`link`: the one found without it). Never when
+    the dictionary names the file (nothing outranks that) or no dictionary lists field names; with a
+    single dictionary, only when the file is not linked yet (the header can only confirm the link)."""
+    units = [p for d in dicts for p in d.get("parts") or [{"names": []}]]
+    if (link and link["method"] == "declared-id") or not any(p.get("names") for p in units):
+        return False
+    return len(units) > 1 or link is None
+
+
 def broken_declared_links(dicts: list[dict], resource_ids: set[str]) -> dict[str, list[str]]:
     return {d["id"]: [r for r in d.get("declared_resource_ids") or [] if r not in resource_ids]
             for d in dicts if any(r not in resource_ids for r in d.get("declared_resource_ids") or [])}

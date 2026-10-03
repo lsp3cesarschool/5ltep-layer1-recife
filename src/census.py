@@ -87,6 +87,7 @@ class _Breaker:
 
 BREAKER = _Breaker()
 NOT_ASKED = "not asked: the file server stopped answering in this survey"
+HEADER_DEADLINE = [float("inf")]   # monotonic time after which no header is read (set by `run`)
 
 
 def unreachable(ds: dict) -> list[str]:
@@ -190,22 +191,34 @@ def level_of(resource: dict, dict_entry: dict | None) -> int:
     return 1
 
 
-def peek_header(t: dict) -> tuple[list[str] | None, bool]:
-    """(the column names of a table, or None; whether the server did not answer). No row is kept. A
-    file that cannot be read as a table is linked by its header from its first validation on; one
-    whose server did not answer is asked again (see `run`). A text file is read only to its first
-    line; a zip, a spreadsheet or a Parquet is downloaded whole (its columns are only known that way)."""
+def peek_header(t: dict) -> tuple[list[str] | None, str | None]:
+    """(the column names of a table, or None; why not: "unreachable" when the server did not answer,
+    "time" past SURVEY_HEADER_MAX_MINUTES). No row is kept. A file that cannot be read as a table is
+    linked by its header from its first validation on; one whose server did not answer is asked again
+    (see `run`). A text file is read only to its first line; a zip, a spreadsheet or a Parquet is
+    downloaded whole (its columns are only known that way; Recife's file server ignores byte ranges)."""
+    if time.monotonic() > HEADER_DEADLINE[0]:
+        return None, "time"
     if BREAKER.is_open():
-        return None, True
+        return None, "unreachable"
     try:
         h = tabular.peek_header(t["url"], rows=0)[1] or None
     except Exception as exc:
         answered = _download_error_kind(exc) != "unreachable"
         BREAKER.record(answered)
         logger.info("header of %s not read in the survey: %s", t["id"], safety.error_text(exc, 160))
-        return None, not answered
+        return None, None if answered else "unreachable"
     BREAKER.record(True)
-    return h, False
+    return h, None
+
+
+def _cost(t: dict) -> tuple[int, int]:
+    """Cheapest header first: a text file is read to its first line, anything else whole."""
+    try:
+        size = int(t.get("size") or 0)
+    except (TypeError, ValueError):
+        size = 0
+    return (0 if t["candidate"] == "csv" else 1, size)
 
 
 def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], written: set, events: list) -> dict:
@@ -254,24 +267,37 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
             t["_described"] = described
 
     tables = group_distributions(tables)
-    # A file never validated has no known header: read it now (only the columns), so that it is linked
-    # to its dictionary by its header, and validated against it, in this same run.
-    if any(d.get("format") == "PDF" or d["id"] in parsed for d in dicts):
-        # the header decides the link only when there is a choice (several dictionaries, or parts)
-        choice = len(dicts) > 1 or any(len(d.parts) > 1 for d in parsed.values())
-        for t in tables:
-            if t["id"] not in headers:
-                h, missed = peek_header(t)
-                if h:
-                    t["header_peeked"] = h
-                elif missed and choice:
-                    t["header_unreachable"] = True
-    headers = {**headers, **{t["id"]: t["header_peeked"] for t in tables if t.get("header_peeked")}}
     link_input = [{"id": d["id"], "name": d["name"], "declared_resource_ids": d.get("declared_resource_ids"),
                    "parts": [{"label": p.label, "names": [f["name"] for f in p.fields]} for p in parsed[d["id"]].parts]
                    if d["id"] in parsed and parsed[d["id"]].parts else None}
                   for d in dicts]
+    # A file never validated has no known header. It is read now (only the columns) where the header
+    # decides something in this run, so that the file is checked against the right schema at once:
+    # its link to a dictionary, or the oracle of a PDF dictionary (one header is enough). Nothing else
+    # is read: a zip is downloaded whole for its columns (Recife: 73 zips, 21 GB, most of them named
+    # by their dictionary's own list of resource ids, where the header changes nothing).
+    headers = dict(headers)
+
+    def peek(t: dict) -> str | None:
+        h, why = peek_header(t)
+        if h:
+            t["header_peeked"] = headers[t["id"]] = h
+        elif why == "time":
+            t["header_deferred"] = True   # linked without it; its validation gives it to the next survey
+        return why
+
     links = linker.link(link_input, tables, headers)
+    for t in tables:
+        if t["id"] not in headers and linker.header_decides(link_input, links.get(t["id"])):
+            if peek(t) == "unreachable":
+                t["header_unreachable"] = True
+    links = linker.link(link_input, tables, headers)
+    for d in dicts:
+        linked = [t for t in tables if (links.get(t["id"]) or {}).get("dictionary") == d["id"]]
+        if d.get("format") == "PDF" and d.get("sha256") and linked and not any(t["id"] in headers for t in linked):
+            for t in sorted(linked, key=_cost):
+                if peek(t) == "time" or t["id"] in headers:
+                    break
     by_id = {d["id"]: d for d in dicts}
     for d in dicts:
         d["linked_resources"] = sorted(rid for rid, l in links.items() if l["dictionary"] == d["id"])
@@ -325,6 +351,7 @@ def run(validation: dict, packages: list[dict] | None = None, previous: dict | N
     events: list = []
     results: dict[int, tuple] = {}
     BREAKER.reset()
+    HEADER_DEADLINE[0] = time.monotonic() + config.SURVEY_HEADER_MAX_MINUTES * 60
 
     def one(pkg: dict):
         # Each dataset has its own sets, merged below: nothing is shared between threads.

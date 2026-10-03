@@ -1193,6 +1193,38 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     assert "unreachable" not in result["datasets"][0] and len(work.plan(result, {})) == 1
 
 
+def test_a_header_is_read_in_the_survey_only_where_it_decides_something(tmp_root, monkeypatch):
+    # Recife, 03/10/2026: the survey downloaded 73 zips (21 GB) whole for their headers, most of them
+    # named by their dictionary's list of resource ids, where the header changes nothing.
+    named = {"dictionary": "d", "part": 0, "method": "declared-id", "score": 1.0}
+    single = {"dictionary": "d", "part": 0, "method": "single", "score": 0.5}
+    assert not linker.header_decides([_d("d", "D", names=["a"]), _d("e", "E", names=["b"])], named)
+    assert not linker.header_decides([_d("d", "Dicionário", names=["a"])], single)
+    assert linker.header_decides([_d("d", "Metadados - Termos", names=["a"])], None)
+    assert linker.header_decides([_d("d", "D", names=["a"]), _d("e", "E", names=["b"])], single)
+    assert not linker.header_decides([_d("p", "Dicionário de dados")], None)       # a PDF lists no names
+    # a PDF dictionary needs one header for its oracle: the cheapest file is read, and only it
+    monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
+    serve(monkeypatch, {"https://p/x.pdf": b"%PDF-1.4 x"})
+    asked = []
+    monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0: (asked.append(url), (None, ["A", "B"]))[1])
+    pkg = {"name": "ds", "title": "T", "resources": [
+        {"id": "r-zip", "name": "Dados 2020", "format": "ZIP", "url": "https://p/2020.zip", "size": 10},
+        {"id": "r-big", "name": "Dados 2021", "format": "CSV", "url": "https://p/2021.csv", "size": 900},
+        {"id": "r-small", "name": "Dados 2022", "format": "CSV", "url": "https://p/2022.csv", "size": 50},
+        {"id": "r-pdf", "name": "Dicionário de dados", "format": "PDF", "url": "https://p/x.pdf"}]}
+    result, _ = census.run({}, packages=[pkg])
+    assert asked == ["https://p/2022.csv"]
+    assert extract.tasks(result, {}, {}, "deterministic")[0]["header"] == ["A", "B"]
+    # past SURVEY_HEADER_MAX_MINUTES no header is read: the file is linked without it and validated,
+    # and the survey job is not stopped at its limit with all its work lost
+    monkeypatch.setattr(census.config, "SURVEY_HEADER_MAX_MINUTES", -1)
+    asked.clear()
+    result, _ = census.run({}, packages=[pkg])
+    assert asked == [] and any(t.get("header_deferred") for t in result["datasets"][0]["tables"])
+    assert "unreachable" not in result["datasets"][0] and len(work.plan(result, {})) == 3
+
+
 def test_waiting_for_a_server_is_bounded_and_a_redirect_loop_is_the_portals(tmp_root, monkeypatch):
     monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
     monkeypatch.setattr(census.config, "DICTIONARY_RETRY_WAIT_S", 0)
