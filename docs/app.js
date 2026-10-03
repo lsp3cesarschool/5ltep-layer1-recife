@@ -50,6 +50,8 @@ const I18N = {
     o_failed: "not extracted", o_pending: "waiting for the file's header",
     open_pr: "pull request ↗", schemas_label: "schemas",
     t_datasets: "Datasets", t_files: "Tabular files", t_checked: "Files read", t_conf: "Files that conform",
+    t_dicts: "Dictionaries", dicts_note: "{m} machine-readable ({r} read) · {p} PDF · {o} not linked to any file",
+    files_size: "{gb} GB declared on the portal", files_unknown: "{n} without a declared size",
     t_drift: "Schema drift events", of_total: "{n} of {t}", conf_note: "{n} of {t} files with a declared schema",
     pass: "Layer 1 passes", fail: "Layer 1 does not pass", threshold: "threshold {t}",
     drift_note: "{o} in files · {d} in declared schemas",
@@ -151,6 +153,8 @@ const I18N = {
     o_failed: "não extraído", o_pending: "aguardando o cabeçalho do arquivo",
     open_pr: "pull request ↗", schemas_label: "esquemas",
     t_datasets: "Conjuntos de dados", t_files: "Arquivos tabulares", t_checked: "Arquivos lidos",
+    t_dicts: "Dicionários", dicts_note: "{m} legíveis por máquina ({r} lidos) · {p} em PDF · {o} sem ligação com arquivo",
+    files_size: "{gb} GB declarados no portal", files_unknown: "{n} sem tamanho declarado",
     t_conf: "Arquivos conformes", t_drift: "Eventos de deriva de esquema", of_total: "{n} de {t}",
     conf_note: "{n} de {t} arquivos com esquema declarado",
     pass: "A Camada 1 passa", fail: "A Camada 1 não passa", threshold: "limiar {t}",
@@ -303,9 +307,20 @@ function renderTiles(s) {
   const driftNote = (d.observed + d.declared === 0 && d.first_baseline_at)
     ? t("drift_baseline", { n: fmt(d.files_with_baseline), d: day(d.first_baseline_at), next: nextMonday(s.generated_at) })
     : t("drift_since", { d: day(d.first_baseline_at), o: fmt(d.observed), dd: fmt(d.declared) });
+  const gb = (x) => Number(x).toLocaleString(LANG === "pt" ? "pt-BR" : "en", { maximumFractionDigits: 1 });
+  const tb = s.tables || {};
+  const formats = Object.entries(tb.by_format || {}).map(([k, f]) =>
+    `${k.toUpperCase()} ${fmt(f.files)}` + (f.gb >= 0.05 ? ` (${gb(f.gb)} GB)` : "")).join(" · ");
+  const filesNote = [formats, tb.declared_gb == null ? "" : t("files_size", { gb: gb(tb.declared_gb) }),
+    tb.size_unknown ? t("files_unknown", { n: fmt(tb.size_unknown) }) : ""].filter(Boolean).join(" · ");
+  const dc = ((s.findings || {}).dictionaries) || {};
+  const dictTile = dc.total == null ? "" : tile(t("t_dicts"), fmt(dc.total), esc(t("dicts_note", {
+    m: fmt(dc.machine_readable), r: fmt(dc.machine_readable_and_read), p: fmt(dc.human_readable), o: fmt(dc.orphans) }))
+    + more("findings"));
   el("tiles").innerHTML = [
     tile(t("t_datasets"), fmt(s.datasets.total)),
-    tile(t("t_files"), fmt(s.tables.total)),
+    dictTile,
+    tile(t("t_files"), fmt(tb.total), esc(filesNote)),
     tile(t("t_checked"), fmt(c.read), esc(t("read_note", { n: fmt(c.read), t: fmt(c.files), nd: fmt(c.not_downloaded),
       e: fmt(c.empty), nt: fmt(c.not_tabular), tl: fmt(c.too_large || 0) })) + more("coverage"), c.files ? c.read / c.files : 0),
     tile(t("t_conf"), pct(s.l1_rate), esc(t("conf_tile_note", { c: fmt(c.conform), k: fmt(c.checked), w: fmt(c.read_without_schema) }))

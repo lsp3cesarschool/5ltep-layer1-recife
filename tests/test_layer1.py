@@ -1458,3 +1458,11 @@ def test_waiting_for_a_server_is_bounded_and_a_redirect_loop_is_the_portals(tmp_
     assert "kept_from" not in late["datasets"][0]
     assert census._download_error_kind(requests.TooManyRedirects("Exceeded 30 redirects")) == "download-failed"
     assert census._download_error_kind(urllib3.exceptions.ProtocolError("IncompleteRead")) == "unreachable"
+
+
+def test_files_and_size_by_format_as_the_portal_declares_them():
+    out = report.sizes([{"candidate": "csv", "size": 2_000_000_000}, {"candidate": "zip", "size": "3000000000"},
+                        {"candidate": "zip", "size": None}, {"candidate": "csv", "size": "?"}, {"candidate": "csv"}])
+    assert out["declared_gb"] == 5.0 and out["size_unknown"] == 3
+    assert list(out["by_format"]) == ["csv", "zip"]
+    assert out["by_format"]["zip"] == {"files": 2, "gb": 3.0, "size_unknown": 1}

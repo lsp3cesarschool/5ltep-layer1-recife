@@ -232,6 +232,23 @@ def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
     }
 
 
+def sizes(tables: list[dict]) -> dict:
+    """Files and size by format, as the portal declares them (CKAN `size`, known before any download)."""
+    by: dict[str, dict] = {}
+    for t in tables:
+        f = by.setdefault(t.get("candidate") or "?", {"files": 0, "bytes": 0, "size_unknown": 0})
+        f["files"] += 1
+        try:
+            f["bytes"] += int(t.get("size") or 0)
+            f["size_unknown"] += not t.get("size")
+        except (TypeError, ValueError):
+            f["size_unknown"] += 1
+    return {"declared_gb": round(sum(f["bytes"] for f in by.values()) / 1e9, 2),
+            "size_unknown": sum(f["size_unknown"] for f in by.values()),
+            "by_format": {k: {"files": f["files"], "gb": round(f["bytes"] / 1e9, 2), "size_unknown": f["size_unknown"]}
+                          for k, f in sorted(by.items(), key=lambda x: (-x[1]["files"], x[0]))}}
+
+
 def network(tables: list[tuple[dict, dict | None]]) -> dict:
     """How fast and how reliably each server delivered the files (from the validation records).
 
@@ -422,7 +439,7 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
         "tables": {"total": len(tables), "by_level": {str(k): t_levels.get(k, 0) for k in LEVELS},
                    "validated": len(validated), "validation_coverage": _share(len(validated), len(tables)),
                    "errors": sum(1 for _, v in tables if (v or {}).get("status") == "error"),
-                   "queue_remaining": len(queue)},
+                   "queue_remaining": len(queue), **sizes([t for t, _ in tables])},
         "schema_sources": dict(Counter(v.get("schema_kind") for _, v in verifiable)),
         # Conformance by where the schema came from: DataStore types are often inferred by the portal from
         # the same data, so conformance against them is high by construction; compare like with like.
