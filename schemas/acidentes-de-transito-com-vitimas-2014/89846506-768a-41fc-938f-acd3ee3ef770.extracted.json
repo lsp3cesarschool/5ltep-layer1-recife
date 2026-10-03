@@ -1,0 +1,75 @@
+{
+ "fields": [
+  {
+   "name": "tipo_acidente",
+   "type": "string",
+   "description": "Descritivo do Tipo de Acidente",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "data_acidente",
+   "type": "date",
+   "description": "Data do Acidente",
+   "declaredType": "Date"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "envolvido",
+   "type": "string",
+   "description": "Descrição do tipo de envolvido no acidente",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "4174e229-9365-47b3-ab79-b81b949b0f21",
+   "dictionary_name": "Dicionário de Dados dos Acidentes de Trânsito",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/05a9f1ee-5d99-4540-8d2c-96c888c7fefb/resource/4174e229-9365-47b3-ab79-b81b949b0f21/download/dicionario-de-dados-dos-acidentes-de-transito.pdf",
+   "sha256": "06dc9f5fbcf5ac742f1f0ee8572bcadeebf13f4cdaa05e22174a716cea2b8643",
+   "oracle": {
+    "recall": 0.4,
+    "precision": 0.4,
+    "exact_match": 0.4,
+    "levenshtein": 0.5846,
+    "missing_from_pdf": [
+     "data",
+     "detalhes",
+     "tipo"
+    ],
+    "not_in_file": [
+     "data_acidente",
+     "envolvido",
+     "tipo_acidente"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

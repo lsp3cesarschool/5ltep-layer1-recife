@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "SEXO",
+   "type": "number",
+   "description": "Sexo declarado pelo respondente",
+   "declaredType": "NUM",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "5707ca29-64d5-44cc-8536-66e6ffffc532",
+   "dictionary_name": "Dicionário de Dados da Pesquisa Origem Destino",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8eed6404-a20a-4e5e-8cdb-630a49a84fb8/resource/5707ca29-64d5-44cc-8536-66e6ffffc532/download/dicionario-de-dados-da-pesquisa-origem-destino.pdf",
+   "sha256": "ef7e5f096ff023c66e4d6a8f1c50d65e5114142d6d7cb061b864e18dafff5345",
+   "oracle": {
+    "recall": 0.0196,
+    "precision": 1.0,
+    "exact_match": 0.0,
+    "levenshtein": 0.0,
+    "missing_from_pdf": [
+     "bairro_escola",
+     "bairro_residencia",
+     "bairro_trabalho",
+     "cep_escola",
+     "cep_residencia",
+     "cep_trabalho",
+     "cidade_escola",
+     "cidade_residencia",
+     "cidade_trabalho",
+     "detalhe_mobilidade",
+     "escola_filho",
+     "faixa_etaria",
+     "freq_aula",
+     "freq_local_trabalho",
+     "horario_fim_aula",
+     "horario_fim_trabalho",
+     "horario_inicio_aula",
+     "horario_inicio_trabalho",
+     "internet_celular",
+     "local_saida_trab",
+     "logradouro_escola",
+     "logradouro_residencia",
+     "logradouro_trabalho",
+     "meio_transporte_trab",
+     "meios_transporte_filhos",
+     "mobilidade_reduzida",
+     "nivel_estudo",
+     "nome_instituicao_ensino",
+     "origem_ida_aula",
+     "origem_trabalho",
+     "outras_escolas",
+     "outros_aula",
+     "pesquisado_estuda",
+     "possui_filho_escola",
+     "profissao",
+     "quant_filhos",
+     "renda",
+     "resp_pesquisa_matricula",
+     "terminal_aula",
+     "terminal_int_trabalho",
+     "trabalha",
+     "transporte_aula",
+     "turno_aula",
+     "turno_trabalho",
+     "utiliza_app_taxi_aula",
+     "utiliza_app_taxi_escola",
+     "utiliza_app_taxi_trabalho",
+     "utiliza_integracao_aula",
+     "utiliza_terminal_int_trabalho",
+     "zona_residencia"
+    ],
+    "not_in_file": []
+   }
+  }
+ }
+}
