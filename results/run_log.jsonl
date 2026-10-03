@@ -1,1 +1,2 @@
 {"at": "2026-10-03T14:26:47+00:00", "stage": "census", "run_id": "37128558042", "datasets": 223, "tables": 1089, "queued": 1089, "declared_drift": 0}
+{"at": "2026-10-03T14:27:48+00:00", "stage": "extract-deterministic", "run_id": "37128558042", "processed": 18, "suggested": 9, "llm_needed": 8}

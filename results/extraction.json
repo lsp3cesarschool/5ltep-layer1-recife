@@ -1,0 +1,1530 @@
+{
+ "4174e229-9365-47b3-ab79-b81b949b0f21": {
+  "sha256": "06dc9f5fbcf5ac742f1f0ee8572bcadeebf13f4cdaa05e22174a716cea2b8643",
+  "dataset": "acidentes-de-transito-com-vitimas-2014",
+  "linked_resources": [
+   "89846506-768a-41fc-938f-acd3ee3ef770"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 5,
+   "oracle": {
+    "available": true,
+    "header_columns": 5,
+    "extracted": 5,
+    "recall": 0.4,
+    "precision": 0.4,
+    "exact_match": 0.4,
+    "levenshtein": 0.5846,
+    "missing_from_pdf": [
+     "data",
+     "detalhes",
+     "tipo"
+    ],
+    "not_in_file": [
+     "data_acidente",
+     "envolvido",
+     "tipo_acidente"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:27+00:00",
+  "candidate": [
+   {
+    "name": "tipo_acidente",
+    "type": "Char",
+    "size": "250",
+    "description": "Descritivo do Tipo de Acidente",
+    "allowed": ""
+   },
+   {
+    "name": "data_acidente",
+    "type": "Data do Acidente",
+    "size": "",
+    "description": "Date",
+    "allowed": ""
+   },
+   {
+    "name": "latitude",
+    "type": "Num",
+    "size": "20",
+    "description": "Coordenadas geográficas em graus decimais - Latitude",
+    "allowed": ""
+   },
+   {
+    "name": "longitude",
+    "type": "Num",
+    "size": "20",
+    "description": "Coordenadas geográficas em graus decimais - Longitude",
+    "allowed": ""
+   },
+   {
+    "name": "envolvido",
+    "type": "Char",
+    "size": "250",
+    "description": "Descrição do tipo de envolvido no acidente",
+    "allowed": ""
+   }
+  ]
+ },
+ "44d512b3-fc47-4a86-b68f-5794def6cfa7": {
+  "sha256": "4dcc92ee84205f5e62494858f610a4ea05c306453e491cd49bb80ac2f2621c24",
+  "dataset": "area-urbana",
+  "linked_resources": [
+   "15f820ba-6370-4d49-af5e-4eec6e559bf6"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 7,
+   "oracle": {
+    "available": true,
+    "header_columns": 10,
+    "extracted": 7,
+    "recall": 0.0,
+    "precision": 0.0,
+    "exact_match": 0.0,
+    "levenshtein": 0.4352,
+    "missing_from_pdf": [
+     "cod_indica_pavimentacao",
+     "codbairro",
+     "codlogradouro",
+     "desc_indica_pavimentacao",
+     "indica_corredor_transporte",
+     "indica_perimetral",
+     "nomeBairro",
+     "nome_logradouro_concatenado",
+     "nome_logradouro_resumido",
+     "nome_oficial_logradouro"
+    ],
+    "not_in_file": [
+     "Indicador_Pavimentacao",
+     "descricao_Indicador_Pav",
+     "geometry",
+     "logradouro_codigo",
+     "logradouro_nome",
+     "logradouro_nomeResumido",
+     "logradouro_nomeoficial"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:27+00:00",
+  "candidate": [
+   {
+    "name": "logradouro_codigo",
+    "type": "Num",
+    "size": "16",
+    "description": "Código do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife. Logradouro é um termo que designa qualquer espaço público reconhecido pela administração de um município",
+    "allowed": ""
+   },
+   {
+    "name": "logradouro_nome",
+    "type": "Char",
+    "size": "120",
+    "description": "Nome do Logradouro (com formato maiúsculo) que identifica as Vias de Circulação do espaço urbano do Recife.",
+    "allowed": ""
+   },
+   {
+    "name": "logradouro_nomeoficial",
+    "type": "Char",
+    "size": "120",
+    "description": "Nome Oficial (de acordo com a Lei que o sancionou) do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife.",
+    "allowed": ""
+   },
+   {
+    "name": "logradouro_nomeResumido",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome Resumido do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife. Utilizado nas representações dos mapas (pois está sintetisado).",
+    "allowed": ""
+   },
+   {
+    "name": "Indicador_Pavimentacao",
+    "type": "Char",
+    "size": "1",
+    "description": "Flag Indicador do Serviço Público de Infraestrutura de Pavimentação",
+    "allowed": ""
+   },
+   {
+    "name": "descricao_Indicador_Pav",
+    "type": "Char",
+    "size": "1",
+    "description": "X - Não definida, P - Via Parcialmente Pavimentada, S - Via Pavimentada, N - Via Não Pavimentada",
+    "allowed": ""
+   },
+   {
+    "name": "geometry",
+    "type": "Geometry",
+    "size": "",
+    "description": "Dados Geométricos dos Trechos de Logradouros",
+    "allowed": ""
+   }
+  ]
+ },
+ "59ffe79c-dc6f-4e01-84e2-946bea78d0f5": {
+  "sha256": "2a8aec8c09e91897829c9f97b85b209f3221a04c07f7e611377b76d7a6ede9ce",
+  "dataset": "area-urbana",
+  "linked_resources": [
+   "b4124768-953e-4080-870e-a655a755f40a"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 36,
+   "oracle": {
+    "available": true,
+    "header_columns": 39,
+    "extracted": 36,
+    "recall": 0.1282,
+    "precision": 0.1389,
+    "exact_match": 0.1282,
+    "levenshtein": 0.4894,
+    "missing_from_pdf": [
+     "cod_emplacamento",
+     "codarborizacao",
+     "codbairro",
+     "codcoleta",
+     "codgaleriapluviais",
+     "codguiasesarjetas",
+     "codiluminacao",
+     "codlimpezaurbana",
+     "codlogradouro",
+     "codpavimentacao",
+     "codredeagua",
+     "codredeeletrica",
+     "codredesgoto",
+     "codredetelefonica",
+     "desc_emplacamento",
+     "descarborizacao",
+     "desccoleta",
+     "descgaleriapluviais",
+     "descguiasesarjetas",
+     "desciluminacao",
+     "desclimpezaurbana",
+     "descpavimentacao",
+     "descredeagua",
+     "descredeeletrica",
+     "descredesgoto",
+     "descredetelefonica",
+     "dsqf",
+     "municipio",
+     "nome_logradouro_completo",
+     "nome_logradouro_concatenado",
+     "nome_oficial_logradouro",
+     "nomebairro",
+     "uf",
+     "valor_v0"
+    ],
+    "not_in_file": [
+     "arborizacao_codigo",
+     "arborizacao_nome",
+     "bairro_codigo",
+     "bairro_nome",
+     "coleta_codigo",
+     "coleta_nome",
+     "concatenacao",
+     "emplacamento_codigo",
+     "emplacamento_nome",
+     "esgoto_codigo",
+     "esgoto_nome",
+     "galeriapluvial_codigo",
+     "galeriapluvial_nome",
+     "geometry",
+     "guia_sarjeta_codigo",
+     "guia_sarjeta_nome",
+     "iluminacao_codigo",
+     "iluminacao_nome",
+     "limpeza_codigo",
+     "limpeza_nome",
+     "logradouro_codigo",
+     "pavimentacao_codigo",
+     "pavimentacao_nome",
+     "redeagua_codigo",
+     "redeagua_nome",
+     "redeeletrica_codigo",
+     "redeeletrica_nome",
+     "redetelefone_codigo",
+     "redetelefone_nome",
+     "tipo_valorvenal",
+     "tipo_via"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:29+00:00",
+  "candidate": [
+   {
+    "name": "concatenacao",
+    "type": "Char",
+    "size": "11",
+    "description": "É a concatenação de Distrito Fiscal , Setor Censitário, Quadra Viária e Face.",
+    "allowed": ""
+   },
+   {
+    "name": "distrito",
+    "type": "Num",
+    "size": "1",
+    "description": "Distrito Fiscal é uma unidade territorial de coleta fiscal com limites físicos em área e é nesta região geográfica que os setores censitários estão distribuídos.",
+    "allowed": ""
+   },
+   {
+    "name": "setor",
+    "type": "Num",
+    "size": "10",
+    "description": "Setor Censitário é unidade territorial de coleta das operações censitárias e é nesta região geográfica , com limites físicos em áreas que estão distribuídas as quadras. Os Setores Censitários são definidos de acordo com o número de domicílios.",
+    "allowed": ""
+   },
+   {
+    "name": "quadra",
+    "type": "Num",
+    "size": "10",
+    "description": "Quadra Viária é uma unidade territorial com limites físicos em área e que é formada de uma ou mais de faces. É uma área que contém vários lotes.",
+    "allowed": ""
+   },
+   {
+    "name": "face",
+    "type": "Num",
+    "size": "10",
+    "description": "Face de Quadra é o segmento contínuo entre duas vias de circulação (ex.: rua, avenida...) ou entre duas mudanças de direção do logradouro.É a posição onde o lote se encontra em relação a quadra.",
+    "allowed": ""
+   },
+   {
+    "name": "logradouro_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife. Logradouro é um termo que designa qualquer espaço público reconhecido pela administração de um município",
+    "allowed": ""
+   },
+   {
+    "name": "cep",
+    "type": "Num",
+    "size": "10",
+    "description": "Código do endereçamento postal para a face de quadra em um determinado logradouro",
+    "allowed": ""
+   },
+   {
+    "name": "bairro_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código do Bairro que identifica unicamente a região.Bairro é uma comunidade ou região dentro de uma cidade ou município.",
+    "allowed": ""
+   },
+   {
+    "name": "bairro_nome",
+    "type": "Char",
+    "size": "150",
+    "description": "Nome do Bairro.",
+    "allowed": ""
+   },
+   {
+    "name": "tipo_via",
+    "type": "Char",
+    "size": "3",
+    "description": "Tipo de Via de Circulação",
+    "allowed": ""
+   },
+   {
+    "name": "tipo_valorvenal",
+    "type": "Tipo do valor venal Lote",
+    "size": "3",
+    "description": "Char",
+    "allowed": ""
+   },
+   {
+    "name": "iluminacao_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código de Iluminação Pública",
+    "allowed": ""
+   },
+   {
+    "name": "iluminacao_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome de Iluminação Pública",
+    "allowed": ""
+   },
+   {
+    "name": "pavimentacao_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código de Pavimentação",
+    "allowed": ""
+   },
+   {
+    "name": "pavimentacao_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome de Pavimentação",
+    "allowed": ""
+   },
+   {
+    "name": "emplacamento_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código informativo de emplacamento de identificação de vias de circulação",
+    "allowed": ""
+   },
+   {
+    "name": "emplacamento_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome informativo de emplacamento de identificação de vias de criculação",
+    "allowed": ""
+   },
+   {
+    "name": "coleta_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código identificação de tipo de coleta de lixo",
+    "allowed": ""
+   },
+   {
+    "name": "coleta_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome de tipo de coleta de lixo",
+    "allowed": ""
+   },
+   {
+    "name": "arborizacao_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código de identificação de arborização",
+    "allowed": ""
+   },
+   {
+    "name": "arborizacao_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Descrição de arborização",
+    "allowed": ""
+   },
+   {
+    "name": "redeagua_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código informativo de rede de água",
+    "allowed": ""
+   },
+   {
+    "name": "redeagua_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome informativo de rede de água",
+    "allowed": ""
+   },
+   {
+    "name": "limpeza_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código de identificação de tipo de limpeza",
+    "allowed": ""
+   },
+   {
+    "name": "limpeza_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome do tipo de limpeza",
+    "allowed": ""
+   },
+   {
+    "name": "esgoto_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código identificativo de rede de esgoto",
+    "allowed": ""
+   },
+   {
+    "name": "esgoto_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome identificativo de rede de esgoto",
+    "allowed": ""
+   },
+   {
+    "name": "redetelefone_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código identificativo de rede telefônica",
+    "allowed": ""
+   },
+   {
+    "name": "redetelefone_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome identificativo de rede telefônica",
+    "allowed": ""
+   },
+   {
+    "name": "guia_sarjeta_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código indicativo de Guia e Sarjeta",
+    "allowed": ""
+   },
+   {
+    "name": "guia_sarjeta_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome indicativo de Guia e Sarjeta",
+    "allowed": ""
+   },
+   {
+    "name": "galeriapluvial_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código identificativo de galeria pluvial",
+    "allowed": ""
+   },
+   {
+    "name": "galeriapluvial_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome identificativo de galeria pluvial",
+    "allowed": ""
+   },
+   {
+    "name": "redeeletrica_codigo",
+    "type": "Num",
+    "size": "10",
+    "description": "Código identificativo de rede elétrica",
+    "allowed": ""
+   },
+   {
+    "name": "redeeletrica_nome",
+    "type": "Char",
+    "size": "50",
+    "description": "Nome identificativo de rede elétrica",
+    "allowed": ""
+   },
+   {
+    "name": "geometry",
+    "type": "Geometry",
+    "size": "",
+    "description": "Dados Geométricos da Face de Quadra",
+    "allowed": ""
+   }
+  ]
+ },
+ "22323176-d380-4bff-932c-00510333d4b3": {
+  "sha256": "1b24178720600add14a58f99f0343fd6632e2937308e5c360daaef27af68b4d6",
+  "dataset": "calcadas-dos-corredores-de-transporte-metropolitano",
+  "linked_resources": [
+   "0c15f2ce-7651-48d8-ae38-87267b4e0c6f"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 4,
+   "oracle": {
+    "available": true,
+    "header_columns": 4,
+    "extracted": 4,
+    "recall": 0.75,
+    "precision": 0.75,
+    "exact_match": 0.75,
+    "levenshtein": 0.95,
+    "missing_from_pdf": [
+     "via_principal"
+    ],
+    "not_in_file": [
+     "vias_principais"
+    ],
+    "similar_names": {
+     "vias_principais": "via_principal"
+    }
+   }
+  },
+  "at": "2026-10-03T14:27:30+00:00",
+  "candidate": [
+   {
+    "name": "rpa",
+    "type": "Char",
+    "size": "3",
+    "description": "Regiões Político Administrativa (RPA) da via principal",
+    "allowed": ""
+   },
+   {
+    "name": "vias_principais",
+    "type": "Char",
+    "size": "65",
+    "description": "Nome da via principal",
+    "allowed": ""
+   },
+   {
+    "name": "extensao",
+    "type": "Num",
+    "size": "10",
+    "description": "Extensão da calçada em metros",
+    "allowed": ""
+   },
+   {
+    "name": "largura_ambos_lados",
+    "type": "Char",
+    "size": "20",
+    "description": "Largura média da calçada em metros (ambos os lados)",
+    "allowed": ""
+   }
+  ]
+ },
+ "c8a653fc-44ce-4157-bcc8-e14a7f193cde": {
+  "sha256": "1efb654702f5ffe2e750de22343c42d8107e800185e82794fcebc8215d577716",
+  "dataset": "contratos",
+  "linked_resources": [
+   "a72e7175-8fcd-40bd-82ef-056a621a6165",
+   "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 20,
+   "oracle": {
+    "available": true,
+    "header_columns": 10,
+    "extracted": 20,
+    "recall": 0.5,
+    "precision": 0.25,
+    "exact_match": 0.5,
+    "levenshtein": 0.7595,
+    "missing_from_pdf": [
+     "num_apostilamento",
+     "num_contrato",
+     "situacao_apostilamento",
+     "tipo_apostilamento",
+     "valor_apostilamento"
+    ],
+    "not_in_file": [
+     "anocontrato",
+     "bairroendcontratado",
+     "cidadeendcontratado",
+     "complementoendcontratado",
+     "datafimvigencia",
+     "datainiciovigencia",
+     "estadoendcontratado",
+     "logradouroendcontratado",
+     "numerocontrato",
+     "numeroendcontratado",
+     "origemcontrato",
+     "sequencialcompra",
+     "situacaocontrato",
+     "valorcontrato1",
+     "valorcontrato2"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:30+00:00",
+  "candidate": [
+   {
+    "name": "numerocontrato",
+    "type": "Número do contrato",
+    "size": "20",
+    "description": "Char",
+    "allowed": ""
+   },
+   {
+    "name": "anocontrato",
+    "type": "Num",
+    "size": "4",
+    "description": "Ano do contrato",
+    "allowed": ""
+   },
+   {
+    "name": "orgaocontratante",
+    "type": "Char",
+    "size": "200",
+    "description": "Órgão municipal responsável pela contratação",
+    "allowed": ""
+   },
+   {
+    "name": "objetocontrato",
+    "type": "Char",
+    "size": "1000",
+    "description": "Descrição da contratação tanto de conteúdo quanto de objetivo",
+    "allowed": ""
+   },
+   {
+    "name": "origemcontrato",
+    "type": "Char",
+    "size": "30",
+    "description": "Tipo de compra que originou o contrato",
+    "allowed": ""
+   },
+   {
+    "name": "sequencialcompra",
+    "type": "Número sequencial do compra que originou o contrato",
+    "size": "6",
+    "description": "Num",
+    "allowed": ""
+   },
+   {
+    "name": "cnpjcontratado",
+    "type": "Char",
+    "size": "14",
+    "description": "CNPJ do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "cpfcontratado",
+    "type": "Char",
+    "size": "11",
+    "description": "CPF do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "razaonomecontratado",
+    "type": "Char",
+    "size": "120",
+    "description": "Razão social ou nome do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "logradouroendcontratado",
+    "type": "Char",
+    "size": "100",
+    "description": "Logradouro do endereço do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "numeroendcontratado",
+    "type": "Número do endereço do fornecedor contratado",
+    "size": "9",
+    "description": "Char",
+    "allowed": ""
+   },
+   {
+    "name": "complementoendcontratado",
+    "type": "Char",
+    "size": "21",
+    "description": "Complemento do endereço do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "bairroendcontratado",
+    "type": "Char",
+    "size": "60",
+    "description": "Bairro do endereço do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "cidadeendcontratado",
+    "type": "Char",
+    "size": "100",
+    "description": "Cidade do endereço do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "estadoendcontratado",
+    "type": "Char",
+    "size": "2",
+    "description": "Estado do endereço do fornecedor contratado",
+    "allowed": ""
+   },
+   {
+    "name": "datainiciovigencia",
+    "type": "date",
+    "size": "10",
+    "description": "Data de início de vigência. o prazo de vigência é o período de duração do contrato que não pode ultrapassar o respectivo crédito orçamentário, exceto em casos especiais previstos na Lei.",
+    "allowed": ""
+   },
+   {
+    "name": "datafimvigencia",
+    "type": "Data de fim de vigência.",
+    "size": "10",
+    "description": "date",
+    "allowed": ""
+   },
+   {
+    "name": "valorcontrato1",
+    "type": "Num",
+    "size": "18,4",
+    "description": "Valor do Contrato quando o contrato não tem a solicitação de compra",
+    "allowed": ""
+   },
+   {
+    "name": "valorcontrato2",
+    "type": "Num",
+    "size": "18,4",
+    "description": "Valor do Contrato quando o contrato tem a solicitação de compra",
+    "allowed": ""
+   },
+   {
+    "name": "situacaocontrato",
+    "type": "Char",
+    "size": "10",
+    "description": "Última Situação do Contrato – pode ser ‘Cadastrado’, ‘Encerrado’ ou Cancelado’",
+    "allowed": ""
+   }
+  ]
+ },
+ "10eba1cb-55c6-4a2e-8761-aca521b8fdff": {
+  "sha256": "96a6be1d87ac1a9c301c39b123ef2410ad72d875df334862e44e134d56c7a3fe",
+  "dataset": "contratos",
+  "linked_resources": [
+   "145f5c46-10ea-4c02-ba26-21333ded8ae9"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 12,
+   "oracle": {
+    "available": true,
+    "header_columns": 12,
+    "extracted": 12,
+    "recall": 0.9167,
+    "precision": 0.9167,
+    "exact_match": 0.9167,
+    "levenshtein": 0.9821,
+    "missing_from_pdf": [
+     "num_contrato"
+    ],
+    "not_in_file": [
+     "numerocontrato"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:31+00:00",
+  "fields": [
+   "numerocontrato",
+   "orgaocontratante",
+   "objetocontrato",
+   "cnpjcontratado",
+   "cpfcontratado",
+   "razaonomecontratado",
+   "num_termoaditivo",
+   "justificativa_termoaditivo",
+   "data_inicio_vigencia",
+   "data_fim_vigencia",
+   "valor_termoaditivo",
+   "situacao_termoaditivo"
+  ]
+ },
+ "44072699-94a7-4280-9462-b80ddd052b30": {
+  "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d",
+  "dataset": "gabpe-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "linked_resources": [
+   "dbd00afd-dc42-4643-babc-923ed694f154"
+  ],
+  "outcome": "extracted",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 12,
+   "oracle": {
+    "available": true,
+    "header_columns": 12,
+    "extracted": 12,
+    "recall": 1.0,
+    "precision": 1.0,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": [],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:32+00:00",
+  "fields": [
+   "num_dispensa",
+   "situacao_dispensa",
+   "unidade",
+   "objeto",
+   "local_de_execucao",
+   "data_de_empenho_contrato",
+   "data_vigencia",
+   "cnpj_cpf",
+   "nome_fornecedor",
+   "valor_fornecedor",
+   "Arquivo_dispensa",
+   "arquivo_situacao"
+  ]
+ },
+ "3e2df04e-ffae-4927-9216-6fbead95ef2d": {
+  "sha256": "cced878514d31459988ba5109ee93eb76821cc98249f4e262646342c27679c97",
+  "dataset": "guia-de-politicas-publicas-de-juventude",
+  "linked_resources": [
+   "9f224c9c-153d-4f2f-8a1c-d80e126e9f66"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 10,
+   "oracle": {
+    "available": true,
+    "header_columns": 21,
+    "extracted": 10,
+    "recall": 0.4286,
+    "precision": 0.9,
+    "exact_match": 0.4286,
+    "levenshtein": 0.5728,
+    "missing_from_pdf": [
+     "direito1",
+     "direito10",
+     "direito11",
+     "direito2",
+     "direito3",
+     "direito4",
+     "direito5",
+     "direito6",
+     "direito7",
+     "direito8",
+     "direito9",
+     "endereco"
+    ],
+    "not_in_file": [
+     "eCchifaer"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:33+00:00",
+  "candidate": [
+   {
+    "name": "programa",
+    "type": "Char",
+    "size": "100",
+    "description": "nome da ação oferecida pela respectiva Secretaria da Prefeitura do Recife",
+    "allowed": ""
+   },
+   {
+    "name": "descricao",
+    "type": "Char",
+    "size": "1000",
+    "description": "Detalhamento sobre o programa/ação",
+    "allowed": ""
+   },
+   {
+    "name": "secretaria_responsavel",
+    "type": "Char",
+    "size": "100",
+    "description": "órgão da Prefeitura do Recife que desenvolve a ação",
+    "allowed": ""
+   },
+   {
+    "name": "telefones_contato",
+    "type": "Char",
+    "size": "100",
+    "description": "números de telefone para contato",
+    "allowed": ""
+   },
+   {
+    "name": "email",
+    "type": "Char",
+    "size": "50",
+    "description": "email para contato",
+    "allowed": ""
+   },
+   {
+    "name": "bairro",
+    "type": "Char",
+    "size": "30",
+    "description": "bairro da cidade do Recife onde está localizada a ação/serviço",
+    "allowed": ""
+   },
+   {
+    "name": "complemento",
+    "type": "Char",
+    "size": "50",
+    "description": "complemento do endereço",
+    "allowed": ""
+   },
+   {
+    "name": "eCchifaer",
+    "type": "",
+    "size": "100",
+    "description": "direitos do Estatuto da Juventude aos quais estão relacionadas ações/serviços da Prefeitura do R",
+    "allowed": ""
+   },
+   {
+    "name": "latitude",
+    "type": "Num",
+    "size": "20",
+    "description": "coordenada geográfica do endereço das ações/serviços da Prefeitura do Recife",
+    "allowed": ""
+   },
+   {
+    "name": "longitude",
+    "type": "Num",
+    "size": "20",
+    "description": "coordenada geográfica do endereço das ações/serviços da Prefeitura do Recife",
+    "allowed": ""
+   }
+  ]
+ },
+ "46451d7a-412b-40ad-b8d7-31932d6a2c8c": {
+  "sha256": "fc2c40cd501ed76072b7d81a1e47e6a3c167b1bba43a3cf8a899132fbb0d7bf2",
+  "dataset": "licenciamento-ambiental",
+  "linked_resources": [
+   "982d6c85-906a-4ea8-90e0-31f55eac63f9"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 31,
+   "oracle": {
+    "available": true,
+    "header_columns": 33,
+    "extracted": 31,
+    "recall": 0.9394,
+    "precision": 1.0,
+    "exact_match": 0.9394,
+    "levenshtein": 0.9817,
+    "missing_from_pdf": [
+     "endereco_empreendimento",
+     "valor_pago"
+    ],
+    "not_in_file": [],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:34+00:00",
+  "fields": [
+   "areatotalconstruida",
+   "assunto",
+   "bairro",
+   "categoria_empreendimento",
+   "cnpj",
+   "data_conclusao",
+   "data_emissao_licenca",
+   "data_entrada",
+   "data_validade_licenca",
+   "data_pagamento",
+   "dsqfl",
+   "empreendimento_de_impacto",
+   "inscricao_mercantil",
+   "licenciamento_ambiental",
+   "licenciamento_sanitario",
+   "licenciamento_urbanistico",
+   "razao_social",
+   "razao_social_mercantil",
+   "num_licenca",
+   "num_processo",
+   "porte_empreendimento",
+   "potencial_empreendimento",
+   "processo_automatizado",
+   "situacao_processo",
+   "tipo_mercantil",
+   "tipo_processo",
+   "tipo_proc_licenciamento",
+   "uso_imovel",
+   "valor_taxa",
+   "latitude",
+   "longitude"
+  ]
+ },
+ "23543184-6785-48f2-bc36-7783865b1f48": {
+  "sha256": "e5f39e5546c5169ebb98d1a296d99da3a44cb5f519cbc87499528d25e029d4e8",
+  "dataset": "licenciamento-sanitario",
+  "linked_resources": [
+   "d09900c8-14f2-4dc4-a128-b73a514ec791"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 31,
+   "oracle": {
+    "available": true,
+    "header_columns": 33,
+    "extracted": 31,
+    "recall": 0.9394,
+    "precision": 1.0,
+    "exact_match": 0.9394,
+    "levenshtein": 0.9817,
+    "missing_from_pdf": [
+     "endereco_empreendimento",
+     "valor_pago"
+    ],
+    "not_in_file": [],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:35+00:00",
+  "fields": [
+   "areatotalconstruida",
+   "assunto",
+   "bairro",
+   "categoria_empreendimento",
+   "cnpj",
+   "data_conclusao",
+   "data_emissao_licenca",
+   "data_entrada",
+   "data_validade_licenca",
+   "data_pagamento",
+   "dsqfl",
+   "empreendimento_de_impacto",
+   "inscricao_mercantil",
+   "licenciamento_ambiental",
+   "licenciamento_sanitario",
+   "licenciamento_urbanistico",
+   "razao_social",
+   "razao_social_mercantil",
+   "num_licenca",
+   "num_processo",
+   "porte_empreendimento",
+   "potencial_empreendimento",
+   "processo_automatizado",
+   "situacao_processo",
+   "tipo_mercantil",
+   "tipo_processo",
+   "tipo_proc_licenciamento",
+   "uso_imovel",
+   "valor_taxa",
+   "latitude",
+   "longitude"
+  ]
+ },
+ "f6f8b7e4-c13c-429b-af6c-b41f26cab505": {
+  "sha256": "244cf87a5fdb79f2e075f29f514d6bf90cede0573f2a7ed1206658453a7e2b0f",
+  "dataset": "licenciamento-urbanistico",
+  "linked_resources": [
+   "39927a3d-3235-436a-9dc8-df7f4ea3b720"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 31,
+   "oracle": {
+    "available": true,
+    "header_columns": 33,
+    "extracted": 31,
+    "recall": 0.9394,
+    "precision": 1.0,
+    "exact_match": 0.9394,
+    "levenshtein": 0.9817,
+    "missing_from_pdf": [
+     "endereco_empreendimento",
+     "valor_pago"
+    ],
+    "not_in_file": [],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:36+00:00",
+  "fields": [
+   "areatotalconstruida",
+   "assunto",
+   "bairro",
+   "categoria_empreendimento",
+   "cnpj",
+   "data_conclusao",
+   "data_emissao_licenca",
+   "data_entrada",
+   "data_validade_licenca",
+   "data_pagamento",
+   "dsqfl",
+   "empreendimento_de_impacto",
+   "inscricao_mercantil",
+   "licenciamento_ambiental",
+   "licenciamento_sanitario",
+   "licenciamento_urbanistico",
+   "razao_social",
+   "razao_social_mercantil",
+   "num_licenca",
+   "num_processo",
+   "porte_empreendimento",
+   "potencial_empreendimento",
+   "processo_automatizado",
+   "situacao_processo",
+   "tipo_mercantil",
+   "tipo_processo",
+   "tipo_proc_licenciamento",
+   "uso_imovel",
+   "valor_taxa",
+   "latitude",
+   "longitude"
+  ]
+ },
+ "30e76f99-3ba3-4ace-a2b4-029d4eb9d02c": {
+  "sha256": "a4e50576a033954259b649818121dffb3d5cffe7eace16f9271db6c00d4d8283",
+  "dataset": "licitacoes",
+  "linked_resources": [
+   "f0d3c9e4-da6d-4f7f-8184-0d91f2021c8b"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 23,
+   "oracle": {
+    "available": true,
+    "header_columns": 23,
+    "extracted": 23,
+    "recall": 0.8261,
+    "precision": 0.8261,
+    "exact_match": 0.8261,
+    "levenshtein": 0.9693,
+    "missing_from_pdf": [
+     "comissao_licitacao",
+     "data_aberturaproposta",
+     "numero_lote",
+     "valor_totalhomologadolicitacao"
+    ],
+    "not_in_file": [
+     "comissaolicitacao",
+     "data_abertura_proposta",
+     "num_lote",
+     "valor_total_homologado"
+    ],
+    "similar_names": {
+     "comissaolicitacao": "comissao_licitacao",
+     "data_abertura_proposta": "data_aberturaproposta"
+    }
+   }
+  },
+  "at": "2026-10-03T14:27:38+00:00",
+  "fields": [
+   "comissaolicitacao",
+   "ano_processolicitatorio",
+   "num_lote",
+   "modalidadeprocessolicitatorio",
+   "num_processolicitatorio",
+   "numerolicitacaomodalidade",
+   "anolicitacaomodalidade",
+   "orgao_licitante",
+   "objeto",
+   "cnpj_contratado",
+   "cpf_contratado",
+   "razao_nomecontratado",
+   "logradouro_endcontratado",
+   "num_endcontratado",
+   "comp_endcontratado",
+   "bairro_endcontratado",
+   "cidade_endcontratado",
+   "uf_endcontratado",
+   "valor_total_estimado",
+   "valor_total_homologado",
+   "valor_licitacao_lote",
+   "data_abertura_proposta",
+   "data_ultimafaseprocesso"
+  ]
+ },
+ "9e6e185f-d111-44ab-830b-db02c12cb707": {
+  "sha256": "d6cb5c91435059f7dee747be01a1f0b987c5cbe22f003aa83e7f5cf899d1958e",
+  "dataset": "licitacoes",
+  "linked_resources": [
+   "9771bedc-6f2e-43f0-bd4c-25b0de5500b5"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 10,
+   "oracle": {
+    "available": true,
+    "header_columns": 10,
+    "extracted": 10,
+    "recall": 0.9,
+    "precision": 0.9,
+    "exact_match": 0.9,
+    "levenshtein": 0.975,
+    "missing_from_pdf": [
+     "valor_estipulado"
+    ],
+    "not_in_file": [
+     "valorestimado"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:39+00:00",
+  "fields": [
+   "comissaolicitacao",
+   "anoprocessolicitatorio",
+   "numeroprocessolicitatorio",
+   "modalidadeprocessolicitatorio",
+   "numerolicitacaomodalidade",
+   "anolicitacaomodalidade",
+   "orgaolicitante",
+   "objeto",
+   "valorestimado",
+   "dataaberturaproposta"
+  ]
+ },
+ "08cd106b-3651-406e-8740-e529e5b9e88d": {
+  "sha256": "ce4e7fcdde942cbadd8a8228c736dcfae3667981481fa24f8920581381e2c479",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "linked_resources": [
+   "070ef8c3-dfff-4eed-b057-33890348e643",
+   "0cfca7c3-cded-4cac-8f0a-9b9c00190569",
+   "0d0c245c-01c7-4699-8f0b-b347c1382f82",
+   "1ed49849-bcd4-49c7-a10b-be2a41e313b1",
+   "3dbbf484-b421-40b2-83d0-9a0efe605074",
+   "45305e37-09f1-4b2e-b7eb-269cfe51e3f8",
+   "7b02cb0a-5273-4a66-a819-736fe14132f0",
+   "7b1c93a9-a842-4b12-b199-59fb93406494",
+   "a76e903d-4688-4273-a3b6-ed0401ad728c",
+   "b51a174c-d009-46d6-b253-aa45dc097524",
+   "c4172725-9b58-49b8-8cec-1f63e1793e21",
+   "c4dfb864-8fb5-4a28-8640-47a7c1e6baaa",
+   "cef78b5c-ae44-4c5e-805f-681322e3007e",
+   "e5b990d4-7c5b-424c-a70e-08f6ca5c086e",
+   "f76ad42f-6349-4266-b999-603809ec21fa"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 0,
+   "oracle": {
+    "available": true,
+    "header_columns": 35,
+    "extracted": 0,
+    "recall": 0.0,
+    "precision": 0.0,
+    "exact_match": 0.0,
+    "levenshtein": 0.0,
+    "missing_from_pdf": [
+     "Anexo_resposta_2o_recurso",
+     "anexo_resposta",
+     "anexo_resposta_1o_recurso",
+     "ano",
+     "arquivo_1o_recurso",
+     "arquivo_2o_recurso",
+     "arquivo_pedido",
+     "bairro_solicitante",
+     "cidade_solicitante",
+     "data_pedido",
+     "data_resp_1o_recurso",
+     "data_resp_2o_recurso",
+     "data_resposta",
+     "descricao",
+     "descricao_1o_recurso",
+     "descricao_2o_recurso",
+     "escolaridade_solicitante",
+     "motivo_pedido",
+     "numero",
+     "numero_recurso",
+     "orgao_1o_recurso",
+     "orgao_2o_recurso",
+     "orgao_resposta",
+     "orgao_solicitacao",
+     "pais_solicitante",
+     "profissao_solicitante",
+     "resposta",
+     "resposta_1o_recurso",
+     "resposta_2o_recurso",
+     "sexo_solicitante",
+     "situacao_1o_recurso",
+     "situacao_2o_recurso",
+     "situacao_pedido",
+     "situacao_resposta",
+     "uf_solicitante"
+    ],
+    "not_in_file": [],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:40+00:00",
+  "candidate": []
+ },
+ "5707ca29-64d5-44cc-8536-66e6ffffc532": {
+  "sha256": "ef7e5f096ff023c66e4d6a8f1c50d65e5114142d6d7cb061b864e18dafff5345",
+  "dataset": "pesquisa-origem-destino",
+  "linked_resources": [
+   "b7c0476a-f252-4be6-b28a-f9b372d9e824"
+  ],
+  "outcome": "llm-needed",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 1,
+   "oracle": {
+    "available": true,
+    "header_columns": 51,
+    "extracted": 1,
+    "recall": 0.0196,
+    "precision": 1.0,
+    "exact_match": 0.0,
+    "levenshtein": 0.0,
+    "missing_from_pdf": [
+     "bairro_escola",
+     "bairro_residencia",
+     "bairro_trabalho",
+     "cep_escola",
+     "cep_residencia",
+     "cep_trabalho",
+     "cidade_escola",
+     "cidade_residencia",
+     "cidade_trabalho",
+     "detalhe_mobilidade",
+     "escola_filho",
+     "faixa_etaria",
+     "freq_aula",
+     "freq_local_trabalho",
+     "horario_fim_aula",
+     "horario_fim_trabalho",
+     "horario_inicio_aula",
+     "horario_inicio_trabalho",
+     "internet_celular",
+     "local_saida_trab",
+     "logradouro_escola",
+     "logradouro_residencia",
+     "logradouro_trabalho",
+     "meio_transporte_trab",
+     "meios_transporte_filhos",
+     "mobilidade_reduzida",
+     "nivel_estudo",
+     "nome_instituicao_ensino",
+     "origem_ida_aula",
+     "origem_trabalho",
+     "outras_escolas",
+     "outros_aula",
+     "pesquisado_estuda",
+     "possui_filho_escola",
+     "profissao",
+     "quant_filhos",
+     "renda",
+     "resp_pesquisa_matricula",
+     "terminal_aula",
+     "terminal_int_trabalho",
+     "trabalha",
+     "transporte_aula",
+     "turno_aula",
+     "turno_trabalho",
+     "utiliza_app_taxi_aula",
+     "utiliza_app_taxi_escola",
+     "utiliza_app_taxi_trabalho",
+     "utiliza_integracao_aula",
+     "utiliza_terminal_int_trabalho",
+     "zona_residencia"
+    ],
+    "not_in_file": [],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:41+00:00",
+  "candidate": [
+   {
+    "name": "SEXO",
+    "type": "NUM",
+    "size": "1",
+    "description": "Sexo declarado pelo respondente",
+    "allowed": ""
+   }
+  ]
+ },
+ "436ea9a3-2a5b-4f73-b53b-ce5f2a9ee96f": {
+  "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d",
+  "dataset": "seduc-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "linked_resources": [
+   "dc31b3eb-1340-4ea6-8979-223a0d62a79d"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 12,
+   "oracle": {
+    "available": true,
+    "header_columns": 10,
+    "extracted": 12,
+    "recall": 1.0,
+    "precision": 0.8333,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": [
+     "data_de_empenho_contrato",
+     "local_de_execucao"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:43+00:00",
+  "fields": [
+   "num_dispensa",
+   "situacao_dispensa",
+   "unidade",
+   "objeto",
+   "local_de_execucao",
+   "data_de_empenho_contrato",
+   "data_vigencia",
+   "cnpj_cpf",
+   "nome_fornecedor",
+   "valor_fornecedor",
+   "Arquivo_dispensa",
+   "arquivo_situacao"
+  ]
+ },
+ "2331305e-11e4-4139-b269-b663bc23f1f8": {
+  "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d",
+  "dataset": "segov-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "linked_resources": [
+   "9555191f-a335-42ef-a811-a58a3cb0f428"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 12,
+   "oracle": {
+    "available": true,
+    "header_columns": 11,
+    "extracted": 12,
+    "recall": 1.0,
+    "precision": 0.9167,
+    "exact_match": 0.9091,
+    "levenshtein": 0.9943,
+    "missing_from_pdf": [],
+    "not_in_file": [
+     "arquivo_situacao"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:45+00:00",
+  "fields": [
+   "num_dispensa",
+   "situacao_dispensa",
+   "unidade",
+   "objeto",
+   "local_de_execucao",
+   "data_de_empenho_contrato",
+   "data_vigencia",
+   "cnpj_cpf",
+   "nome_fornecedor",
+   "valor_fornecedor",
+   "Arquivo_dispensa",
+   "arquivo_situacao"
+  ]
+ },
+ "52625e8b-198e-47cf-bf3c-ccfbb3cc7265": {
+  "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d",
+  "dataset": "seinfra-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades",
+  "linked_resources": [
+   "e233116c-8318-423c-aa82-6df08ed55c23"
+  ],
+  "outcome": "suggested",
+  "stage": "deterministic",
+  "deterministic": {
+   "fields": 12,
+   "oracle": {
+    "available": true,
+    "header_columns": 11,
+    "extracted": 12,
+    "recall": 1.0,
+    "precision": 0.9167,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": [
+     "arquivo_situacao"
+    ],
+    "similar_names": {}
+   }
+  },
+  "at": "2026-10-03T14:27:48+00:00",
+  "fields": [
+   "num_dispensa",
+   "situacao_dispensa",
+   "unidade",
+   "objeto",
+   "local_de_execucao",
+   "data_de_empenho_contrato",
+   "data_vigencia",
+   "cnpj_cpf",
+   "nome_fornecedor",
+   "valor_fornecedor",
+   "Arquivo_dispensa",
+   "arquivo_situacao"
+  ]
+ }
+}
