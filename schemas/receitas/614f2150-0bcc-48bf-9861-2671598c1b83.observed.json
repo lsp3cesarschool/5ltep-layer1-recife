@@ -1,0 +1,149 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade_codigo",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte_recurso_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte_recurso_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria_receita_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria_receita_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte_origem_receita_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte_origem_receita_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subfonte_receita_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subfonte_receita_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rubrica_receita_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rubrica_receita_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "alinea_receita_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "alinea_receita_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subalinea_receita_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subalinea_receita_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "receita_local_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "receita_local_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.015
+  },
+  {
+   "name": "receita_prevista",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "receita_prevista_acrescimo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "receita_prevista_atualizada",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "receita_arrecadada",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:18:01+00:00",
+  "sha256": "9655474e96c9d42f3ea44195bc6ce7577734c00d710c4e7ad99bea8c4416650f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 2937,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,940 @@
+{
+ "fields": [
+  {
+   "name": "CÓDIGO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COM QUAL FREQUÊNCIA VOCÊ VAI AO OUTRO TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COM QUAL FREQUÊNCIA VOCÊ VAI PARA A AULA A PARTIR DESTE LOCAL DE ORIGEM?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COM QUAL FREQUÊNCIA VOCÊ VAI PARA O TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DE ONDE SAIU PARA IR A ESTA CONSULTA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DE ONDE SAIU PARA IR AO SERVIÇO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DE ONDE VOCÊ SAI PARA IR AO OUTRO TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DE ONDE VOCÊ SAI PARA IR AO TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DE ONDE VOCÊ SAI PARA IR À AULA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO SEU FILHO DESEMBARCA (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA(COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (NO OUTRO TRABALHO)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (NO OUTRO MEIO PARA O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (NO OUTRO MEIO PARA OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ DESEMBARCA (COMO TRANSPORTE PARA O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO SEU FILHO EMBARCA (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (NO OUTRO TRABALHO)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EM QUAL ESTAÇÃO VOCÊ EMBARCA (QUANDO VAI TRABALHAR)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDEREÇO DE RESIDÊNCIA - CÓDIGO POSTAL (CEP)",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDEREÇO DE RESIDÊNCIA - LOCALIDADE (CIDADE)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDERECO DE RESIDENCIA - BAIRRO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDEREÇO DE RESIDÊNCIA - LOGRADOURO",
+   "type": "string",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "ENDEREÇO DE RESIDÊNCIA - ÁREA ADMINISTRATIVA (ESTADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDEREÇO DO SEU TRABALHO - CÓDIGO POSTAL (CEP)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDEREÇO DO SEU TRABALHO - LOCALIDADE (CIDADE)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENDERECO DO SEU TRABALHO -  BAIRRO",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerNameCleaned": true
+  },
+  {
+   "name": "ENDEREÇO DO SEU TRABALHO - LOGRADOURO",
+   "type": "string",
+   "sampleEmptyShare": 0.0012
+  },
+  {
+   "name": "ENDEREÇO DO SEU TRABALHO - ÁREA ADMINISTRATIVA (ESTADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE FIM DE ESTUDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MINUTOS DE FIM DE ESTUDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE INÍCIO DE ESTUDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MINUTOS DE INÍCIO DE ESTUDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE FIM DO OUTRO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MINUTOS DE FIM DO OUTRO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE INÍCIO DO OUTRO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MINUTOS DE INÍCIO DO OUTRO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE FIM DO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MINUTOS DE FIM DO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE INÍCIO DO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MINUTOS DE INICIO DO TRABALHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "INDIQUE O NOME DAS OUTRAS VIAS EM QUE SEU FILHO FAZ TRANSFERÊNCIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NO ÚLTIMO DIA ÚTIL VOCÊ FEZ COMPRAS DOMÉSTICAS (EX: PÃO, ALIMENTOS, LIMPEZA, ETC.)?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NO ÚLTIMO DIA ÚTIL VOCÊ FEZ OUTRO TIPO DE COMPRAS?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NO ÚLTIMO DIA ÚTIL VOCÊ FOI A UMA CONSULTA MÉDICA OU A UM HOSPITAL?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL BAIRRO FOI A CONSULTA?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NO ÚLTIMO DIA ÚTIL VOCÊ PROCUROU SERVIÇOS (BANCO, CARTÓRIO, CORREIO, ETC.)?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO(COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO(COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (NO OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (QUANDO SEU FILHO VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE O CARRO FICA ESTACIONADO (QUANDO VAI TRABALHAR)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE SEU FILHO ESTACIONA BICICLETA(QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ ESTACIONA SUA BICICLETA (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ ESTACIONA SUA BICICLETA (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (NO OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ONDE VOCÊ GUARDA SUA BICICLETA (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA DE PUBLICAÇÃO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "HORA DE PUBLICAÇÃO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL ESCOLA SEUS FILHOS ESTUDAM?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A ESCOLA QUE VOCÊ ESTUDA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A FACULDADE QUE VOCÊ ESTUDA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "POR QUAL MOTIVO VOCÊ NÃO TRABALHA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "POSSUI FILHO EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTOS FILHOS EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A FAIXA DE RENDA DA SUA FAMÍLIA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A SUA FAIXA DE IDADE?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEXO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O NÍVEL DA SUA ATIVIDADE DE ESTUDO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O SEU TIPO DE OCUPAÇÃO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ ESTUDA?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ TRABALHA?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ TEM OUTRO TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ POSSUI DEFICIÊNCIA?",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL DEFICIÊNCIA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA DE ÔNIBUS SEU FILHO UTILIZA COM MAIS FREQUÊNCIA (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE SEU FILHO UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A VIAGEM (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (NO OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA PARA INICIAR A SUA VIAGEM (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA(COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (NO OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA(OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL A LINHA QUE VOCÊ UTILIZA COM MAIS FREQUÊNCIA (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MEIO DE TRANSPORTE VOCÊ UTILIZOU PARA IR AS COMPRAS? (EM OUTRO TIPO DE COMPRAS)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MODO DE TRANSPORTE PRINCIPAL QUE VOCÊ UTILIZA PARA ESTA VIAGEM ATÉ O OUTRO TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MODO DE TRANSPORTE PRINCIPAL QUE VOCÊ UTILIZA PARA ESTA VIAGEM ATÉ O TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MODO DE TRANSPORTE PRINCIPAL QUE VOCÊ UTILIZA PARA ESTA VIAGEM PARA A AULA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MODO DE TRANSPORTE PRINCIPAL QUE VOCÊ UTILIZOU PARA ESTA VIAGEM PARA A CONSULTA MÉDICA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MODO DE TRANSPORTE PRINCIPAL QUE VOCÊ UTILIZOU PARA IR ÀS COMPRAS?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O MODO DE TRANSPORTE QUE VOCÊ UTILIZOU PARA ESTA VIAGEM PARA IR AO SERVIÇO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUAL O PRINCIPAL MODO DE TRANSPORTE QUE O(S) SEU(S) FILHO(S) UTILIZA(M) PARA IR A ESCOLA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO SEU FILHO CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO SEU FILHO CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A VIAGEM (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO SEU FILHO CAMINHA ATÉ O PONTO DE ÔNIBUS (QUANDO ELE VAI À ESCOLA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA(COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (COMO TRANSPORTE PARA IR À AULA)??",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (NO OUTRO TRABALHO)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA(OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ A ESTAÇÃO ONDE EMBARCA (QUANDO VAI TRABALHAR)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A SUA VIAGEM (COMO OUTRO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A SUA VIAGEM (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR A SUA VIAGEM (OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR SUA VIAGEM (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR SUA VIAGEM (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS PARA INICIAR SUA VIAGEM (QUANDO VAI TRABALHAR)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS (COMO TRANSPORTE PARA CONSULTA MÉDICA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS(COMO TRANSPORTE PARA FAZER AS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS (COMO TRANSPORTE PARA IR À AULA)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS(COMO TRANSPORTE PARA OUTRAS COMPRAS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS (COMO TRANSPORTE PARA PROCURAR SERVIÇOS)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS (NO OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS (OUTRO MEIO P/ O TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ CAMINHA ATÉ O PONTO DE ÔNIBUS (OUTRO TRANSPORTE P OUTRO TRABALHO)?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ LEVA PARA IR AO OUTRO TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ LEVA PARA IR AO TRABALHO?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QUANTO TEMPO VOCÊ LEVA PARA IR À AULA?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEUS FILHOS FAZEM TRANSFERÊNCIA EM ALGUM DESSES LOCAIS? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEUS FILHOS UTILIZAM APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI?",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FAZ TRANSFERÊNCIA EM ALGUM DESTES LOCAIS PARA IR A ESTE OUTRO TRABALHO? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FAZ TRANSFERÊNCIA EM ALGUM DESTES LOCAIS PARA IR AO TRABALHO? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FAZ TRANSFERÊNCIA EM ALGUM DESTES LOCAIS PARA IR AO TRABALHO? (TI = TERMINAL INTEGRADO) [EM OUTRO MEIO DE TRANSPORTE]",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FAZ TRANSFERÊNCIA EM ALGUM DESTES LOCAIS PARA IR À AULA? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FAZ TRANSFERÊNCIA EM ALGUM DESTES LOCAIS PARA IR À AULA? (TI = TERMINAL INTEGRADO) [EM OUTRO MEIO DE TRANSPORTE]",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FEZ ALGUMA TRANSFERÊNCIA PARA IR A CONSULTA MÉDICA? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FEZ ALGUMA TRANSFERÊNCIA PARA IR AS COMPRAS? (TI = TERMINAL INTEGRADO) [EM OUTRO TIPO DE COMPRAS]",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FEZ ALGUMA TRANSFERÊNCIA QUANDO FOI AS COMPRAS? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOCÊ FEZ TRANSFERÊNCIA EM ALGUM DESTES LOCAIS PARA IR AO SERVIÇO? (TI = TERMINAL INTEGRADO)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Zona Residência",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Zona Educação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Zona Trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EXPANSÃO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "_column_175",
+   "type": "any",
+   "sampleEmptyShare": 1.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_176",
+   "type": "any",
+   "sampleEmptyShare": 1.0,
+   "headerWithoutName": true
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:14:28+00:00",
+  "sha256": "743363bac209257984228ddc460f4732fe961f728ba5fb133b91eff1b316bb9f",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

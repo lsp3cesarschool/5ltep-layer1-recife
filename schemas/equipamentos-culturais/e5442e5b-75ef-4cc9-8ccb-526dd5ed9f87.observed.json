@@ -1,0 +1,54 @@
+{
+ "fields": [
+  {
+   "name": "seq",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "equipamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:39:33+00:00",
+  "sha256": "7aae087320feb019ad3f6e4b3faf3956c3078ea103bfde05a22e8ef2404ab2c7",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 68,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

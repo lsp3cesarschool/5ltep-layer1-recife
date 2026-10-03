@@ -1,0 +1,54 @@
+{
+ "fields": [
+  {
+   "name": "codigo_instituicao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_instituicao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_dependencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_dependencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_intituicao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:24:33+00:00",
+  "sha256": "5c207c669500ca04aa8241f952c2ab0509f9c300e5b48bb3c36e9b12e84780bb",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "disciplina",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:26:34+00:00",
+  "sha256": "8a20030fcc7c57d892914141f6aca5650ebcf942350eec7d4003aa85cf39674a",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 26,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

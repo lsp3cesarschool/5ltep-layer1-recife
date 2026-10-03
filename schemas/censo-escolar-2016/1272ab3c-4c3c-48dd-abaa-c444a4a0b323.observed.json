@@ -1,0 +1,39 @@
+{
+ "fields": [
+  {
+   "name": "codigo_area",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_ocde",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_grau",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "grau_academico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:26:18+00:00",
+  "sha256": "0f879b06649b71cdf7d205018c5a76eecaa0d96e4731a185ea68a807f3a140cf",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 255,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

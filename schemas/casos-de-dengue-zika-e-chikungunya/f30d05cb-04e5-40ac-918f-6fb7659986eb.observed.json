@@ -1,0 +1,409 @@
+{
+ "fields": [
+  {
+   "name": "nu_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_cid",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_notificacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ds_semana_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "notificacao_ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_uf_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_municipio_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "id_regional",
+   "type": "integer",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "co_unidade_notificacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_diagnostico_sintoma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ds_semana_sintoma",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_nascimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0629
+  },
+  {
+   "name": "nu_idade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_gestante",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_raca_cor",
+   "type": "integer",
+   "sampleEmptyShare": 0.0252
+  },
+  {
+   "name": "tp_escolaridade",
+   "type": "integer",
+   "sampleEmptyShare": 0.1107
+  },
+  {
+   "name": "co_uf_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_municipio_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_regional_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_distrito_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0025
+  },
+  {
+   "name": "co_bairro_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "no_bairro_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_logradouro_residencia",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nome_logradouro_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0067
+  },
+  {
+   "name": "co_geo_campo_1",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "co_geo_campo_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ds_referencia_residencia",
+   "type": "string",
+   "sampleEmptyShare": 0.9337
+  },
+  {
+   "name": "nu_cep_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.7492
+  },
+  {
+   "name": "tp_zona_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0268
+  },
+  {
+   "name": "co_pais_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_duplicidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.9622
+  },
+  {
+   "name": "dt_digitacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_transf_us",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "dt_transf_dm",
+   "type": "string",
+   "sampleEmptyShare": 0.5277
+  },
+  {
+   "name": "dt_transf_sm",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dt_transf_rm",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "dt_transf_rs",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "dt_transf_se",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nu_lote_vertical",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_lote_horizontal",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "tp_fluxo_retorno",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "st_fluxo_retorno_recebido",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ds_identificador_registro",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "st_importado",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "dt_investigacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "co_cbo_ocupacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.9463
+  },
+  {
+   "name": "dt_coleta_exame",
+   "type": "string",
+   "sampleEmptyShare": 0.7911
+  },
+  {
+   "name": "tp_result_exame",
+   "type": "integer",
+   "sampleEmptyShare": 0.0763
+  },
+  {
+   "name": "dt_coleta_NS1",
+   "type": "string",
+   "sampleEmptyShare": 0.9958
+  },
+  {
+   "name": "Tp_result_NS1",
+   "type": "integer",
+   "sampleEmptyShare": 0.3154
+  },
+  {
+   "name": "dt_coleta_isolamento",
+   "type": "string",
+   "sampleEmptyShare": 0.9958
+  },
+  {
+   "name": "tp_result_isolamento",
+   "type": "integer",
+   "sampleEmptyShare": 0.3599
+  },
+  {
+   "name": "dt_coleta_rtpcr",
+   "type": "string",
+   "sampleEmptyShare": 0.9883
+  },
+  {
+   "name": "tp_result_rtpcr",
+   "type": "integer",
+   "sampleEmptyShare": 0.3792
+  },
+  {
+   "name": "tp_sorotipo",
+   "type": "integer",
+   "sampleEmptyShare": 0.9975
+  },
+  {
+   "name": "tp_result_histopatologia",
+   "type": "integer",
+   "sampleEmptyShare": 0.3985
+  },
+  {
+   "name": "tp_result_imunohistoquimica",
+   "type": "integer",
+   "sampleEmptyShare": 0.3792
+  },
+  {
+   "name": "tp_classificacao_final",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_criterio_confirmacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tp_autoctone_residencia",
+   "type": "integer",
+   "sampleEmptyShare": 0.7122
+  },
+  {
+   "name": "co_uf_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.8716
+  },
+  {
+   "name": "co_pais_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.8716
+  },
+  {
+   "name": "co_municipio_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.8716
+  },
+  {
+   "name": "co_distrito_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.8935
+  },
+  {
+   "name": "co_bairro_infeccao",
+   "type": "integer",
+   "sampleEmptyShare": 0.8951
+  },
+  {
+   "name": "no_bairro_infeccao",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "st_doenca_trabalho",
+   "type": "integer",
+   "sampleEmptyShare": 0.7148
+  },
+  {
+   "name": "tp_evolucao_caso",
+   "type": "integer",
+   "sampleEmptyShare": 0.0185
+  },
+  {
+   "name": "dt_obito",
+   "type": "string",
+   "sampleEmptyShare": 0.9983
+  },
+  {
+   "name": "dt_encerramento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "st_ocorreu_hospitalizacao",
+   "type": "integer",
+   "sampleEmptyShare": 0.1946
+  },
+  {
+   "name": "dt_internacao",
+   "type": "string",
+   "sampleEmptyShare": 0.9832
+  },
+  {
+   "name": "co_uf_hospital",
+   "type": "integer",
+   "sampleEmptyShare": 0.9832
+  },
+  {
+   "name": "co_municipio_hospital",
+   "type": "integer",
+   "sampleEmptyShare": 0.9832
+  },
+  {
+   "name": "co_unidade_hospital",
+   "type": "integer",
+   "sampleEmptyShare": 0.9849
+  },
+  {
+   "name": "nu_ddd_hospital",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "nu_telefone_hospital",
+   "type": "integer",
+   "sampleEmptyShare": 0.0008
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:22:50+00:00",
+  "sha256": "6ff09c3c8265fc7d2794e7e0a6cadcbb0abb0e8f3d731ad122b378f8d16434e0",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1192,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

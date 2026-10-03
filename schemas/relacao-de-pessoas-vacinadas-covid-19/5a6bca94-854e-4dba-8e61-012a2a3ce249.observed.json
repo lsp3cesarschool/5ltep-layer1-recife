@@ -1,0 +1,80 @@
+{
+ "fields": [
+  {
+   "name": "faixa_etaria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "idade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "raca_cor",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "grupo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.2476
+  },
+  {
+   "name": "lote",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vacina_fabricante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao_dose",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnes",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sistema_origem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_vacinacao",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S.%f",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:23:40+00:00",
+  "sha256": "c982b86f2e84fa65dfe75ab47857a4c33af436f322596c41586ab872cf060967",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

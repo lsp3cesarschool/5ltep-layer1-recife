@@ -1,0 +1,204 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_pedido",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "informacoes_pessoais",
+   "type": "boolean",
+   "trueValues": [
+    "SIM"
+   ],
+   "falseValues": [
+    "NÃO"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_pedido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_solicitacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0012
+  },
+  {
+   "name": "arquivo_pedido",
+   "type": "string",
+   "sampleEmptyShare": 0.9102
+  },
+  {
+   "name": "resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao_resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_resposta",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "arquivo_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.983
+  },
+  {
+   "name": "descricao_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.8883
+  },
+  {
+   "name": "resposta_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.8883
+  },
+  {
+   "name": "orgao_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.8883
+  },
+  {
+   "name": "situacao_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.8883
+  },
+  {
+   "name": "data_resposta_1o_recurso",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.8883
+  },
+  {
+   "name": "arquivo_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9976
+  },
+  {
+   "name": "descricao_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9879
+  },
+  {
+   "name": "numero_recurso",
+   "type": "integer",
+   "sampleEmptyShare": 0.8883
+  },
+  {
+   "name": "resposta_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9879
+  },
+  {
+   "name": "orgao_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9879
+  },
+  {
+   "name": "situaçao_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9879
+  },
+  {
+   "name": "data_resposta_2o_recurso",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.9879
+  },
+  {
+   "name": "motivo_pedido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sexo_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0825
+  },
+  {
+   "name": "escolaridade_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "profissao_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cidade_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "uf_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "pais_solicitante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "anexo_resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.5036
+  },
+  {
+   "name": "anexo_resposta_1o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9515
+  },
+  {
+   "name": "anexo_resposta_2o_recurso",
+   "type": "string",
+   "sampleEmptyShare": 0.9891
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:58:11+00:00",
+  "sha256": "b64df993594d91f22f950420f7bc2d46a93f7b9d873e982d895e268a694bc6fb",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 824,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

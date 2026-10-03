@@ -1,0 +1,84 @@
+{
+ "fields": [
+  {
+   "name": "nome_popular",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "familia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_cientifico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "este",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "norte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "decreto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "microregiao",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rpa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "identifica",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "sampleEmptyShare": 0.9388
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:19:45+00:00",
+  "sha256": "acb2a116b207b735c9234d73d453c65c25b5d57e948ef135a2ad7418071984b4",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 49,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

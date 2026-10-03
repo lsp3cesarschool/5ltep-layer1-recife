@@ -1,0 +1,629 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_14",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q76_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaKm2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_9bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin3_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin4_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_10bin5_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin1_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin2_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin3_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_11bin4_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_trabalhador",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_SUAS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Vigilância_Socioassistencial",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_Trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Regulação_do_SUAS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Financeira_Orçamentária",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_PSB",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_PSE_Média_Complexidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_PSE_Alta_Complexidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_CadÚnico_PBF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Benefícios_Assistenciais",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Outros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_SUAS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Vigilância_Socioassistencial",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_Trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Regulação_do_SUAS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Financeira_Orçamentária",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_PSB",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_PSE_Média_Complexidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_PSE_Alta_Complexidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_CadÚnico_PBF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Benefícios_Assistenciais",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Outros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_do_SUAS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Vigilância_Socioassistencial",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_do_Trabalho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Regulação_do_SUAS",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_Financeira_Orçamentária",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_PSB",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_PSE_Média_Complexidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_PSE_Alta_Complexidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_CadÚnico_PBF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_Benefícios_Assistenciais",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Outros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_SUAS_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Vigilância_Socioassistencial_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_Trabalho_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Regulação_do_SUAS_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Financeira_Orçamentária_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_PSB_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_PSE_Média_Complexidade_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_PSE_Alta_Complexidade_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_CadÚnico_PBF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Benefícios_Assistenciais_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_15_1bin_Outros_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_SUAS_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Vigilância_Socioassistencial_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_Trabalho_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Regulação_do_SUAS_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Financeira_Orçamentária_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_PSB_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_PSE_Média_Complexidade_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_PSE_Alta_Complexidade_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_CadÚnico_PBF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Benefícios_Assistenciais_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_16_2bin_Outros_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_do_SUAS_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Vigilância_Socioassistencial_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_do_Trabalho_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Regulação_do_SUAS_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_Financeira_Orçamentária_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_PSB_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_PSE_Média_Complexidade_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_PSE_Alta_Complexidade_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_CadÚnico_PBF_sum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Gestão_Benefícios_Assistenciais_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d76_Outros_sum",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nu_trabalhador_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:31:47+00:00",
+  "sha256": "3110a1ead6c2768606c90b5273526b3bd27011dd8a834838632d9ff943990a45",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 129,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

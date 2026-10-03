@@ -1,0 +1,80 @@
+{
+ "fields": [
+  {
+   "name": "intervalo",
+   "type": "string",
+   "description": "Período em horas de passagem do coletor",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "setor",
+   "type": "string",
+   "description": "Identificador do Setor de coleta",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço da coleta",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "turno",
+   "type": "string",
+   "description": "Turno de ocorrência da coleta",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "Char",
+   "declaredSize": 15
+  },
+  {
+   "name": "rota_setor",
+   "type": "number",
+   "description": "Rota que determina o itenerário no setor de coleta",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "frequencia",
+   "type": "string",
+   "description": "Frequência semanal de coleta",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "extracted",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "3fff9deb-c0e1-4465-80b5-4547eff20116",
+   "dictionary_name": "Dicionário de Dados dos Roteiros de Coleta de Resíduos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/d29159e2-cb76-4cfc-bea4-d71e9c221c1f/resource/3fff9deb-c0e1-4465-80b5-4547eff20116/download/dicionario-de-dados-dos-roteiros-de-coleta-de-residuos.pdf",
+   "sha256": "56959bd29d8314dbab90bbc68d4cd2fc1aaf0cabffe28204c2538fdffde864ba",
+   "oracle": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": []
+   }
+  }
+ }
+}

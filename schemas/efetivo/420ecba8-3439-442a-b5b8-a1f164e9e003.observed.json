@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "grad",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "iniciais",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "posto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "lotacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0158
+  },
+  {
+   "name": "secretaria",
+   "type": "string",
+   "sampleEmptyShare": 0.0158
+  },
+  {
+   "name": "horas_trabalhadas",
+   "type": "string",
+   "sampleEmptyShare": 0.3118
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:39:04+00:00",
+  "sha256": "3b363305730a6da7a58ed99770f70b52beca2508fdd2f305fb4e2b4ba01b1c4e",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1767,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

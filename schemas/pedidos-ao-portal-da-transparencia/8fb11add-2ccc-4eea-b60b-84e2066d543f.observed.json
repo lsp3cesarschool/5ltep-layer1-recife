@@ -1,0 +1,85 @@
+{
+ "fields": [
+  {
+   "name": "_column_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:53:25+00:00",
+  "sha256": "67a2d4d75fa4d00fad58c8c1f776e7ad08bdcad720039fdaa59f0d7bbaacd06a",
+  "encoding": null,
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 43,
+  "distinct_headers": 4,
+  "members_with_other_headers": [
+   "20190026400209995_doc_1.xls#Transporte 2018",
+   "2019003260060000396_doc_1 (1).xls#Regra 01 - Ano 2015",
+   "2019003260060000396_doc_1.xls#Regra 01 - Ano 2015",
+   "2019003260060000396_doc_10 (1).xls#Regra 03 - Ano 2016",
+   "2019003260060000396_doc_10.xls#Regra 03 - Ano 2016",
+   "2019003260060000396_doc_11 (1).xls#Regra 03 - Ano 2017",
+   "2019003260060000396_doc_11.xls#Regra 03 - Ano 2017",
+   "2019003260060000396_doc_12 (1).xls#Regra 03 - Ano 2018",
+   "2019003260060000396_doc_12.xls#Regra 03 - Ano 2018",
+   "2019003260060000396_doc_13 (1).xls#Completo",
+   "2019003260060000396_doc_13.xls#Completo",
+   "2019003260060000396_doc_2 (1).xls#Regra 01 - Ano 2016",
+   "2019003260060000396_doc_2.xls#Regra 01 - Ano 2016",
+   "2019003260060000396_doc_3 (1).xls#Regra 01 - Ano 2017",
+   "2019003260060000396_doc_3.xls#Regra 01 - Ano 2017",
+   "2019003260060000396_doc_4 (1).xls#Regra 01 - Ano 2018",
+   "2019003260060000396_doc_4.xls#Regra 01 - Ano 2018",
+   "2019003260060000396_doc_5 (1).xls#Regra 02 - Ano 2015",
+   "2019003260060000396_doc_5.xls#Regra 02 - Ano 2015",
+   "2019003260060000396_doc_6 (1).xls#Regra 02 - Ano 2016",
+   "2019003260060000396_doc_6.xls#Regra 02 - Ano 2016",
+   "2019003260060000396_doc_7 (1).xls#Regra 02 - Ano 2017",
+   "2019003260060000396_doc_7.xls#Regra 02 - Ano 2017",
+   "2019003260060000396_doc_8 (1).xls#Regra 02 - Ano 2018",
+   "2019003260060000396_doc_8.xls#Regra 02 - Ano 2018",
+   "2019003260060000396_doc_9 (1).xls#Regra 03 - Ano 2015",
+   "2019003260060000396_doc_9.xls#Regra 03 - Ano 2015"
+  ]
+ }
+}

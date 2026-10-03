@@ -1,0 +1,39 @@
+{
+ "fields": [
+  {
+   "name": "codigo_area",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_instituicao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_formacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "grau_academico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:25:14+00:00",
+  "sha256": "d74e81069ee9ba10a20354bb4bcac3bccead292544c471ad74b7107366758834",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 255,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

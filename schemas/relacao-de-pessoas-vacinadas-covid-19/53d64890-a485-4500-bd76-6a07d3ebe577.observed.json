@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "cpf",
+   "type": "string",
+   "sampleEmptyShare": 0.0708
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "grupo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vacina",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "lote",
+   "type": "string",
+   "sampleEmptyShare": 0.002
+  },
+  {
+   "name": "dose",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_vacinacao",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "local_vacinacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:24:31+00:00",
+  "sha256": "24e4716a7872897a73f3d156212e046063d2998b2da0daa3de0dabfb63b795d4",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

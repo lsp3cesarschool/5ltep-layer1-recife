@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "programa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "acao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "fonte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "valor",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:15:34+00:00",
+  "sha256": "ee835d98c3c47a9783e1de1ef57947e371d423170bd22522d329a0a85a26a19d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 555,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

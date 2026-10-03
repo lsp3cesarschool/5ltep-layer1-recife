@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_naufragio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "profundidade_maxima",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "historia_detalhada",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:47:25+00:00",
+  "sha256": "01e9f6a45015d155171eda250fd16734836460ecee2a1dc885b916ecfa1868db",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 20,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

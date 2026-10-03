@@ -1,0 +1,3556 @@
+{
+ "fields": [
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Latitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q0_14",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q1_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q2_1_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q10",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q11",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q12_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q13",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_9",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_10",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_1_11",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_9",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_10",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q14_2_11",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_1_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_3_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q15_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q16_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_9",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q17_10",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_6",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_8",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_9",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_10",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_11",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_12",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_13",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_14",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_15",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q18_16",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q19",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_4_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q20_6_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q21_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_3_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_4_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q22_5_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_1_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q23_2_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q24",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q25",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q26_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q27",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q28",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q29_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q30",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_14",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_17",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_18",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_19",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_1_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q37",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q38",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q39_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q39_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_99_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q41",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_97",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q43",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q44",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q45",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_4",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q46_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_1",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_1_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_2",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_2_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_3",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_3_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_14",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_15",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_16",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_28",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_17",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_18",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_19",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_20",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_21",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_22",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_23",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_24",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_25",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_26",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_27",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_23_99",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_24_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_25_99",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_26_99",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q48_27_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q49_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q49_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q49_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q49_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q50",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q51_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_0",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q53",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q54",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q54_98",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q55",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q57",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IBGE7",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Regiao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "areaKm2",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q5_98_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q6_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q9_velha",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q25_velha",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q31_velha",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q32_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q33_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_10_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_11_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_12_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_13_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_14_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_15_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_16_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_17_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_18_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q34_19_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q35_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q36_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_99_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_98_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q40_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q41_velha",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_1_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_2_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_3_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_4_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_5_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_6_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_7_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_8_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_9_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_10_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q42_11_97_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_0_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_1_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_2_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_3_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_4_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_5_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_6_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_7_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_8_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_9_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_10_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q52_98_velha",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D1_1_cof_Adultos_Famílias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D1_1_cof_Crianças",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D1_1_cof_Adultos_com_deficiencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D1_1_cof_Outros_Publicos",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D02",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D09",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D_10_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_M_0a5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_F_0a5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_0a5",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_M_0a17",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_F_0a17",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_0a17",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_M_60oumais",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_F_60oumais",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D14_60oumais",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D15_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D15_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D15_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D16_99",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D17_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_1",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_2",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_3",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_4",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_5",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_8",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_9",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_12",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_13",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_14",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_15",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D18_16",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D20_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D20_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D20_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D20_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D20_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D20_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D21_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D21_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D21_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D22_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D22_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D22_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D22_4",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D22_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D23_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D23_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D24_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D25",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D26_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D26_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D26_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D29_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "D29_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d46_1_atend_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d46_2_quarto_usuario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d46_3_quarto_cuidador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d46_4_banheiros_usuario",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "d46_5_banheiros",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_1_sala_adm",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_2_sala_reun",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "q47_3_sala_atendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:31:57+00:00",
+  "sha256": "036e211103e7aaeefbd4e471809ea93fbdbef34cdabce3c35a5e540bd91ac9e5",
+  "encoding": "cp1252",
+  "delimiter": ";",
+  "sample_rows": 20,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

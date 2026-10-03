@@ -1,0 +1,24 @@
+{
+ "fields": [
+  {
+   "name": "Bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rpa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:19:34+00:00",
+  "sha256": "1f2b1c9d382420e72090b8a6a31f7fe4a801e391cf6933f3811aa96d8deaf6bc",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 94,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

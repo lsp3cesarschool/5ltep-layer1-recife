@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "tiporesiduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.6025
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "sampleEmptyShare": 0.2787
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:15:07+00:00",
+  "sha256": "1f1de34acd9c1723e726a73eab06b3602550412e25e0dbffc18c3fa8046cbda6",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 244,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "fields": [
+  {
+   "name": "CÓDIGOS IDENTIFICADORES",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO DE INSTRUMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NÚMERO DO TERMO DE CONTRATO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ÓRGÃO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ENTIDADE PARCEIRA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "OBJETO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA DE ASSINATURA",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SITUAÇÃO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DURAÇÃO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ORDEM DE INÍCIO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "FIM DA VIGÊNCIA",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "OUTORGA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "REPASSE MENSAL PREVISTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "REPASSE REALIZADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PRIMEIRO TERMO ADITIVO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEGUNDO TERMO ADITIVO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:48:18+00:00",
+  "sha256": "b51df912ef699df05d782ed4a91f233b7643b3eccb923ad83d13fc5e3fd92685",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

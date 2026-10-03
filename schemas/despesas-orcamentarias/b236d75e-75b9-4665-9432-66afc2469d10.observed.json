@@ -1,0 +1,109 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "mes",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_categoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_grupo_despesa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_grupo_despesa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_modalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_modalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_sub_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_sub_elemento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cod_fonte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "desc_fonte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "sampleEmptyShare": 0.2088
+  },
+  {
+   "name": "Liquidação",
+   "type": "number",
+   "sampleEmptyShare": 0.2088
+  },
+  {
+   "name": "Pagamento",
+   "type": "number",
+   "sampleEmptyShare": 0.2088
+  },
+  {
+   "name": "dotacao_inicial",
+   "type": "number",
+   "sampleEmptyShare": 0.7912
+  },
+  {
+   "name": "dotacao_atualizada",
+   "type": "number",
+   "sampleEmptyShare": 0.7912
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:35:44+00:00",
+  "sha256": "4e66c641ccbd3c2567384d220d21864b2fab51d8b8cc5c5e11aa7678afcb2d86",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

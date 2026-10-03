@@ -1,0 +1,33 @@
+{
+ "fields": [
+  {
+   "name": "Solicito 1) o quantitativo de unidades escolares municipais que PODERIR ao programa Mais Educação/MEC",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano a ano",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "de 2008 a 2014;",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:51:21+00:00",
+  "sha256": "c673c1b99f2a20f5e41d722dddf84212b8ae095972c15ad9457413e8463eb6d9",
+  "encoding": "cp1252",
+  "delimiter": ",",
+  "sample_rows": 1,
+  "tables": 3,
+  "distinct_headers": 3,
+  "members_with_other_headers": [
+   "ANEXOS 2017/2016_5861_623_0_R.txt",
+   "ANEXOS 2017/2017_5952_19_0_R.txt"
+  ]
+ }
+}

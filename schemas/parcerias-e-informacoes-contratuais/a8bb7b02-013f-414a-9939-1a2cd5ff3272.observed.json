@@ -1,0 +1,75 @@
+{
+ "fields": [
+  {
+   "name": "parceria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "edital",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "processo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "organizacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnpj",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "repasse",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vigencia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_assinatura",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dotacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:48:12+00:00",
+  "sha256": "d63cadb427384672d6b6b4ed3ac4bd9560296315a56c81c7907f6b99f80a560f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 3,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

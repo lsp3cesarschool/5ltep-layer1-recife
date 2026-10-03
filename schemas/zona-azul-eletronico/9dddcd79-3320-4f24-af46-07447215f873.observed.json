@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "codcontrolenumserie",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "carro",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_hora",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:49:14+00:00",
+  "sha256": "b2b43366db80314fa97ac07fde5202b67ff01d8e230fbd818fde6691f33f3a94",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

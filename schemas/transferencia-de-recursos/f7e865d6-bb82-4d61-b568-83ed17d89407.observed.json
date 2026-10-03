@@ -1,0 +1,41 @@
+{
+ "fields": [
+  {
+   "name": "Unidade Escolar",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor Líquido",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Pgto.",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "EL",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Detalhamento de EL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:30:51+00:00",
+  "sha256": "56ac5dd6ee578b838a893fd6dce74294519a94d0d94132763aba132b3c6d93a0",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 2438,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

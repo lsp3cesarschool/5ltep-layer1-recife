@@ -1,0 +1,59 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "inep_aluno",
+   "type": "integer",
+   "sampleEmptyShare": 0.7858
+  },
+  {
+   "name": "matricula_aluno",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "multietapa",
+   "type": "integer",
+   "sampleEmptyShare": 0.9724
+  },
+  {
+   "name": "outro_espaco",
+   "type": "integer",
+   "sampleEmptyShare": 0.1042
+  },
+  {
+   "name": "transporte_publico",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "resp_transporte_publico",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:25:07+00:00",
+  "sha256": "4a2ca15369cc6ec3acfb5cf215013ca5c50a9f57ca619c79ef55fa5196502d87",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

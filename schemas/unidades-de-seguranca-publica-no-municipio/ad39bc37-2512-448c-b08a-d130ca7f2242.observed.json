@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "equipameno",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereço",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contato",
+   "type": "string",
+   "sampleEmptyShare": 0.1667
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "sampleEmptyShare": 0.1667
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:31:00+00:00",
+  "sha256": "a27cc2f25065034419df7dcbc871afe7576d1b01f644661278717bc2eb170882",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 12,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "codig_area",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_instituicao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_formacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:23:46+00:00",
+  "sha256": "080ee56aadb3a6c56dbb7b5a6f408a794302afae7726e3bcab9937ad84c8cc7a",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 124,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

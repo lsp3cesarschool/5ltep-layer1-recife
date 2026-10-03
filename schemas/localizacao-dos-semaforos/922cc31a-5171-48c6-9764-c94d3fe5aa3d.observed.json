@@ -1,0 +1,54 @@
+{
+ "fields": [
+  {
+   "name": "semafororo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "localizacao1",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "localizacao2",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:46:00+00:00",
+  "sha256": "c057914cf1d024cea62ecd25ee2d0ac5527055590c766f68f8d618c943c62935",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 47,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

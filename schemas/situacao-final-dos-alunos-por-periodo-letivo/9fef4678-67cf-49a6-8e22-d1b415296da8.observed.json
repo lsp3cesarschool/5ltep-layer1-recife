@@ -1,0 +1,109 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "codigo_escola",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "escola",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco_bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco_logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "endereco_numero",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rpa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano_ensino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_ensino_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "serie_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modalidade_ensino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "serie",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "turma",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "turno",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "matricula",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sexo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "idade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_codigo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:30:21+00:00",
+  "sha256": "3b207553174b884356f2e969e9d0418f112e4b48739ef4108674d2cbac424a89",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

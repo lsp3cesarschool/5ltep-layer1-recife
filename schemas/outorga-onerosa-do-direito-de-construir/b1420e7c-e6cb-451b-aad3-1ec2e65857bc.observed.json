@@ -1,0 +1,254 @@
+{
+ "fields": [
+  {
+   "name": "id",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "solicitacao_id",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_total_construida_rgi",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero_processo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "status",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "art_rrt_anexo_data_registro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "licenca_ambiental_anexo_data_registro",
+   "type": "string",
+   "sampleEmptyShare": 0.0526
+  },
+  {
+   "name": "projeto_gerenciamento_residuos_construcao_data_registro",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "quadros_area_abnt_data_registro",
+   "type": "string",
+   "sampleEmptyShare": 0.2632
+  },
+  {
+   "name": "cpf_cnpj_respons_execucao_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_inicio_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_empreendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_responsavel_execucao_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "resp_tecnico_num_inscricao_mercantil",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "resp_tecnico_nome_completo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qa_area_terreno",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qa_area_total_construida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qa_area_total_privativa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qa_area_total_uso_comum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "qa_tipo_projeto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "respons_execuc_obra_tipo_docum",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo_responsavel_execucao_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "unidade_medida_obra",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_adquirida_aplicada",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_adquirida_aplicada_tdc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_construcao_computaveis",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_nao_adquir_aplic_descart",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_potenc_contr_adicion_pca",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_pot_contr_adic_proj_aprov",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_total_construcao_privativa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_total_construtivo_adicinal_pca",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_total_habitacional",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "area_total_nao_habitacional",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "assin_fianc_segur_garant_anexo",
+   "type": "string",
+   "sampleEmptyShare": 0.9474
+  },
+  {
+   "name": "cart_f_seg_gar_anexo_data_reg",
+   "type": "string",
+   "sampleEmptyShare": 0.9474
+  },
+  {
+   "name": "cart_f_segur_gar_anexo_nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "carta_fianc_segur_gar_anexo_pk",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "conc_area_nao_adq_aplic_desc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contrapartida_financeira",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "contrapartida_financeira_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dam_pago_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero_processo_dam_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ortoga_onerosa_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "transferencia_direito_construir_tdc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vencimento_dam_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "zona_urbana_pj_aprovado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_pagamento_dam_oodc",
+   "type": "string",
+   "sampleEmptyShare": 0.1053
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:48:03+00:00",
+  "sha256": "496119784d2d8c247d9c2af235e3084d32712368e3c1ee4f45cf82a12a5fa0af",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 19,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

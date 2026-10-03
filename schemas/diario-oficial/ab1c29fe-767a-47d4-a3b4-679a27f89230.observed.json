@@ -1,0 +1,20 @@
+{
+ "fields": [
+  {
+   "name": "PKkM‰[/ 5±ϽW%diario-oficial-completo-2018-UTF8.csvUT i8ii8iuxééÔ[ËrGvÝû+2ã Ñ",
+   "type": "string",
+   "sampleEmptyShare": 0.0061,
+   "headerNameCleaned": true
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:38:40+00:00",
+  "sha256": "0d155a836c36c422403dc581220043adf3995897622811675a1db2727155e479",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

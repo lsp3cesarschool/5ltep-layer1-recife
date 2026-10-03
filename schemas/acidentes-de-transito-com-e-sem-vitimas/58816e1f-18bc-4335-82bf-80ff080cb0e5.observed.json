@@ -1,0 +1,115 @@
+{
+ "fields": [
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "data",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hora",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.005
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0064
+  },
+  {
+   "name": "numero",
+   "type": "integer",
+   "sampleEmptyShare": 0.6698
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "sampleEmptyShare": 0.011
+  },
+  {
+   "name": "natureza",
+   "type": "string",
+   "sampleEmptyShare": 0.0052
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0298
+  },
+  {
+   "name": "auto",
+   "type": "integer",
+   "sampleEmptyShare": 0.1016
+  },
+  {
+   "name": "moto",
+   "type": "integer",
+   "sampleEmptyShare": 0.748
+  },
+  {
+   "name": "ciclom",
+   "type": "integer",
+   "sampleEmptyShare": 0.987
+  },
+  {
+   "name": "ciclista",
+   "type": "integer",
+   "sampleEmptyShare": 0.9926
+  },
+  {
+   "name": "pedestre",
+   "type": "integer",
+   "sampleEmptyShare": 0.9842
+  },
+  {
+   "name": "onibus",
+   "type": "integer",
+   "sampleEmptyShare": 0.8582
+  },
+  {
+   "name": "caminhao",
+   "type": "integer",
+   "sampleEmptyShare": 0.8866
+  },
+  {
+   "name": "viatura",
+   "type": "integer",
+   "sampleEmptyShare": 0.993
+  },
+  {
+   "name": "outros",
+   "type": "integer",
+   "sampleEmptyShare": 0.9904
+  },
+  {
+   "name": "vitimas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0058
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:18:53+00:00",
+  "sha256": "19fd6bb6d2ec489daa0e74ee0554dcb0a6295cdaa0a0321361382c8f1c8afb01",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

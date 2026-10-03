@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "PK(M‰[LgûÚ/¿»LÛ",
+   "type": "string",
+   "sampleEmptyShare": 0.0051
+  },
+  {
+   "name": "diario-oficial-2017.jsonUT ì8i€8iuxééì}Mo#əæ}E `cªJÍ}–±–D©X+‰jR*½Œ3Ee9™ÉÎdª«k0ïŒ50§Ù½ÌiÊ}0ºhûÒGóíó¼oDf'¢ª«mÏîÆ»ZEFFF¼ŸÏû¡¿ÿ/Æ<ÉÂ|ž&yø2´A˜=yþ÷øç»(ò'ϛ",
+   "type": "string",
+   "sampleEmptyShare": 0.0186,
+   "headerNameCleaned": true
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:38:31+00:00",
+  "sha256": "7de37e1b4e751c4e8c72b1bfc3a356344625d1ab1947a18a79601eb9433d25ae",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

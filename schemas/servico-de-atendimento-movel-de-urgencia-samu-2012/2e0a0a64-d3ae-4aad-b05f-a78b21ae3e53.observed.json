@@ -1,0 +1,39 @@
+{
+ "fields": [
+  {
+   "name": "viatura_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "viatura_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "distritosanitario_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipoviatura_codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipoviatura_descricao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:25:19+00:00",
+  "sha256": "c15da90fa765f0c6de43df8b8d402c59ded016a089823def04de731724cdac19",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 92,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "fields": [
+  {
+   "name": "data",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "hora_minuto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0346
+  },
+  {
+   "name": "origem_chamado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "subtipo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "idade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0126
+  },
+  {
+   "name": "motivo_finalizacao",
+   "type": "string",
+   "sampleEmptyShare": 0.6858
+  },
+  {
+   "name": "motivo_desfecho",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:27:01+00:00",
+  "sha256": "f048ef4c768f506a883acaf3906687057c624112d286cebcbd92100d914f18ec",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

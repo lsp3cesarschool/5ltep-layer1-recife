@@ -1,0 +1,76 @@
+{
+ "fields": [
+  {
+   "name": "num_contrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.198
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.802
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "num_termoaditivo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "justificativa_termoaditivo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "data_inicio_vigencia",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.091
+  },
+  {
+   "name": "data_fim_vigencia",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.091
+  },
+  {
+   "name": "valor_termoaditivo",
+   "type": "number",
+   "sampleEmptyShare": 0.599
+  },
+  {
+   "name": "situacao_termoaditivo",
+   "type": "string",
+   "sampleEmptyShare": 0.0222
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:33:35+00:00",
+  "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

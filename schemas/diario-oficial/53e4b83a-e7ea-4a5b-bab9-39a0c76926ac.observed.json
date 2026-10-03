@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "id",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "dataEdicao",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "file",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "download",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:37:07+00:00",
+  "sha256": "598666362e069fe07ac3dae47762294c84fce0771a50fcfe3fef422fbc34e8ad",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 172,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

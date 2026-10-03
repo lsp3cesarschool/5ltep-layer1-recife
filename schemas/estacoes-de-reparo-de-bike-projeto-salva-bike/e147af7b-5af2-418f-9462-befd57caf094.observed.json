@@ -1,0 +1,39 @@
+{
+ "fields": [
+  {
+   "name": "estacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "local",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:39:42+00:00",
+  "sha256": "5312dd2b96d96a13828daf9a3ccf66b88cd837f72c68af75763629d0c0489d19",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 10,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

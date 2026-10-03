@@ -1,0 +1,74 @@
+{
+ "fields": [
+  {
+   "name": "tipo_equipamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "registro_inmetro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "numero_serie_fabricante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "identificacao_equipamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "local_instalacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "sentido_fiscalizacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "faixas_fiscalizadas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "velocidade_fiscalizada",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "vmd",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "periodo_vmd",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:39:36+00:00",
+  "sha256": "ec12efdf73c3c644e600413536878d767fb1b5a7856e32a80a0511eb1c6792e9",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 87,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

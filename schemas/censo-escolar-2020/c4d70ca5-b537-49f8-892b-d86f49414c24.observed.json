@@ -1,0 +1,29 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome_etapa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "sampleEmptyShare": 0.7692
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T07:31:22+00:00",
+  "sha256": "9bc8d719f55cb8f57c1ac43d4b4f1d195e3611d0304d9a77a691272c4622142e",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 52,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

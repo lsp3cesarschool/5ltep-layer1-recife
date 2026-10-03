@@ -1,0 +1,97 @@
+{
+ "fields": [
+  {
+   "name": "_column_1",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_2",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_3",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_4",
+   "type": "string",
+   "sampleEmptyShare": 0.4,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_5",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_6",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_7",
+   "type": "string",
+   "sampleEmptyShare": 0.0667,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_8",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_9",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_10",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_11",
+   "type": "string",
+   "sampleEmptyShare": 0.0,
+   "headerWithoutName": true
+  },
+  {
+   "name": "_column_12",
+   "type": "string",
+   "sampleEmptyShare": 0.8667,
+   "headerWithoutName": true
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:02:03+00:00",
+  "sha256": "60907414eb530ed4f177620d21236103b11ced2cc4c1af3e4aa1264367f8c48f",
+  "encoding": null,
+  "delimiter": null,
+  "sample_rows": 15,
+  "tables": 10,
+  "distinct_headers": 10,
+  "members_with_other_headers": [
+   "Anexos Pedidos 2022_1/2022001700034009993/2022001700034009993_doc_6.xls#MEDICAMENTOS",
+   "Anexos Pedidos 2022_1/2022001700034009993/2022001700034009993_doc_6.xls#MMH",
+   "Anexos Pedidos 2022_1/2022002130103000049/2022002130103000049_doc_3.xls#Plan1",
+   "Anexos Pedidos 2022_1/2022002410020000380/2022002410020000380_doc_2.xls#Relatório de Direitos Violados ",
+   "Anexos Pedidos 2022_1/2022002670050000040/2022002670050000040_doc_1.xls#ADM_CP",
+   "Anexos Pedidos 2022_1/2022002670050000040/2022002670050000040_doc_1.xls#PO_CP",
+   "Anexos Pedidos 2022_1/2022003440072000052/2022003440072000052_doc_1.xls#CIR DENTISTA 20H",
+   "Anexos Pedidos 2022_1/2022003440072000052/2022003440072000052_doc_1.xls#CIR DENTISTA 40H",
+   "Anexos Pedidos 2022_1/2022003610034009995/2022003610034009995_doc_4.xls#Plan1"
+  ]
+ }
+}

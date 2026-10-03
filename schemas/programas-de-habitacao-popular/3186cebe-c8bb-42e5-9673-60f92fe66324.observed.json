@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "seq",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "rg",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "cpf",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "nascimento",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.7653
+  },
+  {
+   "name": "trecho",
+   "type": "string",
+   "sampleEmptyShare": 0.7755
+  },
+  {
+   "name": "planta",
+   "type": "string",
+   "sampleEmptyShare": 0.7653
+  },
+  {
+   "name": "decreto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "periodo",
+   "type": "string",
+   "sampleEmptyShare": 0.0816
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:16:09+00:00",
+  "sha256": "a8b6a185f72c0574f5254c9036357b19aa519a03295d3c3ad2a6f41dfc4c2f46",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 294,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

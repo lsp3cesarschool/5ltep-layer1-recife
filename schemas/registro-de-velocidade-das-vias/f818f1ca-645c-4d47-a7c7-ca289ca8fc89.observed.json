@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "CODIGO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LOCAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SENTIDO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "FAIXA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T08:23:38+00:00",
+  "sha256": "27bcfc789cd3b8177cded2cf0f2f276dae747012b3073611244b86c3f2c2178d",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 143,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}
