@@ -257,12 +257,14 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
     # A file never validated has no known header: read it now (only the columns), so that it is linked
     # to its dictionary by its header, and validated against it, in this same run.
     if any(d.get("format") == "PDF" or d["id"] in parsed for d in dicts):
+        # the header decides the link only when there is a choice (several dictionaries, or parts)
+        choice = len(dicts) > 1 or any(len(d.parts) > 1 for d in parsed.values())
         for t in tables:
             if t["id"] not in headers:
                 h, missed = peek_header(t)
                 if h:
                     t["header_peeked"] = h
-                elif missed:
+                elif missed and choice:
                     t["header_unreachable"] = True
     headers = {**headers, **{t["id"]: t["header_peeked"] for t in tables if t.get("header_peeked")}}
     link_input = [{"id": d["id"], "name": d["name"], "declared_resource_ids": d.get("declared_resource_ids"),

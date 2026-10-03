@@ -1166,7 +1166,7 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     # the header links a file to its dictionary: without it the link is not known
     monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
     monkeypatch.setattr(census.config, "DICTIONARY_RETRY_WAIT_S", 0)
-    serve(monkeypatch, {"https://p/d.csv": IBAMA_DICT})
+    serve(monkeypatch, {"https://p/d.csv": IBAMA_DICT, "https://p/x.pdf": b"%PDF-1.4 x"})
     answers = iter([requests.ConnectTimeout("x")])
 
     def peek(url, rows=0):
@@ -1178,7 +1178,8 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     monkeypatch.setattr(census.tabular, "peek_header", peek)
     pkg = {"name": "termo-de-doacao", "title": "T", "resources": [
         {"id": "r-a", "name": "Planilha A", "format": "CSV", "url": "https://p/a.csv"},
-        {"id": "r-dict", "name": "Metadados - Termo de doação", "format": "CSV", "url": "https://p/d.csv"}]}
+        {"id": "r-dict", "name": "Metadados - Termo de doação", "format": "CSV", "url": "https://p/d.csv"},
+        {"id": "r-pdf", "name": "Dicionário de outra coisa", "format": "PDF", "url": "https://p/x.pdf"}]}
     result, _ = census.run({}, packages=[pkg])
     t = result["datasets"][0]["tables"][0]
     assert t["link"]["method"] == "header" and "unreachable" not in result["datasets"][0]
@@ -1186,6 +1187,10 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0: (_ for _ in ()).throw(requests.ConnectTimeout("x")))
     result, _ = census.run({}, packages=[pkg])
     assert result["datasets"][0]["unreachable"] == ["r-a"] and work.plan(result, {}) == []
+    # with one dictionary there is no choice: the header does not decide the link, nothing waits
+    pkg["resources"] = pkg["resources"][:2]
+    result, _ = census.run({}, packages=[pkg])
+    assert "unreachable" not in result["datasets"][0] and len(work.plan(result, {})) == 1
 
 
 def test_waiting_for_a_server_is_bounded_and_a_redirect_loop_is_the_portals(tmp_root, monkeypatch):
