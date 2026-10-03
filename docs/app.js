@@ -303,7 +303,8 @@ function bindTip(node, html) {
 function tile(label, value, note = "", meter = null, extra = "") {
   return `<div class="tile"><div class="label">${esc(label)}</div><div class="value">${value}</div>`
     + (meter == null ? "" : `<div class="meter"><span style="width:${Math.max(0, Math.min(1, meter)) * 100}%"></span></div>`)
-    + `<div class="note">${note}</div>${extra}</div>`;
+    // one line per item: the notes join their parts with " · " (the same texts are used elsewhere)
+    + `<div class="note">${note.split(" · ").join("<br>")}</div>${extra}</div>`;
 }
 
 function nextMonday(iso) {

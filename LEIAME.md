@@ -58,8 +58,8 @@ Conforme observado ao montar esta instância (01/10/2026); o painel tem os núme
 | `portal.json` | `portal_url` = `https://dados.recife.pe.gov.br` |
 | `README.md`, `LEIAME.md`, `CITATION.cff` | este texto e a citação deste repositório |
 
-Todo o resto é o código de `5ltep-layer1` no commit `9ffbc8b`
-([9ffbc8b7b27a255bfeb1de0997f746bd5d35b5ab](https://github.com/lsp3cesarschool/5ltep-layer1/commit/9ffbc8b7b27a255bfeb1de0997f746bd5d35b5ab)).
+Todo o resto é o código de `5ltep-layer1` no commit `7a69476`
+([7a6947695ec4d9c4d21cce5d78094c43650bfad8](https://github.com/lsp3cesarschool/5ltep-layer1/commit/7a6947695ec4d9c4d21cce5d78094c43650bfad8)).
 
 ## Rodando, e adaptando de novo
 
