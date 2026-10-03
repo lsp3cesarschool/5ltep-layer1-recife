@@ -112,6 +112,9 @@ LLM_MAX_PDF_CHARS = _env("LLM_MAX_PDF_CHARS", 20000)
 EXTRACT_MAX_MINUTES = _env("EXTRACT_MAX_MINUTES", 120.0)
 # Bump when the extraction prompt changes meaning; earlier suggestions keep the version they had.
 EXTRACTION_PROMPT_VERSION = "v1"
+# Bump when the deterministic PDF reader reads more: every PDF is read again by it (v2, 03/10/2026: cells
+# the table's grid does not draw, as Recife's "Campo" column; the type is the cell that is most a type).
+PDF_READER_VERSION = "v2"
 
 # --- Drift review (GitHub Issues) -------------------------------------------
 ISSUE_LABEL = "layer1"
@@ -120,5 +123,6 @@ MAX_NEW_ISSUES = _env("MAX_NEW_ISSUES", 15)
 
 def method_parameters() -> dict:
     names = ["ROTATION_DAYS", "SAMPLE_ROWS", "L1_MAX_ERROR_RATE", "L1_PASS_THRESHOLD", "ORACLE_ACCEPT",
-             "ORACLE_LLM_BELOW", "LLM_MODEL", "LLM_SEED", "EXTRACTION_PROMPT_VERSION"]
+             "ORACLE_LLM_BELOW", "LLM_MODEL", "LLM_SEED", "EXTRACTION_PROMPT_VERSION",
+             "PDF_READER_VERSION"]
     return {n.lower(): globals()[n] for n in names}

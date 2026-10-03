@@ -41,6 +41,13 @@ def _is_type(text: str) -> bool:
     return not (note or "").startswith(("declared type not recognised", "type not declared"))
 
 
+def _type_share(text: str) -> float:
+    """How much of a cell the type word takes (1.0 for "Char", little for a sentence that holds one)."""
+    norm = types_map.normalise(text)
+    covered = {i for _, pattern in types_map.RULES for m in re.finditer(pattern, norm) for i in range(*m.span())}
+    return len(covered) / max(len(norm), 1)
+
+
 def fields_from_table_rows(rows: list[list]) -> list[dict]:
     """Field list from the rows of every table of a PDF dictionary, read by content."""
     out: list[dict] = []
@@ -59,7 +66,9 @@ def fields_from_table_rows(rows: list[list]) -> list[dict]:
                 out[-1]["description"] = (out[-1]["description"] + " " + cells[0]).strip()
             continue
         rest = [c for c in cells if c != name]
-        ftype = next((c for c in rest if _is_type(c)), "")
+        # of the cells that read as a type, the one that is most a type: a description may start with
+        # one ("Número do protocolo"), a type may be a phrase ("Cadeia de caracteres")
+        ftype = max((c for c in rest if _is_type(c)), key=_type_share, default="")
         rest = [c for c in rest if c != ftype]
         size = next((c for c in rest if SIZE_RE.match(c)), "")
         rest = [c for c in rest if c != size]
@@ -80,9 +89,37 @@ def pdf_tables(pdf: bytes) -> list[list]:
     rows: list[list] = []
     with pdfplumber.open(io.BytesIO(pdf)) as doc:
         for page in doc.pages:
-            for table in page.extract_tables():
-                rows += table
+            tables = page.find_tables()
+            words = page.extract_words() if tables else []
+            for table in tables:
+                rows += _unruled_cells(table, table.extract(), words)
     return rows
+
+
+def _unruled_cells(table, text: list[list], words: list[dict]) -> list[list]:
+    """Cells the grid does not draw, filled from the words in their place on the page: a column whose
+    rows have no lines of their own (only its header is ruled: Recife's "Campo"), or a column left of
+    the grid (its next page). Each row's band is the height of its ruled cells."""
+    inside = lambda w, x0, top, x1, bottom: \
+        x0 - 1 <= (w["x0"] + w["x1"]) / 2 <= x1 + 1 and top - 1 <= (w["top"] + w["bottom"]) / 2 <= bottom + 1
+    join = lambda box: " ".join(w["text"] for w in words if inside(w, *box)) or None
+    columns: dict[int, tuple[float, float]] = {}
+    for row in table.rows:
+        for j, cell in enumerate(row.cells):
+            if cell is not None:
+                columns.setdefault(j, (cell[0], cell[2]))
+    out = []
+    for row, cells in zip(table.rows, text):
+        cells = list(cells)
+        _, top, _, bottom = row.bbox
+        for j, cell in enumerate(row.cells):
+            if cell is None and j in columns and cells[j] is None:
+                cells[j] = join((columns[j][0], top, columns[j][1], bottom))
+        out.append(cells)
+    left = (0, table.bbox[0])                       # words left of the grid, in each row's band
+    if any(inside(w, left[0], table.bbox[1], left[1], table.bbox[3]) for w in words):
+        out = [[join((left[0], row.bbox[1], left[1], row.bbox[3]))] + cells for row, cells in zip(table.rows, out)]
+    return out
 
 
 def pdf_text(pdf: bytes) -> str:

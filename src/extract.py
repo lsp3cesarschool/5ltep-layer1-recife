@@ -45,7 +45,8 @@ def tasks(census: dict, validation: dict, extraction: dict, stage: str) -> list[
             if header is None and not all_done:
                 continue          # the oracle is not ready yet: wait for the validation
             rec = extraction.get(d["id"])
-            if stage == "deterministic" and (not rec or rec.get("sha256") != d["sha256"]):
+            if stage == "deterministic" and (not rec or rec.get("sha256") != d["sha256"]
+                                             or rec.get("reader_version", "v1") != config.PDF_READER_VERSION):
                 out.append({"dataset": ds["name"], "dictionary": d, "header": header})
             elif (stage == "llm" and rec and rec.get("sha256") == d["sha256"] and rec.get("outcome") == "llm-needed"
                   and not ((rec.get("llm") or {}).get("model") == config.LLM_MODEL
@@ -94,7 +95,7 @@ def run_deterministic(todo: list[dict], extraction: dict) -> dict:
         else:
             outcome = "llm-needed"
         rec = {"sha256": task["dictionary"]["sha256"], "dataset": task["dataset"], "linked_resources": d["linked_resources"],
-               "outcome": outcome, "stage": "deterministic",
+               "outcome": outcome, "stage": "deterministic", "reader_version": config.PDF_READER_VERSION,
                "deterministic": {"fields": len(fields), "oracle": oracle}, "at": _now()}
         extraction[d["id"]] = rec
         if outcome in ("extracted", "suggested"):

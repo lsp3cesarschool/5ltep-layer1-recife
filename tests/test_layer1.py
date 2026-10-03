@@ -1466,3 +1466,36 @@ def test_files_and_size_by_format_as_the_portal_declares_them():
     assert out["declared_gb"] == 5.0 and out["size_unknown"] == 3
     assert list(out["by_format"]) == ["csv", "zip"]
     assert out["by_format"]["zip"] == {"files": 2, "gb": 3.0, "size_unknown": 1}
+
+
+def test_a_pdf_column_without_grid_lines_is_read_from_the_words_in_its_place():
+    # Recife's "Metadados dos Pedidos de Informação": only the header of "Campo" is ruled, and on the
+    # next page the names sit left of the grid; the descriptions start with type words ("Número", "Data")
+    class Row:
+        def __init__(self, cells):
+            self.cells = cells
+            boxes = [c for c in cells if c]
+            self.bbox = (min(c[0] for c in boxes), min(c[1] for c in boxes), max(c[2] for c in boxes), max(c[3] for c in boxes))
+
+    class Table:
+        def __init__(self, rows):
+            self.rows = [Row(r) for r in rows]
+            self.bbox = (min(r.bbox[0] for r in self.rows), self.rows[0].bbox[1],
+                         max(r.bbox[2] for r in self.rows), self.rows[-1].bbox[3])
+
+    word = lambda text, x, y: {"text": text, "x0": x, "x1": x + 5 * len(text), "top": y, "bottom": y + 8}
+    page1 = Table([[(50, 10, 150, 20), (150, 10, 350, 20), (350, 10, 400, 20)],
+                   [None, (150, 20, 350, 30), (350, 20, 400, 30)],
+                   [None, (150, 30, 350, 50), (350, 30, 400, 50)]])
+    words1 = [word("numero", 55, 21), word("data_pedido", 55, 41)]
+    rows = pdf_extract._unruled_cells(page1, [["Campo", "Descrição", "Tipo"], [None, "Número do protocolo", "Char"],
+                                              [None, "Data da solicitação", "num"]], words1)
+    page2 = Table([[(150, 10, 350, 20), (350, 10, 400, 20)]])
+    rows += pdf_extract._unruled_cells(page2, [["Bairro onde mora", "Char"]], [word("bairro_solicitante", 55, 11)])
+    fields = pdf_extract.fields_from_table_rows(rows)
+    assert [(f["name"], f["type"]) for f in fields] == [("numero", "Char"), ("data_pedido", "num"),
+                                                         ("bairro_solicitante", "Char")]
+    assert fields[1]["description"] == "Data da solicitação"
+    # a type that is a phrase still wins over a description that starts with a type word
+    aneel = pdf_extract.fields_from_table_rows([["DscVersao", "Cadeia de caracteres", "15", "Número da versão."]])
+    assert aneel[0]["type"] == "Cadeia de caracteres"
