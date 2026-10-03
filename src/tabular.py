@@ -25,6 +25,7 @@ import datetime as dt
 import hashlib
 import io
 import json
+import logging
 import sys
 import tempfile
 import time
@@ -36,6 +37,8 @@ from pathlib import Path
 import requests
 
 from src import ckan, config
+
+logger = logging.getLogger(__name__)
 
 csv.field_size_limit(min(sys.maxsize, 2**31 - 1))   # geometry columns hold very long cells
 
@@ -502,6 +505,7 @@ def _zip_stream_tables(stream, outer: str | None, tmp: str, depth: int, digest: 
             raise NotTabular("a spreadsheet larger than the runner's disk", "too-large")
         name = f"{outer}/{entry}" if outer else entry
         member = io.BufferedReader(_ChunkReader(chunks), PEEK * 4)
+        stopped = False
         try:
             lower = entry.lower()
             if entry.endswith("/") or "__MACOSX/" in entry or not lower.endswith(TABLE_EXTENSIONS) \
@@ -528,8 +532,12 @@ def _zip_stream_tables(stream, outer: str | None, tmp: str, depth: int, digest: 
                 found += 1
                 yield table
             inner.unlink(missing_ok=True)
+        except GeneratorExit:
+            stopped = True      # the caller is done (only a header was read): nothing more is downloaded
+            raise
         finally:
-            _drain(member)      # each member must be read to its end before the next one
+            if not stopped:
+                _drain(member)  # each member must be read to its end before the next one
     if outer is None:
         digest["members"] = found
         if not found:
@@ -568,11 +576,12 @@ DISK_KINDS = ("zip", "parquet", "xls")
 
 
 @contextlib.contextmanager
-def open_resource(url: str, max_disk_bytes: int | None = None):
+def open_resource(url: str, max_disk_bytes: int | None = None, stream_zip: bool = False):
     """Yields a Source; `digest` is complete once every table has been read to the end. A format that
     must go to disk (zip, spreadsheets, Parquet) is downloaded to a temporary file when it fits in
     `max_disk_bytes` (the runner's disk); a zip that does not is read as it streams; a Parquet or a
-    spreadsheet that does not cannot be read on this machine ("too-large")."""
+    spreadsheet that does not cannot be read on this machine ("too-large"). `stream_zip`: a zip is
+    always read as it streams, so that a caller that stops early stops the download too."""
     limit = max_disk_bytes or config.MAX_ZIP_BYTES
     _decode_errors[0] = 0
     t0 = time.monotonic()
@@ -595,7 +604,7 @@ def open_resource(url: str, max_disk_bytes: int | None = None):
         streamable = kind == "zip" and not _is_office(_first_member(sample))
         if kind in DISK_KINDS and length > limit and not streamable:
             raise NotTabular(f"file of {length / 1e9:.1f} GB is larger than the runner's disk", "too-large")
-        if kind in DISK_KINDS and length > limit:
+        if streamable and (length > limit or stream_zip):
             with tempfile.TemporaryDirectory() as tmp:
                 yield from _serve(Source(_streamed_zip(buffered, hashing, tmp, digest), digest))
         elif kind in DISK_KINDS:
@@ -636,11 +645,28 @@ def open_resource(url: str, max_disk_bytes: int | None = None):
         resp.close()
 
 
-def peek_header(url: str, rows: int = 50, max_disk_bytes: int | None = None) -> tuple[str, list[str]]:
+def peek_header(url: str, rows: int = 50, max_disk_bytes: int | None = None,
+                stream_zip: bool = False) -> tuple[str, list[str]]:
     """(format, header) of a resource, reading as little as the format allows (another format of a
     table already validated in full: only its columns are compared; a file never validated: its columns
-    link it to its dictionary)."""
-    with open_resource(url, max_disk_bytes) as src:
+    link it to its dictionary).
+
+    `stream_zip`: a zip is read from its start, member by member (each one has its own local header),
+    and the download stops after the first table's header: no byte range is needed (Recife's file
+    server ignores them), and a 1 GB zip costs a few kilobytes. The members come in the order they are
+    stored, not by name as in a validation; a zip that cannot be read so (an unusual layout) is
+    downloaded whole."""
+    if stream_zip:
+        from stream_unzip import UnzipError
+        try:
+            return _peek(url, rows, max_disk_bytes, True)
+        except UnzipError as exc:
+            logger.info("%s could not be read as a stream (%s); downloading it whole", url, exc)
+    return _peek(url, rows, max_disk_bytes, False)
+
+
+def _peek(url: str, rows: int, max_disk_bytes: int | None, stream_zip: bool) -> tuple[str, list[str]]:
+    with open_resource(url, max_disk_bytes, stream_zip) as src:
         for table in src.tables:
             it = iter(table.rows)
             header = [h.strip().lstrip("﻿") for h in next(it, [])]

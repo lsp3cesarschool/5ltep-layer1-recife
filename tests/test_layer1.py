@@ -1037,6 +1037,29 @@ def test_a_zip_larger_than_the_disk_is_read_as_it_streams(monkeypatch):
     assert exc.value.kind == "too-large"
 
 
+def test_the_header_of_a_zip_costs_a_few_kilobytes_without_byte_ranges(monkeypatch):
+    # Recife's file server answers a byte-range request with the whole file; the survey downloaded
+    # 73 zips (21 GB) whole for their headers. Read from its start, a zip gives its first table's
+    # header, and the download stops there.
+    import random
+
+    rnd = random.Random(1)
+    body = "".join(f"{rnd.getrandbits(64):x};{rnd.getrandbits(64):x}\n" for _ in range(200_000)).encode()
+    for compression in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED):
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w", compression) as zf:
+            zf.writestr("dados.csv", b"COD;VALOR\n" + body)
+        data = buf.getvalue()
+        resp = FakeResponse(data)
+        monkeypatch.setattr(tabular.ckan, "get", lambda url, **kw: resp)
+        assert tabular.peek_header("u", rows=0, stream_zip=True) == ("csv", ["COD", "VALOR"])
+        assert len(data) > 3_000_000 and resp.raw.tell() < 300_000
+    # a zip that cannot be read as a stream is downloaded whole
+    monkeypatch.setattr(tabular.ckan, "get", lambda url, **kw: FakeResponse(data))
+    monkeypatch.setattr(tabular, "_zip_stream_tables", lambda *a: (_ for _ in ()).throw(__import__("stream_unzip").TruncatedDataError()))
+    assert tabular.peek_header("u", rows=0, stream_zip=True) == ("csv", ["COD", "VALOR"])
+
+
 def test_zips_inside_zips_are_read_several_levels_deep(monkeypatch):
     out, _ = _read_all(monkeypatch, _zip({"1.zip": _zip({"2.zip": _zip({"3.csv": b"a\n1\n"})})}))
     assert out == [("csv", "1.zip/2.zip/3.csv", [["a"], ["1"]])]
@@ -1169,7 +1192,7 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     serve(monkeypatch, {"https://p/d.csv": IBAMA_DICT, "https://p/x.pdf": b"%PDF-1.4 x"})
     answers = iter([requests.ConnectTimeout("x")])
 
-    def peek(url, rows=0):
+    def peek(url, rows=0, **kw):
         e = next(answers, None)
         if e:
             raise e
@@ -1184,7 +1207,7 @@ def test_a_header_the_server_did_not_give_is_asked_again(tmp_root, monkeypatch):
     t = result["datasets"][0]["tables"][0]
     assert t["link"]["method"] == "header" and "unreachable" not in result["datasets"][0]
     # never answering: the file waits
-    monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0: (_ for _ in ()).throw(requests.ConnectTimeout("x")))
+    monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0, **kw: (_ for _ in ()).throw(requests.ConnectTimeout("x")))
     result, _ = census.run({}, packages=[pkg])
     assert result["datasets"][0]["unreachable"] == ["r-a"] and work.plan(result, {}) == []
     # with one dictionary there is no choice: the header does not decide the link, nothing waits
@@ -1207,7 +1230,7 @@ def test_a_header_is_read_in_the_survey_only_where_it_decides_something(tmp_root
     monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
     serve(monkeypatch, {"https://p/x.pdf": b"%PDF-1.4 x"})
     asked = []
-    monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0: (asked.append(url), (None, ["A", "B"]))[1])
+    monkeypatch.setattr(census.tabular, "peek_header", lambda url, rows=0, **kw: (asked.append(url), (None, ["A", "B"]))[1])
     pkg = {"name": "ds", "title": "T", "resources": [
         {"id": "r-zip", "name": "Dados 2020", "format": "ZIP", "url": "https://p/2020.zip", "size": 10},
         {"id": "r-big", "name": "Dados 2021", "format": "CSV", "url": "https://p/2021.csv", "size": 900},

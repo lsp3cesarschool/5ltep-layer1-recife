@@ -195,14 +195,14 @@ def peek_header(t: dict) -> tuple[list[str] | None, str | None]:
     """(the column names of a table, or None; why not: "unreachable" when the server did not answer,
     "time" past SURVEY_HEADER_MAX_MINUTES). No row is kept. A file that cannot be read as a table is
     linked by its header from its first validation on; one whose server did not answer is asked again
-    (see `run`). A text file is read only to its first line; a zip, a spreadsheet or a Parquet is
-    downloaded whole (its columns are only known that way; Recife's file server ignores byte ranges)."""
+    (see `run`). A text file is read only to its first line, a zip only to its first table's header
+    (as it streams); a spreadsheet or a Parquet is downloaded whole (its columns are only known so)."""
     if time.monotonic() > HEADER_DEADLINE[0]:
         return None, "time"
     if BREAKER.is_open():
         return None, "unreachable"
     try:
-        h = tabular.peek_header(t["url"], rows=0)[1] or None
+        h = tabular.peek_header(t["url"], rows=0, stream_zip=True)[1] or None
     except Exception as exc:
         answered = _download_error_kind(exc) != "unreachable"
         BREAKER.record(answered)
