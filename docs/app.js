@@ -57,6 +57,7 @@ const I18N = {
     live_validate: "downloading and validating files", live_publish: "publishing the results",
     t_dicts: "Dictionaries", dicts_note: "{m} machine-readable ({r} read) · {p} PDF · {o} not linked to any file",
     files_size: "{gb} GB declared on the portal", files_unknown: "{n} without a declared size",
+    files_copies: "{n} copies of another file of the same dataset ({gb} GB)",
     t_drift: "Schema drift events", of_total: "{n} of {t}", conf_note: "{n} of {t} files with a declared schema",
     pass: "Layer 1 passes", fail: "Layer 1 does not pass", threshold: "threshold {t}",
     drift_note: "{o} in files · {d} in declared schemas",
@@ -109,7 +110,8 @@ const I18N = {
     none: "none", f_rows: "rows", f_schema: "schema", f_status: "status", f_dict: "dictionary", f_conf: "conforms",
     f_missing: "declared, not in the file", f_undecl: "in the file, not declared", f_spelling: "spelled differently",
     f_errors: "cells that break the declared type or constraints", f_drift: "drift events", yes: "yes", no: "no",
-    s_ok: "read", s_error: "could not be read", "s_not-tabular": "not a table", s_empty: "empty", s_pending: "not checked yet",
+    s_ok: "read", s_error: "could not be read", "s_not-tabular": "not a table", s_empty: "empty", s_pending: "not checked yet", s_sampled: "by sample",
+    f_copy: "copy of “{f}” (same name, declared size and file name): its result, not downloaded again (COPIES_ONCE)",
     footer: "Method: {m}. Summary for Layer 5:",
   },
   pt: {
@@ -165,6 +167,7 @@ const I18N = {
     live_validate: "baixando e validando arquivos", live_publish: "publicando os resultados",
     t_dicts: "Dicionários", dicts_note: "{m} legíveis por máquina ({r} lidos) · {p} em PDF · {o} sem ligação com arquivo",
     files_size: "{gb} GB declarados no portal", files_unknown: "{n} sem tamanho declarado",
+    files_copies: "{n} cópias de outro arquivo do mesmo conjunto ({gb} GB)",
     t_conf: "Arquivos conformes", t_drift: "Eventos de deriva de esquema", of_total: "{n} de {t}",
     conf_note: "{n} de {t} arquivos com esquema declarado",
     pass: "A Camada 1 passa", fail: "A Camada 1 não passa", threshold: "limiar {t}",
@@ -218,7 +221,8 @@ const I18N = {
     none: "nenhum", f_rows: "linhas", f_schema: "esquema", f_status: "situação", f_dict: "dicionário", f_conf: "conforme",
     f_missing: "declarados, ausentes do arquivo", f_undecl: "no arquivo, não declarados", f_spelling: "grafados de outro jeito",
     f_errors: "células que violam o tipo ou as restrições declaradas", f_drift: "eventos de deriva", yes: "sim", no: "não",
-    s_ok: "lido", s_error: "não pôde ser lido", "s_not-tabular": "não é tabela", s_empty: "vazio", s_pending: "ainda não verificado",
+    s_ok: "lido", s_error: "não pôde ser lido", "s_not-tabular": "não é tabela", s_empty: "vazio", s_pending: "ainda não verificado", s_sampled: "por amostra",
+    f_copy: "cópia de “{f}” (mesmo nome, tamanho declarado e nome de arquivo): o resultado dele, sem baixar de novo (COPIES_ONCE)",
     footer: "Método: {m}. Resumo para a Camada 5:",
   },
 };
@@ -321,8 +325,10 @@ function renderTiles(s) {
   const tb = s.tables || {};
   const formats = Object.entries(tb.by_format || {}).map(([k, f]) =>
     `${k.toUpperCase()} ${fmt(f.files)}` + (f.gb >= 0.05 ? ` (${gb(f.gb)} GB)` : "")).join(" · ");
+  const cp = ((s.findings || {}).copies) || {};
   const filesNote = [formats, tb.declared_gb == null ? "" : t("files_size", { gb: gb(tb.declared_gb) }),
-    tb.size_unknown ? t("files_unknown", { n: fmt(tb.size_unknown) }) : ""].filter(Boolean).join(" · ");
+    tb.size_unknown ? t("files_unknown", { n: fmt(tb.size_unknown) }) : "",
+    cp.files ? t("files_copies", { n: fmt(cp.files), gb: gb(cp.gb) }) : ""].filter(Boolean).join(" · ");
   const dc = ((s.findings || {}).dictionaries) || {};
   const dictTile = dc.total == null ? "" : tile(t("t_dicts"), fmt(dc.total), esc(t("dicts_note", {
     m: fmt(dc.machine_readable), r: fmt(dc.machine_readable_and_read), p: fmt(dc.human_readable), o: fmt(dc.orphans) }))
@@ -334,7 +340,7 @@ function renderTiles(s) {
     same ? same.n++ : big.push({ ...x, n: 1 });
   }
   const queueTile = !tb.queue_remaining ? "" : tile(t("t_queue"), fmt(tb.queue_remaining),
-    esc(t("queue_note", { gb: gb(tb.queue_gb || 0) }))
+    (tb.queue_gb == null ? "" : esc(t("queue_note", { gb: gb(tb.queue_gb) })))
     + (big.length ? `<br>${esc(t("queue_big"))}: ` + big.map((x) => esc(`${x.name} (${gb(x.gb)} GB)${x.n > 1 ? ` ×${x.n}` : ""}`)).join(" · ") : ""));
   el("tiles").innerHTML = [
     tile(t("t_datasets"), fmt(s.datasets.total)),
@@ -659,7 +665,8 @@ function levelBadge(l) {
 function fileDetail(f) {
   const c = f.conformance;
   const queued = f.queued ? [t("s_queued"), bytes(f.size)].filter(Boolean).join(" · ") : "";
-  const status = [f.status ? t(`s_${f.status}`) : queued ? "" : t("s_pending"), queued].filter(Boolean).join(" · ");
+  const status = [f.status ? t(`s_${f.status}`) : queued ? "" : t("s_pending"), f.sampled ? t("s_sampled") : "", queued]
+    .filter(Boolean).join(" · ");
   const dm = f.dictionary;
   const dict = dm ? `${dm.url ? `<a href="${esc(dm.url)}" rel="noopener">${esc(dm.format || "")}</a>` : esc(dm.format || "")}`
     + ` · ${esc(t(`m_${(dm.method || "").replace("-", "_")}`))}`
@@ -692,6 +699,10 @@ function fileDetail(f) {
     }).join(" · ") + "</div>";
   }
   if (f.error) more += `<div class="small muted">${esc(f.error)}</div>`;
+  if (f.copy_of) {
+    const first = (DATA.datasets.flatMap((d) => d.tables).find((x) => x.id === f.copy_of) || {}).name || f.copy_of;
+    more += `<div class="small muted">${esc(t("f_copy", { f: first }))}</div>`;
+  }
   return `<tr id="file-${esc(f.id)}"><td><a href="${esc(f.url)}" rel="noopener">${esc(f.name || f.id)}</a>${more}</td>`
     + `<td>${f.not_a_table ? "—" : levelBadge(f.level)}</td><td>${dict}</td><td class="small">${esc(f.schema_kind || "—")}<br>${schemaLinks(f.schema_files)}</td>`
     + `<td>${esc(status)}</td><td class="num">${fmt(f.rows)}</td><td>${conf}</td><td class="num">${fmt(f.drift_events)}</td></tr>`;
@@ -832,7 +843,9 @@ async function main() {
   setInterval(refreshLive, 5 * 60 * 1000);
   setInterval(drawLive, 60 * 1000);
   const m = s.method || {};
-  el("footer").innerHTML = esc(t("footer", { m: `L1_MAX_ERROR_RATE=${m.l1_max_error_rate}, L1_PASS_THRESHOLD=${m.l1_pass_threshold}, ROTATION_DAYS=${m.rotation_days}, LLM=${m.llm_model}` }))
+  const opt = (k, v) => (v == null ? "" : `, ${k}=${v}`);
+  el("footer").innerHTML = esc(t("footer", { m: `L1_MAX_ERROR_RATE=${m.l1_max_error_rate}, L1_PASS_THRESHOLD=${m.l1_pass_threshold}, ROTATION_DAYS=${m.rotation_days}, LLM=${m.llm_model}`
+    + opt("ZIP_DOCUMENTS_SAMPLE", m.zip_documents_sample) + opt("COPIES_ONCE", m.copies_once) }))
     + ` <a href="${repo()}/blob/main/results/layer1_summary.json">results/layer1_summary.json</a>`;
 }
 

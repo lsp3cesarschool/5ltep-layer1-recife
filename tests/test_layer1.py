@@ -582,7 +582,7 @@ def test_several_files_are_validated_at_once_and_a_large_spreadsheet_alone(tmp_r
     monkeypatch.setattr(work, "validate_one", fake)
     big = 2 * config.MAX_ZIP_BYTES
     census_ = {"datasets": [{"name": "ds", "dictionaries": [], "tables": [
-        {"id": f"r{i}", "name": "T", "url": "u", "candidate": "csv", "size": 10} for i in range(6)]
+        {"id": f"r{i}", "name": f"T{i}", "url": "u", "candidate": "csv", "size": 10} for i in range(6)]
         + [{"id": "x", "name": "X", "url": "u", "candidate": "xlsx", "size": big}]}]}
     queue = [{"id": f"r{i}", "dataset": "ds", "reason": "new"} for i in range(3)] + [{"id": "x", "dataset": "ds", "reason": "new"}] \
         + [{"id": f"r{i}", "dataset": "ds", "reason": "new"} for i in range(3, 6)] + [{"id": "gone", "dataset": "ds", "reason": "new"}]
@@ -619,7 +619,7 @@ def test_one_connection_per_server_and_the_validation_from_disk(tmp_root, monkey
     monkeypatch.setattr(tabular, "fetch", fetch)
     urls = [f"https://a/{i}.csv" for i in range(4)] + [f"https://b/{i}.csv" for i in range(2)]
     census_ = {"datasets": [{"name": "ds", "dictionaries": [], "tables": [
-        {"id": f"r{i}", "name": "T", "url": u, "candidate": "csv", "size": 10} for i, u in enumerate(urls)]}]}
+        {"id": f"r{i}", "name": f"T{i}", "url": u, "candidate": "csv", "size": 10} for i, u in enumerate(urls)]}]}
     validation = {}
     out = work.run_batch(census_, [{"id": f"r{i}", "dataset": "ds", "reason": "new"} for i in range(6)],
                          validation, 5, workers=3, executor=ThreadPoolExecutor(3))
@@ -1507,3 +1507,71 @@ def test_what_is_left_in_the_queue_by_its_declared_size():
     out = report.queued(tables, [{"id": "a"}, {"id": "b"}, {"id": "c"}])
     assert out["queue_gb"] == 4.0
     assert [x["name"] for x in out["queue_largest"]] == ["A", "C"]          # B: no declared size
+
+
+def test_a_file_published_more_than_once_is_read_once(tmp_root, monkeypatch):
+    calls = []
+    body = b"ID;UF\n1;PE\n"
+
+    def fetch(url, folder, limit):
+        calls.append(url)
+        (folder / "resource").write_bytes(body)
+        return {"timing": {}, "http": {}, "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest()}
+
+    monkeypatch.setattr(tabular, "fetch", fetch)
+    same = {"name": "Pedidos 2023", "candidate": "csv", "size": 12}
+    census_ = {"generated_at": "2026-10-03T00:00:00+00:00", "datasets": [{"name": "ds", "dictionaries": [], "tables": [
+        {**same, "id": "a", "url": "https://p/r/a/download/pedidos-2023.csv"},
+        {**same, "id": "b", "url": "https://p/r/b/download/pedidos-2023.csv"},
+        {**same, "id": "c", "url": "https://p/r/c/download/outro.csv"}]}]}
+    assert work.copies(census_) == {"b": "a"}
+    validation = {}
+    queue = [{"id": i, "dataset": "ds", "reason": "new"} for i in ("b", "a", "c")]       # the copy first
+    out = work.run_batch(census_, queue, validation, 5)
+    assert sorted(out["done"]) == ["a", "b", "c"] and len(calls) == 2
+    assert validation["b"]["copy_of"] == "a" and validation["b"]["header"] == ["ID", "UF"]
+    assert validation["b"]["ckan"]["url"].endswith("/b/download/pedidos-2023.csv")
+    assert report.copies_of(census_, validation) == {"files": 1, "of_files": 1, "datasets": 1, "gb": 0.0, "results_copied": 1}
+    monkeypatch.setattr(config, "COPIES_ONCE", 0)
+    calls.clear()
+    work.run_batch(census_, queue, {}, 5)
+    assert len(calls) == 3
+
+
+def _zip_of(members: dict[str, bytes]) -> bytes:
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        for name, data in members.items():
+            zf.writestr(name, data)
+    return buf.getvalue()
+
+
+def test_a_zip_of_documents_is_known_by_its_first_members(tmp_root, monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 3)
+    docs = _zip_of({f"Pedidos/{i}/doc_{i}.pdf": bytes([i % 256]) * 5000 for i in range(10)} | {"z/late.csv": b"A;B\n1;2\n"})
+    serve(monkeypatch, {"u": docs})
+    with pytest.raises(tabular.NotTabular) as exc:
+        tabular.fetch("u", tmp_path, 10 ** 9)
+    assert exc.value.kind == "no-tables" and exc.value.sampled["members"] == 3
+    assert exc.value.sampled["kinds"] == {"pdf": 3} and "by sample" in str(exc.value)
+    # a table among the first members: downloaded to its end, every byte
+    mixed = _zip_of({"a.pdf": b"x" * 5000, "b.csv": b"A;B\n1;2\n", "c.pdf": b"y" * 5000})
+    serve(monkeypatch, {"u": mixed})
+    digest = tabular.fetch("u", tmp_path, 10 ** 9)
+    assert digest["sha256"] == hashlib.sha256(mixed).hexdigest() and (tmp_path / "resource").read_bytes() == mixed
+    # the whole zip is shorter than the sample: the usual reading decides (no sample)
+    serve(monkeypatch, {"u": _zip_of({"a.pdf": b"x", "b.pdf": b"y"})})
+    assert tabular.fetch("u", tmp_path, 10 ** 9)["bytes"] > 0
+    # 0: every zip is read to its end
+    monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 0)
+    serve(monkeypatch, {"u": docs})
+    assert tabular.fetch("u", tmp_path, 10 ** 9)["sha256"] == hashlib.sha256(docs).hexdigest()
+
+
+def test_a_sampled_zip_of_documents_is_left_out_of_the_tables(tmp_root, monkeypatch):
+    monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 3)
+    serve(monkeypatch, {"https://p/t.zip": _zip_of({f"d{i}.pdf": b"x" * 3000 for i in range(8)})})
+    validation = {}
+    work.run_batch(_census_one("https://p/t.zip"), [{"id": "r1", "dataset": "ds", "reason": "new"}], validation, 5)
+    v = validation["r1"]
+    assert v["status"] == "not-tabular" and v["sampled"]["members"] == 3 and report.not_a_table(v)

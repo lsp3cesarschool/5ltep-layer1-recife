@@ -44,7 +44,9 @@ a { color: var(--accent); }
 .topbar a:hover { text-decoration: underline; }
 .lang-switch { margin-left: auto; display: flex; gap: 8px; }
 .lang-switch a.current { color: var(--text); pointer-events: none; }
-header { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: flex-end; padding-top: 28px; }
+header { padding-top: 28px; }
+.subrow { display: flex; flex-wrap: wrap; gap: 12px 16px; justify-content: space-between; align-items: center; }
+.subrow #subtitle { margin: 0; }
 h1 { margin: 2px 0 4px; font-size: 1.6rem; overflow-wrap: anywhere; }
 h2 { font-size: 1.15rem; margin: 0; }
 h3 { font-size: .95rem; margin: 0 0 8px; }
@@ -66,7 +68,7 @@ section.tiles { background: none; border: 0; padding: 0; display: grid; grid-tem
 .meter > span { display: block; height: 100%; background: var(--bar); border-radius: 3px; }
 .status { font-weight: 600; white-space: nowrap; }
 /* a run in progress (GitHub Actions API, read by the browser) */
-.live { display: inline-flex; align-items: center; gap: 8px; margin: 6px 0 0; padding: 4px 12px; border-radius: 999px;
+.live { display: inline-flex; align-items: center; gap: 8px; margin: 6px 0 0; padding: 4px 12px; border-radius: 16px;
   border: 1px solid var(--border); background: var(--surface); font-size: .88rem; }
 .live .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-2); animation: pulse 1.6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .live .dot { animation: none; } }

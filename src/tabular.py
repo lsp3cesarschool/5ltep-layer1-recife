@@ -30,6 +30,7 @@ import sys
 import tempfile
 import time
 import zipfile
+from collections import Counter
 from dataclasses import dataclass, field
 from decimal import Decimal
 from pathlib import Path
@@ -64,6 +65,7 @@ class NotTabular(Exception):
     def __init__(self, message: str, kind: str = "no-tables"):
         super().__init__(message)
         self.kind = kind
+        self.sampled: dict | None = None      # concluded from the first members of a zip only
 
 
 class HashingReader(io.RawIOBase):
@@ -686,15 +688,71 @@ def fetch(url: str, folder: Path, limit: float) -> dict:
         hashing = HashingReader(resp.raw)
         buffered = io.BufferedReader(hashing, 1 << 20)
         with open(folder / "resource", "wb") as fh:
-            while chunk := buffered.read(1 << 20):
-                fh.write(chunk)
-                if hashing.size > limit:
-                    raise TooLarge(url)
+            chunks = _Saved(buffered, fh, hashing, limit, url)
+            first = buffered.peek(PEEK)[:PEEK]
+            if config.ZIP_DOCUMENTS_SAMPLE and first.startswith(b"PK\x03\x04") and not _is_office(_first_member(first)):
+                _sample_zip(chunks, digest["http"]["content_length"])
+            for _ in chunks:                    # the rest of the file (all of it, without a sample)
+                pass
         timing["download_s"] = round(time.monotonic() - t0, 2)
         timing["network_s"] = round(hashing.wait, 2)
         return {**digest, "sha256": hashing.sha.hexdigest(), "bytes": hashing.size}
     finally:
         resp.close()
+
+
+class _Saved:
+    """The chunks of a download, each written to disk as it is read (an iterator, not a generator, so
+    that a reader that stops early does not close it: the rest is read after)."""
+
+    def __init__(self, buffered, fh, hashing, limit: float, url: str):
+        self.buffered, self.fh, self.hashing, self.limit, self.url = buffered, fh, hashing, limit, url
+
+    def __iter__(self):
+        return self
+
+    def __next__(self) -> bytes:
+        chunk = self.buffered.read(1 << 20)
+        if not chunk:
+            raise StopIteration
+        self.fh.write(chunk)
+        if self.hashing.size > self.limit:
+            raise TooLarge(self.url)
+        return chunk
+
+
+def _sample_zip(chunks, length: int | None) -> None:
+    """Read the first ZIP_DOCUMENTS_SAMPLE members of a zip while it downloads (each member's local
+    header, its data inflated to find where the next begins: some zips give the size only after the
+    data). If none of them is a table, the zip is a container of documents by sample (NotTabular,
+    "no-tables", with what was read); a table among them, or a layout this cannot read, and the zip is
+    downloaded to its end as any other."""
+    from stream_unzip import UnzipError, stream_unzip
+
+    n, kinds = 0, Counter()
+    try:
+        for name, _, member in stream_unzip(chunks):
+            name = name.decode("utf-8", errors="replace")
+            for _ in member:
+                pass
+            if name.endswith("/"):
+                continue
+            if name.lower().endswith(TABLE_EXTENSIONS):
+                return
+            n += 1
+            kinds[name.rsplit(".", 1)[-1].lower()[:10] if "." in name.rsplit("/", 1)[-1] else "(none)"] += 1
+            if n >= config.ZIP_DOCUMENTS_SAMPLE:
+                break
+        else:
+            return                              # the whole zip read: the usual reading decides
+    except UnzipError:
+        return
+    read = chunks.hashing.size
+    exc = NotTabular(f"zip of documents by sample: its first {n} members hold no table "
+                     f"({', '.join(f'{k} {c}' for k, c in kinds.most_common(5))}); "
+                     f"{read / 1e6:.0f} MB read of {(length or 0) / 1e6:.0f} MB (ZIP_DOCUMENTS_SAMPLE)", "no-tables")
+    exc.sampled = {"members": n, "bytes_read": read, "bytes": length, "kinds": dict(kinds.most_common(5))}
+    raise exc
 
 
 @contextlib.contextmanager

@@ -67,6 +67,23 @@ def reason_for(dataset: str, t: dict, prev: dict | None, now: datetime, head=cka
     return None
 
 
+def copies(census: dict) -> dict[str, str]:
+    """{id of a copy: id of the first file of its dataset with the same name, declared size and file
+    name}: one file published more than once (taken as a copy, not checked byte by byte)."""
+    out = {}
+    for ds in census["datasets"]:
+        first: dict[tuple, str] = {}
+        for t in ds["tables"]:
+            if not str(t.get("size") or "").isdigit():
+                continue
+            key = (t.get("name"), int(t["size"]), (t.get("url") or "").split("?")[0].rsplit("/", 1)[-1])
+            if key in first:
+                out[t["id"]] = first[key]
+            else:
+                first[key] = t["id"]
+    return out
+
+
 def plan(census: dict, validation: dict, now: datetime | None = None, head=ckan.head) -> list[dict]:
     now = now or datetime.now(timezone.utc)
     queue = []
@@ -102,6 +119,7 @@ def validate_one(dataset: str, t: dict, prev: dict | None, local: dict | None = 
         # "no-tables": a container of documents or maps, not tabular data (left out of the universe);
         # "html"/"pdf": the link returns a page or a document instead of the table (a failure).
         return {**entry, "status": "not-tabular", "not_tabular_kind": exc.kind, "error": str(exc)[:300],
+                **({"sampled": exc.sampled} if exc.sampled else {}),
                 "validated_at": entry["checked_at"]}, None, []
     except Exception as exc:
         logger.warning("%s: %s", t["id"], safety.error_text(exc, 300))
@@ -270,6 +288,7 @@ def run_batch(census: dict, queue: list[dict], validation: dict, minutes: float,
     """
     workers = max(1, workers or config.VALIDATE_WORKERS)
     share = config.MAX_ZIP_BYTES / (workers + 1)      # files on disk: at most workers + 1 of them
+    copy_of = copies(census) if config.COPIES_ONCE else {}
     tables = {t["id"]: (ds, t) for ds, t in tables_of(census)}
     deadline = time.monotonic() + minutes * 60
     done, observed, events = [], {}, []
@@ -329,6 +348,25 @@ def run_batch(census: dict, queue: list[dict], validation: dict, minutes: float,
                         done.append(pending.pop(i)["id"])     # gone from the portal since the census
                         continue
                     dataset, t = tables[item["id"]]
+                    first = copy_of.get(item["id"])
+                    if first:
+                        waiting = {r[0]["id"] for r in fetching.values()} | {r[0]["id"] for r in ready} \
+                            | {r[0]["id"] for r in running.values()} | {p["id"] for p in pending}
+                        if first in waiting:
+                            i += 1                            # the first copy is read before this one
+                            continue
+                        done_first = validation.get(first) or {}
+                        if done_first.get("status") in ("ok", "empty", "not-tabular") \
+                                and (done_first.get("checked_at") or "") >= (census.get("generated_at") or ""):
+                            # read in this chain: the copy gets its result instead of a download
+                            validation[t["id"]] = {**{k: v for k, v in done_first.items() if k not in ("ckan", "host")},
+                                                   "ckan": {"url": t["url"], "last_modified": t.get("last_modified"),
+                                                            "size": t.get("size")},
+                                                   "host": urlparse(t.get("url") or "").hostname, "copy_of": first,
+                                                   "checked_at": now_iso(), "reason": item["reason"]}
+                            done.append(pending.pop(i)["id"])
+                            progress()
+                            continue
                     host = urlparse(t.get("url") or "").hostname
                     if host in busy:
                         i += 1

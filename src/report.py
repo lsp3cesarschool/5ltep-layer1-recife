@@ -86,6 +86,17 @@ def _error_kind(error: str | None) -> str:
     return "other"
 
 
+def copies_of(census: dict, validation: dict) -> dict:
+    from src.work import copies
+
+    found = copies(census)
+    size = {t["id"]: int(t["size"]) for ds in census["datasets"] for t in ds["tables"] if str(t.get("size") or "").isdigit()}
+    return {"files": len(found), "of_files": len(set(found.values())),
+            "datasets": len({ds["name"] for ds in census["datasets"] for t in ds["tables"] if t["id"] in found}),
+            "gb": round(sum(size.get(i, 0) for i in found) / 1e9, 2),
+            "results_copied": sum(bool((validation.get(i) or {}).get("copy_of")) for i in found)}
+
+
 def documentation_findings(census: dict, validation: dict, extraction: dict) -> dict:
     dicts = [d for ds in census["datasets"] for d in ds["dictionaries"]]
     tables = [t for ds in census["datasets"] for t in ds["tables"]]
@@ -154,6 +165,8 @@ def documentation_findings(census: dict, validation: dict, extraction: dict) -> 
             "declared_fields_missing": sum(len(c["missing"]) for _, c in confs),
             "formats_inferred_from_data": dict(inferred),
         },
+        # one file published more than once in a dataset (same name, declared size and file name)
+        "copies": copies_of(census, validation),
         "files": {
             "validated": len(checked),
             "encodings": dict(encodings), "delimiters": dict(delimiters),
@@ -523,6 +536,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
             tables.append({
                 "id": t["id"], "name": t["name"], "level": table_level(t, v), "url": t["url"],
                 "size": int(t["size"]) if str(t.get("size") or "").isdigit() else None, "queued": t["id"] in in_queue,
+                "copy_of": v.get("copy_of"), "sampled": bool(v.get("sampled")),
                 "dictionary": ({"name": d.get("name"), "format": d.get("format"), "method": lk.get("method"),
                                 "readable": d.get("readable"), "error_kind": d.get("error_kind"), "url": d.get("url"),
                                 "page": page(d["id"])} if d else
