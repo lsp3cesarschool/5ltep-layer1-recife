@@ -1,0 +1,845 @@
+{
+ "fields": [
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IBGE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Latitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Longitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_4",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q0_5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_7",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_8",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q0_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_12",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q0_13",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q1_99",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q2_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q2_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q5_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_4",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_5",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_6",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_7",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q5_8",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q5_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q5_10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q5_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q6_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q6_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q6_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q6_4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_7",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_8",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_12",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_13",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_14",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_15",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_16",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_1_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_2_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q7_3_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q7_4_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q7_9_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7_10_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q8_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q8_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q9_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_7",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_8",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q9_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q10_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q10_1_98",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q10_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q10_2_98",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q10_3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q10_3_98",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q11_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q11_1_98",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q11_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q11_2_98",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q11_3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q11_4",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q12",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q13_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q13_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q13_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q13_99",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q13_0",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q13_99_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_99",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q14_99_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_0",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q15_6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q16_0",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q18_4_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q18_4_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q18_4_3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q19_3",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "q19_4_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q19_4_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q19_4_3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q19_4_4",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IBGE7",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Porte_2022_num",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q13_1_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q13_2_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q13_3_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q13_99_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q13_0_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_0_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_1_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_2_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_3_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_4_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_5_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q15_6_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_0_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_1_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_2_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_3_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_4_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_5_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q16_6_velha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d_5_atend",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d_5_atend_categoria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d_5_adm_atend",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d_5_adm_atend_categoria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d_5_7_banheiros",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d7_1_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d7_2_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d7_3_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d7_4_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d7_9_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d7_10_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d8_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d8_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d10_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d10_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d10_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d11_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d11_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d11_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d11_4",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

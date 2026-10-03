@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "vacina",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "quantidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "periodo",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

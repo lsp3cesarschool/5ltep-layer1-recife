@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "codigo_regiao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_regiao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_uf",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_uf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "siga_uf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_messoregiao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_messoregiao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_microrregiao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_microrregiao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_municipio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_municipio",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

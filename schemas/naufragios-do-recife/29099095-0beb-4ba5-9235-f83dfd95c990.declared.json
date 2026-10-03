@@ -1,0 +1,68 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "nome do naufrágio",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "data_naufragio",
+   "type": "date",
+   "description": "Data do naufrágio [Allowed values, as declared: data formato yyyy-mm-dd]",
+   "declaredType": "DATE",
+   "declaredSize": 10
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenada geografica",
+   "declaredType": "num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenada geografica",
+   "declaredType": "num",
+   "declaredSize": 20
+  },
+  {
+   "name": "profundidade_maxima",
+   "type": "string",
+   "description": "profundidade_maxima do naufrágio",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "historia detalhada",
+   "type": "string",
+   "description": "link para história detalhada do naufrágio",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 200
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "a7740f3f-588a-4ded-9159-5fce066ff492",
+   "dictionary_name": "Dicionário de Dados do Naufrágio",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/233f4d5b-6405-4776-bdbb-bb5bce671e61/resource/a7740f3f-588a-4ded-9159-5fce066ff492/download/dicionario-de-dados-do-naufragio.json",
+   "sha256": "363e0f49ee3a6e184b248d3e13d0262fc80bebf768974b25d9efe99babebe0b5",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

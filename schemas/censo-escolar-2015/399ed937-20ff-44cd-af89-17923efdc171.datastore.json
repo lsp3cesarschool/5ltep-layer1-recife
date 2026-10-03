@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "codigo_instituicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_instituicao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uf",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "municipio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_dependencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_dependencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_instituicao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "instituicao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

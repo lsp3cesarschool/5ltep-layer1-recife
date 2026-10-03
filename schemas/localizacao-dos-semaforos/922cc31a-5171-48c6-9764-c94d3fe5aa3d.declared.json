@@ -1,0 +1,90 @@
+{
+ "fields": [
+  {
+   "name": "semaforo",
+   "type": "number",
+   "description": "Código de identificação do semáforo",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "localizacao1",
+   "type": "string",
+   "description": "Endereço onde semáforo está instalado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "localizacao2",
+   "type": "string",
+   "description": "Endereço do cruzamento do semáforo ou contendo ponto de referência",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro onde semáforo está instalado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "latitude",
+   "type": "any",
+   "description": "Latitude em coordenadas geográficas em graus decimais",
+   "declaredType": "NUMER",
+   "declaredSize": 20,
+   "mappingNote": "declared type not recognised: 'NUMER'"
+  },
+  {
+   "name": "longitude",
+   "type": "any",
+   "description": "Longitude em coordenadas geográficas em graus decimais",
+   "declaredType": "NUMER",
+   "declaredSize": 20,
+   "mappingNote": "declared type not recognised: 'NUMER'"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Tipo de funcionamento do semáforo. GIT = Gerenciador Inteligente de Trânsito, E = Eletrônico (CES),M = Eletromecânico, E/E = Eletroeletrônico",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "description": "Destinação do semáforo, que podem ser: Ocasional/Ped = Ocasional de Pedestre, Veic.C/Ped. = Veicular com Pedestre, Veic.C/Ped.Ocas = Veicular com Pedestre Ocasional, Veic.C/Ped.Paral = Veicular com Pedestre Paralelo, Veic.C/Laço Det = Veicular com laço Detector",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 30
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "4abd9ff0-1ef4-4cb8-a0e6-3d3c8943d9fe",
+   "dictionary_name": "metadados dos semáforos equipados com sinalizador para ciclistas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/289c2371-31f4-49ed-9226-059de68d2bae/resource/4abd9ff0-1ef4-4cb8-a0e6-3d3c8943d9fe/download/metadados-dos-semaforos-equipados-com-sinalizador-para-ciclistas.json",
+   "sha256": "aff076dfbf783e98bbb08f6c076f2e29fae6e2e4db28de6e2e72ade88a9cbda8",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

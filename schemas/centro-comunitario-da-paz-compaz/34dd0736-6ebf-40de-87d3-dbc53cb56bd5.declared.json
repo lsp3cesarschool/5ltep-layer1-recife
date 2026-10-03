@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "nome do Compaz",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "endereco do Compaz",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "bairro do Compaz",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "CEP",
+   "type": "string",
+   "description": "CEP do Compaz",
+   "constraints": {
+    "maxLength": 9
+   },
+   "declaredType": "Char",
+   "declaredSize": 9
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "description": "telefone do Compaz",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "Char",
+   "declaredSize": 15
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "latitude em graus decimais",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "longitude em graus decimais",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "30e12b5b-7e6f-4d4c-971d-9c4c68b36042",
+   "dictionary_name": "Dicionário de Dados - Compaz",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/da8a4986-a8c1-48ed-8b8f-0b1312de885c/resource/30e12b5b-7e6f-4d4c-971d-9c4c68b36042/download/dicionario-de-dados-compaz.json",
+   "sha256": "104539b7ef2a3bfa0460c420858ad1fcec542c27c1a27bae8cdcf90583c1c68d",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

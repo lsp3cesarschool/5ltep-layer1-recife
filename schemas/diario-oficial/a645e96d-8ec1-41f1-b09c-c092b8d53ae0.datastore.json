@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "edicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "caderno",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "secao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "responsavel",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "titulo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "conteudo_ordem",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "conteudo",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

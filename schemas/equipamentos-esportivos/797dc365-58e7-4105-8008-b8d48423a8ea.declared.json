@@ -1,0 +1,121 @@
+{
+ "fields": [
+  {
+   "name": "nome_oficial",
+   "type": "string",
+   "description": "Nome oficial do equipamento",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do esquipamento",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "tipo_equipamento",
+   "type": "string",
+   "description": "Tipo do equipamento",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "description": "Descrição do equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "tipo_administracao",
+   "type": "string",
+   "description": "Tipo de administração do equipamento",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "contato",
+   "type": "string",
+   "description": "Informações de contato com o equipamento",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "description": "Website do equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "description": "Horário de funcionamento do equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "publico_atendido",
+   "type": "string",
+   "description": "Publico atendido no equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1cc62479-aaf4-426d-9875-77d059d501d5",
+   "dictionary_name": "Dicionário de dados dos Equipamentos Públicos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/2c3ff493-5c2c-4bb1-b977-5bb476a2a1d6/resource/1cc62479-aaf4-426d-9875-77d059d501d5/download/dicionario-de-dados-dos-equipamentos-publicos.json",
+   "sha256": "4c0bd9a910ad0036546edf9b87672af32fdfd5541d8c046accadbbf7466a17e9",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

@@ -1,0 +1,381 @@
+{
+ "fields": [
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "any",
+   "description": "NU_IDENTIFICADOR_id_acolhimento_NU_IDENTIFICADOR",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "IBGE_codigo_ibge_IBGE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_3",
+   "type": "any",
+   "description": "q56_3_v11104_51.3. SEXO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_9",
+   "type": "any",
+   "description": "q56_9_v11110_51.9. Escolaridade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_10",
+   "type": "any",
+   "description": "q56_10_v11111_51.10. Profissão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_11",
+   "type": "any",
+   "description": "q56_11_v11112_51.11. Vínculo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_12",
+   "type": "any",
+   "description": "q56_12_v11113_51.12. Função",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_13",
+   "type": "any",
+   "description": "q56_13_v11114_51.13. Carga horária",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_14",
+   "type": "any",
+   "description": "q56_14_v11115_51.14. Inicio do exercício da função",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE7",
+   "type": "any",
+   "description": "IBGE7",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Nome_UF",
+   "type": "any",
+   "description": "Nome_UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Regiao",
+   "type": "any",
+   "description": "Regiao",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Município",
+   "type": "any",
+   "description": "Município",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "any",
+   "description": "Pop_total_2022",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "any",
+   "description": "Porte_pop2022",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "areaKm2",
+   "type": "any",
+   "description": "areaKm2",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "any",
+   "description": "Q_incompleto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1_1",
+   "type": "any",
+   "description": "q1_1_1.1. Público Atendido",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7",
+   "type": "any",
+   "description": "q7_v12942_7. Dados provenientes da gestão estadual ou municipal:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DataCenso",
+   "type": "any",
+   "description": "COMPUTE DataCenso=\"31.08.2024\"",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "any",
+   "description": "DataCenso recodificada",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "any",
+   "description": "Faixas etárias dos Trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_14_rec",
+   "type": "any",
+   "description": "q56_14_Inicio do exercício da função",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9",
+   "type": "any",
+   "description": "d56_9_Níveis de escolaridade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10",
+   "type": "any",
+   "description": "d56_10_Profissão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11",
+   "type": "any",
+   "description": "d56_11_Tipo de vínculo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9bin1",
+   "type": "any",
+   "description": "d56_9bin1_Nível fundamental - trabalhadores que possuem até o nível médio (inclui aqueles sem escolaridade)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9bin2",
+   "type": "any",
+   "description": "d56_9bin2_Nível médio - trabalhadores com ensino superior incompleto e ensino médio completo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9bin3",
+   "type": "any",
+   "description": "d56_9bin3_Nível superior - inclui trabalhadores graduados, com especialização, mestrado ou doutorado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin1",
+   "type": "any",
+   "description": "d56_10bin1_Pedagogo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin2",
+   "type": "any",
+   "description": "d56_10bin2_Assistente Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin3",
+   "type": "any",
+   "description": "d56_10bin3_Antropólogo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin4",
+   "type": "any",
+   "description": "d56_10bin4_Advogado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin5",
+   "type": "any",
+   "description": "d56_10bin5_Psicólogo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin1",
+   "type": "any",
+   "description": "d56_11bin1_Servidor Estatutário",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin2",
+   "type": "any",
+   "description": "d56_11bin2_Empregado Público (CLT)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin3",
+   "type": "any",
+   "description": "d56_11bin3_Comissionado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin4",
+   "type": "any",
+   "description": "d56_11bin4_Outros vínculos não permanentes - inclui Trabalhador de Empresas/Cooperativa/Entidade Prestadora de Serviços; Voluntários; Servidor Temporário; Sem vínculo; Terceirizado e Outro vínculo não permanente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9bin1_sum",
+   "type": "any",
+   "description": "d56_9bin1_sum_Número de trabalhadores de Nível fundamental (inclui trabalhadores sem escolaridade, fundamental incompleto e ensino médio incompleto)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9bin2_sum",
+   "type": "any",
+   "description": "d56_9bin2_sum_Número de trabalhadores de Nível médio (inclui trabalhadores com ensino superior incompleto)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_9bin3_sum",
+   "type": "any",
+   "description": "d56_9bin3_sum_Número de trabalhadores de Nível superior (inclui trabalhadores com especialização, mestrado e doutorado)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin1_sum",
+   "type": "any",
+   "description": "d56_10bin1_sum_Número de Pedagogos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin2_sum",
+   "type": "any",
+   "description": "d56_10bin2_sum_Número de Assistentes Sociais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin3_sum",
+   "type": "any",
+   "description": "d56_10bin3_sum_Número de Antropólogos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin4_sum",
+   "type": "any",
+   "description": "d56_10bin4_sum_Número de Advogados",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_10bin5_sum",
+   "type": "any",
+   "description": "d56_10bin5_sum_Número de Psicólogos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin1_sum",
+   "type": "any",
+   "description": "d56_11bin1_sum_Número de Servidores Estatutários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin2_sum",
+   "type": "any",
+   "description": "d56_11bin1_sum_Número de Empregados Públicos(CLT)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin3_sum",
+   "type": "any",
+   "description": "d56_11bin3_sum_Número de Comissionados",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_11bin4_sum",
+   "type": "any",
+   "description": "d56_11bin4_sum_Número de profissionais com outros vínculos não permanentes",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "nu_trabalhadores",
+   "type": "any",
+   "description": "Número de trabalhadores na unidade executora do UA",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "2977ce24-bed4-49f7-86c5-6418c557ec0c",
+   "dictionary_name": "Unidade Acolhimento Dicionario de Variaveis",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/2977ce24-bed4-49f7-86c5-6418c557ec0c/download/censo_suas_2024_unidade_acolhimento_dicionario-de-variaveis.xlsx",
+   "sha256": "12f86c5d3eb06be4a0cc3fb352e95504ee7ad27250747dcc9b68004626d18c7d",
+   "reader": "xlsx",
+   "part": "RH",
+   "link_method": "name"
+  }
+ }
+}

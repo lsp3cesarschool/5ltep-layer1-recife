@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "comissaolicitacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "anoprocessolicitatorio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "numeroprocessolicitatorio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "modalidadeprocessolicitatorio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numerolicitacaomodalidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "anolicitacaomodalidade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "orgaolicitante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_estipulado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dataaberturaproposta",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

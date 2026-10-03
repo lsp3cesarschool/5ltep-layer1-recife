@@ -1,0 +1,625 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q76_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_12",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_13",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_14",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_15",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q76_16",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IBGE7",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_UF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "areaKm2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "DataCenso",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_9bin1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_9bin2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_9bin3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10bin1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10bin2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10bin3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10bin4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10bin5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_11bin1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_11bin2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_11bin3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_11bin4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_9bin1_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_9bin2_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_9bin3_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_10bin1_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_10bin2_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_10bin3_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_10bin4_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_10bin5_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_11bin1_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_11bin2_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_11bin3_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_11bin4_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nu_trabalhador",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Gestão",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_SUAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Vigilância_Socioassistencial",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_Trabalho",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Regulação_do_SUAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Financeira_Orçamentária",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_PSB",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_PSE_Média_Complexidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_PSE_Alta_Complexidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_CadÚnico_PBF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Benefícios_Assistenciais",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Outros",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_SUAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Vigilância_Socioassistencial",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_Trabalho",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Regulação_do_SUAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Financeira_Orçamentária",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_PSB",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_PSE_Média_Complexidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_PSE_Alta_Complexidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_CadÚnico_PBF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Benefícios_Assistenciais",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Outros",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão_do_SUAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Vigilância_Socioassistencial",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão_do_Trabalho",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Regulação_do_SUAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão_Financeira_Orçamentária",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_PSB",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_PSE_Média_Complexidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_PSE_Alta_Complexidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão_CadÚnico_PBF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão_Benefícios_Assistenciais",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Outros",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_SUAS_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Vigilância_Socioassistencial_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_do_Trabalho_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Regulação_do_SUAS_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Financeira_Orçamentária_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_PSB_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_PSE_Média_Complexidade_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_PSE_Alta_Complexidade_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_CadÚnico_PBF_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_15_1bin_Gestão_Benefícios_Assistenciais_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_15_1bin_Outros_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_SUAS_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Vigilância_Socioassistencial_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_do_Trabalho_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Regulação_do_SUAS_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Financeira_Orçamentária_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_PSB_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_PSE_Média_Complexidade_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_PSE_Alta_Complexidade_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_CadÚnico_PBF_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_16_2bin_Gestão_Benefícios_Assistenciais_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_16_2bin_Outros_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Gestão_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Gestão_do_SUAS_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Vigilância_Socioassistencial_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Gestão_do_Trabalho_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Regulação_do_SUAS_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Gestão_Financeira_Orçamentária_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_PSB_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_PSE_Média_Complexidade_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_PSE_Alta_Complexidade_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Gestão_CadÚnico_PBF_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d76_Gestão_Benefícios_Assistenciais_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d76_Outros_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nu_trabalhador_1",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

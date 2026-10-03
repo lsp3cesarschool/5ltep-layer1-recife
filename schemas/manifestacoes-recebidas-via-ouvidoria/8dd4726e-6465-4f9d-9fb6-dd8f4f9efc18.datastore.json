@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Data Registro",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "Data Prazo Resposta",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "Data Resposta",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "Canal de Atendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Órgão/Entidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Natureza da Manifestação",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Assunto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Situação",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

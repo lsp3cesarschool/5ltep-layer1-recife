@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "solicitacao_numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "remocao_sequencial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "hospital_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "remocao_datahora",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "remocao_aceitacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "chegada_datahora",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "saida_datahora",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "naoaceitacao_codigo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "naoaceitacao_descricao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

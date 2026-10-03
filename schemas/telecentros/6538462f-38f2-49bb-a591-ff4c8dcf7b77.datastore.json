@@ -1,0 +1,40 @@
+{
+ "fields": [
+  {
+   "name": "Telecentro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereço",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "contato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Computadores",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Gestão",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

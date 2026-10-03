@@ -1,0 +1,37 @@
+{
+ "fields": [
+  {
+   "name": "UF",
+   "type": "string",
+   "description": "UF",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "description": "Município",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "6548c5a7-8470-4127-b662-1740b1998d17",
+   "dictionary_name": " Metadados da Tabela Municípios",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/6548c5a7-8470-4127-b662-1740b1998d17/download/-metadados-da-tabela-municipios.json",
+   "sha256": "750004e7dcfbe57de217f02fd4c4ced7ada3774ea22f1733169083d9a88c297a",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

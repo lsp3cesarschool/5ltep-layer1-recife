@@ -1,0 +1,75 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "description": "Código de escola no Inep",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "codigo_escola",
+   "type": "string",
+   "description": "Código da escola no município",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "matricula_aluno",
+   "type": "string",
+   "description": "Código do aluno da Entidade/Escola [Allowed values, as declared: Matrícula do Aluno]",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "description": "Código da turma na Entidade/Escola",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "etapa",
+   "type": "number",
+   "description": "Etapa do aluno em turma multietapa/ multi / correção de Fluxo / EJA presencial e semipresencial - anos iniciais e anos finais /Educação profissional mista - concomitante e subsequente [Allowed values, as declared: 1 – Educação infantil – creche, 2 – Educação infantil – pré-escola, 3 – Educação infantil – unificada, 56 – Educação infantil e ensino fundamental multietapa, 4 – Ensino fundamental de 8 anos – 1ª série, 5 – Ensino fundamental de 8 anos – 2ª série, 6 – Ensino fundamental de 8 anos – 3ª série, 7 – Ensino fundamental de 8 anos – 4ª Série, 8 – Ensino fundamental de 8 anos – 5ª série, 9 – Ensino fundamental de 8 anos – 6ª série, 10 – Ensino fundamental de 8 anos – 7ª série, 11 – Ensino fundamental de 8 anos – 8ª série, 12 – Ensino fundamental de 8 anos – multi, 13 – Ensino fundamental de 8 anos – correção de fluxo, 14 – Ensino fundamental de 9 anos – 1º ano, 15 – Ensino fundamental de 9 anos – 2º ano, 16 – Ensino fundamental de 9 anos – 3º ano, 17 – Ensino fundamental de 9 anos – 4º ano, 18 – Ensino fundamental de 9 anos – 5º ano, 19 – Ensino fundamental de 9 anos – 6º ano, 20 – Ensino fundamental de 9 anos – 7º ano, 21 – Ensino fundamental de 9 anos – 8º ano, 41 – Ensino fundamental de 9 anos – 9º ano, 22 – Ensino fundamental de 9 anos – multi, 23 – Ensino fundamental de 9 anos – correção de fluxo, 24 – Ensino fundamental de 8 e 9 anos – multi 8 e 9 anos, 25 – Ensino médio – 1ª série, 26 – Ensino médio – 2ª série, 27 – Ensino médio – 3ª série, 28 – Ensino médio – 4ª série, 29 – Ensino médio – não seriada, 30 – Ensino médio – integrado 1ª série, 31 – Ensino médio – integrado 2ª série, 32 – Ensino médio – integrado 3ª série, 33 – Ensino médio – integrado 4ª série, 34 – Ensino médio – integrado não seriada, 35 – Ensino médio – normal/magistério 1ª série, 36 – Ensino médio – normal/magistério 2ª série, 37 – Ensino médio – normal/magistério 3ª série, 38 – Ensino médio – normal/magistério 4ª série, 39 – Educação profissional (concomitante), 40 – Educação profission",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "outro_espaco",
+   "type": "number",
+   "description": "Recebe escolarização em outro espaço(diferente da escola) [Allowed values, as declared: 1 - Em hospital, 2 - Em domicílio, 3 - Não recebe]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "transporte_publico",
+   "type": "number",
+   "description": "Transporte escolar público [Allowed values, as declared: 0 - Utiliza, 1 - Não utiliza]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8964c92d-1e97-45d8-9e76-845286ca9736",
+   "dictionary_name": "Dicionário de Dados do Cadastro dos alunos por turma",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/02bcf3f8-464d-4a63-a95b-870bf3c0e361/resource/8964c92d-1e97-45d8-9e76-845286ca9736/download/dicionario-de-dados-do-cadastro-dos-alunos-por-turma.json",
+   "sha256": "c77cd77e9ccb9c56643a1323bcc59fd5e125c5c14022790e12aaaf875a190b12",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "fields": [
+  {
+   "name": "codig_area",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_instituicao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_formacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grau_academico",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

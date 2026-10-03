@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "nome_estabelecimento",
+   "type": "string",
+   "description": "Nome do estabelecimento que fornece desconto / brinde para os vacinados",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "tipo_estabelecimento",
+   "type": "string",
+   "description": "Tipo do estabelecimento, como bares, hóteis,lojas,...",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereco_estabelecimento",
+   "type": "string",
+   "description": "endereco do estabelecimento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro_estabelecimento",
+   "type": "string",
+   "description": "bairro do estabelecimento",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "percentual_desconto",
+   "type": "number",
+   "description": "Percentual de desconto ofertado",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "descricao_desconto",
+   "type": "date",
+   "description": "Descreve o desconto ofertado",
+   "declaredType": "Date",
+   "declaredSize": 500
+  },
+  {
+   "name": "regras_uso",
+   "type": "string",
+   "description": "Regra de uso",
+   "constraints": {
+    "maxLength": 500
+   },
+   "declaredType": "Char",
+   "declaredSize": 500
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "description": "telefone do estabelecimento",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "latitude do estabelecimento",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude do estabelecimento",
+   "type": "number",
+   "description": "Regra de uso",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "e9f1876d-ea67-4190-8311-48f6ab5a555a",
+   "dictionary_name": "Dicionário de Dados de Passaporte da Vacina",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/f9d89dfa-928d-4fa8-a252-d1ff26c188ed/resource/e9f1876d-ea67-4190-8311-48f6ab5a555a/download/dicionario-de-dados-de-passaporte-da-vacina.json",
+   "sha256": "896841bdfc41291cd24574e4f182654920c7d70f35b0398b4cd9ea1b55d2b21e",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "mes",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "equipamento",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "faixa",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "data",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "hora",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "minutos_intervalo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "qtd_0a10km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_11a20km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_21a30km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_31a40km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_41a50km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_51a60km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_61a70km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_71a80km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_81a90km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_91a100km",
+   "type": "integer",
+   "declaredType": "int4"
+  },
+  {
+   "name": "qtd_acimade100km",
+   "type": "integer",
+   "declaredType": "int4"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

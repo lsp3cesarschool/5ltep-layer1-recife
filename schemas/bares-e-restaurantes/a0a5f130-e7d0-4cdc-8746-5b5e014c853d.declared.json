@@ -1,0 +1,77 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome do Estabelecimento",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do Estabelecimento",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "description": "Telefones para contato",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "especialidade",
+   "type": "string",
+   "description": "Especialidade Gastronomica do Estabelecimento",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "description": "Site do Estabelecimento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "description": "Endereço Eletrônico do Estabelecimento",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "ef9bd153-3255-4125-ae38-7da871e3cc5a",
+   "dictionary_name": "Dicionário de Dados de Bares e RestauranteS",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/9e31efb9-08a4-453f-bf83-0f7b84e9e4bf/resource/ef9bd153-3255-4125-ae38-7da871e3cc5a/download/dicionario-de-dados-de-bares-e-restaurantes.json",
+   "sha256": "34df9d2226d7184618a561b88b83f19b5a64ee295168d8273db24393672b8398",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

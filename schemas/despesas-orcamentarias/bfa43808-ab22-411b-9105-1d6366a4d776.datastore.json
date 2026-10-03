@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Mês",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Código da Função",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Função",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código de Sub-função",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Sub-função",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código de Programa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Programa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da Ação",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Ação",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código da Fonte",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Fonte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Dotação Inicial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Dotação Atualizada",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Empenhado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Liquidado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Pago",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "tipo_equipamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "registro_inmetro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero_serie_fabricante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "identificacao_equipamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "local_instalacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sentido_fiscalizacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "faixas_fiscalizadas",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "velocidade_fiscalizada",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "vmd",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "periodo_vmd",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "fields": [
+  {
+   "name": "Programa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "janeiro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "fevereiro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "marco",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "abril",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "maio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "junho",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "julho",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "agosto",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "setembro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "outubro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "novembro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dezembro",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

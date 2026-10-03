@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "orgao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "funcao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "programa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "acao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "categoria",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fonte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

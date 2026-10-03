@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "hospital_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especialidade_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especialidade_descricao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

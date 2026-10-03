@@ -1,0 +1,110 @@
+{
+ "fields": [
+  {
+   "name": "numerocontrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "anocontrato",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "origemcontrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sequencialcompra",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "logradouroendcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numeroendcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "complementoendcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairroendcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cidadeendcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "estadoendcontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "datainiciovigencia",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "datafimvigencia",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "valorcontrato1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "valorcontrato2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "situacaocontrato",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

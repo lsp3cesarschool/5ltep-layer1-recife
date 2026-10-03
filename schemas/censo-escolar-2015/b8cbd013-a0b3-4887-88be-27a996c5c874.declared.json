@@ -1,0 +1,151 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "description": "Código de escola no Inep",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "codigo_escola",
+   "type": "string",
+   "description": "Código da escola no município",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "matricula_docenteo",
+   "type": "string",
+   "description": "Código do Docente na Entidade/Escola",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "description": "Código da turma na Entidade/Escola",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "funcao_docente",
+   "type": "string",
+   "description": "Função que exerce na escola/Turma [Allowed values, as declared: 1 - Docente, 2 - Auxiliar/Assistente Educacional, 3 - Profissional/Monitor de Atividade Complementar, 4 - Tradutor Intérprete de LIBRAS]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "tipo_vinculo",
+   "type": "string",
+   "description": "Situação Funcional/Regime de contratação/Tipo de Vínculo [Allowed values, as declared: 1- Concursado/efetivo/estável, 2 - Contrato temporário, 3 - Contrato terceirizado, 4 - Contrato CLT]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_disciplina1",
+   "type": "number",
+   "description": "Código da disciplina 1 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina2",
+   "type": "number",
+   "description": "Código da disciplina 2 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina3",
+   "type": "number",
+   "description": "Código da disciplina 3 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina4",
+   "type": "number",
+   "description": "Código da disciplina 4 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina5",
+   "type": "number",
+   "description": "Código da disciplina 5 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina6",
+   "type": "number",
+   "description": "Código da disciplina 6 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina7",
+   "type": "number",
+   "description": "Código da disciplina 7 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina8",
+   "type": "number",
+   "description": "Código da disciplina 8 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina9",
+   "type": "number",
+   "description": "Código da disciplina 9 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina10",
+   "type": "number",
+   "description": "Código da disciplina 10 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "codigo_disciplina11",
+   "type": "number",
+   "description": "Código da disciplina 11 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Disciplinas']",
+   "declaredType": "Num",
+   "declaredSize": 2
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "3569702d-842d-4872-9da8-ab38b3f19994",
+   "dictionary_name": "Dicionário de Dados Censo Escolar 2015 (Cadastro dos docentes por turma)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/463bf158-fad9-43ad-a642-afba60e46f5d/resource/3569702d-842d-4872-9da8-ab38b3f19994/download/dicionario-de-dados-censo-escolar-2015-cadastro-dos-docentes-por-turma.json",
+   "sha256": "0f9d8faaf9d8b394e2f81277479a0bf977d17b0c0ec5f91da59741f2e28042d6",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

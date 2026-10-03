@@ -1,0 +1,290 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "matricula_docente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data_nascimento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "sexo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "raca",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "com_deficiencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_cegueira",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_baixa_visao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_surdez",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_baixa_audicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_surdocegueira",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_fisica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_intelectual",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_multipla",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "zona_residencial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "bairro_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "municipio_ibge",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "escolaridade",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior1_situacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior1_formacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior1_codigo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "curso_superior1_ano_inicio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "curso_superior1_ano_final",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "curso_superior1_tipo_instituicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior1_instituicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior2_situacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior2_formacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior2_codigo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "curso_superior2_ano_inicio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "curso_superior2_ano_final",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "curso_superior2_tipo_instituicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "curso_superior2_instituicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "posgraduacao_especializacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "posgraduacao_mestrado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "posgraduacao_doutorado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "posgraduacao_nenhum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_creche",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_preescola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_anos_iniciais_fundamental",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_anos_finais_fundamental",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_ensino_medio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_eja",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_especial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_indigena",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_educacao_campo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_educacao_ambiental",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "especifico_educacao_direitos_humanos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "genero_diversidade_sexual",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "direitos_crianca_adolecente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "educacao_etnicorraciais",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "outros",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nenhum",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

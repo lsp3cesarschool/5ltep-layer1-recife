@@ -1,0 +1,71 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome do Estabelecimento",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do Estabelecimento",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "description": "Telefones para contato",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "description": "Endereço eletrônico do estabelecimento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8caede76-3043-4fc6-9719-b15fb5a5759c",
+   "dictionary_name": "Dicionário de Dados dos Hotéis",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/711f9792-4cf9-4b14-896c-dd48e2d37844/resource/8caede76-3043-4fc6-9719-b15fb5a5759c/download/dicionario-de-dados-dos-hoteis.json",
+   "sha256": "d62ef90bfa48ff5088580a055d224c61cc39ae0bc88ddca5c0da36404c6dc8e4",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

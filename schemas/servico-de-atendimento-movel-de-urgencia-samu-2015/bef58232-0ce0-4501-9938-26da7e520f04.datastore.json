@@ -1,0 +1,120 @@
+{
+ "fields": [
+  {
+   "name": "solicitacao_numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "solicitacao_data",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "paciente_sexo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "paciente_idadeanos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "paciente_idademeses",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "bairrosaude_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "bairrosaude_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "origemchamado_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "origemchamado_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacaosolicitacao_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "situacaosolicitacao_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sistemasaude_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "sistemasaude_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "motivodescarte_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "motivodescarte_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "acompanhamento_medico",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_acionamento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_chegada",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_conclusao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_remocao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "tipoocorrencia_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tipoocorrencia_descricao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

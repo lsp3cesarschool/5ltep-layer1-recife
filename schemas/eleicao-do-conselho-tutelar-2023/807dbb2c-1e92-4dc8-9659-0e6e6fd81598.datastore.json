@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "urna",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Local",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "votos_nominais",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "brancos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nulos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "total_votos",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

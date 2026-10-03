@@ -1,0 +1,85 @@
+{
+ "fields": [
+  {
+   "name": "ANO_LETIVO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NOME_ESCOLA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "BAIRRO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ENDERECO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "NUMERO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "RPA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "COD_MODALIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "COD_ANOENSINO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "MODALIDADE",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ANOENSINO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TURMA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TURNO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "MATRICULA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "SEXO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

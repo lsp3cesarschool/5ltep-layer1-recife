@@ -1,0 +1,660 @@
+{
+ "fields": [
+  {
+   "name": "NU_NOTIFIC",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TP_NOT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_AGRAVO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "DT_NOTIFIC",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "SEM_NOT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_ANO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "SG_UF_NOT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_MUNICIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_REGIONA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_UNIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_SIN_PRI",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "SEM_PRI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_NASC",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "NU_IDADE_N",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CS_SEXO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CS_GESTANT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CS_RACA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CS_ESCOL_N",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "SG_UF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_MN_RESI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_RG_RESI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_DISTRIT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_BAIRRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NM_BAIRRO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ID_LOGRADO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "NM_LOGRADO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "NU_CEP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CS_ZONA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_PAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_INVEST",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "ID_OCUPA_N",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "FEBRE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "MIALGIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CEFALEIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "EXANTEMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "VOMITO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NAUSEA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DOR_COSTAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CONJUNTVIT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ARTRITE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ARTRALGIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "PETEQUIA_N",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LEUCOPENIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LACO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DOR_RETRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DIABETES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "HEMATOLOG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "HEPATOPAT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "RENAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "HIPERTENSA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ACIDO_PEPT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "AUTO_IMUNE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_CHIK_S1",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "DT_CHIK_S2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "DT_PRNT",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "RES_CHIKS1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "RES_CHIKS2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "RESUL_PRNT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_SORO",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "RESUL_SORO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_NS1",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "RESUL_NS1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_VIRAL",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "RESUL_VI_N",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_PCR",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "RESUL_PCR_",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "SOROTIPO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "HISTOPA_N",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IMUNOH_N",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "HOSPITALIZ",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_INTERNA",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "UF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "HOSPITAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DDD_HOSP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TEL_HOSP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TPAUTOCTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "COUFINF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "COPAISINF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "COMUNINF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CODISINF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_BAINF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NOBAIINF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CLASSI_FIN",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CRITERIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DOENCA_TRA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CLINC_CHIK",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "EVOLUCAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_OBITO",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "DT_ENCERRA",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "ALRM_HIPOT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_PLAQ",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_VOM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_SANG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_HEMAT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_ABDOM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_LETAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_HEPAT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ALRM_LIQ",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_ALRM",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "GRAV_PULSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_CONV",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_ENCH",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_INSUF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_TAQUI",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_EXTRE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_HIPOT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_HEMAT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_MELEN",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_METRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_SANG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_AST",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_MIOC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_CONSC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "GRAV_ORGAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "DT_GRAV",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "MANI_HEMOR",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "EPISTAXE",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "GENGIVO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "METRO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "PETEQUIAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "HEMATURA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "SANGRAM",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "LACO_N",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "PLASMATICO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "EVIDENCIA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "PLAQ_MENOR",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "CON_FHD",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "COMPLICA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "NU_LOTE_I",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "matricula_docente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "funcao_docente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tipo_vinculo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_disciplina1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina4",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina5",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina6",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina7",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_disciplina8",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_disciplina9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_disciplina10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_disciplina11",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

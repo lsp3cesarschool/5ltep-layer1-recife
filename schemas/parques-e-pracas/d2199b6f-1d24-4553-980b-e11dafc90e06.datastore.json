@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "nome_equip_urbano",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_equip_urbano",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco_equip_urbano",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_logradouro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lei_equip_urbano",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_oficial_equip_urbano",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "area",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "perimetro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_bairro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "fields": [
+  {
+   "name": "solicitacao_numero",
+   "type": "number",
+   "description": "Numero da solicitação [Allowed values, as declared: Inteiro]",
+   "declaredType": "NUMBER",
+   "declaredSize": 12
+  },
+  {
+   "name": "solicitacao_data",
+   "type": "datetime",
+   "description": "Data e hora da solicitação (call center) [Allowed values, as declared: formato ISO, 'aaaa-mm-dd']",
+   "declaredType": "DATETIME",
+   "declaredSize": 7
+  },
+  {
+   "name": "paciente_sexo",
+   "type": "string",
+   "description": "Sexo do paciente [Allowed values, as declared: F= feminino, M= masculino]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 1
+  },
+  {
+   "name": "paciente_idadeanos",
+   "type": "number",
+   "description": "Idade do paciente em anos [Allowed values, as declared: Inteiro]",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "paciente_idademeses",
+   "type": "number",
+   "description": "Idade do paciente em meses [Allowed values, as declared: Inteiro]",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "bairrosaude_codigo",
+   "type": "number",
+   "description": "Código do bairro [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Bairros']",
+   "declaredType": "NUMBER",
+   "declaredSize": 4
+  },
+  {
+   "name": "bairrosaude_descricao",
+   "type": "string",
+   "description": "Descritivo do bairro",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "origemchamado_codigo",
+   "type": "number",
+   "description": "Código da origem do chamado",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "origemchamado_descricao",
+   "type": "string",
+   "description": "Descricão da origem do chamado",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "situacaosolicitacao_codigo",
+   "type": "number",
+   "description": "Código da situação da solicitação",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "situacaosolicitacao_descricao",
+   "type": "string",
+   "description": "Descrição da situação da solicitação",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "sistemasaude_codigo",
+   "type": "number",
+   "description": "Código do sistema de saúde - Doenças",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "sistemasaude_descricao",
+   "type": "string",
+   "description": "Descrição do sistema de saúde - Doenças",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "motivodescarte_codigo",
+   "type": "number",
+   "description": "Código do motivo de descarte de atendimento. Apenas preenchido quando o atendimento não efetivado",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "motivodescarte_descricao",
+   "type": "string",
+   "description": "Descricão do motivo de descarte. Apenas preenchido quando o atendimento não efetivado",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "acompanhamento_medico",
+   "type": "string",
+   "description": "Identifica se houve acompanhamento medico no atendimento da solicitação [Allowed values, as declared: N= Não, S= Sim]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 1
+  },
+  {
+   "name": "datahora_acionamento",
+   "type": "datetime",
+   "description": "Data e hora do acionamento de equipe [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "datahora_chegada",
+   "type": "datetime",
+   "description": "Data e hora de chegada da solicitação [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "datahora_conclusao",
+   "type": "datetime",
+   "description": "Data e hora da conclusão do atendimento [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "datahora_remocao",
+   "type": "datetime",
+   "description": "Data e hora da remoção [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "tipoocorrencia_codigo",
+   "type": "number",
+   "description": "Código do Tipo de ocorrência",
+   "declaredType": "NUMBER",
+   "declaredSize": 1
+  },
+  {
+   "name": "tipoocorrencia_descricao",
+   "type": "string",
+   "description": "Descrição do Tipo de ocorrência",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "a38eff38-4cb3-440b-a793-27f7d0d9d984",
+   "dictionary_name": "Dicionário de dados do SAMU - Solicitações",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/9d58e9ab-6640-442e-b0fc-3429d0f8b2d2/resource/a38eff38-4cb3-440b-a793-27f7d0d9d984/download/dicionario-de-dados-do-samu-solicitacoes.json",
+   "sha256": "7aab3ce8d52684490960f8dfa86a7958ad7e80896751b92501f5d61eb3ceca95",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

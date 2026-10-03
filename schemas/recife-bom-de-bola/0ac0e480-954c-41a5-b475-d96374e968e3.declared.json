@@ -1,0 +1,78 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "number",
+   "description": "Região Politico Administrativa",
+   "declaredType": "Num",
+   "declaredSize": 40
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço dos Campos",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Descrição do Bairro",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Geocoordenadas - latitude",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Geocoordenadas - longitude",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "privado",
+   "type": "string",
+   "description": "Condição do campo em privatividade [Allowed values, as declared: NÃO, SIM]",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome do Campo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "4a3cc8c6-d74a-46fa-a6c7-9a91ca56614c",
+   "dictionary_name": "Dicionário Campos Recife Bom de Bola 2014",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8d2b4558-9687-42c7-971d-f6eeeb2eac01/resource/4a3cc8c6-d74a-46fa-a6c7-9a91ca56614c/download/dicionario-campos-recife-bom-de-bola-2014.json",
+   "sha256": "d50676005a0f7a6e8042b158e8602c9b197be79e8ca3aad87ce741ef15145fb7",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

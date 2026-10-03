@@ -1,0 +1,99 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome do Cemitério",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do Cemitério",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro do Cemitério",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "ano",
+   "type": "number",
+   "description": "Ano de fundação",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "capacidade_jazigo",
+   "type": "number",
+   "description": "Capacidade jazigos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "capacidade_ossuario",
+   "type": "number",
+   "description": "Capacidade ossuário",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "disponível",
+   "type": "number",
+   "description": "% de Disponibilidade",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "area",
+   "type": "string",
+   "description": "Area em metros quadrados",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "4e7dfd8e-1c88-4694-9725-894ea4b02a4b",
+   "dictionary_name": "Dicionário de Dados de Cemitérios",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/c9e032bf-787b-434e-906a-9770f88d2132/resource/4e7dfd8e-1c88-4694-9725-894ea4b02a4b/download/dicionario-de-dados-de-cemiterios.json",
+   "sha256": "130a709776e94743eff2c33dfd571abb8ce9321d0afc0b3f8999d057381e99de",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

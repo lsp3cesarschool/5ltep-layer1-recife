@@ -1,0 +1,91 @@
+{
+ "fields": [
+  {
+   "name": "local",
+   "type": "string",
+   "description": "local da Unidade Vacinação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "Endereço (Logradouro, número)",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Nome do Bairro",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "fone",
+   "type": "string",
+   "description": "telefone do local de atendimento",
+   "constraints": {
+    "maxLength": 15
+   },
+   "declaredType": "Char",
+   "declaredSize": 15
+  },
+  {
+   "name": "como usar",
+   "type": "string",
+   "description": "descrição de como utilizar o serviço",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "description": "descrição do horário de atendimento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "5ec4ff4f-0a6b-44a4-91bb-dc540f990019",
+   "dictionary_name": "Dicionário de dados - Campanha de Vacinação 2020",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/96a5a026-4641-42ef-b222-c5771478b542/resource/5ec4ff4f-0a6b-44a4-91bb-dc540f990019/download/dicionario-de-dados-campanha-de-vacinacao-2020.json",
+   "sha256": "b4a23691933f91a9fa428e3cbd3c79386e5bb29a279870b07a45e8852225a2e1",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

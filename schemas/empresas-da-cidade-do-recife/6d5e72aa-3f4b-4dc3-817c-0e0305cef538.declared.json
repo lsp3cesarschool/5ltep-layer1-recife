@@ -1,0 +1,209 @@
+{
+ "fields": [
+  {
+   "name": "cod_empresa",
+   "type": "string",
+   "description": "Código da Empresa critptografado",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "char",
+   "declaredSize": 20
+  },
+  {
+   "name": "numero",
+   "type": "string",
+   "description": "Número da Empresa",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "char",
+   "declaredSize": 20
+  },
+  {
+   "name": "razao_social",
+   "type": "string",
+   "description": "Razão Social da Empresa",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "Char",
+   "declaredSize": 55
+  },
+  {
+   "name": "nome_fantasia",
+   "type": "string",
+   "description": "Nome fantasia da Empresa",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "number",
+   "description": "Código Logradouro que identifica as Vias de Circulação do espaço urbano do Recife",
+   "declaredType": "Num",
+   "declaredSize": 16
+  },
+  {
+   "name": "nome_logradouro",
+   "type": "string",
+   "description": "Nome do Logradouro que identifica as vias de Circulação",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "num_logradouro",
+   "type": "number",
+   "description": "Número do Logradouro",
+   "declaredType": "Num",
+   "declaredSize": 9
+  },
+  {
+   "name": "cod_bairro",
+   "type": "number",
+   "description": "Código do Bairro na base de empresas",
+   "declaredType": "Num",
+   "declaredSize": 9
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "description": "Bairro da cidade do Recife",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "situacao_empresa",
+   "type": "string",
+   "description": "situacao da empresa [Allowed values, as declared: ATIVO]",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "data_inicio",
+   "type": "date",
+   "description": "Data inicio da empresa",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "data_encerramento",
+   "type": "date",
+   "description": "Data encerramento da empresa",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "cod_grupo",
+   "type": "number",
+   "description": "Código do grupo ao qual pertence a atividade principal da empresa",
+   "declaredType": "NUM"
+  },
+  {
+   "name": "nome_grupo",
+   "type": "string",
+   "description": "Nome do grupo ao qual pertence a atividade principal da empresa",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "cnae",
+   "type": "number",
+   "description": "Código Nacional de Atividade Econômica",
+   "declaredType": "NUM",
+   "declaredSize": 10
+  },
+  {
+   "name": "desc_atividade",
+   "type": "string",
+   "description": "Descrição da Atividade Econômica",
+   "constraints": {
+    "maxLength": 95
+   },
+   "declaredType": "Char",
+   "declaredSize": 95
+  },
+  {
+   "name": "atividade_principal",
+   "type": "string",
+   "description": "é a principal atividade desempenhada pela empresa? [Allowed values, as declared: S-Sim ou N -Não]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "atividade_vig_sanitaria",
+   "type": "string",
+   "description": "é a principal atividade da empresa que exige vigilância sanitária do município? [Allowed values, as declared: S-Sim ou N -Não]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "atividade_predominante",
+   "type": "string",
+   "description": "é a principal atividade da empresa que é prestadora de serviço? [Allowed values, as declared: S-Sim ou N -Não]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "incomodo",
+   "type": "string",
+   "description": "Atividade Potencialmente Geradora de Incômodo [Allowed values, as declared: S-Sim ou N -Não]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenada geografica",
+   "declaredType": "num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenada geografica",
+   "declaredType": "num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "68ed40b0-5121-42ad-be12-14a081cfafa9",
+   "dictionary_name": "Dicionario de Dados das Empresas do Recife",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3442510c-c85a-4271-bd2d-49cdff392459/resource/68ed40b0-5121-42ad-be12-14a081cfafa9/download/dicionario-de-dados-das-empresas-do-recife.json",
+   "sha256": "88b7a79c242dbdc6d1db95cd43c9d878264314c801f9a8d43472d458d1ddfdad",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

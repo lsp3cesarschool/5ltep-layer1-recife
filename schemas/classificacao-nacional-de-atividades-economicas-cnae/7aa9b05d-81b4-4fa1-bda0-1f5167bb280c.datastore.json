@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "codigo_cnae_2-1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao_codigo_cnae",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "item_lista",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "descricao_item_lista",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

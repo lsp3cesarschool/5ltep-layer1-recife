@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "rpa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "via_principal",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "extensao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "largura_ambos_lados",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

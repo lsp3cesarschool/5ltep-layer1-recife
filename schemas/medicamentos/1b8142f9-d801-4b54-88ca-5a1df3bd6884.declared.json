@@ -1,0 +1,98 @@
+{
+ "fields": [
+  {
+   "name": "distrito",
+   "type": "integer",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "String",
+   "declaredSize": 100
+  },
+  {
+   "name": "classe",
+   "type": "string",
+   "description": "Classe terapêutica do medimento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "String",
+   "declaredSize": 100
+  },
+  {
+   "name": "apresentacao",
+   "type": "string",
+   "description": "Forma em que o produto é apresentado (cápsula, frasco, etc.)",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "String",
+   "declaredSize": 55
+  },
+  {
+   "name": "tipo_produto",
+   "type": "string",
+   "description": "Tipo do produto",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "String",
+   "declaredSize": 50
+  },
+  {
+   "name": "codigo_produto",
+   "type": "integer",
+   "description": "Código do produto",
+   "declaredType": "Integer",
+   "declaredSize": 15
+  },
+  {
+   "name": "produto",
+   "type": "string",
+   "description": "Descrição do produto",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "String",
+   "declaredSize": 250
+  },
+  {
+   "name": "cadum",
+   "type": "string",
+   "description": "Número do catálogo de materiais",
+   "constraints": {
+    "maxLength": 241
+   },
+   "declaredType": "String",
+   "declaredSize": 241
+  },
+  {
+   "name": "quantidade",
+   "type": "string",
+   "constraints": {
+    "maxLength": 232
+   },
+   "declaredType": "String",
+   "declaredSize": 232
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "2827b6d5-6ba0-4d29-ab1a-7736a2250760",
+   "dictionary_name": "MetadadosMedicamentos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8ae2b6b5-51b5-403a-9dea-973a8ed1aca4/resource/2827b6d5-6ba0-4d29-ab1a-7736a2250760/download/metadadosmedicamentos.json",
+   "sha256": "f478063ee5d0f6272e2eb47572ddba35ace05aafc8ac0b310c3000b66b1d79e3",
+   "reader": "json",
+   "part": "metadados.recursos",
+   "link_method": "header"
+  }
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "fields": [
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Tipo do Acidente se foi com ou sem vitimas",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "description": "Situação do atendimento",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "data",
+   "type": "date",
+   "description": "data do atendimento",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "hora",
+   "type": "number",
+   "description": "hora do atendimento",
+   "declaredType": "num",
+   "declaredSize": 20
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro do acidente",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do acidente",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "description": "Número do acidente",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "description": "Complemento do acidente",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "natureza",
+   "type": "string",
+   "description": "Tipo de Ocorrencia",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "description": "Descrição do acidente",
+   "constraints": {
+    "maxLength": 250
+   },
+   "declaredType": "Char",
+   "declaredSize": 250
+  },
+  {
+   "name": "auto",
+   "type": "number",
+   "description": "Quantidade de automoveis no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "moto",
+   "type": "number",
+   "description": "Quantidade de motos no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "ciclom",
+   "type": "number",
+   "description": "Quantidade de ciclomotor no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "ciclista",
+   "type": "number",
+   "description": "Quantidade de bicicleta no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "pedestre",
+   "type": "number",
+   "description": "Quantidade de pedestres no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "onibus",
+   "type": "number",
+   "description": "Quantidade de onibus no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "caminhao",
+   "type": "number",
+   "description": "Quantidade de caminhão no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "viatura",
+   "type": "number",
+   "description": "Quantidade de viaturas no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "outros",
+   "type": "number",
+   "description": "Quantidade de outros veiculos no acidente",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "vitimas",
+   "type": "string",
+   "description": "Quantidade de vitimas no acidente. A partir de 2017 essa coluna contém apenas as vítimas não fatais.",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "char",
+   "declaredSize": 3
+  },
+  {
+   "name": "vitimasfatais",
+   "type": "number",
+   "description": "Quantidade de vitimas fatais no acidente",
+   "declaredType": "Num",
+   "declaredSize": 3
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "a9be1241-5439-44ce-8650-87584213cee7",
+   "dictionary_name": "Metadados dos Acidentes de trânsitos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/a9be1241-5439-44ce-8650-87584213cee7/download/metadados-dos-acidentes-de-transitos.json",
+   "sha256": "b53faaf80aca271dcebf632a0b99dc481f8c2b303f4c87095bafdf86e8fc19ea",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}
