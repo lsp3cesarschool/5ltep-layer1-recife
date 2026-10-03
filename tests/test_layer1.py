@@ -10,7 +10,7 @@ import pytest
 import requests
 import urllib3
 
-from src import (census, config, dictionaries, drift, extract, linker, pdf_extract, report, safety, schemas,
+from src import (census, ckan, config, dictionaries, drift, extract, linker, pdf_extract, report, safety, schemas,
                  tabular, types_map, validate, work)
 
 
@@ -27,6 +27,15 @@ class FakeResponse:
 
     def close(self):
         pass
+
+
+REAL_PROBE = ckan.probe
+
+
+@pytest.fixture(autouse=True)
+def no_probes(monkeypatch):
+    """The survey's delivery probes never reach the network in tests."""
+    monkeypatch.setattr(ckan, "probe", lambda url: {"error": "ConnectionError"})
 
 
 @pytest.fixture
@@ -718,6 +727,55 @@ def test_summary_levels_rate_and_findings(tmp_root):
     assert f["files_vs_dictionaries"]["formats_inferred_from_data"] == {"format": 1}
     d = report.dashboard_data(c, v, {}, s)
     assert d["datasets"][0]["tables"][0]["level"] == 4
+
+
+def test_file_delivery_is_measured_per_server_and_described_against_http(tmp_root, monkeypatch):
+    # 03/10/2026: IBAMA (Azure Blob) and ANEEL (CKAN, nginx) answer a byte-range request with 206;
+    # Recife's download service answers with the whole file, without ETag or Last-Modified, and
+    # serves CSV as application/octet-stream.
+    class Resp:
+        def __init__(self, status, headers, url):
+            self.status_code, self.headers, self.url, self.closed = status, headers, url, False
+
+        def close(self):
+            self.closed = True
+
+    sent = []
+
+    def get(url, headers=None, **kw):
+        sent.append(headers.get("Range"))
+        return Resp(200, {"Content-Type": "application/octet-stream", "Content-Length": "9", "Server": "istio-envoy"},
+                    "https://storage.r/x.csv")
+
+    monkeypatch.setattr(ckan.SESSION, "get", get)
+    p = REAL_PROBE("https://r/x.csv")
+    assert sent == ["bytes=0-99"] and p["status"] == 200 and p["served_by"] == "storage.r"
+    assert p["content_type"] == "application/octet-stream" and not p["etag"] and not p["last_modified"]
+    # the survey probes a few files per server, from different datasets
+    monkeypatch.setattr(ckan, "probe", lambda url: {"status": 200 if "//r/" in url else 206, "served_by": "storage.r",
+                                                    "server": "istio-envoy", "accept_ranges": None, "etag": False,
+                                                    "last_modified": False, "content_length": True,
+                                                    "content_type": "application/octet-stream"})
+    ds = lambda i, host: {"name": f"d{i}", "tables": [{"id": f"t{i}", "url": f"https://{host}/{i}.csv", "candidate": "csv", "level": 0},
+                                                     {"id": f"u{i}", "url": f"https://{host}/u{i}.csv", "candidate": "csv", "level": 0}]}
+    probes = census.probe_servers([ds(i, "r") for i in range(5)] + [ds(9, "b")])
+    assert [len(probes["by_host"][h]) for h in ("b", "r")] == [1, census.config.DELIVERY_PROBES]
+    # the report sets what was observed beside what HTTP provides, per server
+    c = {"portal": {"portal_url": "https://r", "name": "R", "title": "R"}, "generated_at": "t", "delivery": probes,
+         "datasets": [{**ds(i, "r"), "title": "", "url": "", "dictionaries": []} for i in range(2)]}
+    http = {"etag": None, "last_modified": None, "content_length": 9, "content_type": "application/octet-stream",
+            "served_by": "storage.r"}
+    v = {"t0": {"status": "ok", "host": "r", "kind": "csv", "http": http, "summary": {"rows": 1}},
+         "u0": {"status": "ok", "host": "r", "kind": "csv", "http": {**http, "content_type": "text/csv", "etag": '"e"'},
+                "summary": {"rows": 1}},
+         "t1": {"status": "error", "host": "r", "error": "404 Client Error: Not Found for url"},
+         "u1": {"status": "error", "host": "r", "error": "TooManyRedirects: Exceeded 30 redirects."}}
+    d = report.build_summary(c, v, {}, [])["findings"]["delivery"]
+    r = d["hosts"]["r"]
+    assert r["range"] == "ignored" and r["served_by"] == ["storage.r"] and r["server"] == ["istio-envoy"]
+    assert {s["id"]: (s["n"], s["of"]) for s in d["suggestions"] if s["host"] == "r"} == {
+        "broken-links": (1, 4), "redirect-loops": (1, 4), "byte-ranges": (3, 3), "validators": (1, 2), "media-type": (1, 2)}
+    assert d["hosts"]["b"]["range"] == "honoured" and not [s for s in d["suggestions"] if s["host"] == "b" and s["id"] == "byte-ranges"]
 
 
 def test_status_badge(tmp_root):

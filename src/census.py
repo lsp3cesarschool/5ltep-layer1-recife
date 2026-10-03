@@ -23,6 +23,7 @@ import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from urllib.parse import urlparse
 
 import requests
 import urllib3
@@ -405,6 +406,7 @@ def run(validation: dict, packages: list[dict] | None = None, previous: dict | N
         datasets.append(ds)
         written |= own_written
         events += own_events
+    delivery = probe_servers(datasets)
     # Schemas the portal no longer declares are removed, so the Git history shows the change.
     for kind in MANAGED_KINDS:
         for p in config.SCHEMAS.glob(f"*/*.{kind}.json"):
@@ -413,4 +415,20 @@ def run(validation: dict, packages: list[dict] | None = None, previous: dict | N
                 events += drift.compare_declared(p.parent.name, {"id": rid}, kind, schemas.load(p), None)
                 p.unlink()
     return {"portal": portal, "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            "datasets": datasets}, events
+            "datasets": datasets, "delivery": delivery}, events
+
+
+def probe_servers(datasets: list[dict]) -> dict:
+    """How each server the portal links its files to delivers them (see ckan.probe): DELIVERY_PROBES
+    files per server, from different datasets, a few bytes each. The dashboard's file delivery findings."""
+    by_host: dict[str, list[dict]] = {}
+    for ds in datasets:
+        for t in ds.get("tables") or []:
+            host = urlparse(t.get("url") or "").hostname
+            if host and len(by_host.setdefault(host, [])) < config.DELIVERY_PROBES \
+                    and all(p["dataset"] != ds["name"] for p in by_host[host]):
+                by_host[host].append({"dataset": ds["name"], "id": t["id"], "url": t["url"], "candidate": t["candidate"]})
+    out = {}
+    for host, picks in sorted(by_host.items()):
+        out[host] = [{"id": p["id"], "candidate": p["candidate"], **ckan.probe(p["url"])} for p in picks]
+    return {"probed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "by_host": out}

@@ -60,6 +60,7 @@ UNREACHABLE_STREAK = _env("UNREACHABLE_STREAK", 8)     # failures in a row befor
 # Reading the headers of files never validated (a zip is downloaded whole) stops after this long: the
 # survey runs in one job of at most 300 minutes, and its work is lost if the job is stopped.
 SURVEY_HEADER_MAX_MINUTES = _env("SURVEY_HEADER_MAX_MINUTES", 180)
+DELIVERY_PROBES = _env("DELIVERY_PROBES", 3)          # files per server asked for a byte range in each survey
 
 # --- Validation ---------------------------------------------------------------
 # Time budget of one batch (the GitHub job limit is 6 h; the rest of the job needs some minutes).

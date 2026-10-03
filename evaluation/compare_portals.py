@@ -11,6 +11,7 @@ evaluation/results/compare_portals.{json,md}.
 
 import argparse
 import json
+from collections import Counter
 from pathlib import Path
 
 import requests
@@ -90,6 +91,14 @@ def rows(summaries: dict[str, dict]) -> list[tuple[str, list[str]]]:
         ("Files that could not be downloaded", lambda s: str(get(s, "network", "total", "failed_files"))),
         ("Failed requests, by kind", lambda s: json.dumps(get(s, "network", "total", "request_failures", default={}))),
         ("Main servers (GB)", lambda s: ", ".join(f"{h} {v['gb']}" for h, v in list(get(s, "network", "by_host", default={}).items())[:3])),
+        ("Byte ranges, by server", lambda s: ", ".join(f"{h} {v['range']}" for h, v in
+                                                     get(s, "findings", "delivery", "hosts", default={}).items()) or "—"),
+        ("Files without ETag or Last-Modified", lambda s: "{} / {}".format(
+            *[sum(v[k] for v in get(s, "findings", "delivery", "hosts", default={}).values()) for k in ("without_validator", "of")])),
+        ("Files with a generic media type", lambda s: "{} / {}".format(
+            *[sum(v[k] for v in get(s, "findings", "delivery", "hosts", default={}).values()) for k in ("generic_type", "typed")])),
+        ("File delivery observations, by kind", lambda s: json.dumps(dict(Counter(
+            x["id"] for x in get(s, "findings", "delivery", "suggestions", default=[]))))),
         ("Drift events (observed / declared)", lambda s: f"{get(s, 'drift', 'observed', default=0)} / {get(s, 'drift', 'declared', default=0)}"),
     ]
     return [(label, [fn(s) for s in summaries.values()]) for label, fn in spec]

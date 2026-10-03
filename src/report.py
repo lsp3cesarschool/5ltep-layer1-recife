@@ -280,6 +280,96 @@ def network(tables: list[tuple[dict, dict | None]]) -> dict:
     return {"total": figures(total), "by_host": {k: figures(h) for k, h in sorted(hosts.items(), key=lambda x: -x[1]["bytes"])}}
 
 
+# A type that says nothing about the content: what HTTP assumes when none is given (RFC 9110, 8.3).
+GENERIC_TYPES = {None, "application/octet-stream", "binary/octet-stream", "application/download",
+                 "application/force-download", "application/unknown"}
+TYPED_KINDS = {"csv", "zip", "json", "xml", "xlsx", "xls", "ods"}     # formats with a registered media type
+SUGGESTION_ORDER = ["broken-links", "redirect-loops", "byte-ranges", "validators", "media-type", "length"]
+
+
+def delivery(census: dict, tables: list[tuple[dict, dict | None]]) -> dict:
+    """How each server the portal links its files to delivers them, from the files validated (their
+    HTTP headers) and from the survey's probes (a byte-range request per server, ckan.probe).
+
+    `suggestions` sets what was observed beside what HTTP provides for it, one per server and kind:
+    broken links (404/410), redirect loops, byte ranges ignored, no ETag or Last-Modified, a generic
+    media type, no Content-Length. The dashboard words them; they describe, they do not grade."""
+    probes = (census.get("delivery") or {}).get("by_host") or {}
+    hosts: dict[str, dict] = {}
+
+    def host_of(name: str) -> dict:
+        return hosts.setdefault(name, {"linked": 0, "files": 0, "with_etag": 0, "with_last_modified": 0,
+                                       "without_validator": 0, "without_length": 0, "typed": 0, "generic_type": 0,
+                                       "content_types": Counter(), "served_by": Counter(),
+                                       "broken_links": 0, "redirect_loops": 0})
+
+    for t, v in tables:
+        x = host_of((v or {}).get("host") or urlparse(t.get("url") or "").hostname or "—")
+        x["linked"] += 1
+        if not v:
+            continue
+        if v.get("status") == "error":
+            kind = _error_kind(v.get("error"))
+            x["broken_links"] += kind in ("HTTP 404", "HTTP 410")
+            x["redirect_loops"] += kind == "redirect loop"
+            continue
+        http = v.get("http")
+        if v.get("status") not in ("ok", "empty") or not http:
+            continue
+        x["files"] += 1
+        x["with_etag"] += bool(http.get("etag"))
+        x["with_last_modified"] += bool(http.get("last_modified"))
+        x["without_validator"] += not (http.get("etag") or http.get("last_modified"))
+        x["without_length"] += http.get("content_length") is None
+        if "content_type" in http:          # recorded since 03/10/2026
+            x["typed"] += 1
+            x["content_types"][http["content_type"] or "—"] += 1
+            x["generic_type"] += v.get("kind") in TYPED_KINDS and http["content_type"] in GENERIC_TYPES
+        if http.get("served_by"):
+            x["served_by"][http["served_by"]] += 1
+
+    out, suggestions = {}, []
+    for name in sorted((set(hosts) | set(probes)) - {"—"}):     # "—": a resource with no address
+        x = host_of(name)
+        answered = [p for p in probes.get(name, []) if p.get("status") in (200, 206)]
+        ranged = sum(p["status"] == 206 for p in answered)
+        rng = ("unknown" if not answered else "honoured" if ranged == len(answered)
+               else "ignored" if not ranged else "partly")
+        # what the files validated show; before any is validated, what the probes show
+        if x["files"]:
+            validators, length, of = x["without_validator"], x["without_length"], x["files"]
+        else:
+            validators = sum(not (p["etag"] or p["last_modified"]) for p in answered)
+            length, of = sum(not p["content_length"] for p in answered), len(answered)
+        if x["typed"]:
+            generic, typed = x["generic_type"], x["typed"]
+            generic_types = sorted({k for k in x["content_types"] if (None if k == "—" else k) in GENERIC_TYPES})
+        else:
+            hits = [p for p in answered if p["candidate"] in TYPED_KINDS]
+            generic, typed = sum(p["content_type"] in GENERIC_TYPES for p in hits), len(hits)
+            generic_types = sorted({p["content_type"] or "—" for p in hits if p["content_type"] in GENERIC_TYPES})
+        served = Counter(x["served_by"]) + Counter(p["served_by"] for p in answered if p.get("served_by"))
+        out[name] = {
+            "linked": x["linked"], "files": x["files"],
+            "served_by": [h for h, _ in served.most_common(3)],
+            "server": sorted({p["server"] for p in answered if p.get("server")})[:3],
+            "probes": len(probes.get(name, [])), "range": rng,
+            "with_etag": x["with_etag"], "with_last_modified": x["with_last_modified"],
+            "without_validator": validators, "without_length": length, "of": of,
+            "generic_type": generic, "typed": typed, "content_types": dict(x["content_types"].most_common(6)),
+            "broken_links": x["broken_links"], "redirect_loops": x["redirect_loops"],
+        }
+        found = {"broken-links": (x["broken_links"], x["linked"]), "redirect-loops": (x["redirect_loops"], x["linked"]),
+                 "byte-ranges": (len(answered) - ranged if rng in ("ignored", "partly") else 0, len(answered)),
+                 "validators": (validators, of), "media-type": (generic, typed), "length": (length, of)}
+        for sid in SUGGESTION_ORDER:
+            n, total = found[sid]
+            if n:
+                suggestions.append({"id": sid, "host": name, "n": n, "of": total,
+                                    **({"types": generic_types} if sid == "media-type" else {})})
+    return {"probed_at": (census.get("delivery") or {}).get("probed_at"), "hosts": out, "suggestions": suggestions}
+
+
 def drift_baseline(validation: dict) -> dict:
     """Drift needs two observations: the first one of each file is its baseline."""
     seen = [v.get("validated_at") for v in validation.values() if v.get("status") == "ok" and v.get("header")]
@@ -340,7 +430,7 @@ def build_summary(census: dict, validation: dict, extraction: dict, queue: list)
                                      for ds, t in non_tables][:200]},
         "distributions": distributions(tables),
         "network": network(tables),
-        "findings": documentation_findings(census, validation, extraction),
+        "findings": {**documentation_findings(census, validation, extraction), "delivery": delivery(census, tables)},
         "per_dataset": per_dataset,
     }
 

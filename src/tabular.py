@@ -33,6 +33,7 @@ import zipfile
 from dataclasses import dataclass, field
 from decimal import Decimal
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 
@@ -596,7 +597,10 @@ def open_resource(url: str, max_disk_bytes: int | None = None, stream_zip: bool 
     # Change signals of the server, compared with a HEAD request in later runs (work.py).
     digest: dict = {"timing": timing,
                     "http": {"etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
-                             "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None}}
+                             "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None,
+                             # how the file was delivered (the dashboard's file delivery findings)
+                             "content_type": ckan.media_type(h.get("Content-Type")),
+                             "served_by": urlparse(getattr(resp, "url", None) or url).hostname}}
     try:
         sample = buffered.peek(PEEK)[:PEEK]
         kind = sniff(sample)

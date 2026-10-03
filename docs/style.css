@@ -96,6 +96,10 @@ table.mini { width: 100%; border-collapse: collapse; font-size: .85rem; }
 table.mini th { font-weight: 600; font-size: .78rem; vertical-align: bottom; }
 table.mini th, table.mini td { padding: 3px 4px; border-bottom: 1px solid var(--grid); text-align: right; font-variant-numeric: tabular-nums; }
 table.mini th:first-child, table.mini td:first-child { text-align: left; }
+#delivery table.mini td:nth-child(2), #delivery table.mini th:nth-child(2) { text-align: left; }
+#delivery h3 { margin: 14px 0 6px; font-size: 1rem; }
+ul.obs { margin: 0; padding-left: 1.2em; font-size: .9rem; line-height: 1.45; }
+ul.obs li { margin-bottom: 6px; overflow-wrap: anywhere; }
 
 /* datasets */
 .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }

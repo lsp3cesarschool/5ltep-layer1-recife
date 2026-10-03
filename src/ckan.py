@@ -5,6 +5,7 @@ import logging
 import threading
 import time
 from collections import Counter
+from urllib.parse import urlparse
 
 import requests
 
@@ -98,6 +99,32 @@ def head(url: str) -> dict:
     h = resp.headers
     return {"status": resp.status_code, "etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
             "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None}
+
+
+def media_type(value: str | None) -> str | None:
+    """`text/csv; charset=utf-8` -> `text/csv`."""
+    return (value or "").split(";")[0].strip().lower() or None
+
+
+def probe(url: str) -> dict:
+    """How the server delivers a file (RFC 9110): asked for its first 100 bytes, does it answer with
+    them (206) or with the whole file (200)? With the headers that let a client resume a download,
+    tell a changed file without downloading it, and know what it receives. Nothing of the file is
+    kept; the connection is closed before the content is read."""
+    try:
+        resp = SESSION.get(url, headers={**HEADERS, "Range": "bytes=0-99"}, timeout=timeouts(60),
+                           allow_redirects=True, stream=True)
+    except requests.RequestException as exc:
+        return {"error": type(exc).__name__}
+    try:
+        h = resp.headers
+        return {"status": resp.status_code, "served_by": urlparse(resp.url).hostname,
+                "server": (h.get("Server") or "")[:60] or None,
+                "accept_ranges": (h.get("Accept-Ranges") or "").lower() or None,
+                "etag": bool(h.get("ETag")), "last_modified": bool(h.get("Last-Modified")),
+                "content_length": bool(h.get("Content-Length")), "content_type": media_type(h.get("Content-Type"))}
+    finally:
+        resp.close()
 
 
 def fetch_bytes(url: str, limit: int) -> tuple[bytes, str]:

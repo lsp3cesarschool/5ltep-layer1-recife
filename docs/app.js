@@ -56,6 +56,18 @@ const I18N = {
     u_datasets: "Datasets", u_files: "Files",
     lv: ["0 · no dictionary", "1 · for people only", "2 · machine-readable", "3 · types in the API", "4 · level 3 and conforms"],
     tip_level: "Level {l}: {n} ({p})",
+    delivery_h: "File delivery",
+    delivery_note: "How each server the portal links its files to delivers them, measured every week: from the files validated, and from a request for the first 100 bytes of a few files per server. Each observation sets what was seen beside what HTTP provides for it, with the reference. It describes, it does not grade.",
+    dv_host: "Linked to", dv_served: "Served by", dv_range: "Byte ranges", dv_validators: "No ETag or Last-Modified",
+    dv_type: "Generic media type", dv_broken: "Broken links", dv_loops: "Redirect loops", dv_obs: "Observations",
+    rg_honoured: "answered", rg_ignored: "whole file", rg_partly: "partly", rg_unknown: "not measured",
+    dv_none: "Nothing to observe: the files are delivered as HTTP provides.",
+    "sg_broken-links": "{host}: {n} of {of} files linked here answer 404 or 410 (not found). A link that stays where it was published keeps catalogs, citations and analyses working.",
+    "sg_redirect-loops": "{host}: {n} of {of} download links redirect back to themselves and never reach the file.",
+    "sg_byte-ranges": "{host}: asked for the first 100 bytes, the server sent the whole file ({n} of {of} files asked). HTTP lets a server send only the part asked for (206 Partial Content, Accept-Ranges: bytes), so that a download cut short is resumed instead of started again.",
+    sg_validators: "{host}: {n} of {of} files come without ETag or Last-Modified. With them, whoever reuses the data can ask whether a file changed without downloading it again (conditional requests).",
+    "sg_media-type": "{host}: {n} of {of} files come with a type that says nothing about the content ({types}). Declaring the format (text/csv, application/zip…) lets browsers and tools open the file as what it is.",
+    sg_length: "{host}: {n} of {of} files come without Content-Length: whoever downloads cannot know the size beforehand nor check that the download is complete.",
     k_unreachable: "{n} dictionaries did not answer in this survey (the server, not the portal's documentation): asked again in the next run; their datasets keep the last reading.",
     p_dicts: "Dictionaries", p_unread: "Why dictionaries cannot be read", p_links: "How files are linked to a dictionary",
     p_types: "Declared types", p_vs: "Files against their dictionaries", p_files: "The files", p_pdf: "PDF dictionaries",
@@ -146,6 +158,18 @@ const I18N = {
     u_datasets: "Conjuntos", u_files: "Arquivos",
     lv: ["0 · sem dicionário", "1 · só para pessoas", "2 · legível por máquina", "3 · tipos na API", "4 · nível 3 e conforme"],
     tip_level: "Nível {l}: {n} ({p})",
+    delivery_h: "Entrega dos arquivos",
+    delivery_note: "Como cada servidor para o qual o portal aponta seus arquivos os entrega, medido toda semana: pelos arquivos validados e por um pedido dos primeiros 100 bytes de alguns arquivos por servidor. Cada observação põe o que foi visto ao lado do que o HTTP prevê para isso, com a referência. Descreve, não dá nota.",
+    dv_host: "Apontado para", dv_served: "Entregue por", dv_range: "Intervalos de bytes", dv_validators: "Sem ETag nem Last-Modified",
+    dv_type: "Tipo de mídia genérico", dv_broken: "Links quebrados", dv_loops: "Redirecionamentos em laço", dv_obs: "Observações",
+    rg_honoured: "atendidos", rg_ignored: "arquivo inteiro", rg_partly: "em parte", rg_unknown: "não medido",
+    dv_none: "Nada a observar: os arquivos são entregues como o HTTP prevê.",
+    "sg_broken-links": "{host}: {n} de {of} arquivos apontados para cá respondem 404 ou 410 (não encontrado). Um link que continua onde foi publicado mantém funcionando catálogos, citações e análises.",
+    "sg_redirect-loops": "{host}: {n} de {of} links de download redirecionam para si mesmos e nunca chegam ao arquivo.",
+    "sg_byte-ranges": "{host}: pedidos os primeiros 100 bytes, o servidor mandou o arquivo inteiro ({n} de {of} arquivos pedidos). O HTTP permite que o servidor mande só a parte pedida (206 Partial Content, Accept-Ranges: bytes), para que um download interrompido seja retomado em vez de recomeçado.",
+    sg_validators: "{host}: {n} de {of} arquivos vêm sem ETag nem Last-Modified. Com eles, quem reutiliza os dados pode perguntar se um arquivo mudou sem baixá-lo de novo (pedidos condicionais).",
+    "sg_media-type": "{host}: {n} de {of} arquivos vêm com um tipo que nada diz do conteúdo ({types}). Declarar o formato (text/csv, application/zip…) permite que navegadores e ferramentas abram o arquivo como o que ele é.",
+    sg_length: "{host}: {n} de {of} arquivos vêm sem Content-Length: quem baixa não sabe o tamanho antes nem confere se o download veio completo.",
     k_unreachable: "{n} dicionários não responderam neste levantamento (o servidor, não a documentação do portal): pedidos de novo na próxima execução; os conjuntos ficam com a última leitura.",
     p_dicts: "Dicionários", p_unread: "Por que dicionários não podem ser lidos", p_links: "Como os arquivos são ligados a um dicionário",
     p_types: "Tipos declarados", p_vs: "Arquivos contra seus dicionários", p_files: "Os arquivos", p_pdf: "Dicionários em PDF",
@@ -554,6 +578,38 @@ function renderFindings(f, net, dist) {
   el("findings").innerHTML = panels.map(([h, body]) => `<div class="panel"><h3>${esc(h)}</h3>${body}</div>`).join("");
 }
 
+// --- file delivery -------------------------------------------------------------------
+// The reference of each observation (fixed addresses: nothing here comes from the data).
+const RFC = "https://www.rfc-editor.org/rfc/rfc9110#section-";
+const DELIVERY_REFS = {
+  "broken-links": ["W3C, Data on the Web Best Practices", "https://www.w3.org/TR/dwbp/"],
+  "redirect-loops": ["RFC 9110, §15.4", RFC + "15.4"],
+  "byte-ranges": ["RFC 9110, §14", RFC + "14"],
+  validators: ["RFC 9110, §8.8, §13", RFC + "8.8"],
+  "media-type": ["RFC 9110, §8.3", RFC + "8.3"],
+  length: ["RFC 9110, §8.6", RFC + "8.6"],
+};
+
+function renderDelivery(dv) {
+  const box = el("delivery");
+  if (!dv || !Object.keys(dv.hosts || {}).length) { box.innerHTML = `<p class="muted small">${esc(t("none"))}</p>`; return; }
+  const ratio = (n, of) => (of ? `${fmt(n)} / ${fmt(of)}` : "—");
+  const rows = Object.entries(dv.hosts).map(([host, h]) =>
+    `<tr><td><code>${esc(host)}</code></td><td>${(h.served_by || []).map((s) => `<code>${esc(s)}</code>`).join(" ") || "—"}`
+    + `${h.server?.length ? `<br><span class="muted">${esc(h.server.join(", "))}</span>` : ""}</td>`
+    + `<td>${esc(t(`rg_${h.range}`))}</td><td>${ratio(h.without_validator, h.of)}</td><td>${ratio(h.generic_type, h.typed)}</td>`
+    + `<td>${fmt(h.broken_links)}</td><td>${fmt(h.redirect_loops)}</td></tr>`).join("");
+  const obs = (dv.suggestions || []).map((s) => {
+    const [label, url] = DELIVERY_REFS[s.id] || ["", ""];
+    const text = t(`sg_${s.id}`, { host: s.host, n: fmt(s.n), of: fmt(s.of), types: (s.types || []).join(", ") });
+    return `<li>${esc(text)}${url ? ` <a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>` : ""}</li>`;
+  }).join("");
+  box.innerHTML = `<div class="table-wrap"><table class="mini"><thead><tr><th>${esc(t("dv_host"))}</th><th>${esc(t("dv_served"))}</th>`
+    + `<th>${esc(t("dv_range"))}</th><th>${esc(t("dv_validators"))}</th><th>${esc(t("dv_type"))}</th>`
+    + `<th>${esc(t("dv_broken"))}</th><th>${esc(t("dv_loops"))}</th></tr></thead><tbody>${rows}</tbody></table></div>`
+    + `<h3>${esc(t("dv_obs"))}</h3>` + (obs ? `<ul class="obs">${obs}</ul>` : `<p class="muted small">${esc(t("dv_none"))}</p>`);
+}
+
 // --- datasets ----------------------------------------------------------------------
 function levelBadge(l) {
   return l == null ? "—" : `<span class="level"><span class="swatch" style="background:${levelColor(l)}"></span>${l}</span>`;
@@ -662,6 +718,7 @@ async function main() {
   renderSimilar();
   renderPdf();
   renderFindings(s.findings, s.network, s.distributions);
+  renderDelivery(s.findings.delivery);
   // ?level=d2 / f0 (same as clicking a maturity band) filters the table
   const lvl = new URLSearchParams(location.search).get("level");
   if (lvl && /^[df][0-4]$/.test(lvl)) el("level-filter").value = lvl;
