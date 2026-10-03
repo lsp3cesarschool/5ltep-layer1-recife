@@ -89,7 +89,7 @@ const I18N = {
     similar_count: "{n} pairs in {f} files", s_declared: "Declared in the dictionary", s_column: "Column in the file",
     s_similarity: "Similarity", s_source: "Schema source",
     k_nottab: "a page or PDF instead of the table", k_gb: "data downloaded (GB)", k_minutes: "time downloading and validating (min)",
-    k_mbs: "throughput, download and validation (MB/s)", k_ttfb: "time to the server's first answer, median (s)",
+    k_mbs: "throughput, download and validation (MB/s)", k_netshare: "share of that time waiting for the network", k_ttfb: "time to the server's first answer, median (s)",
     k_reqfail: "requests that failed (and were retried)", k_unreach: "Files that could not be downloaded",
     k_pdflinked: "PDF dictionaries linked to a file", k_processed: "processed", k_stage: "Stage", k_n: "n",
     k_recall: "recall", k_precision: "precision", k_em: "exact match", k_ls: "Levenshtein",
@@ -191,7 +191,7 @@ const I18N = {
     similar_count: "{n} pares em {f} arquivos", s_declared: "Declarado no dicionário", s_column: "Coluna no arquivo",
     s_similarity: "Similaridade", s_source: "Fonte do esquema",
     k_nottab: "página ou PDF no lugar da tabela", k_gb: "dados baixados (GB)", k_minutes: "tempo baixando e validando (min)",
-    k_mbs: "vazão, download e validação (MB/s)", k_ttfb: "tempo até a primeira resposta do servidor, mediana (s)",
+    k_mbs: "vazão, download e validação (MB/s)", k_netshare: "fração desse tempo esperando a rede", k_ttfb: "tempo até a primeira resposta do servidor, mediana (s)",
     k_reqfail: "pedidos que falharam (e foram repetidos)", k_unreach: "Arquivos que não puderam ser baixados",
     k_pdflinked: "dicionários em PDF ligados a um arquivo", k_processed: "processados", k_stage: "Etapa", k_n: "n",
     k_recall: "revocação", k_precision: "precisão", k_em: "correspondência exata", k_ls: "Levenshtein",
@@ -560,7 +560,7 @@ function renderFindings(f, net, dist) {
       [t("k_nottables"), fmt(fi.not_tables)],
       [t("k_dist"), `${fmt((dist || {}).compared)} · ${fmt((dist || {}).same_columns)} · ${fmt((dist || {}).spelling_only)}`],
       [t("k_nottab"), fmt(fi.not_tabular)], [t("k_gb"), num1(nt.gb)], [t("k_minutes"), num1(nt.minutes)],
-      [t("k_mbs"), num1(nt.end_to_end_mb_s)], [t("k_ttfb"), num1(nt.first_byte_s_median)],
+      [t("k_mbs"), num1(nt.end_to_end_mb_s)], [t("k_netshare"), pct(nt.network_share)], [t("k_ttfb"), num1(nt.first_byte_s_median)],
       [t("k_reqfail"), fmt(Object.values(nt.request_failures || {}).reduce((a, b) => a + b, 0))]])
       + `<p class="small muted">${esc(t("k_encodings"))}: ${Object.entries(fi.encodings || {}).map(([k, n]) => `<code>${esc(k)}</code> ${fmt(n)}`).join(" · ") || "—"}<br>`
       + `${esc(t("k_formats"))}: ${Object.entries(fi.formats || {}).map(([k, n]) => `<code>${esc(k)}</code> ${fmt(n)}`).join(" · ") || "—"}<br>`

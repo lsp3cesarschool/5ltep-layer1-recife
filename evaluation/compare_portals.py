@@ -87,6 +87,8 @@ def rows(summaries: dict[str, dict]) -> list[tuple[str, list[str]]]:
         ("Time downloading and validating (min)", lambda s: str(get(s, "network", "total", "minutes"))),
         ("End-to-end throughput (MB/s)", lambda s: str(get(s, "network", "total", "end_to_end_mb_s"))),
         ("Zip download only (MB/s, network)", lambda s: str(get(s, "network", "total", "zip_download_mb_s"))),
+        ("Share of the time waiting for the network", lambda s: pct(get(s, "network", "total", "network_share"))),
+        ("Network alone (MB/s)", lambda s: str(get(s, "network", "total", "network_mb_s"))),
         ("Time to first byte, median (s)", lambda s: str(get(s, "network", "total", "first_byte_s_median"))),
         ("Files that could not be downloaded", lambda s: str(get(s, "network", "total", "failed_files"))),
         ("Failed requests, by kind", lambda s: json.dumps(get(s, "network", "total", "request_failures", default={}))),

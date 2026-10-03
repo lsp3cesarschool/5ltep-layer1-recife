@@ -67,16 +67,19 @@ class NotTabular(Exception):
 
 
 class HashingReader(io.RawIOBase):
-    """Wraps a byte stream, computing SHA-256 and size of everything read through it."""
+    """Wraps a byte stream, computing SHA-256 and size of everything read through it, and the time
+    spent waiting for it (the network's share of a file's time, apart from the validation's)."""
 
     def __init__(self, raw):
-        self.raw, self.sha, self.size = raw, hashlib.sha256(), 0
+        self.raw, self.sha, self.size, self.wait = raw, hashlib.sha256(), 0, 0.0
 
     def readable(self) -> bool:
         return True
 
     def readinto(self, b) -> int:
+        t0 = time.monotonic()
         data = self.raw.read(len(b))
+        self.wait += time.monotonic() - t0
         n = len(data)
         b[:n] = data
         self.sha.update(data)
@@ -492,8 +495,9 @@ def _is_office(first_member: str) -> bool:
 
 
 def _zip_stream_tables(stream, outer: str | None, tmp: str, depth: int, digest: dict):
-    """A zip read as it streams, member by member, from the local header of each: for a zip larger
-    than the runner's disk. Members are read in the order they are stored."""
+    """A zip read as it streams, member by member, from the local header of each: validated while it
+    downloads, without the runner's disk. Members come in the order they are stored (`member_order`
+    gives the order of a zip read from disk)."""
     from stream_unzip import stream_unzip
 
     found = 0
@@ -549,7 +553,15 @@ def _streamed_zip(buffered, hashing, tmp: str, digest: dict):
     digest["streamed"] = True
     yield from _zip_stream_tables(buffered, None, tmp, 0, digest)
     _drain(buffered)            # the central directory, so that the hash covers every byte
+    digest["timing"]["network_s"] = round(hashing.wait, 2)
     digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind="zip")
+
+
+def member_order(member: str | None) -> tuple:
+    """Sort key of a table inside a zip, as a zip read from disk gives them: by name at each level of
+    nesting (a.zip/b.csv), the sheets of a workbook (p.xlsx#Sheet) in the workbook's own order (the
+    sort that uses this key is stable)."""
+    return tuple((member or "").split("#")[0].split("/"))
 
 
 def _serve(source):
@@ -632,6 +644,7 @@ def open_resource(url: str, max_disk_bytes: int | None = None, stream_zip: bool 
                     yield from _serve(Source(_streamed_zip(io.BufferedReader(hashing, PEEK * 4), hashing, tmp, digest), digest))
                 else:
                     timing["download_s"] = round(time.monotonic() - t0, 2)
+                    timing["network_s"] = round(hashing.wait, 2)
                     digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind=kind)
                     yield from _serve(Source(_file_tables(path, kind, None, tmp, 0, digest), digest))
         else:
@@ -643,6 +656,7 @@ def open_resource(url: str, max_disk_bytes: int | None = None, stream_zip: bool 
                         pass
                 except ValueError:
                     pass       # a text wrapper that read to the end closed it: every byte was hashed
+                timing["network_s"] = round(hashing.wait, 2)
                 digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind=kind)
             yield from _serve(Source(single(), digest))
     finally:

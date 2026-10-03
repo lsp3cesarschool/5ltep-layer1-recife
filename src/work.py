@@ -17,7 +17,9 @@ next batch continues. A resource enters the queue when:
 """
 
 import logging
+import multiprocessing
 import time
+from concurrent.futures import FIRST_COMPLETED, Future, ProcessPoolExecutor, wait
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
@@ -90,9 +92,7 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     failures_before = ckan.failures_snapshot()
     entry["host"] = urlparse(t.get("url") or "").hostname
     try:
-        with tabular.open_resource(t["url"]) as src:
-            tables = [validate.check_table(tb, schema) for tb in src.tables]
-        digest = src.digest
+        tables, digest = _read(t["url"], schema)
     except tabular.NotTabular as exc:
         # "no-tables": a container of documents or maps, not tabular data (left out of the universe);
         # "html"/"pdf": the link returns a page or a document instead of the table (a failure).
@@ -143,6 +143,27 @@ def validate_one(dataset: str, t: dict, prev: dict | None) -> tuple[dict, dict |
     return entry, observed, events
 
 
+def _read(url: str, schema: dict | None) -> tuple[list[dict], dict]:
+    """(results per table, digest). A zip is validated while it downloads (no disk, and the CPU works
+    while the network delivers); its tables are then put in the order a zip read from disk gives, so
+    that the first header, the one compared for drift, does not depend on how the file was read. A zip
+    that cannot be read as a stream (an unusual layout) is downloaded whole and read from disk."""
+    from stream_unzip import TruncatedDataError, UnzipError
+
+    def read(stream_zip: bool):
+        with tabular.open_resource(url, stream_zip=stream_zip) as src:
+            tables = [validate.check_table(tb, schema) for tb in src.tables]
+        return sorted(tables, key=lambda x: tabular.member_order(x.get("member"))), src.digest
+
+    try:
+        return read(True)
+    except UnzipError as exc:
+        if isinstance(exc, TruncatedDataError):
+            raise                   # the download was cut short: a network failure, asked again later
+        logger.info("%s could not be read as a stream (%s); downloading it whole", url, exc)
+        return read(False)
+
+
 def check_distributions(distributions: list[dict], header: list[str]) -> list[dict]:
     """The same table in other formats: are its columns the same as in the one validated in full?"""
     from src import dictionaries
@@ -165,37 +186,102 @@ def check_distributions(distributions: list[dict], header: list[str]) -> list[di
     return out
 
 
-def run_batch(census: dict, queue: list[dict], validation: dict, minutes: float, on_progress=None) -> dict:
-    """Validate queued resources until the budget ends. Returns ids done, observed schemas, drift.
+class _Inline:
+    """An executor that runs each task at once, in this process (one worker: no process to start)."""
 
-    `on_progress(out)` is called after every resource, so that what was done survives a job
-    killed in the middle of a very large file.
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        return False
+
+    def submit(self, fn, *args) -> Future:
+        fut: Future = Future()
+        try:
+            fut.set_result(fn(*args))
+        except Exception as exc:
+            fut.set_exception(exc)
+        return fut
+
+
+def _worker_init() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+
+
+def on_disk(t: dict, workers: int) -> bool:
+    """A spreadsheet or Parquet file goes to the runner's disk whole: one that may not fit beside
+    others (unknown size, or more than its share of the disk) is validated alone."""
+    if t.get("candidate") not in ("parquet", "xlsx", "xls", "ods"):
+        return False
+    try:
+        size = int(t.get("size") or 0)
+    except (TypeError, ValueError):
+        size = 0
+    return not size or size > config.MAX_ZIP_BYTES / workers
+
+
+def run_batch(census: dict, queue: list[dict], validation: dict, minutes: float, on_progress=None,
+              workers: int | None = None, executor=None) -> dict:
+    """Validate queued resources until the budget ends, VALIDATE_WORKERS at a time, each in its own
+    process (the validation is CPU-bound). Returns ids done, observed schemas, drift.
+
+    `on_progress(out)` is called when a resource starts and when it ends, so that what was done
+    survives a job killed in the middle of a very large file.
     """
+    workers = max(1, workers or config.VALIDATE_WORKERS)
     tables = {t["id"]: (ds, t) for ds, t in tables_of(census)}
     deadline = time.monotonic() + minutes * 60
     done, observed, events = [], {}, []
-    for item in queue:
-        if time.monotonic() > deadline:
-            break
-        if item["id"] not in tables:
-            done.append(item["id"])     # gone from the portal since the census
-            continue
-        dataset, t = tables[item["id"]]
-        logger.info("validating %s/%s (%s)", dataset, t["name"], item["reason"])
-        prev = validation.get(t["id"])
-        # Marked before it starts: if the job is killed in the middle of a very large file, the
-        # next batch moves on instead of starting the same file again, and the file comes back
-        # next week (reason "error").
-        validation[t["id"]] = {**(prev or {"dataset": dataset}), "status": "error", "checked_at": now_iso(),
-                               "error": "did not finish within the batch time limit", "reason": item["reason"]}
+    pending, running = list(queue), {}
+
+    def progress(starting: list[str] = ()) -> None:
         if on_progress:
-            on_progress({"done": done + [item["id"]], "observed": observed, "drift": events})
-        entry, obs, ev = validate_one(dataset, t, prev)
-        validation[t["id"]] = {**entry, "reason": item["reason"]}
-        if obs:
-            observed[(dataset, t["id"])] = obs
-        events += ev
-        done.append(item["id"])
-        if on_progress:
-            on_progress({"done": done, "observed": observed, "drift": events})
+            on_progress({"done": done + [item["id"] for item, *_ in running.values()] + list(starting),
+                         "observed": observed, "drift": events})
+
+    if executor is None:
+        executor = _Inline() if workers == 1 else ProcessPoolExecutor(
+            workers, mp_context=multiprocessing.get_context("spawn"), initializer=_worker_init)
+    with executor as pool:
+        while True:
+            while pending and len(running) < workers and time.monotonic() <= deadline:
+                item = pending[0]
+                if item["id"] not in tables:
+                    done.append(pending.pop(0)["id"])     # gone from the portal since the census
+                    continue
+                dataset, t = tables[item["id"]]
+                alone = on_disk(t, workers)
+                if running and (alone or any(a for *_, a in running.values())):
+                    break                                 # waits for the disk to be free
+                pending.pop(0)
+                logger.info("validating %s/%s (%s)", dataset, t["name"], item["reason"])
+                prev = validation.get(t["id"])
+                # Marked before it starts: if the job is killed in the middle of a very large file, the
+                # next batch moves on instead of starting the same file again, and the file comes back
+                # next week (reason "error").
+                validation[t["id"]] = {**(prev or {"dataset": dataset}), "status": "error", "checked_at": now_iso(),
+                                       "error": "did not finish within the batch time limit", "reason": item["reason"]}
+                progress([item["id"]])
+                fut = pool.submit(validate_one, dataset, t, prev)
+                running[fut] = (item, dataset, t, prev, alone)
+            if not running:
+                break
+            finished, _ = wait(list(running), return_when=FIRST_COMPLETED)
+            for fut in finished:
+                item, dataset, t, prev, _ = running.pop(fut)
+                try:
+                    entry, obs, ev = fut.result()
+                except Exception as exc:          # the worker itself failed (e.g. out of memory)
+                    logger.warning("%s: %s", t["id"], safety.error_text(exc, 300))
+                    entry, obs, ev = ({"dataset": dataset, "checked_at": now_iso(), "status": "error",
+                                       "error": safety.error_text(exc, 300),
+                                       **({k: prev[k] for k in ("header", "summary", "validated_at", "sha256",
+                                                                "pass_history", "first_seen") if k in prev}
+                                          if prev else {})}, None, [])
+                validation[t["id"]] = {**entry, "reason": item["reason"]}
+                if obs:
+                    observed[(dataset, t["id"])] = obs
+                events += ev
+                done.append(item["id"])
+                progress()
     return {"done": done, "observed": observed, "drift": events}

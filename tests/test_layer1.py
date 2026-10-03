@@ -3,6 +3,7 @@
 import hashlib
 import io
 import json
+import time
 import zipfile
 from datetime import datetime, timedelta, timezone
 
@@ -36,6 +37,7 @@ REAL_PROBE = ckan.probe
 def no_probes(monkeypatch):
     """The survey's delivery probes never reach the network in tests."""
     monkeypatch.setattr(ckan, "probe", lambda url: {"error": "ConnectionError"})
+    monkeypatch.setattr(config, "VALIDATE_WORKERS", 1)     # validation in this process (fakes stay in place)
 
 
 @pytest.fixture
@@ -554,6 +556,85 @@ def test_a_file_killed_mid_validation_is_not_retried_in_the_same_chain(tmp_root,
     done, state = saved[-1]
     assert done == ["r1"] and state["r1"]["status"] == "error"
     assert "time limit" in state["r1"]["error"]
+
+
+def test_several_files_are_validated_at_once_and_a_large_spreadsheet_alone(tmp_root, monkeypatch):
+    # 03/10/2026: the validation, not the network, is the bottleneck (zips downloaded at 6-23 MB/s,
+    # validated at 1.4-1.9 MB/s), on a runner with 4 vCPUs.
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+
+    lock, now, peak, order = threading.Lock(), [0], [0], []
+
+    def fake(dataset, t, prev):
+        with lock:
+            now[0] += 1
+            peak[0] = max(peak[0], now[0])
+            order.append((t["id"], now[0]))
+        time.sleep(0.05)
+        with lock:
+            now[0] -= 1
+        return {"dataset": dataset, "status": "ok"}, None, []
+
+    monkeypatch.setattr(work, "validate_one", fake)
+    big = 2 * config.MAX_ZIP_BYTES
+    census_ = {"datasets": [{"name": "ds", "dictionaries": [], "tables": [
+        {"id": f"r{i}", "name": "T", "url": "u", "candidate": "csv", "size": 10} for i in range(6)]
+        + [{"id": "x", "name": "X", "url": "u", "candidate": "xlsx", "size": big}]}]}
+    queue = [{"id": f"r{i}", "dataset": "ds", "reason": "new"} for i in range(3)] + [{"id": "x", "dataset": "ds", "reason": "new"}] \
+        + [{"id": f"r{i}", "dataset": "ds", "reason": "new"} for i in range(3, 6)] + [{"id": "gone", "dataset": "ds", "reason": "new"}]
+    validation = {}
+    out = work.run_batch(census_, queue, validation, 5, workers=3, executor=ThreadPoolExecutor(3))
+    assert sorted(out["done"]) == sorted(["r0", "r1", "r2", "r3", "r4", "r5", "x", "gone"])
+    assert peak[0] == 3 and dict(order)["x"] == 1           # the spreadsheet that may not fit ran alone
+    assert all(validation[f"r{i}"]["status"] == "ok" for i in range(6))
+    # past the budget nothing new starts
+    assert work.run_batch(census_, queue, {}, -1, workers=3, executor=ThreadPoolExecutor(3))["done"] == []
+
+
+def test_a_zip_is_validated_while_it_downloads_in_the_order_read_from_disk(tmp_root, monkeypatch):
+    # stored as b.csv, a.csv: from disk the members are read by name, and the first header is the one
+    # compared for drift, so the streamed reading gives them in the same order
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.writestr("b.csv", b"B1;B2\n1;2\n")
+        zf.writestr("a.csv", b"A1;A2\n1;2\n")
+    serve(monkeypatch, {"https://p/t.zip": buf.getvalue()})
+    entry, observed, _ = work.validate_one("ds", {"id": "r1", "name": "T", "url": "https://p/t.zip"}, None)
+    assert entry["header"] == ["A1", "A2"] and entry["sha256"] == hashlib.sha256(buf.getvalue()).hexdigest()
+    assert entry["timing"]["network_s"] >= 0 and "download_s" not in entry["timing"]
+    assert tabular.member_order("n.zip/m.zip/b.csv") < tabular.member_order("n.zip-old.csv")
+
+
+def test_the_parallel_validation_runs_in_separate_processes(tmp_root):
+    # the real path: spawned processes, a file served over HTTP on this machine
+    import http.server
+    import threading
+
+    class Handler(http.server.BaseHTTPRequestHandler):
+        def do_GET(self):
+            body = b"ID;UF\n1;PE\n"
+            self.send_response(200)
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+        def log_message(self, *a):
+            pass
+
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    try:
+        url = f"http://127.0.0.1:{server.server_port}/t.csv"
+        census_ = {"datasets": [{"name": "ds-test-parallel", "dictionaries": [], "tables": [
+            {"id": f"p{i}", "name": "T", "url": url, "candidate": "csv", "size": 10} for i in range(3)]}]}
+        validation = {}
+        out = work.run_batch(census_, [{"id": f"p{i}", "dataset": "ds-test-parallel", "reason": "new"} for i in range(3)],
+                             validation, 5, workers=2)
+    finally:
+        server.shutdown()
+    assert sorted(out["done"]) == ["p0", "p1", "p2"]
+    assert all(validation[f"p{i}"]["status"] == "ok" and validation[f"p{i}"]["header"] == ["ID", "UF"] for i in range(3))
 
 
 def test_batch_validates_and_records_observed_schema(tmp_root, monkeypatch):

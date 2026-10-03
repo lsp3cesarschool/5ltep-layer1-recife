@@ -237,7 +237,9 @@ def network(tables: list[tuple[dict, dict | None]]) -> dict:
 
     end_to_end_mb_s: bytes over the total time per file (download and validation together, since a
     CSV is validated while it streams); zip_download_mb_s: zips alone, which are downloaded whole
-    before they are read (pure network); first_byte_s: median time until the server answered.
+    before they are read (pure network); first_byte_s: median time until the server answered;
+    network_share: of the time of the files that record it (since 03/10/2026), the share spent waiting
+    for the network, the rest being the validation; network_mb_s: bytes over that wait alone.
     """
     hosts: dict[str, dict] = {}
     for t, v in tables:
@@ -245,7 +247,8 @@ def network(tables: list[tuple[dict, dict | None]]) -> dict:
             continue
         h = hosts.setdefault(v.get("host") or urlparse(t.get("url") or "").hostname or "—",
                              {"files": 0, "bytes": 0, "seconds": 0.0, "zip_bytes": 0, "zip_seconds": 0.0,
-                              "first_byte": [], "failed_files": 0, "failures": Counter()})
+                              "first_byte": [], "failed_files": 0, "failures": Counter(),
+                              "net_bytes": 0, "net_seconds": 0.0, "net_total": 0.0})
         h["files"] += 1
         if v.get("status") == "error":
             h["failed_files"] += 1
@@ -257,6 +260,10 @@ def network(tables: list[tuple[dict, dict | None]]) -> dict:
         timing = v.get("timing") or {}
         if timing.get("first_byte_s") is not None:
             h["first_byte"].append(timing["first_byte_s"])
+        if timing.get("network_s") is not None:
+            h["net_bytes"] += v["bytes"]
+            h["net_seconds"] += timing["network_s"]
+            h["net_total"] += v["seconds"]
         if v.get("kind") == "zip" and timing.get("download_s"):
             h["zip_bytes"] += v["bytes"]
             h["zip_seconds"] += timing["download_s"]
@@ -268,12 +275,15 @@ def network(tables: list[tuple[dict, dict | None]]) -> dict:
                 "end_to_end_mb_s": round(h["bytes"] / h["seconds"] / 1e6, 2) if h["seconds"] else None,
                 "zip_download_mb_s": round(h["zip_bytes"] / h["zip_seconds"] / 1e6, 2) if h["zip_seconds"] else None,
                 "first_byte_s_median": fb[len(fb) // 2] if fb else None,
+                "network_share": round(h["net_seconds"] / h["net_total"], 3) if h["net_total"] else None,
+                "network_mb_s": round(h["net_bytes"] / h["net_seconds"] / 1e6, 2) if h["net_seconds"] else None,
                 "request_failures": dict(h["failures"])}
 
     total = {"files": 0, "bytes": 0, "seconds": 0.0, "zip_bytes": 0, "zip_seconds": 0.0, "first_byte": [],
-             "failed_files": 0, "failures": Counter()}
+             "failed_files": 0, "failures": Counter(), "net_bytes": 0, "net_seconds": 0.0, "net_total": 0.0}
     for h in hosts.values():
-        for k in ("files", "bytes", "seconds", "zip_bytes", "zip_seconds", "failed_files"):
+        for k in ("files", "bytes", "seconds", "zip_bytes", "zip_seconds", "failed_files", "net_bytes",
+                  "net_seconds", "net_total"):
             total[k] += h[k]
         total["first_byte"] += h["first_byte"]
         total["failures"].update(h["failures"])
