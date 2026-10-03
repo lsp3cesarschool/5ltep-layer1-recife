@@ -1,0 +1,110 @@
+{
+ "fields": [
+  {
+   "name": "logradouro_codigo",
+   "type": "number",
+   "description": "Código do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife.",
+   "declaredType": "Num",
+   "declaredSize": 16
+  },
+  {
+   "name": "logradouro_nome",
+   "type": "string",
+   "description": "Nome do Logradouro (com formato maiúsculo) que identifica as Vias de Circulação do espaço urbano do Recife.",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "logradouro_nomeoficial",
+   "type": "string",
+   "description": "Nome Oficial (de acordo com a Lei que o sancionou) do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife.",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "logradouro_nomeResumidoNome",
+   "type": "string",
+   "description": "Nome Resumido do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife. Utilizado nas representações dos mapas (pois está sintetisado).",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Indicador_Pavimentacao",
+   "type": "string",
+   "description": "Indicador do Serviço Público de Infraestrutura de Pavimentação",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "descricao_Indicador_Pav",
+   "type": "string",
+   "description": "Descrição do Indicador do Serviço Público de Infraestrutura de Pavimentação",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "geometry",
+   "type": "any",
+   "description": "Dados Geométricos dos Trechos de Logradouros",
+   "declaredType": "Geometry",
+   "mappingNote": "geometry: not checked"
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "44d512b3-fc47-4a86-b68f-5794def6cfa7",
+   "dictionary_name": "Dicionario de dados dos Trechos de Logradouros",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/1702c764-ec7a-4ef0-9861-8acd0e40c819/resource/44d512b3-fc47-4a86-b68f-5794def6cfa7/download/dicionario-de-dados-dos-trechos-de-logradouros.pdf",
+   "sha256": "4dcc92ee84205f5e62494858f610a4ea05c306453e491cd49bb80ac2f2621c24",
+   "oracle": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "exact_match": 0.0,
+    "levenshtein": 0.4311,
+    "missing_from_pdf": [
+     "cod_indica_pavimentacao",
+     "codbairro",
+     "codlogradouro",
+     "desc_indica_pavimentacao",
+     "indica_corredor_transporte",
+     "indica_perimetral",
+     "nomeBairro",
+     "nome_logradouro_concatenado",
+     "nome_logradouro_resumido",
+     "nome_oficial_logradouro"
+    ],
+    "not_in_file": [
+     "Indicador_Pavimentacao",
+     "descricao_Indicador_Pav",
+     "geometry",
+     "logradouro_codigo",
+     "logradouro_nome",
+     "logradouro_nomeResumidoNome",
+     "logradouro_nomeoficial"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

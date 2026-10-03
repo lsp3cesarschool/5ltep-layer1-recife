@@ -1,0 +1,229 @@
+{
+ "fields": [
+  {
+   "name": "numerocontrato",
+   "type": "string",
+   "description": "Número do contrato",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "anocontrato",
+   "type": "number",
+   "description": "Ano do contrato",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "description": "Órgão municipal responsável pela contratação",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "description": "Descrição da contratação tanto de conteúdo quanto de objetivo",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "origemcontrato",
+   "type": "string",
+   "description": "Tipo de compra que originou o contrato",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "sequencialcompra",
+   "type": "number",
+   "description": "Número sequencial do compra que originou o contrato",
+   "declaredType": "Num",
+   "declaredSize": 6
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "string",
+   "description": "CNPJ do fornecedor contratado",
+   "constraints": {
+    "maxLength": 14
+   },
+   "declaredType": "Char",
+   "declaredSize": 14
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "string",
+   "description": "CPF do fornecedor contratado",
+   "constraints": {
+    "maxLength": 11
+   },
+   "declaredType": "Char",
+   "declaredSize": 11
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "description": "Razão social ou nome do fornecedor contratado",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "logradouroendcontratado",
+   "type": "string",
+   "description": "Logradouro do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "numeroendcontratado",
+   "type": "string",
+   "description": "Número do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 9
+   },
+   "declaredType": "Char",
+   "declaredSize": 9
+  },
+  {
+   "name": "complementoendcontratado",
+   "type": "string",
+   "description": "Complemento do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 21
+   },
+   "declaredType": "Char",
+   "declaredSize": 21
+  },
+  {
+   "name": "bairroendcontratado",
+   "type": "string",
+   "description": "Bairro do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  },
+  {
+   "name": "cidadeendcontratado",
+   "type": "string",
+   "description": "Cidade do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "estadoendcontratado",
+   "type": "string",
+   "description": "Estado do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "datainiciovigencia",
+   "type": "date",
+   "description": "Data de início de vigência. o prazo de vigência é o período de duração do contrato que não pode ultrapassar o respectivo crédito orçamentário, exceto em casos especiais previstos na Lei.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "datafimvigencia",
+   "type": "date",
+   "description": "Data de fim de vigência.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "valorcontrato1",
+   "type": "number",
+   "description": "Valor do Contrato quando o contrato não tem a solicitação de compra",
+   "declaredType": "Num"
+  },
+  {
+   "name": "valorcontrato2",
+   "type": "number",
+   "description": "Valor do Contrato quando o contrato tem a solicitação de compra",
+   "declaredType": "Num"
+  },
+  {
+   "name": "situacaocontrato",
+   "type": "string",
+   "description": "Última Situação do Contrato – pode ser ‘Cadastrado’, ‘Encerrado’ ou ‘Cancelado’",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "c8a653fc-44ce-4157-bcc8-e14a7f193cde",
+   "dictionary_name": "Dicionário de Dados - Contratos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/c8a653fc-44ce-4157-bcc8-e14a7f193cde/download/dicionario-de-dados-contratos.pdf",
+   "sha256": "1efb654702f5ffe2e750de22343c42d8107e800185e82794fcebc8215d577716",
+   "oracle": {
+    "recall": 0.5,
+    "precision": 0.25,
+    "exact_match": 0.5,
+    "levenshtein": 0.7595,
+    "missing_from_pdf": [
+     "num_apostilamento",
+     "num_contrato",
+     "situacao_apostilamento",
+     "tipo_apostilamento",
+     "valor_apostilamento"
+    ],
+    "not_in_file": [
+     "anocontrato",
+     "bairroendcontratado",
+     "cidadeendcontratado",
+     "complementoendcontratado",
+     "datafimvigencia",
+     "datainiciovigencia",
+     "estadoendcontratado",
+     "logradouroendcontratado",
+     "numerocontrato",
+     "numeroendcontratado",
+     "origemcontrato",
+     "sequencialcompra",
+     "situacaocontrato",
+     "valorcontrato1",
+     "valorcontrato2"
+    ]
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}
