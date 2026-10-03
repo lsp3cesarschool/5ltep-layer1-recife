@@ -235,11 +235,11 @@ def coverage(tables: list[tuple[dict, dict | None]]) -> dict:
 def network(tables: list[tuple[dict, dict | None]]) -> dict:
     """How fast and how reliably each server delivered the files (from the validation records).
 
-    end_to_end_mb_s: bytes over the total time per file (download and validation together, since a
-    CSV is validated while it streams); zip_download_mb_s: zips alone, which are downloaded whole
-    before they are read (pure network); first_byte_s: median time until the server answered;
-    network_share: of the time of the files that record it (since 03/10/2026), the share spent waiting
-    for the network, the rest being the validation; network_mb_s: bytes over that wait alone.
+    end_to_end_mb_s: bytes over the total time per file (download and validation together);
+    zip_download_mb_s: zips downloaded whole before they are read (pure network); first_byte_s: median
+    time until the server answered; network_share: of the time of the files that record it (since
+    03/10/2026), the share spent on the network, the rest being the validation; network_mb_s: bytes
+    over that time alone.
     """
     hosts: dict[str, dict] = {}
     for t, v in tables:

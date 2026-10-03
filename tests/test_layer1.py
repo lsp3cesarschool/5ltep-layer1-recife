@@ -549,6 +549,7 @@ def test_a_file_killed_mid_validation_is_not_retried_in_the_same_chain(tmp_root,
         raise KeyboardInterrupt      # stands for the job being killed by its time limit
 
     monkeypatch.setattr(work, "validate_one", killed)
+    serve(monkeypatch, {"https://p/t.csv": b"ID;UF\n1;PE\n"})
     validation = {}
     with pytest.raises(KeyboardInterrupt):
         work.run_batch(_census_one(), [{"id": "r1", "dataset": "ds", "reason": "new"}], validation, 5,
@@ -559,14 +560,16 @@ def test_a_file_killed_mid_validation_is_not_retried_in_the_same_chain(tmp_root,
 
 
 def test_several_files_are_validated_at_once_and_a_large_spreadsheet_alone(tmp_root, monkeypatch):
-    # 03/10/2026: the validation, not the network, is the bottleneck (zips downloaded at 6-23 MB/s,
-    # validated at 1.4-1.9 MB/s), on a runner with 4 vCPUs.
+    # 03/10/2026: the validation of a zip is CPU-bound (downloaded at 6-23 MB/s, validated at 1.4-1.9
+    # MB/s), on a runner with 4 vCPUs.
+    import tempfile
     import threading
     from concurrent.futures import ThreadPoolExecutor
 
     lock, now, peak, order = threading.Lock(), [0], [0], []
+    monkeypatch.setattr(work, "_fetch", lambda url, limit: {"dir": tempfile.mkdtemp(), "digest": {}})
 
-    def fake(dataset, t, prev):
+    def fake(dataset, t, prev, local=None):
         with lock:
             now[0] += 1
             peak[0] = max(peak[0], now[0])
@@ -590,6 +593,53 @@ def test_several_files_are_validated_at_once_and_a_large_spreadsheet_alone(tmp_r
     assert all(validation[f"r{i}"]["status"] == "ok" for i in range(6))
     # past the budget nothing new starts
     assert work.run_batch(census_, queue, {}, -1, workers=3, executor=ThreadPoolExecutor(3))["done"] == []
+
+
+def test_one_connection_per_server_and_the_validation_from_disk(tmp_root, monkeypatch):
+    # 03/10/2026: three connections at once to ANEEL's server made each one 5 to 10 times slower
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+
+    lock, open_, peak = threading.Lock(), {}, {}
+    body = b"ID;UF\n1;PE\n"
+
+    def fetch(url, folder, limit):
+        host = url.split("/")[2]
+        with lock:
+            open_[host] = open_.get(host, 0) + 1
+            peak[host] = max(peak.get(host, 0), open_[host])
+            peak["all"] = max(peak.get("all", 0), sum(open_.values()))
+        time.sleep(0.05)
+        (folder / "resource").write_bytes(body)
+        with lock:
+            open_[host] -= 1
+        return {"timing": {"download_s": 0.05, "network_s": 0.05}, "http": {}, "bytes": len(body),
+                "sha256": hashlib.sha256(body).hexdigest()}
+
+    monkeypatch.setattr(tabular, "fetch", fetch)
+    urls = [f"https://a/{i}.csv" for i in range(4)] + [f"https://b/{i}.csv" for i in range(2)]
+    census_ = {"datasets": [{"name": "ds", "dictionaries": [], "tables": [
+        {"id": f"r{i}", "name": "T", "url": u, "candidate": "csv", "size": 10} for i, u in enumerate(urls)]}]}
+    validation = {}
+    out = work.run_batch(census_, [{"id": f"r{i}", "dataset": "ds", "reason": "new"} for i in range(6)],
+                         validation, 5, workers=3, executor=ThreadPoolExecutor(3))
+    assert sorted(out["done"]) == [f"r{i}" for i in range(6)]
+    assert peak["a"] == 1 and peak["b"] == 1 and peak["all"] == 2
+    assert all(validation[f"r{i}"]["status"] == "ok" and validation[f"r{i}"]["header"] == ["ID", "UF"] for i in range(6))
+    assert validation["r0"]["seconds"] >= 0.05 and validation["r0"]["timing"]["network_s"] == 0.05
+
+
+def test_a_file_larger_than_its_share_of_the_disk_is_read_over_the_network(tmp_root, monkeypatch):
+    body = b"ID;UF\n" + b"1;PE\n" * 20
+    serve(monkeypatch, {"https://p/t.csv": body})
+    monkeypatch.setattr(config, "MAX_ZIP_BYTES", 2 * len(body) - 2)      # share: just under the file
+    validation = {}
+    census_ = _census_one()
+    census_["datasets"][0]["tables"][0]["size"] = None                    # the portal does not say
+    out = work.run_batch(census_, [{"id": "r1", "dataset": "ds", "reason": "new"}], validation, 5)
+    assert out["done"] == ["r1"] and validation["r1"]["status"] == "ok"
+    assert validation["r1"]["sha256"] == hashlib.sha256(body).hexdigest()
+    assert "download_s" not in validation["r1"]["timing"]                   # read while it streamed
 
 
 def test_a_zip_is_validated_while_it_downloads_in_the_order_read_from_disk(tmp_root, monkeypatch):

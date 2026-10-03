@@ -65,9 +65,9 @@ DELIVERY_PROBES = _env("DELIVERY_PROBES", 3)          # files per server asked f
 # --- Validation ---------------------------------------------------------------
 # Time budget of one batch (the GitHub job limit is 6 h; the rest of the job needs some minutes).
 VALIDATE_MAX_MINUTES = _env("VALIDATE_MAX_MINUTES", 270.0)
-# Files validated at the same time, each in its own process: the validation (cell by cell) is the
-# bottleneck, not the network (03/10/2026: zips downloaded at 6-23 MB/s, validated at 1.4-1.9 MB/s),
-# and the runner has 4 vCPUs. Also the downloads open at once on a portal (polite: the survey uses 4).
+# Files validated at the same time, each in its own process, from the disk (the validation of a zip
+# is CPU-bound: 03/10/2026, downloaded at 6-23 MB/s, validated at 1.4-1.9 MB/s; the runner has 4
+# vCPUs). Downloads are one at a time per server (work.run_batch): three at once made ANEEL's slower.
 VALIDATE_WORKERS = _env("VALIDATE_WORKERS", 3)
 # A resource unchanged on the portal is validated again after this many days anyway, so that
 # every file is re-checked at least once a month even when the portal gives no change signal.

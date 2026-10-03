@@ -577,6 +577,11 @@ class _DiskFull(Exception):
     pass
 
 
+class TooLarge(Exception):
+    """A file that does not fit in its share of the runner's disk (`fetch`): it is read over the
+    network instead."""
+
+
 # --- the resource ---------------------------------------------------------------------
 
 @dataclass
@@ -605,14 +610,7 @@ def open_resource(url: str, max_disk_bytes: int | None = None, stream_zip: bool 
     resp.raw.decode_content = True
     hashing = HashingReader(resp.raw)
     buffered = io.BufferedReader(hashing, PEEK * 4)
-    h = resp.headers
-    # Change signals of the server, compared with a HEAD request in later runs (work.py).
-    digest: dict = {"timing": timing,
-                    "http": {"etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
-                             "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None,
-                             # how the file was delivered (the dashboard's file delivery findings)
-                             "content_type": ckan.media_type(h.get("Content-Type")),
-                             "served_by": urlparse(getattr(resp, "url", None) or url).hostname}}
+    digest: dict = {"timing": timing, "http": _http(resp, url)}
     try:
         sample = buffered.peek(PEEK)[:PEEK]
         kind = sniff(sample)
@@ -661,6 +659,59 @@ def open_resource(url: str, max_disk_bytes: int | None = None, stream_zip: bool 
             yield from _serve(Source(single(), digest))
     finally:
         resp.close()
+
+
+def _http(resp, url: str) -> dict:
+    h = resp.headers
+    # Change signals of the server, compared with a HEAD request in later runs (work.py).
+    return {"etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
+            "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None,
+            # how the file was delivered (the dashboard's file delivery findings)
+            "content_type": ckan.media_type(h.get("Content-Type")),
+            "served_by": urlparse(getattr(resp, "url", None) or url).hostname}
+
+
+def fetch(url: str, folder: Path, limit: float) -> dict:
+    """Download a file whole to `folder`/resource, as fast as the server sends it (one connection),
+    so that it is validated from disk while the next file downloads. Returns the digest (sha256,
+    bytes, http, timing); TooLarge when it does not fit in `limit` bytes."""
+    t0 = time.monotonic()
+    resp = ckan.get(url, stream=True, timeout=config.HTTP_TIMEOUT_S)
+    try:
+        timing = {"first_byte_s": round(time.monotonic() - t0, 2)}
+        digest = {"timing": timing, "http": _http(resp, url)}
+        if (digest["http"]["content_length"] or 0) > limit:
+            raise TooLarge(url)
+        resp.raw.decode_content = True
+        hashing = HashingReader(resp.raw)
+        buffered = io.BufferedReader(hashing, 1 << 20)
+        with open(folder / "resource", "wb") as fh:
+            while chunk := buffered.read(1 << 20):
+                fh.write(chunk)
+                if hashing.size > limit:
+                    raise TooLarge(url)
+        timing["download_s"] = round(time.monotonic() - t0, 2)
+        timing["network_s"] = round(hashing.wait, 2)
+        return {**digest, "sha256": hashing.sha.hexdigest(), "bytes": hashing.size}
+    finally:
+        resp.close()
+
+
+@contextlib.contextmanager
+def open_local(path: Path, digest: dict):
+    """Yields a Source over a file downloaded by `fetch` (its digest already complete), read from
+    disk; temporary files go next to it."""
+    _decode_errors[0] = 0
+    digest = {**digest}
+    with open(path, "rb") as fh:
+        kind = sniff(fh.read(PEEK))
+    digest["kind"] = kind
+    if kind in DISK_KINDS:
+        yield from _serve(Source(_file_tables(path, kind, None, str(path.parent), 0, digest), digest))
+        return
+    with open(path, "rb") as fh:
+        buffered = io.BufferedReader(fh, PEEK * 4)
+        yield from _serve(Source((t for t in [_stream_table(buffered, kind, None)]), digest))
 
 
 def peek_header(url: str, rows: int = 50, max_disk_bytes: int | None = None,
