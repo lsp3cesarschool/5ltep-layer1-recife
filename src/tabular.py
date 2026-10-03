@@ -6,8 +6,10 @@ The format is decided by the file's *content*, not by the format the portal decl
                    computed; nothing goes to disk;
   ZIP              downloaded to a temporary file (its directory is at the end); every member that
                    is a table is read (CSV/TXT, JSON, XML, spreadsheets, Parquet, and zips inside
-                   the zip, one level deep); a zip with no table inside is not tabular data;
-  XLSX, XLS, ODS   spreadsheets, downloaded to a temporary file; each sheet is a table;
+                   the zip); a zip with no table inside is not tabular data. A zip larger than the
+                   runner's disk is read as it streams instead, member by member (local headers);
+  XLSX, XLS, ODS   spreadsheets, downloaded to a temporary file; each sheet is a table, its rows read
+                   one at a time (XLSX and ODS) or a sheet at a time (XLS, at most 65,536 rows);
   Parquet          downloaded to a temporary file and read in batches.
 
 Every format becomes the same thing for the rest of the pipeline: a Table whose rows are lists of
@@ -271,8 +273,7 @@ def _xlsx_tables(path: Path, member: str | None):
 def _xls_tables(path: Path, member: str | None):
     import xlrd
 
-    if path.stat().st_size > config.MAX_SHEET_BYTES:
-        raise NotTabular("spreadsheet too large to read in memory", "too-large")
+    # The format holds at most 65,536 rows x 256 columns per sheet: a sheet always fits in memory.
     # Files saved by tools other than Excel often trip xlrd's strict check of the compound document
     # ("Workbook corruption: seen[2] == 4") while their cells read fine.
     book = xlrd.open_workbook(str(path), on_demand=True, ignore_workbook_corruption=True)
@@ -281,16 +282,80 @@ def _xls_tables(path: Path, member: str | None):
         yield Table(_name(member, sheet.name), None, None, rows, fmt="xls")
 
 
-def _ods_tables(path: Path, member: str | None):
-    import pandas as pd
+ODF_TABLE = "{urn:oasis:names:tc:opendocument:xmlns:table:1.0}"
+ODF_OFFICE = "{urn:oasis:names:tc:opendocument:xmlns:office:1.0}"
+ODF_TEXT_P = "{urn:oasis:names:tc:opendocument:xmlns:text:1.0}p"
 
-    if path.stat().st_size > config.MAX_SHEET_BYTES:
-        raise NotTabular("spreadsheet too large to read in memory", "too-large")
-    sheets = pd.read_excel(path, engine="odf", sheet_name=None, header=None, dtype=object)
-    for name, frame in sheets.items():
-        rows = ([cell(None if (isinstance(v, float) and v != v) else v) for v in r]
-                for r in frame.itertuples(index=False, name=None))
-        yield Table(_name(member, str(name)), None, None, rows, fmt="ods")
+
+def _ods_value(c) -> str:
+    kind = c.get(f"{ODF_OFFICE}value-type")
+    if kind in ("float", "percentage", "currency") and c.get(f"{ODF_OFFICE}value") not in (None, ""):
+        return cell(float(c.get(f"{ODF_OFFICE}value")))
+    if kind == "boolean":
+        return (c.get(f"{ODF_OFFICE}boolean-value") or "").lower()
+    if kind in ("date", "time"):
+        return c.get(f"{ODF_OFFICE}{kind}-value") or ""
+    return "\n".join("".join(p.itertext()) for p in c if p.tag == ODF_TEXT_P)
+
+
+def _ods_tables(path: Path, member: str | None):
+    """Each sheet of an ODS, its rows read one at a time from content.xml (never the whole sheet in
+    memory). Repeated empty cells and rows (how ODS fills a sheet to its edge) are not materialised;
+    rows are padded to the header's width with empty cells, as a CSV export would."""
+    from defusedxml.ElementTree import iterparse
+
+    with zipfile.ZipFile(path) as zf, zf.open("content.xml") as fh:
+        events = iterparse(fh, events=("start", "end"))
+        stack: list = []
+
+        def rows_of(table_el):
+            width, empty_rows = None, 0
+            for ev, el in events:
+                if ev == "start":
+                    stack.append(el)
+                    continue
+                stack.pop()
+                if el is table_el:
+                    return                                  # trailing empty rows are dropped
+                if el.tag != f"{ODF_TABLE}table-row":
+                    continue
+                values, empty_cells = [], 0
+                for c in el:
+                    if c.tag in (f"{ODF_TABLE}table-cell", f"{ODF_TABLE}covered-table-cell"):
+                        n = int(c.get(f"{ODF_TABLE}number-columns-repeated") or 1)
+                        v = _ods_value(c)
+                        if v == "":
+                            empty_cells += n
+                        else:
+                            values += [""] * empty_cells + [v] * n
+                            empty_cells = 0
+                repeat = int(el.get(f"{ODF_TABLE}number-rows-repeated") or 1)
+                if stack:
+                    stack[-1].remove(el)                    # free the row once read
+                if not values:
+                    empty_rows += repeat
+                    continue
+                if width is None:
+                    width = len(values)
+                for _ in range(empty_rows):
+                    yield [""] * width
+                empty_rows = 0
+                values += [""] * (width - len(values))
+                for _ in range(repeat):
+                    yield list(values)
+
+        for ev, el in events:
+            if ev == "end":
+                stack.pop()
+                continue
+            stack.append(el)
+            if el.tag == f"{ODF_TABLE}table":
+                rows = rows_of(el)
+                yield Table(_name(member, el.get(f"{ODF_TABLE}name") or ""), None, None, rows, fmt="ods")
+                for _ in rows:                              # rows the caller did not read
+                    pass
+                if stack:                                   # the sheet ended: free it
+                    stack[-1].remove(el)
 
 
 def _parquet_tables(path: Path, member: str | None):
@@ -350,7 +415,7 @@ def _zip_tables(path: Path, outer: str | None, tmp: str, depth: int, digest: dic
     with zipfile.ZipFile(path) as zf:
         infos = [i for i in zf.infolist() if not i.is_dir() and "__MACOSX/" not in i.filename
                  and i.filename.lower().endswith(TABLE_EXTENSIONS)]
-        if depth > 0:                                       # a zip inside a zip: one level only
+        if depth >= config.ZIP_MAX_DEPTH:                   # zips inside zips, up to a few levels
             infos = [i for i in infos if not i.filename.lower().endswith(".zip")]
         found = 0
         for info in sorted(infos, key=lambda i: i.filename):
@@ -380,6 +445,117 @@ def _zip_tables(path: Path, outer: str | None, tmp: str, depth: int, digest: dic
             raise NotTabular(f"zip without tables (first entries: {names})", "no-tables")
 
 
+class _ChunkReader(io.RawIOBase):
+    """A file-like object over an iterator of byte chunks."""
+
+    def __init__(self, chunks):
+        self.it, self.buf = iter(chunks), b""
+
+    def readable(self) -> bool:
+        return True
+
+    def readinto(self, b) -> int:
+        while not self.buf:
+            try:
+                self.buf = next(self.it)
+            except StopIteration:
+                return 0
+        n = min(len(b), len(self.buf))
+        b[:n], self.buf = self.buf[:n], self.buf[n:]
+        return n
+
+
+def _drain(stream) -> None:
+    try:
+        while stream.read(1 << 20):
+            pass
+    except ValueError:
+        pass                    # a text wrapper that read to the end closed it
+
+
+def _first_member(sample: bytes) -> str:
+    """Name of the first entry of a zip, from its first local header."""
+    if not sample.startswith(b"PK\x03\x04") or len(sample) < 30:
+        return ""
+    n = int.from_bytes(sample[26:28], "little")
+    return sample[30:30 + n].decode("utf-8", errors="replace")
+
+
+def _is_office(first_member: str) -> bool:
+    """An XLSX/ODS (or another office document) rather than a plain zip of files."""
+    return first_member in ("mimetype", "[Content_Types].xml") \
+        or first_member.startswith(("xl/", "_rels/", "docProps/", "META-INF/"))
+
+
+def _zip_stream_tables(stream, outer: str | None, tmp: str, depth: int, digest: dict):
+    """A zip read as it streams, member by member, from the local header of each: for a zip larger
+    than the runner's disk. Members are read in the order they are stored."""
+    from stream_unzip import stream_unzip
+
+    found = 0
+    for i, (raw_name, _size, chunks) in enumerate(stream_unzip(iter(lambda: stream.read(1 << 16), b""))):
+        try:
+            entry = raw_name.decode("utf-8")
+        except UnicodeDecodeError:
+            entry = raw_name.decode("cp437")
+        if i == 0 and outer is None and _is_office(entry):
+            raise NotTabular("a spreadsheet larger than the runner's disk", "too-large")
+        name = f"{outer}/{entry}" if outer else entry
+        member = io.BufferedReader(_ChunkReader(chunks), PEEK * 4)
+        try:
+            lower = entry.lower()
+            if entry.endswith("/") or "__MACOSX/" in entry or not lower.endswith(TABLE_EXTENSIONS) \
+                    or (lower.endswith(".zip") and depth >= config.ZIP_MAX_DEPTH):
+                continue
+            try:
+                kind = sniff(member.peek(PEEK)[:PEEK])
+            except NotTabular:
+                continue
+            if kind in ("csv", "json", "xml"):
+                found += 1
+                yield _stream_table(member, kind, name)
+                continue
+            if kind == "zip" and not _is_office(_first_member(member.peek(PEEK))):
+                for table in _zip_stream_tables(member, name, tmp, depth + 1, digest):
+                    found += 1
+                    yield table
+                continue
+            inner = Path(tmp) / f"member-{depth}-{found}"
+            with open(inner, "wb") as fh:
+                while chunk := member.read(1 << 20):
+                    fh.write(chunk)
+            for table in _file_tables(inner, kind, name, tmp, depth + 1, digest):
+                found += 1
+                yield table
+            inner.unlink(missing_ok=True)
+        finally:
+            _drain(member)      # each member must be read to its end before the next one
+    if outer is None:
+        digest["members"] = found
+        if not found:
+            raise NotTabular("zip without tables", "no-tables")
+
+
+def _streamed_zip(buffered, hashing, tmp: str, digest: dict):
+    digest["streamed"] = True
+    yield from _zip_stream_tables(buffered, None, tmp, 0, digest)
+    _drain(buffered)            # the central directory, so that the hash covers every byte
+    digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind="zip")
+
+
+def _serve(source):
+    """Hand the source over; when the caller is done (even halfway, as when only the header is read),
+    close its readers before the temporary files go away."""
+    try:
+        yield source
+    finally:
+        source.tables.close()
+
+
+class _DiskFull(Exception):
+    pass
+
+
 # --- the resource ---------------------------------------------------------------------
 
 @dataclass
@@ -394,7 +570,9 @@ DISK_KINDS = ("zip", "parquet", "xls")
 @contextlib.contextmanager
 def open_resource(url: str, max_disk_bytes: int | None = None):
     """Yields a Source; `digest` is complete once every table has been read to the end. A format that
-    must go to disk (zip, spreadsheets, Parquet) larger than `max_disk_bytes` is not downloaded."""
+    must go to disk (zip, spreadsheets, Parquet) is downloaded to a temporary file when it fits in
+    `max_disk_bytes` (the runner's disk); a zip that does not is read as it streams; a Parquet or a
+    spreadsheet that does not cannot be read on this machine ("too-large")."""
     limit = max_disk_bytes or config.MAX_ZIP_BYTES
     _decode_errors[0] = 0
     t0 = time.monotonic()
@@ -411,21 +589,38 @@ def open_resource(url: str, max_disk_bytes: int | None = None):
                     "http": {"etag": h.get("ETag"), "last_modified": h.get("Last-Modified"),
                              "content_length": int(h["Content-Length"]) if (h.get("Content-Length") or "").isdigit() else None}}
     try:
-        kind = sniff(buffered.peek(PEEK)[:PEEK])
-        if kind in DISK_KINDS:
-            length = digest["http"]["content_length"] or 0
-            if length > limit:
-                raise NotTabular(f"file of {length / 1e9:.1f} GB is above the limit", "too-large")
+        sample = buffered.peek(PEEK)[:PEEK]
+        kind = sniff(sample)
+        length = digest["http"]["content_length"] or 0
+        streamable = kind == "zip" and not _is_office(_first_member(sample))
+        if kind in DISK_KINDS and length > limit and not streamable:
+            raise NotTabular(f"file of {length / 1e9:.1f} GB is larger than the runner's disk", "too-large")
+        if kind in DISK_KINDS and length > limit:
+            with tempfile.TemporaryDirectory() as tmp:
+                yield from _serve(Source(_streamed_zip(buffered, hashing, tmp, digest), digest))
+        elif kind in DISK_KINDS:
             with tempfile.TemporaryDirectory() as tmp:
                 path = Path(tmp) / "resource"
-                with open(path, "wb") as fh:
-                    while chunk := buffered.read(1 << 20):
-                        fh.write(chunk)
-                        if hashing.size > limit:
-                            raise NotTabular("file larger than the limit", "too-large")
-                timing["download_s"] = round(time.monotonic() - t0, 2)
-                digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind=kind)
-                yield Source(_file_tables(path, kind, None, tmp, 0, digest), digest)
+                try:
+                    with open(path, "wb") as fh:
+                        while chunk := buffered.read(1 << 20):
+                            fh.write(chunk)
+                            if hashing.size > limit:
+                                raise _DiskFull
+                except _DiskFull:
+                    if not streamable:
+                        raise NotTabular("file larger than the runner's disk", "too-large")
+                    path.unlink(missing_ok=True)
+                    # the server gave no size and the zip does not fit: read it again, as a stream
+                    resp.close()
+                    resp = ckan.get(url, stream=True, timeout=config.HTTP_TIMEOUT_S)
+                    resp.raw.decode_content = True
+                    hashing = HashingReader(resp.raw)
+                    yield from _serve(Source(_streamed_zip(io.BufferedReader(hashing, PEEK * 4), hashing, tmp, digest), digest))
+                else:
+                    timing["download_s"] = round(time.monotonic() - t0, 2)
+                    digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind=kind)
+                    yield from _serve(Source(_file_tables(path, kind, None, tmp, 0, digest), digest))
         else:
             def single():
                 yield _stream_table(buffered, kind, None)
@@ -436,7 +631,7 @@ def open_resource(url: str, max_disk_bytes: int | None = None):
                 except ValueError:
                     pass       # a text wrapper that read to the end closed it: every byte was hashed
                 digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind=kind)
-            yield Source(single(), digest)
+            yield from _serve(Source(single(), digest))
     finally:
         resp.close()
 

@@ -975,6 +975,71 @@ def test_zip_inside_zip_and_zip_without_tables(monkeypatch):
     assert exc.value.kind == "no-tables"
 
 
+def _ods(sheets: dict[str, str]) -> bytes:
+    """An ODS built by hand: content.xml with the rows given (already in ODS markup)."""
+    ns = ('xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+          'xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" '
+          'xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"')
+    body = "".join(f'<table:table table:name="{n}">{rows}</table:table>' for n, rows in sheets.items())
+    content = f'<office:document-content {ns}><office:body><office:spreadsheet>{body}</office:spreadsheet></office:body></office:document-content>'
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as zf:
+        zf.writestr("mimetype", "application/vnd.oasis.opendocument.spreadsheet")
+        zf.writestr("content.xml", content)
+    return buf.getvalue()
+
+
+def test_ods_is_read_row_by_row(monkeypatch):
+    c = lambda v: f"<table:table-cell><text:p>{v}</text:p></table:table-cell>"
+    empty = lambda n: f'<table:table-cell table:number-columns-repeated="{n}"/>'
+    rows = ("<table:table-row>" + c("A") + c("B") + c("C") + empty(16000) + "</table:table-row>"
+            + '<table:table-row><table:table-cell office:value-type="float" office:value="1.0"/>'
+            + '<table:table-cell office:value-type="date" office:date-value="2022-03-01"/>'
+            + '<table:table-cell office:value-type="boolean" office:boolean-value="TRUE"/></table:table-row>'
+            + '<table:table-row table:number-rows-repeated="2">' + empty(5) + "</table:table-row>"
+            + "<table:table-row>" + c("x") + "</table:table-row>"
+            + '<table:table-row table:number-rows-repeated="1048000">' + empty(1024) + "</table:table-row>")
+    serve(monkeypatch, {"u": _ods({"S1": rows, "S2": "<table:table-row>" + c("Z") + "</table:table-row>"})})
+    with tabular.open_resource("u") as src:
+        tables = iter(src.tables)
+        first = next(tables)
+        assert list(first.rows) == [["A", "B", "C"], ["1", "2022-03-01", "true"], ["", "", ""], ["", "", ""], ["x", "", ""]]
+        second = next(tables)
+        assert second.member == "S2" and list(second.rows) == [["Z"]]
+
+
+def test_a_zip_larger_than_the_disk_is_read_as_it_streams(monkeypatch):
+    import openpyxl
+
+    wb = openpyxl.Workbook()
+    wb.active.title = "P"
+    wb.active.append(["X"])
+    wb.active.append([7])
+    xlsx = io.BytesIO()
+    wb.save(xlsx)
+    data = _zip({"a.csv": b"a;b\n1;2\n", "n.zip": _zip({"m.zip": _zip({"b.csv": b"c\n3\n"})}),
+                 "p.xlsx": xlsx.getvalue(), "leia.pdf": b"%PDF-1"})
+    monkeypatch.setattr(config, "MAX_ZIP_BYTES", 100)
+    for headers in ({"Content-Length": str(len(data))}, {}):     # size known, or found out while downloading
+        monkeypatch.setattr(tabular.ckan, "get", lambda url, **kw: FakeResponse(data, dict(headers)))
+        with tabular.open_resource("u") as src:
+            out = [(t.member, list(t.rows)) for t in src.tables]
+        assert out == [("a.csv", [["a", "b"], ["1", "2"]]), ("n.zip/m.zip/b.csv", [["c"], ["3"]]),
+                       ("p.xlsx#P", [["X"], ["7"]])]
+        assert src.digest["streamed"] and src.digest["sha256"] == hashlib.sha256(data).hexdigest()
+    # a spreadsheet larger than the disk cannot be read on this machine: said so, not dropped silently
+    monkeypatch.setattr(tabular.ckan, "get", lambda url, **kw: FakeResponse(xlsx.getvalue()))
+    with pytest.raises(tabular.NotTabular) as exc:
+        with tabular.open_resource("u") as src:
+            list(src.tables)
+    assert exc.value.kind == "too-large"
+
+
+def test_zips_inside_zips_are_read_several_levels_deep(monkeypatch):
+    out, _ = _read_all(monkeypatch, _zip({"1.zip": _zip({"2.zip": _zip({"3.csv": b"a\n1\n"})})}))
+    assert out == [("csv", "1.zip/2.zip/3.csv", [["a"], ["1"]])]
+
+
 def test_a_page_instead_of_the_table_is_a_link_failure(monkeypatch):
     serve(monkeypatch, {"h": b"<!DOCTYPE html><html>erro</html>"})
     with pytest.raises(tabular.NotTabular) as exc:

@@ -61,8 +61,10 @@ VALIDATE_MAX_MINUTES = _env("VALIDATE_MAX_MINUTES", 270.0)
 # every file is re-checked at least once a month even when the portal gives no change signal.
 ROTATION_DAYS = _env("ROTATION_DAYS", 28)
 SAMPLE_ROWS = _env("SAMPLE_ROWS", 5000)            # rows used to infer the observed types
-MAX_ZIP_BYTES = _env("MAX_ZIP_BYTES", 12_000_000_000)  # zip files must go to disk (runner: ~14 GB free)
-MAX_SHEET_BYTES = _env("MAX_SHEET_BYTES", 300_000_000)  # XLS and ODS are read whole, in memory
+# Zips, spreadsheets and Parquet are read from disk when they fit (runner: ~14 GB free); a zip that does
+# not is read as it streams, member by member; a Parquet or a spreadsheet that does not cannot be read.
+MAX_ZIP_BYTES = _env("MAX_ZIP_BYTES", 12_000_000_000)
+ZIP_MAX_DEPTH = _env("ZIP_MAX_DEPTH", 5)    # zips inside zips (a guard against a zip that nests itself)
 
 ERROR_ROWS_KEPT = _env("ERROR_ROWS_KEPT", 5)        # row numbers kept per field and error kind (never values)
 # A resource conforms when every declared field is in the file, the file has no undeclared
