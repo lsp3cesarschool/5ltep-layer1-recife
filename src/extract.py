@@ -24,20 +24,24 @@ from src import ckan, config, pdf_extract, safety, schemas
 logger = logging.getLogger(__name__)
 
 
-def header_for(linked: list[str], validation: dict) -> tuple[list[str] | None, bool]:
-    """(most common header among the linked resources, every linked resource already validated)."""
-    headers = [tuple(validation[r]["header"]) for r in linked if (validation.get(r) or {}).get("header")]
-    all_done = all(r in validation for r in linked)
+def header_for(linked: list[str], validation: dict, peeked: dict | None = None) -> tuple[list[str] | None, bool]:
+    """(most common header among the linked resources, every linked resource already validated).
+    A resource not validated yet counts with the header the survey read (`peeked`)."""
+    peeked = peeked or {}
+    headers = [tuple((validation.get(r) or {}).get("header") or peeked.get(r) or ()) for r in linked]
+    headers = [h for h in headers if h]
+    all_done = all(r in validation or r in peeked for r in linked)
     return (list(Counter(headers).most_common(1)[0][0]) if headers else None), all_done
 
 
 def tasks(census: dict, validation: dict, extraction: dict, stage: str) -> list[dict]:
     out = []
+    peeked = {t["id"]: t["header_peeked"] for ds in census["datasets"] for t in ds["tables"] if t.get("header_peeked")}
     for ds in census["datasets"]:
         for d in ds["dictionaries"]:
             if d.get("format") != "PDF" or not d.get("sha256") or not d.get("linked_resources"):
                 continue
-            header, all_done = header_for(d["linked_resources"], validation)
+            header, all_done = header_for(d["linked_resources"], validation, peeked)
             if header is None and not all_done:
                 continue          # the oracle is not ready yet: wait for the validation
             rec = extraction.get(d["id"])

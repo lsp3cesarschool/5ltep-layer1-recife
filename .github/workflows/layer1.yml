@@ -116,10 +116,8 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
 
-      - name: Validate files (time budget)
-        timeout-minutes: 280        # progress is saved after every file
-        continue-on-error: true
-        run: python main.py validate --minutes "$VALIDATE_MAX_MINUTES"
+      - name: Start of the job
+        run: echo "JOB_START=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: "PDF dictionaries, stage 1: deterministic extraction"
         id: det
@@ -143,6 +141,22 @@ jobs:
         timeout-minutes: 75
         continue-on-error: true
         run: python main.py extract --stage llm --minutes "$EXTRACT_MAX_MINUTES"
+
+      # The PDF stages come first, so that a schema extracted in this run is already the one the
+      # validation uses (the survey read the header of every file never validated: the oracle).
+      - name: Time left for the validation
+        run: |
+          elapsed=$(( ($(date +%s) - JOB_START) / 60 ))
+          budget=$(( 285 - elapsed ))
+          if [ "$budget" -gt "$VALIDATE_MAX_MINUTES" ]; then budget=$VALIDATE_MAX_MINUTES; fi
+          echo "VALIDATE_MINUTES=$budget" >> "$GITHUB_ENV"
+          echo "VALIDATE_TIMEOUT=$(( budget + 40 ))" >> "$GITHUB_ENV"   # the file being read when the budget ends
+          echo "validation budget: $budget min (job at $elapsed min)"
+
+      - name: Validate files (time budget)
+        timeout-minutes: ${{ fromJSON(env.VALIDATE_TIMEOUT) }}   # progress is saved after every file
+        continue-on-error: true
+        run: python main.py validate --minutes "$VALIDATE_MINUTES"
 
       - name: Hand the results over to the publish job
         if: ${{ always() }}

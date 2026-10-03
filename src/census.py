@@ -131,6 +131,17 @@ def level_of(resource: dict, dict_entry: dict | None) -> int:
     return 1
 
 
+def peek_header(t: dict) -> list[str] | None:
+    """The column names of a table (no row is kept), or None when it cannot be read now (it is then
+    linked by its header from its first validation on). A text file is read only to its first line;
+    a zip, a spreadsheet or a Parquet is downloaded whole (its columns are only known that way)."""
+    try:
+        return tabular.peek_header(t["url"], rows=0)[1] or None
+    except Exception as exc:
+        logger.info("header of %s not read in the survey: %s", t["id"], safety.error_text(exc, 160))
+        return None
+
+
 def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], written: set, events: list) -> dict:
     res_all = pkg.get("resources") or []
     dict_res = [r for r in res_all if dictionaries.is_dictionary(r)]
@@ -177,6 +188,15 @@ def census_dataset(pkg: dict, portal_url: str, headers: dict[str, list[str]], wr
             t["_described"] = described
 
     tables = group_distributions(tables)
+    # A file never validated has no known header: read it now (only the columns), so that it is linked
+    # to its dictionary by its header, and validated against it, in this same run.
+    if any(d.get("format") == "PDF" or d["id"] in parsed for d in dicts):
+        for t in tables:
+            if t["id"] not in headers:
+                h = peek_header(t)
+                if h:
+                    t["header_peeked"] = h
+    headers = {**headers, **{t["id"]: t["header_peeked"] for t in tables if t.get("header_peeked")}}
     link_input = [{"id": d["id"], "name": d["name"], "declared_resource_ids": d.get("declared_resource_ids"),
                    "parts": [{"label": p.label, "names": [f["name"] for f in p.fields]} for p in parsed[d["id"]].parts]
                    if d["id"] in parsed and parsed[d["id"]].parts else None}

@@ -146,15 +146,11 @@ def check_distributions(distributions: list[dict], header: list[str]) -> list[di
     for d in distributions:
         rec = {"id": d["id"], "format": d.get("format"), "name": d.get("name")}
         try:
-            size = ckan.head(d["url"]).get("content_length") or 0
-            if size > config.DISTRIBUTION_CHECK_MAX_BYTES:
-                rec.update(status="not-checked", reason=f"{size / 1e9:.1f} GB")
-            else:
-                fmt, cols = tabular.peek_header(d["url"])
-                missing = sorted(norm(header) - norm(cols))
-                extra = sorted(norm(cols) - norm(header))
-                rec.update(status="ok", read_as=fmt, same_columns=not missing and not extra,
-                           missing=missing[:30], extra=extra[:30])
+            fmt, cols = tabular.peek_header(d["url"])
+            missing = sorted(norm(header) - norm(cols))
+            extra = sorted(norm(cols) - norm(header))
+            rec.update(status="ok", read_as=fmt, same_columns=not missing and not extra,
+                       missing=missing[:30], extra=extra[:30])
         except tabular.NotTabular as exc:
             rec.update(status="not-tabular", reason=str(exc)[:200])
         except Exception as exc:

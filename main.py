@@ -12,7 +12,7 @@ Stages, each a sub-command so GitHub Actions can run them as separate steps:
   suggestions-pr   body of the pull request with suggested schemas
   report           summary for Layer 5, documentation findings, dashboard data
   status           status badge (running / interrupted)
-  run              census + validate + extract (deterministic) + report, locally
+  run              census + extract (deterministic) + validate + report, locally
 
 Examples:
   python main.py census
@@ -221,9 +221,10 @@ def cmd_status(args) -> None:
 
 def cmd_run(args) -> None:
     cmd_census(args)
-    cmd_validate(args)
-    args.stage = "deterministic"
+    stage, args.stage = getattr(args, "stage", None), "deterministic"
     cmd_extract(args)
+    args.stage = stage
+    cmd_validate(args)
     cmd_report(args)
 
 

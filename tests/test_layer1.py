@@ -208,6 +208,27 @@ def test_llm_output_is_bounded_data():
     assert pdf_extract.parse_llm("not json") == []
 
 
+def test_a_long_pdf_goes_to_the_model_whole_in_pieces(monkeypatch):
+    lines = [f"CAMPO_{i:03d} texto descritivo do campo\n" for i in range(300)]
+    text = "".join(lines)
+    pieces = pdf_extract.chunks(text, 1000)
+    assert "".join(pieces) == text and all(len(p) <= 1000 for p in pieces) and len(pieces) > 1
+    assert pdf_extract.chunks("x" * 2500, 1000) == ["x" * 1000, "x" * 1000, "x" * 500]
+
+    monkeypatch.setattr(pdf_extract, "pdf_text", lambda pdf: text)
+    monkeypatch.setattr(config, "LLM_MAX_PDF_CHARS", 1000)
+
+    class Client:
+        def generate(self, system, prompt):
+            names = [w for w in prompt.split() if w.startswith("CAMPO_")]
+            return json.dumps({"fields": [{"name": n, "type": "", "size": "", "description": ""}
+                                          for n in names + ["CAMPO_000"]]}), 1.0
+
+    fields, meta = pdf_extract.llm(b"%PDF", Client())
+    assert [f["name"] for f in fields] == [f"CAMPO_{i:03d}" for i in range(300)]   # none lost, none twice
+    assert meta["pieces"] == len(pieces)
+
+
 # --- linking --------------------------------------------------------------------
 
 def _d(i, name, names=None, ids=None):
@@ -281,6 +302,26 @@ def test_census_links_reads_and_writes_the_declared_schema(tmp_root, monkeypatch
     assert kind == "declared" and [f["name"] for f in schema["fields"]] == ["SEQ_TAD", "DAT_TAD", "UF"]
     assert schema["x5ltep"]["source"]["sha256"] == hashlib.sha256(IBAMA_DICT).hexdigest()
     assert events == []
+
+
+def test_a_file_never_validated_is_linked_by_its_header_in_the_first_run(tmp_root, monkeypatch):
+    # Before, the header was known only after a validation: a first run checked such a file against
+    # the DataStore, and the next one against its dictionary, with the file unchanged.
+    serve(monkeypatch, {"https://p/d.csv": IBAMA_DICT, "https://p/a.csv": b"SEQ_TAD;DAT_TAD;UF\n1;01/02/2022;PE\n",
+                        "https://p/b.csv": b"X;Y\n1;2\n"})
+    monkeypatch.setenv("CKAN_PORTAL_URL", "https://p")
+    pkg = {"name": "termo-de-doacao", "title": "T", "resources": [
+        {"id": "r-a", "name": "Planilha A", "format": "CSV", "url": "https://p/a.csv"},
+        {"id": "r-b", "name": "Outra coisa", "format": "CSV", "url": "https://p/b.csv"},
+        {"id": "r-dict", "name": "Metadados - Termo de doação", "format": "CSV", "url": "https://p/d.csv"}]}
+    result, _ = census.run({}, packages=[pkg])
+    by_id = {t["id"]: t for t in result["datasets"][0]["tables"]}
+    assert by_id["r-a"]["link"]["method"] == "header" and by_id["r-a"]["header_peeked"] == ["SEQ_TAD", "DAT_TAD", "UF"]
+    assert by_id["r-b"]["link"] is None
+    assert schemas.select("termo-de-doacao", "r-a")[0] == "declared"
+    # a PDF dictionary has its oracle (the header) before the validation
+    assert extract.header_for(["r-a"], {}, {"r-a": ["SEQ_TAD"]}) == (["SEQ_TAD"], True)
+    assert extract.header_for(["r-a"], {}, {}) == (None, False)
 
 
 def test_census_reports_declared_drift_and_removal(tmp_root, monkeypatch):

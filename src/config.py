@@ -49,7 +49,7 @@ DASHBOARD_FILE = ROOT / "docs" / "data" / "layer1.json"
 # --- Census -----------------------------------------------------------------
 HTTP_TIMEOUT_S = _env("HTTP_TIMEOUT_S", 120)          # reading an answer
 CONNECT_TIMEOUT_S = _env("CONNECT_TIMEOUT_S", 15)      # opening a connection
-MAX_DICTIONARY_BYTES = _env("MAX_DICTIONARY_BYTES", 20_000_000)   # a dictionary larger than this is not read
+MAX_DICTIONARY_BYTES = _env("MAX_DICTIONARY_BYTES", 2_000_000_000)   # read in memory (runner: 16 GB RAM)
 CHECK_DATASTORE = _env("CHECK_DATASTORE", "true").lower() == "true"
 CENSUS_WORKERS = _env("CENSUS_WORKERS", 4)            # datasets read at the same time (network-bound; polite)
 DICTIONARY_DEADLINE_S = _env("DICTIONARY_DEADLINE_S", 180)   # a dictionary that trickles longer is given up
@@ -63,9 +63,7 @@ ROTATION_DAYS = _env("ROTATION_DAYS", 28)
 SAMPLE_ROWS = _env("SAMPLE_ROWS", 5000)            # rows used to infer the observed types
 MAX_ZIP_BYTES = _env("MAX_ZIP_BYTES", 12_000_000_000)  # zip files must go to disk (runner: ~14 GB free)
 MAX_SHEET_BYTES = _env("MAX_SHEET_BYTES", 300_000_000)  # XLS and ODS are read whole, in memory
-# Other formats of a table validated in full are only checked for their columns; a file larger than
-# this is not downloaded for that check (a zip or a Parquet must be read whole to see its columns).
-DISTRIBUTION_CHECK_MAX_BYTES = _env("DISTRIBUTION_CHECK_MAX_BYTES", 500_000_000)
+
 ERROR_ROWS_KEPT = _env("ERROR_ROWS_KEPT", 5)        # row numbers kept per field and error kind (never values)
 # A resource conforms when every declared field is in the file, the file has no undeclared
 # field, and at most this share of the checked cells breaks the declared type or constraints.
@@ -93,7 +91,7 @@ LLM_SEED = _env("LLM_SEED", 42)
 LLM_NUM_CTX = _env("LLM_NUM_CTX", 16384)
 LLM_NUM_PREDICT = _env("LLM_NUM_PREDICT", 6000)
 LLM_TIMEOUT_S = _env("LLM_TIMEOUT_S", 1800)
-LLM_MAX_PDF_CHARS = _env("LLM_MAX_PDF_CHARS", 30000)
+LLM_MAX_PDF_CHARS = _env("LLM_MAX_PDF_CHARS", 30000)   # size of each piece of a PDF sent to the model (never a cut)
 EXTRACT_MAX_MINUTES = _env("EXTRACT_MAX_MINUTES", 120.0)
 # Bump when the extraction prompt changes meaning; earlier suggestions keep the version they had.
 EXTRACTION_PROMPT_VERSION = "v1"

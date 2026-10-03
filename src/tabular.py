@@ -392,8 +392,10 @@ DISK_KINDS = ("zip", "parquet", "xls")
 
 
 @contextlib.contextmanager
-def open_resource(url: str):
-    """Yields a Source; `digest` is complete once every table has been read to the end."""
+def open_resource(url: str, max_disk_bytes: int | None = None):
+    """Yields a Source; `digest` is complete once every table has been read to the end. A format that
+    must go to disk (zip, spreadsheets, Parquet) larger than `max_disk_bytes` is not downloaded."""
+    limit = max_disk_bytes or config.MAX_ZIP_BYTES
     _decode_errors[0] = 0
     t0 = time.monotonic()
     resp = ckan.get(url, stream=True, timeout=config.HTTP_TIMEOUT_S)
@@ -412,15 +414,15 @@ def open_resource(url: str):
         kind = sniff(buffered.peek(PEEK)[:PEEK])
         if kind in DISK_KINDS:
             length = digest["http"]["content_length"] or 0
-            if length > config.MAX_ZIP_BYTES:
-                raise NotTabular(f"file of {length / 1e9:.1f} GB is above MAX_ZIP_BYTES", "too-large")
+            if length > limit:
+                raise NotTabular(f"file of {length / 1e9:.1f} GB is above the limit", "too-large")
             with tempfile.TemporaryDirectory() as tmp:
                 path = Path(tmp) / "resource"
                 with open(path, "wb") as fh:
                     while chunk := buffered.read(1 << 20):
                         fh.write(chunk)
-                        if hashing.size > config.MAX_ZIP_BYTES:
-                            raise NotTabular("file larger than MAX_ZIP_BYTES", "too-large")
+                        if hashing.size > limit:
+                            raise NotTabular("file larger than the limit", "too-large")
                 timing["download_s"] = round(time.monotonic() - t0, 2)
                 digest.update(sha256=hashing.sha.hexdigest(), bytes=hashing.size, kind=kind)
                 yield Source(_file_tables(path, kind, None, tmp, 0, digest), digest)
@@ -439,10 +441,11 @@ def open_resource(url: str):
         resp.close()
 
 
-def peek_header(url: str, rows: int = 50) -> tuple[str, list[str]]:
+def peek_header(url: str, rows: int = 50, max_disk_bytes: int | None = None) -> tuple[str, list[str]]:
     """(format, header) of a resource, reading as little as the format allows (another format of a
-    table already validated in full: only its columns are compared)."""
-    with open_resource(url) as src:
+    table already validated in full: only its columns are compared; a file never validated: its columns
+    link it to its dictionary)."""
+    with open_resource(url, max_disk_bytes) as src:
         for table in src.tables:
             it = iter(table.rows)
             header = [h.strip().lstrip("﻿") for h in next(it, [])]
