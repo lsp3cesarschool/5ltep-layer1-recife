@@ -61,6 +61,8 @@ const I18N = {
     copies_checked: "SHA-256: {i} identical, {d} different",
     t_drift: "Schema drift events", of_total: "{n} of {t}", conf_note: "{n} of {t} files with a declared schema",
     pass: "Layer 1 passes", fail: "Layer 1 does not pass", threshold: "threshold {t}",
+    verdict_fail: "because only {r} of the files with a declared schema conform ({c} of {k}), when at least {th} should.",
+    verdict_pass: "because {r} of the files with a declared schema conform ({c} of {k}), at least the {th} required.",
     drift_note: "{o} in files · {d} in declared schemas",
     u_datasets: "Datasets", u_files: "Files",
     lv: ["0 · no dictionary", "1 · for people only", "2 · machine-readable", "3 · types in the API", "4 · level 3 and conforms"],
@@ -174,6 +176,8 @@ const I18N = {
     t_conf: "Arquivos conformes", t_drift: "Eventos de deriva de esquema", of_total: "{n} de {t}",
     conf_note: "{n} de {t} arquivos com esquema declarado",
     pass: "A Camada 1 passa", fail: "A Camada 1 não passa", threshold: "limiar {t}",
+    verdict_fail: "porque só {r} dos arquivos com esquema declarado são conformes ({c} de {k}), quando deveriam ser no mínimo {th}.",
+    verdict_pass: "porque {r} dos arquivos com esquema declarado são conformes ({c} de {k}), pelo menos os {th} exigidos.",
     drift_note: "{o} nos arquivos · {d} nos esquemas declarados",
     u_datasets: "Conjuntos", u_files: "Arquivos",
     lv: ["0 · sem dicionário", "1 · só para pessoas", "2 · legível por máquina", "3 · tipos na API", "4 · nível 3 e conforme"],
@@ -317,9 +321,6 @@ function nextMonday(iso) {
 
 function renderTiles(s) {
   const c = s.coverage || {};
-  const status = s.l1_rate == null ? "" : s.l1_pass
-    ? `<div class="status good">✓ ${esc(t("pass"))}</div>`
-    : `<div class="status bad">✗ ${esc(t("fail"))}</div>`;
   const more = (anchor) => ` <a class="more" href="#${anchor}">${esc(t("details"))}</a>`;
   const d = s.drift || {};
   const day = (x) => (x || "").slice(0, 10);
@@ -357,9 +358,22 @@ function renderTiles(s) {
       e: fmt(c.empty), nt: fmt(c.not_tabular), tl: fmt(c.too_large || 0) })) + more("coverage"), c.files ? c.read / c.files : 0),
     queueTile,
     tile(t("t_conf"), pct(s.l1_rate), esc(t("conf_tile_note", { c: fmt(c.conform), k: fmt(c.checked), w: fmt(c.read_without_schema) }))
-      + ` · ${esc(t("threshold", { t: pct(s.method.l1_pass_threshold) }))}` + more("coverage"), s.l1_rate ?? 0, status),
+      + ` · ${esc(t("threshold", { t: pct(s.method.l1_pass_threshold) }))}` + more("coverage"), s.l1_rate ?? 0),
     tile(t("t_drift"), fmt(d.observed + d.declared), esc(driftNote) + more("drift")),
   ].join("");
+}
+
+// --- the verdict, under the tiles: pass or not, and why -----------------------------------
+function renderVerdict(s) {
+  const box = el("verdict");
+  box.hidden = s.l1_rate == null;
+  if (box.hidden) return;
+  const c = s.coverage || {};
+  const vars = { r: pct(s.l1_rate), c: fmt(c.conform), k: fmt(c.checked), th: pct(s.method.l1_pass_threshold) };
+  box.className = `verdict ${s.l1_pass ? "good" : "bad"}`;
+  box.innerHTML = `<span class="status ${s.l1_pass ? "good" : "bad"}">${s.l1_pass ? "✓" : "✗"} ${esc(t(s.l1_pass ? "pass" : "fail"))}</span> `
+    + esc(t(s.l1_pass ? "verdict_pass" : "verdict_fail", vars))
+    + ` <a class="more" href="#coverage">${esc(t("details"))}</a>`;
 }
 
 // --- reading and conformance ---------------------------------------------------------------
@@ -827,6 +841,7 @@ async function main() {
   const day = (x) => (x || "").slice(0, 10);
   el("subtitle").textContent = t("subtitle", { date: day(s.census_at), gen: day(s.generated_at) });
   renderTiles(s);
+  renderVerdict(s);
   renderMaturity(s);
   renderCoverage(s);
   renderProgress(s);
