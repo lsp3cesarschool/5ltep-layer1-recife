@@ -77,14 +77,18 @@ SAMPLE_ROWS = _env("SAMPLE_ROWS", 5000)            # rows used to infer the obse
 # not is read as it streams, member by member; a Parquet or a spreadsheet that does not cannot be read.
 MAX_ZIP_BYTES = _env("MAX_ZIP_BYTES", 12_000_000_000)
 ZIP_MAX_DEPTH = _env("ZIP_MAX_DEPTH", 5)    # zips inside zips (a guard against a zip that nests itself)
-# A zip whose first members (this many) hold no table is recorded as a container of documents by
-# sample, and its download stops there: without byte ranges (Recife) the only way to know that a 1 GB
-# zip of PDFs holds no table at all is to read it to its end. 0: every zip is read to its end.
+# The first members (this many) of a zip are read as it downloads. A zip is read to its end first;
+# if its download fails and none of those members was a table, it is recorded as a container of
+# documents by sample (a fail-safe: without byte ranges, as on Recife's server, only the whole zip
+# proves it holds no table). ZIP_STOP_AT_SAMPLE=1 stops every such download at the sample instead.
+# 0: no sample.
 ZIP_DOCUMENTS_SAMPLE = _env("ZIP_DOCUMENTS_SAMPLE", 50)
-# Files of a dataset with the same name, size and file name are taken as copies of one file (Recife
-# publishes some three times): 1 = only the first is downloaded, the others get its result, marked as
-# copies; 0 = every copy is downloaded and validated.
-COPIES_ONCE = _env("COPIES_ONCE", 1)
+ZIP_STOP_AT_SAMPLE = _env("ZIP_STOP_AT_SAMPLE", 0)
+# Files of a dataset with the same name, declared size and file name are copies of one file (Recife
+# publishes some three times). 0: every copy is downloaded and compared by its SHA-256; a copy whose
+# download fails gets the first one's result, marked as such (a fail-safe). 1: only the first is
+# downloaded, the others get its result.
+COPIES_ONCE = _env("COPIES_ONCE", 0)
 
 ERROR_ROWS_KEPT = _env("ERROR_ROWS_KEPT", 5)        # row numbers kept per field and error kind (never values)
 # A resource conforms when every declared field is in the file, the file has no undeclared
@@ -132,5 +136,5 @@ MAX_NEW_ISSUES = _env("MAX_NEW_ISSUES", 15)
 def method_parameters() -> dict:
     names = ["ROTATION_DAYS", "SAMPLE_ROWS", "L1_MAX_ERROR_RATE", "L1_PASS_THRESHOLD", "ORACLE_ACCEPT",
              "ORACLE_LLM_BELOW", "LLM_MODEL", "LLM_SEED", "EXTRACTION_PROMPT_VERSION",
-             "PDF_READER_VERSION", "ZIP_DOCUMENTS_SAMPLE", "COPIES_ONCE"]
+             "PDF_READER_VERSION", "ZIP_DOCUMENTS_SAMPLE", "ZIP_STOP_AT_SAMPLE", "COPIES_ONCE"]
     return {n.lower(): globals()[n] for n in names}

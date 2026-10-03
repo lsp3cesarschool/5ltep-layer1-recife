@@ -45,7 +45,7 @@ const I18N = {
     d_kind: "Kind", d_changes: "What changed", d_when: "When",
     pdf_h: "PDF dictionaries turned into schemas",
     pdf_note: "Each PDF dictionary linked to a file, what the three stages made of it (deterministic reading, local LLM, people) and how well the file's own header confirms it. Schemas are Frictionless Table Schema files in this repository; suggested ones wait in a pull request.",
-    x_pdf: "PDF", x_outcome: "Outcome", x_stage: "Stage", x_schema: "Schema", x_typos: "Similar names (dictionary ≈ file)",
+    x_pdf: "PDF", x_outcome: "Outcome", x_stage: "Stage", x_schema: "Schema", x_typos: "Similar names (dictionary ≈ file)", x_by_position: "Different names in the same place (PDF × file)", x_file: "file",
     o_extracted: "confirmed by the header", o_suggested: "suggested (pull request)", "o_llm-needed": "waiting for the LLM",
     o_failed: "not extracted", o_pending: "waiting for the file's header",
     open_pr: "pull request ↗", schemas_label: "schemas",
@@ -58,6 +58,7 @@ const I18N = {
     t_dicts: "Dictionaries", dicts_note: "{m} machine-readable ({r} read) · {p} PDF · {o} not linked to any file",
     files_size: "{gb} GB declared on the portal", files_unknown: "{n} without a declared size",
     files_copies: "{n} copies of another file of the same dataset ({gb} GB)",
+    copies_checked: "SHA-256: {i} identical, {d} different",
     t_drift: "Schema drift events", of_total: "{n} of {t}", conf_note: "{n} of {t} files with a declared schema",
     pass: "Layer 1 passes", fail: "Layer 1 does not pass", threshold: "threshold {t}",
     drift_note: "{o} in files · {d} in declared schemas",
@@ -111,7 +112,8 @@ const I18N = {
     f_missing: "declared, not in the file", f_undecl: "in the file, not declared", f_spelling: "spelled differently",
     f_errors: "cells that break the declared type or constraints", f_drift: "drift events", yes: "yes", no: "no",
     s_ok: "read", s_error: "could not be read", "s_not-tabular": "not a table", s_empty: "empty", s_pending: "not checked yet", s_sampled: "by sample",
-    f_copy: "copy of “{f}” (same name, declared size and file name): its result, not downloaded again (COPIES_ONCE)",
+    f_copy: "copy of “{f}” (same name, declared size and file name): its result, since this one was not downloaded or its download failed",
+    f_copy_failed: "the download of this copy failed",
     footer: "Method: {m}. Summary for Layer 5:",
   },
   pt: {
@@ -155,7 +157,7 @@ const I18N = {
     d_kind: "Tipo", d_changes: "O que mudou", d_when: "Quando",
     pdf_h: "Dicionários em PDF transformados em esquemas",
     pdf_note: "Cada dicionário em PDF ligado a um arquivo, o que as três etapas fizeram dele (leitura determinística, LLM local, pessoas) e quanto o próprio cabeçalho do arquivo o confirma. Os esquemas são arquivos Frictionless Table Schema neste repositório; os sugeridos aguardam num pull request.",
-    x_pdf: "PDF", x_outcome: "Resultado", x_stage: "Etapa", x_schema: "Esquema", x_typos: "Nomes parecidos (dicionário ≈ arquivo)",
+    x_pdf: "PDF", x_outcome: "Resultado", x_stage: "Etapa", x_schema: "Esquema", x_typos: "Nomes parecidos (dicionário ≈ arquivo)", x_by_position: "Nomes diferentes no mesmo lugar (PDF × arquivo)", x_file: "arquivo",
     o_extracted: "confirmado pelo cabeçalho", o_suggested: "sugerido (pull request)", "o_llm-needed": "aguardando o LLM",
     o_failed: "não extraído", o_pending: "aguardando o cabeçalho do arquivo",
     open_pr: "pull request ↗", schemas_label: "esquemas",
@@ -168,6 +170,7 @@ const I18N = {
     t_dicts: "Dicionários", dicts_note: "{m} legíveis por máquina ({r} lidos) · {p} em PDF · {o} sem ligação com arquivo",
     files_size: "{gb} GB declarados no portal", files_unknown: "{n} sem tamanho declarado",
     files_copies: "{n} cópias de outro arquivo do mesmo conjunto ({gb} GB)",
+    copies_checked: "SHA-256: {i} idênticas, {d} diferentes",
     t_conf: "Arquivos conformes", t_drift: "Eventos de deriva de esquema", of_total: "{n} de {t}",
     conf_note: "{n} de {t} arquivos com esquema declarado",
     pass: "A Camada 1 passa", fail: "A Camada 1 não passa", threshold: "limiar {t}",
@@ -222,7 +225,8 @@ const I18N = {
     f_missing: "declarados, ausentes do arquivo", f_undecl: "no arquivo, não declarados", f_spelling: "grafados de outro jeito",
     f_errors: "células que violam o tipo ou as restrições declaradas", f_drift: "eventos de deriva", yes: "sim", no: "não",
     s_ok: "lido", s_error: "não pôde ser lido", "s_not-tabular": "não é tabela", s_empty: "vazio", s_pending: "ainda não verificado", s_sampled: "por amostra",
-    f_copy: "cópia de “{f}” (mesmo nome, tamanho declarado e nome de arquivo): o resultado dele, sem baixar de novo (COPIES_ONCE)",
+    f_copy: "cópia de “{f}” (mesmo nome, tamanho declarado e nome de arquivo): o resultado dele, porque esta não foi baixada ou o download dela falhou",
+    f_copy_failed: "o download desta cópia falhou",
     footer: "Método: {m}. Resumo para a Camada 5:",
   },
 };
@@ -328,7 +332,9 @@ function renderTiles(s) {
   const cp = ((s.findings || {}).copies) || {};
   const filesNote = [formats, tb.declared_gb == null ? "" : t("files_size", { gb: gb(tb.declared_gb) }),
     tb.size_unknown ? t("files_unknown", { n: fmt(tb.size_unknown) }) : "",
-    cp.files ? t("files_copies", { n: fmt(cp.files), gb: gb(cp.gb) }) : ""].filter(Boolean).join(" · ");
+    cp.files ? t("files_copies", { n: fmt(cp.files), gb: gb(cp.gb) })
+      + (cp.identical || cp.different ? ` (${t("copies_checked", { i: fmt(cp.identical), d: fmt(cp.different) })})` : "") : ""]
+    .filter(Boolean).join(" · ");
   const dc = ((s.findings || {}).dictionaries) || {};
   const dictTile = dc.total == null ? "" : tile(t("t_dicts"), fmt(dc.total), esc(t("dicts_note", {
     m: fmt(dc.machine_readable), r: fmt(dc.machine_readable_and_read), p: fmt(dc.human_readable), o: fmt(dc.orphans) }))
@@ -499,16 +505,19 @@ function renderPdf() {
   const prs = `${repo()}/pulls?q=is%3Apr+schemas+suggested`;
   el("pdf-table").innerHTML = `<thead><tr><th>${esc(t("col_dataset"))}</th><th>${esc(t("x_pdf"))}</th>`
     + `<th>${esc(t("x_outcome"))}</th><th>${esc(t("x_stage"))}</th><th>${esc(t("k_recall"))}</th>`
-    + `<th>${esc(t("k_precision"))}</th><th>${esc(t("x_schema"))}</th><th>${esc(t("x_typos"))}</th></tr></thead><tbody>`
+    + `<th>${esc(t("k_precision"))}</th><th>${esc(t("x_schema"))}</th><th>${esc(t("x_typos"))}</th>`
+    + `<th>${esc(t("x_by_position"))}</th></tr></thead><tbody>`
     + rows.map((x) => {
       const schema = x.schema && x.schema_status !== "suggested"
         ? `<a href="${repo()}/blob/main/${encodeURI(x.schema)}" rel="noopener">${esc(x.schema_status || "schema")} ↗</a>`
         : x.outcome === "suggested" ? `<a href="${prs}" rel="noopener">${esc(t("open_pr"))}</a>` : "—";
       const typos = Object.entries(x.similar_names || {}).map(([a, b]) => `<code>${esc(a)}</code> → <code>${esc(b)}</code>`).join("<br>");
+      const moved = Object.entries(x.by_position || {}).map(([a, b]) =>
+        `<code>${esc(a)}</code> <span class="muted">(PDF)</span> × <code>${esc(b)}</code> <span class="muted">(${esc(t("x_file"))})</span>`).join("<br>");
       return `<tr><td><a href="#" data-open="${esc(x.dataset)}">${esc(x.title)}</a></td>`
         + `<td><a href="${esc(x.url)}" rel="noopener">${esc(x.dictionary)}</a></td>`
         + `<td>${esc(t(`o_${x.outcome}`))}</td><td>${esc(x.stage ? (x.stage === "llm" ? `LLM (${x.model || "?"})` : t("stage_det")) : "—")}</td>`
-        + `<td class="num">${pct(x.recall)}</td><td class="num">${pct(x.precision)}</td><td>${schema}</td><td>${typos || "—"}</td></tr>`;
+        + `<td class="num">${pct(x.recall)}</td><td class="num">${pct(x.precision)}</td><td>${schema}</td><td>${typos || "—"}</td><td class="small">${moved || "—"}</td></tr>`;
     }).join("") + "</tbody>";
   el("pdf-table").querySelectorAll("a[data-open]").forEach((a) => a.addEventListener("click", (ev) => {
     ev.preventDefault();
@@ -701,7 +710,7 @@ function fileDetail(f) {
   if (f.error) more += `<div class="small muted">${esc(f.error)}</div>`;
   if (f.copy_of) {
     const first = (DATA.datasets.flatMap((d) => d.tables).find((x) => x.id === f.copy_of) || {}).name || f.copy_of;
-    more += `<div class="small muted">${esc(t("f_copy", { f: first }))}</div>`;
+    more += `<div class="small muted">${esc(t("f_copy", { f: first }) + (f.copy_failed ? ` · ${t("f_copy_failed")}` : ""))}</div>`;
   }
   return `<tr id="file-${esc(f.id)}"><td><a href="${esc(f.url)}" rel="noopener">${esc(f.name || f.id)}</a>${more}</td>`
     + `<td>${f.not_a_table ? "—" : levelBadge(f.level)}</td><td>${dict}</td><td class="small">${esc(f.schema_kind || "—")}<br>${schemaLinks(f.schema_files)}</td>`
@@ -845,7 +854,8 @@ async function main() {
   const m = s.method || {};
   const opt = (k, v) => (v == null ? "" : `, ${k}=${v}`);
   el("footer").innerHTML = esc(t("footer", { m: `L1_MAX_ERROR_RATE=${m.l1_max_error_rate}, L1_PASS_THRESHOLD=${m.l1_pass_threshold}, ROTATION_DAYS=${m.rotation_days}, LLM=${m.llm_model}`
-    + opt("ZIP_DOCUMENTS_SAMPLE", m.zip_documents_sample) + opt("COPIES_ONCE", m.copies_once) }))
+    + opt("ZIP_DOCUMENTS_SAMPLE", m.zip_documents_sample) + opt("ZIP_STOP_AT_SAMPLE", m.zip_stop_at_sample)
+    + opt("COPIES_ONCE", m.copies_once) }))
     + ` <a href="${repo()}/blob/main/results/layer1_summary.json">results/layer1_summary.json</a>`;
 }
 

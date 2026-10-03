@@ -2,6 +2,7 @@
 
 import hashlib
 import io
+import random
 import json
 import time
 import zipfile
@@ -1509,33 +1510,61 @@ def test_what_is_left_in_the_queue_by_its_declared_size():
     assert [x["name"] for x in out["queue_largest"]] == ["A", "C"]          # B: no declared size
 
 
-def test_a_file_published_more_than_once_is_read_once(tmp_root, monkeypatch):
+def _copies_census():
+    same = {"name": "Pedidos 2023", "candidate": "csv", "size": 12}
+    return {"generated_at": "2026-10-03T00:00:00+00:00", "datasets": [{"name": "ds", "dictionaries": [], "tables": [
+        {**same, "id": "a", "url": "https://p/r/a/download/pedidos-2023.csv"},
+        {**same, "id": "b", "url": "https://p/r/b/download/pedidos-2023.csv"},
+        {**same, "id": "c", "url": "https://p/r/c/download/outro.csv"}]}]}
+
+
+def _fake_fetch(monkeypatch, failing=()):
     calls = []
     body = b"ID;UF\n1;PE\n"
 
     def fetch(url, folder, limit):
         calls.append(url)
+        if url in failing:
+            raise ConnectionError("cut")
         (folder / "resource").write_bytes(body)
         return {"timing": {}, "http": {}, "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest()}
 
     monkeypatch.setattr(tabular, "fetch", fetch)
-    same = {"name": "Pedidos 2023", "candidate": "csv", "size": 12}
-    census_ = {"generated_at": "2026-10-03T00:00:00+00:00", "datasets": [{"name": "ds", "dictionaries": [], "tables": [
-        {**same, "id": "a", "url": "https://p/r/a/download/pedidos-2023.csv"},
-        {**same, "id": "b", "url": "https://p/r/b/download/pedidos-2023.csv"},
-        {**same, "id": "c", "url": "https://p/r/c/download/outro.csv"}]}]}
+    return calls
+
+
+def test_copies_are_all_downloaded_and_compared_by_their_hash(tmp_root, monkeypatch):
+    census_ = _copies_census()
     assert work.copies(census_) == {"b": "a"}
+    calls = _fake_fetch(monkeypatch)
+    validation = {}
+    queue = [{"id": i, "dataset": "ds", "reason": "new"} for i in ("a", "b", "c")]
+    work.run_batch(census_, queue, validation, 5)
+    assert len(calls) == 3 and "copy_of" not in validation["b"]
+    assert report.copies_of(census_, validation) == {"files": 1, "of_files": 1, "datasets": 1, "gb": 0.0,
+                                                     "identical": 1, "different": 0, "results_copied": 0}
+
+
+def test_a_copy_whose_download_fails_gets_the_first_ones_result(tmp_root, monkeypatch):
+    census_ = _copies_census()
+    _fake_fetch(monkeypatch, failing={"https://p/r/b/download/pedidos-2023.csv"})
+    validation = {}
+    work.run_batch(census_, [{"id": i, "dataset": "ds", "reason": "new"} for i in ("a", "b")], validation, 5)
+    b = validation["b"]
+    assert b["status"] == "ok" and b["copy_of"] == "a" and "cut" in b["copy_failed"]
+    assert b["ckan"]["url"].endswith("/b/download/pedidos-2023.csv") and b["reason"] == "new"
+
+
+def test_copies_once_downloads_only_the_first(tmp_root, monkeypatch):
+    monkeypatch.setattr(config, "COPIES_ONCE", 1)
+    census_ = _copies_census()
+    calls = _fake_fetch(monkeypatch)
     validation = {}
     queue = [{"id": i, "dataset": "ds", "reason": "new"} for i in ("b", "a", "c")]       # the copy first
     out = work.run_batch(census_, queue, validation, 5)
     assert sorted(out["done"]) == ["a", "b", "c"] and len(calls) == 2
     assert validation["b"]["copy_of"] == "a" and validation["b"]["header"] == ["ID", "UF"]
-    assert validation["b"]["ckan"]["url"].endswith("/b/download/pedidos-2023.csv")
-    assert report.copies_of(census_, validation) == {"files": 1, "of_files": 1, "datasets": 1, "gb": 0.0, "results_copied": 1}
-    monkeypatch.setattr(config, "COPIES_ONCE", 0)
-    calls.clear()
-    work.run_batch(census_, queue, {}, 5)
-    assert len(calls) == 3
+    assert report.copies_of(census_, validation)["results_copied"] == 1
 
 
 def _zip_of(members: dict[str, bytes]) -> bytes:
@@ -1546,32 +1575,84 @@ def _zip_of(members: dict[str, bytes]) -> bytes:
     return buf.getvalue()
 
 
-def test_a_zip_of_documents_is_known_by_its_first_members(tmp_root, monkeypatch, tmp_path):
+class CutRaw(io.BytesIO):
+    """A download cut after `at` bytes."""
+    decode_content = False
+
+    def __init__(self, data: bytes, at: int):
+        super().__init__(data)
+        self.at = at
+
+    def read(self, n=-1):
+        if self.tell() >= self.at:
+            raise ConnectionResetError("connection reset")
+        return super().read(min(n if n >= 0 else self.at, self.at - self.tell()))
+
+
+# incompressible members: the sample (3 members) arrives in the first block, the cut comes later
+DOCS = _zip_of({f"Pedidos/{i}/doc_{i}.pdf": random.Random(i).randbytes(300_000) for i in range(10)}
+               | {"z/late.csv": b"A;B\n1;2\n"})
+
+
+def test_a_zip_is_read_to_its_end_and_its_first_members_are_the_fail_safe(tmp_root, monkeypatch, tmp_path):
     monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 3)
-    docs = _zip_of({f"Pedidos/{i}/doc_{i}.pdf": bytes([i % 256]) * 5000 for i in range(10)} | {"z/late.csv": b"A;B\n1;2\n"})
-    serve(monkeypatch, {"u": docs})
+    # read to its end: the table at the end is found
+    serve(monkeypatch, {"u": DOCS})
+    assert tabular.fetch("u", tmp_path, 10 ** 9)["sha256"] == hashlib.sha256(DOCS).hexdigest()
+    # the download fails after the sample: a container of documents by sample, and why
+    resp = FakeResponse(DOCS)
+    resp.raw = CutRaw(DOCS, 2_500_000)
+    monkeypatch.setattr(tabular.ckan, "get", lambda url, **kw: resp)
     with pytest.raises(tabular.NotTabular) as exc:
         tabular.fetch("u", tmp_path, 10 ** 9)
     assert exc.value.kind == "no-tables" and exc.value.sampled["members"] == 3
-    assert exc.value.sampled["kinds"] == {"pdf": 3} and "by sample" in str(exc.value)
-    # a table among the first members: downloaded to its end, every byte
-    mixed = _zip_of({"a.pdf": b"x" * 5000, "b.csv": b"A;B\n1;2\n", "c.pdf": b"y" * 5000})
-    serve(monkeypatch, {"u": mixed})
-    digest = tabular.fetch("u", tmp_path, 10 ** 9)
-    assert digest["sha256"] == hashlib.sha256(mixed).hexdigest() and (tmp_path / "resource").read_bytes() == mixed
-    # the whole zip is shorter than the sample: the usual reading decides (no sample)
+    assert exc.value.sampled["kinds"] == {"pdf": 3} and exc.value.sampled["reason"] == "ConnectionResetError"
+    assert "the download failed at" in str(exc.value)
+    # a table among the first members: the failure stays a failure
+    mixed = _zip_of({"a.pdf": b"x" * 5000, "b.csv": b"A;B\n1;2\n", "c.pdf": bytes(range(256)) * 400})
+    resp = FakeResponse(mixed)
+    resp.raw = CutRaw(mixed, len(mixed) - 100)
+    monkeypatch.setattr(tabular.ckan, "get", lambda url, **kw: resp)
+    with pytest.raises(ConnectionResetError):
+        tabular.fetch("u", tmp_path, 10 ** 9)
+
+
+def test_a_zip_stops_at_the_sample_when_the_manager_chooses(tmp_root, monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 3)
+    monkeypatch.setattr(config, "ZIP_STOP_AT_SAMPLE", 1)
+    serve(monkeypatch, {"u": DOCS})
+    with pytest.raises(tabular.NotTabular) as exc:
+        tabular.fetch("u", tmp_path, 10 ** 9)
+    assert exc.value.sampled["reason"] == "ZIP_STOP_AT_SAMPLE" and "by sample" in str(exc.value)
+    # the whole zip is shorter than the sample: the usual reading decides
     serve(monkeypatch, {"u": _zip_of({"a.pdf": b"x", "b.pdf": b"y"})})
     assert tabular.fetch("u", tmp_path, 10 ** 9)["bytes"] > 0
-    # 0: every zip is read to its end
+    # 0: no sample at all
     monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 0)
-    serve(monkeypatch, {"u": docs})
-    assert tabular.fetch("u", tmp_path, 10 ** 9)["sha256"] == hashlib.sha256(docs).hexdigest()
+    serve(monkeypatch, {"u": DOCS})
+    assert tabular.fetch("u", tmp_path, 10 ** 9)["sha256"] == hashlib.sha256(DOCS).hexdigest()
 
 
 def test_a_sampled_zip_of_documents_is_left_out_of_the_tables(tmp_root, monkeypatch):
     monkeypatch.setattr(config, "ZIP_DOCUMENTS_SAMPLE", 3)
+    monkeypatch.setattr(config, "ZIP_STOP_AT_SAMPLE", 1)
     serve(monkeypatch, {"https://p/t.zip": _zip_of({f"d{i}.pdf": b"x" * 3000 for i in range(8)})})
     validation = {}
     work.run_batch(_census_one("https://p/t.zip"), [{"id": "r1", "dataset": "ds", "reason": "new"}], validation, 5)
     v = validation["r1"]
     assert v["status"] == "not-tabular" and v["sampled"]["members"] == 3 and report.not_a_table(v)
+
+
+def test_names_that_differ_in_the_same_place_are_paired():
+    # Recife's "Metadados dos Pedidos de Informação" against a file in the same order
+    pdf = ["numero", "ano", "Recurso", "situacao_pedido", "arquivos_resposta_pedido", "data_resp_1o_recurso",
+           "motivo_pedido"]
+    header = ["numero", "ano", "numero_recurso", "situacao_pedido", "anexo_resposta", "data_resposta_1o_recurso",
+              "motivo_pedido"]
+    o = pdf_extract.oracle([{"name": n} for n in pdf], header)
+    assert o["similar_names"] == {"data_resp_1o_recurso": "data_resposta_1o_recurso"}
+    assert o["by_position"] == {"Recurso": "numero_recurso", "arquivos_resposta_pedido": "anexo_resposta"}
+    # the file moved its columns: no place to read a pair from
+    moved = ["numero", "ano", "situacao_pedido", "data_resposta_1o_recurso", "motivo_pedido", "anexo_resposta",
+             "numero_recurso", "informacoes_pessoais"]
+    assert pdf_extract.oracle([{"name": n} for n in pdf], moved)["by_position"] == {}

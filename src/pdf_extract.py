@@ -179,9 +179,27 @@ def oracle(fields: list[dict], header: list[str]) -> dict:
         "levenshtein": round(sum(ls) / len(ls), 4),
         "missing_from_pdf": sorted(h for h in header if dictionaries.norm(h) not in en)[:50],
         "not_in_file": sorted(n for n in names if dictionaries.norm(n) not in hn)[:50],
-        "similar_names": _similar([n for n in names if dictionaries.norm(n) not in hn],
-                                 [h for h in header if dictionaries.norm(h) not in en]),
+        "similar_names": (similar := _similar([n for n in names if dictionaries.norm(n) not in hn],
+                                              [h for h in header if dictionaries.norm(h) not in en])),
+        "by_position": by_position(names, header, similar),
     }
+
+
+def by_position(names: list[str], header: list[str], similar: dict[str, str] | None = None) -> dict[str, str]:
+    """{name in the PDF: column of the file} for names that differ but stand in the same place: between
+    the same names found in both, the k-th name only in the PDF and the k-th column only in the file
+    (a field renamed, as `arquivos_resposta_pedido` in the PDF and `anexo_resposta` in the file). A gap
+    with a different number of names on each side is left unpaired: no place to read it from. Names
+    already paired as similar (`similar`) count as the same name."""
+    import difflib
+
+    similar = similar or {}
+    a, b = [dictionaries.norm(similar.get(n, n)) for n in names], [dictionaries.norm(h) for h in header]
+    out = {}
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        if op == "replace" and i2 - i1 == j2 - j1:
+            out.update(zip(names[i1:i2], header[j1:j2]))
+    return out
 
 
 def _similar(pdf_only: list[str], file_only: list[str]) -> dict[str, str]:

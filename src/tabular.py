@@ -690,10 +690,20 @@ def fetch(url: str, folder: Path, limit: float) -> dict:
         with open(folder / "resource", "wb") as fh:
             chunks = _Saved(buffered, fh, hashing, limit, url)
             first = buffered.peek(PEEK)[:PEEK]
+            sample = None
             if config.ZIP_DOCUMENTS_SAMPLE and first.startswith(b"PK\x03\x04") and not _is_office(_first_member(first)):
-                _sample_zip(chunks, digest["http"]["content_length"])
-            for _ in chunks:                    # the rest of the file (all of it, without a sample)
-                pass
+                sample = _sample_zip(chunks)
+                if sample and config.ZIP_STOP_AT_SAMPLE:
+                    raise _documents(sample, chunks, digest["http"]["content_length"], None)
+            try:
+                for _ in chunks:                # the rest of the file (all of it, without a sample)
+                    pass
+            except TooLarge:
+                raise
+            except Exception as exc:
+                if sample:                      # the fail-safe: what the first members showed
+                    raise _documents(sample, chunks, digest["http"]["content_length"], exc) from exc
+                raise
         timing["download_s"] = round(time.monotonic() - t0, 2)
         timing["network_s"] = round(hashing.wait, 2)
         return {**digest, "sha256": hashing.sha.hexdigest(), "bytes": hashing.size}
@@ -721,12 +731,11 @@ class _Saved:
         return chunk
 
 
-def _sample_zip(chunks, length: int | None) -> None:
+def _sample_zip(chunks) -> dict | None:
     """Read the first ZIP_DOCUMENTS_SAMPLE members of a zip while it downloads (each member's local
     header, its data inflated to find where the next begins: some zips give the size only after the
-    data). If none of them is a table, the zip is a container of documents by sample (NotTabular,
-    "no-tables", with what was read); a table among them, or a layout this cannot read, and the zip is
-    downloaded to its end as any other."""
+    data). Returns them when none is a table; None when one is, when the zip has fewer members (the
+    whole zip decides) or a layout this cannot read."""
     from stream_unzip import UnzipError, stream_unzip
 
     n, kinds = 0, Counter()
@@ -738,21 +747,29 @@ def _sample_zip(chunks, length: int | None) -> None:
             if name.endswith("/"):
                 continue
             if name.lower().endswith(TABLE_EXTENSIONS):
-                return
+                return None
             n += 1
             kinds[name.rsplit(".", 1)[-1].lower()[:10] if "." in name.rsplit("/", 1)[-1] else "(none)"] += 1
             if n >= config.ZIP_DOCUMENTS_SAMPLE:
                 break
         else:
-            return                              # the whole zip read: the usual reading decides
+            return None                         # the whole zip read: the usual reading decides
     except UnzipError:
-        return
+        return None
+    return {"members": n, "kinds": dict(kinds.most_common(5))}
+
+
+def _documents(sample: dict, chunks, length: int | None, failure: Exception | None) -> NotTabular:
+    """A zip recorded as a container of documents from its first members: stopped there by choice
+    (ZIP_STOP_AT_SAMPLE) or because the rest of the download failed."""
     read = chunks.hashing.size
-    exc = NotTabular(f"zip of documents by sample: its first {n} members hold no table "
-                     f"({', '.join(f'{k} {c}' for k, c in kinds.most_common(5))}); "
-                     f"{read / 1e6:.0f} MB read of {(length or 0) / 1e6:.0f} MB (ZIP_DOCUMENTS_SAMPLE)", "no-tables")
-    exc.sampled = {"members": n, "bytes_read": read, "bytes": length, "kinds": dict(kinds.most_common(5))}
-    raise exc
+    why = (f"the download failed at {read / 1e6:.0f} MB of {(length or 0) / 1e6:.0f} MB ({type(failure).__name__})"
+           if failure else f"{read / 1e6:.0f} MB read of {(length or 0) / 1e6:.0f} MB (ZIP_STOP_AT_SAMPLE)")
+    exc = NotTabular(f"zip of documents by sample: its first {sample['members']} members hold no table "
+                     f"({', '.join(f'{k} {c}' for k, c in sample['kinds'].items())}); {why}", "no-tables")
+    exc.sampled = {**sample, "bytes_read": read, "bytes": length,
+                   "reason": type(failure).__name__ if failure else "ZIP_STOP_AT_SAMPLE"}
+    return exc
 
 
 @contextlib.contextmanager

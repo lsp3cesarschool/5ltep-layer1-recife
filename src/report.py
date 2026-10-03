@@ -91,9 +91,14 @@ def copies_of(census: dict, validation: dict) -> dict:
 
     found = copies(census)
     size = {t["id"]: int(t["size"]) for ds in census["datasets"] for t in ds["tables"] if str(t.get("size") or "").isdigit()}
+    sha = lambda i: None if (validation.get(i) or {}).get("copy_of") else (validation.get(i) or {}).get("sha256")
+    compared = [(sha(c), sha(f)) for c, f in found.items() if sha(c) and sha(f)]
     return {"files": len(found), "of_files": len(set(found.values())),
             "datasets": len({ds["name"] for ds in census["datasets"] for t in ds["tables"] if t["id"] in found}),
             "gb": round(sum(size.get(i, 0) for i in found) / 1e9, 2),
+            # both downloaded: byte for byte the same (SHA-256) or not
+            "identical": sum(a == b for a, b in compared), "different": sum(a != b for a, b in compared),
+            # not downloaded (COPIES_ONCE) or the download failed: the first one's result
             "results_copied": sum(bool((validation.get(i) or {}).get("copy_of")) for i in found)}
 
 
@@ -536,7 +541,7 @@ def dashboard_data(census: dict, validation: dict, extraction: dict, summary: di
             tables.append({
                 "id": t["id"], "name": t["name"], "level": table_level(t, v), "url": t["url"],
                 "size": int(t["size"]) if str(t.get("size") or "").isdigit() else None, "queued": t["id"] in in_queue,
-                "copy_of": v.get("copy_of"), "sampled": bool(v.get("sampled")),
+                "copy_of": v.get("copy_of"), "copy_failed": bool(v.get("copy_failed")), "sampled": bool(v.get("sampled")),
                 "dictionary": ({"name": d.get("name"), "format": d.get("format"), "method": lk.get("method"),
                                 "readable": d.get("readable"), "error_kind": d.get("error_kind"), "url": d.get("url"),
                                 "page": page(d["id"])} if d else
@@ -607,7 +612,8 @@ def pdf_dictionaries(census: dict, extraction: dict) -> list[dict]:
                         "files": len(d["linked_resources"]), "outcome": rec.get("outcome") or "pending",
                         "stage": stage, "model": (rec.get("llm") or {}).get("model") if stage == "llm" else None,
                         "recall": oracle.get("recall"), "precision": oracle.get("precision"),
-                        "similar_names": similar_of(oracle),
+                        "similar_names": similar_of(oracle), "by_position": oracle.get("by_position") or {},
+                        "exact_match": oracle.get("exact_match"),
                         "schema": path.relative_to(config.ROOT).as_posix() if path.exists() else None,
                         "schema_status": status})
     return out
