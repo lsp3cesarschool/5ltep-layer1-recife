@@ -22,7 +22,7 @@ const I18N = {
     col_dataset: "Dataset", col_level: "Level", col_files: "Files", col_conform: "Conform", col_dicts: "Dictionaries",
     privacy_note: "Only counts and row numbers are kept: no cell value is ever stored or shown.",
     subtitle: "Survey of {date} · report of {gen}",
-    read_note: "{n} of {t} · not downloaded {nd} · empty {e} · a page or PDF instead of the table {nt} · larger than the machine holds {tl}",
+    read_note: "{n} of {t} · {nd} not downloaded · {e} empty · {nt} a page or PDF instead of the table · {tl} larger than the machine holds",
     "rk_no URL": "no URL", "rk_redirect loop": "redirect loop (the link points to itself)",
     "rk_batch time limit": "did not finish within a batch", rk_other: "other error",
     "rk_not-tabular": "a page or PDF instead of the table", rk_empty: "empty file",
@@ -137,7 +137,7 @@ const I18N = {
     col_dataset: "Conjunto", col_level: "Nível", col_files: "Arquivos", col_conform: "Conformes", col_dicts: "Dicionários",
     privacy_note: "Só contagens e números de linha são guardados: nenhum valor de célula é armazenado ou exibido.",
     subtitle: "Levantamento de {date} · relatório de {gen}",
-    read_note: "{n} de {t} · não baixados {nd} · vazios {e} · página ou PDF no lugar da tabela {nt} · maiores do que a máquina comporta {tl}",
+    read_note: "{n} de {t} · {nd} não baixados · {e} vazios · {nt} com página ou PDF no lugar da tabela · {tl} maiores do que a máquina comporta",
     "rk_no URL": "sem URL", "rk_redirect loop": "redirecionamento em laço (o link aponta para si mesmo)",
     "rk_batch time limit": "não terminou dentro de um lote", rk_other: "outro erro",
     "rk_not-tabular": "página ou PDF no lugar da tabela", rk_empty: "arquivo vazio",
@@ -332,7 +332,7 @@ function renderTiles(s) {
   const gb = (x) => Number(x).toLocaleString(LANG === "pt" ? "pt-BR" : "en", { maximumFractionDigits: 1 });
   const tb = s.tables || {};
   const formats = Object.entries(tb.by_format || {}).map(([k, f]) =>
-    `${k.toUpperCase()} ${fmt(f.files)}` + (f.gb >= 0.05 ? ` (${gb(f.gb)} GB)` : "")).join(" · ");
+    `${k.toUpperCase()}: ${fmt(f.files)}` + (f.gb >= 0.05 ? ` (${gb(f.gb)} GB)` : "")).join(" · ");
   const cp = ((s.findings || {}).copies) || {};
   const filesNote = [formats, tb.declared_gb == null ? "" : t("files_size", { gb: gb(tb.declared_gb) }),
     tb.size_unknown ? t("files_unknown", { n: fmt(tb.size_unknown) }) : "",
