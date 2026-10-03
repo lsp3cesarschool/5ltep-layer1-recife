@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "CRPAAACODI",
+   "type": "number",
+   "description": "Código da região geográfica do distrito sanitário, com limites físicos em áreas.",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "geometry",
+   "type": "object",
+   "description": "Dados Geométricos do distrito sanitário",
+   "declaredType": "Json"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "aa1150f1-4a7f-45ca-a9aa-7379c470de6a",
+   "dictionary_name": "Dicionário de dados dos distritos sanitários",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/09ae25d3-7330-4fff-af57-9e9191a4c2f6/resource/aa1150f1-4a7f-45ca-a9aa-7379c470de6a/download/dicionario-de-dados-dos-distritos-sanitarios.json",
+   "sha256": "3985a98a27c7f845fdfc3d07e67e6f32ad6d550d7c609cfc2daa42fbfdcead2d",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

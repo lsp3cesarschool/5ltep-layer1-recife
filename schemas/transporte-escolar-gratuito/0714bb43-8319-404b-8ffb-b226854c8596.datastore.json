@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "escolas",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "manha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tarde",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "noite",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

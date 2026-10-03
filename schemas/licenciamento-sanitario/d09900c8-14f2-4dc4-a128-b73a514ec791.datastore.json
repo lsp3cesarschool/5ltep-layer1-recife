@@ -1,0 +1,175 @@
+{
+ "fields": [
+  {
+   "name": "﻿areatotalconstruida",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "assunto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "categoria_empreendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cnpj",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data_conclusao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_emissao_licenca",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_entrada",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_pagamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_validade_licenca",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "dsqfl",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "empreendimento_de_impacto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco_empreendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "inscricao_mercantil",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "licenciamento_ambiental",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "licenciamento_sanitario",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "licenciamento_urbanistico",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "razao_social",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "razao_social_mercantil",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "num_licenca",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "num_processo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "porte_empreendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "potencial_empreendimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "processo_automatizado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao_processo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_mercantil",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_processo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_proc_licenciamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uso_imovel",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_taxa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_pago",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

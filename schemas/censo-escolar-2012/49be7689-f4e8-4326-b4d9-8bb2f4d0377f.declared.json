@@ -1,0 +1,68 @@
+{
+ "fields": [
+  {
+   "name": "codigo_atividade",
+   "type": "number",
+   "description": "Código da atividade complementar",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "nome_atividade",
+   "type": "string",
+   "description": "Nome da área de atividade complementar",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "codigo_area",
+   "type": "number",
+   "description": "Código da área de atividade complementar",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "description": "Nome da área de atividade complementar",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "Char",
+   "declaredSize": 40
+  },
+  {
+   "name": "codigo_subarea",
+   "type": "number",
+   "description": "Código da sub área de atividade complementar",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "nome_subarea",
+   "type": "string",
+   "description": "Nome da sub área de atividade complementar [Allowed values, as declared: 1 - Em hospital, 2 - Em domicílio, 3 - Não recebe]",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "37efdda4-026e-4704-9380-b39dc67a25c2",
+   "dictionary_name": "Dicionário de Dados do Lista das atividades complementares",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/ee599274-6f15-43c3-9242-c6be5219780d/resource/37efdda4-026e-4704-9380-b39dc67a25c2/download/dicionario-de-dados-do-lista-das-atividades-complementares.json",
+   "sha256": "63d110666457350ecb3257c8bd39e998d829544d2bc20e348d863dc1e8ecd495",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

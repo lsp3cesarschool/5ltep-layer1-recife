@@ -1,0 +1,78 @@
+{
+ "fields": [
+  {
+   "name": "cnpj",
+   "type": "string",
+   "description": "CNPJ da emprea que efetuou a ação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "nome da empresa que efeuou a ação",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "endereço da empresa que efetuou a erradicação",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "especie",
+   "type": "string",
+   "description": "espécie erradicada",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "qtd_erradicada",
+   "type": "number",
+   "description": "número de indivíduos erradicados",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "qtd_compensada",
+   "type": "number",
+   "description": "número de indivíduos conpensados",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "ano",
+   "type": "number",
+   "description": "Ano da ação",
+   "declaredType": "Num",
+   "declaredSize": 4
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "ad506dca-3abf-48a4-87d9-b2f120de9641",
+   "dictionary_name": "Dicionário de Dados - Erradicação",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/c24bb36a-7d47-48de-a768-5133eb3a8326/resource/ad506dca-3abf-48a4-87d9-b2f120de9641/download/dicionario-de-dados-erradicacao.json",
+   "sha256": "773f899b7776e9a96dcf99a3413e95f02171778f1edaaaa6e94ac94a73e83f81",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

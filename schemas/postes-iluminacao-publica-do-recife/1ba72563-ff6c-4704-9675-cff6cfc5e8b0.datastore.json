@@ -1,0 +1,125 @@
+{
+ "fields": [
+  {
+   "name": "ID PONTO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "SEQUENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "RPA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LOCALIZACA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ENDERECO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "BARRAMENTO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "LATITUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "BAIRRO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "MEDICAO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TIPO LUMIN",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TIPO DE PO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TIPO LAMPA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "QTDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "POTENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "PERDAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TOTAL CARG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CONSUMO kW",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "POTENCIA_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "PERDAS_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TOTAL CA_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CONSUMO _1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ATUALIZAÇ",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

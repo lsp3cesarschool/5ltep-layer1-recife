@@ -1,0 +1,454 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "description": "Código de escola no Inep",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "codigo_escola",
+   "type": "string",
+   "description": "Código da escola no município",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "matricula_docenteo",
+   "type": "string",
+   "description": "Código do Docente na Entidade/Escola",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "data_nascimento",
+   "type": "date",
+   "description": "Data de nascimento",
+   "declaredType": "Data",
+   "declaredSize": 10
+  },
+  {
+   "name": "sexo",
+   "type": "number",
+   "description": "Sexo [Allowed values, as declared: 1 - Feminino, 2 - Masculino]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "raca",
+   "type": "number",
+   "description": "Cor/Raça [Allowed values, as declared: 0 - Não Declarada, 1 - Branca, 2 - Preta, 3 - Parda, 4 - Amarela, 5 - Indígena]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "com_deficiencia",
+   "type": "number",
+   "description": "Docente com deficiência [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_cegueira",
+   "type": "number",
+   "description": "Tipos de deficiência - Cequeira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_baixa_visao",
+   "type": "number",
+   "description": "Tipos de deficiência - Baixa Visão [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_surdez",
+   "type": "number",
+   "description": "Tipos de deficiência - Surdez [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_baixa_audicao",
+   "type": "number",
+   "description": "Tipos de deficiência - Deficiência auditiva [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_surdocegueira",
+   "type": "number",
+   "description": "Tipos de deficiência - Surdocegueira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_fisica",
+   "type": "number",
+   "description": "Tipos de deficiência - Deficiência física [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_intelectual",
+   "type": "number",
+   "description": "Tipos de deficiência - Deficiência intelectual [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "deficiencia_multipla",
+   "type": "number",
+   "description": "Tipos de deficiência - Deficiência múltipla [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "zona_residencial",
+   "type": "number",
+   "description": "Localização/Zona de residência [Allowed values, as declared: 1 - URBANA, 2 - RURAL]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "bairro_codigo",
+   "type": "number",
+   "description": "Código Bairro",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "description": "UF",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "municipio_ibge",
+   "type": "number",
+   "description": "Código Município",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "description": "Município",
+   "constraints": {
+    "maxLength": 55
+   },
+   "declaredType": "Char",
+   "declaredSize": 55
+  },
+  {
+   "name": "escolaridade",
+   "type": "number",
+   "description": "Escolaridade [Allowed values, as declared: 1 - Fundamental Incompleto, 2 - Fundamental Completo, 3 - Ensino Médio - Normal/Magistério, 4 - Ensino Médio - Normal/Magistério Indígena, 5 - Ensino Médio, 6 - Superior]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior1_situacao",
+   "type": "string",
+   "description": "Situação do curso superior 1 [Allowed values, as declared: 1 - Concluído, 2 - Em andamento]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior1_formacao",
+   "type": "string",
+   "description": "Formação/Complementação pedagógica 1 [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior1_codigo",
+   "type": "string",
+   "description": "Código do Curso Superior 1 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Curso de Formação Superior']",
+   "constraints": {
+    "maxLength": 6
+   },
+   "declaredType": "Char",
+   "declaredSize": 6
+  },
+  {
+   "name": "curso_superior1_ano_inicio",
+   "type": "number",
+   "description": "Ano de Início do Curso Superior 1",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "curso_superior1_ano_final",
+   "type": "number",
+   "description": "Ano de Conclusão do Curso Superior 1",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "curso_superior1_tipo_instituicao",
+   "type": "string",
+   "description": "Tipo de Instituição do Curso Superior 1 [Allowed values, as declared: 1 - Pública, 2 - Privada]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior1_instituicao",
+   "type": "string",
+   "description": "Instituição do Curso Superior 1 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Curso de Formação Superior']",
+   "constraints": {
+    "maxLength": 7
+   },
+   "declaredType": "Char",
+   "declaredSize": 7
+  },
+  {
+   "name": "curso_superior2_situacao",
+   "type": "string",
+   "description": "Situação do curso superior 2 [Allowed values, as declared: 1 - Concluído, 2 - Em andamento]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior2_formacao",
+   "type": "string",
+   "description": "Formação/Complementação pedagógica 2 [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior2_codigo",
+   "type": "string",
+   "description": "Código do Curso Superior 2 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Curso de Formação Superior']",
+   "constraints": {
+    "maxLength": 6
+   },
+   "declaredType": "Char",
+   "declaredSize": 6
+  },
+  {
+   "name": "curso_superior2_ano_inicio",
+   "type": "number",
+   "description": "Ano de Início do Curso Superior 2",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "curso_superior2_ano_final",
+   "type": "number",
+   "description": "Ano de Conclusão do Curso Superior 2",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "curso_superior2_tipo_instituicao",
+   "type": "string",
+   "description": "Tipo de Instituição do Curso Superior 2 [Allowed values, as declared: 1 - Pública, 2 - Privada]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "curso_superior2_instituicao",
+   "type": "string",
+   "description": "Instituição do Curso Superior 2 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Curso de Formação Superior']",
+   "constraints": {
+    "maxLength": 7
+   },
+   "declaredType": "Char",
+   "declaredSize": 7
+  },
+  {
+   "name": "posgraduacao_especializacao",
+   "type": "number",
+   "description": "Pós-Graduação - Especialização [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "posgraduacao_mestrado",
+   "type": "number",
+   "description": "Pós-Graduação - Mestrado [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "posgraduacao_doutorado",
+   "type": "number",
+   "description": "Pós-Graduação - Doutorado [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "posgraduacao_nenhum",
+   "type": "number",
+   "description": "Pós-Graduação - Nenhum [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_creche",
+   "type": "number",
+   "description": "Específico para Creche(0 a 3 anos) [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_preescola",
+   "type": "number",
+   "description": "Específico para Pré-escola (4 a 5 anos) [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_anos_iniciais_fundamental",
+   "type": "number",
+   "description": "Específico para anos iniciais do ensino fundamental [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_anos_finais_fundamental",
+   "type": "number",
+   "description": "Específico para anos finais do ensino fundamental [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_ensino_medio",
+   "type": "number",
+   "description": "Específico para ensino médio [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_eja",
+   "type": "number",
+   "description": "Específico para educação de jovens e adultos [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_especial",
+   "type": "number",
+   "description": "Específico para educação especial [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_indigena",
+   "type": "number",
+   "description": "Específico para Educação Indígena [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_educacao_campo",
+   "type": "number",
+   "description": "Específico para educação do campo [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_educacao_ambiental",
+   "type": "number",
+   "description": "Específico para educação ambiental [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especifico_educacao_direitos_humanos",
+   "type": "number",
+   "description": "Específico para educação em direitos humanos [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "genero_diversidade_sexual",
+   "type": "number",
+   "description": "Gênero e diversidade sexual [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "direitos_crianca_adolecente",
+   "type": "number",
+   "description": "Direitos de criança e adolescente [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "educacao_etnicorraciais",
+   "type": "number",
+   "description": "Educação para as relacões etnicorraciais e História e cultura Afro-Brasileira e Africana [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "outros",
+   "type": "number",
+   "description": "Outros [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "nenhum",
+   "type": "number",
+   "description": "Nenhum [Allowed values, as declared: 0 - Não , 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "93912e81-c039-4097-a522-569455e291eb",
+   "dictionary_name": "Dicionário de Dados do Censo Escolar (Perfil dos Docentes)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/cfdd7814-fcbc-4a37-adc8-fdb8406171b7/resource/93912e81-c039-4097-a522-569455e291eb/download/dicionario-de-dados-do-censo-escolar-perfil-dos-docentes.json",
+   "sha256": "ad74df7e6b9184aee25bef680f87768e672741a7c4d58e14a21f1a9683800195",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

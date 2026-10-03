@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "NOME",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "BAIRRO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "RPA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "REGIÃO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ENDEREÇO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "LATITUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

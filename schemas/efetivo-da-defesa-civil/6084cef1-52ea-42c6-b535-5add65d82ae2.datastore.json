@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cargo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_vinculo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "turno",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_origem",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "lotacao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

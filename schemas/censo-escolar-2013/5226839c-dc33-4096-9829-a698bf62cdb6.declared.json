@@ -1,0 +1,465 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "description": "Código de escola no Inep",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "codigo_escola",
+   "type": "string",
+   "description": "Código da escola no município",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "codigo_turma",
+   "type": "string",
+   "description": "Código da Turma na Entidade/escola",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "nome_turma",
+   "type": "string",
+   "description": "Nome da turma",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "horario_hora_inicial",
+   "type": "string",
+   "description": "Horário da Turma - Horário Inicial - Hora",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "horario_minuto_inicial",
+   "type": "string",
+   "description": "Horário da Turma - Horário Inicial - Minuto",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "horario_hora_final",
+   "type": "string",
+   "description": "Horário da Turma - Horário Final - Hora",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "horario_minuto_final",
+   "type": "string",
+   "description": "Horário da Turma - Horário Final - Minuto",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "domingo",
+   "type": "number",
+   "description": "Domingo [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "segundafeira",
+   "type": "number",
+   "description": "Segunda-feira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "tercafeira",
+   "type": "number",
+   "description": "Terça-feira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "quartafeira",
+   "type": "number",
+   "description": "Quarta-feira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "quintafeira",
+   "type": "number",
+   "description": "Quinta-feira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "sextafeira",
+   "type": "number",
+   "description": "Sexta-feira [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "sabado",
+   "type": "number",
+   "description": "Sabado [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "tipo_atendimento",
+   "type": "number",
+   "description": "Tipo de atendimento [Allowed values, as declared: 3 - Unidade Prisional, 4 - Unidade Complementar, 5 - Atendimento Educacional Especializado (AEE)]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "mais_educacao",
+   "type": "number",
+   "description": "Turma participante do programa Mais Educação/Ensino Médio Inovador [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_atividade1",
+   "type": "number",
+   "description": "Código do Tipo Atividade 1 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Tipo de Atividade Complementar']",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_atividade2",
+   "type": "number",
+   "description": "Código do Tipo Atividade 2 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Tipo de Atividade Complementar']",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_atividade3",
+   "type": "number",
+   "description": "Código do Tipo Atividade 3 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Tipo de Atividade Complementar']",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_atividade4",
+   "type": "number",
+   "description": "Código do Tipo Atividade 4 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Tipo de Atividade Complementar']",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_atividade5",
+   "type": "number",
+   "description": "Código do Tipo Atividade 5 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Tipo de Atividade Complementar']",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "codigo_atividade6",
+   "type": "number",
+   "description": "Código do Tipo Atividade 6 [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Tipo de Atividade Complementar']",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "braile",
+   "type": "number",
+   "description": "Ensino do Sistema Braile [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "recurso_otico_naootico",
+   "type": "number",
+   "description": "Ensino do uso dos recursos óticos e não óticos [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "estrategia_desenvolvimento_mentais",
+   "type": "number",
+   "description": "Estratégias para o desenvolvimento de processos mentais [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "libras",
+   "type": "number",
+   "description": "Ensino da Língua Brasileira de Sinais - LIBRAS [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "caa",
+   "type": "number",
+   "description": "Ensino do uso da Comunicação Alternativa e Aumentativa (CAA) [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "estrategias_enriquecimento_curriculas",
+   "type": "number",
+   "description": "Estratégias para enriquecimento curricular [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "soroban",
+   "type": "number",
+   "description": "Ensino do uso do Soroban [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "informatica_acessivel",
+   "type": "number",
+   "description": "Emsino da usabilidade e das funcionalidades da informática acessível [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "lingua_portuguesa_escrita",
+   "type": "number",
+   "description": "Ensino da Língua Portuguesa na modalidade escrita [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "modalidade",
+   "type": "number",
+   "description": "Modalidade [Allowed values, as declared: 1 - Ensino Regular, 2 - Educação Especial - modalidade substitutiva, 3 - Educação de Jovens e Adultos ()EJA)]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "etapa_ensino",
+   "type": "number",
+   "description": "Etapa de Ensino [Allowed values, as declared: 1 – Educação infantil – creche, 2 – Educação infantil – pré-escola, 3 – Educação infantil – unificada, 56 – Educação infantil e ensino fundamental multietapa, 4 – Ensino fundamental de 8 anos – 1ª série, 5 – Ensino fundamental de 8 anos – 2ª série, 6 – Ensino fundamental de 8 anos – 3ª série, 7 – Ensino fundamental de 8 anos – 4ª Série, 8 – Ensino fundamental de 8 anos – 5ª série, 9 – Ensino fundamental de 8 anos – 6ª série, 10 – Ensino fundamental de 8 anos – 7ª série, 11 – Ensino fundamental de 8 anos – 8ª série, 12 – Ensino fundamental de 8 anos – multi, 13 – Ensino fundamental de 8 anos – correção de fluxo, 14 – Ensino fundamental de 9 anos – 1º ano, 15 – Ensino fundamental de 9 anos – 2º ano, 16 – Ensino fundamental de 9 anos – 3º ano, 17 – Ensino fundamental de 9 anos – 4º ano, 18 – Ensino fundamental de 9 anos – 5º ano, 19 – Ensino fundamental de 9 anos – 6º ano, 20 – Ensino fundamental de 9 anos – 7º ano, 21 – Ensino fundamental de 9 anos – 8º ano, 41 – Ensino fundamental de 9 anos – 9º ano, 22 – Ensino fundamental de 9 anos – multi, 23 – Ensino fundamental de 9 anos – correção de fluxo, 24 – Ensino fundamental de 8 e 9 anos – multi 8 e 9 anos, 25 – Ensino médio – 1ª série, 26 – Ensino médio – 2ª série, 27 – Ensino médio – 3ª série, 28 – Ensino médio – 4ª série, 29 – Ensino médio – não seriada, 30 – Ensino médio – integrado 1ª série, 31 – Ensino médio – integrado 2ª série, 32 – Ensino médio – integrado 3ª série, 33 – Ensino médio – integrado 4ª série, 34 – Ensino médio – integrado não seriada, 35 – Ensino médio – normal/magistério 1ª série, 36 – Ensino médio – normal/magistério 2ª série, 37 – Ensino médio – normal/magistério 3ª série, 38 – Ensino médio – normal/magistério 4ª série, 39 – Educação profissional (concomitante), 40 – Educação profissional (subsequente), 64 – Educação profissional mista (concomitante e subsequente), 43 – EJA – presencial – ensino fundamental – anos iniciais, 44 – EJA – presencial – ens",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "disciplina_quimica",
+   "type": "number",
+   "description": "Disciplinas 1 - Química [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_fisica",
+   "type": "number",
+   "description": "Disciplinas 2 - Física [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_matematica",
+   "type": "number",
+   "description": "Disciplinas 3 - Matemática [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_biologia",
+   "type": "number",
+   "description": "Disciplinas 4 - Biologia [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_ciencias",
+   "type": "number",
+   "description": "Disciplinas 5 - Ciências [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_portugues",
+   "type": "number",
+   "description": "Disciplinas 6 - Língua/Literatura portuguesa [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_ingles",
+   "type": "number",
+   "description": "Disciplinas 7 - Língua/Literatura estrangeira - Inglês [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_espanhol",
+   "type": "number",
+   "description": "Disciplinas 8 - Língua/Literatura estrangeira - Espanhol [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_frances",
+   "type": "number",
+   "description": "Disciplinas 30 - Língua/Literatura estrangeira - Francês [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_outralingua",
+   "type": "number",
+   "description": "Disciplinas 9 - Língua/Literatura estrangeira - Outra Lingua [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_artes",
+   "type": "number",
+   "description": "Disciplinas 10 - Artes (educação artística, teatro, dança, música, artes plásticas e outras) [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_educacao_fisica",
+   "type": "number",
+   "description": "Disciplinas 11 - Educação Física [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_historia",
+   "type": "number",
+   "description": "Disciplinas 12 - História [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_geografia",
+   "type": "number",
+   "description": "Disciplinas 13 - Geografia [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_filosofia",
+   "type": "number",
+   "description": "Disciplinas 14 - Filosofia [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_estudos_sociais",
+   "type": "number",
+   "description": "Disciplinas 28 - Estudos sociais [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_socilogia",
+   "type": "number",
+   "description": "Disciplinas 29 - Sociologia [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_informatica",
+   "type": "number",
+   "description": "Disciplinas 16 - Informátia/Computação [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_profissionalizante",
+   "type": "number",
+   "description": "Disciplinas 17 - Disciplinas Profissionalizantes [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_especiais",
+   "type": "number",
+   "description": "Disciplinas 20 - Disciplinas voltadas ao atendimento às necessidades educacionais específicas dos alunos são alvo da educação especial e às práticas educacionais inclusivas [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_sociocultural",
+   "type": "number",
+   "description": "Disciplinas 21 - Disciplinas voltadas às diversidade sociocultural [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_libras",
+   "type": "number",
+   "description": "Disciplinas 23 - LIBRAS [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_pedagogias",
+   "type": "number",
+   "description": "Disciplinas 25 - Disciplinas Pedagógicas [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_religiao",
+   "type": "number",
+   "description": "Disciplinas 26 - Ensino religioso [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_indigena",
+   "type": "number",
+   "description": "Disciplinas 27 - Língua Indígena [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "disciplina_outras",
+   "type": "number",
+   "description": "Disciplinas 99 - Outras Disciplinas [Allowed values, as declared: 0 - Não oferece disciplina, 1 - Sim, oferece disciplina com docente vinculado, 2 - Sim, oferece disciplina sem docente vinculado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "turma_sem_docente",
+   "type": "number",
+   "description": "Turma sem docente [Allowed values, as declared: 0 - Turma com docente, 1 - Turma sem docente]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "c2910b29-69ba-4870-9afb-4d27d8297471",
+   "dictionary_name": "Dicionário de Dados do Cadastro de turmas por escola",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/5ed5aba1-a029-40c2-a94a-386f6c2b8d74/resource/c2910b29-69ba-4870-9afb-4d27d8297471/download/dicionario-de-dados-do-cadastro-de-turmas-por-escola.json",
+   "sha256": "fed13af567467b34da36f6919a0d983f289d116494f7001ffbefc0348cc1bb43",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

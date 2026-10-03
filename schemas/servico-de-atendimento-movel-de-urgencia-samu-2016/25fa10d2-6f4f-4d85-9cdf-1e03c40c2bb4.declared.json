@@ -1,0 +1,101 @@
+{
+ "fields": [
+  {
+   "name": "data",
+   "type": "datetime",
+   "description": "Data e hora da solicitação (call center) [Allowed values, as declared: formato ISO, aaaa-mm-dd]",
+   "declaredType": "DATETIME",
+   "declaredSize": 10
+  },
+  {
+   "name": "hora_minuto",
+   "type": "datetime",
+   "description": "hora e minuto do chamado (call center) [Allowed values, as declared: formato hh24:mi]",
+   "declaredType": "DATETIME",
+   "declaredSize": 10
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "description": "município do chamado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro do Chamado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "endereço do Chamado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "origem_chamado",
+   "type": "string",
+   "description": "Origem do Chamado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Descrição da situação da solicitação",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "subtipo",
+   "type": "string",
+   "description": "Descrição do subtipo da situação da solicitação",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "description": "Sexo do paciente [Allowed values, as declared: feminino, masculino]",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8249c4ec-e697-433c-aeac-3d6ae8d6b1a5",
+   "dictionary_name": "Dicionário de Dados dos dados dos chamados Samu 2016",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/f6520cba-952a-40aa-8566-2c50567e2f77/resource/8249c4ec-e697-433c-aeac-3d6ae8d6b1a5/download/dicionario-de-dados-dos-dados-dos-chamados-samu-2016.json",
+   "sha256": "ac105cc695b0b9f81d2899c7acf665b3240ccc2399b6684b9f8cac881ed4d5c3",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "single"
+  }
+ }
+}

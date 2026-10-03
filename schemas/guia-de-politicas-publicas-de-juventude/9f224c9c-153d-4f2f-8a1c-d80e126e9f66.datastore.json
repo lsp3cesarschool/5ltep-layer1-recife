@@ -1,0 +1,115 @@
+{
+ "fields": [
+  {
+   "name": "programa",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "secretaria_responsavel",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "telefones_contato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito7",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito8",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "direito11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

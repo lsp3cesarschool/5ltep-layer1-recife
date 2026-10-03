@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "unidade",
+   "type": "string",
+   "description": "nome da unidade de atendimento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "Logradouro da unidade de atendimento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "bairro da unidade de atendimento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "description": "Horário de funcionamento da unidade de atendimento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "description": "telefone da unidade de atendimento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 15
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 15
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1a83fa8d-111a-4d5c-822b-98b0f7b86520",
+   "dictionary_name": "metadados dos Postos de Atendimento trabalho e Renda",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/5b734bae-b96f-42eb-9590-d3ed794b3099/resource/1a83fa8d-111a-4d5c-822b-98b0f7b86520/download/metadados-dos-postos-de-atendimento-trabalho-e-renda.json",
+   "sha256": "42c2270b2caf4efcbd63d75d8ef5dd8984d35f858e2769690fe5ffbc5a8aaff0",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

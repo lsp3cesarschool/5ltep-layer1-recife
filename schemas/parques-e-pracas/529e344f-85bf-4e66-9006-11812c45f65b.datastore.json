@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "Seq",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Nome_Praca",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "origem",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

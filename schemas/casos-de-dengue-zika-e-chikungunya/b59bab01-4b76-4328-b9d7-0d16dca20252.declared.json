@@ -1,0 +1,365 @@
+{
+ "fields": [
+  {
+   "name": "num_notificacao",
+   "type": "number",
+   "description": "Número da Notificação",
+   "declaredType": "Num",
+   "declaredSize": 7
+  },
+  {
+   "name": "tipo_notificacao",
+   "type": "number",
+   "description": "Identifica o tipo da notificação [Allowed values, as declared: 1 – Negativa, 2 – Individual,3 – Surto,4 – Agregado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "co_cid",
+   "type": "string",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_notificacao",
+   "type": "date",
+   "description": "Data de preenchimento da ficha de notificação.",
+   "declaredType": "Date",
+   "declaredSize": 10
+  },
+  {
+   "name": "ds_semana_notificacao",
+   "type": "number",
+   "description": "Semana epidemiológica que o caso foi notificado.",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "notificacao_ano",
+   "type": "number",
+   "description": "Ano da notificação",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "co_uf_notificacao",
+   "type": "string",
+   "description": "Tabela com Códigos e siglas padronizados pelo IBGE",
+   "constraints": {
+    "maxLength": 25
+   },
+   "declaredType": "Char",
+   "declaredSize": 25
+  },
+  {
+   "name": "co_municipio_notificacao",
+   "type": "number",
+   "description": "Tabela com Código e nome dos municípios do cadastro do IBGE (tabela municipi.dbf)",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "id_regional",
+   "type": "number",
+   "description": "Campo com código da regional de saúde da tabela de município do sistema",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "co_unidade_notificacao",
+   "type": "number",
+   "description": "Códigos e nomes da tabela do cadastro Nacional de Estabelecimento de Saúde (CNES)",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "dt_diagnostico_sintoma",
+   "type": "date",
+   "description": "Data dos primeiros sintomas do caso de agravo agudo.",
+   "declaredType": "Date",
+   "declaredSize": 10
+  },
+  {
+   "name": "ds_semana_sintoma",
+   "type": "number",
+   "description": "Semanas do calendário epidemiológico padronizado.",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_nascimento",
+   "type": "date",
+   "description": "Data de nascimento do paciente",
+   "declaredType": "Date",
+   "declaredSize": 10
+  },
+  {
+   "name": "nu_idade",
+   "type": "number",
+   "description": "A composição da variável obedece o seguinte critério: 1. Hora 2. Dia 3. Mês 4. Ano",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "tp_sexo",
+   "type": "string",
+   "description": "Sexo do paciente [Allowed values, as declared: M- Masculino, F- Feminino, I- Ignorado]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "Char",
+   "declaredSize": 1
+  },
+  {
+   "name": "tp_gestante",
+   "type": "number",
+   "description": "Idade gestacional da paciente. [Allowed values, as declared: 1. 1º Trimestre, 2. 2º Trimestre, 3. 3º Trimestre, 4. Idade gestacional ignorada, 5. Não, 6. Não se aplica, 9. Ignorado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "tp_raca_cor",
+   "type": "number",
+   "description": "Considera-se cor ou raça declarada pela pessoa. [Allowed values, as declared: 1- branca, 2- preta, 3- amarela, 4- parda, 5- indígena, 9 Ignorado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "tp_escolaridade",
+   "type": "number",
+   "description": "Série e grau que a pessoa está frequentando ou frequentou considerando a última série concluída com aprovação ou grau de instrução do paciente por ocasião da notificação. [Allowed values, as declared: 43 Analfabeto, 1. 1ª a 4ª série incompleta do EF, 2. 4ª série completa do EF (antigo 1° grau), 3. 5ª à 8ª série incompleta do EF (antigo ginásio ou 1°grau), 4. Ensino fundamental completo (antigo ginásio ou 1° grau), 5. Ensino médio incompleto(antigo colegial ou 2° grau), 6. Ensino médio completo (antigo colegial ou 2° grau), 7. Educação superior incompleta, 8. Educação superior completa, 9. Ignorado, 10. Não se aplica]",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "co_uf_residencia",
+   "type": "number",
+   "description": "Tabela com Códigos e siglas padronizados pelo IBGE (tabela municipi.dbf)",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "co_municipio_residencia",
+   "type": "number",
+   "description": "Tabela com Códigos e nomes padronizados pelo IBGE",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "co_distrito_residencia",
+   "type": "number",
+   "description": "Códigos e nomes padronizados segundo Tabela disponibilizada pelo sistema para cadastramento pelo gestor municipal do Sinan",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "co_bairro_residencia",
+   "type": "number",
+   "description": "Código do bairro de residência do paciente por ocasião da notificação.",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "no_bairro_residencia",
+   "type": "string",
+   "description": "Nome do Bairro ou outra localidade referente ao município ou Distrito selecionado.",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "co_logradouro_residencia",
+   "type": "number",
+   "description": "Tipo e nome do logradouro digitado na entrada de dados ou, se disponível selecionado em tabela de logradouros do município (código e descrição)",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "nome_logradouro_residencia",
+   "type": "string",
+   "description": "título e nome do logradouro",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "nu_residencia",
+   "type": "number",
+   "description": "Nº. do logradouro",
+   "declaredType": "Num",
+   "declaredSize": 6
+  },
+  {
+   "name": "co_geo_campo_1",
+   "type": "number",
+   "description": "Campo para Geo-Referenciamento",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "co_geo_campo_2",
+   "type": "number",
+   "description": "Campo para Geo-Referenciamento",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "ds_referencia_residencia",
+   "type": "string",
+   "description": "Ponto de referência para facilitar a localização da residência do paciente",
+   "constraints": {
+    "maxLength": 70
+   },
+   "declaredType": "Char",
+   "declaredSize": 70
+  },
+  {
+   "name": "nu_cep_residencia",
+   "type": "number",
+   "description": "CEP de residência do paciente",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "tp_zona_residencia",
+   "type": "number",
+   "description": "Zona de residência do paciente por ocasião da notificação [Allowed values, as declared: 1. urbana, 2. rural, 3. periurbana, 9. ignorado]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "co_pais_residencia",
+   "type": "string",
+   "description": "Tabela com código e descrição de paises.",
+   "constraints": {
+    "maxLength": 4
+   },
+   "declaredType": "Char",
+   "declaredSize": 4
+  },
+  {
+   "name": "tp_duplicidade",
+   "type": "number",
+   "description": "Identifica duplicidade [Allowed values, as declared: 0 ou branco – Não identificado, 1 – Não é duplicidade (não listar), 2 – Duplicidade (não contar – categoria existente apenas no Sinan NET)]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dt_digitacao",
+   "type": "date",
+   "description": "Data de Digitação da primeira inclusão da notificação no sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_transf_us",
+   "type": "date",
+   "description": "Data de Transferência do registro da Unidade de Saúde para do nível superior do sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_transf_dm",
+   "type": "date",
+   "description": "Data de Transferência do registro do Distrito Municipal para do nível superior do sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_transf_sm",
+   "type": "date",
+   "description": "Data de Transferência do registro da secretaria municipal para do nível superior do sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_transf_rm",
+   "type": "date",
+   "description": "Data de Transferência do registro da Regional Municipal para do nível superior do sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_transf_rs",
+   "type": "date",
+   "description": "Data de Transferência do registro da Regional de Saúde para do nível superior do sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "dt_transf_se",
+   "type": "date",
+   "description": "Data de Transferência do registro da Secretaria Estadual para do nível superior do sistema.",
+   "declaredType": "date",
+   "declaredSize": 10
+  },
+  {
+   "name": "nu_lote_vertical",
+   "type": "string",
+   "description": "Identifica o Lote da transferência da notificação um nível do sistema para outro (transferência vertical)",
+   "constraints": {
+    "maxLength": 7
+   },
+   "declaredType": "Char",
+   "declaredSize": 7
+  },
+  {
+   "name": "nu_lote_horizontal",
+   "type": "string",
+   "description": "Identifica do Lote da transferência de registros dentro de um mesmo nível do sistema (transferência Horizontal)",
+   "constraints": {
+    "maxLength": 7
+   },
+   "declaredType": "Char",
+   "declaredSize": 7
+  },
+  {
+   "name": "tp_fluxo_retorno",
+   "type": "number",
+   "description": "Identifica se o registro está habilitado para o local de residência ou foi enviado pelo fluxo de retorno. [Allowed values, as declared: 0 - Não, 1 - habilitado para envio, 2 - Enviado, 3 - distrito, 4 - enviado para distrito, 5 - excluído para fluxo, Obs.: categorias 2, 3, 4 e 5 preenchidas apenas pelo Sinan Net.]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "st_fluxo_retorno_recebido",
+   "type": "number",
+   "description": "Identifica se o registro foi recebido pelo fluxo de retorno [Allowed values, as declared: 1 – Sim, 2 - Não]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "ds_identificador_registro",
+   "type": "number",
+   "description": "Corresponde ao código de instalação do sistema: código do município",
+   "declaredType": "Num",
+   "declaredSize": 50
+  },
+  {
+   "name": "st_importado",
+   "type": "number",
+   "description": "Identifica se o registro é oriundo da rotina de migração da base Windows. [Allowed values, as declared: 1-migrado do Sinan Windows, nada - se não for]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "2b62054a-6709-4678-b26d-595c92921a9b",
+   "dictionary_name": "Metadados dos Casos confirmados de Chikungunya",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/2b62054a-6709-4678-b26d-595c92921a9b/download/metadados-dos-casos-confirmados-de-chikungunya.json",
+   "sha256": "7a4bed8a71b9978b5de26910dcaa0a5b01427d179f1f1a337edbf7646a2bfd9c",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

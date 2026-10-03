@@ -1,0 +1,20 @@
+{
+ "fields": [
+  {
+   "name": "codigo_disciplina",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "descricao_disciplina",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

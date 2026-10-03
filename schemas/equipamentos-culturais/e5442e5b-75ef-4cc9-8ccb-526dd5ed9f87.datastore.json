@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "seq",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

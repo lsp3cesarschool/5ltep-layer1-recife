@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "num_contrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgaocontratante",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objetocontrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cnpjcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cpfcontratado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "razaonomecontratado",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "num_apostilamento",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "tipo_apostilamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_apostilamento",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "situacao_apostilamento",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

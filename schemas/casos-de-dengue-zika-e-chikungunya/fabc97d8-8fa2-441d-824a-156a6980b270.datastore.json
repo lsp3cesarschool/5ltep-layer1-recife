@@ -1,0 +1,30 @@
+{
+ "fields": [
+  {
+   "name": "Código Distrito",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Distrito",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Código Município",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

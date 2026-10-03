@@ -1,0 +1,125 @@
+{
+ "fields": [
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Tipo da estação [Allowed values, as declared: ecoestação,econúcleo]",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome da estação",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "localizacao",
+   "type": "string",
+   "description": "Local onde se encontra a estação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "detalhes",
+   "type": "string",
+   "description": "Descreve detalhes da localizacao",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "bairro",
+   "type": "number",
+   "description": "Descriçăo do bairro",
+   "declaredType": "Num",
+   "declaredSize": 30
+  },
+  {
+   "name": "resíduo_construcao_civil",
+   "type": "string",
+   "description": "os gerados nas construções, reformas, reparos e demolições de obras de construção civil, incluídos os resultantes da preparação e escavação de terrenos para obras civis [Allowed values, as declared: Sim, Não]",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "resíduo_volumoso",
+   "type": "string",
+   "description": "serão considerados Resíduos Volumosos os resíduos constituídos basicamente por material volumoso não removido pela coleta domiciliar regular, como móveis e equipamentos domésticos inutilizados, grandes embalagens e peças de madeira e assemelhados; e o material proveniente de execução de poda e jardinagem. [Allowed values, as declared: Sim, Não]",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "resíduo_reciclavel",
+   "type": "string",
+   "description": "são compostos, principalmente, por metais (como aço e alumínio), papel, papelão, tetrapak, diferentes tipos de plásticos e vidro. [Allowed values, as declared: Sim, Não]",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "resíduo_solido_organico",
+   "type": "string",
+   "description": "os originários de atividades domésticas em residências urbanas, sempre que a Ecoestação possuir uma Caixa Compactadora Estacionária. [Allowed values, as declared: Sim, Não]",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "description": "Região Politico Administrativa [Allowed values, as declared: 1,2,3,4,5,6]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenada geografica",
+   "declaredType": "num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenada geografica",
+   "declaredType": "num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1d421094-25c5-4c56-ac7a-3241e11970aa",
+   "dictionary_name": "Dicionário de dados das ecoestações e econúcleos do Recife",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/35b66e14-b912-4ebd-af29-084dd21f09a0/resource/1d421094-25c5-4c56-ac7a-3241e11970aa/download/dicionario-de-dados-das-ecoestacoes-e-econucleos-do-recife.json",
+   "sha256": "dc1bb4f4f85fbc3ef15061c50f5ee8f580379ddae4d338259550e35706a53ded",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "single"
+  }
+ }
+}

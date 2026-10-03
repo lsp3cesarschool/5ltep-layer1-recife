@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "codigo_disciplina",
+   "type": "number",
+   "description": "Código da disciplina",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "descricao_disciplina",
+   "type": "string",
+   "description": "Descrição da disciplina",
+   "constraints": {
+    "maxLength": 190
+   },
+   "declaredType": "Char",
+   "declaredSize": 190
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "03f9623f-4dca-45f6-853a-4a0a622543ad",
+   "dictionary_name": "Dicionário de Dados do Censo Escolar (Lista das disciplinas ministradas)",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/cfdd7814-fcbc-4a37-adc8-fdb8406171b7/resource/03f9623f-4dca-45f6-853a-4a0a622543ad/download/dicionario-de-dados-do-censo-escolar-lista-das-disciplinas-ministradas.json",
+   "sha256": "a8ecb2030fa93016422f616b37b3895d80ce4211939b6919cc17c3035c47bf3e",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

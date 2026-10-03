@@ -1,0 +1,119 @@
+{
+ "fields": [
+  {
+   "name": "nome_equip_urbano",
+   "type": "string",
+   "description": "Nome do Equipamento Urbano",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "tipo_equip_urbano",
+   "type": "string",
+   "description": "Tipo do Equipamento Urbano",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "endereco_equip_urbano",
+   "type": "string",
+   "description": "Endereço do Equipamento Urbano",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "codigo_logradouro",
+   "type": "number",
+   "description": "Código do Logradouro que identifica as Vias de Circulação",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "lei_equip_urbano",
+   "type": "string",
+   "description": "Lei que sancionou a criação do equipamento urbano",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "nome_bairro",
+   "type": "string",
+   "description": "Nome do Bairro que está associado ao código do Bairro",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "codigo_bairro",
+   "type": "number",
+   "description": "Código do Bairro que identifica unicamenta a região",
+   "declaredType": "Num",
+   "declaredSize": 7
+  },
+  {
+   "name": "nome_oficial_equip_urbano",
+   "type": "string",
+   "description": "Nome oficial designado ao equipamento",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "area_equip_urbano",
+   "type": "number",
+   "description": "Valor da Área em Metros Quadrados do Equipamento Urbano",
+   "declaredType": "Num",
+   "declaredSize": 7
+  },
+  {
+   "name": "perimetro_equip_urbano",
+   "type": "number",
+   "description": "Valor do Perímetro em Metros do Equipamento Urbano",
+   "declaredType": "Num",
+   "declaredSize": 7
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográfias em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográfias em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "387815ab-e2bf-42d0-8f88-fb6b9eeff963",
+   "dictionary_name": "Metadados dos Parques e Praças Coordenadas Cartesianas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/b3a3a033-3611-485c-8d18-d02c5a42563d/resource/387815ab-e2bf-42d0-8f88-fb6b9eeff963/download/metadados-dos-parques-e-pracas-coordenadas-cartesianas.json",
+   "sha256": "ef17da53384459ffcb2a64c8477dbe60b8a72c57c10383945376e30d1134d5fa",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

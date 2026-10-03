@@ -1,0 +1,450 @@
+{
+ "fields": [
+  {
+   "name": "NU_ANO_CENSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NO_TURMA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TX_HR_INICIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TX_MI_INICIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DURACAO_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_MATRICULAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_MEDIACAO_DIDATICO_PEDAGO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIAL_EXCLUSIVA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_REGULAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EJA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PROFISSIONALIZANTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_ETAPA_ENSINO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_CURSO_EDUC_PROFISSIONAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MAIS_EDUCACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DIAS_ATIVIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_DOMINGO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_SEGUNDA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_TERCA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_QUARTA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_QUINTA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_SEXTA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DIA_SEMANA_SABADO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_3",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_4",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_5",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_TIPO_ATIVIDADE_6",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BRAILLE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSOS_BAIXA_VISAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PROCESSOS_MENTAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ORIENTACAO_MOBILIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SINAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_COMUNICACAO_ALT_AUMENT",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ENRIQ_CURRICULAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SOROBAN",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_INFORMATICA_ACESSIVEL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PORT_ESCRITA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AUTONOMIA_ESCOLAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_QUIMICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_FISICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_MATEMATICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_BIOLOGIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_CIENCIAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_LINGUA_PORTUGUESA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_LINGUA_INGLES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_LINGUA_ESPANHOL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_LINGUA_FRANCES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_LINGUA_OUTRA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_LINGUA_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_ARTES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_EDUCACAO_FISICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_HISTORIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_GEOGRAFIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_FILOSOFIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_ENSINO_RELIGIOSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_ESTUDOS_SOCIAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_SOCIOLOGIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_EST_SOCIAIS_SOCIOLOGIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_INFORMATICA_COMPUTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_PROFISSIONALIZANTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_ATENDIMENTO_ESPECIAIS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_DISC_DIVER_SOCIO_CULTURAL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_DISC_LIBRAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DISC_PEDAGOGICAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_DISC_OUTRAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_ENTIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_REGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MESORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MICRORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_DISTRITO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_DEPENDENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CATEGORIA_ESCOLA_PRIVADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_CONVENIADA_PP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CONVENIO_PODER_PUBLICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_EMP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_ONG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIND",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIST_S",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_S_FINS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_REGULAMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO_DIFERENCIADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EDUCACAO_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

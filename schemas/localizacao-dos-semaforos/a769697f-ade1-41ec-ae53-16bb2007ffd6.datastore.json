@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "semafororo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "localizacao1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "localizacao2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

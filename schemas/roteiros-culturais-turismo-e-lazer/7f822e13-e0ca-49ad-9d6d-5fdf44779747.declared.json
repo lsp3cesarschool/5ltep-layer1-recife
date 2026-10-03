@@ -1,0 +1,71 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "description": "Descrição",
+   "constraints": {
+    "maxLength": 600
+   },
+   "declaredType": "Char",
+   "declaredSize": 600
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "description": "Bairro",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Logradouro",
+   "type": "string",
+   "description": "Logradouro",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8257ca67-d4a8-4c4a-97c5-dc7f8559804d",
+   "dictionary_name": "Dicionário de dados dos Centros de Compras",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd/resource/8257ca67-d4a8-4c4a-97c5-dc7f8559804d/download/dicionario-de-dados-dos-centros-de-compras.json",
+   "sha256": "dc122a060facf16482670e238cd1abb438c7cc356971405d70644fb00c495458",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

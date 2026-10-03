@@ -1,0 +1,38 @@
+{
+ "fields": [
+  {
+   "name": "codcontrolenumserie",
+   "type": "number",
+   "description": "código do controle de número de serie",
+   "declaredType": "Num",
+   "declaredSize": 6
+  },
+  {
+   "name": "carro",
+   "type": "number",
+   "description": "código de identificação do veículo que utilizou o serviço",
+   "declaredType": "Num",
+   "declaredSize": 6
+  },
+  {
+   "name": "data_hora",
+   "type": "date",
+   "description": "Data e hora de cada monitoração. Formato aaaa-mm-dd hh24:mi:ss",
+   "declaredType": "data",
+   "declaredSize": 19
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "66078ad3-4a29-42f9-9b22-28b3f78c0c7d",
+   "dictionary_name": "Metadados Zona Azul Eletrônica",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/9c12986c-8dcc-46ac-bc78-ec216d988c6c/resource/66078ad3-4a29-42f9-9b22-28b3f78c0c7d/download/metadados-zona-azul-eletronica.json",
+   "sha256": "c286c160e79c0a7374da8f7af74622f36fbcf00ef14eba7d3da3bc2a5ea7617b",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

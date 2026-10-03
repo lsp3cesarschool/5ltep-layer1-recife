@@ -1,0 +1,61 @@
+{
+ "fields": [
+  {
+   "name": "Mome",
+   "type": "string",
+   "description": "Nome",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "Descricao",
+   "type": "string",
+   "description": "Descrição",
+   "constraints": {
+    "maxLength": 600
+   },
+   "declaredType": "Char",
+   "declaredSize": 600
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "description": "Bairro",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "f2f17211-b119-438c-a4d2-9360bf997f84",
+   "dictionary_name": "Dicionário de Dados dos Mercados Públicos - json",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/b8b08925-4f49-4683-b93b-bc6b52d2b4af/resource/f2f17211-b119-438c-a4d2-9360bf997f84/download/dicionario-de-dados-dos-mercados-publicos.json",
+   "sha256": "533afc02162c4a64fa8e5010b3233d35f2fcf81383d3034cb70417b536bd93b6",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "declared-id"
+  }
+ }
+}

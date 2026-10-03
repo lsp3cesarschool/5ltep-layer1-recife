@@ -1,0 +1,250 @@
+{
+ "fields": [
+  {
+   "name": "N_Identificador",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IBGE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "q48_3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q48_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q48_10",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q48_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q48_12",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q48_14",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "IBGE7",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_UF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Região",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "areaKm2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "q7",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "DataCenso",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "d48_2_Faixas_etarias",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_9",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_9bin1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_9bin2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_9bin3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_9bin1_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_9bin2_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d48_9bin3_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d48_10bin1_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d48_10bin2_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin3_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_10bin4_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "d48_10bin5_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin1_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin2_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin3_sum",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "d48_11bin4_sum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nu_familias_acolhedoras",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

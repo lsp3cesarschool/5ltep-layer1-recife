@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data de abertura",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "hora de abertura",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo de ocorrencia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "quantidade de vitimas",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

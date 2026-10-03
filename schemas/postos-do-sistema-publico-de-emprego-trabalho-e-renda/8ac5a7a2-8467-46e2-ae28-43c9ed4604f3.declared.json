@@ -1,0 +1,91 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "nome da unidade",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "Logradouro da unidade",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "bairro da unidade",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "description": "telefone da unidade de atendimento",
+   "constraints": {
+    "maxLength": 254
+   },
+   "declaredType": "Char",
+   "declaredSize": 254
+  },
+  {
+   "name": "rpa",
+   "type": "string",
+   "description": "Região Política Administrativa da unidade",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "description": "Observação sobre a unidade",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 15
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 15
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "df25fb77-bb5a-46f0-bdba-e1e7d2818e50",
+   "dictionary_name": "metadados das escolas profissionalizantes",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/5b734bae-b96f-42eb-9590-d3ed794b3099/resource/df25fb77-bb5a-46f0-bdba-e1e7d2818e50/download/metadados-das-escolas-profissionalizantes.json",
+   "sha256": "5e73d86ecdf84e6313fd1d86aca7f2291da95f2607484e74d5b28e462c40f260",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

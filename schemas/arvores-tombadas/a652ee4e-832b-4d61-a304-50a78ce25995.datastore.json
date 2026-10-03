@@ -1,0 +1,80 @@
+{
+ "fields": [
+  {
+   "name": "nome_popular",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "familia",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_cientifico",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "este",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "norte",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "decreto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "microregiao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "identifica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,525 @@
+{
+ "fields": [
+  {
+   "name": "NU_ANO_CENSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_ALUNO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ID_MATRICULA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_MES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_ANO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_IDADE_REFERENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_IDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_SEXO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_COR_RACA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_NACIONALIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_PAIS_ORIGEM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF_NASC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO_NASC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF_END",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO_END",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_ZONA_RESIDENCIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCAL_RESID_DIFERENCIADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_NECESSIDADE_ESPECIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BAIXA_VISAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_CEGUEIRA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_AUDITIVA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_FISICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_INTELECTUAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SURDEZ",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SURDOCEGUEIRA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_MULTIPLA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AUTISMO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SUPERDOTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_LEDOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_TRANSCRICAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_INTERPRETE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_LIBRAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_LABIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_AMPLIADA_18",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_AMPLIADA_24",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_CD_AUDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_PROVA_PORTUGUES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_VIDEO_LIBRAS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_BRAILLE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_RECURSO_NENHUM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AEE_LIBRAS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_LINGUA_PORTUGUESA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_INFORMATICA_ACESSIVEL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_BRAILLE",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_CAA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_SOROBAN",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_VIDA_AUTONOMA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_OPTICOS_NAO_OPTICOS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_ENRIQ_CURRICULAR",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_DESEN_COGNITIVO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_AEE_MOBILIDADE",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TP_OUTRO_LOCAL_AULA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_TRANSPORTE_PUBLICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_RESPONSAVEL_TRANSPORTE",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_BICICLETA",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_MICRO_ONIBUS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_ONIBUS",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_TR_ANIMAL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_VANS_KOMBI",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_OUTRO_VEICULO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_EMBAR_ATE5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_EMBAR_5A15",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_EMBAR_15A35",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_TRANSP_EMBAR_35",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TP_ETAPA_ENSINO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIAL_EXCLUSIVA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_REGULAR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EJA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_PROFISSIONALIZANTE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_CURSO_EDUC_PROFISSIONAL",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "TP_MEDIACAO_DIDATICO_PEDAGO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DURACAO_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DUR_ATIV_COMP_MESMA_REDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DUR_ATIV_COMP_OUTRAS_REDES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DUR_AEE_MESMA_REDE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DUR_AEE_OUTRAS_REDES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_DIAS_ATIVIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_UNIFICADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_ATENDIMENTO_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_LOCAL_TURMA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_ENTIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_REGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MESORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MICRORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_DISTRITO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_DEPENDENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CATEGORIA_ESCOLA_PRIVADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_CONVENIADA_PP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CONVENIO_PODER_PUBLICO",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_EMP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_ONG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_OSCIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIV_ONG_OSCIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIND",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIST_S",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_S_FINS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_REGULAMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO_DIFERENCIADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EDUCACAO_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

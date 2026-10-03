@@ -1,0 +1,1137 @@
+{
+ "fields": [
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "any",
+   "description": "NU_IDENTIFICADOR.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "IBGE.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_1",
+   "type": "any",
+   "description": "q0_1.Denominação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_2",
+   "type": "any",
+   "description": "q0_2.Selecione o Tipo de Logradouro (avenida, rua, etc):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_3",
+   "type": "any",
+   "description": "q0_3.Endereço:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_4",
+   "type": "any",
+   "description": "q0_4.Número:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_5",
+   "type": "any",
+   "description": "q0_5.Complemento:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_6",
+   "type": "any",
+   "description": "q0_6.Bairro:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_7",
+   "type": "any",
+   "description": "q0_7.Ponto de Referência:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_8",
+   "type": "any",
+   "description": "q0_8.CEP:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_9",
+   "type": "any",
+   "description": "q0_9.Município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_10",
+   "type": "any",
+   "description": "q0_10.UF:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_11",
+   "type": "any",
+   "description": "q0_11. E-mail:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_12",
+   "type": "any",
+   "description": "q0_12. DDD - Telefone:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_13",
+   "type": "any",
+   "description": "q0_13.Ramal:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Latitude",
+   "type": "any",
+   "description": "Latitude.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Longitude",
+   "type": "any",
+   "description": "Longitude.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1",
+   "type": "any",
+   "description": "q1.Este local é:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1_99",
+   "type": "any",
+   "description": "q1_99.Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_1",
+   "type": "any",
+   "description": "q2_1.Horário de funcionamento - dias por semana",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_2",
+   "type": "any",
+   "description": "q2_2.Horário de funcionamento - horas por dia",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3",
+   "type": "any",
+   "description": "q3.Indique se a Unidade está localizada em:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q4",
+   "type": "any",
+   "description": "q4.Situação do imóvel onde se localiza a Unidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_1",
+   "type": "any",
+   "description": "q5_1. Salas para atendimento de apenas uma família por vez:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_2",
+   "type": "any",
+   "description": "q5_2.Salas com 2 a 5 guichês de atendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_3",
+   "type": "any",
+   "description": "q5_3.Salas com 6 a 10 guichês de atendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_4",
+   "type": "any",
+   "description": "q5_4.Salas com 11 a 15 guichês de atendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_5",
+   "type": "any",
+   "description": "q5_5.Salas com mais de 15 guichês de atendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_6",
+   "type": "any",
+   "description": "q5_6.Salas exclusivas de coordenação, equipe técnica ou administração",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_7",
+   "type": "any",
+   "description": "q5_7.Banheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_8",
+   "type": "any",
+   "description": "q5_8.Recepção",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_9",
+   "type": "any",
+   "description": "q5_9.Cozinha/Copa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_10",
+   "type": "any",
+   "description": "q5_10.Almoxarifado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_11",
+   "type": "any",
+   "description": "q5_11.Salas para Arquivos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_1",
+   "type": "any",
+   "description": "q6_1.Acesso principal adaptado com rampas e rota acessível desde a calçada até a recepção do posto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_2",
+   "type": "any",
+   "description": "q6_2.Rota acessível aos espaços do posto (recepção, salas de atendimento e espaços de uso coletivo)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_3",
+   "type": "any",
+   "description": "q6_3.Rota acessível ao banheiro",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_4",
+   "type": "any",
+   "description": "q6_4.Banheiro adaptado para pessoas com deficiência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_1",
+   "type": "any",
+   "description": "q7_1.Telefone",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_2",
+   "type": "any",
+   "description": "q7_2.Celular da unidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_3",
+   "type": "any",
+   "description": "q7_3. Impressora",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_4",
+   "type": "any",
+   "description": "q7_4.Máquina Copiadora",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_5",
+   "type": "any",
+   "description": "q7_5.Televisão (TV)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_6",
+   "type": "any",
+   "description": "q7_6.Equipamento de som",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_7",
+   "type": "any",
+   "description": "q7_7.DVD",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_8",
+   "type": "any",
+   "description": "q7_8.Datashow",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_9",
+   "type": "any",
+   "description": "q7_9. Veículo de uso exclusivo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_10",
+   "type": "any",
+   "description": "q7_10.Veículo de uso compartilhado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_11",
+   "type": "any",
+   "description": "q7_11. Acervo bibliográfico",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_12",
+   "type": "any",
+   "description": "q7_12.Brinquedoteca",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_13",
+   "type": "any",
+   "description": "q7_13.Brinquedos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_14",
+   "type": "any",
+   "description": "q7_14.Materiais pedagógicos, culturais e esportivos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_15",
+   "type": "any",
+   "description": "q7_15.Bebedouros ou filtro de água disponível ao público",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_16",
+   "type": "any",
+   "description": "q7_16.Ar condicionado ou ventilador",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_1_1",
+   "type": "any",
+   "description": "q7_1_1.Quantos telefones:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_2_1",
+   "type": "any",
+   "description": "q7_2_1.Quantos celulares da unidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_3_1",
+   "type": "any",
+   "description": "q7_3_1. Quantas impressoras:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_4_1",
+   "type": "any",
+   "description": "q7_4_1.Quantas máquinas copiadoras:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_9_1",
+   "type": "any",
+   "description": "q7_9_1.Quantos veículos de uso exclusivo:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_10_1",
+   "type": "any",
+   "description": "q7_10_1.Quantos veículos de uso compartilhado:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_1",
+   "type": "any",
+   "description": "q8_1.Quantidade total de computadores na Unidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_2",
+   "type": "any",
+   "description": "q8_2.Destes, quantos estão conectados à internet",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_1",
+   "type": "any",
+   "description": "q9_1.Sistema de Cadastro Único (CAIXA)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_2",
+   "type": "any",
+   "description": "q9_2.Portal do Cadastro Único (Dataprev)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_3",
+   "type": "any",
+   "description": "q9_3.RelCad - Relatórios de Informações Gerenciais do Cadastro Único",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_4",
+   "type": "any",
+   "description": "q9_4.CECAD – Sistema de consulta, seleção e extração de dados do Cadastro Único para Programas Sociais do Governo Federal gerido pela SAGICAD/MDS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_5",
+   "type": "any",
+   "description": "q9_5. Módulo de Acompanhamento Familiar do SICON - Sistema de Condicionalidades do Programa Bolsa Família",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_6",
+   "type": "any",
+   "description": "q9_6.SICON - Sistema de Condicionalidades do Programa Bolsa Família - demais módulos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_7",
+   "type": "any",
+   "description": "q9_7.SIBEC - Sistema de Benefícios ao Cidadão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_8",
+   "type": "any",
+   "description": "q9_8.Módulo Administração off-line (disponível no SIGPBF)– Sistema que permite solicitações de administração de benefícios, quando essas não são possíveis diretamente no SIBEC",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_9",
+   "type": "any",
+   "description": "q9_9.Outros sistemas estaduais e ou municipais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_1",
+   "type": "any",
+   "description": "q10_1.Total de indivíduos atendidos neste posto do Cadastro Único:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_1_98",
+   "type": "any",
+   "description": "q10_1_98.Não sabe informar",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_2",
+   "type": "any",
+   "description": "q10_2. Destes, qual o total de indivíduos que realizaram entrevista para inclusão cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_2_98",
+   "type": "any",
+   "description": "q10_2_98.Não sabe informar",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_3",
+   "type": "any",
+   "description": "q10_3.Destes, qual o total de indivíduos realizaram entrevista para atualização cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_3_98",
+   "type": "any",
+   "description": "q10_3_98.Não sabe informar",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_1",
+   "type": "any",
+   "description": "q11_1.Entre o agendamento e a realização do atendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_1_98",
+   "type": "any",
+   "description": "q11_1_98.Não realiza",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_2",
+   "type": "any",
+   "description": "q11_2. Após a entrevista, para que os dados coletados em formulário em papel sejam inseridos no sistema",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_2_98",
+   "type": "any",
+   "description": "q11_2_98.Não realiza",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_3",
+   "type": "any",
+   "description": "q11_3.Uma entrevista para inclusão cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_4",
+   "type": "any",
+   "description": "q11_4.Uma entrevista para atualização cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12",
+   "type": "any",
+   "description": "q12. Como é feito o registro das informações da entrevista no Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_1",
+   "type": "any",
+   "description": "q13_1.Sim, as famílias de Averiguação e Revisão Cadastral são alvo de busca ativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_2",
+   "type": "any",
+   "description": "q13_2.Sim, as famílias de Averiguação e Revisão Cadastral fazem parte do público prioritário de atendimento na unidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_3",
+   "type": "any",
+   "description": "q13_3. Sim, há mutirões em dias específicos para atender o público de Averiguação e Revisão Cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_99",
+   "type": "any",
+   "description": "q13_99.Sim, outros.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_0",
+   "type": "any",
+   "description": "q13_0.Não há ações específicas para atender o público de Averiguação e Revisão Cadastral.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_99_1",
+   "type": "any",
+   "description": "q13_99_1.Qual(is)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_1",
+   "type": "any",
+   "description": "q14_1. Para a inclusão ou atualização cadastral de forma geral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_2",
+   "type": "any",
+   "description": "q14_2.Para apurar denúncias:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_3",
+   "type": "any",
+   "description": "q14_3. Para famílias incluídas em Averiguação Cadastral:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_4",
+   "type": "any",
+   "description": "q14_4.Para inclusão ou atualização de dados de famílias com beneficiários do Benefício de Prestação Continuada (BPC):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_5",
+   "type": "any",
+   "description": "q14_5. Para inclusão ou atualização de dados de famílias pertencentes à Grupos Populacionais Tradicionais ou Específicos (GPTEs):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_6",
+   "type": "any",
+   "description": "q14_6.Para inclusão ou atualização de dados de famílias que moram em locais de difícil acesso:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_99_1",
+   "type": "any",
+   "description": "q14_99_1. Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_99",
+   "type": "any",
+   "description": "q14_99.Outros:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_0",
+   "type": "any",
+   "description": "q15_0.Não realiza ações e atividades relacionadas à gestão de benefícios do Programa Bolsa Família",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_1",
+   "type": "any",
+   "description": "q15_1.As ações e atividades relacionadas à gestão de benefícios do Programa Bolsa Família são encaminhadas para o CRAS e/ou outros serviço da rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_2",
+   "type": "any",
+   "description": "q15_2.Esclarecimentos individuais de dúvidas sobre regras do Programa (valores de benefícios, regras de concessão, bloqueio, suspensão e cancelamento de benefícios e condicionalidades)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_3",
+   "type": "any",
+   "description": "q15_3.Ações coletivas para prestar informações às famílias sobre regras do Programa (Reuniões de acolhida, palestra etc.)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_4",
+   "type": "any",
+   "description": "q15_4.Manutenção de benefícios (bloqueios, desbloqueios, cancelamentos e reversões de cancelamento) diretamente no SIBEC",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_5",
+   "type": "any",
+   "description": "q15_5. Registro das manutenções de benefícios (bloqueios, desbloqueios, cancelamentos e reversões de cancelamento) no Formulário Padrão de Gestão de Benefícios (FPGB) e seu arquivamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_6",
+   "type": "any",
+   "description": "q15_6.Solicitação de manutenção de benefícios (bloqueios, desbloqueios, cancelamentos e reversões de cancelamento) pelo módulo de Administração Off-line do SigPBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_1",
+   "type": "any",
+   "description": "q16_1.Este posto encaminha as famílias para a rede socioassistencial de referência para inclusão em serviços socioassistenciais (CRAS, CREAS, Centro Pop, outros)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_2",
+   "type": "any",
+   "description": "q16_2.Este posto encaminha as famílias para a rede socioassistencial de referência para acesso a benefícios eventuais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_3",
+   "type": "any",
+   "description": "q16_3.Este posto atende famílias para inclusão e atualização cadastral encaminhadas pela rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_4",
+   "type": "any",
+   "description": "q16_4.Um profissional da equipe do Cadastro Único deste posto está alocado em outro equipamento socioassistencial para fazer interlocução do Cadastro Único com os programas, serviços e benefícios socioassistenciais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_5",
+   "type": "any",
+   "description": "q16_5.Este posto realiza Busca Ativa (cadastramento domiciliar, ações itinerantes, mutirões etc.) em conjunto com a rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_6",
+   "type": "any",
+   "description": "q16_6.Este posto realiza encontro/mutirão de cadastramento de GTPE´s",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_0",
+   "type": "any",
+   "description": "q16_0.Este posto não se relaciona com outros equipamentos da rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE7",
+   "type": "any",
+   "description": "IBGE7.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "codigo_UF",
+   "type": "any",
+   "description": "codigo_UF.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Região",
+   "type": "any",
+   "description": "Região.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Município",
+   "type": "any",
+   "description": "Município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "areaKm2",
+   "type": "any",
+   "description": "areaKm2.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Nome_UF",
+   "type": "any",
+   "description": "Nome_UF.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "any",
+   "description": "Pop_total_2022.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "any",
+   "description": "Porte_pop2022.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_1_velha",
+   "type": "any",
+   "description": "q13_1.Sim, as famílias de Averiguação e Revisão Cadastral são alvo de busca ativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_2_velha",
+   "type": "any",
+   "description": "q13_2.Sim, as famílias de Averiguação e Revisão Cadastral fazem parte do público prioritário de atendimento na unidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_3_velha",
+   "type": "any",
+   "description": "q13_3. Sim, há mutirões em dias específicos para atender o público de Averiguação e Revisão Cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_99_velha",
+   "type": "any",
+   "description": "q13_99.Sim, outros.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_0_velha",
+   "type": "any",
+   "description": "q13_99.Sim, outros.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_0_velha",
+   "type": "any",
+   "description": "q15_0.Não realiza ações e atividades relacionadas à gestão de benefícios do Programa Bolsa Família",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_1_velha",
+   "type": "any",
+   "description": "q15_1.As ações e atividades relacionadas à gestão de benefícios do Programa Bolsa Família são encaminhadas para o CRAS e/ou outros serviço da rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_2_velha",
+   "type": "any",
+   "description": "q15_2.Esclarecimentos individuais de dúvidas sobre regras do Programa (valores de benefícios, regras de concessão, bloqueio, suspensão e cancelamento de benefícios e condicionalidades)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_3_velha",
+   "type": "any",
+   "description": "q15_3.Ações coletivas para prestar informações às famílias sobre regras do Programa (Reuniões de acolhida, palestra etc.)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_4_velha",
+   "type": "any",
+   "description": "q15_4.Manutenção de benefícios (bloqueios, desbloqueios, cancelamentos e reversões de cancelamento) diretamente no SIBEC",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_5_velha",
+   "type": "any",
+   "description": "q15_5. Registro das manutenções de benefícios (bloqueios, desbloqueios, cancelamentos e reversões de cancelamento) no Formulário Padrão de Gestão de Benefícios (FPGB) e seu arquivamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_6_velha",
+   "type": "any",
+   "description": "q15_6.Solicitação de manutenção de benefícios (bloqueios, desbloqueios, cancelamentos e reversões de cancelamento) pelo módulo de Administração Off-line do SigPBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_0_velha",
+   "type": "any",
+   "description": "q16_0.Este posto não se relaciona com outros equipamentos da rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_1_velha",
+   "type": "any",
+   "description": "q16_1.Este posto encaminha as famílias para a rede socioassistencial de referência para inclusão em serviços socioassistenciais (CRAS, CREAS, Centro Pop, outros)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_2_velha",
+   "type": "any",
+   "description": "q16_2.Este posto encaminha as famílias para a rede socioassistencial de referência para acesso a benefícios eventuais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_3_velha",
+   "type": "any",
+   "description": "q16_3.Este posto atende famílias para inclusão e atualização cadastral encaminhadas pela rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_4_velha",
+   "type": "any",
+   "description": "q16_4.Um profissional da equipe do Cadastro Único deste posto está alocado em outro equipamento socioassistencial para fazer interlocução do Cadastro Único com os programas, serviços e benefícios socioassistenciais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_5_velha",
+   "type": "any",
+   "description": "q16_5.Este posto realiza Busca Ativa (cadastramento domiciliar, ações itinerantes, mutirões etc.) em conjunto com a rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_6_velha",
+   "type": "any",
+   "description": "q16_6.Este posto realiza encontro/mutirão de cadastramento de GTPE´s",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d_2",
+   "type": "any",
+   "description": "d_2_Total de horas por semana que o Posto encontra-se em funcionamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d_5_atend",
+   "type": "any",
+   "description": "d_5_atend.Total de salas utilizadas para atendimento individual ou coletivo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d_5_atend_categoria",
+   "type": "any",
+   "description": "d_5_atend_categoria.Total de salas utilizadas para atendimento individual ou coletivo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d_5_adm_atend",
+   "type": "any",
+   "description": "d_5_adm_atend.Total de salas utilizadas para atendimento e para atividades administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d_5_adm_atend_categoria",
+   "type": "any",
+   "description": "d_5_adm_atend_categoria.Total de salas utilizadas para atendimento e para atividades administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d_5_7_banheiros",
+   "type": "any",
+   "description": "d_5_7_banheiros.Quantidade total de banheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d7_1_1",
+   "type": "any",
+   "description": "d7_1_1.Quantidade de telefones",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d7_2_1",
+   "type": "any",
+   "description": "d7_2_1.Quantidade de celulares da unidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d7_3_1",
+   "type": "any",
+   "description": "d7_3_1.Quantidade de impressoras",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d7_4_1",
+   "type": "any",
+   "description": "d7_4_1 Quantidade de máquinas copiadoras",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d7_9_1",
+   "type": "any",
+   "description": "d7_9_1.Quantidade de veículos de uso exclusivo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d7_10_1",
+   "type": "any",
+   "description": "d7_10_1.Quantidade de veículos de uso compartilhado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d8_1",
+   "type": "any",
+   "description": "d8_1.Quantidade de computadores, em perfeito funcionamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d8_2",
+   "type": "any",
+   "description": "d8_2.Quantidade de computadores conectados à internet",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d10_1",
+   "type": "any",
+   "description": "d10_1. Total de pessoas atendidas no Posto do Cadastro Unico",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d10_2",
+   "type": "any",
+   "description": "d10_2. Total de pessoas que realizaram entrevista para inclusão cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d10_3",
+   "type": "any",
+   "description": "d10_3. Total de pessoas que realizaram entrevista para atualização cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_1",
+   "type": "any",
+   "description": "d11_1. Quantos dias entre o agendamento e a realização do atendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_2",
+   "type": "any",
+   "description": "d11_2.Quantos dias após a entrevista, para que os dados coletados em formulário em papel sejam inseridos no sistema",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_3",
+   "type": "any",
+   "description": "Quantos minutos Uma entrevista para inclusão cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_4",
+   "type": "any",
+   "description": "d11_4. Quantos minutos para uma entrevista para atualização cadastral",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "97be40a1-abfe-4960-a0b9-e9ce9957ae72",
+   "dictionary_name": "Posto Cadastro Unico Dicionario de Variaveis",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/97be40a1-abfe-4960-a0b9-e9ce9957ae72/download/censo_suas_2024_-posto_cadastro_unico_dicionario-de-variaveis.xlsx",
+   "sha256": "2abf9a8cee6c2e8616e466e7d7af1e5d7fefff9f761d00614e334f2ff47b319c",
+   "reader": "xlsx",
+   "part": "Dados Gerais",
+   "link_method": "header"
+  }
+ }
+}

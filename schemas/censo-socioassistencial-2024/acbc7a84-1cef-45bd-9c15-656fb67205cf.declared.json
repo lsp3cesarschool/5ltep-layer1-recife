@@ -1,0 +1,996 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "IBGE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Latitude",
+   "type": "any",
+   "description": "Latitude",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Longitude",
+   "type": "any",
+   "description": "Longitude",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_1",
+   "type": "any",
+   "description": "q0_1_Nome:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_2",
+   "type": "any",
+   "description": "q0_2_Selecione o Tipo de Logradouro (avenida, rua, etc):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_3",
+   "type": "any",
+   "description": "q0_3_Endereço:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_4",
+   "type": "any",
+   "description": "q0_4_Número:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_5",
+   "type": "any",
+   "description": "q0_5_Complemento:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_6",
+   "type": "any",
+   "description": "q0_6_Bairro:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_7",
+   "type": "any",
+   "description": "q0_7_Ponto de Referência:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_8",
+   "type": "any",
+   "description": "q0_8_CEP:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_9",
+   "type": "any",
+   "description": "q0_9_Município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_10",
+   "type": "any",
+   "description": "q0_10_UF:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_11",
+   "type": "any",
+   "description": "q0_11_E-mail:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_12",
+   "type": "any",
+   "description": "q0_12_DDD - Telefone:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_13",
+   "type": "any",
+   "description": "q0_13_Ramal:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1",
+   "type": "any",
+   "description": "q1_Este Fundo é uma unidade orçamentária?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2",
+   "type": "any",
+   "description": "q2_O(a) ordenador(a) de despesa do FMAS é:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3",
+   "type": "any",
+   "description": "q3_Os recursos PRÓPRIOS DO MUNICÍPIO de 2024 que foram aplicados na Assistência Social foram alocados na unidade Orçamentária do Fundo Municipal de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q4",
+   "type": "any",
+   "description": "q4_O órgão gestor municipal fez, em 2023, transferência de recursos por convênio/termo de parceria para Organizações da Sociedade Civil ou Entidades de Assistência Social no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5",
+   "type": "any",
+   "description": "q5_Quantas entidades receberam, em 2023, recurso do órgão gestor municipal por convênio/termo de parceria?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_0",
+   "type": "any",
+   "description": "q6_0_Não recebeu recursos estaduais para o cofinanciamento da Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_1",
+   "type": "any",
+   "description": "q6_1_Proteção Social Básica",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_2",
+   "type": "any",
+   "description": "q6_2_Proteção Social Especial de Média Complexidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_3",
+   "type": "any",
+   "description": "q6_3_Proteção Social Especial de Alta Complexidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_4",
+   "type": "any",
+   "description": "q6_4_Benefícios Eventuais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_5",
+   "type": "any",
+   "description": "q6_5_Incentivo à Gestão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_6",
+   "type": "any",
+   "description": "q6_6_Enfrentamento de situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_99",
+   "type": "any",
+   "description": "q6_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_99_1",
+   "type": "any",
+   "description": "q6_99_1_Outros_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7",
+   "type": "any",
+   "description": "q7_Caso o município tenha recebido em 2023 recursos ESTADUAIS, informe se estes recursos são alocados na Unidade Orçamentária do Fundo Municipal de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8",
+   "type": "any",
+   "description": "q8_O recurso para financiamento municipal dos Benefícios Eventuais foi previsto na Lei Orçamentária Anual (LOA) do ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9",
+   "type": "any",
+   "description": "q9_O recurso para financiamento municipal dos Benefícios Eventuais foi alocado no FMAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_1",
+   "type": "any",
+   "description": "q9_1_Então, onde foi alocado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10",
+   "type": "any",
+   "description": "q10_Qual percentual dos recursos do IGD-PBF o município destina para o Conselho Municipal de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11",
+   "type": "any",
+   "description": "q11_Qual percentual dos recursos do IGDSUAS o município destina para o Conselho Municipal de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_1",
+   "type": "any",
+   "description": "q12_1_1_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_1_98",
+   "type": "any",
+   "description": "q12_1_1_98_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_2",
+   "type": "any",
+   "description": "q12_1_2_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_2_98",
+   "type": "any",
+   "description": "q12_1_2_98_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_3",
+   "type": "any",
+   "description": "q12_1_3_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_3_98",
+   "type": "any",
+   "description": "q12_1_3_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor alocado - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_4",
+   "type": "any",
+   "description": "q12_1_4_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_4_98",
+   "type": "any",
+   "description": "q12_1_4_98_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_5",
+   "type": "any",
+   "description": "q12_1_5_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_5_98",
+   "type": "any",
+   "description": "q12_1_5_98_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_6",
+   "type": "any",
+   "description": "q12_1_6_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_6_98",
+   "type": "any",
+   "description": "q12_1_6_98_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_7",
+   "type": "any",
+   "description": "q12_1_7_RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios alocados na unidade orçamentaria do Fundo Municipal de Assistência Social - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_7_98",
+   "type": "any",
+   "description": "q12_1_7_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor alocado - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_1",
+   "type": "any",
+   "description": "q12_2_1_RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_1_98",
+   "type": "any",
+   "description": "q12_2_1_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_2",
+   "type": "any",
+   "description": "q12_2_2_RECURSOS FINANCEIROS- Valor recebido do governo estadual (Fundo a Fundo e Convênios) - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_2_98",
+   "type": "any",
+   "description": "q12_2_2_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_3",
+   "type": "any",
+   "description": "q12_2_3_RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_3_98",
+   "type": "any",
+   "description": "q12_2_3_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_4",
+   "type": "any",
+   "description": "q12_2_4_RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_4_98",
+   "type": "any",
+   "description": "q12_2_4_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_5",
+   "type": "any",
+   "description": "q12_2_5_RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_5_98",
+   "type": "any",
+   "description": "q12_2_5_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_6",
+   "type": "any",
+   "description": "q12_2_6_RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_6_98",
+   "type": "any",
+   "description": "q12_2_6_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_7",
+   "type": "any",
+   "description": "q12_2_7_RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_7_98",
+   "type": "any",
+   "description": "q12_2_7_98_Não sabe Informar - RECURSOS FINANCEIROS - Valor recebido do governo estadual - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_1",
+   "type": "any",
+   "description": "q12_3_1_DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_1_98",
+   "type": "any",
+   "description": "q12_3_1_98_Não sabe Informar - DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_2",
+   "type": "any",
+   "description": "q12_3_2_DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_2_98",
+   "type": "any",
+   "description": "q12_3_2_98_Não sabe Informar - DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_3",
+   "type": "any",
+   "description": "q12_3_3_DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_3_98",
+   "type": "any",
+   "description": "q12_3_3_98_Não sabe Informar - DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_4",
+   "type": "any",
+   "description": "q12_3_4_DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_4_98",
+   "type": "any",
+   "description": "q12_3_4_98_Não sabe Informar - DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_5",
+   "type": "any",
+   "description": "q12_3_5_DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_5_98",
+   "type": "any",
+   "description": "q12_3_5_98_Não sabe Informar - DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_6",
+   "type": "any",
+   "description": "q12_3_6_DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_6_98",
+   "type": "any",
+   "description": "q12_3_6_98_Não sabe Informar - DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_7",
+   "type": "any",
+   "description": "q12_3_7_DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_7_98",
+   "type": "any",
+   "description": "q12_3_7_98_Não sabe Informar - DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_1",
+   "type": "any",
+   "description": "q12_4_1_DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_1_98",
+   "type": "any",
+   "description": "q12_4_1_98_Não sabe informar - DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_2",
+   "type": "any",
+   "description": "q12_4_2_DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_2_98",
+   "type": "any",
+   "description": "q12_4_2_98_Não sabe informar - DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_3",
+   "type": "any",
+   "description": "q12_4_3_DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_3_98",
+   "type": "any",
+   "description": "q12_4_3_98_Não sabe informar - DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_4",
+   "type": "any",
+   "description": "q12_4_4_DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_4_98",
+   "type": "any",
+   "description": "q12_4_4_98_DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_5",
+   "type": "any",
+   "description": "q12_4_5_DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_5_98",
+   "type": "any",
+   "description": "q12_4_5_98_DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_6",
+   "type": "any",
+   "description": "q12_4_6_DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_6_98",
+   "type": "any",
+   "description": "q12_4_6_98_Não sabe informar - DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_7",
+   "type": "any",
+   "description": "q12_4_7_DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_7_98",
+   "type": "any",
+   "description": "q12_4_7_98_Não sabe informar - DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_97",
+   "type": "any",
+   "description": "q13_97_Não há equipe do Fundo de Assistência Social no município",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE7",
+   "type": "any",
+   "description": "IBGE7",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "codigo_UF",
+   "type": "any",
+   "description": "codigo_UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Região",
+   "type": "any",
+   "description": "Região",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Município",
+   "type": "any",
+   "description": "Município",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "areaKm2",
+   "type": "any",
+   "description": "areaKm2",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "any",
+   "description": "Pop_total_2022",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "any",
+   "description": "Porte_pop2022",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "any",
+   "description": "Q_incompleto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_1_velha",
+   "type": "any",
+   "description": "q12_1_1 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_1_velha",
+   "type": "any",
+   "description": "q12_2_1 RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_1_velha",
+   "type": "any",
+   "description": "q12_3_1 DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_1_velha",
+   "type": "any",
+   "description": "q12_4_1 DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_2_velha",
+   "type": "any",
+   "description": "q12_1_2 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_2_velha",
+   "type": "any",
+   "description": "q12_2_2 RECURSOS FINANCEIROS- Valor recebido do governo estadual (Fundo a Fundo e Convênios) - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_2_velha",
+   "type": "any",
+   "description": "q12_3_2 DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_2_velha",
+   "type": "any",
+   "description": "q12_4_2 DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - PSE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_3_velha",
+   "type": "any",
+   "description": "q12_1_3 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_3_velha",
+   "type": "any",
+   "description": "q12_2_3 RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_3_velha",
+   "type": "any",
+   "description": "q12_3_3 DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_3_velha",
+   "type": "any",
+   "description": "q12_4_3 DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - BENEFICIOS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_4_velha",
+   "type": "any",
+   "description": "q12_1_4 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_4_velha",
+   "type": "any",
+   "description": "q12_2_4 RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_4_velha",
+   "type": "any",
+   "description": "q12_3_4 DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_4_velha",
+   "type": "any",
+   "description": "q12_4_4 DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - GESTÃO",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_5_velha",
+   "type": "any",
+   "description": "q12_1_5 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_5_velha",
+   "type": "any",
+   "description": "q12_2_5 RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_5_velha",
+   "type": "any",
+   "description": "q12_3_5 DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_5_velha",
+   "type": "any",
+   "description": "q12_4_5 DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - PROGRAMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_6_velha",
+   "type": "any",
+   "description": "q12_1_6 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_6_velha",
+   "type": "any",
+   "description": "q12_2_6 RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_6_velha",
+   "type": "any",
+   "description": "q12_3_6 DESPESAS PAGAS- Valor da despesa realizada com recursos próprios do município - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_6_velha",
+   "type": "any",
+   "description": "q12_4_6 DESPESAS PAGAS - Valor da despesa realizada com recursos repassados pelo governo estadual - OUTROS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1_7_velha",
+   "type": "any",
+   "description": "q12_1_7 RECURSOS FINANCEIROS - Valor alocado referente aos recursos próprios do município - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2_7_velha",
+   "type": "any",
+   "description": "q12_2_7 RECURSOS FINANCEIROS - Valor recebido do governo estadual (Fundo a Fundo e Convênios) - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3_7_velha",
+   "type": "any",
+   "description": "q12_3_7 DESPESAS PAGAS - Valor da despesa realizada com recursos próprios do município - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4_7_velha",
+   "type": "any",
+   "description": "q12_4_7 DESPESAS PAGAS- Valor da despesa realizada com recursos repassados pelo governo estadual - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Limp_q12",
+   "type": "any",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_0_velha",
+   "type": "any",
+   "description": "q6_0_Não recebeu recursos estaduais para o cofinanciamento da Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_1_velha",
+   "type": "any",
+   "description": "q6_1_Proteção Social Básica",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_2_velha",
+   "type": "any",
+   "description": "q6_2_Proteção Social Especial de Média Complexidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_3_velha",
+   "type": "any",
+   "description": "q6_3_Proteção Social Especial de Alta Complexidade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_4_velha",
+   "type": "any",
+   "description": "q6_4_Benefícios Eventuais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_5_velha",
+   "type": "any",
+   "description": "q6_5_Incentivo à Gestão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_6_velha",
+   "type": "any",
+   "description": "q6_6_Enfrentamento de situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_99_velha",
+   "type": "any",
+   "description": "q6_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7_velha",
+   "type": "any",
+   "description": "q7_Caso o município tenha recebido em 2023 recursos ESTADUAIS, informe se estes recursos são alocados na Unidade Orçamentária do Fundo Municipal de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "514d295d-6ad3-4995-aed7-b5032e3a3c18",
+   "dictionary_name": "Fundo Municipal Dicionário de variaveis",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/514d295d-6ad3-4995-aed7-b5032e3a3c18/download/censo_suas_2024_fundo_municipal_dicionario_variaveis.xlsx",
+   "sha256": "3e7970b05b26fe5dcf83b65f2eaa9ac2ab138ae00d1f0b0e66b3899f83b3edcb",
+   "reader": "xlsx",
+   "part": "Dados Gerais",
+   "link_method": "header"
+  }
+ }
+}

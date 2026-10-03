@@ -1,0 +1,105 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "mes",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "processo_numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "solicitacao_data",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "solicitacao_hora",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_regional",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_localidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_roteiro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "rpa_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "rpa_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "solicitacao_microrregiao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "solicitacao_plantao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "processo_situacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "processo_tipo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "processo_origem",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "processo_solicitacao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

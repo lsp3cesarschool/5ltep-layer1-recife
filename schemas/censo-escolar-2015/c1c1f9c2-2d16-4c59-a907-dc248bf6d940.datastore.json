@@ -1,0 +1,605 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "situacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data_inicio",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_termino",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "longitude",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cep",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco_numero",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "endereco_complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "telefone",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "fax",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_regional",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "regulamentacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "unidade_vinculada",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola_sede",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_ies",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "funcionamento_predio_escolar",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_templo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_empresa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_casa_prof",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_outras_escolas",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_galpao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_socioeducativa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_unid_prisional",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "funcionamento_outros",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "forma_ocupacao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "predio_compartilhado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "esc_compartilha1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "esc_compartilha2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "esc_compartilha3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "esc_compartilha4",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "esc_compartilha5",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "esc_compartilha6",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "agua_consumida",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "agua_rede_publica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "agua_poco_artesiano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "agua_cacimba",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "agua_fonte",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "agua_inexistente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "energia_rede_publica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "energia_gerador",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "energia_outros",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "energia_inexistente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "esgoto_rede_publica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "esgoto_fossa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "esgoto_inexistente",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lixo_coleta_periodica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lixo_queima",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lixo_outra_area",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lixo_recicla",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lixo_enterra",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "lixo_outros",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_diretoria",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_professores",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_secretaria",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_laboratorio_informatica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_laboratorio_ciencias",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_aee",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_quadra_coberta",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_quadra_descoberta",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_cozinha",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_biblioteca",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_leitura",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_parque_infantil",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_bercario",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_banheiro_fora",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_banheiro_dentro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_banheiro_infantil",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_banheiro_deficiencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_vias_adequadas_deficiencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_banheiro_chuveiro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_refeitorio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_despensa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_almoxarifado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_auditorio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_patio_coberto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dependencia_patio_descoberto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dependencia_alojamento_aluno",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dependencia_alojamento_professor",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dependencia_area_verde",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_lavanderia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "dependencia_outras",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "quantidade_salas_existentes",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "quantidade_salas_utilizadas_fora_e_dentro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_televisao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_videocassete",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_dvd",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_antena_parabolica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_copiadora",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_retroprojetor",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_impressora",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_aparelho_som",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_projetor_multimidia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_fax",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_maquina_fotografica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_computadores",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_multifuncional",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "equipamentos_comp_administrativo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "equipamentos_comp_alunos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "acesso_internet",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "banda_larga",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "total_funcionarios",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alimentacao_escolar",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "atendimento_educ_especializado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "atividade_complementar",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "modalidade_regular",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "modalidade_especial",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "modalidade_eja",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "modalidade_profissional",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "fundamental_em_ciclos",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "brasil_alfabetizado",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "abre_finais_semana",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "formacao_por_alternancia",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

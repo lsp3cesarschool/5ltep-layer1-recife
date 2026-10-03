@@ -1,0 +1,90 @@
+{
+ "fields": [
+  {
+   "name": "semaforo",
+   "type": "number",
+   "description": "Código de identificação do semáforo",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "localizacao1",
+   "type": "string",
+   "description": "Endereço onde semáforo está instalado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "localizacao2",
+   "type": "string",
+   "description": "Endereço do cruzamento do semáforo ou contendo ponto de referência",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro onde semáforo está instalado",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 50
+  },
+  {
+   "name": "latitude",
+   "type": "any",
+   "description": "Latitude em coordenadas geográficas em graus decimais",
+   "declaredType": "NUMER",
+   "declaredSize": 20,
+   "mappingNote": "declared type not recognised: 'NUMER'"
+  },
+  {
+   "name": "longitude",
+   "type": "any",
+   "description": "Longitude em coordenadas geográficas em graus decimais",
+   "declaredType": "NUMER",
+   "declaredSize": 20,
+   "mappingNote": "declared type not recognised: 'NUMER'"
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Tipo de funcionamento do semáforo. GIT = Gerenciador Inteligente de Trânsito, E = Eletrônico (CES),M = Eletromecânico, E/E = Eletroeletrônico",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 10
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "description": "Destinação do semáforo, que podem ser: Ocasional/Ped = Ocasional de Pedestre, Veic.C/Ped. = Veicular com Pedestre, Veic.C/Ped.Ocas = Veicular com Pedestre Ocasional, Veic.C/Ped.Paral = Veicular com Pedestre Paralelo, Veic.C/Laço Det = Veicular com laço Detector",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 30
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "195dd8e0-a78e-436b-a862-b057834b9884",
+   "dictionary_name": "Dicionário de Dados dos Semáforos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/289c2371-31f4-49ed-9226-059de68d2bae/resource/195dd8e0-a78e-436b-a862-b057834b9884/download/dicionario-de-dados-dos-semaforos.json",
+   "sha256": "ef71df9e4a6108a4ed8cc28e77359d094c45547f1865d5234af31ef95885cae1",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

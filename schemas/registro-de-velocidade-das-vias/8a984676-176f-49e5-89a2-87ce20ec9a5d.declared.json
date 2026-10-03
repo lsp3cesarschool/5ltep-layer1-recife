@@ -1,0 +1,181 @@
+{
+ "fields": [
+  {
+   "name": "CodEquipamento",
+   "type": "string",
+   "description": "Código do equipamento da via",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "DataHoraRegistro",
+   "type": "date",
+   "description": "Data e Hora do registro do evento",
+   "declaredType": "Date",
+   "declaredSize": 100
+  },
+  {
+   "name": "Cont_F1_15Min",
+   "type": "number",
+   "description": "Contagem da Primeira faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F2_15Min",
+   "type": "number",
+   "description": "Contagem da Segunda faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F3_15Min",
+   "type": "number",
+   "description": "Contagem da Terceira faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F4_15Min",
+   "type": "number",
+   "description": "Contagem da Quarta faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Contagem_15Min",
+   "type": "number",
+   "description": "Contagem Total dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Vel_F1_15Min",
+   "type": "number",
+   "description": "Velocidade media da Primeira faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Vel_F2_15Min",
+   "type": "number",
+   "description": "Velocidade media da Segunda faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Vel_F3_15Min",
+   "type": "number",
+   "description": "Velocidade media da Terceira faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Vel_F4_15Min",
+   "type": "number",
+   "description": "Velocidade media da Quarta faixa dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "VelocMedia_15Min",
+   "type": "number",
+   "description": "Velocidade media Total dentro de um intervalo de 15 mintos",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F1_24h",
+   "type": "number",
+   "description": "Contagem da Primeira faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F2_24h",
+   "type": "number",
+   "description": "Contagem da Segunda faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F3_24h",
+   "type": "number",
+   "description": "Contagem da Terceira faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Cont_F4_24h",
+   "type": "number",
+   "description": "Contagem da Quarta faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Contagem_24h",
+   "type": "number",
+   "description": "Contagem Total dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Inf_F1_24h",
+   "type": "number",
+   "description": "Número de infrações reportadas na Primeira faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Inf_F2_24h",
+   "type": "number",
+   "description": "Número de infrações reportadas na Segunda faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Inf_F3_24h",
+   "type": "number",
+   "description": "Número de infrações reportadas na Terceira faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Inf_F4_24h",
+   "type": "number",
+   "description": "Número de infrações reportadas na Quarta faixa dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "Infracao",
+   "type": "number",
+   "description": "Número de infrações totais reportadas dentro de um intervalo de 24 horas",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "UltimaAtualizacao",
+   "type": "date",
+   "description": "Data e Hora do envio do registro do evento",
+   "declaredType": "Date",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "09a874c4-b8c5-4b74-98aa-bac8831b235d",
+   "dictionary_name": "Metadados do Registro do Fluxo de veículos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8a159282-2ee4-4fe7-be99-07aa3cd8ca94/resource/09a874c4-b8c5-4b74-98aa-bac8831b235d/download/metadados-do-registro-do-fluxo-de-veiculos.json",
+   "sha256": "c9122be541e272fb0f9a0ab6661ea4e0cb2d0eb20d673e16e388f4b9d4d8f993",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

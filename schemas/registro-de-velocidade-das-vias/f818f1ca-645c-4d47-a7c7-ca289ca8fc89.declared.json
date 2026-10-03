@@ -1,0 +1,44 @@
+{
+ "fields": [
+  {
+   "name": "local",
+   "type": "string",
+   "description": "Local de instalação do equipamento",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "sentido",
+   "type": "string",
+   "description": "Sentido que a via segue",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "faixa",
+   "type": "number",
+   "description": "faixa de monitoramento",
+   "declaredType": "Num",
+   "declaredSize": 5
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8a955711-9944-4749-842b-0dae6874ad02",
+   "dictionary_name": "Metadados do Registro do monitoramento das vias",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/8a159282-2ee4-4fe7-be99-07aa3cd8ca94/resource/8a955711-9944-4749-842b-0dae6874ad02/download/metadados-do-registro-do-monitoramento-das-vias.json",
+   "sha256": "271d45bbcd9bf49332772a59295a927c404db848afe7bdc847dcc9d591215b50",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

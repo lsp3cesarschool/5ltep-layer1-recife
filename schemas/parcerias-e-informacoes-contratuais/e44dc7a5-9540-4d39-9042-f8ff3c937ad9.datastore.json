@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "item",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "contrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "origem",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "vencimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dotacao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

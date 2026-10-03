@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "telefone",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "site",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "funcionamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "funcionamentoDomingo",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

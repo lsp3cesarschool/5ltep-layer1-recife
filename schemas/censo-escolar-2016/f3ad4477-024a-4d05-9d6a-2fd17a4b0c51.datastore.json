@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "Código",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "cod_iso_alpha-3",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_pais_area",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "fields": [
+  {
+   "name": "Código",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Dependencias",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

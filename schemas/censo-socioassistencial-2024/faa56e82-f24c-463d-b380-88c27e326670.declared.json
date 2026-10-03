@@ -1,0 +1,5092 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "'IBGE'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Latitude",
+   "type": "any",
+   "description": "'Latitude'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Longitude",
+   "type": "any",
+   "description": "'Longitude'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_1",
+   "type": "any",
+   "description": "q0_1_Nome que identifica o órgão gestor:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_2",
+   "type": "any",
+   "description": "q0_2_Selecione o Tipo de Logradouro (avenida, rua, etc):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_3",
+   "type": "any",
+   "description": "q0_3_Endereço:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_4",
+   "type": "any",
+   "description": "q0_4_Número:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_5",
+   "type": "any",
+   "description": "q0_5_Complemento:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_6",
+   "type": "any",
+   "description": "q0_6_Bairro:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_7",
+   "type": "any",
+   "description": "q0_7_Ponto de Referência:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_8",
+   "type": "any",
+   "description": "q0_8_CEP:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_9",
+   "type": "any",
+   "description": "q0_9_Município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_10",
+   "type": "any",
+   "description": "q0_10_UF:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_11",
+   "type": "any",
+   "description": "q0_11_Email:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_12",
+   "type": "any",
+   "description": "q0_12_DDD - Telefone:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_13",
+   "type": "any",
+   "description": "q0_13_Ramal:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1",
+   "type": "any",
+   "description": "q1_De acordo com a estrutura administrativa do município, o órgão gestor da assistência social caracteriza-se como",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_1",
+   "type": "any",
+   "description": "q2_1_Educação - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_2",
+   "type": "any",
+   "description": "q2_2_Planejamento - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_3",
+   "type": "any",
+   "description": "q2_3_Saúde - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_4",
+   "type": "any",
+   "description": "q2_4_Habitação - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_5",
+   "type": "any",
+   "description": "q2_5_Segurança Alimentar - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_6",
+   "type": "any",
+   "description": "q2_6_Trabalho e/ou Emprego - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_7",
+   "type": "any",
+   "description": "q2_7_Direitos Humanos - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_99",
+   "type": "any",
+   "description": "q2_99_Outra - A qual secretaria a assistência social está associada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_99_1",
+   "type": "any",
+   "description": "q2_99_1_Outra_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_1",
+   "type": "any",
+   "description": "q3_1_Gestão do SUAS - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_2",
+   "type": "any",
+   "description": "q3_2_Vigilância Socioassistencial (Inclusive áreas de monitoramento e avaliação) - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_3",
+   "type": "any",
+   "description": "q3_3_Gestão do Trabalho - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_4",
+   "type": "any",
+   "description": "q3_4_Regulação do SUAS - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_5",
+   "type": "any",
+   "description": "q3_5_Gestão Financeira e Orçamentária - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_6",
+   "type": "any",
+   "description": "q3_6_Proteção Social Básica - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_7",
+   "type": "any",
+   "description": "q3_7_Proteção Social Especial - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_8",
+   "type": "any",
+   "description": "q3_8_Gestão do Cadastro Único e Programa Bolsa Família - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_9",
+   "type": "any",
+   "description": "q3_9_Gestão de Benefícios Assistenciais (BPC, Benefícios Eventuais) - área constituídas como subdivisões administrativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q4",
+   "type": "any",
+   "description": "q4_Em que ano ocorreu a última atualização da Lei Municipal de regulamentação do Sistema Único de Assistência Social - SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q4_1",
+   "type": "any",
+   "description": "q4_1_Não possui Lei Municipal de Regulamentação do SUAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_1",
+   "type": "any",
+   "description": "q5_1_Participou de encontros de apoio técnico presenciais - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_2",
+   "type": "any",
+   "description": "q5_2_Recebeu apoio técnico individualizado do estado - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_3",
+   "type": "any",
+   "description": "q5_3_Enviou informações à Secretaria Estadual para monitoramento - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_4",
+   "type": "any",
+   "description": "q5_4_Participou de seminários promovidos pelo estado - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_5",
+   "type": "any",
+   "description": "q5_5_Recebeu visitas técnicas do estado - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_6",
+   "type": "any",
+   "description": "q5_6_Entrou em contato com a Central de relacionamento do estado - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_7",
+   "type": "any",
+   "description": "q5_7_Recebeu orientações técnicas e materiais informativos elaborados ou compartilhados pelo estado - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_8",
+   "type": "any",
+   "description": "q5_8_Participou de Videoconferências e transmissões ao vivo - Nos últimos 12 meses, quais formas de apoio técnico o município recebeu do estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_0",
+   "type": "any",
+   "description": "q5_0_Não recebeu nenhum apoio técnico",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6",
+   "type": "any",
+   "description": "q6_O município possui Plano Municipal de Assistência Social (PMAS) vigente (2021-2024) aprovado pelo CMAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7",
+   "type": "any",
+   "description": "q7_O município possui ouvidoria ou canal de recebimento de denúncias",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_1",
+   "type": "any",
+   "description": "q8_1_Conselho Municipal de Direitos da Criança e do Adolescente - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_1_1",
+   "type": "any",
+   "description": "q8_1_1_Conselho Municipal de Direitos da Criança e do Adolescente, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_2",
+   "type": "any",
+   "description": "q8_2_Conselho Municipal de Direitos do Idoso - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_2_1",
+   "type": "any",
+   "description": "q8_2_1_Conselho Municipal de Direitos do Idoso, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_3",
+   "type": "any",
+   "description": "q8_3_Conselho Municipal de Direitos da Pessoa com Deficiência- existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_3_1",
+   "type": "any",
+   "description": "q8_3_1_Conselho Municipal de Direitos da Pessoa com Deficiência, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_4",
+   "type": "any",
+   "description": "q8_4_Conselho Municipal de Direitos da Mulher - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_4_1",
+   "type": "any",
+   "description": "q8_4_1_Conselho Municipal de Direitos da Mulher, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_5",
+   "type": "any",
+   "description": "q8_5_Conselho Municipal de Segurança Alimentar - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_5_1",
+   "type": "any",
+   "description": "q8_5_1_Conselho Municipal de Segurança Alimentar, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_6",
+   "type": "any",
+   "description": "q8_6_Conselho Municipal de Direitos LGBTQIAP+ - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_6_1",
+   "type": "any",
+   "description": "q8_6_1_Conselho Municipal de Direitos LGBTQIAP+, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_7",
+   "type": "any",
+   "description": "q8_7_Conselho Municipal de Igualdade Racial - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_7_1",
+   "type": "any",
+   "description": "q8_7_1_Conselho Municipal de Igualdade Racial, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_8",
+   "type": "any",
+   "description": "q8_8_Conselho Municipal de Direitos Humanos - existência e vinculação administrativa",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_8_1",
+   "type": "any",
+   "description": "q8_8_1_Conselho Municipal de Direitos Humanos, é vinculado administrativamente ao Órgão Gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_0",
+   "type": "any",
+   "description": "q9_0_Não acompanha - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_1",
+   "type": "any",
+   "description": "q9_1_É membro da CIB - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_2",
+   "type": "any",
+   "description": "q9_2_Participa como convidado das reuniões - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_3",
+   "type": "any",
+   "description": "q9_3_Recebe boletins informativos - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_4",
+   "type": "any",
+   "description": "q9_4_Solicita à Secretaria Técnica da CIB o envio de informações sobre as reuniões - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_99",
+   "type": "any",
+   "description": "q9_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_99_1",
+   "type": "any",
+   "description": "q9_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_1",
+   "type": "any",
+   "description": "q10_1_Participa das reuniões - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_2",
+   "type": "any",
+   "description": "q10_2_Recebe boletins informativos - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_3",
+   "type": "any",
+   "description": "q10_3_Solicita à diretoria o envio de informações sobre as reuniões - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_4",
+   "type": "any",
+   "description": "q10_4_Participa de algum grupo de discussão - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_99",
+   "type": "any",
+   "description": "q10_99_Outros - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_5",
+   "type": "any",
+   "description": "q10_5_O município faz parte, mas não acompanha - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_0",
+   "type": "any",
+   "description": "q10_0_O município não faz parte do COEGEMAS - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_99_1",
+   "type": "any",
+   "description": "q10_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11",
+   "type": "any",
+   "description": "q11_O órgão gestor possui levantamento ou pesquisa nos últimos doze meses que aponte o número de pessoas em situação de rua no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12",
+   "type": "any",
+   "description": "q12_Caso sim, quantas pessoas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13",
+   "type": "any",
+   "description": "q13_Este quantitativo considera:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14",
+   "type": "any",
+   "description": "q14_Como foi realizado este levantamento ou pesquisa?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_1",
+   "type": "any",
+   "description": "q15_1_Realiza visitas técnicas à rede socioassistencial - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_2",
+   "type": "any",
+   "description": "q15_2_Realiza a gestão/validação das informações prestadas sobre as unidades, como o preenchimento do RMA, Censo SUAS e demais instrumentais nacionais, estaduais ou municipais - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_3",
+   "type": "any",
+   "description": "q15_3_Possui instrumentos de coleta de dados próprios para levantamento de informações junto aos serviços - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_4",
+   "type": "any",
+   "description": "q15_4_Produção de Indicadores próprios para aferição volume e qualidade dos serviços socioassistenciais - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_99",
+   "type": "any",
+   "description": "q15_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_0",
+   "type": "any",
+   "description": "q15_0_Não realiza atividades de monitoramento da qualidade dos serviços",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_99_1",
+   "type": "any",
+   "description": "q15_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16",
+   "type": "any",
+   "description": "q16_O órgão gestor utiliza sistema de informação próprio para gerenciar a política de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_1",
+   "type": "any",
+   "description": "q17_1_Elaborar e armazenar Prontuário Eletrônico dos usuários dos Serviços Socioassistenciais - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_2",
+   "type": "any",
+   "description": "q17_2_Registrar execução física/atendimentos/ concessão de benefícios - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_3",
+   "type": "any",
+   "description": "q17_3_Gerenciar a execução financeira e orçamentária - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_4",
+   "type": "any",
+   "description": "q17_4_Registrar unidades da rede socioassistencial pública - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_5",
+   "type": "any",
+   "description": "q17_5_Registrar unidades da rede socioassistencial privada - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_6",
+   "type": "any",
+   "description": "q17_6_Registrar repasses de recursos para entidades - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_7",
+   "type": "any",
+   "description": "q17_7_Registrar prestação de contas das entidades - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_8",
+   "type": "any",
+   "description": "q17_8_Gerenciar/visualizar a alocação de RH - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_9",
+   "type": "any",
+   "description": "q17_9_Registrar os encaminhamentos e fluxo entre unidades diferentes da rede - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_10",
+   "type": "any",
+   "description": "q17_10_Permite(m) interoperabilidade com sistemas de governo - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_99",
+   "type": "any",
+   "description": "q17_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_99_1",
+   "type": "any",
+   "description": "q17_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q18",
+   "type": "any",
+   "description": "q18_O município faz parte de consórcio público com outros municípios na área de assistência social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_1",
+   "type": "any",
+   "description": "q19_1_Oferta de serviços de acolhimento - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_2",
+   "type": "any",
+   "description": "q19_2_Oferta de serviços socioassistenciais exceto acolhimento - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_3",
+   "type": "any",
+   "description": "q19_3_Apoio técnico/Capacitação - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_4",
+   "type": "any",
+   "description": "q19_4_Serviços administrativos - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_5",
+   "type": "any",
+   "description": "q19_5_Compras e logística - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_99",
+   "type": "any",
+   "description": "q19_99_Outros - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_99_1",
+   "type": "any",
+   "description": "q19_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20",
+   "type": "any",
+   "description": "q20_A Assistência Social identificou a existência de locais de exploração sexual de crianças e adolescentes no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q21",
+   "type": "any",
+   "description": "q21_A Assistência Social identificou a existência de locais ou atividades com ocorrência de Trabalho Infantil no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_1",
+   "type": "any",
+   "description": "q22_1_Nas ruas, em atividades de venda de produtos - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_2",
+   "type": "any",
+   "description": "q22_2_Nas ruas, em atividade de mendicância - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_3",
+   "type": "any",
+   "description": "q22_3_No comércio, em contexto familiar - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_4",
+   "type": "any",
+   "description": "q22_4_No comércio, como empregado - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_5",
+   "type": "any",
+   "description": "q22_5_Nos serviços, em contexto familiar (oficinas, borracharias, salões de beleza etc) - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_6",
+   "type": "any",
+   "description": "q22_6_Nos serviços, como empregado (trabalho doméstico, oficinas, borracharias, salões de beleza etc) - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_7",
+   "type": "any",
+   "description": "q22_7_Na indústria, em contexto familiar - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_8",
+   "type": "any",
+   "description": "q22_8_Na indústria, como empregado - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_9",
+   "type": "any",
+   "description": "q22_9_Na agricultura ou criação de animais, em contexto familiar - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_10",
+   "type": "any",
+   "description": "q22_10_Na agricultura ou criação de animais, como empregado - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23",
+   "type": "any",
+   "description": "q23_A Assistência Social recebeu/atendeu casos de pessoas resgatadas do trabalho escravo?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q24",
+   "type": "any",
+   "description": "q24_A Assistência Social recebeu/atendeu casos de pessoas resgatadas do tráfico de pessoas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25",
+   "type": "any",
+   "description": "q25_Nos últimos cinco anos (2020-2024), a Assistência Social do município já atuou em alguma situação de calamidade pública ou emergência (EXCLUINDO A PANDEMIA DE COVID 2019)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_1",
+   "type": "any",
+   "description": "q25_1_Qual ano?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_1",
+   "type": "any",
+   "description": "q26_1_Enchente, inundação, alagamento - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_2",
+   "type": "any",
+   "description": "q26_2_Seca, estiagem - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_3",
+   "type": "any",
+   "description": "q26_3_Rompimento/colapso de barragem - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_4",
+   "type": "any",
+   "description": "q26_4_Intenso fluxo migratório - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_5",
+   "type": "any",
+   "description": "q26_5_Desocupação de território de risco - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_6",
+   "type": "any",
+   "description": "q26_6_Emergência em saúde pública - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_7",
+   "type": "any",
+   "description": "q26_7_Mudança extrema de temperatura (ondas de calor, onda de frio) - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_99",
+   "type": "any",
+   "description": "q26_99_Outra - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_99_1",
+   "type": "any",
+   "description": "q26_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_1",
+   "type": "any",
+   "description": "q27_1_Participação em instância intersetorial local (comissão/gabinete/comitê/grupo de crise) para articulação das ações - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_2",
+   "type": "any",
+   "description": "q27_2_Elaboração de plano de contingência ou plano de ação - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_3",
+   "type": "any",
+   "description": "q27_3_Elaboração de plano diretor do município - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_4",
+   "type": "any",
+   "description": "q27_4_Elaboração de mapeamentos e diagnósticos dos impactos no território e possível população afetada - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_5",
+   "type": "any",
+   "description": "q27_5_Registro de informações/cadastro da população afetada - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_6",
+   "type": "any",
+   "description": "q27_6_Apoio na remoção e realocação de famílias e indivíduos de áreas consideradas de risco - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_7",
+   "type": "any",
+   "description": "q27_7_Organização e oferta de alojamentos provisórios para acolher famílias e indivíduos desabrigados - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_8",
+   "type": "any",
+   "description": "q27_8_Trabalho social com territórios, famílias e indivíduos afetados - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_9",
+   "type": "any",
+   "description": "q27_9_Concessão e distribuição de benefícios eventuais - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_10",
+   "type": "any",
+   "description": "q27_10_Distribuição de alimentos/cestas básicas - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_11",
+   "type": "any",
+   "description": "q27_11_Organização e distribuição de donativos (doações) - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_12",
+   "type": "any",
+   "description": "q27_12_Organização da atuação de voluntários - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_13",
+   "type": "any",
+   "description": "q27_13_Mobilização da comunidade para prevenção de impactos decorrentes de desastres - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_14",
+   "type": "any",
+   "description": "q27_14_Previsão orçamentária e financeira para as ações socioassistenciais emergenciais - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_15",
+   "type": "any",
+   "description": "q27_15_Articulação com demais políticas púbicas e organizações no território - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_99",
+   "type": "any",
+   "description": "q27_99_Outra - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_99_1",
+   "type": "any",
+   "description": "q27_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_1",
+   "type": "any",
+   "description": "q28_1_O gestor municipal de Assistência Social - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_2",
+   "type": "any",
+   "description": "q28_2_Profissional ou equipe vinculada ao órgão gestor de Assistência Social - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_3",
+   "type": "any",
+   "description": "q28_3_Profissionais ou equipes das unidades socioassistenciais (CRAS, CREAS, Unidade de Acolhimento) - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_0",
+   "type": "any",
+   "description": "q28_0_Não há planejamento das ações socioassistenciais para situações de calamidade pública e emergência no município - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q29",
+   "type": "any",
+   "description": "q29_A Assistência Social do município tem articulação com o Órgão Municipal de Defesa Civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30",
+   "type": "any",
+   "description": "q30_A Assistência Social do município participa das discussão do Plano de Contingencia para calamidades públicas e situações de emergência do município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q31",
+   "type": "any",
+   "description": "q31_O município possui programa PRÓPRIO de transferência de renda (transferência de recursos municipais de forma constante a um público específico)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q32",
+   "type": "any",
+   "description": "q32_O Programa próprio de transferência de renda do município está sob gestão do órgão gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q33",
+   "type": "any",
+   "description": "q33_O órgão gestor possui diagnóstico socioterritorial do município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q34",
+   "type": "any",
+   "description": "q34_Qual o ano de elaboração (ou atualização) do diagnóstico?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q35",
+   "type": "any",
+   "description": "q35_A Assistência Social desenvolve ações, programas ou projetos voltados à organização de Cooperativas ou de Empreendimentos de Economia Solidária?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q36",
+   "type": "any",
+   "description": "q36_Caso sim, especifique o tipo/natureza/objeto da(s) Cooperativa(s) ou Empreendimento(s) Solidário(s):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_0",
+   "type": "any",
+   "description": "q37_0_Não desenvolve - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_1",
+   "type": "any",
+   "description": "q37_1_Sim, em parceria com o Sistema S - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_2",
+   "type": "any",
+   "description": "q37_2_Sim, em parceria com ONG’s - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_3",
+   "type": "any",
+   "description": "q37_3_Sim, em parceria com entidades religiosas - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_4",
+   "type": "any",
+   "description": "q37_4_Sim, em parceria com Sindicatos Patronais - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_5",
+   "type": "any",
+   "description": "q37_5_Sim, em parceria com Sindicatos de Trabalhadores - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_6",
+   "type": "any",
+   "description": "q37_6_Sim, em parceria com outras instituições não especificadas acima - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_7",
+   "type": "any",
+   "description": "q37_7_Sim, com execução direta da própria Secretaria Municipal de Assistência - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q38",
+   "type": "any",
+   "description": "q38_O município realiza acompanhamento contínuo da execução do Plano Municipal de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_1",
+   "type": "any",
+   "description": "q39_1_Estimulou a participação de usuárias(os) nas reuniões do Conselho - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_2",
+   "type": "any",
+   "description": "q39_2_Estimulou a participação de usuárias(os) no âmbito das unidades socioassistenciais - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_3",
+   "type": "any",
+   "description": "q39_3_Estimula a formação de coletivo/comitê de usuárias(os) da política (como por exemplo o Fórum Municipal de Usuárias(os) do SUAS) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_4",
+   "type": "any",
+   "description": "q39_4_Apoio financeiro a coletivos de usuárias(os) e/ou trabalhadores da política para realização de atividades de capacitação e/ou mobilização - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_5",
+   "type": "any",
+   "description": "q39_5_Realizou reuniões/entrevistas específicas a fim de coletar a demanda das(os) usuárias(os) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas pelo órgão gestor da Assistência Social no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_6",
+   "type": "any",
+   "description": "q39_6_Possui mecanismo de ouvidoria/central de relacionamento para recebimento de demandas das(os) usuárias(os) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_7",
+   "type": "any",
+   "description": "q39_7_Realizou pesquisa de opinião/questionários juntos a usuárias(os) da política (caixa de sugestões, entre outros) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_8",
+   "type": "any",
+   "description": "q39_8_Realizou audiências públicas sobre temas da Assistência Social - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_9",
+   "type": "any",
+   "description": "q39_9_Realizou parceria com veículos de comunicação públicos e privados (TV, rádio, redes sociais, etc.) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_10",
+   "type": "any",
+   "description": "q39_10_Estimulou a participação de usuárias(os) nas Conferências Municipais - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_11",
+   "type": "any",
+   "description": "q39_11_Promoveu ações de educação popular para trabalhadoras(es) e/ou usuárias(os) da política - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_99",
+   "type": "any",
+   "description": "q39_99_Outros - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_0",
+   "type": "any",
+   "description": "q39_0_Não utilizou - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_99_1",
+   "type": "any",
+   "description": "q39_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q40",
+   "type": "any",
+   "description": "q40_O município oferta Serviço de Convivência e Fortalecimento de Vínculos?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_1_1",
+   "type": "any",
+   "description": "q41_1_1_Crianças de 0 a 6 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_1_2",
+   "type": "any",
+   "description": "q41_1_2_Quantidade de usuários - Crianças de 0 a 6 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_1_98",
+   "type": "any",
+   "description": "q41_1_98_Não sabe - Crianças de 0 a 6 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_2_1",
+   "type": "any",
+   "description": "q41_2_1_Crianças e adolescentes de 7 a 14 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_2_2",
+   "type": "any",
+   "description": "q41_2_2_Quantidade de usuários - Crianças e adolescentes de 7 a 14 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_2_98",
+   "type": "any",
+   "description": "q41_2_98_Não sabe - Crianças e adolescentes de 7 a 14 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_3_1",
+   "type": "any",
+   "description": "q41_3_1_Adolescentes e jovens de 15 a 17 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_3_2",
+   "type": "any",
+   "description": "q41_3_2_Quantidade de usuários - Adolescentes e jovens de 15 a 17 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_3_98",
+   "type": "any",
+   "description": "q41_3_98_Não sabe - Adolescentes e jovens de 15 a 17 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_4_1",
+   "type": "any",
+   "description": "q41_4_1_Jovens de 18 a 29 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_4_2",
+   "type": "any",
+   "description": "q41_4_2_Quantidade de usuários - Jovens de 18 a 29 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_4_98",
+   "type": "any",
+   "description": "q41_4_98_Não sabe - Jovens de 18 a 29 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_5_1",
+   "type": "any",
+   "description": "q41_5_1_Adultas(os) de 30 a 59 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_5_2",
+   "type": "any",
+   "description": "q41_5_2_Quantidade de usuários - Adultas(os) de 30 a 59 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_5_98",
+   "type": "any",
+   "description": "q41_5_98_Não sabe - Adultas(os) de 30 a 59 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_6_1",
+   "type": "any",
+   "description": "q41_6_1_Pessoas idosas(os) (60 anos ou mais) - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_6_2",
+   "type": "any",
+   "description": "q41_6_2_Quantidade de usuários - Pessoas idosas(os) (60 anos ou mais)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_6_98",
+   "type": "any",
+   "description": "q41_6_98_Não sabe - Pessoas idosas(os) (60 anos ou mais)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_7_2",
+   "type": "any",
+   "description": "q41_7_2_TOTAL - Quantidade de usuários SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_1_1",
+   "type": "any",
+   "description": "q42_1_1_Quantidade de usuários - Em situação de isolamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_1_98",
+   "type": "any",
+   "description": "q42_1_98_Não sabe - Em situação de isolamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_2_1",
+   "type": "any",
+   "description": "q42_2_1_Quantidade de usuários - Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_2_98",
+   "type": "any",
+   "description": "q42_2_98_Não sabe - Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_3_1",
+   "type": "any",
+   "description": "q42_3_1_Quantidade de usuários - Vivência de violência/negligência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_3_98",
+   "type": "any",
+   "description": "q42_3_98_Não sabe - Vivência de violência/negligência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_4_1",
+   "type": "any",
+   "description": "q42_4_1_Quantidade de usuários - Fora da escola ou com defasagem escolar superior a dois anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_4_98",
+   "type": "any",
+   "description": "q42_4_98_Não sabe - Fora da escola ou com defasagem escolar superior a dois anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_5_1",
+   "type": "any",
+   "description": "q42_5_1_Quantidade de usuários - Em situação de acolhimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_5_98",
+   "type": "any",
+   "description": "q42_5_98_Não sabe - Em situação de acolhimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_6_1",
+   "type": "any",
+   "description": "q42_6_1_Quantidade de usuários - Em cumprimento de medida socioeducativa em meio aberto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_6_98",
+   "type": "any",
+   "description": "q42_6_98_Não sabe - Em cumprimento de medida socioeducativa em meio aberto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_7_1",
+   "type": "any",
+   "description": "q42_7_1_Quantidade de usuários - Egressos de medidas socioeducativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_7_98",
+   "type": "any",
+   "description": "q42_7_98_Não sabe - Egressos de medidas socioeducativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_8_1",
+   "type": "any",
+   "description": "q42_8_1_Quantidade de usuários - Situação de abuso e/ou exploração sexual",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_8_98",
+   "type": "any",
+   "description": "q42_8_98_Não sabe - Situação de abuso e/ou exploração sexual",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_9_1",
+   "type": "any",
+   "description": "q42_9_1_Quantidade de usuários - Com medidas de proteção do Estatuto da Criança e do Adolescente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_9_98",
+   "type": "any",
+   "description": "q42_9_98_Não sabe - Com medidas de proteção do Estatuto da Criança e do Adolescente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_10_1",
+   "type": "any",
+   "description": "q42_10_1_Quantidade de usuários - Crianças e adolescentes em situação de rua",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_10_98",
+   "type": "any",
+   "description": "q42_10_98_Não sabe - Crianças e adolescentes em situação de rua",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_11_1",
+   "type": "any",
+   "description": "q42_11_1_Quantidade de usuários - Vulnerabilidade que diz respeito às pessoas com deficiência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_11_98",
+   "type": "any",
+   "description": "q42_11_98_Não sabe - Vulnerabilidade que diz respeito às pessoas com deficiência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_12_1",
+   "type": "any",
+   "description": "q42_12_1_TOTAL _ Quantidade de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q43",
+   "type": "any",
+   "description": "q43_O município oferta Serviço de Proteção Social Básica no Domicílio para Pessoas com deficiência e pessoas idosas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_1",
+   "type": "any",
+   "description": "q44_1_Na própria sede do órgão gestor, com equipe exclusiva para o Serviço de Proteção Social Básica no Domicílio para Pessoas com deficiência e idosas - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_2",
+   "type": "any",
+   "description": "q44_2_Na própria sede do órgão gestor, com equipe que realiza outras atividades - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_3",
+   "type": "any",
+   "description": "q44_3_No CRAS, com equipe exclusiva para o Serviço de Proteção Social Básica no Domicílio para Pessoas com deficiência e idosas - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_4",
+   "type": "any",
+   "description": "q44_4_No CRAS, com a equipe técnica do Serviço de Proteção e Atendimento Integral à Família (PAIF) - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_5",
+   "type": "any",
+   "description": "q44_5_No CRAS, com equipe que realiza outras atividades - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_6",
+   "type": "any",
+   "description": "q44_6_Em outra Unidade Pública - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_7",
+   "type": "any",
+   "description": "q44_7_Em Entidade ou Organização da Sociedade Civil - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_1",
+   "type": "any",
+   "description": "q45_1_Atende no CREAS do município - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_2",
+   "type": "any",
+   "description": "q45_2_Encaminha para o CREAS de outro município - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_3",
+   "type": "any",
+   "description": "q45_3_ Encaminha para o CREAS Regional ao qual está vinculado - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_4",
+   "type": "any",
+   "description": "q45_4_Atende no CRAS - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_5",
+   "type": "any",
+   "description": "q45_5_Atende em entidade ou organização da sociedade civil no município - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_6",
+   "type": "any",
+   "description": "q45_6_É atendido pela equipe de referência/técnica do órgão gestor (equipes específicas para o atendimento - não são equipes de gestão) - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_99",
+   "type": "any",
+   "description": "q45_99_Outro - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_0",
+   "type": "any",
+   "description": "q45_0_Não é atendido pela Assistência Social - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_99_1",
+   "type": "any",
+   "description": "q45_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_1",
+   "type": "any",
+   "description": "q46_1_Atende no CREAS do município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_2",
+   "type": "any",
+   "description": "q46_2_Encaminha para o CREAS de outro município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_3",
+   "type": "any",
+   "description": "q46_3_Encaminha para o CREAS Regional ao qual está vinculado - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_4",
+   "type": "any",
+   "description": "q46_4_Executa no CRAS - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_5",
+   "type": "any",
+   "description": "q46_5_Executa em articulação com organização da sociedade civil no município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_6",
+   "type": "any",
+   "description": "q46_6_Executa em outra unidade pública da Assistência Social (exceto CREAS) de acompanhamento de adolescentes em cumprimento de Medida Socioeducativa (LA ou PSC) do município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_7",
+   "type": "any",
+   "description": "q46_7_É atendido por unidades de outras políticas públicas do município (saúde, educação, direitos humanos etc.) - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_8",
+   "type": "any",
+   "description": "q46_8_É atendido pela equipe de referência/técnica do órgão gestor (equipes específicas para o atendimento - não são equipes de gestão) - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_0",
+   "type": "any",
+   "description": "q46_0_Não atende - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_1",
+   "type": "any",
+   "description": "q47_1_Total de adolescentes em cumprimento de LA",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_1_98",
+   "type": "any",
+   "description": "q47_1_98_NÃO SABE - Total de adolescentes em cumprimento de LA.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_2",
+   "type": "any",
+   "description": "q47_2_Total de adolescentes em cumprimento de PSC",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_2_98",
+   "type": "any",
+   "description": "q47_2_98_NÃO SABE - Total de adolescentes em cumprimento de PSC.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_3",
+   "type": "any",
+   "description": "q47_3_Total de adolescentes em cumprimento de Medidas Socioeducativas (LA e/ou PSC)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_3_98",
+   "type": "any",
+   "description": "q47_3_98_NÃO SABE - Total de adolescentes em cumprimento de Medidas Socioeducativas (LA e/ou PSC)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_1",
+   "type": "any",
+   "description": "q48_1_CRAS - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_2",
+   "type": "any",
+   "description": "q48_2_CREAS - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_3",
+   "type": "any",
+   "description": "q48_3_Biblioteca - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_4",
+   "type": "any",
+   "description": "q48_4_Hospitais - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_5",
+   "type": "any",
+   "description": "q48_5_Unidades de Acolhimento para Idosas(os) (asilos) - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_6",
+   "type": "any",
+   "description": "q48_6_Defensoria Pública/ Fórum - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_7",
+   "type": "any",
+   "description": "q48_7_Projetos de Cultura - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_8",
+   "type": "any",
+   "description": "q48_8_Projetos de Esporte - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_9",
+   "type": "any",
+   "description": "q48_9_Igrejas - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_10",
+   "type": "any",
+   "description": "q48_10_Conselho Tutelar - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_11",
+   "type": "any",
+   "description": "q48_11_Sistema S (SENAI, SESC, SESI, etc.) - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_12",
+   "type": "any",
+   "description": "q48_12_Atividades da Secretaria de Obras ou similares - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_13",
+   "type": "any",
+   "description": "q48_13_Polícia/ Corpo de Bombeiros - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_99",
+   "type": "any",
+   "description": "q48_99_Outros - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_99_1",
+   "type": "any",
+   "description": "q48_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q49",
+   "type": "any",
+   "description": "q49_O município oferta Serviço Especializado em Abordagem Social para pessoas em situação de rua?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_1",
+   "type": "any",
+   "description": "q50_1_No(s) CREAS - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_2",
+   "type": "any",
+   "description": "q50_2_No(s) Centro POP - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_3",
+   "type": "any",
+   "description": "q50_3_Na sede/órgão gestor do município (considerar nesta opção estruturas administrativas descentralizadas, como regionais ou similares) - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_4",
+   "type": "any",
+   "description": "q50_4_Em outra unidade pública - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_5",
+   "type": "any",
+   "description": "q50_5_Em entidade ou Organização da Sociedade Civil - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_1",
+   "type": "any",
+   "description": "q51_1_Controla o acesso às vagas (controle da porta de entrada), sendo responsável por indicar a Unidade de Acolhimento que receberá a criança/adolescente - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_2",
+   "type": "any",
+   "description": "q51_2_Acompanha/monitora o fluxo de entradas e saídas de crianças e adolescentes nas Unidades - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_3",
+   "type": "any",
+   "description": "q51_3_Centraliza as informações das medidas de acolhimento determinadas pelo poder Judiciário - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_4",
+   "type": "any",
+   "description": "q51_4_Centraliza as informações dos acolhimentos emergenciais realizados pelo Conselho Tutelar - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_5",
+   "type": "any",
+   "description": "q51_5_Promove a articulação dos serviços de acolhimento com os demais serviços da rede socioassistencial - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_6",
+   "type": "any",
+   "description": "q51_6_Promove a articulação dos serviços de acolhimento com as demais políticas públicas e órgãos de defesa de direitos - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_7",
+   "type": "any",
+   "description": "q51_7_Realiza supervisão e suporte técnico aos serviços de acolhimento - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_8",
+   "type": "any",
+   "description": "q51_8_Monitora o tempo de permanência das crianças e adolescentes nos serviços de acolhimento - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_9",
+   "type": "any",
+   "description": "q51_9_Fiscaliza a qualidade dos serviços - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_0",
+   "type": "any",
+   "description": "q51_0_Não realiza nenhuma das atividades listadas acima - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_97",
+   "type": "any",
+   "description": "q51_97_O município não possui Serviço de Acolhimento para Crianças e Adolescentes - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_0",
+   "type": "any",
+   "description": "q52_0_Não realiza - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_1",
+   "type": "any",
+   "description": "q52_1_Realiza campanhas, mobilização e sensibilização - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_2",
+   "type": "any",
+   "description": "q52_2_Realiza atividades de abordagem social em espaços públicos - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_3",
+   "type": "any",
+   "description": "q52_3_Realiza busca ativa de famílias com situação de trabalho infantil para inclusão no Cadastro Único - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_4",
+   "type": "any",
+   "description": "q52_4_Encaminha/inclui crianças e adolescentes em trabalho infantil para o SCFV - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_5",
+   "type": "any",
+   "description": "q52_5_Encaminha/inclui famílias com situação de trabalho infantil para o PAIF/CRAS - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_6",
+   "type": "any",
+   "description": "q52_6_Encaminha/inclui famílias com situação de trabalho infantil para o PAEFI/CREAS - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_7",
+   "type": "any",
+   "description": "q52_7_Encaminha famílias e indivíduos para a aplicação de medidas protetivas à família - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_8",
+   "type": "any",
+   "description": "q52_8_Encaminha famílias com situação de trabalho infantil para programas e projetos de capacitação profissional - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_9",
+   "type": "any",
+   "description": "q52_9_Encaminha famílias com situação de trabalho infantil para programas e projetos de inclusão produtiva e/ou geração de trabalho e renda - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_10",
+   "type": "any",
+   "description": "q52_10_Encaminha famílias com situação de trabalho infantil para atendimento em outras políticas públicas - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_11",
+   "type": "any",
+   "description": "q52_11_Encaminha famílias com situação de trabalho infantil para os órgãos de defesa e responsabilização - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_12",
+   "type": "any",
+   "description": "q52_12_Elabora estudos e diagnósticos sobre o trabalho infantil no município - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q53",
+   "type": "any",
+   "description": "q53_O município possui programa de apoio à família guardiã na família extensa, no qual a família extensa ou com vínculos afetivos com a criança/adolescente receba acompanhamento e subsídio financeiro para a guarda da criança/adolescente?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q54",
+   "type": "any",
+   "description": "q54_Atualmente, quantas crianças e/ou adolescentes estão acolhidos em famílias guardiãs na família extensa inseridas no Programa?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q55",
+   "type": "any",
+   "description": "q55_Atualmente, quantas famílias recebem recursos pelo Programa?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56",
+   "type": "any",
+   "description": "q56_Nos últimos 12 (doze) meses a Assistência Social do município abrigou em alojamentos provisórios pessoas atingidas por situações de emergência ou de calamidade pública?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q57",
+   "type": "any",
+   "description": "q57_Caso sim, indique a quantidade de pessoas desabrigadas que foram acolhidas em alojamentos provisórios nos últimos 12 (doze) meses:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58",
+   "type": "any",
+   "description": "q58_Em 2024, a Assistência Social do município ofertou atendimento a pessoas e famílias imigrantes/refugiados?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q59",
+   "type": "any",
+   "description": "q59_Caso sim, para quantos imigrantes/refugiados?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_1",
+   "type": "any",
+   "description": "q60_1_Venezuelanos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_2",
+   "type": "any",
+   "description": "q60_2_Haitianos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_3",
+   "type": "any",
+   "description": "q60_3_Bolivianos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_4",
+   "type": "any",
+   "description": "q60_4_Colombianos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_5",
+   "type": "any",
+   "description": "q60_5_Argentinos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_6",
+   "type": "any",
+   "description": "q60_6_Chineses",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_98",
+   "type": "any",
+   "description": "q60_98_Não sabe informar o número de migrantes/refugiados por nacionalidade.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_99",
+   "type": "any",
+   "description": "q60_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_99_1",
+   "type": "any",
+   "description": "q60_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_0",
+   "type": "any",
+   "description": "q61_0_Não realiza encaminhamentos para o mundo do trabalho - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_1",
+   "type": "any",
+   "description": "q61_1_Órgãos de intermediação de mão de obra (Serviço Nacional do Emprego – SINE, entre outros) - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_2",
+   "type": "any",
+   "description": "q61_2_Cursos de qualificação profissional - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_3",
+   "type": "any",
+   "description": "q61_3_Socioaprendizagem - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_4",
+   "type": "any",
+   "description": "q61_4_Cursos técnicos de instituições municipais/estaduais - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_5",
+   "type": "any",
+   "description": "q61_5_Cooperativas, Associações e Ações de economia solidária - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_6",
+   "type": "any",
+   "description": "q61_6_Acesso a Microcrédito - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_7",
+   "type": "any",
+   "description": "q61_7_Micro empreendedorismo individual - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_8",
+   "type": "any",
+   "description": "q61_8_Sistema S (SESC, SENAC, SESI, SENAR, etc) - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_9",
+   "type": "any",
+   "description": "q61_9_Organizações de trabalhadores (sindicatos, conselhos etc) - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_99",
+   "type": "any",
+   "description": "q61_99_Outros - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_99_1",
+   "type": "any",
+   "description": "q61_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q62",
+   "type": "any",
+   "description": "q62_O município utiliza embarcação/lancha para o desenvolvimento de atividades/serviços da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_0",
+   "type": "any",
+   "description": "q63_0_Não se aplica, pois não temos nenhuma dificuldade para execução dos recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_1",
+   "type": "any",
+   "description": "q63_1_Ausência de planejamento ou planejamento inadequado - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_2",
+   "type": "any",
+   "description": "q63_2_Insegurança, dúvidas ou desconhecimento em relação às regras para execução dos recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_3",
+   "type": "any",
+   "description": "q63_3_Receio de reprovação dos gastos pelo Conselho Municipal de Assistencia Social - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_4",
+   "type": "any",
+   "description": "q63_4_Dificuldades, internas à Secretaria, na realização de licitações - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_5",
+   "type": "any",
+   "description": "q63_5_Dificuldades, externas à Secretaria, na realização de licitações - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_6",
+   "type": "any",
+   "description": "q63_6_A área jurídica ou de controle interno do município dificulta os processos de compras e de contratação de serviços com recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_7",
+   "type": "any",
+   "description": "q63_7_A área orçamentária ou financeira do município dificulta os processos de compras e de contratação de serviços com recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_8",
+   "type": "any",
+   "description": "q63_8_O Ordenador de Despesas não está vinculado à Secretaria - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_9",
+   "type": "any",
+   "description": "q63_9_Dificuldades na programação/inscrição dos recursos do IGD-PBF na Lei Orçamentária do município - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_1",
+   "type": "any",
+   "description": "q64_1_Estruturação ou manutenção de CRAS que realizam atividades do CadÚnico - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_2",
+   "type": "any",
+   "description": "q64_2_Pagamento de aluguel de CRAS que realizam atividades do CadÚnico - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_3",
+   "type": "any",
+   "description": "q64_3_Estruturação ou manutenção de Postos de Cadastramento - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_4",
+   "type": "any",
+   "description": "q64_4_Pagamento de aluguel de Postos de Cadastramento - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_5",
+   "type": "any",
+   "description": "q64_5_Aquisição de veículos - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_6",
+   "type": "any",
+   "description": "q64_6_Manutenção de veículos, inclusive combustível - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_7",
+   "type": "any",
+   "description": "q64_7_Aquisição de equipamentos de informática - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_8",
+   "type": "any",
+   "description": "q64_8_Aquisição de outros equipamentos ou mobiliário - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_9",
+   "type": "any",
+   "description": "q64_9_Aquisição de materiais de consumo - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_10",
+   "type": "any",
+   "description": "q64_10_Pagamento de contas de internet, luz, telefone ou água - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_11",
+   "type": "any",
+   "description": "q64_11_Pagamento de passagens e/ou diárias para técnicos e gestores municipais - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_12",
+   "type": "any",
+   "description": "q64_12_Elaboração de materiais de comunicação com as famílias (cartazes, panfletos, cartilhas, vídeos, campanhas de rádio etc) - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_13",
+   "type": "any",
+   "description": "q64_13_Realização de cursos ou atividades voltadas à promoção do desenvolvimento e da autonomia das famílias do PBF - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_14",
+   "type": "any",
+   "description": "q64_14_Pagamento de pessoal que atua na gestão ou na operação do Cadastro Único - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_15",
+   "type": "any",
+   "description": "q64_15_Pagamento de pessoal que atua na gestão ou operação do Programa Bolsa Família - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_16",
+   "type": "any",
+   "description": "q64_16_Custeio de atividades de capacitação das equipes do Bolsa Família e do Cadastro Único - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_17",
+   "type": "any",
+   "description": "q64_17_Custeio de ações integradas entre Assistência Social, Saúde e Educação no âmbito do PBF - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_18",
+   "type": "any",
+   "description": "q64_18_Estruturação ou manutenção do Conselho Municipal de Assistência Social - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_19",
+   "type": "any",
+   "description": "q64_19_Custeio da Conferência Municipal de Assistência Social - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_99",
+   "type": "any",
+   "description": "q64_99_Outros - Considerando o ano de 2024, os recursos do IGD-PBF no seu município foram efetivamente utilizados para:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64_99_1",
+   "type": "any",
+   "description": "q64_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_1",
+   "type": "any",
+   "description": "q65_1_Sim, ofertada pelo próprio gestor do Cadastro Único - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_2",
+   "type": "any",
+   "description": "q65_2_Sim, por servidores da equipe do Cadastro Único e/ou Assistência Social - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_3",
+   "type": "any",
+   "description": "q65_3_Sim, por consultores externos - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_4",
+   "type": "any",
+   "description": "q65_4_Sim, por instituições de ensino - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_99",
+   "type": "any",
+   "description": "q65_99_Sim, outros - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_0",
+   "type": "any",
+   "description": "q65_0_Não - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_99_1",
+   "type": "any",
+   "description": "q65_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_1",
+   "type": "any",
+   "description": "q66_1_Realizar estudos sobre as condições de vulnerabilidade das famílias com pessoas idosas e com deficiência - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_2",
+   "type": "any",
+   "description": "q66_2_Orientar a população usuária sobre seus direitos e procedimentos para acesso ao BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_3",
+   "type": "any",
+   "description": "q66_3_Apoiar e acompanhar o processo de concessão do BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_4",
+   "type": "any",
+   "description": "q66_4_Distribuir aos CRAS e CREAS do município listas territorializadas das famílias com beneficiárias(os) do BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_5",
+   "type": "any",
+   "description": "q66_5_Articular com outros setores a inserção das(os) beneficiárias(os) nas diversas políticas sociais - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_6",
+   "type": "any",
+   "description": "q66_6_Realizar e acompanhar a inserção e atualização das(os) beneficiárias(os) do BPC no Cadastro Único - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_7",
+   "type": "any",
+   "description": "q66_7_Articular ações com INSS acerca do requerimento e manutenção do BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_8",
+   "type": "any",
+   "description": "q66_8_Realizar e acompanhar a inserção de crianças e adolescentes com deficiência BPC na escola, em articulação com o Grupo Gestor Local - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_9",
+   "type": "any",
+   "description": "q66_9_Acompanhar a inserção de jovens e adultas(os) com deficiência beneficiárias(os) do BPC no mundo do trabalho - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_99",
+   "type": "any",
+   "description": "q66_99_Outros - Especifique quais as ações relativas ao Benefício de Prestação Continuada (BPC) são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_0",
+   "type": "any",
+   "description": "q66_0_Não realiza - Especifique quais as ações relativas ao Benefício de Prestação Continuada (BPC) são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_1",
+   "type": "any",
+   "description": "q67_1_Benefício Eventual por Situação de morte: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_1_1",
+   "type": "any",
+   "description": "q67_1_1_Benefício Eventual por Situação de morte: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_2",
+   "type": "any",
+   "description": "q67_2_Benefício Eventual por Situação de Natalidade: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_2_1",
+   "type": "any",
+   "description": "q67_2_1_Benefício Eventual por Situação de Natalidade: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_3",
+   "type": "any",
+   "description": "q67_3_Benefício Eventual para situação de calamidade pública: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_3_1",
+   "type": "any",
+   "description": "q67_3_1_Benefício Eventual para situação de calamidade pública: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_4",
+   "type": "any",
+   "description": "q67_4_Outros benefícios eventuais para famílias em situação de vulnerabilidade temporária: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_4_1",
+   "type": "any",
+   "description": "q67_4_1_Outros benefícios eventuais para famílias em situação de vulnerabilidade temporária: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_1_1",
+   "type": "any",
+   "description": "q68_1_1_Realizou Concurso - Nível Superior",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_1_2",
+   "type": "any",
+   "description": "q68_1_2_Quantidade de vagas - Nível Superior",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_1_3",
+   "type": "any",
+   "description": "q68_1_3_Data da Homologação do Concurso - Nível Superior",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_1_4",
+   "type": "any",
+   "description": "q68_1_4_Quantidade de trabalhadores que tomaram posse - Nível Superior",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_2_1",
+   "type": "any",
+   "description": "q68_2_1_Realizou Concurso - Nível Médio",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_2_2",
+   "type": "any",
+   "description": "q68_2_2_Quantidade de vagas - Nível Médio",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_2_3",
+   "type": "any",
+   "description": "q68_2_3_Data da Homologação do Concurso - Nível Médio",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68_2_4",
+   "type": "any",
+   "description": "q68_2_4_Quantidade de trabalhadores que tomaram posse - Nível Médio",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69",
+   "type": "any",
+   "description": "q69_O município possui Plano Municipal de Capacitação e Educação Permanente dos trabalhadores(as) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70",
+   "type": "any",
+   "description": "q70_O município realizou ações de capacitação e formação para trabalhadoras(es) e/ou conselheiras(os) da política de assistência social no ano de 2023?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_1",
+   "type": "any",
+   "description": "q71_1_Profissionais capacitados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_1_98",
+   "type": "any",
+   "description": "q71_1_98_Não sabe. Profissionais capacitados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_2",
+   "type": "any",
+   "description": "q71_2_Conselheiras (os) capacitadas(os).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_2_98",
+   "type": "any",
+   "description": "q71_2_98_Não sabe. Conselheiras(os) capacitados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_1",
+   "type": "any",
+   "description": "q72_1_Presencial - Qual(is) a(s) modalidade(s) de oferta das capacitações realizadas em 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_2",
+   "type": "any",
+   "description": "q72_2_A distância - Qual(is) a(s) modalidade(s) de oferta das capacitações realizadas em 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_3",
+   "type": "any",
+   "description": "q72_3_Hibrido - Qual(is) a(s) modalidade(s) de oferta das capacitações realizadas em 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73",
+   "type": "any",
+   "description": "q73_O município dispõe de plano de cargos, carreiras e salários para os trabalhadores do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q74",
+   "type": "any",
+   "description": "q74_O Município possui Mesa Municipal de Negociação Permanente do SUAS ou Mesa Municipal de Gestão do Trabalho do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q75",
+   "type": "any",
+   "description": "q75_A gestão municipal de assistência social possui Núcleo Municipal de Educação Permanente do SUAS implantado e em funcionamento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q78_0",
+   "type": "any",
+   "description": "q78_0_Não há representante da Vigilância designado no município",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE7",
+   "type": "any",
+   "description": "'IBGE7'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "codigo_UF",
+   "type": "any",
+   "description": "'codigo_UF'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Região",
+   "type": "any",
+   "description": "'Região'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Município",
+   "type": "any",
+   "description": "'Município'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "areaKm2",
+   "type": "any",
+   "description": "'areaKm2'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "'Nome_UF'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "any",
+   "description": "'Pop_total_2022'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "any",
+   "description": "'Porte_pop2022'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "any",
+   "description": "'Q_incompleto'",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PrimaryLast",
+   "type": "any",
+   "description": "Indicator of each last matching case as Primary",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1_velha",
+   "type": "any",
+   "description": "q1_De acordo com a estrutura administrativa do município, o órgão gestor da assistência social caracteriza-se como",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_0_velha",
+   "type": "any",
+   "description": "q9_0_Não acompanha - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_1_velha",
+   "type": "any",
+   "description": "q9_1_É membro da CIB - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_2_velha",
+   "type": "any",
+   "description": "q9_2_Participa como convidado das reuniões - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_3_velha",
+   "type": "any",
+   "description": "q9_3_Recebe boletins informativos - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_4_velha",
+   "type": "any",
+   "description": "q9_4_Solicita à Secretaria Técnica da CIB o envio de informações sobre as reuniões - De que maneira o município acompanha as discussões e decisões da Comissão Intergestores Bipartite do SUAS (CIB)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_99_velha",
+   "type": "any",
+   "description": "q9_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_1_velha",
+   "type": "any",
+   "description": "q10_1_Participa das reuniões - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_2_velha",
+   "type": "any",
+   "description": "q10_2_Recebe boletins informativos - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_3_velha",
+   "type": "any",
+   "description": "q10_3_Solicita à diretoria o envio de informações sobre as reuniões - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_4_velha",
+   "type": "any",
+   "description": "q10_4_Participa de algum grupo de discussão - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_99_velha",
+   "type": "any",
+   "description": "q10_99_Outros - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_5_velha",
+   "type": "any",
+   "description": "q10_5_O município faz parte, mas não acompanha - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10_0_velha",
+   "type": "any",
+   "description": "q10_0_O município não faz parte do COEGEMAS - De que maneira o município acompanha as discussões e decisões do Colegiado Estadual de Gestores Municipais da Assistência Social (Coegemas ou congênere):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_velha",
+   "type": "any",
+   "description": "q11_O órgão gestor possui levantamento ou pesquisa nos últimos doze meses que aponte o número de pessoas em situação de rua no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_velha",
+   "type": "any",
+   "description": "q12_Caso sim, quantas pessoas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_velha",
+   "type": "any",
+   "description": "q13_Este quantitativo considera:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_velha",
+   "type": "any",
+   "description": "q14_Como foi realizado este levantamento ou pesquisa?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_1_velha",
+   "type": "any",
+   "description": "q15_1_Realiza visitas técnicas à rede socioassistencial - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_2_velha",
+   "type": "any",
+   "description": "q15_2_Realiza a gestão/validação das informações sobre as unidades, como o preenchimento do RMA, Censo SUAS e demais instrumentais nacionais, estaduais ou municipais - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_3_velha",
+   "type": "any",
+   "description": "q15_3_Possui instrumentos de coleta de dados próprios para levantamento de informações junto aos serviços - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_4_velha",
+   "type": "any",
+   "description": "q15_4_Produção de Indicadores próprios para aferição volume e qualidade dos serviços socioassistenciais - O órgão gestor realiza as seguintes atividades de monitoramento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_99_velha",
+   "type": "any",
+   "description": "q15_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_0_velha",
+   "type": "any",
+   "description": "q15_0_Não realiza atividades de monitoramento da qualidade dos serviços",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_velha",
+   "type": "any",
+   "description": "q16_O órgão gestor utiliza sistema de informação próprio para gerenciar a política de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_1_velha",
+   "type": "any",
+   "description": "q17_1_Elaborar e armazenar Prontuário Eletrônico dos usuários dos Serviços Socioassistenciais - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_2_velha",
+   "type": "any",
+   "description": "q17_2_Registrar execução física/atendimentos/ concessão de benefícios - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_3_velha",
+   "type": "any",
+   "description": "q17_3_Gerenciar a execução financeira e orçamentária - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_4_velha",
+   "type": "any",
+   "description": "q17_4_Registrar unidades da rede socioassistencial pública - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_5_velha",
+   "type": "any",
+   "description": "q17_5_Registrar unidades da rede socioassistencial privada - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_6_velha",
+   "type": "any",
+   "description": "q17_6_Registrar repasses de recursos para entidades - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_7_velha",
+   "type": "any",
+   "description": "q17_7_Registrar prestação de contas das entidades - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_8_velha",
+   "type": "any",
+   "description": "q17_8_Gerenciar/visualizar a alocação de RH - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_9_velha",
+   "type": "any",
+   "description": "q17_9_Registrar os encaminhamentos e fluxo entre unidades diferentes da rede - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_10_velha",
+   "type": "any",
+   "description": "q17_10_Permite(m) interoperabilidade com sistemas de governo - O(s) sistema(s) utilizado(s) permite(m):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_99_velha",
+   "type": "any",
+   "description": "q17_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q18_velha",
+   "type": "any",
+   "description": "q18_O município faz parte de consórcio público com outros municípios na área de assistência social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_1_velha",
+   "type": "any",
+   "description": "q19_1_Oferta de serviços de acolhimento - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_2_velha",
+   "type": "any",
+   "description": "q19_2_Oferta de serviços socioassistenciais exceto acolhimento - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_3_velha",
+   "type": "any",
+   "description": "q19_3_Apoio técnico/Capacitação - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_4_velha",
+   "type": "any",
+   "description": "q19_4_Serviços administrativos - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_5_velha",
+   "type": "any",
+   "description": "q19_5_Compras e logística - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19_99_velha",
+   "type": "any",
+   "description": "q19_99_Outros - Caso participe do consorcio marque as principais atividades envolvidas nessa atuação",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q21_velha",
+   "type": "any",
+   "description": "q21_A Assistência Social identificou a existência de locais ou atividades com ocorrência de Trabalho Infantil no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_1_velha",
+   "type": "any",
+   "description": "q22_1_Nas ruas, em atividades de venda de produtos - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_2_velha",
+   "type": "any",
+   "description": "q22_2_Nas ruas, em atividade de mendicância - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_3_velha",
+   "type": "any",
+   "description": "q22_3_No comércio, em contexto familiar - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_4_velha",
+   "type": "any",
+   "description": "q22_4_No comércio, como empregado - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_5_velha",
+   "type": "any",
+   "description": "q22_5_Nos serviços, em contexto familiar (oficinas, borracharias, salões de beleza etc) - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_6_velha",
+   "type": "any",
+   "description": "q22_6_Nos serviços, como empregado (trabalho doméstico, oficinas, borracharias, salões de beleza etc) - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_7_velha",
+   "type": "any",
+   "description": "q22_7_Na indústria, em contexto familiar - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_8_velha",
+   "type": "any",
+   "description": "q22_8_Na indústria, como empregado - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_9_velha",
+   "type": "any",
+   "description": "q22_9_Na agricultura ou criação de animais, em contexto familiar - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22_10_velha",
+   "type": "any",
+   "description": "q22_10_Na agricultura ou criação de animais, como empregado - Indique os locais ou atividades, identificados pela Assistência Social, com ocorrência de Trabalho Infantil no município.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_velha",
+   "type": "any",
+   "description": "q25_Nos últimos cinco anos (2020-2024), a Assistência Social do município já atuou em alguma situação de calamidade pública ou emergência (EXCLUINDO A PANDEMIA DE COVID 2019)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_1_velha",
+   "type": "any",
+   "description": "q25_1_Qual ano?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_1_velha",
+   "type": "any",
+   "description": "q26_1_Enchente, inundação, alagamento - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_2_velha",
+   "type": "any",
+   "description": "q26_2_Seca, estiagem - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_3_velha",
+   "type": "any",
+   "description": "q26_3_Rompimento/colapso de barragem - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_4_velha",
+   "type": "any",
+   "description": "q26_4_Intenso fluxo migratório - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_5_velha",
+   "type": "any",
+   "description": "q26_5_Desocupação de território de risco - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_6_velha",
+   "type": "any",
+   "description": "q26_6_Emergência em saúde pública - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_7_velha",
+   "type": "any",
+   "description": "q26_7_Mudança extrema de temperatura (ondas de calor, onda de frio) - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26_99_velha",
+   "type": "any",
+   "description": "q26_99_Outra - Indique a situação de calamidade pública ou emergência em que a Assistência Social do município já atuou.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_1_velha",
+   "type": "any",
+   "description": "q27_1_Participação em instância intersetorial local para articulação das ações - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_2_velha",
+   "type": "any",
+   "description": "q27_2_Elaboração de plano de contingência ou plano de ação - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_3_velha",
+   "type": "any",
+   "description": "q27_3_Elaboração de plano diretor do município - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_4_velha",
+   "type": "any",
+   "description": "q27_4_Elaboração de mapeamentos e diagnósticos dos impactos no território e possível população afetada - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_5_velha",
+   "type": "any",
+   "description": "q27_5_Registro de informações/cadastro da população afetada - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_6_velha",
+   "type": "any",
+   "description": "q27_6_Apoio na remoção e realocação de famílias e indivíduos de áreas consideradas de risco - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_7_velha",
+   "type": "any",
+   "description": "q27_7_Organização e oferta de alojamentos provisórios para acolher famílias e indivíduos desabrigados - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_8_velha",
+   "type": "any",
+   "description": "q27_8_Trabalho social com territórios, famílias e indivíduos afetados - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_9_velha",
+   "type": "any",
+   "description": "q27_9_Concessão e distribuição de benefícios eventuais - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_10_velha",
+   "type": "any",
+   "description": "q27_10_Distribuição de alimentos/cestas básicas - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_11_velha",
+   "type": "any",
+   "description": "q27_11_Organização e distribuição de donativos (doações) - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_12_velha",
+   "type": "any",
+   "description": "q27_12_Organização da atuação de voluntários - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_13_velha",
+   "type": "any",
+   "description": "q27_13_Mobilização da comunidade para prevenção de impactos decorrentes de desastres - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_14_velha",
+   "type": "any",
+   "description": "q27_14_Previsão orçamentária e financeira para as ações socioassistenciais emergenciais - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_15_velha",
+   "type": "any",
+   "description": "q27_15_Articulação com demais políticas púbicas e organizações no território - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_99_velha",
+   "type": "any",
+   "description": "q27_99_Outra - Indique as ações realizadas pela Assistência Social do município em razão de situação de calamidade pública ou emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_1_velha",
+   "type": "any",
+   "description": "q28_1_O gestor municipal de Assistência Social - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_2_velha",
+   "type": "any",
+   "description": "q28_2_Profissional ou equipe vinculada ao órgão gestor de Assistência Social - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_3_velha",
+   "type": "any",
+   "description": "q28_3_Profissionais ou equipes das unidades socioassistenciais (CRAS, CREAS, Unidade de Acolhimento) - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_0_velha",
+   "type": "any",
+   "description": "q28_0_Não há planejamento das ações socioassistenciais para situações de calamidade pública e emergência no município - Informe quem atua no planejamento das ações socioassistenciais para situações de calamidade pública e emergência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q31_velha",
+   "type": "any",
+   "description": "q31_O município possui programa PRÓPRIO de transferência de renda (transferência de recursos municipais de forma constante a um público específico)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q32_velha",
+   "type": "any",
+   "description": "q32_O Programa próprio de transferência de renda do município está sob gestão do órgão gestor da Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q33_velha",
+   "type": "any",
+   "description": "q33_O órgão gestor possui diagnóstico socioterritorial do município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q34_velha",
+   "type": "any",
+   "description": "q34_Qual o ano de elaboração (ou atualização) do diagnóstico?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q35_velha",
+   "type": "any",
+   "description": "q35_A Assistência Social desenvolve ações, programas ou projetos voltados à organização de Cooperativas ou de Empreendimentos de Economia Solidária?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_0_velha",
+   "type": "any",
+   "description": "q37_0_Não desenvolve - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_1_velha",
+   "type": "any",
+   "description": "q37_1_Sim, em parceria com o Sistema S - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_2_velha",
+   "type": "any",
+   "description": "q37_2_Sim, em parceria com ONG’s - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_3_velha",
+   "type": "any",
+   "description": "q37_3_Sim, em parceria com entidades religiosas - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_4_velha",
+   "type": "any",
+   "description": "q37_4_Sim, em parceria com Sindicatos Patronais - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_5_velha",
+   "type": "any",
+   "description": "q37_5_Sim, em parceria com Sindicatos de Trabalhadores - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_6_velha",
+   "type": "any",
+   "description": "q37_6_Sim, em parceria com outras instituições não especificadas acima - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_7_velha",
+   "type": "any",
+   "description": "q37_7_Sim, com execução direta da própria Secretaria Municipal de Assistência - A Assistência Social desenvolve ações, programas ou projetos de formação, qualificação ou capacitação profissional para os usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_1_velha",
+   "type": "any",
+   "description": "q39_1_Estimulou a participação de usuárias(os) nas reuniões do Conselho - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_2_velha",
+   "type": "any",
+   "description": "q39_2_Estimulou a participação de usuárias(os) no âmbito das unidades socioassistenciais - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_3_velha",
+   "type": "any",
+   "description": "q39_3_Estimula a formação de coletivo/comitê de usuárias(os) da política (como por exemplo o Fórum Municipal de Usuárias(os) do SUAS) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_4_velha",
+   "type": "any",
+   "description": "q39_4_Apoio financeiro a coletivos de usuárias(os) e/ou trabalhadores da política para realização de atividades de capacitação e/ou mobilização - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_5_velha",
+   "type": "any",
+   "description": "q39_5_Realizou reuniões/entrevistas específicas a fim de coletar a demanda das(os) usuárias(os) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas pelo órgão gestor da Assistência Social no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_6_velha",
+   "type": "any",
+   "description": "q39_6_Possui mecanismo de ouvidoria/central de relacionamento para recebimento de demandas das(os) usuárias(os) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_7_velha",
+   "type": "any",
+   "description": "q39_7_Realizou pesquisa de opinião/questionários juntos a usuárias(os) da política (caixa de sugestões, entre outros) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_8_velha",
+   "type": "any",
+   "description": "q39_8_Realizou audiências públicas sobre temas da Assistência Social - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_9_velha",
+   "type": "any",
+   "description": "q39_9_Realizou parceria com veículos de comunicação públicos e privados (TV, rádio, redes sociais, etc.) - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_10_velha",
+   "type": "any",
+   "description": "q39_10_Estimulou a participação de usuárias(os) nas Conferências Municipais - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_11_velha",
+   "type": "any",
+   "description": "q39_11_Promoveu ações de educação popular para trabalhadoras(es) e/ou usuárias(os) da política - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_99_velha",
+   "type": "any",
+   "description": "q39_99_Outros - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39_0_velha",
+   "type": "any",
+   "description": "q39_0_Não utilizou - Quais estratégias de fomento à participação de usuárias(os) foram utilizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q40_velha",
+   "type": "any",
+   "description": "q40_O município oferta Serviço de Convivência e Fortalecimento de Vínculos?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_1_1_velha",
+   "type": "any",
+   "description": "q41_1_1_Crianças de 0 a 6 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_1_2_velha",
+   "type": "any",
+   "description": "q41_1_2_Quantidade de usuários - Crianças de 0 a 6 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_1_98_velha",
+   "type": "any",
+   "description": "q41_1_98_Não sabe - Crianças de 0 a 6 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_2_1_velha",
+   "type": "any",
+   "description": "q41_2_1_Crianças e adolescentes de 7 a 14 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_2_2_velha",
+   "type": "any",
+   "description": "q41_2_2_Quantidade de usuários - Crianças e adolescentes de 7 a 14 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_2_98_velha",
+   "type": "any",
+   "description": "q41_2_98_Não sabe - Crianças e adolescentes de 7 a 14 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_3_1_velha",
+   "type": "any",
+   "description": "q41_3_1_Adolescentes e jovens de 15 a 17 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_3_2_velha",
+   "type": "any",
+   "description": "q41_3_2_Quantidade de usuários - Adolescentes e jovens de 15 a 17 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_3_98_velha",
+   "type": "any",
+   "description": "q41_3_98_Não sabe - Adolescentes e jovens de 15 a 17 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_4_1_velha",
+   "type": "any",
+   "description": "q41_4_1_Jovens de 18 a 29 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_4_2_velha",
+   "type": "any",
+   "description": "q41_4_2_Quantidade de usuários - Jovens de 18 a 29 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_4_98_velha",
+   "type": "any",
+   "description": "q41_4_98_Não sabe - Jovens de 18 a 29 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_5_1_velha",
+   "type": "any",
+   "description": "q41_5_1_Adultas(os) de 30 a 59 anos - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_5_2_velha",
+   "type": "any",
+   "description": "q41_5_2_Quantidade de usuários - Adultas(os) de 30 a 59 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_5_98_velha",
+   "type": "any",
+   "description": "q41_5_98_Não sabe - Adultas(os) de 30 a 59 anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_6_1_velha",
+   "type": "any",
+   "description": "q41_6_1_Pessoas idosas(os) (60 anos ou mais) - SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_6_2_velha",
+   "type": "any",
+   "description": "q41_6_2_Quantidade de usuários - Pessoas idosas(os) (60 anos ou mais)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_6_98_velha",
+   "type": "any",
+   "description": "q41_6_98_Não sabe - Pessoas idosas(os) (60 anos ou mais)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q41_7_2_velha",
+   "type": "any",
+   "description": "q41_7_2_TOTAL - Quantidade de usuários SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_1_1_velha",
+   "type": "any",
+   "description": "q42_1_1_Quantidade de usuários - Em situação de isolamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_1_98_velha",
+   "type": "any",
+   "description": "q42_1_98_Não sabe - Em situação de isolamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_2_1_velha",
+   "type": "any",
+   "description": "q42_2_1_Quantidade de usuários - Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_2_98_velha",
+   "type": "any",
+   "description": "q42_2_98_Não sabe - Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_3_1_velha",
+   "type": "any",
+   "description": "q42_3_1_Quantidade de usuários - Vivência de violência/negligência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_3_98_velha",
+   "type": "any",
+   "description": "q42_3_98_Não sabe - Vivência de violência/negligência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_4_1_velha",
+   "type": "any",
+   "description": "q42_4_1_Quantidade de usuários - Fora da escola ou com defasagem escolar superior a dois anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_4_98_velha",
+   "type": "any",
+   "description": "q42_4_98_Não sabe - Fora da escola ou com defasagem escolar superior a dois anos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_5_1_velha",
+   "type": "any",
+   "description": "q42_5_1_Quantidade de usuários - Em situação de acolhimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_5_98_velha",
+   "type": "any",
+   "description": "q42_5_98_Não sabe - Em situação de acolhimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_6_1_velha",
+   "type": "any",
+   "description": "q42_6_1_Quantidade de usuários - Em cumprimento de medida socioeducativa em meio aberto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_6_98_velha",
+   "type": "any",
+   "description": "q42_6_98_Não sabe - Em cumprimento de medida socioeducativa em meio aberto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_7_1_velha",
+   "type": "any",
+   "description": "q42_7_1_Quantidade de usuários - Egressos de medidas socioeducativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_7_98_velha",
+   "type": "any",
+   "description": "q42_7_98_Não sabe - Egressos de medidas socioeducativas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_8_1_velha",
+   "type": "any",
+   "description": "q42_8_1_Quantidade de usuários - Situação de abuso e/ou exploração sexual",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_8_98_velha",
+   "type": "any",
+   "description": "q42_8_98_Não sabe - Situação de abuso e/ou exploração sexual",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_9_1_velha",
+   "type": "any",
+   "description": "q42_9_1_Quantidade de usuários - Com medidas de proteção do Estatuto da Criança e do Adolescente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_9_98_velha",
+   "type": "any",
+   "description": "q42_9_98_Não sabe - Com medidas de proteção do Estatuto da Criança e do Adolescente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_10_1_velha",
+   "type": "any",
+   "description": "q42_10_1_Quantidade de usuários - Crianças e adolescentes em situação de rua",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_10_98_velha",
+   "type": "any",
+   "description": "q42_10_98_Não sabe - Crianças e adolescentes em situação de rua",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_11_1_velha",
+   "type": "any",
+   "description": "q42_11_1_Quantidade de usuários - Vulnerabilidade que diz respeito às pessoas com deficiência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_11_98_velha",
+   "type": "any",
+   "description": "q42_11_98_Não sabe - Vulnerabilidade que diz respeito às pessoas com deficiência",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q42_12_1_velha",
+   "type": "any",
+   "description": "q42_12_1_TOTAL _ Quantidade de usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q43_velha",
+   "type": "any",
+   "description": "q43_O município oferta Serviço de Proteção Social Básica no Domicílio para Pessoas com deficiência e pessoas idosas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_1_velha",
+   "type": "any",
+   "description": "q44_1_Na própria sede do órgão gestor, com equipe exclusiva para o Serviço de Proteção Social Básica no Domicílio para Pessoas com deficiência e idosas - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_2_velha",
+   "type": "any",
+   "description": "q44_2_Na própria sede do órgão gestor, com equipe que realiza outras atividades - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_3_velha",
+   "type": "any",
+   "description": "q44_3_No CRAS, com equipe exclusiva para o Serviço de Proteção Social Básica no Domicílio para Pessoas com deficiência e idosas - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_4_velha",
+   "type": "any",
+   "description": "q44_4_No CRAS, com a equipe técnica do Serviço de Proteção e Atendimento Integral à Família (PAIF) - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_5_velha",
+   "type": "any",
+   "description": "q44_5_No CRAS, com equipe que realiza outras atividades - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_6_velha",
+   "type": "any",
+   "description": "q44_6_Em outra Unidade Pública - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q44_7_velha",
+   "type": "any",
+   "description": "q44_7_Em Entidade ou Organização da Sociedade Civil - Em qual(is) unidade(s) e com que equipe o Serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_1_velha",
+   "type": "any",
+   "description": "q45_1_Atende no CREAS do município - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_2_velha",
+   "type": "any",
+   "description": "q45_2_Encaminha para o CREAS de outro município - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_3_velha",
+   "type": "any",
+   "description": "q45_3_ Encaminha para o CREAS Regional ao qual está vinculado - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_4_velha",
+   "type": "any",
+   "description": "q45_4_Atende no CRAS - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_5_velha",
+   "type": "any",
+   "description": "q45_5_Atende em entidade ou organização da sociedade civil no município - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_6_velha",
+   "type": "any",
+   "description": "q45_6_É atendido pela equipe de referência/técnica do órgão gestor (equipes específicas para o atendimento - não são equipes de gestão) - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_99_velha",
+   "type": "any",
+   "description": "q45_99_Outro - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q45_0_velha",
+   "type": "any",
+   "description": "q45_0_Não é atendido pela Assistência Social - Como a Assistência Social atende questões de violações de direitos no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_1_velha",
+   "type": "any",
+   "description": "q46_1_Atende no CREAS do município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_2_velha",
+   "type": "any",
+   "description": "q46_2_Encaminha para o CREAS de outro município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_3_velha",
+   "type": "any",
+   "description": "q46_3_Encaminha para o CREAS Regional ao qual está vinculado - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_4_velha",
+   "type": "any",
+   "description": "q46_4_Executa no CRAS - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_5_velha",
+   "type": "any",
+   "description": "q46_5_Executa em articulação com organização da sociedade civil no município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_6_velha",
+   "type": "any",
+   "description": "q46_6_Executa em outra unidade pública da Assistência Social (exceto CREAS) de acompanhamento de adolescentes em cumprimento de Medida Socioeducativa (LA ou PSC) do município - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_7_velha",
+   "type": "any",
+   "description": "q46_7_É atendido por unidades de outras políticas públicas do município (saúde, educação, direitos humanos etc.) - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_8_velha",
+   "type": "any",
+   "description": "q46_8_É atendido pela equipe de referência/técnica do órgão gestor (equipes específicas para o atendimento - não são equipes de gestão) - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q46_0_velha",
+   "type": "any",
+   "description": "q46_0_Não atende - Como o município atende adolescentes em MSE de LA e PSC?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_1_velha",
+   "type": "any",
+   "description": "q47_1_Total de adolescentes em cumprimento de LA",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_1_98_velha",
+   "type": "any",
+   "description": "q47_1_98_NÃO SABE - Total de adolescentes em cumprimento de LA.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_2_velha",
+   "type": "any",
+   "description": "q47_2_Total de adolescentes em cumprimento de PSC",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_2_98_velha",
+   "type": "any",
+   "description": "q47_2_98_NÃO SABE - Total de adolescentes em cumprimento de PSC.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_3_velha",
+   "type": "any",
+   "description": "q47_3_Total de adolescentes em cumprimento de Medidas Socioeducativas (LA e/ou PSC)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q47_3_98_velha",
+   "type": "any",
+   "description": "q47_3_98_NÃO SABE - Total de adolescentes em cumprimento de Medidas Socioeducativas (LA e/ou PSC)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_1_velha",
+   "type": "any",
+   "description": "q48_1_CRAS - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_2_velha",
+   "type": "any",
+   "description": "q48_2_CREAS - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_3_velha",
+   "type": "any",
+   "description": "q48_3_Biblioteca - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_4_velha",
+   "type": "any",
+   "description": "q48_4_Hospitais - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_5_velha",
+   "type": "any",
+   "description": "q48_5_Unidades de Acolhimento para Idosas(os) (asilos) - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_6_velha",
+   "type": "any",
+   "description": "q48_6_Defensoria Pública/ Fórum - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_7_velha",
+   "type": "any",
+   "description": "q48_7_Projetos de Cultura - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_8_velha",
+   "type": "any",
+   "description": "q48_8_Projetos de Esporte - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_9_velha",
+   "type": "any",
+   "description": "q48_9_Igrejas - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_10_velha",
+   "type": "any",
+   "description": "q48_10_Conselho Tutelar - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_11_velha",
+   "type": "any",
+   "description": "q48_11_Sistema S (SENAI, SESC, SESI, etc.) - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_12_velha",
+   "type": "any",
+   "description": "q48_12_Atividades da Secretaria de Obras ou similares - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_13_velha",
+   "type": "any",
+   "description": "q48_13_Polícia/ Corpo de Bombeiros - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_99_velha",
+   "type": "any",
+   "description": "q48_99_Outros - Indique os principais locais onde o(a) adolescente presta serviço à comunidade nesta localidade:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q49_velha",
+   "type": "any",
+   "description": "q49_O município oferta Serviço Especializado em Abordagem Social para pessoas em situação de rua?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_1_velha",
+   "type": "any",
+   "description": "q50_1_No(s) CREAS - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_2_velha",
+   "type": "any",
+   "description": "q50_2_No(s) Centro POP - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_3_velha",
+   "type": "any",
+   "description": "q50_3_Na sede/órgão gestor do município (considerar nesta opção estruturas administrativas descentralizadas, como regionais ou similares) - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_4_velha",
+   "type": "any",
+   "description": "q50_4_Em outra unidade pública - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_5_velha",
+   "type": "any",
+   "description": "q50_5_Em entidade ou Organização da Sociedade Civil - Em qual(is) unidade(s) o serviço é ofertado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_1_velha",
+   "type": "any",
+   "description": "q51_1_Controla o acesso às vagas, sendo responsável por indicar a Unidade de Acolhimento que receberá a criança/adolescente - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_2_velha",
+   "type": "any",
+   "description": "q51_2_Acompanha/monitora o fluxo de entradas e saídas de crianças e adolescentes nas Unidades - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_3_velha",
+   "type": "any",
+   "description": "q51_3_Centraliza as informações das medidas de acolhimento determinadas pelo poder Judiciário - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_4_velha",
+   "type": "any",
+   "description": "q51_4_Centraliza as informações dos acolhimentos emergenciais realizados pelo Conselho Tutelar - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_5_velha",
+   "type": "any",
+   "description": "q51_5_Promove a articulação dos serviços de acolhimento com os demais serviços da rede socioassistencial - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_6_velha",
+   "type": "any",
+   "description": "q51_6_Promove a articulação dos serviços de acolhimento com as demais políticas públicas e órgãos de defesa de direitos - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_7_velha",
+   "type": "any",
+   "description": "q51_7_Realiza supervisão e suporte técnico aos serviços de acolhimento - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_8_velha",
+   "type": "any",
+   "description": "q51_8_Monitora o tempo de permanência das crianças e adolescentes nos serviços de acolhimento - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_9_velha",
+   "type": "any",
+   "description": "q51_9_Fiscaliza a qualidade dos serviços - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_0_velha",
+   "type": "any",
+   "description": "q51_0_Não realiza nenhuma das atividades listadas acima - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51_97_velha",
+   "type": "any",
+   "description": "q51_97_O município não possui Serviço de Acolhimento para Crianças e Adolescentes - Nos casos de acolhimento de crianças e adolescentes, quais atividades são realizadas?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_0_velha",
+   "type": "any",
+   "description": "q52_0_Não realiza - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_1_velha",
+   "type": "any",
+   "description": "q52_1_Realiza campanhas, mobilização e sensibilização - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_2_velha",
+   "type": "any",
+   "description": "q52_2_Realiza atividades de abordagem social em espaços públicos - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_3_velha",
+   "type": "any",
+   "description": "q52_3_Realiza busca ativa de famílias com situação de trabalho infantil para inclusão no Cadastro Único - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_4_velha",
+   "type": "any",
+   "description": "q52_4_Encaminha/inclui crianças e adolescentes em trabalho infantil para o SCFV - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_5_velha",
+   "type": "any",
+   "description": "q52_5_Encaminha/inclui famílias com situação de trabalho infantil para o PAIF/CRAS - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_6_velha",
+   "type": "any",
+   "description": "q52_6_Encaminha/inclui famílias com situação de trabalho infantil para o PAEFI/CREAS - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_7_velha",
+   "type": "any",
+   "description": "q52_7_Encaminha famílias e indivíduos para a aplicação de medidas protetivas à família - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_8_velha",
+   "type": "any",
+   "description": "q52_8_Encaminha famílias com situação de trabalho infantil para programas e projetos de capacitação profissional - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_9_velha",
+   "type": "any",
+   "description": "q52_9_Encaminha famílias com situação de trabalho infantil para programas e projetos de inclusão produtiva e/ou geração de trabalho e renda - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_10_velha",
+   "type": "any",
+   "description": "q52_10_Encaminha famílias com situação de trabalho infantil para atendimento em outras políticas públicas - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_11_velha",
+   "type": "any",
+   "description": "q52_11_Encaminha famílias com situação de trabalho infantil para os órgãos de defesa e responsabilização - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52_12_velha",
+   "type": "any",
+   "description": "q52_12_Elabora estudos e diagnósticos sobre o trabalho infantil no município - Indique as ações realizadas no município para enfrentamento do Trabalho Infantil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q53_velha",
+   "type": "any",
+   "description": "q53_O município possui programa de apoio à família guardiã na família extensa, no qual a família extensa ou com vínculos afetivos com a criança/adolescente receba acompanhamento e subsídio financeiro para a guarda da criança/adolescente?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q54_velha",
+   "type": "any",
+   "description": "q54_Atualmente, quantas crianças e/ou adolescentes estão acolhidos em famílias guardiãs na família extensa inseridas no Programa?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q55_velha",
+   "type": "any",
+   "description": "q55_Atualmente, quantas famílias recebem recursos pelo Programa?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_velha",
+   "type": "any",
+   "description": "q56_Nos últimos 12 (doze) meses a Assistência Social do município abrigou em alojamentos provisórios pessoas atingidas por situações de emergência ou de calamidade pública?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q57_velha",
+   "type": "any",
+   "description": "q57_Caso sim, indique a quantidade de pessoas desabrigadas que foram acolhidas em alojamentos provisórios nos últimos 12 (doze) meses:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_velha",
+   "type": "any",
+   "description": "q58_Em 2024, a Assistência Social do município ofertou atendimento a pessoas e famílias imigrantes/refugiados?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q59_velha",
+   "type": "any",
+   "description": "q59_Caso sim, para quantos imigrantes/refugiados?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_1_velha",
+   "type": "any",
+   "description": "q60_1_Venezuelanos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_2_velha",
+   "type": "any",
+   "description": "q60_2_Haitianos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_3_velha",
+   "type": "any",
+   "description": "q60_3_Bolivianos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_4_velha",
+   "type": "any",
+   "description": "q60_4_Colombianos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_5_velha",
+   "type": "any",
+   "description": "q60_5_Argentinos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_6_velha",
+   "type": "any",
+   "description": "q60_6_Chineses",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_98_velha",
+   "type": "any",
+   "description": "q60_98_Não sabe informar o número de migrantes/refugiados por nacionalidade.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_99_velha",
+   "type": "any",
+   "description": "q60_99_Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_0_velha",
+   "type": "any",
+   "description": "q61_0_Não realiza encaminhamentos para o mundo do trabalho - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_1_velha",
+   "type": "any",
+   "description": "q61_1_Órgãos de intermediação de mão de obra (Serviço Nacional do Emprego – SINE, entre outros) - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_2_velha",
+   "type": "any",
+   "description": "q61_2_Cursos de qualificação profissional - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_3_velha",
+   "type": "any",
+   "description": "q61_3_Socioaprendizagem - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_4_velha",
+   "type": "any",
+   "description": "q61_4_Cursos técnicos de instituições municipais/estaduais - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_5_velha",
+   "type": "any",
+   "description": "q61_5_Cooperativas, Associações e Ações de economia solidária - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_6_velha",
+   "type": "any",
+   "description": "q61_6_Acesso a Microcrédito - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_7_velha",
+   "type": "any",
+   "description": "q61_7_Micro empreendedorismo individual - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_8_velha",
+   "type": "any",
+   "description": "q61_8_Sistema S (SESC, SENAC, SESI, SENAR, etc) - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_9_velha",
+   "type": "any",
+   "description": "q61_9_Organizações de trabalhadores (sindicatos, conselhos etc) - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61_99_velha",
+   "type": "any",
+   "description": "q61_99_Outros - O município tem encaminhado usuárias(os) da assistência social para quais oportunidades do mundo do trabalho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_0_velha",
+   "type": "any",
+   "description": "q63_0_Não se aplica, pois não temos nenhuma dificuldade para execução dos recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_1_velha",
+   "type": "any",
+   "description": "q63_1_Ausência de planejamento ou planejamento inadequado - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_2_velha",
+   "type": "any",
+   "description": "q63_2_Insegurança, dúvidas ou desconhecimento em relação às regras para execução dos recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_3_velha",
+   "type": "any",
+   "description": "q63_3_Receio de reprovação dos gastos pelo Conselho Municipal de Assistencia Social - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_4_velha",
+   "type": "any",
+   "description": "q63_4_Dificuldades, internas à Secretaria, na realização de licitações - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_5_velha",
+   "type": "any",
+   "description": "q63_5_Dificuldades, externas à Secretaria, na realização de licitações - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_6_velha",
+   "type": "any",
+   "description": "q63_6_A área jurídica ou de controle interno do município dificulta os processos de compras e de contratação de serviços com recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_7_velha",
+   "type": "any",
+   "description": "q63_7_A área orçamentária ou financeira do município dificulta os processos de compras e de contratação de serviços com recursos do IGD-PBF - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_8_velha",
+   "type": "any",
+   "description": "q63_8_O Ordenador de Despesas não está vinculado à Secretaria - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63_9_velha",
+   "type": "any",
+   "description": "q63_9_Dificuldades na programação/inscrição dos recursos do IGD-PBF na Lei Orçamentária do município - Aponte as principais dificuldades para execução dos recursos do IGD-PBF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_1_velha",
+   "type": "any",
+   "description": "q65_1_Sim, ofertada pelo próprio gestor do Cadastro Único - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_2_velha",
+   "type": "any",
+   "description": "q65_2_Sim, por servidores da equipe do Cadastro Único e/ou Assistência Social - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_3_velha",
+   "type": "any",
+   "description": "q65_3_Sim, por consultores externos - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_4_velha",
+   "type": "any",
+   "description": "q65_4_Sim, por instituições de ensino - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_99_velha",
+   "type": "any",
+   "description": "q65_99_Sim, outros - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_0_velha",
+   "type": "any",
+   "description": "q65_0_Não - O município promoveu capacitação sobre o Cadastro Único?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_1_velha",
+   "type": "any",
+   "description": "q66_1_Realizar estudos sobre as condições de vulnerabilidade das famílias com pessoas idosas e com deficiência - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_2_velha",
+   "type": "any",
+   "description": "q66_2_Orientar a população usuária sobre seus direitos e procedimentos para acesso ao BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_3_velha",
+   "type": "any",
+   "description": "q66_3_Apoiar e acompanhar o processo de concessão do BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_4_velha",
+   "type": "any",
+   "description": "q66_4_Distribuir aos CRAS e CREAS do município listas territorializadas das famílias com beneficiárias(os) do BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_5_velha",
+   "type": "any",
+   "description": "q66_5_Articular com outros setores a inserção das(os) beneficiárias(os) nas diversas políticas sociais - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_6_velha",
+   "type": "any",
+   "description": "q66_6_Realizar e acompanhar a inserção e atualização das(os) beneficiárias(os) do BPC no Cadastro Único - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_7_velha",
+   "type": "any",
+   "description": "q66_7_Articular ações com INSS acerca do requerimento e manutenção do BPC - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_8_velha",
+   "type": "any",
+   "description": "q66_8_Realizar e acompanhar a inserção de crianças e adolescentes com deficiência BPC na escola, em articulação com o Grupo Gestor Local - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_9_velha",
+   "type": "any",
+   "description": "q66_9_Acompanhar a inserção de jovens e adultas(os) com deficiência beneficiárias(os) do BPC no mundo do trabalho - Especifique quais as ações relativas ao BPC são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_99_velha",
+   "type": "any",
+   "description": "q66_99_Outros - Especifique quais as ações relativas ao Benefício de Prestação Continuada (BPC) são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66_0_velha",
+   "type": "any",
+   "description": "q66_0_Não realiza - Especifique quais as ações relativas ao Benefício de Prestação Continuada (BPC) são desenvolvidas pela Assistência Social no município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_1_velha",
+   "type": "any",
+   "description": "q67_1_Benefício Eventual por Situação de morte: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_1_1_velha",
+   "type": "any",
+   "description": "q67_1_1_Benefício Eventual por Situação de morte: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_2_velha",
+   "type": "any",
+   "description": "q67_2_Benefício Eventual por Situação de Natalidade: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_2_1_velha",
+   "type": "any",
+   "description": "q67_2_1_Benefício Eventual por Situação de Natalidade: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_3_velha",
+   "type": "any",
+   "description": "q67_3_Benefício Eventual para situação de calamidade pública: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_3_1_velha",
+   "type": "any",
+   "description": "q67_3_1_Benefício Eventual para situação de calamidade pública: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_4_velha",
+   "type": "any",
+   "description": "q67_4_Outros benefícios eventuais para famílias em situação de vulnerabilidade temporária: O Benefício é concedido no município?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67_4_1_velha",
+   "type": "any",
+   "description": "q67_4_1_Outros benefícios eventuais para famílias em situação de vulnerabilidade temporária: Local onde o Benefício é concedido:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_velha",
+   "type": "any",
+   "description": "q70_O município realizou ações de capacitação e formação para trabalhadoras(es) e/ou conselheiras(os) da política de assistência social no ano de 2023?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_1_velha",
+   "type": "any",
+   "description": "q71_1_Profissionais capacitados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_1_98_velha",
+   "type": "any",
+   "description": "q71_1_98_Não sabe. Profissionais capacitados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_2_velha",
+   "type": "any",
+   "description": "q71_2_Conselheiras (os) capacitadas(os).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_2_98_velha",
+   "type": "any",
+   "description": "q71_2_98_Não sabe. Conselheiras(os) capacitados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_1_velha",
+   "type": "any",
+   "description": "q72_1_Presencial - Qual(is) a(s) modalidade(s) de oferta das capacitações realizadas em 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_2_velha",
+   "type": "any",
+   "description": "q72_2_A distância - Qual(is) a(s) modalidade(s) de oferta das capacitações realizadas em 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_3_velha",
+   "type": "any",
+   "description": "q72_3_Hibrido - Qual(is) a(s) modalidade(s) de oferta das capacitações realizadas em 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d4",
+   "type": "any",
+   "description": "d4_Ano da Lei Municipal de regulamentação do SUAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d25_1",
+   "type": "any",
+   "description": "d25_1_Nos últimos cinco anos (2020-2024), a Assistência Social do município já atuou em alguma situação de calamidade pública ou emergência (EXCLUINDO A PANDEMIA DE COVID 2019)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d34",
+   "type": "any",
+   "description": "d34_Qual o ano de elaboração (ou atualização) do diagnóstico?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1cd6d111-3fd6-4f37-b382-74bc619015e0",
+   "dictionary_name": "Gestão Municipal Dicionario de variaveis",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/1cd6d111-3fd6-4f37-b382-74bc619015e0/download/censo_suas_2024_gestao_municipal_dicionario_de_variaveis.xlsx",
+   "sha256": "5928b174d6cadc1665454fac5920067818e29ec61618c4f33d2569123d86f8eb",
+   "reader": "xlsx",
+   "part": "Dados Gerais",
+   "link_method": "header"
+  }
+ }
+}

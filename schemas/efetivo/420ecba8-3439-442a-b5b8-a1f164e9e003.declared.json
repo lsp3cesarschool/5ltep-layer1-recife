@@ -1,0 +1,86 @@
+{
+ "fields": [
+  {
+   "name": "grad",
+   "type": "string",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "iniciais",
+   "type": "string",
+   "description": "Iniciais do nome do servidor",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "posto",
+   "type": "string",
+   "description": "Posto de trabalho",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "horario",
+   "type": "string",
+   "description": "horariuo de trabalho do servidor",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "lotacao",
+   "type": "string",
+   "description": "Lotação do servidor",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "secretaria",
+   "type": "string",
+   "description": "Secretaria do servidor",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "horas_trabalhadas",
+   "type": "string",
+   "description": "Jornada do servidor",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "522859d1-76c2-4904-aa70-d89178e1cb0f",
+   "dictionary_name": "Dicionário de Dados - Efetivo da guarda civil",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/2dcc6da2-cc25-4605-939c-975e5acd9d09/resource/522859d1-76c2-4904-aa70-d89178e1cb0f/download/dicionario-de-dados-efetivo-da-guarda-civil.json",
+   "sha256": "3ccc48b5a52b094f1cdd5b5ad9bf972b2b0c17913f5fa56b78e56172d90d851c",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

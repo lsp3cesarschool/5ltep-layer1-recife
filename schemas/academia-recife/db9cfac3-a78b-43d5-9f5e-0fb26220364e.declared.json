@@ -1,0 +1,85 @@
+{
+ "fields": [
+  {
+   "name": "polo",
+   "type": "string",
+   "description": "Nome do Polo",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "description": "Região Politico Administrativa [Allowed values, as declared: 1,2,3,4,5,6]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "endereço onde a academia está localizada",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Nome do Bairro",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "observacao",
+   "type": "string",
+   "description": "complemento do local onde se encontra a academia",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "datainauguracao",
+   "type": "date",
+   "description": "Data em que foi inaugurada a academia",
+   "declaredType": "DATE",
+   "declaredSize": 10
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "8c73c077-1ea9-4950-b37d-1033b0fdab06",
+   "dictionary_name": "Dicionário de Dados Academia Recife",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/0119c2c6-60c0-4b41-86ff-2fd419dc9c91/resource/8c73c077-1ea9-4950-b37d-1033b0fdab06/download/dicionario-de-dados-academia-recife.json",
+   "sha256": "656d9dc9236bc388e716ee125c004d063cf103d476767272e3742857cbc4094a",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "single"
+  }
+ }
+}

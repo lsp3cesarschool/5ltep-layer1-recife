@@ -1,0 +1,72 @@
+{
+ "fields": [
+  {
+   "name": "seq",
+   "type": "number",
+   "description": "Número sequencial",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "Nome_Praca",
+   "type": "string",
+   "description": "Nome da Praça",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço do Equipamento Urbano",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográfias em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográfias em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "origem",
+   "type": "number",
+   "description": "Origem da Informação, se é um dado oficial, estará como 'dado aberto' ou se for uma informação que veio da votação da população, estará com o nome 'população'",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "nome_bairro",
+   "type": "number",
+   "description": "Nome do Bairro",
+   "declaredType": "Num",
+   "declaredSize": 30
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "fc54429e-1983-47ce-a144-799804dbcaf9",
+   "dictionary_name": "metadados Praças - Programa Tá Aprumado",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/b3a3a033-3611-485c-8d18-d02c5a42563d/resource/fc54429e-1983-47ce-a144-799804dbcaf9/download/metadados-pracas-programa-ta-aprumado.json",
+   "sha256": "e962a1715a75c46d5da4db1c9bd1113526ae1d6bfd284ae0c5fd4fdedd9e12d3",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

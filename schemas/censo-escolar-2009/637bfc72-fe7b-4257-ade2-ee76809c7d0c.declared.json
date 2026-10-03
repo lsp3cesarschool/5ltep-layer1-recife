@@ -1,0 +1,695 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "description": "Código de escola no Inep",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "codigo_escola",
+   "type": "string",
+   "description": "Código da escola no município",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "description": "Nome da escola",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "cep",
+   "type": "string",
+   "description": "CEP",
+   "constraints": {
+    "maxLength": 8
+   },
+   "declaredType": "Char",
+   "declaredSize": 8
+  },
+  {
+   "name": "endereco",
+   "type": "string",
+   "description": "Endereço",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "endereco_numero",
+   "type": "string",
+   "description": "Endereço Número",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "endereco_complemeto",
+   "type": "string",
+   "description": "Endereço Complemento",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "bairo_codigo",
+   "type": "number",
+   "description": "Código Bairro",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "Bairro",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "telefone",
+   "type": "number",
+   "description": "Telefone",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "fax",
+   "type": "number",
+   "description": "FAX",
+   "declaredType": "Num",
+   "declaredSize": 8
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "description": "Endereço eletrônico(e-mail)",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "orgao_regional",
+   "type": "string",
+   "description": "Código de órgão regional de ensino [Allowed values, as declared: 00001 - Norte, 00002 - Sul]",
+   "constraints": {
+    "maxLength": 5
+   },
+   "declaredType": "Char",
+   "declaredSize": 5
+  },
+  {
+   "name": "regulamentacao",
+   "type": "number",
+   "description": "Regulamentação Autorização no conselho ou Órgão municiapl, estadual ou federal de educação [Allowed values, as declared: 0 - Não, 1 - Sim, 2 - Em Tramitação]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "funcionamento_predio_escolar",
+   "type": "number",
+   "description": "Local de funcionamento da escola - prédio escolar [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "funcionamento_templo",
+   "type": "number",
+   "description": "Local de funcionamento da escola - Templo/Igreja [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "funcionamento_empresa",
+   "type": "number",
+   "description": "Local de funcionamento da escola - Salas da empresa [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "funcionamento_outras_escolar",
+   "type": "number",
+   "description": "Local de funcionamento da escola - Salas em outras escolas [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "funcionamento_galpao",
+   "type": "number",
+   "description": "Local de funcionamento da escola - Galpão/Rancho/Paiol/Barração [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "funcionamento_outros",
+   "type": "number",
+   "description": "Local de funcionamento da escola - Outros [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "forma_ocupação",
+   "type": "number",
+   "description": "Forma de ocupação do prédio [Allowed values, as declared: 1 - Próprio, 2 - Alugado, 3 - Cedido]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "agua_rede_publica",
+   "type": "number",
+   "description": "Abastecimento de água - Rede Pública [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "agua_poco_artesiano",
+   "type": "number",
+   "description": "Abastecimento de água - Poço Artesiano [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "agua_cacimba",
+   "type": "number",
+   "description": "Abastecimento de água - Cacimba/Cistema/Poço [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "agua_fonte",
+   "type": "number",
+   "description": "Abastecimento de água - Fonte/Rio/Igapé/Córrego [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "esgoto_rede_publica",
+   "type": "number",
+   "description": "Esgoto Sanitário - Rede Pública [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "esgoto_fossa",
+   "type": "number",
+   "description": "Esgoto Sanitário - Fossa [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "esgoto_inexistente",
+   "type": "number",
+   "description": "Esgoto Sanitário _ Inexistente [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "lixo_coleta_periodica",
+   "type": "number",
+   "description": "Destinação do Lixo - Coleta Periódica [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "lixo_outra_area",
+   "type": "number",
+   "description": "Destinação do Lixo - Joga em outra área [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_diretoria",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Sala de diretoria [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_professores",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Sala de Professores [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_secretaria",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Sala de Secretaria [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_laboratorio_informatica",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Laboratório de Informática [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_laboratorio_ciencias",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Laboratório de Ciências [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_aee",
+   "type": "number",
+   "description": "Dependências existentes na Escola - AEE [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_quadr_coberta",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Quadra de Esporte Coberta [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_quadra_descoberta",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Quadra de Esporte Descoberta [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_cozinha",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Cozinha [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_biblioteca",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Biblioteca [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_leitura",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Sala de Leitura [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_parque_infantil",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Parque Infantil [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_bercario",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Berçario [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_banheiro_fora",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Banheiro fora do prédio [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_banheiro_dentro",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Banheiro dentro do prédio [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_banheiro_infantil",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Banheiro adequado à educação infantil [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_banheiro_deficiencia",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Banheiro adequado à alunos com deficiência ou mobilidade reduzida [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_vias_adequadas_deficiencia",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Dependências e vias adequadas a alunos com deficiência ou mobilidade reduzida [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_banheiro_chuveiro",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Banheiro com Chuveiro [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_refeitorio",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Refeitório [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_despensa",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Despensa [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_almoxarifado",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Almoxarifado [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_auditorio",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Auditório [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_patio_coberto",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Pátio Coberto [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_patio_descoberto",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Pátio Descoberto [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_alojamento_aluno",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Alojamento de Aluno [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_alojamento_professor",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Alojamento de Professor [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_area_verde",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Área Verde [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "dependencia_lavanderia",
+   "type": "number",
+   "description": "Dependências existentes na Escola - Lavanderia [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "quantidade_salas_existentes",
+   "type": "number",
+   "description": "Número de salas de aula existentes na escola",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "quantidade_salas_utilizadas_fora_e_dentro",
+   "type": "number",
+   "description": "Número de salas utilizadas como sala de aula - Dentro e fora do Prédio",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "equipamentos_televisao",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Aparelho de Televisão [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_videocassete",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Videocassete [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_dvd",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - DVD [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_antena_parabolica",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Antena parabólica [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_copiadora",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Copiadora [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_retroprojetor",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Retroprojetor [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_impressora",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Impressora [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_aparelho_som",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Aparelho de som [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_projetor_multimidia",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Projetor multimídia(Data show) [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_fax",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - FAX [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_maquina_fotografica",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Máquina fotográfica/filmadora [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "equipamentos_computadores",
+   "type": "number",
+   "description": "Equipamentos existentes na escola - Computadores [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "computadores_quantidade",
+   "type": "number",
+   "description": "Quantidade de computadores na escola",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "computadores_qtd_administrativa",
+   "type": "number",
+   "description": "Quantidade de equipamentos de uso administrativo",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "computadores_qtd_aluno",
+   "type": "number",
+   "description": "Quantidade de computadores de uso dos alunos",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "acesso_internet",
+   "type": "number",
+   "description": "Acesso à internet [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "banda_larga",
+   "type": "number",
+   "description": "Banda larga [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "total_funcionarioso",
+   "type": "number",
+   "description": "Total de funcionários da escola",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "brasil_alfabetizado",
+   "type": "number",
+   "description": "Escola cede espaço para turmas do Brasil alfabetizado [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "abre_finais_semana",
+   "type": "number",
+   "description": "Escola abre aos finais de semana para a comunidade [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "modalidade_regular",
+   "type": "number",
+   "description": "Modalidade - Ensino Regular [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "modalidade_especial",
+   "type": "number",
+   "description": "Modalidade - educação especial (modalidade substituta) [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "modalidade_eja",
+   "type": "number",
+   "description": "Modalidade - Educação de jovens adultos [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "regular_creche",
+   "type": "number",
+   "description": "Etapa - Ensino regular - Educação infantil - Creche (0 a 3 anos) [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "regular_preescolar",
+   "type": "number",
+   "description": "Etapa - Ensino regular - Educação infantil - Pré-escolar (4 a 5 anos) [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "regular_fundamental9",
+   "type": "number",
+   "description": "Etapa - Ensino regular - Ensino Fundamental 9 anos [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especial_fundamental9",
+   "type": "number",
+   "description": "Etapa - Educa especial - Ensino Fundamental 9 anos [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "especial_eja_fundamental",
+   "type": "number",
+   "description": "Etapa - Educa especial - EJA ensino fundamental [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "eja_fundamental",
+   "type": "number",
+   "description": "Etapa - EJA - Ensino Fundamental [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "eja_projovem",
+   "type": "number",
+   "description": "Etapa - EJA - Ensino Fundamental - projovem(urbano) [Allowed values, as declared: 0 - Não, 1 - Sim]",
+   "declaredType": "Num",
+   "declaredSize": 1
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "78493c1e-22cd-488c-9d99-040a24b41de0",
+   "dictionary_name": "Dicionário de Dados do Cadastro das Escolas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/02bcf3f8-464d-4a63-a95b-870bf3c0e361/resource/78493c1e-22cd-488c-9d99-040a24b41de0/download/dicionario-de-dados-do-cadastro-das-escolas.json",
+   "sha256": "263dd0a73f2b47d51dba9dd9a0022adc0f46e2ccf512375a301113f2f4991b5e",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

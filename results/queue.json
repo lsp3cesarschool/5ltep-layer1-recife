@@ -1,0 +1,6536 @@
+[
+ {
+  "id": "35566d21-a428-4595-89dc-eb405380b33e",
+  "dataset": "abrigos-temporarios-disponiveis",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "db9cfac3-a78b-43d5-9f5e-0fb26220364e",
+  "dataset": "academia-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "07a588bf-c199-474e-8f51-cf18cb46b708",
+  "dataset": "academias-da-cidade",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dc198087-b9d6-49cb-800f-baee211e9b6f",
+  "dataset": "acessabilidade",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e130e432-7f35-455f-bce1-40f9ffb237ea",
+  "dataset": "acessabilidade",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7aeb2306-9ca4-41ad-b7aa-58c7cd7b57fc",
+  "dataset": "acidentes-de-transito-c-vitimas-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "87ac4237-f5f9-44d2-bcf1-927aaa0a2d31",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dbb9165a-7539-4fdd-943a-acffe12df3e0",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c2281788-2e8c-472c-8812-67c4f85e9272",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "31ee35d9-6f8e-4694-9492-efe96e902b07",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b2594588-2aa8-42c4-b96d-246102ecde3c",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c9fe4a98-0f61-4e81-9c4b-a22f8dc6f1a2",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a7b72334-9229-4e52-a6cb-8006de4942e3",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d364e034-7e00-41a7-b557-0b16c21814e7",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "edc820d6-0f01-4fd2-b8a4-5a8c95f7e743",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "58816e1f-18bc-4335-82bf-80ff080cb0e5",
+  "dataset": "acidentes-de-transito-com-e-sem-vitimas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "89846506-768a-41fc-938f-acd3ee3ef770",
+  "dataset": "acidentes-de-transito-com-vitimas-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e6dda22f-a135-485a-bae9-5a26badf2b09",
+  "dataset": "acidentes-de-transito-com-vitimas-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0874b82a-6699-4b1b-b2c5-5aae4d379bdc",
+  "dataset": "acidentes-de-transito-com-vitimas-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e2104756-e83d-4666-a945-ed707a4c3f2a",
+  "dataset": "acidentes-de-transito-com-vitimas-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d1a634b0-5d52-4e7e-864c-6aaed530d064",
+  "dataset": "acoes-e-programas-para-emprego-e-renda",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "481f2531-17a7-4957-b309-7188a9d95783",
+  "dataset": "acoes-e-programas-para-emprego-e-renda",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e2f40e74-1d9b-476e-b2e8-e2c954919d86",
+  "dataset": "acoes-e-programas-para-emprego-e-renda",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "36ff5fc9-bd8c-465a-8e40-5b8909e305fe",
+  "dataset": "agremiacoes-carnavalescas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "326b7fb6-90af-46d9-b342-a9c8fa6a706c",
+  "dataset": "alunos-matriculados-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0979b5c0-79ee-4a72-a1fe-947b5d9efa2b",
+  "dataset": "alunos-matriculados-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "95b6233d-db5b-40cf-afdd-116d4b24da28",
+  "dataset": "alunos-matriculados-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "afb4f83f-9b0a-4f2a-9a94-cebdc10c847b",
+  "dataset": "alunos-matriculados-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9d25cd6a-43f3-4789-81c6-5d88fec9c8cd",
+  "dataset": "alunos-matriculados-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fe90f85a-e0f6-4580-8003-130b9e2f71b0",
+  "dataset": "ambulatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "02806f00-cf63-4dd4-b7d8-c669f46e5ded",
+  "dataset": "amostra-de-fluxo-de-veiculos-a-cada-15-minutos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a378d50a-5e55-4956-a28c-13305acfc2b3",
+  "dataset": "area-urbana",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "15f820ba-6370-4d49-af5e-4eec6e559bf6",
+  "dataset": "area-urbana",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4124768-953e-4080-870e-a655a755f40a",
+  "dataset": "area-urbana",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b014a450-1e3d-4515-9d30-d5a21fe392b9",
+  "dataset": "area-urbana",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a652ee4e-832b-4d61-a304-50a78ce25995",
+  "dataset": "arvores-tombadas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3700f02c-3ea9-4803-b5d0-a4ef080c1572",
+  "dataset": "atendimentos_cultura",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7f393edf-e857-43e8-972b-4b42f8ae380c",
+  "dataset": "atribuicao-de-aulas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "899de797-b869-4c51-98a5-7b91401b058b",
+  "dataset": "autos-de-infracao-ambiental",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "18bcd423-3e91-4f7b-8cdb-644a3efecf21",
+  "dataset": "autos-de-infracao-ambiental",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "081eed8c-e56d-4107-ae74-6ec2c921b14a",
+  "dataset": "autos-de-infracao-ambiental",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a0a5f130-e7d0-4cdc-8746-5b5e014c853d",
+  "dataset": "bares-e-restaurantes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "080893fa-0546-4b26-ae8e-f662a13057db",
+  "dataset": "bens-moveis",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f1471a11-fdb1-45b6-a560-900927e7f8c5",
+  "dataset": "cadastro-unico-para-programas-sociais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fc4c1c38-7fc0-45d7-b9a5-b0ec0b229a78",
+  "dataset": "calcadas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0c15f2ce-7651-48d8-ae38-87267b4e0c6f",
+  "dataset": "calcadas-dos-corredores-de-transporte-metropolitano",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6b563ce1-e12c-4bc2-bacc-1a75b627c2d8",
+  "dataset": "calcadas-recuperadas-da-cidade-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "66c768a4-fbef-4c17-afa9-8da7481c1ad8",
+  "dataset": "calendario-de-vacinacao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "80485e13-0d12-4617-9c76-f70c82190e0a",
+  "dataset": "calendario-de-vacinacao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d55eacb3-35c6-4669-8a78-28773bd5f232",
+  "dataset": "calendario-de-vacinacao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "80247302-9447-49f5-aa1d-7a39496af2d1",
+  "dataset": "calendario-de-vacinacao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5d8c80f0-fb22-4a43-a67a-a2f12f5ca4fa",
+  "dataset": "calendario-de-vacinacao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6080dd4d-f16c-48ed-a1dc-a9e946ebe17d",
+  "dataset": "campanha-de-vacinacao-contra-a-influenza",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "96b741c7-058c-445a-9c17-54b232466676",
+  "dataset": "campanha-de-vacinacao-contra-a-influenza-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9002b2ed-e241-4c0c-bae8-4498e59e0f74",
+  "dataset": "campanha-de-vacinacao-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b57b1fa3-c238-4bbb-aa9c-fd10127fab07",
+  "dataset": "campanha-de-vacinacao-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fd249f41-2acd-496e-af4a-4b6142858af3",
+  "dataset": "canais-de-atendimento",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b300a634-1ab7-49fc-8592-4b45227822a8",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b0490f6f-f51a-4471-bc9e-a82c59b8e59e",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "79f9e050-3932-4512-9c9a-ef1e06381c38",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ed13983e-8dbd-4c5e-9986-1cc4a859c687",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b37c959b-9a18-4781-9f44-3287c8ee29e6",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0d2363a-5b8f-4a65-ab12-58d0015178e8",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "55ddeebc-7e15-431a-8136-5faf1fc3d788",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a7efb4d3-1942-4497-95fc-7a88273b8500",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "99cf777e-2d1d-45bd-85a7-960dbdca7f9f",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "49028273-234c-4acf-9c3e-a0e1dd21a03a",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7b1d7398-4e69-4e84-b912-144a93748ad2",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cf7dc2c4-a050-454f-9404-465458baa988",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a5bd9a51-57a3-48f4-bdc5-3af350bbc809",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8bc815dd-dc60-4716-a696-28d0bfc9569d",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a6333bda-a688-4935-b79a-8559b3e0e389",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9dde377f-5370-404b-b14d-cefcfd2d03ad",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c02b0a3b-c41c-4eea-bd6b-0913e13b9da2",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3c99170a-22af-4394-80a3-94938be9e198",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c2f9c59d-0acc-4fde-8d86-30cf559342ea",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d58c9c98-c2f1-41b0-8bc7-d1ad141a766c",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5a96362e-01bc-494b-bcd9-f9afea342432",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "87fc0dd3-18d2-4881-af75-b885502d69e7",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45a675e2-d387-4019-bb6e-4b915b74b1bf",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7755fe11-48f0-4797-ac5a-78d6da0fc8d9",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "18ffe3a6-9f3c-4259-8c85-f3dae9c8d8ae",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a727370f-b948-45f2-9eab-63de525e610e",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "816b18c2-783e-4d18-b6c3-4bc4c83491ab",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c68598c9-abfc-4cc8-8f5b-4e24063a7923",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9631a238-e0a7-4aba-af21-0ca429f04ae7",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2fc67253-7580-48a0-b0ba-618fdbbf7307",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "174737d6-8d7e-49de-ad57-29a1eb983835",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c5dd621b-2923-4a35-a599-a78d8e283938",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5dbe902b-cd0a-4029-a4ed-dc2e0e4960e9",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f30d05cb-04e5-40ac-918f-6fb7659986eb",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b59bab01-4b76-4328-b9d7-0d16dca20252",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0af97ed3-5b04-454b-810f-8e64344d2374",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fabc97d8-8fa2-441d-824a-156a6980b270",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e23ef98a-7361-47de-8419-fc3b35e60a5e",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "66acaf24-e9bd-4096-bd5c-2a9fa53b4057",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "36b3cc67-8b06-4297-b7e4-db5a1abefaa6",
+  "dataset": "casos-de-dengue-zika-e-chikungunya",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3c2365d9-2cee-4308-8122-28d3348b0c89",
+  "dataset": "casos-graves-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "abeb8c6c-2982-4658-98cb-ef1d42c4a7fb",
+  "dataset": "casos-leves-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "18bb81ba-1b89-41dc-a366-0c0e720ac314",
+  "dataset": "casos-leves-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4167194f-0e68-447b-9f6d-98cd539fa8ad",
+  "dataset": "casos-leves-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a48e0bec-028b-481d-a521-e04e98079268",
+  "dataset": "cemiterios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "637bfc72-fe7b-4257-ade2-ee76809c7d0c",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "49c3c70d-9d75-4321-b0c4-15d2c54ab19f",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "35a3ed69-27d1-49a1-bf09-dd333f3ff540",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "13c33899-8444-4c10-b4d2-1ff73a6386cf",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2677badc-5ee7-421b-8f4a-8d96985b6e39",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f801ad69-6a96-4e13-a7bb-6eaecc228f34",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8453e8a4-0a01-4226-8e8b-0f4c191a1883",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "12612552-9907-428f-bad2-f9e88b52a89c",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f3c4970c-6576-44d5-96d8-d5cc68c021d8",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "67ddff95-c40d-44ef-b16c-de222a6892fb",
+  "dataset": "censo-escolar-2009",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9edd117f-14f6-4320-be3e-d34119cba307",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c6f6251d-d601-4ea6-81c8-d6c640cff655",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f3945bc9-3e58-4904-955c-be7e9a5a8f1c",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0d557e32-fb34-458e-8fd8-4d506f8b2dcc",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4e5fe3f0-3eea-4cc2-8cbb-0bbfd5e94af4",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b313979c-0cbc-4d7a-b0e3-f98554acf4a1",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d230977-f217-490d-bb37-8975449bdfcb",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1ec4d0e5-02a5-4a8c-8d33-bf1db68c1c3f",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c5f5b66f-c02c-423c-b294-d8ed6fd68ad0",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "debf0603-17ad-4a19-953f-86b1c8ffae6c",
+  "dataset": "censo-escolar-2010",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d829bb3f-ec9e-4a6a-9134-3890c67478ca",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c6c66ab1-30cd-41ec-830e-bfdf012d2e22",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34d97aed-0186-46a4-b95f-9864fdcacbe0",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e3d3a457-7ceb-4122-a42b-9a118a8cc92e",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8a834fc5-f450-4271-9849-2aceb08742a8",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3736c545-d4ca-4f14-a9e7-c14ef43599ea",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c1aa5ba5-8712-4df7-bdec-4494a22610f8",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b2259b68-363e-412f-b41c-fbcd206ac688",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "803119f3-782c-43ff-9d6f-f2269ddd5eea",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "20e3db0b-cc50-48a1-9def-88206c90c6d6",
+  "dataset": "censo-escolar-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "74f84453-a1d8-4db9-adcb-6f6b70ea528a",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "099adcf4-8305-49ac-9326-9364832a0124",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c0ba2bba-6fde-4764-9909-532a8a29ab58",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4641cac-c453-4011-a1e9-9e4c1480da65",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "08e31717-15f0-451a-b787-15b1ea850090",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fc3a0219-adba-4c6c-9812-3d1c7e6680c0",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5db1575c-13dc-4803-b1f8-c24968e9acac",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "49be7689-f4e8-4326-b4d9-8bb2f4d0377f",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dae3e165-3100-42d9-812f-c525b37dbf28",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1807c575-265a-45ab-a1ed-91d8c442b70a",
+  "dataset": "censo-escolar-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9afc95e8-7500-45f2-85f9-9ea1355b9d89",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5226839c-dc33-4096-9829-a698bf62cdb6",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "97dc61ce-8034-4b70-8248-04779d027d38",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "89cc8057-5d1f-4ba8-8bd7-3b24b8265383",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "89defb13-7f07-4931-bf64-8e684c7301e1",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8156ce59-24b0-4f69-9939-fea86b1d68a7",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "be937b48-58ef-4a9f-8860-16086faac7bc",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "adb68398-a365-43ab-87b9-9d6dba3fef56",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f7680be8-635e-4980-9cdc-cc158287ca60",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aa600734-d307-4e57-8b0e-3df3e39bce94",
+  "dataset": "censo-escolar-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "155d2cdb-2e42-4c23-b89f-f6dff3895b9b",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2ac0a4d0-6f74-4086-961c-18b0b88c1d2b",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4f66038-88ea-4b85-85fb-e8ff38fc1237",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "43bc9239-2a70-41ce-be2d-8ed632e77477",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "99f75cce-f13b-444f-bd2e-a986643d60f0",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "32ded9c0-3d5b-421a-8792-d94bb2ecfa6b",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "af7abe71-58e2-48dd-b5fe-91fa87967f16",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "392d5d76-0845-4066-bf27-68d0792d8cbe",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f5d000dd-42d6-4cc2-8f47-9f0d4dbcc0ee",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "68b27e97-c22e-4a9d-8f5f-e1bd9f63645e",
+  "dataset": "censo-escolar-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c1c1f9c2-2d16-4c59-a907-dc248bf6d940",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f55af2ef-e645-4fac-918c-42daf130de32",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e6262bf3-d07d-4c26-9b44-37abf996af86",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aa7230d0-fc27-42e3-846e-50ab395a5b4d",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b8cbd013-a0b3-4887-88be-27a996c5c874",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f647e19b-f089-4b58-88ce-dc4e1dde70e1",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f70dcf73-869e-405e-82e8-a1552abd01ec",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cafd4e1b-80c9-4075-9ca8-7ede882337e5",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "399ed937-20ff-44cd-af89-17923efdc171",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "793bf1f0-aefd-4d85-8f65-4f8e7e0a0d68",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1d6eb8e6-7fcb-40bc-95f2-54e8be101581",
+  "dataset": "censo-escolar-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aaf2e01e-5a9d-414c-ac2a-10cc0aa6d860",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34c84886-36cb-4b93-9983-b587bb844ceb",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c0403751-fad3-445f-b655-84d7a0a539e2",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4316ef5d-d4fe-444c-9638-5b2f1ca3f9a4",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "639bf37b-a942-40d9-94ad-330305501ca7",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c69e736b-0641-4b0e-b2a9-e69c4fc416ef",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "67e01b15-ade7-4bbd-b4a2-95a6d291ba36",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4063a0d5-eb11-41cc-a893-e7f0cf0ca6ab",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34257d45-6cc6-4e67-9b01-5dd7030fbff8",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a6513379-bd13-4e36-94ee-10b7b5265b12",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cdae9de9-b908-42aa-ab6b-be6f992ba56f",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4954df66-7d18-4ef6-aa29-8032923824d2",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "682105b0-f635-4976-8860-fc51d3e6a03e",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f3ad4477-024a-4d05-9d6a-2fd17a4b0c51",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "55cc40d4-b455-4d11-bbe5-9cccb01db851",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1272ab3c-4c3c-48dd-abaa-c444a4a0b323",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e1c7cc89-789b-4002-9bd7-60369f3c9c46",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "62d894ad-4784-41f7-ad31-822d0a0fe7e9",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f7f08105-386c-4117-9f80-e13c1a52a880",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5509c694-6d81-48ab-ac2a-4196bc69a263",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7846d599-46fe-4150-ab57-6ef723a0ecd2",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7ee360f1-a69d-4624-a678-b3a48c54e2a9",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "af9f303d-b103-4a6b-93d5-df766b454e07",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ee84c301-8a78-4cc0-840d-a4c735e4c899",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c9f3fda5-f5d5-497b-a6a8-5f7c55650fdb",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1f11a481-0fef-4c8f-94a3-1f29e2266ad6",
+  "dataset": "censo-escolar-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "19d03d50-f656-48e8-a015-8cc91ebd79a3",
+  "dataset": "censo-escolar-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "06ccaf4a-1a9c-4020-97f6-5ecf0cbb850c",
+  "dataset": "censo-escolar-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2b7187bf-bd9b-4224-bdda-a0636d3dbb77",
+  "dataset": "censo-escolar-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f1f837fb-6f46-4bf2-86ab-aa8b60357a2b",
+  "dataset": "censo-escolar-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a1242986-00f5-4fb8-80f1-5ad4f47f44be",
+  "dataset": "censo-escolar-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a6b6c8e3-522e-4b91-9cc7-db243c064431",
+  "dataset": "censo-escolar-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "afbaf546-f6a9-48b8-b3d6-0f9d0c1db373",
+  "dataset": "censo-escolar-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5e929537-d1e8-46dc-9b84-cf27599b36b9",
+  "dataset": "censo-escolar-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fdca605c-b814-40da-8440-271cca2101af",
+  "dataset": "censo-escolar-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ae7b3d4a-3619-4dd9-9dc4-9cf8fb67671b",
+  "dataset": "censo-escolar-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "76e98da9-4e7b-4eb1-9a19-65000139e768",
+  "dataset": "censo-escolar-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "48791585-daf5-4148-8097-789f779c4196",
+  "dataset": "censo-escolar-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c0f8f68a-34ab-4ede-85a6-c9b03dcb5504",
+  "dataset": "censo-escolar-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3c798cc5-f8b4-4f31-b7cc-6b7e6c86b17c",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "efe57a0b-59ed-4ceb-b9f7-13da8d3e46c4",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f4c3a349-9956-4294-9ac3-998aa420a92d",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "36dd66e9-5662-4902-8858-46aa8db9ce6d",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "232fd4ca-4b9c-49d4-97b7-29938a548039",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "769a6f91-6e5b-4ea6-b851-d6cff659a7da",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1439ffee-f247-4c86-9357-06f96daa1ada",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "826d5c46-8cf6-4be9-811d-b8eb32839f57",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a3cfa023-c016-4942-bdc8-c148feceac65",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "89e8f805-a54f-411e-b449-130d35a26ea3",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f6f84a48-0415-48eb-a7bf-06242b9cb447",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "de6bf854-d2c4-40b2-844f-c7d52fac4a43",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ffc97cee-8b37-49fb-930d-63e15ee24328",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4696fcf-5c75-4d61-99f4-71ca776faaf2",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "484bc575-b589-40a5-a5a0-890c09c69f24",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3c171694-811e-47a2-9078-9f716a10ffb1",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "63ceb66f-2557-47d4-a673-43ebc884d9ce",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "65d381f1-060d-4d08-9d6a-cbe99a8bc96e",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0bb7626-487c-4d9c-a12d-e30dd0747f8a",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cfbce95a-6dc7-4fd2-9d1f-4fdc686d65ae",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ff372e2e-f052-4a34-9083-e3af3f26f26b",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "41d63717-1e2e-4233-8857-be3917d8dae4",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "623aefd1-ba73-43cc-829c-47b6c21ac8f0",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5705fb50-958e-4af3-a132-5457b36d8139",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5741e020-7d93-4d6b-8cae-a5ce08a5b344",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6fdab6c2-1410-482e-acc2-cc293bbdb708",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cc4c0d7a-138c-46eb-ac16-eaa3a861616b",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3da9fcb9-86fb-4912-9eb4-478390636deb",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bb4f941b-fe84-44d8-ad30-15ea03d232cc",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e4962183-1c23-40b9-a674-e8e3f7baa2d5",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "de66e2ca-1e8f-4f44-bcb7-ba215746199c",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8cc0e6aa-40cb-4307-8fc4-0fbd2eff2ce2",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c4d70ca5-b537-49f8-892b-d86f49414c24",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0dcd6a24-a357-4661-8bae-097053678933",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "81d89823-ce2c-4fac-814f-7e233c18153d",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fea3f914-af55-4b85-bfa9-7286ecee06c5",
+  "dataset": "censo-escolar-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1eab74eb-d4c8-4262-9ba8-c4e4b55c5ed9",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6bfd807f-14e5-40b8-b706-dbbb934f2d7f",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c0fb1f67-152f-491a-8d57-9cb6100871ff",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dc31353b-c034-4433-b547-253a2ab6a3b4",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "779bde79-29bf-44df-ac5c-f88c01e04278",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "19093a11-38d2-43ec-91cb-b3cac4fa1cb4",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f3dc31e1-f27e-459b-bb8b-21dfda0d3d25",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a3cc6e23-e53d-4131-8dd2-c00134295837",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a580414d-679b-46c9-bbb0-5c55c4937cd2",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "26e4adca-6065-41a1-bfb7-1e5a1a076622",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "218fc77d-469e-4697-b179-f8ae6f403de0",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8a8d0417-daf4-4859-af61-6c8848c73c4a",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "acbc7a84-1cef-45bd-9c15-656fb67205cf",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6487e035-6c2f-470b-a154-dbd5a6a26f92",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "faa56e82-f24c-463d-b380-88c27e326670",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "84923ae3-ca33-41de-95f1-ed2a3d8c1f82",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b70532d9-99e8-46b8-b0e7-c070bc195533",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a8d0af07-ca8c-42c7-8f7f-f3293ddd4157",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "246bc09e-197f-4b94-b005-3134f95a4f75",
+  "dataset": "censo-socioassistencial-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "80c5b3cd-d4f7-466e-9031-e636ef56dd99",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "06872af2-9350-4c34-aa39-6337a1822ff7",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e40fc8b9-49b7-4f08-8b9f-60ba6ed35519",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "031c3ad3-265f-4d9c-830a-7d1f85f830fa",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2e67fb3a-fb50-43e6-8b28-071f5b59fd1c",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "30ba6cc0-17a8-4f38-8c86-55184c87ead1",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6c7fceed-3495-449c-bbd6-01bcd3e760bd",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4a942f8-86d2-4542-96b5-97f50dc85219",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "192dc99d-b248-4671-8b3d-a8fe7210bf3c",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aba3d1a0-c456-4a3b-91e1-4aaf30704717",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3d3a200a-2b65-4341-ba3c-cc5ef9042d1b",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f9f44c11-f3b2-43c6-a99c-72f2a86e5be9",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "83869325-c259-467d-9f49-13faa285a479",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c4a473cc-02f6-4c19-a003-d02e9342df67",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dc5c4d10-c207-4036-9490-453945ffecad",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e3e03c80-4e59-4bd0-80bd-d3c3b3955d11",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1fb0a243-13f2-4e6b-a617-5cc9628bdf75",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bb8cc160-c9b2-433b-9203-24256ceb4306",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8487dfde-373f-4ed8-b80e-0be3d44e2136",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a69a01ec-bc64-4d9b-a5b2-284ad9e1ec15",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "17269692-667b-4180-8bc2-5dbeff79d092",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a9f267cf-5607-4be8-8b3c-2ee2fb05a589",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d526a4c5-c229-4085-90ed-1c6b676c84c6",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "23bdf8f3-f134-4a58-9e13-ed78cbe94582",
+  "dataset": "central-de-atendimento-de-servicos-da-emlurb-156",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34dd0736-6ebf-40de-87d3-dbc53cb56bd5",
+  "dataset": "centro-comunitario-da-paz-compaz",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bf69df5e-240e-4498-9fd8-f8830dac2291",
+  "dataset": "centro-de-atencao-psicossocial-caps",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "28d9e51d-d128-40b9-9da2-17c601835510",
+  "dataset": "centro-de-testagem-e-aconselhamento-em-ist-aids",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dd136b63-48f4-4469-81cf-280261ef7779",
+  "dataset": "centros-de-especialidades-odontologicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "af2a063e-564c-43e2-94f3-94740a0e847f",
+  "dataset": "centros-de-especialidades-odontologicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6a0cf6b1-8c25-4f04-bbd9-bebe0a3f5fd9",
+  "dataset": "centros-de-referencias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "26014b26-510a-4805-a9ab-55ade61c3715",
+  "dataset": "ciclovias-ciclofaixas-estacoes-de-aluguel-de-bikes-e-rotas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7aa9b05d-81b4-4fa1-bda0-1f5167bb280c",
+  "dataset": "classificacao-nacional-de-atividades-economicas-cnae",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "856c7213-1921-4238-9c83-befa69b9b68d",
+  "dataset": "conecta-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6e5b6c56-c02e-4d3d-a308-99f47e7ccf69",
+  "dataset": "conecta-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "31727115-0416-4109-b025-c1aee8f339c5",
+  "dataset": "conjuntos-habitacionais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "85b5dec5-2f03-49f7-82d2-b246d4513903",
+  "dataset": "consultas-e-procedimentos-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f02408db-270a-400e-b598-d840471d14a6",
+  "dataset": "consultas-e-procedimentos-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e8279f5a-2c9a-48d3-9ad6-6d7d225a4d17",
+  "dataset": "consultas-e-procedimentos-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "de8ab580-b9d1-4cd5-b955-773dc54e62be",
+  "dataset": "consultas-e-procedimentos-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "96e24bc2-60c7-49e0-a9cf-f911d80d6eba",
+  "dataset": "consultas-e-procedimentos-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a64f912b-8975-4143-b506-0665f36cfb1a",
+  "dataset": "consultorio-na-rua",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+  "dataset": "contratos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
+  "dataset": "contratos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859",
+  "dataset": "contratos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e016ea66-8bd1-4aec-bda1-afafa56017ed",
+  "dataset": "contratos-de-gestao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4ff1b9c9-2575-4be6-a615-e7097df14c8d",
+  "dataset": "contratos-de-gestao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2aca1941-ca17-47b5-b151-58ac5119bb8e",
+  "dataset": "conviva-feiras-e-mercados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "53085c8b-f007-4979-b60e-dfd3f882b0bd",
+  "dataset": "conviva-feiras-e-mercados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a81d93ef-cfdd-4a5e-85bb-2d07f4b0453b",
+  "dataset": "cuidados-integra",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "75344435-aca8-4aef-ab2c-9521d6e5ff18",
+  "dataset": "defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bbbc3f99-9db3-4931-9975-f30af13acea0",
+  "dataset": "demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "be197123-cbb1-4541-880a-89e4fefb7961",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ff971c3c-e4da-4d63-a285-f6354414c19b",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f3b3a0ab-ac8f-4fe8-a1cc-c3afdd20081a",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c394160a-ea01-4ea4-a6f5-afae75ca2246",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2f8f3a95-c8dc-41dd-b396-e586276fed5c",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fa135ecc-101d-40d7-88df-f38aa709a7d1",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d7c98300-5043-4d6c-92d7-20a519b25366",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c9654429-a71f-4f10-aed7-a61cb532aa3d",
+  "dataset": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c1f96596-830f-4933-9c14-d5199644471b",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0aad91e2-04b4-463a-8202-44e51a84f2f4",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6e441aa8-23a7-427e-8971-2018fda922f1",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a1a35923-f027-4e07-a6f5-04a164eb2dfd",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "700fdec2-31ff-4e9c-8fd1-a7b3c56331c7",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2cb6a68c-c930-46ad-a0a6-635d486950c2",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ca3d1086-f36e-4cfc-9d5f-e9b79f1192ff",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "25416f0e-a0c0-4104-ba72-75d3390073fa",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6808a3a2-7c0d-463e-8176-bc058cd43f95",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8da2af22-dc61-43a8-8854-2480eeb3decb",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9dca9a83-e033-4b4f-97d0-c194e8c2f4a5",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4be4b148-c6d1-4b26-ac18-f66e6bce1429",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "69fa0c8a-27a5-4eb7-a9f3-5eef7c64c055",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e88761a1-5ce0-4389-83be-67ca865c3832",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9e562881-21d1-4ca2-a84c-1015b99a9569",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bdc5103e-a34c-4530-8395-88362e4e18f5",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a5b295c0-e2d5-4637-bc04-6e75352f72a3",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "120654a5-77ba-486b-a77f-6960de204ccd",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "993e972d-125a-4d38-a18b-3754cb30c660",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "74acf548-e343-44dd-a708-fbb0a5cdd909",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3d7b31ed-7def-4b8e-9a9b-09f22342d741",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ba29bffc-6478-4dd7-80a4-4c3ab6157f59",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "32880df9-87da-46fa-b77b-7fbfbf75aeaf",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a244ccea-d73a-4d1b-bdee-773069d31750",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "71c89efd-012f-45bb-a3c4-aa091e5abe10",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b236d75e-75b9-4665-9432-66afc2469d10",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "349f8b0a-8d51-4905-b3b3-eca817911b3e",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bfa43808-ab22-411b-9105-1d6366a4d776",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "30f12ed2-89de-4d91-9bb6-f5ac760c198d",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d6ebddce-bcf5-48ed-8596-f91ae56efb73",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ec52d93a-e099-477e-a0fe-4b42e93b318a",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "00dcc786-156d-4823-9ea4-d51fb15eb593",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c79d155c-5e02-4ce0-b9d4-54a1e7d16723",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f5060212-f6b4-404b-b0e7-ae8aaa1807a5",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "edfe9ed5-ab63-48a7-96bd-b1c28be02476",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a59516cb-a2db-4859-a173-d04e8ab738b9",
+  "dataset": "despesas-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "24adb60a-9fb2-4f55-b1d5-808729f5f28e",
+  "dataset": "destinacao-de-residuos-solidos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "06708c01-80b7-4814-a774-4e7a7418c8ac",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "78d671d6-0e28-415d-be89-d197dbf401a4",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "49e49892-8598-49c1-8630-6e61b16299e7",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5bd39b23-fb66-4a48-b9ae-94dac73f168d",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e3e0a453-4075-44d1-9d58-3f952f7f6a23",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ab5068fa-5372-4eea-952e-8557ac2f7059",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ceeedc40-3b52-42ad-b958-ffba048b8843",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "df507523-10a9-4921-b14b-ed260f68b4e3",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "53e4b83a-e7ea-4a5b-bab9-39a0c76926ac",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2bfcdcbb-30db-47be-b7ee-97420159cc67",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "081b4049-bfe5-4872-b4c2-fa2e12780442",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e4a171fa-1489-4b9a-af09-3d61c541e36d",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0cbc93d4-fe60-46db-9620-efdcda7c4e18",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8ab1e248-e5b6-4321-8484-ee2f12e7111c",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "90183a08-0247-4f86-be00-b8c709057e7f",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "86830258-6e6e-4bcc-a47f-d98d705a4174",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e09a63d9-421e-43b6-b9ff-8341556dee9a",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "076593d3-c103-414c-b9f1-30f254a7503a",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "70fb3e0f-7aec-4256-adfe-b714b1eb57d3",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4725b1b-a19a-4338-8401-f7f0f29703a1",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "924216b5-0b2b-4085-b70f-32d76e682eac",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5f8abfed-6978-4fa3-890a-7ec51075f66a",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7d7714ad-bf14-4ef2-8a61-96e6df568dec",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "27861405-af21-4a6d-8ae8-52614eec01ae",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a645e96d-8ec1-41f1-b09c-c092b8d53ae0",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "33018403-f6f7-4773-b257-b7e95fccba31",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0939e31d-75fe-497e-a966-01dfcb157756",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dad55da6-d905-4d6a-a9e8-2c8d157c428e",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d29bc2a3-fa02-43e4-a18c-8063d6c2fc09",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ab1c29fe-767a-47d4-a3b4-679a27f89230",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aec03057-2861-4fac-b3d3-fcaadaadb1ff",
+  "dataset": "diario-oficial",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d8d649d6-5bf7-44af-9686-436162766037",
+  "dataset": "distritos-sanitarios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "420ecba8-3439-442a-b5b8-a1f164e9e003",
+  "dataset": "efetivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6084cef1-52ea-42c6-b535-5add65d82ae2",
+  "dataset": "efetivo-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "807dbb2c-1e92-4dc8-9659-0e6e6fd81598",
+  "dataset": "eleicao-do-conselho-tutelar-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f32abd59-2df4-466f-9ed3-75b3adad19c2",
+  "dataset": "eleicao-do-conselho-tutelar-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e080550e-7238-444b-a821-8f5acfd82df2",
+  "dataset": "empresas-da-cidade-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d5e72aa-3f4b-4dc3-817c-0e0305cef538",
+  "dataset": "empresas-da-cidade-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e5442e5b-75ef-4cc9-8ccb-526dd5ed9f87",
+  "dataset": "equipamentos-culturais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "533dbfba-b6fc-4f3e-a8fb-2dd23d432f4c",
+  "dataset": "equipamentos-culturais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "36c2b47b-f439-4895-8b65-3f3dda36a4a7",
+  "dataset": "equipamentos-de-monitoramento-e-fiscalizacao-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3d9a7f0d-cb38-48ee-9e10-d9b83284ae28",
+  "dataset": "equipamentos-de-monitoramento-e-fiscalizacao-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "797dc365-58e7-4105-8008-b8d48423a8ea",
+  "dataset": "equipamentos-esportivos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d06f142b-fbe5-4244-96cf-77de30cb981d",
+  "dataset": "equipes-de-saude-da-familia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e147af7b-5af2-418f-9462-befd57caf094",
+  "dataset": "estacoes-de-reparo-de-bike-projeto-salva-bike",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "537f0b95-4eb7-4912-9d7c-32caf9fd68ac",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "30e87813-b5a3-4cbd-b35e-b09156f52698",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "832ae42d-0163-45e8-82c1-a4e00a5ec1b6",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a4d419a8-4355-4ae9-b116-9cc35b914f50",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "77040c32-2a39-4416-ba93-5c7386b46dcb",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ac869f94-a655-4388-871b-9957b0a642a4",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "97109f18-a189-4084-acaf-b3aff6e65d51",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2e411ebc-0bef-4e03-ae34-2b792b5468c2",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0fecaf92-2a7a-42d0-ab33-820075f14d7d",
+  "dataset": "faixas-e-corredores-de-onibus",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8c67114d-3319-4b63-8fa6-b6540a1c14cf",
+  "dataset": "farmacias-da-familia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "97b4ecde-58fb-4ff0-98be-08eef0d53b4a",
+  "dataset": "fiscalizacao_sesau",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ddfa4ecf-5b51-4aa3-ab13-d38da57402e4",
+  "dataset": "fiscalizacao_sesau",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "54facda5-46e7-47cf-a559-3fc94134591f",
+  "dataset": "fiscalizacao_sesau",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "090e24d3-e467-49d4-902b-fa4fdca4fe8c",
+  "dataset": "fluxo-de-veiculo-por-hora",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3e0afb65-4da2-493b-bfe3-9b2b66a4d101",
+  "dataset": "fluxo-de-veiculo-por-hora",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1b16e056-33cd-4e0c-a22d-1ade9feae77b",
+  "dataset": "fluxo-de-veiculo-por-hora",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "769cac68-808d-4029-8917-4822e7bbfe74",
+  "dataset": "fluxo-de-veiculo-por-hora",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e019893b-c054-4c1b-819f-fdf9b56399d6",
+  "dataset": "fluxo-de-veiculo-por-hora",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1d3695c1-814c-48bc-9add-2ae3009ac27d",
+  "dataset": "fms-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e88ee3e5-bd7a-440d-9b70-7c381940237f",
+  "dataset": "fms-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dbd00afd-dc42-4643-babc-923ed694f154",
+  "dataset": "gabpe-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "08275679-ce74-4aac-82d9-34a5fc823839",
+  "dataset": "gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4998c7fd-3c17-409a-9757-de7903379c9c",
+  "dataset": "gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9f224c9c-153d-4f2f-8a1c-d80e126e9f66",
+  "dataset": "guia-de-politicas-publicas-de-juventude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8903cb25-8f7e-4a32-8d2a-fbfdfa542a52",
+  "dataset": "hospitais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a473ea72-be05-481a-8bd3-05d139a1ccc4",
+  "dataset": "hoteis",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b0f21a89-37f8-4d6d-8a94-7808aeac9deb",
+  "dataset": "imoveis-da-administracao-publica-municipal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f4b7c345-af6b-4405-b6f5-416d4af19efb",
+  "dataset": "imoveis-especiais-de-preservacao-ieps",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9a847338-92a6-4b74-b3e8-c8f8b57aff2d",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a024c141-2095-48ac-a8fa-d0d8ac18bce8",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d012d6e9-dd6c-40be-8886-c6b553523db3",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "07f2d539-eebf-40ca-9c6b-b01212ae5a92",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "464f31b4-66e0-4403-8c91-137838b57176",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "96d8d455-f66e-4c48-a237-7a802fbac9c6",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ad921387-1166-4daa-a799-a5c2aa70b528",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fb792157-7fa6-42c2-86aa-62ef70080683",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c1e59583-772c-4745-9cd4-f02d97d630b5",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "51899db8-628a-4901-a0e5-e0a9f57480a3",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e46769c9-0698-43fd-9514-f7e75107f633",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ae8883cf-2695-45fd-9560-641dbfe99a33",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a4fe319b-c8d1-4434-a6ea-f7b8fb12b100",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "887c85e0-7eb0-4497-935a-13b06aa07fa0",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6b1e0eea-2194-471d-afce-ee14749555c5",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "086445e7-a4a8-4f33-8741-95bef7692348",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b936019a-740d-482b-940b-b43bd4c40c18",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a1b49b4e-7d06-4a10-894b-cfc83ecc6363",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0688488-ecb3-4fd6-962f-d9a6fc024689",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2cf76cd6-db08-4e4a-9c11-84eb795e0c3b",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0da535a5-d5ee-46dd-b7c6-b957d09a121c",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f75b7017-e47f-498c-ad53-968b804e5747",
+  "dataset": "imposto-predial-e-territorial-urbano-iptu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fc95e204-a121-4b7a-94b2-e4420539c0d1",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1d705d4a-f67a-4914-971f-01f9b1685d1b",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "756d9a7e-33aa-4fdd-a541-0f5dc97c7502",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "47dfea23-81ec-455e-83a0-3e451e5b5ca6",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5226cf6f-ed06-4956-b133-a0c788a5d494",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f3a083a1-aa48-416d-b3aa-c022192219e6",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6f79d820-b764-4cde-939f-83d80e728c53",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6a8a8f7e-8d3d-4729-aaf9-fcc43ae2827a",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ae29c630-77b8-4109-8e1b-02292069f4d5",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "53617998-09e8-420c-9399-75d859c8528e",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "210db9b0-4ea5-49cb-8084-135ebfca848d",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "87caf0ce-5f05-4952-abe5-83fa46eece4c",
+  "dataset": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ca7e4e68-ad2d-4abe-8761-2f2d08019408",
+  "dataset": "informacoes-contratuais-e-de-execucao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fc754155-d4ed-49bc-896e-f25609c55d2c",
+  "dataset": "informacoes-contratuais-e-de-execucao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f2c3f1a2-f355-475a-9c7d-cce919bdec48",
+  "dataset": "informacoes-contratuais-e-de-execucao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7c25a29c-bd7d-4922-8c6e-646fe1215e36",
+  "dataset": "informacoes-contratuais-e-de-execucao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "efe6fb9e-69c6-4a5c-a829-8c59473c82a9",
+  "dataset": "ldo-lei-das-diretrizes-orcamentarias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "58a16728-34ea-40b5-b273-eb288308269b",
+  "dataset": "leis-municipais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
+  "dataset": "licenciamento-ambiental",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d09900c8-14f2-4dc4-a128-b73a514ec791",
+  "dataset": "licenciamento-sanitario",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "39927a3d-3235-436a-9dc8-df7f4ea3b720",
+  "dataset": "licenciamento-urbanistico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0d3c9e4-da6d-4f7f-8184-0d91f2021c8b",
+  "dataset": "licitacoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9771bedc-6f2e-43f0-bd4c-25b0de5500b5",
+  "dataset": "licitacoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "03995e83-91a3-4719-bedd-488886f103a1",
+  "dataset": "localizacao-dos-semaforos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "922cc31a-5171-48c6-9764-c94d3fe5aa3d",
+  "dataset": "localizacao-dos-semaforos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a769697f-ade1-41ec-ae53-16bb2007ffd6",
+  "dataset": "localizacao-dos-semaforos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d163e8ff-dc1f-410d-81d5-164ea97dc447",
+  "dataset": "localizacao-dos-semaforos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c99492cc-ee53-4fd0-a254-c6573aaa2cd7",
+  "dataset": "mae-coruja",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e8beeaec-5d53-4e3a-9196-89edf2127089",
+  "dataset": "malha-cicloviaria-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d2e322b-70ce-424c-93fa-073b02ff4b17",
+  "dataset": "malha-cicloviaria-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ba3ce5b3-f9aa-4d71-bffc-6e0bb95a957b",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8dd4726e-6465-4f9d-9fb6-dd8f4f9efc18",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fd1c4d5e-733b-4e2e-9c39-4cd3fef3984d",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1b004750-c646-403e-8c9f-406e2dabe428",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7cf9a2df-d4d1-4a71-96ed-0c283e0b1b69",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7b93684c-2cc1-4197-b8ce-4d9ebd7d798e",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "314bf542-f026-4e9b-8863-d73769ab99f1",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "07410e34-2bd5-4f9e-9f05-7de5adbb22ab",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d0d164d8-0691-4676-ac5c-f05d7e5f9489",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a46ab770-5e71-43e3-8e19-f2aeb22a6d98",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d125e1cd-9f9d-4ed7-8607-587f271b9870",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f256add1-85e6-470e-be07-97a576fc59d0",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "428fbd33-d76b-42af-8e1a-2d69f6a7585b",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "defc9f0e-70b0-45ee-b6fe-987f1142db79",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c9db4376-a896-4498-9c45-319be04dc41c",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "653bffba-5aab-4f74-9c51-56089f498ee5",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "246fb36e-59b1-46b9-9989-e6e7c28fbd66",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9e432161-b2c2-45a4-a97a-178dcc493146",
+  "dataset": "manifestacoes-recebidas-via-ouvidoria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f7b0ae2a-f275-4596-81aa-eacc08c54019",
+  "dataset": "maternidades",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ff08803-6302-4c74-8589-71a54b7b90a0",
+  "dataset": "matriculas-na-rede-municipal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1b8142f9-d801-4b54-88ca-5a1df3bd6884",
+  "dataset": "medicamentos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "29099095-0beb-4ba5-9235-f83dfd95c990",
+  "dataset": "naufragios-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f4e3d550-8248-41fb-8f60-0606a39510a0",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "af8bc7ca-209b-4ce9-84d8-f12675aa8511",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0724fa46-2a9c-49be-b6f8-22da613aab10",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4510509-bb2f-4026-8049-8ad7e4210c3c",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "65eed566-bf6f-459e-989d-319b7fcc0927",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6f659bc0-6c33-471d-bbbb-4996e8d49e7b",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "17099ad3-b56c-419f-9eaf-215610c96261",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "63d2a6e4-f56e-4b5a-aa7c-0d9fb2cf5c8b",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "14d0babc-08ae-4485-8878-471a7257ea56",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "644f55f9-e7f6-4b4d-b675-ab121ff24ce0",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "33ff0edf-6a98-4d7c-9a92-f718af83119c",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "74ba471c-39f3-4f28-b729-8d2e47fd4578",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b01e5b83-bf4d-4838-9c67-b3c71412a2c1",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "debb9b7a-a4c6-41fc-9467-4e95aa9e458e",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ea86cd48-5650-4cf1-8e6e-0927f7d2b836",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4ec6934d-9260-4b91-9890-b52e76ba026f",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f4540d43-0d46-4489-b224-57f31df75885",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f8b8c756-856a-4962-9259-739c12af2376",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f1e3b48f-09ad-4c2a-a787-388c6bf4385d",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0f65b9bc-4285-419f-bf1b-3bb7794dcba1",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a497a65c-e336-4f3b-ab66-64e3b188eb29",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4f29b432-ba7b-4cf2-bfb6-93772761d149",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8599692c-8a0a-4849-9191-4d1bf138dde1",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "25d6b121-27d7-485e-87ec-6e836614ef8d",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "555b924d-1ffc-417e-b4c1-3fe613d2c928",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "83acd61b-76b2-4736-baa4-c79118fa9314",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "367fcfdb-e0cf-4ac3-85ac-7cdad1b080f8",
+  "dataset": "obras-publicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b7a40f72-3439-46f8-9bb8-36cf6a7b9da0",
+  "dataset": "oferta-de-alimentacao-escolar",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "11865077-3879-4227-9c6e-4c3fe240086b",
+  "dataset": "operacoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b169f60f-fe99-4c6e-9d88-3e6465629980",
+  "dataset": "orgaos-municipais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f2f8d284-3f9e-4172-906a-a40df53f1743",
+  "dataset": "orientacao-ao-viajante",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b1420e7c-e6cb-451b-aad3-1ec2e65857bc",
+  "dataset": "outorga-onerosa-do-direito-de-construir",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8dc513a1-af58-4f4e-9dec-a4529b48c508",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d4c33d8b-350e-41b5-9120-d8ecc3d851d9",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a7d63c12-f9b2-4ea0-94d3-d6093bc618fa",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "19eb359d-ada2-45b8-9389-5ec271caf9b6",
+  "dataset": "paraciclos-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1dacf45e-ad74-413a-be66-e868739f352a",
+  "dataset": "parcerias-e-informacoes-contratuais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a8bb7b02-013f-414a-9939-1a2cd5ff3272",
+  "dataset": "parcerias-e-informacoes-contratuais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ffa74275-db0b-4d0e-bd13-ad75f5ca22af",
+  "dataset": "parcerias-e-informacoes-contratuais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e44dc7a5-9540-4d39-9042-f8ff3c937ad9",
+  "dataset": "parcerias-e-informacoes-contratuais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "801b1682-c765-4825-b2f8-0b18ed8c8881",
+  "dataset": "parcerias-publico-privadas-e-concessoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d2199b6f-1d24-4553-980b-e11dafc90e06",
+  "dataset": "parques-e-pracas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "529e344f-85bf-4e66-9006-11812c45f65b",
+  "dataset": "parques-e-pracas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "73bfeee0-6b9f-4a21-bd46-863ab2a6da9f",
+  "dataset": "passaporte-da-vacina-relacao-dos-estabelecimentos-com-descontos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "356f4d60-8e70-427f-b0c1-5b92c72193f5",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "af6fb6b9-a334-4c17-a9e5-37dfc081dd69",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "685af35b-54e3-4dcb-a1fe-0696257de2f5",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d0eed5d7-9467-415b-8df6-e2b2bc99cfbb",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bec80427-37d4-4fcc-a867-00cbb2cd78e8",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dd0ab18f-1344-4691-8e7f-1bdd4d9348cb",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3374b2c5-a3fc-4de6-b9fe-329b9a822e7f",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "610a4786-725b-4c57-88e9-8a97a01af64e",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "924a2947-fde6-45f9-83d9-ee10b8c9bf93",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "30aadf59-beaf-441c-a25a-65330d3eadbe",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5ba1c703-8025-4d39-a4a4-6d668dc7d091",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "21717943-3438-4a16-a14a-e7cb09e475f9",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "552ba549-78fc-4afa-ae24-e27feeadda20",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8b9b9391-b388-40db-b976-8721a6b7de82",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "88fb2200-4f64-4d0e-a5f7-0e54a12974d3",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7c7668cc-0271-43b0-8a86-5f9dad1a60a5",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9fd7f613-9df1-43d8-b168-0d74e3c7d01d",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e325c84e-b0ac-4502-825d-da32d5cf799f",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9e6b4c3d-6859-4b99-a3ac-6869f7f742b8",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34203d95-9e7a-45f2-ae2a-09ae10109f69",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bb5501f3-8de4-4c15-89de-e3c370bd5e04",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cef78b5c-ae44-4c5e-805f-681322e3007e",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0d0c245c-01c7-4699-8f0b-b347c1382f82",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7b02cb0a-5273-4a66-a819-736fe14132f0",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8fb11add-2ccc-4eea-b60b-84e2066d543f",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2b81d35f-975a-4c8e-ae05-4137006e4821",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "72fa0e53-e42d-4dd2-80e2-371fe0fac718",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "594d6f64-4eba-4ea0-a0aa-25403f611c58",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "528f667c-b55e-429d-93f9-c674d8fa13df",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e47ec32b-cfe1-480f-80cd-45fe6965ebfe",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "25524baa-0635-4ad1-82ef-8d1a228bec39",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "42f9e9ca-a6b8-4572-b7de-0fd2cf4df069",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ed7f6c0-5fe9-4949-806a-0fe7a4d713f8",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3dbbf484-b421-40b2-83d0-9a0efe605074",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f76ad42f-6349-4266-b999-603809ec21fa",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b51a174c-d009-46d6-b253-aa45dc097524",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4aa8ae1-16c5-4b3d-9ff1-d9305ef5c777",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bf7261b9-302c-4d37-9b03-6d2985cabc1d",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b0a695fa-a5fc-4ea4-b79a-7bd1fe0fd227",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a76e903d-4688-4273-a3b6-ed0401ad728c",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c4dfb864-8fb5-4a28-8640-47a7c1e6baaa",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c4172725-9b58-49b8-8cec-1f63e1793e21",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ce284c6a-40e5-4728-8ada-ff6e9002ccac",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6fa2c589-676f-408e-8daf-9e3806ca4a26",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d821809a-1466-4c5e-8df3-6a3de629ab53",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c016c394-b453-4261-8a75-a0f98f822575",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "777b67b5-2051-4247-b4ba-db40c5138b93",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "89ba0792-7a5a-43b9-b21d-38ac629a648a",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7b1c93a9-a842-4b12-b199-59fb93406494",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1ed49849-bcd4-49c7-a10b-be2a41e313b1",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e5b990d4-7c5b-424c-a70e-08f6ca5c086e",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1670684e-e5d9-4d52-a104-c21028556d6e",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b591df14-939b-4e74-8fa9-406a11e9d13a",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a76b335d-d865-47e4-9e28-abd6c3b8337f",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "73cba8e2-6df2-46f5-bc0c-532693ffea61",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cb95f60c-9504-4cfb-a1c1-c0d04499c6f4",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e5128dd9-776e-4bd4-98f0-deced9b2d53b",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0cfca7c3-cded-4cac-8f0a-9b9c00190569",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45305e37-09f1-4b2e-b7eb-269cfe51e3f8",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "070ef8c3-dfff-4eed-b057-33890348e643",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e8d27795-d7e1-4ba9-bd92-8a09c25b40c9",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ebf09be6-9c1c-4910-b8eb-5f8388e9d011",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e3491ac2-c6a5-490e-b9fc-1fdfe6b8a809",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d767bf5a-203a-4b27-b2fc-40dceb235c89",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "04c25357-b59b-4594-bbb8-deaff15a09a9",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a1bab81c-7af8-4c7f-9aff-a9afd31075c3",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4b1211a9-c00b-46fa-b811-bddc269ad46a",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "df4901e4-fb7e-4644-a946-036eaba3c878",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "72f787ee-e70e-4e95-8fa1-6d5fb301d508",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4169e93f-23cd-4215-b50d-85ce11291cd7",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "15a00ee0-a2e5-4bfc-ae2f-ea0a9d860c3f",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e6f94138-81d8-4a82-849c-dc56e644902c",
+  "dataset": "pedidos-ao-portal-da-transparencia",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "da596cdc-a53f-4484-9856-14f0c06432e2",
+  "dataset": "perfil-das-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f618a766-1533-4e0d-9feb-6a4bb5993c28",
+  "dataset": "perfil-das-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "74ea1cfb-4d27-449d-bf43-fa47e1f4a802",
+  "dataset": "perfil-das-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "50972fb1-dc8e-48cf-9ffe-6625ba275104",
+  "dataset": "perfil-das-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8f8eb36a-3002-4197-a5bf-3789c584c86d",
+  "dataset": "perfil-das-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "164e7f11-2855-421b-89ea-64ea485ae09d",
+  "dataset": "perfil-das-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5afc67f7-e394-4def-920b-0144dc9f6b00",
+  "dataset": "perfil-de-profissionais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5cfb5b6a-e6c6-488f-8f4f-b8b61feef80c",
+  "dataset": "perfil-do-publico-atendido",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45d0acc9-6fe0-4c4f-bce4-568a571beb0f",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1c6901ad-863b-4ee7-9cc1-4b0afb6c6458",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "97622c28-79dd-4273-89a6-9958bf398ade",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bf281fbc-167b-4602-994b-30772b11987f",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c81ded9f-aeb1-4aca-9b68-0a1f72241b37",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "63d0e1db-c07f-44a1-a8d2-9fd89fa75eb5",
+  "dataset": "pesagem-de-coletas-de-residuos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b7c0476a-f252-4be6-b28a-f9b372d9e824",
+  "dataset": "pesquisa-origem-destino",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3f9e7783-0604-495b-9b87-71b968ad22a7",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cec9f1b3-57a9-4549-bc2c-10fa83e19b5c",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "202a66a9-54c8-43aa-88ca-9cca1079def7",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e0aad253-82f0-4241-8d7f-6abd3e3ff011",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9df9c3d4-d23c-4dc7-8a63-442b811d4b0d",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f5ba3f2d-2b92-43e4-bcb3-ae37355fc8c3",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0ceadbca-6581-4b1f-8269-d5e94fd92a17",
+  "dataset": "pesquisa-origemdestino-metropolitana-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d40984db-4db9-4557-b1e9-fe324f39fb98",
+  "dataset": "podas-e-extracoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "712f2199-ae75-454a-b233-ee40487c66fc",
+  "dataset": "podas-e-extracoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3f51baa6-f7fb-4195-aaf2-6ebba7558909",
+  "dataset": "podas-e-extracoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "040d8ada-fa47-4e15-b478-3b5ccc8ab4f5",
+  "dataset": "podas-e-extracoes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d7a20815-c5f6-431e-9259-e3c2738a7708",
+  "dataset": "policlinicas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bab62397-be40-436a-bc9c-fe7c7bacc0c6",
+  "dataset": "pontos-de-coleta-seletiva",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "76cb7e65-1362-4ea7-ac04-453d67e41c64",
+  "dataset": "postes-iluminacao-publica-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bd06d29e-ede2-4f0c-99ad-09dbb98a526c",
+  "dataset": "postes-iluminacao-publica-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1ba72563-ff6c-4704-9675-cff6cfc5e8b0",
+  "dataset": "postes-iluminacao-publica-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b062bad8-e130-4706-9a0c-1049ae92425c",
+  "dataset": "postes-iluminacao-publica-do-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b68ff504-bbe3-4827-8bbe-b03de22866c2",
+  "dataset": "postos-do-sistema-publico-de-emprego-trabalho-e-renda",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8ac5a7a2-8467-46e2-ae28-43c9ed4604f3",
+  "dataset": "postos-do-sistema-publico-de-emprego-trabalho-e-renda",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "04aaab78-4d2d-4586-bf59-a886a3f3e475",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dd6068f8-1501-474a-944e-732695a54763",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "040b1116-2b2b-4d98-9900-ddc01e8ee91d",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "646b03c3-799f-4518-8a72-cd795e6eeec3",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5d8e5625-90b9-4692-93ce-56f8442cb7f7",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "73803070-af6b-42c5-b127-6aa72ef1b6f6",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c6a2a352-fa3e-40eb-80ad-fab15e02be77",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3ee443a7-365f-4615-9881-2920f7d1353a",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ce15b08d-09eb-4f92-9c44-a529ed334676",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2ef42546-5756-4270-9def-7b86758d9713",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "be484cf0-6d4d-45f1-b79a-317dbb3bbbee",
+  "dataset": "ppa-e-loa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c61585b5-4e1d-40d8-86e9-c5808a2716a0",
+  "dataset": "prevencao-de-ist-aids",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "48a5a25f-d1a1-423a-b512-61e34ec283cb",
+  "dataset": "processos-licitatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c024919c-88e1-4a33-b3ec-2ea29e8bd733",
+  "dataset": "processos-licitatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8bd79d96-27b2-49c9-bef6-1a1129fe3b55",
+  "dataset": "processos-licitatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "12bdb1de-c076-44ea-b7ae-da6dd114c65f",
+  "dataset": "processos-licitatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "27ff9b18-2894-4f19-8a8a-248f34aeb61d",
+  "dataset": "processos-licitatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "617f68cd-952b-4144-9532-e20921ceb7af",
+  "dataset": "processos-licitatorios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3186cebe-c8bb-42e5-9673-60f92fe66324",
+  "dataset": "programas-de-habitacao-popular",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "96882b6a-7247-4020-8c03-f22285681c2b",
+  "dataset": "projetos-fomentados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "137109b0-baec-4499-a08d-bb5524eb336e",
+  "dataset": "proprios-municipais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0e7478cb-2646-4e44-b7e3-4fff3cf2cecf",
+  "dataset": "quadro-de-profissionais-necessarios",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ea7be3e-595e-4763-a427-5364d871321a",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b5361f41-98a2-4b41-9dc9-0b3ec6927cec",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4b99433d-082a-43c2-8897-91a4c40e22c3",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "58930e91-c8a8-432c-b9a2-568b9c6a0495",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ad7052eb-239e-4848-a233-a030fee17bad",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2797a465-9d65-4efe-9dd7-be7621d5ca8e",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4e6656b-7c01-48c9-96b6-57af4dd12070",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c95f070c-1d3e-4dd8-8cf1-0b36b134b4eb",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "082bf657-2f34-47ae-928e-573befb025b0",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a181ab4a-669d-493f-a26e-7dd71a31f71d",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d14a6333-02d0-4c25-8ca9-84a85e9a72b0",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fd0c6f4e-8632-420b-a6dd-bc87b74ad309",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34d0529b-b76d-4af4-a149-da2f69c8d9f7",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b049d350-d850-4777-bf34-3757665cdc30",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0d192ef2-907f-43a1-b59b-938252f11faf",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "011b166f-5509-4f82-9d25-211d49fc17ec",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "85ac34d9-77ae-49fe-8e44-05a5b4b72a78",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7c879ac7-b93a-4df5-b8fd-fb9c3fb22176",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bd0b74cf-32ec-4151-a5ef-131ce9e9b8bf",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8b123bf2-2442-42e2-870e-3d8912d20f5c",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a1b28cfe-1a02-4a02-9ea0-1375e094be61",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "614f2150-0bcc-48bf-9861-2671598c1b83",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "79026c79-2143-4d79-8925-0b981e872dba",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ece874b-740a-41ca-87c1-36440c6a2811",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "158eb450-9dc5-4f19-9fe5-21b7343fe7e7",
+  "dataset": "receitas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0c1ac280-a412-4c5e-9a94-8e3a65cf4722",
+  "dataset": "recife-bom-de-bola",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0ac0e480-954c-41a5-b475-d96374e968e3",
+  "dataset": "recife-bom-de-bola",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bdf1c896-b28e-462b-9545-519421101ef0",
+  "dataset": "recife-bom-de-bola",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "44d71e65-bac3-4cb7-96c3-d11d47b29078",
+  "dataset": "rede-credenciada",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c960077b-640c-4cbc-9fac-01be82bf54d9",
+  "dataset": "rede-de-atencao-a-saude-no-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "16a47628-17e1-4d8a-ad76-f701b38d306d",
+  "dataset": "rede-de-bibliotecas-pela-paz",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5e7d8579-ac3c-432f-a4b0-cf9cb7281915",
+  "dataset": "rede-de-educacao-municipal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e1850a6a-f1b5-4419-874d-bdc5f1291840",
+  "dataset": "rede-de-educacao-municipal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ae7d060a-b306-491b-9c6f-1a5261143702",
+  "dataset": "rede-de-educacao-municipal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d574c200-366a-4a3d-af0d-fe6e477c59b6",
+  "dataset": "rede-de-protecao-de-direitos-humanos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "16db0dcc-f871-46ee-8e0e-457072b5f940",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fd97260b-4a91-4c6a-ad14-7285e5f6ed9a",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9eabe813-a17c-4e8f-b91d-66ba7d4c269f",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "896622f2-4104-4c6b-acc5-bded85fa8a26",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6bf55076-5aaa-4bf5-9f45-5a57352ac0c8",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6dd9f09e-f38a-482d-8a24-2b599ad25786",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3fa3f7b1-a829-4733-9a41-c1650a3e02a5",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d8ee485a-d1c7-4eda-9caa-e82f58afd590",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2460865c-ab1f-4bbe-b1a6-4caf3dd2e9d5",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "09a80efd-f489-451e-b9b6-53900a2a4629",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "84d405b8-9d36-457a-8e8d-790c844a8246",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5daac33d-b7b4-4667-93ed-96bf390ca671",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "93fbf043-4d0c-4d03-85e0-e79e3ca11672",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b218c5f1-70cf-4995-9535-77db1243cfea",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a7557569-156d-4430-9fd4-c40504c64608",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "06ff94fa-cdc8-4f3e-8807-92fcfe8fd67c",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d9da558a-14f8-4186-abb5-4e82b2f7242d",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "91794ce3-63bd-4b4c-a126-c8df51115211",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "48d40fa4-1707-41a2-bd4a-69ad2a0db4eb",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b666b401-c35c-41f3-bc09-3398ee2dd542",
+  "dataset": "registro-das-infracoes-de-transito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ef03b0e3-0c83-4eb8-a2fb-97867d195204",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fed15150-ff77-41c6-9c1d-5055ae109903",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f907decb-0fb6-491b-8b6c-0f53f277f413",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bbd37e34-44f7-4c21-a906-e4a2f560a359",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d5cf1e6-3249-4d87-bc0d-a57ff5ba43e1",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7c7bb871-3906-4d82-8993-857c9e6f137b",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0f276561-43c2-4233-a539-cbfdd1b38d16",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "63e420ef-fd85-4d07-a528-50a5b88c7edf",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "921d87c7-5ace-4856-9e3f-c31521259c36",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "71967fab-750b-44a9-8a86-405a99eb576c",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4df5a2d2-507c-4ccf-8bdf-c7dc1f73fe59",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "10203dd4-9052-4a76-95eb-fd858aa053d4",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3362394d-0b60-4607-8f35-06421f7ce15b",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b2deb71c-6a7a-4eda-9997-c04575de5eba",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bf6f5af8-3556-425c-bfec-0eddccdeeb73",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a2e18f69-9d10-4482-8f5f-04bc7bd2e8e7",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aad476ff-be01-4543-9b7e-b0d62fee1903",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "559ce500-deab-467d-862e-cf50332a9c26",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9bb859e1-19ae-4b95-9246-139b9273846f",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a3a25520-de12-4f56-ae05-6dc1ec4c6207",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "40e0558f-dc49-4ec7-b5e6-5a791703ae34",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "932fee1e-80fd-49f8-9ae3-6e8dd96e33a3",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9a5103f7-6bd0-4694-90d6-7e776b1e372d",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b81bf4cc-ae19-4a43-94a7-f11b3e0b662b",
+  "dataset": "registro-de-atendimentos-da-defesa-civil",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5767160f-f27a-43f1-9fe0-40ebd4742e3f",
+  "dataset": "registro-de-chamados-atendidos-pela-cttu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a6a6d09e-fc5c-4fec-adcb-bf9286d1748f",
+  "dataset": "registro-de-chamados-atendidos-pela-cttu",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8a984676-176f-49e5-89a2-87ce20ec9a5d",
+  "dataset": "registro-de-velocidade-das-vias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4e543763-68bf-4f12-b234-61890ed7780d",
+  "dataset": "registro-de-velocidade-das-vias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1d929e16-cc0c-4b3e-a4cf-012dd72f97de",
+  "dataset": "registro-de-velocidade-das-vias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5b70f9d5-0a74-4841-b27a-c72decad2a4e",
+  "dataset": "registro-de-velocidade-das-vias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f818f1ca-645c-4d47-a7c7-ca289ca8fc89",
+  "dataset": "registro-de-velocidade-das-vias",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5a6bca94-854e-4dba-8e61-012a2a3ce249",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2c65f298-71d4-45aa-abc4-2fcca9c348df",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "53d64890-a485-4500-bd76-6a07d3ebe577",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a854651c-28db-4f99-a51f-c042725b0786",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cce28a39-57a9-4142-b2e0-bbda00214894",
+  "dataset": "relacao-de-pessoas-vacinadas-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2a0dd9cf-86f4-4ceb-83c1-7e39ff239cb0",
+  "dataset": "roteiro-de-coleta",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7f822e13-e0ca-49ad-9d6d-5fdf44779747",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6ae3c4f4-e82c-4ab9-8104-9936347e3f14",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "20b1cd8c-2d38-4569-ad0e-f6facac2d4ac",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d674f356-a47d-40d3-832a-006119e9927b",
+  "dataset": "roteiros-culturais-turismo-e-lazer",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dc31b3eb-1340-4ea6-8979-223a0d62a79d",
+  "dataset": "seduc-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9555191f-a335-42ef-a811-a58a3cb0f428",
+  "dataset": "segov-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e233116c-8318-423c-aa82-6df08ed55c23",
+  "dataset": "seinfra-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "24d236e8-8a95-4b53-b267-550f6f03b148",
+  "dataset": "servico-de-apoio-diagnostico-e-terapeutico-sadt",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ac82c8f-02cd-4da5-a5d0-49335868697d",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c56d5b04-e906-4bd2-a3f2-280084a03055",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "16aa0dd0-78be-44b0-9af1-31fd679aae54",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "26d8c6c0-0a1d-4f54-84d0-5bea94794739",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bd57591c-7957-4ace-9293-062c6677a491",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "88b3236e-e001-4405-976a-d400148d6e69",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "58ac686e-8647-4027-931e-7034ed8a1371",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2011",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "61c441a7-90af-479c-b398-acf5c14113b0",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e21e89c7-3836-4f78-9d7b-776e73570131",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e24e7ebf-e59f-4b6e-9c65-a42830b0b879",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4e01087d-be65-4dd9-848c-838fc1a3a802",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d88758ff-6146-4909-a96e-1a53faf90f0b",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d698bbea-49f1-4121-8f97-fb9a17abc8bb",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2e0a0a64-d3ae-4aad-b05f-a78b21ae3e53",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2012",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "77c64eeb-e313-4a30-9704-a586294f9e43",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "36fdfcce-97ee-48a9-91f6-a49ba1ed96ab",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4fbd3c39-cd7e-4b8b-86f1-4600ab6a88af",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3d4fcf57-d9bc-47b5-b2a7-ea21578799a7",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "59a71e29-6d4f-4729-8c74-833f4c3d515b",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "111458f4-553b-4248-9f11-0e42cd0475de",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b8588358-8c3b-4cb1-80fd-533c3c87f691",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2013",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "eb164432-7396-4494-9fae-cf0d12e7da2e",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "215d87ee-eba1-47c1-8e2b-19341f7dc2c1",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ec128f1c-4323-483d-be2d-17455777423d",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ca2076ea-19ff-453a-aeed-f842a13cdaae",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7bac1762-5fb6-456c-92ee-23f4172f9ea5",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d4efe5b2-90c4-4ba1-ab8d-977dbddabfa8",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e33c1371-aa04-493c-8d57-366851eb1ffc",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2014",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bef58232-0ce0-4501-9938-26da7e520f04",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7ff53fbe-9f74-416a-b66d-6a4a86cf48cf",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2108c2a5-3523-4328-878e-b6a098c28667",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "edc38ce8-f4bd-48fd-a030-f2e5c54b9e94",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a73515d1-2a22-4983-8833-366d2b4fe204",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "401b12df-be43-47b9-bf91-017963514820",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "74f9a3dc-9e0e-42bd-ad18-3f16fd81bf86",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2015",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "25fa10d2-6f4f-4d85-9cdf-1e03c40c2bb4",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b2337e4e-e1e7-46fc-ab73-f8459b365e58",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9a6b851c-b63c-4cba-b3ff-0fb86d4b0488",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2018",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9900cae6-361e-4864-a812-fdfd4a8be25d",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "eee809ee-82de-4b76-bce8-f569cb050829",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b8522e61-33be-4f9d-80ce-78d0906e399a",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c579027e-184f-4130-9d94-2c41e6f6b4bc",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f085e291-0b68-4621-a52c-a1de1f83d15e",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "142cbf53-86ae-4e09-bae6-da9cbd448184",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7f15a2b4-2bfa-4238-8dbb-cf2409d8ca25",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d6f586c3-34c5-4414-9804-6fdfbd75c7db",
+  "dataset": "servico-de-atendimento-movel-de-urgencia-samu-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a43f144a-c1a9-40ec-ac2e-d763959682c4",
+  "dataset": "servico-de-pronto-atendimento-spa",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dbe39ee4-8be1-4041-b713-ad6065635165",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e408f811-c6a7-48da-8e9e-e5d62a77fa7e",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7591ad77-e082-46c8-b5da-019efc092392",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "99cddfee-119e-484d-bb49-4ed3e52c39b3",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d8fb6d77-e0e6-412d-a21f-cc677f568126",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "701a3240-12cc-4aeb-824a-d8382afc3e80",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "030626d6-eafc-4592-bc9f-94a43cca9fc1",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "57311df0-7f74-4c92-8c33-69233b83a62f",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dcbeba75-94cb-4936-8574-3b2b2e8dd984",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "921cfeb2-6287-41cc-a31b-e63c9ea10580",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2fabce44-456a-499f-a558-a8b22b773bb2",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3d2c19b7-245b-413c-a3da-3d40b2662428",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cd7e81d0-86c1-4e43-afbc-f0a01e4c447b",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "15e85078-7832-4791-99c7-b46af52a2c1d",
+  "dataset": "servidores",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5a1886b1-ac1a-411f-92bb-34370bb9118f",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "91999211-0837-410d-908c-4135ae2c409a",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9fef4678-67cf-49a6-8e22-d1b415296da8",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5d998f5d-eae6-4876-843a-1f9c648ed28e",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a31c576c-1bcd-485a-8546-734a8b828e4b",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ffc04018-955f-475a-a44c-e6f1bd5ee3e0",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d0f4ef3-4cba-42dd-8504-6a65a11d0a02",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dc994740-914a-4b7c-906b-98544cfd2112",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b4b131b0-fbd1-4895-b595-407a0da63a40",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "65f214c7-5745-4043-9cba-9d9468a2cc30",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "01503e1d-7384-4fea-bae2-fb4551a01793",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "07fc9aaa-12ef-4c72-adc3-57653a8bb75d",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f818c52c-8628-4649-862d-560ddf5cfa36",
+  "dataset": "situacao-final-dos-alunos-por-periodo-letivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6538462f-38f2-49bb-a591-ff4c8dcf7b77",
+  "dataset": "telecentros",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f7e865d6-bb82-4d61-b568-83ed17d89407",
+  "dataset": "transferencia-de-recursos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0714bb43-8319-404b-8ffb-b226854c8596",
+  "dataset": "transporte-escolar-gratuito",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "50c98c97-5d14-41b3-8eed-cb037ba0b58d",
+  "dataset": "unidade-de-tratamento-soropositivo",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7927e663-6753-489c-943c-f20cdd72555e",
+  "dataset": "unidades-basica-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c901459f-f6c7-44dc-bdd5-dd4081e58e69",
+  "dataset": "unidades-de-distribuicao-de-preservativos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dd0d6d54-a313-490c-917f-fcb1b54fe591",
+  "dataset": "unidades-de-recebimento-de-pequenos-volumes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c727e8f8-40e9-415e-b14d-2c46406abb60",
+  "dataset": "unidades-de-saude",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ad39bc37-2512-448c-b08a-d130ca7f2242",
+  "dataset": "unidades-de-seguranca-publica-no-municipio",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ec99525c-3a8b-486b-9aa3-c495fcc37c7e",
+  "dataset": "unidades-educacionais-no-municipio",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "222fb5cd-2897-4856-b967-b10e46da8d06",
+  "dataset": "unidades-especializadas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "64cc8ab3-bd69-4629-b145-74552fe31e1c",
+  "dataset": "unidades-saude-da-familia-usf",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0a173c50-b86b-482b-a4e9-401128d0a17e",
+  "dataset": "unidades-ubt-e-usf-por-logradouro",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b47294c2-ae5f-4ace-8e6e-fcd90cf1a005",
+  "dataset": "urbanismo-tatico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3e67a327-db30-4d4c-bd44-928e26e33c3f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b9350d37-1f6e-4abc-b8b0-b9968e6810ca",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f11bc729-a1da-4bde-880f-82f455993fcd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "dc1e5a74-c053-4205-8c51-e5d7874b8b4f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2016",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "da5378f5-81a7-4792-a718-e0bbfa03f586",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5df6f0ef-4437-468c-bce1-0cb9abcf35c4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2017",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0ca82d6-8606-4147-93dc-0c8f0ffd2681",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "177e9100-b5d1-44b7-82b2-f16902aecb71",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a6868466-b913-42f0-a876-63c9efeca133",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6be9d59d-9d1a-4110-9f28-d7e19d761eaf",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6da827f7-fd2e-41f0-a098-8763cc3463ae",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ba326583-bd47-42f9-9ea5-c31267fd398e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2db09361-ba51-41d1-b125-a0878c029ec3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d88beae5-3477-4e64-9f4e-074824299fb4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d5e20bc1-5a87-4fd8-addf-e791846ab1cd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fb6cd866-01f3-45f9-b779-d3e4662708e6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b6df8668-c6e9-4830-b3d8-58fdd8844fd9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2c48188a-f0c7-4d29-b33e-de5c5364a686",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e760432b-fe6b-4353-bbed-e1221fd3aa03",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "29b31161-1836-4b8a-8bd8-4ee6a0ab5562",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d2749435-80d4-45ce-937c-34af2027754a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5932d029-7f6a-4e0e-a8cd-4ad02d322fa3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3fccbf68-d917-4140-b7a9-6c9b3bd6442e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f5ee5bae-ab6e-45c1-983c-36c3aa1a9e57",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d4a4a23e-665e-4f5c-93f1-27fa2ce64e3c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "07e016d4-7ed3-40af-95d2-d7840c098b29",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d83e4cb1-2319-40a0-93b0-735fa828e99c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "07c09cb9-98cf-4094-b9a8-fd90523ae503",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f130cb0d-8b2c-4c03-9fc1-0eca813b2be0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "458fe852-b33f-47bb-ad4c-3c61f5a0ae5b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8b769d57-70b9-4fe0-81a1-d7ed8d569c45",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "12469446-a9c6-4129-b7b1-8ef70c9b8f89",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b2f96deb-5845-4a99-8fa6-0ce90fc18005",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c5d90dee-3d81-4230-b7ce-c0a548e9926d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "684e1bb3-282c-42ee-a6c1-1dbbcfddf563",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "39bbfe53-c87c-4c09-90be-bc1b6f7b1946",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "34108fa1-9d01-4dce-a3d5-1d50f4c3fb2f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "43991b73-2ab5-4d4c-b9fb-ffe0f1453700",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d193d53f-34a1-4e75-aee7-50b610f9e4d0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fcf02308-b6d0-421e-8040-27ccf357dba2",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e95b2469-c443-4052-a3ac-6626cfd82054",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b83a09c9-8fef-4fd2-a382-92b5352d1f85",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "30d74c99-d013-4d25-b88c-23e978ea5de9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cbd0cf6a-683e-4d4d-9897-907cd6f9ba2f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5af2adc9-2688-4240-874c-4bd7d1e4568f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4f314665-d8f6-4a0e-af32-a703c1c27ec6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2b305eef-c65e-4c24-a3e1-426ce6689a15",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d225f838-44f3-4225-91b1-29426b43e64d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8f601439-06c7-4ef3-a237-e8b0a54e31dd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "046ed235-9c59-4ccd-90d0-846003adaccd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bda7b808-4c5a-4946-a84f-6246240e6472",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "80808b18-9aad-4470-89ce-b1038afc9a95",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0d201826-34c0-4744-b192-ec4cb25ca27b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6105b0dd-e0d4-41c7-9b41-4c3e817ded18",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ada3cab-c8ae-4cc7-9c60-8d9a27108e6a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a1febbf8-728a-4434-8313-d5d7a734b971",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "761ff626-0a4a-4db2-9280-5a8dea04a13a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6709aa34-20b5-4f1d-87a7-2fdeba50f543",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "22cee491-810a-4f73-b167-228b6f091318",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "edb7f728-dfda-4ef3-be43-1c61217ec02a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45c0f7ca-7dfb-4222-b493-3e7bd45600a9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b5f69c8c-3763-4ef7-9ea3-846c667c87ab",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "776628c5-f868-46de-b061-04d793c0f1aa",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d74c11f8-0ec2-4735-8d2c-e5b4c980c578",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "503cb08f-7a91-4149-95e9-17c4ed1d1c30",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e0396cf2-d8c3-4721-b76b-bfcd17e77768",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d825476-f36c-487b-9e98-cc448efc578f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a630e9ae-05b0-423e-b5dd-63dc9ca90952",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8de624ca-e92d-435d-be37-b129f2e912df",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bf7a3ee4-e845-4460-8c1a-7511a27b2194",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4ef3338a-24a2-4939-bb40-5a4c16ce2d63",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "074ee25b-15c3-4d91-91d0-34c62c389b34",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e10cd707-a3a5-48d9-a6b4-27eaa983d78f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3fb01705-d5d9-4248-80ed-466db4352cb6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6d64fdc4-8c4b-4e08-9c5d-39bcf647219c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "77a6b4de-aff1-40c6-8c02-2767c1d2c310",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d65dbfa3-8236-4d7b-959f-33cf17f345e1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9ee49311-29fb-48ca-9e5b-f4e0575a92d5",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bf6e28b0-a0f3-46e5-9bcf-0dec3162e972",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "31a89737-fa20-4ff6-b536-b09056dbfb53",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5e858ec9-0cc2-4bb4-881b-22b049182361",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bba1eef0-1e98-4612-ab16-974a98d22235",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "09d68ad5-765e-418c-b58f-abfb787d231a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "30eaab41-d384-49c5-a307-ca1c41353552",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "695ff4aa-8261-4db9-803f-fd76cc0bba7b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cf236fb7-744c-49fb-aaf7-5b639901acdb",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8bdf9987-2fb2-4d75-8424-c31663fb9373",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c0140f2f-9ec0-4df7-a3ee-3926f0bc0a2d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "518c68b5-1c82-45d1-a131-eb250f77b819",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "baac098c-e060-4a36-83ac-dfae23c1254f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e16eef12-2d96-4403-ba4b-8e26fc539f5f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a180cc4a-14fc-4e9e-82ce-937048a85409",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e80bf7e1-54e7-412d-9923-a8ccbeb3f499",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "abc6a3b2-fa9d-4a37-b567-9d1f2980d285",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9e05fa52-5387-422b-ba41-597b490a206c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ad8f22f2-59ad-4a92-bada-505d45e6fae4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0520cb7c-ea24-4762-b042-1b556589ebfc",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f219563e-bf9f-40d8-9e54-6aa5f938fe79",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "315c8c58-807d-4cba-a332-2daf8a2afb81",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "47177255-ceca-44cf-a10b-040247c6a3ea",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9fde3b84-c610-4d8d-8abc-cc8a5a149295",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "addd20c3-e307-4dbb-b85f-cca390bc0057",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2a9693fe-ee56-42fd-9742-8ac8fd20b016",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fbd1a3d4-6426-4260-9c3e-b2eb4e4c7054",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c432bef6-1b75-4b4f-90fc-7e6166d3a8b0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cf6c19b2-9ea9-46ab-95eb-eea1f3bddf27",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "38d3ea34-0789-44b7-b7e0-385eb7b4a91e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c4c337c4-cb80-4db9-8b36-368e903b8376",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "381313a9-0d84-4a60-a059-1bbf99d72da4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "10406924-b541-4f5f-acde-2a4059eb83aa",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a6c8f874-7598-4266-bce8-841d9776e99d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aefcf5a4-dfe6-40a2-8781-9367ba6892b0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "13aa2190-37ff-43f6-b4c9-2497323edb97",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d9239aed-cbed-49ef-bd08-8ec30675e833",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0f5f105-116c-4069-9f31-257f3f20dab7",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f9739869-527b-4a16-aa2b-a29abce1026f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "78545f61-378a-4a97-9839-3b6bc06c3214",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "33a29100-5c0c-4eca-adfe-2296a80224df",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ce7c5b17-a7ac-408a-80f8-a2aef0e5628e",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b190f1ab-a8a4-4400-8348-f55e1bde86dc",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bd07fcfd-f423-4a3c-99a6-72fdc2cdb3ac",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bdf27d7d-7d54-44fc-8ab3-2756de613759",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f4be8cf7-3329-45b9-9f70-6ce6b0efa744",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "89b44e2a-f866-4938-9d4d-8cf42d2b91a3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e919534b-6abc-4192-8cbf-aea47845ae06",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ae5b66e0-7b28-4c4a-b833-c61c84a60776",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5962267f-2f2c-457b-8aff-67b2f35b9551",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "446acfd9-7d13-48e2-9514-159e555149e9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e814ff04-c9df-4486-bc78-90729c0d4b39",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b6fd6306-d908-419e-90a3-2a5645d8fddf",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2dac5f78-380f-4cbc-bf5a-eb92ab81112f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "014d7b6d-d256-4b7d-b470-f3dbbd4e6fd4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "35fa3703-9512-4da3-8247-94981a5a0997",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4ba9982a-ee77-463e-8596-7cb16a32f597",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3a2cb0da-57c6-4565-b1c3-edfa4d2249fa",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "51eacdbc-30b3-4f69-9d4a-793094b8321a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "eb877bc9-1f08-4f2b-a4ad-ac6894aca10d",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "48a9fddf-4fa5-4eae-b07a-621cdf844ff0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "398da1f7-b9c2-4705-969b-f6137c65412c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bdf2d83a-c489-4b09-8890-e628d6a2450a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4f631aaa-8913-40c7-b292-88b8c1c085c7",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5d7a11a6-06e5-4bd6-bd71-d58fc7f7d734",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "137881df-0392-41c1-bb75-88a907deea92",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5e2b4044-033a-49fa-8918-76dd912f4941",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a68e2c4c-2832-4a9a-9419-8876e53f5477",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "236f10b8-d0ce-4dfd-9403-82873824398f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4a0e0766-1bf7-4ac5-8575-88019e289d82",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "742b89ea-be18-4620-88c1-733fc0bf3e62",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ed003324-8a1b-4e89-8809-aa1a6403bca1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4b572a69-6c70-4ba4-869c-82a1c7a53c96",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "76472250-3361-4ac4-8c8c-9607743b4c86",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "69261374-1795-4d45-851c-55b2ab3ed2de",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aa7e14da-f098-436c-ab8f-533a200988b0",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f0850d9c-7b98-4dfd-9d1c-415e30916679",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "030bde41-e7d2-424c-9a6a-8c4b875968a1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e772bbc9-268d-43d9-a1b4-0f4c2073a097",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "32866a80-1746-4171-bc5a-d4f799ecd8f1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4980b7ed-e305-4f8a-aa78-e5bbb2ac6f6f",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6aabe426-0e91-4036-b0e4-2a6a9f920ef6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e47ee114-80a2-4ce8-a270-d1837abeb869",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "be407778-f636-43a0-b267-d31e3ffcf294",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6a09bb99-1576-4fa3-8401-06fa22956d7c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4e0e3636-2309-4864-a3f0-ba507227aeec",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bd0b2b1a-0b0e-4d3c-8af1-b647443f35e8",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9aa173be-36dd-4703-8a2b-839a3d2f1c35",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d6da9d4f-21d3-4277-9782-d8cf711e5db6",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8d45a269-6a3e-4e88-bafd-2c58f4793653",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "82448416-7e34-48ca-8814-c7dbce9edf72",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7937d6d3-810b-4581-bb98-c88b24e0a030",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "64ea5df7-6278-4982-b337-76afa12ba755",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "21593c1f-827c-48ee-85d7-61d63f2f7cb3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b9ca3810-bda7-40ab-a78f-d7abee2e4105",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5dff1753-32b3-4bb1-a4c5-50d2a01c0188",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "98511425-9936-4adc-a864-e721229e14b9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "941d0d9b-d654-4a40-8cc6-6a616cba56b4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bbd17050-36b6-4435-b060-9835ab3149bd",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fe8bcd7d-2010-42f3-b0f7-ff26644012a1",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4b4e9c97-261e-4a04-a52f-b9fa088839b5",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "101d55e8-6a66-4699-9a0c-a6381752ca93",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f1b25318-49a4-4ee0-b3ab-7c5f5babc82c",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5a811f41-2b55-434c-bb9a-cb842952c29b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "76698cb4-e5d8-41b2-a942-b33141b3dbbf",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "fdac4bad-fa08-4e03-a506-59c9668e92ea",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f71846ba-9145-410c-a8cf-97dc815b0f02",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b559545e-fd18-4ed8-8b8c-1fd9b84b33e3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9398f515-144d-43ca-a6f1-454e0ff4cb31",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8b0ad1c0-829b-4c89-91a7-631960f12b91",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "62f4addc-3e59-4dac-9f58-a99b8ec38336",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "100ed0d0-b7f4-4221-94a8-2f045f8b6ce8",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ade58fbf-d2a8-4e0b-bf1d-759e2e409788",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c5a61cf6-5b63-4ffb-ab3a-568391ecc58b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9141d951-7586-49c9-b307-d63b551f7c6b",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "bc3de36d-7134-4348-a39a-5404eab8eeef",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45d9e9ce-afe1-40d9-a7ed-6a8012116049",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5b1b5eda-c20b-4462-b2d2-1a271d58795a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ef5f7a69-0ca2-4de8-a044-d235afd7369a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "88ffc13a-11e5-41d9-9e66-d9f6894cb2c8",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "de8868fb-34e7-4ac1-bba1-a12fe0b42f66",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7e03ee54-766c-4706-b943-1e7345c1b884",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b775a2f3-322b-4c7f-a952-162b3d8a38c9",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e28c1159-2b6e-483a-a38d-d7c0abd5fd23",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c2d9c049-6511-4dc4-9691-b76a43e4f7e3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c335dc09-38e3-4c10-91ec-fa1d0ae7f03a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7efe6eea-36ef-4923-9394-bf141921e528",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "23c0e276-a584-4603-ab38-9db234fe60c3",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f4c1dc94-2347-4151-b194-428b5d2ef387",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b5d78564-2a1e-42b9-8ffa-3487aa857d93",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "611de90b-9994-49d4-bbf7-292448d8145a",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7a43d9b7-024d-4f46-ae3c-3179437536d4",
+  "dataset": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8fee8d8a-6cad-42d1-8a1c-6570fa4301fa",
+  "dataset": "vigilancia-de-zoonoses",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0beb7668-a242-4b74-9ede-58b0aeaec174",
+  "dataset": "vigilancia-sanitaria",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "57c3bffe-0259-4452-8938-507698920e09",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "b7930fef-9ba6-4751-ac6a-54d722011f91",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9dddcd79-3320-4f24-af46-07447215f873",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d73a4da7-d4ca-4839-9032-462a2ba8cb34",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "96ef2214-5696-44c8-9573-1abe1333d5df",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "318e15d7-ca8d-4786-b780-7e299395fb1d",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ee922072-5998-49da-b54f-f85631e1973b",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f59495d7-fbe5-4f93-98a4-bf54bcf54cae",
+  "dataset": "zona-azul-eletronico",
+  "reason": "new",
+  "since": ""
+ }
+]

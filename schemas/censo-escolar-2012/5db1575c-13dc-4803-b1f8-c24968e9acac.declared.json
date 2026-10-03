@@ -1,0 +1,34 @@
+{
+ "fields": [
+  {
+   "name": "codigo_disciplina",
+   "type": "number",
+   "description": "Código da disciplina",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "descricao_disciplina",
+   "type": "string",
+   "description": "Descrição da disciplina",
+   "constraints": {
+    "maxLength": 190
+   },
+   "declaredType": "Char",
+   "declaredSize": 190
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "3410e5b5-5e34-4072-be43-5912cc80dd19",
+   "dictionary_name": "Dicionário de Dados do Lista das disciplinas ministradas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/ee599274-6f15-43c3-9242-c6be5219780d/resource/3410e5b5-5e34-4072-be43-5912cc80dd19/download/dicionario-de-dados-do-lista-das-disciplinas-ministradas.json",
+   "sha256": "a3d61fe3213b744908be1494253071f396c5abedaba62d80999e242f848f77eb",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "name"
+  }
+ }
+}

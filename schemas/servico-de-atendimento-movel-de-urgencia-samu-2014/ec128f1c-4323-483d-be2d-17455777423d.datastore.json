@@ -1,0 +1,25 @@
+{
+ "fields": [
+  {
+   "name": "hospital_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "hospital_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairrosaude_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

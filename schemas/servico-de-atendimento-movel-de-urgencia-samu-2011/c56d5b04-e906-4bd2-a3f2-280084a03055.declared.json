@@ -1,0 +1,83 @@
+{
+ "fields": [
+  {
+   "name": "solicitacao_numero",
+   "type": "number",
+   "description": "Código da solicitação [Allowed values, as declared: Inteiro]",
+   "declaredType": "NUMBER",
+   "declaredSize": 12
+  },
+  {
+   "name": "remocao_sequencial",
+   "type": "number",
+   "description": "Numero sequencial da remoção quando foi pedido pelo hospital [Allowed values, as declared: Inteiro]",
+   "declaredType": "NUMBER",
+   "declaredSize": 2
+  },
+  {
+   "name": "hospital_codigo",
+   "type": "number",
+   "description": "Código do hospital [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela de Hospital']",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "remocao_datahora",
+   "type": "datetime",
+   "description": "Data e hora da remoção [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "remocao_aceitacao",
+   "type": "string",
+   "description": "Identifica se a remoção foi aceita [Allowed values, as declared: S= Sim, N= Não]",
+   "constraints": {
+    "maxLength": 1
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 1
+  },
+  {
+   "name": "chegada_datahora",
+   "type": "datetime",
+   "description": "Data e hora da chegada da ambulância ao hospital [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "datahora_saida",
+   "type": "datetime",
+   "description": "Data e hora da saída da ambulância do hospital [Allowed values, as declared: formato ISO, 'aaaa-mm-dd hh:mm']",
+   "declaredType": "DATETIME"
+  },
+  {
+   "name": "naoaceitacao_codigo",
+   "type": "number",
+   "description": "Código do motivo de não aceitação da remoção",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "naoaceitacao_descricao",
+   "type": "string",
+   "description": "Descrição do motivo de não aceitação",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "45a7c78a-9406-4c76-be27-f7aa4ec274a5",
+   "dictionary_name": "Dicionário de dados do SAMU - Remoções",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/2bce8023-352a-4b02-a818-4842141e5d84/resource/45a7c78a-9406-4c76-be27-f7aa4ec274a5/download/dicionario-de-dados-do-samu-remocoes.json",
+   "sha256": "d4a7d47d5998a311a2474f591188ecb9ca0ca6d0d15951160bf0f91860c9c5a4",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

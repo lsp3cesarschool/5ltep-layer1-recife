@@ -1,0 +1,752 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "IBGE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_IDENTIFICADOR",
+   "type": "any",
+   "description": "NU_IDENTIFICADOR",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_3",
+   "type": "any",
+   "description": "q65_3.Sexo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_9",
+   "type": "any",
+   "description": "q65_9.Escolaridade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_10",
+   "type": "any",
+   "description": "q65_10.Profissão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_11",
+   "type": "any",
+   "description": "q65_11.Vínculo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_12",
+   "type": "any",
+   "description": "q65_12.Função",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_13",
+   "type": "any",
+   "description": "q65_13.Carga horária SEMANAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_14",
+   "type": "any",
+   "description": "q65_14.Início do Exercício Função (DD/MM/AAAA)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_15",
+   "type": "any",
+   "description": "q65_15.Serviços/Atividade a qual o profissional está vinculado - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65_16",
+   "type": "any",
+   "description": "q65_16.Serviços/Atividade a qual o profissional está vinculado - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "IBGE7",
+   "type": "any",
+   "description": "IBGE7",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Região",
+   "type": "any",
+   "description": "Região",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Município",
+   "type": "any",
+   "description": "Município",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF_nome",
+   "type": "any",
+   "description": "UF_nome",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "areaKm2",
+   "type": "any",
+   "description": "areaKm2",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Pop_total_2022",
+   "type": "any",
+   "description": "Pop_total_2022",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Porte_pop2022",
+   "type": "any",
+   "description": "Porte_pop2022",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "any",
+   "description": "Q_incompleto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DataCenso",
+   "type": "any",
+   "description": "COMPUTE DataCenso=\"31.08.2024\"",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DataCenso_2024",
+   "type": "any",
+   "description": "DataCenso recodificada",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Faixas_etarias",
+   "type": "any",
+   "description": "Faixas etárias dos Trabalhadores dos CRAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9",
+   "type": "any",
+   "description": "d65_9_Níveis de escolaridade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9bin1",
+   "type": "any",
+   "description": "d65_9bin1_Nível fundamental - Trabalhadores que possuem até o nível médio (inclui aqueles sem escolaridade)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9bin2",
+   "type": "any",
+   "description": "d65_9bin2_Nível médio - Trabalhadores com ensino superior incompleto e ensino médio completo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9bin3",
+   "type": "any",
+   "description": "d65_9bin3_Nível superior - inclui Trabalhadores graduados, com especialização, mestrado ou doutorado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10",
+   "type": "any",
+   "description": "d65_10_Profissão",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin1",
+   "type": "any",
+   "description": "d65_10bin1_Pedagogo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin2",
+   "type": "any",
+   "description": "d65_10bin2_Assistente Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin3",
+   "type": "any",
+   "description": "d65_10bin3_Antropólogo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin4",
+   "type": "any",
+   "description": "d65_10bin4_Advogado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin5",
+   "type": "any",
+   "description": "d65_10bin5_Psicologo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11",
+   "type": "any",
+   "description": "d65_11_Tipo de vínculo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin1",
+   "type": "any",
+   "description": "d65_11bin1_Servidor Estatutário",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin2",
+   "type": "any",
+   "description": "d65_11bin2_Empregado Público (CLT)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin3",
+   "type": "any",
+   "description": "d65_11bin3_Comissionado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin4",
+   "type": "any",
+   "description": "d65_11bin4_Outros vínculos não permanentes - inclui Trabalhador de Empresas/Cooperativa/Entidade Prestadora de Serviços; Voluntários; Servidor Temporário; Sem vínculo; Terceirizado e Outro vínculo não permanente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9bin1_sum",
+   "type": "any",
+   "description": "d65_9bin1_Número de trabalhadores de Nível fundamental (inclui trabalhadores sem escolaridade, fundamental incompleto e ensino médio incompleto)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9bin2_sum",
+   "type": "any",
+   "description": "d65_9bin2_Número de trabalhadores de Nível médio (inclui trabalhadores com ensino superior incompleto)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_9bin3_sum",
+   "type": "any",
+   "description": "d65_9bin3_Número de trabalhadores de Nível superior (inclui trabalhadores com especialização, mestrado e doutorado)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin1_sum",
+   "type": "any",
+   "description": "d65_10bin1_Número de Pedagogos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin2_sum",
+   "type": "any",
+   "description": "d65_10bin2_Número de Assistentes Sociais",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin3_sum",
+   "type": "any",
+   "description": "d65_10bin3_Número de Antropólogos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin4_sum",
+   "type": "any",
+   "description": "d65_10bin4_Número de Advogados",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_10bin5_sum",
+   "type": "any",
+   "description": "d65_10bin5_Número de Psicólogos",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin1_sum",
+   "type": "any",
+   "description": "d65_11bin1_Número de Servidores Estatutários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin2_sum",
+   "type": "any",
+   "description": "d65_11bin2_Número de Empregados Públicos(CLT)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin3_sum",
+   "type": "any",
+   "description": "d65_11bin3_Número de Comissionados",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_11bin4_sum",
+   "type": "any",
+   "description": "d65_11bin4_Número de profissionais com outros vínculos não permanentes",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "nu_trabalhador",
+   "type": "any",
+   "description": "Número de trabalhadores no CRAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Gestão",
+   "type": "any",
+   "description": "d65_15_1bin_Gestão - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PAIF",
+   "type": "any",
+   "description": "d65_15_1bin_PAIF - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_SCFV",
+   "type": "any",
+   "description": "d65_15_1bin_SCFV - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PSB",
+   "type": "any",
+   "description": "d65_15_1bin_PSB- Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Cadastramento",
+   "type": "any",
+   "description": "d65_15_1bin_Cadastramento - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Beneficios",
+   "type": "any",
+   "description": "d65_15_1bin_Beneficios - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PCF",
+   "type": "any",
+   "description": "d65_15_1bin_PCF - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PBF",
+   "type": "any",
+   "description": "d65_15_1bin_PBF - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Outros",
+   "type": "any",
+   "description": "d65_15_1bin_Outros - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Gestão",
+   "type": "any",
+   "description": "d65_16_2bin_Gestão - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PAIF",
+   "type": "any",
+   "description": "d65_16_2bin_PAIF - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_SCFV",
+   "type": "any",
+   "description": "d65_16_2bin_SCFV - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PSB",
+   "type": "any",
+   "description": "d65_16_2bin_PSB- segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Cadastramento",
+   "type": "any",
+   "description": "d65_16_2bin_Cadastramento - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Beneficios",
+   "type": "any",
+   "description": "d65_16_2bin_Beneficios - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PCF",
+   "type": "any",
+   "description": "d65_16_2bin_PCF - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PBF",
+   "type": "any",
+   "description": "d65_16_2bin_PBF - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Outros",
+   "type": "any",
+   "description": "d65_16_2bin_Outros - segundo serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Gestao",
+   "type": "any",
+   "description": "Atividades de Gestão - mencionada, no minimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PAIF",
+   "type": "any",
+   "description": "PAIF - mencionado, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SCFV",
+   "type": "any",
+   "description": "SCFV - mencionado, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PSB",
+   "type": "any",
+   "description": "PSB no domicilio - mencionada, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Cadastramento",
+   "type": "any",
+   "description": "Cadastramento e/ou atualização cadastral (CadÚnico) - mencionado, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Beneficios",
+   "type": "any",
+   "description": "Beneficios eventuais - mencionado, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PCF",
+   "type": "any",
+   "description": "Programa Criança Feliz - mencionado, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PBF",
+   "type": "any",
+   "description": "Programa Bolsa Familia - mencionado, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Outros",
+   "type": "any",
+   "description": "Outras atividades - mencionadas, no mínimo, 1 vez",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Gestão_sum",
+   "type": "any",
+   "description": "d65_15_1bin_Gestão - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PAIF_sum",
+   "type": "any",
+   "description": "d65_15_1bin_PAIF - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_SCFV_sum",
+   "type": "any",
+   "description": "d65_15_1bin_SCFV - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PSB_sum",
+   "type": "any",
+   "description": "d65_15_1bin_PSB - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Cadastramento_sum",
+   "type": "any",
+   "description": "d65_15_1bin_Cadastramento - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Beneficios_sum",
+   "type": "any",
+   "description": "d65_15_1bin_Beneficios - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PCF_sum",
+   "type": "any",
+   "description": "d65_15_1bin_PCF- Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_PBF_sum",
+   "type": "any",
+   "description": "d65_15_1bin_PBF_Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_15_1bin_Outros_sum",
+   "type": "any",
+   "description": "d65_15_1bin_Outros - Principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Gestão_sum",
+   "type": "any",
+   "description": "d65_16_2bin_Gestão - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PAIF_sum",
+   "type": "any",
+   "description": "d65_16_2bin_PAIF -Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_SCFV_sum",
+   "type": "any",
+   "description": "d65_16_2bin_SCFV - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PSB_sum",
+   "type": "any",
+   "description": "d65_16_2bin_PSB - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Cadastramento_sum",
+   "type": "any",
+   "description": "d65_16_2bin_Cadastramento - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Beneficios_sum",
+   "type": "any",
+   "description": "d65_16_2bin_Beneficios - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PCF_sum",
+   "type": "any",
+   "description": "d65_16_2bin_PCF- Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_PBF_sum",
+   "type": "any",
+   "description": "d65_16_2bin_PBF- Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d65_16_2bin_Outros_sum",
+   "type": "any",
+   "description": "d65_16_2bin_Outros - Segundo principal serviço/atividade",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Gestao_sum",
+   "type": "any",
+   "description": "atividades de gestão - administrativo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PAIF_sum",
+   "type": "any",
+   "description": "PAIF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SCFV_sum",
+   "type": "any",
+   "description": "SCFV",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PSB_sum",
+   "type": "any",
+   "description": "PSB",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Cadastramento_sum",
+   "type": "any",
+   "description": "Cadastramento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Beneficios_sum",
+   "type": "any",
+   "description": "Concessão de Beneficios",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PCF_sum",
+   "type": "any",
+   "description": "Programa Criança Feliz",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "PBF_sum",
+   "type": "any",
+   "description": "Programa Bolsa Familia",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Outros_sum",
+   "type": "any",
+   "description": "Outros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "ea3a44e3-f39c-418f-91d7-478a3b40a2f6",
+   "dictionary_name": "CRAS Dicionario de Variaveis",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/ea3a44e3-f39c-418f-91d7-478a3b40a2f6/download/censo_suas_2024_cras_dicionario-de-variaveis.xlsx",
+   "sha256": "5c11ab60bfeb78d403304016c768102d67bd9e81a5cf87014320b25cdd6ac34b",
+   "reader": "xlsx",
+   "part": "RH",
+   "link_method": "header"
+  }
+ }
+}

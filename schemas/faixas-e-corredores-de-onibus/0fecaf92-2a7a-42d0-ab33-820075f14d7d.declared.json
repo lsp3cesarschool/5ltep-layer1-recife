@@ -1,0 +1,67 @@
+{
+ "fields": [
+  {
+   "name": "faixa_azul",
+   "type": "string",
+   "description": "nome da faixa exclusiva",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "bairros por onde passam a faixa exclusiva",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "extensão",
+   "type": "string",
+   "description": "Extensão da faixa em quilometros",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "mes_implantacao",
+   "type": "string",
+   "description": "mês em que a faixa exclusiva foi disponibilizada para uso",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "ano_implantacao",
+   "type": "string",
+   "description": "ano em que a faixa exclusiva foi disponibilizada para uso",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "e342ba41-e306-4213-bf11-b15f79581c48",
+   "dictionary_name": "Dicionário de Dados - Faixas e corredores exclusivos",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/cd77473e-107e-4dd2-9b8a-5069bfb16960/resource/e342ba41-e306-4213-bf11-b15f79581c48/download/dicionario-de-dados-faixas-e-corredores-exclusivos.json",
+   "sha256": "665bf0d9907fb1a02aeade03a3910e8f6e587d53f0e979ad7ca5a14a39dc5b08",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

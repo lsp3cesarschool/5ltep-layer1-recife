@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "distrito",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "unidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "classe",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "apresentacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_produto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_produto",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "produto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cadum",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "quantidade",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

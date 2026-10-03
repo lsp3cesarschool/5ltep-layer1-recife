@@ -1,0 +1,115 @@
+{
+ "fields": [
+  {
+   "name": "Ano",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Mês",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "Poder",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "orgao_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "orgao_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "unidade_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "unidade_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fonte_recurso_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "categoria_receita_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "categoria_receita_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fonte_origem_receita_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "subfonte_receita_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "rubrica_receita_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "rubrica_receita_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "alinea_receita_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "alinea_receita_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "subalinea_receita_codigo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "subalinea_receita_nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "receita_prevista",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "receita_prevista_acrescimo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "receita_arrecadada",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "fields": [
+  {
+   "name": "hospital_codigo",
+   "type": "number",
+   "description": "Código do hospital [Allowed values, as declared: O valor informado deve estar dentre os valores da 'Tabela Hospital']",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "especialidade_codigo",
+   "type": "number",
+   "description": "Código da especiabilidade médica",
+   "declaredType": "NUMBER",
+   "declaredSize": 3
+  },
+  {
+   "name": "especialidade_descricao",
+   "type": "string",
+   "description": "Descricão da especiabilidade médica",
+   "constraints": {
+    "maxLength": 40
+   },
+   "declaredType": "CHAR",
+   "declaredSize": 40
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "a3743624-54be-418f-8a47-695dc6397ef2",
+   "dictionary_name": "Dicionário de dados do SAMU - Lista de especialidades médica",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/2bce8023-352a-4b02-a818-4842141e5d84/resource/a3743624-54be-418f-8a47-695dc6397ef2/download/dicionario-de-dados-do-samu-lista-de-especialidades-medica.json",
+   "sha256": "8cd274eb0134ce79eef83b74fa7abed3e1e7a808381872721c7bb96c56cb3579",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

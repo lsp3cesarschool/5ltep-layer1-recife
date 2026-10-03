@@ -1,0 +1,155 @@
+{
+ "fields": [
+  {
+   "name": "inep_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_escola",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "matricula_aluno",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data_nascimento",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "sexo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "raca",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "uf_nascimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_municipio_nascimento",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "municipio_nascimento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "zona_residencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "codigo_bairro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_municipio",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "deficiencia",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_cegueira",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_baixavisao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_surdez",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_baixaaudicao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_surdocegueira",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_fisica",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_intelectual",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_multipla",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_autismo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_asperger",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_rett",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_desintegrativo",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "deficiencia_superdotacao",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

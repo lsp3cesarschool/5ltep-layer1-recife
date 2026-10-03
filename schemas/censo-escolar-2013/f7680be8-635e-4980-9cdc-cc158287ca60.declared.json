@@ -1,0 +1,85 @@
+{
+ "fields": [
+  {
+   "name": "codigo_instituicao",
+   "type": "number",
+   "description": "Código da instituição de ensino superior",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "nome_instituicao",
+   "type": "string",
+   "description": "Nome da instituição de ensino superior",
+   "constraints": {
+    "maxLength": 80
+   },
+   "declaredType": "Char",
+   "declaredSize": 80
+  },
+  {
+   "name": "uf",
+   "type": "number",
+   "description": "Código do Estado",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "municipio",
+   "type": "number",
+   "description": "Código do municipio",
+   "declaredType": "Num",
+   "declaredSize": 7
+  },
+  {
+   "name": "codigo_dependencia",
+   "type": "number",
+   "description": "Código da Dependência Administrativa [Allowed values, as declared: 1, 2, 3, 4]",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "nome_dependencia",
+   "type": "string",
+   "description": "Nome da Dependência Administrativa [Allowed values, as declared: federal, estadual, privado, publica]",
+   "constraints": {
+    "maxLength": 9
+   },
+   "declaredType": "Char",
+   "declaredSize": 9
+  },
+  {
+   "name": "tipo_instituicao",
+   "type": "string",
+   "description": "Tipo de Instituição [Allowed values, as declared: privado, publica]",
+   "constraints": {
+    "maxLength": 8
+   },
+   "declaredType": "Char",
+   "declaredSize": 8
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "description": "Condição de Funcionamento [Allowed values, as declared: ativa, inativa]",
+   "constraints": {
+    "maxLength": 12
+   },
+   "declaredType": "Char",
+   "declaredSize": 12
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "ae6c2e03-6e47-4364-ae09-044d353963ea",
+   "dictionary_name": "Dicionário de Dados do Lista das instituições de formação superior dos docentes",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/5ed5aba1-a029-40c2-a94a-386f6c2b8d74/resource/ae6c2e03-6e47-4364-ae09-044d353963ea/download/dicionario-de-dados-do-lista-das-instituicoes-de-formacao-superior-dos-docentes.json",
+   "sha256": "7b37a60747fe87b84f2d7a57b1f1d4a87eff7d90854abb7018b44d04c32f98f9",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "fields": [
+  {
+   "name": "ano",
+   "type": "number",
+   "description": "Ano",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "mes",
+   "type": "number",
+   "description": "Mês",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "processo_numero",
+   "type": "number",
+   "description": "Número do Processo",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "solicitacao_data",
+   "type": "number",
+   "description": "data da vistoria",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "solicitacao_hora",
+   "type": "number",
+   "description": "hora da vistoria",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "solicitacao_descricao",
+   "type": "string",
+   "description": "descrição da solicitação",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "solicitacao_regional",
+   "type": "string",
+   "description": "Solicitação regional",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "solicitacao_bairro",
+   "type": "string",
+   "description": "Bairro da solicitação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "solicitacao_localidade",
+   "type": "string",
+   "description": "Localidade da solicitação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "solicitacao_endereco",
+   "type": "string",
+   "description": "Endereço do Solicitação",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "solicitacao_roteiro",
+   "type": "string",
+   "description": "Roteiro da Solicitação",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "rpa_codigo",
+   "type": "number",
+   "description": "Código da RPA",
+   "declaredType": "Num",
+   "declaredSize": 5
+  },
+  {
+   "name": "rpa_nome",
+   "type": "string",
+   "description": "nome da RPA",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "solicitacao_microrregiao",
+   "type": "string",
+   "description": "Microregião da solicitação",
+   "constraints": {
+    "maxLength": 10
+   },
+   "declaredType": "Char",
+   "declaredSize": 10
+  },
+  {
+   "name": "solicitacao_plantao",
+   "type": "string",
+   "description": "Necessidade de Plantão na solicitação [Allowed values, as declared: Sim, Não]",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "processo_situacao",
+   "type": "string",
+   "description": "Situação do processo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "processo_tipo",
+   "type": "string",
+   "description": "Tipo do processo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "processo_origem",
+   "type": "string",
+   "description": "Origem do processo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "processo_solicitacao",
+   "type": "string",
+   "description": "Solicitação do processo",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "f0f7601f-6048-49a7-895d-9933bebd9f25",
+   "dictionary_name": "Dicionário de Dados Solicitações Tempo Real",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/bdab4128-9a12-4e1b-8460-bf14152a1e5b/resource/f0f7601f-6048-49a7-895d-9933bebd9f25/download/dicionario-de-dados-solicitacoes-tempo-real.json",
+   "sha256": "d89b35fc83a31741875a37ee9ccaa3fea8fc895f127c1c1574e4c4335296c283",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

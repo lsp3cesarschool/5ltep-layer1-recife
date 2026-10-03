@@ -1,0 +1,35 @@
+{
+ "fields": [
+  {
+   "name": "codigo_area",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_area",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "codigo_ocde",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome_grau",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grau_academico",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

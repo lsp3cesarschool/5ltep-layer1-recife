@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "orgao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "contrato",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "scc",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "origem",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fornecedor",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cnpj_cpf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dituacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_assinatura",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "data_inicio",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_fim",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

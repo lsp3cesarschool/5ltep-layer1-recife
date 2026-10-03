@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "cpf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "nome",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sexo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "grupo",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "vacina",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "lote",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "dose",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "data_vacinacao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "local_vacinacao",
+   "type": "string",
+   "declaredType": "text"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

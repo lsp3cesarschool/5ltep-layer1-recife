@@ -1,0 +1,120 @@
+{
+ "fields": [
+  {
+   "name": "logradouro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "numero",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "valor_avaliacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "ano_construcao",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "area_terreno",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "area_construida",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "fracao_ideal",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "padrao_acabamento",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_construcao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_ocupacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "data_transacao",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  },
+  {
+   "name": "estado_conservacao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "tipo_imovel",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "sfh",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "cod_logradouro",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ano",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

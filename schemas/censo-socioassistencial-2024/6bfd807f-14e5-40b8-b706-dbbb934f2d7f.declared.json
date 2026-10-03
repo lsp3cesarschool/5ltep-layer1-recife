@@ -1,0 +1,2607 @@
+{
+ "fields": [
+  {
+   "name": "IBGE",
+   "type": "any",
+   "description": "IBGE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Latitude",
+   "type": "any",
+   "description": "Latitude",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Longitude",
+   "type": "any",
+   "description": "Longitude",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_1",
+   "type": "any",
+   "description": "q0_1_Nome que identifica o Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_2",
+   "type": "any",
+   "description": "q0_2_Selecione o Tipo de Logradouro (avenida, rua, etc):",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_3",
+   "type": "any",
+   "description": "q0_3_Endereço:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_4",
+   "type": "any",
+   "description": "q0_4_Número:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_5",
+   "type": "any",
+   "description": "q0_5_Complemento:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_6",
+   "type": "any",
+   "description": "q0_6_Bairro:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_7",
+   "type": "any",
+   "description": "q0_7_Ponto de Referência:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_8",
+   "type": "any",
+   "description": "q0_8_CEP:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_9",
+   "type": "any",
+   "description": "q0_9_Município:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_10",
+   "type": "any",
+   "description": "q0_10_UF:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_11",
+   "type": "any",
+   "description": "q0_11_E-mail:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q0_12",
+   "type": "any",
+   "description": "q0_12_DDD - Telefone:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1",
+   "type": "any",
+   "description": "q1_Informe o ano de publicação da Lei que criou o Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2",
+   "type": "any",
+   "description": "q2_Houve alteração da Lei original por alguma Lei posteriormente aprovada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3",
+   "type": "any",
+   "description": "q3_Caso sim, informe o ano da Lei que alterou a Lei original de criação do Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q4",
+   "type": "any",
+   "description": "q4_Esse conselho possui regimento interno?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5",
+   "type": "any",
+   "description": "q5_Caso sim, informe o ano da última atualização do Regimento:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_1",
+   "type": "any",
+   "description": "q6_1_Atribuições da Secretaria Executiva_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_2",
+   "type": "any",
+   "description": "q6_2_Composição do conselho_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_3",
+   "type": "any",
+   "description": "q6_3_Processo de eleição para representes da sociedade civil_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_4",
+   "type": "any",
+   "description": "q6_4_Comissões permanentes_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_5",
+   "type": "any",
+   "description": "q6_5_Competências do conselho_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_6",
+   "type": "any",
+   "description": "q6_6_Funcionamento do conselho_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_7",
+   "type": "any",
+   "description": "q6_7_Quórum para realização das reuniões e para votação das pautas_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q7",
+   "type": "any",
+   "description": "q7_O Conselho possui um local/sede específico para o seu funcionamento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8",
+   "type": "any",
+   "description": "q8_No prédio em que se localiza o Conselho funcionam outras instituições ou unidades?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_1",
+   "type": "any",
+   "description": "q9_1_Secretaria de Assistência Social ou congênere_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_2",
+   "type": "any",
+   "description": "q9_2_Outra unidade administrativa (Sede de Prefeitura, Sede de Governo, Administração Regional, etc)_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_3",
+   "type": "any",
+   "description": "q9_3_CRAS – Centro de Referência de Assistência Social_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_4",
+   "type": "any",
+   "description": "q9_4_CREAS – Centro de Referência Especializado de Assistência Social_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_5",
+   "type": "any",
+   "description": "q9_5_Outra unidade pública de serviços da Assistência Social_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_6",
+   "type": "any",
+   "description": "q9_6_Unidade de Saúde_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_7",
+   "type": "any",
+   "description": "q9_7_Escola_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_8",
+   "type": "any",
+   "description": "q9_8_Associação Comunitária_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_9",
+   "type": "any",
+   "description": "q9_9_Entidade ou Organização da Sociedade Civil_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_10",
+   "type": "any",
+   "description": "q9_10_Conselho Tutelar_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_11",
+   "type": "any",
+   "description": "q9_11_Outros Conselhos_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_99",
+   "type": "any",
+   "description": "q9_99_Outros_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_99_1",
+   "type": "any",
+   "description": "q9_99_1_Outros_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q10",
+   "type": "any",
+   "description": "q10_O conselho disponibiliza espaço para que os fóruns e/ou organização de trabalhadores e/ou usuários realizem reuniões de alinhamento e planejamento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_1",
+   "type": "any",
+   "description": "q11_1_Quantidade de Salas com capacidade de no máximo 15 pessoas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_2",
+   "type": "any",
+   "description": "q11_2_Quantidade de Salas para mais de 15 pessoas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_3",
+   "type": "any",
+   "description": "q11_3_Quantidade de salas para a Secretaria Executiva",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_4",
+   "type": "any",
+   "description": "q11_4_Quantidade de Salas com capacidade de no máximo 15 pessoas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_5",
+   "type": "any",
+   "description": "q11_5_Quantidade de Salas para mais de 15 pessoas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_6",
+   "type": "any",
+   "description": "q11_6_Quantidade de Salas para a Secretaria Executiva",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_7",
+   "type": "any",
+   "description": "q11_7_Quantidade de banheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q11_8",
+   "type": "any",
+   "description": "q11_8_Recepção",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_1",
+   "type": "any",
+   "description": "q12_1_Telefone de uso exclusivo do Conselho_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_2",
+   "type": "any",
+   "description": "q12_2_Telefone de uso compartilhado_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_3",
+   "type": "any",
+   "description": "q12_3_Celular do Conselho_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_4",
+   "type": "any",
+   "description": "q12_4_Material de Escritório_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_5",
+   "type": "any",
+   "description": "q12_5_Equipamento de som_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_6",
+   "type": "any",
+   "description": "q12_6_Televisão (TV)_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_7",
+   "type": "any",
+   "description": "q12_7_Datashow_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_8",
+   "type": "any",
+   "description": "q12_8_Veículo de uso exclusivo_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_9",
+   "type": "any",
+   "description": "q12_9_Veículo de uso compartilhado_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_10",
+   "type": "any",
+   "description": "q12_10_Acervo bibliográfico_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_11",
+   "type": "any",
+   "description": "q12_11_Máquina Copiadora_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_12",
+   "type": "any",
+   "description": "q12_12_Impressora_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_13",
+   "type": "any",
+   "description": "q12_13_Bebedouro e/ou Filtro_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_14",
+   "type": "any",
+   "description": "q12_14_Ar condicionado_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q12_15",
+   "type": "any",
+   "description": "q12_15_Ventilador_Quais os equipamentos e materiais disponíveis, em funcionamento, para o desenvolvimento das atividades deste Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_1",
+   "type": "any",
+   "description": "q13_1_Quantidade total de computadores conectados à internet de uso exclusivo do Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q13_2",
+   "type": "any",
+   "description": "q13_2_Quantidade total de computadores conectados à internet de uso compartilhado",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14",
+   "type": "any",
+   "description": "q14_O Conselho possui Secretaria Executiva (unidade de apoio para seu funcionamento)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15",
+   "type": "any",
+   "description": "q15_O (a) Secretário (a) Executivo (a) trabalha exclusivamente no Conselho de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_1",
+   "type": "any",
+   "description": "q16_1_Quantidade de funcionárias(os) exclusivas(os) da Secretaria Executiva do Conselho de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_2",
+   "type": "any",
+   "description": "q16_2_Quantidade de funcionárias(os) não exclusivas(os) da Secretaria Executiva do Conselho de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_1",
+   "type": "any",
+   "description": "q17_1_Horário de funcionamento do Conselho - Dias por semana:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q17_2",
+   "type": "any",
+   "description": "q17_2_Horário de funcionamento do Conselho - Horas por dia",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q18",
+   "type": "any",
+   "description": "q18_Na lei orçamentária de 2024, há previsão de recursos específicos do órgão gestor destinados à manutenção e funcionamento do conselho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q19",
+   "type": "any",
+   "description": "q19_Em 2024, foram destinados pelo menos 3% dos Índices de Gestão Descentralizada (IGD–PBF e IGD–SUAS) para custear despesas do funcionamento do Conselho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_1",
+   "type": "any",
+   "description": "q20_1_Deslocamento das(os) conselheiras(os) para as reuniões ordinárias",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_2",
+   "type": "any",
+   "description": "q20_2_Hospedagem/Alimentação das(os) conselheiras(os) para reuniões ordinárias",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_3",
+   "type": "any",
+   "description": "q20_3_Deslocamento das(os) conselheiras(os) para reuniões descentralizadas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_4",
+   "type": "any",
+   "description": "q20_4_Hospedagem/Alimentação das(os) conselheiras(os) para reuniões descentralizadas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_5",
+   "type": "any",
+   "description": "q20_5_Deslocamento para fiscalização de entidades ou OSC",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_6",
+   "type": "any",
+   "description": "q20_6_Gastos com pagamento de água, luz, telefone e outras contas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_7",
+   "type": "any",
+   "description": "q20_7_Material de Escritório",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q20_8",
+   "type": "any",
+   "description": "q20_8_Gastos com a compra de equipamentos (computadores, impressoras, entre outros)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q21",
+   "type": "any",
+   "description": "q21_Os Conselheiros passam por alguma ação de capacitação sobre a política de assistência social no inicio de seus mandatos?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q21_1",
+   "type": "any",
+   "description": "q21_1_Quais?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q22",
+   "type": "any",
+   "description": "q22_O Conselho tem calendário anual de reuniões ordinárias estabelecido?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_0",
+   "type": "any",
+   "description": "q23_0_Não é publicizado_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_1",
+   "type": "any",
+   "description": "q23_1_Fica no Conselho em local de livre acesso para a população usuária_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_2",
+   "type": "any",
+   "description": "q23_2_Enviado às(aos) Conselheiras(os) e/ou suas entidades_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_3",
+   "type": "any",
+   "description": "q23_3_Enviado às entidades de Assistência Social que não estão representadas no conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_4",
+   "type": "any",
+   "description": "q23_4_Enviado às(aos) representantes e organizações de usuárias(os) que não estão representadas no conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_5",
+   "type": "any",
+   "description": "q23_5_Enviado às organizações e entidades de trabalhadoras(es) do setor que não estão representadas no conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_6",
+   "type": "any",
+   "description": "q23_6_Disponibilizado no site do Conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_7",
+   "type": "any",
+   "description": "q23_7_Em Boletins produzidos pela área de assistência social_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q24",
+   "type": "any",
+   "description": "q24_Considerando todas as reuniões plenárias do Conselho (ordinárias e extraordinárias), quantas reuniões foram realizadas no ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_0",
+   "type": "any",
+   "description": "q25_0_Não são publicizadas_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_1",
+   "type": "any",
+   "description": "q25_1_Ficam no Conselho em local de livre acesso para a população usuária_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_2",
+   "type": "any",
+   "description": "q25_2_São enviadas às(aos) Conselheiras(os) e/ou suas entidades_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_3",
+   "type": "any",
+   "description": "q25_3_São enviadas às entidades de Assistência Social que não estão representadas no conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_4",
+   "type": "any",
+   "description": "q25_4_São enviadas às(aos) representantes e organizações de usuárias(os) que não estão representadas no conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_5",
+   "type": "any",
+   "description": "q25_5_São enviadas às organizações e entidades de trabalhadoras(es) do setor que não estão representadas no conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_6",
+   "type": "any",
+   "description": "q25_6_Disponibilizadas no site do Conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_7",
+   "type": "any",
+   "description": "q25_7_Em Boletins produzidos pela área de assistência social_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q26",
+   "type": "any",
+   "description": "q26_As deliberações/resoluções do Conselho são publicadas em diário oficial?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_0",
+   "type": "any",
+   "description": "q27_0_Não há mecanismos de comunicação_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_1",
+   "type": "any",
+   "description": "q27_1_O Conselho divulga e disponibiliza seus contatos (e-mail/ telefone/WhatsApp) para o público_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_2",
+   "type": "any",
+   "description": "q27_2_O Conselho tem página nas redes sociais (Facebook, blog etc.)_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_3",
+   "type": "any",
+   "description": "q27_3_O Conselho tem canal de recebimento de denúncias_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_4",
+   "type": "any",
+   "description": "q27_4_O Conselho divulga ações e temas discutidos pelo Conselho nos equipamentos da Assistência Social_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_99",
+   "type": "any",
+   "description": "q27_99_Outros_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_99_1",
+   "type": "any",
+   "description": "q27_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_1",
+   "type": "any",
+   "description": "q28_1_O Conselho convida usuárias(os), além das(os) conselheiras(os), para a participação nas reuniões plenárias_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_2",
+   "type": "any",
+   "description": "q28_2_Estimula a formação de coletivo/comitê de usuárias(os) (por ex. Fórum Municipal de Usuárias/os)_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_3",
+   "type": "any",
+   "description": "q28_3_Realiza reuniões ampliadas em diferentes locais do município/estado_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_4",
+   "type": "any",
+   "description": "q28_4_Desenvolve ações junto aos equipamentos da política de assistência para estimular a participação dos usuários_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_99",
+   "type": "any",
+   "description": "q28_99_Sim, outros_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_0",
+   "type": "any",
+   "description": "q28_0_Não desenvolve",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_99_1",
+   "type": "any",
+   "description": "q28_99_1_Outro_Qual?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q29",
+   "type": "any",
+   "description": "q29_O Conselho tem conhecimento da existência de fóruns/colegiados/movimentos de usuários da Assistência Social no município (ou no estado, para os CEAS)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q29_1",
+   "type": "any",
+   "description": "q29_1_Informe qual(is)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_1",
+   "type": "any",
+   "description": "q30_1_Organização e estruturação do Conselho (processo de eleição dos conselheiros, regimento interno, instituição de comissões etc.)_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_2",
+   "type": "any",
+   "description": "q30_2_Plano de Ação_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_3",
+   "type": "any",
+   "description": "q30_3_Demonstrativo de Execução Físico-Financeira_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_4",
+   "type": "any",
+   "description": "q30_4_Plano de Assistência Social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_5",
+   "type": "any",
+   "description": "q30_5_Plano Plurianual (PPA), Lei de Diretrizes Orçamentárias (LDO) e/ou Lei Orçamentária Anual (LOA)_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_6",
+   "type": "any",
+   "description": "q30_6_Deliberações da(s) Conferência(s)_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_7",
+   "type": "any",
+   "description": "q30_7_Reuniões regionais pré-conferência_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_8",
+   "type": "any",
+   "description": "q30_8_Divulgação da conferência por meio de panfletos, carro de som, cartazes, etc._Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_9",
+   "type": "any",
+   "description": "q30_9_Reuniões específicas com usuários da política de assistência social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_10",
+   "type": "any",
+   "description": "q30_10_Planejamento das atividades do Conselho_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_11",
+   "type": "any",
+   "description": "q30_11_Acompanhamento do Programa Bolsa Família_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_12",
+   "type": "any",
+   "description": "q30_12_Acompanhamento do Benefício de Prestação Continuada_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_13",
+   "type": "any",
+   "description": "q30_13_Benefícios eventuais_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_14",
+   "type": "any",
+   "description": "q30_14_Financiamento, implantação, organização e oferta de Serviços Socioassistenciais, programas, projetos e benefícios de Proteção Social Básica_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_15",
+   "type": "any",
+   "description": "q30_15_Financiamento, implantação, organização e oferta de Serviços Socioassistenciais, programas, projetos e benefícios de Proteção Social Especial_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_16",
+   "type": "any",
+   "description": "q30_16_Reprogramação de recursos/saldos da Assistência Social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_17",
+   "type": "any",
+   "description": "q30_17_Inscrição de entidades ou Organizações da Sociedade Civil (OSC) de assistência social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_18",
+   "type": "any",
+   "description": "q30_18_Visitas as entidades ou OSC de assistência social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_19",
+   "type": "any",
+   "description": "q30_19_Fiscalização das ofertas prestadas pelos equipamentos públicos da assistência social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_20",
+   "type": "any",
+   "description": "q30_20_Fiscalização das ofertas prestadas pelas entidades ou OSC de assistência social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_21",
+   "type": "any",
+   "description": "q30_21_Intersetorialidade e transversalidade na Política de Assistência Social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_22",
+   "type": "any",
+   "description": "q30_22_Participação popular e mobilização social_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_23",
+   "type": "any",
+   "description": "q30_23_Capacitação para trabalhadores, gestores ou conselheiros_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_24",
+   "type": "any",
+   "description": "q30_24_Utilização de no mínimo 3% dos recursos do IGD-SUAS e IGD-PBF para o desenvolvimento das atividades do Conselho_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_25",
+   "type": "any",
+   "description": "q30_25_Avaliação da evolução do SUAS no âmbito municipal ou estadual_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_26",
+   "type": "any",
+   "description": "q30_26_Denúncias_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_27",
+   "type": "any",
+   "description": "q30_27_Plano Decenal_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_28",
+   "type": "any",
+   "description": "q30_28_Acompanhamento de programas e projetos da política de assistência social nacional e local_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_29",
+   "type": "any",
+   "description": "q30_29_Mobilização de usuárias(os) da Assistência Social para integração ao mundo do trabalho_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_30",
+   "type": "any",
+   "description": "q30_30_Grupos Populacionais Tradicionais e Específicos (indígenas, quilombolas, ribeirinhos, ciganos e outros)_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_31",
+   "type": "any",
+   "description": "q30_31_Inserção de crianças e adolescentes com deficiência beneficiários do BPC na escola_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_32",
+   "type": "any",
+   "description": "q30_32_Violência e Violação de Direitos_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_33",
+   "type": "any",
+   "description": "q30_33_Plano Municipal de Capacitação e Educação Permanente_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_99",
+   "type": "any",
+   "description": "q30_99_Outros_Assinale os temas discutidos pelo Conselho em 2024:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q30_99_1",
+   "type": "any",
+   "description": "q30_99_1_Outros_Quais?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q31",
+   "type": "any",
+   "description": "q31_O Conselho deliberou sobre a proposta anual de orçamento do executivo para o ano de 2024?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q32",
+   "type": "any",
+   "description": "q32_Com que frequência o conselho aprecia o relatório de aplicação dos recursos dos Fundos de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q33",
+   "type": "any",
+   "description": "q33_O Conselho acompanha os processos de pactuação da Comissão Intergestores Bipartite – CIB e da Comissão Intergestores Tripartite – CIT?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q34",
+   "type": "any",
+   "description": "q34_O Conselho acompanha os processos de deliberação do Conselho Nacional de Assistência Social e do Conselho Estadual de Assistência Social, no caso de municípios_",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q35",
+   "type": "any",
+   "description": "q35_O Conselho é a Instância de Controle Social do Programa Bolsa Família (Resolução CNAS 18/2013 e Resolução CNAS 15/2014)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q36",
+   "type": "any",
+   "description": "q36_O Conselho fiscaliza e acompanha a execução do Programa Bolsa Família?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_1",
+   "type": "any",
+   "description": "q37_1_Recebe Denúncia",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_2",
+   "type": "any",
+   "description": "q37_2_Realiza reuniões ampliadas (com participação, também, de membros da sociedade civil que não sejam conselheiros)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_3",
+   "type": "any",
+   "description": "q37_3_Realiza reuniões descentralizadas (realizadas em bairros/distritos/municípios, fora da sede do Conselho)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_4",
+   "type": "any",
+   "description": "q37_4_Realiza ações de mobilização social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q37_5",
+   "type": "any",
+   "description": "q37_5_Acompanha votações/discussões do Poder Legislativo local",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q38",
+   "type": "any",
+   "description": "q38_Em 2024, houve atualização do Plano de Assistência Social do município/Estado?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q39",
+   "type": "any",
+   "description": "q39_O conselho participou do processo de construção do plano municipal de assistência social (2021-2024)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48",
+   "type": "any",
+   "description": "q48_O conselho fiscaliza os serviços, programas, projetos e benefícios socioassistenciais do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q49",
+   "type": "any",
+   "description": "q49_Se sim, informe como a fiscalização é realizada:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_1",
+   "type": "any",
+   "description": "q50_1_Quantidade de Visitas a unidades públicas da rede socioassistencial",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_1_98",
+   "type": "any",
+   "description": "q50_1_98_Não Sabe",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_2",
+   "type": "any",
+   "description": "q50_2_Quantidade de Visitas a entidades/organizações da sociedade civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_2_98",
+   "type": "any",
+   "description": "q50_2_98_Não Sabe",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_3",
+   "type": "any",
+   "description": "q50_3_Quantidade Total de visitas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q50_3_98",
+   "type": "any",
+   "description": "q50_3_98_Não Sabe",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q51",
+   "type": "any",
+   "description": "q51_O conselho tem planejamento das fiscalizações realizadas anualmente?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q52",
+   "type": "any",
+   "description": "q52_Em 2024, o Conselho deliberou sobre os critérios de repasse de recursos para entidades?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q53",
+   "type": "any",
+   "description": "q53_O Conselho regulamentou, por meio de resolução própria (do CMAS/CEAS/CAS/DF), a inscrição das entidades e organizações de assistência social, bem como dos serviços, programas e projetos socioassistenciais?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q54",
+   "type": "any",
+   "description": "q54_Atualmente, quantas Entidades ou OSC possuem INSCRIÇÃO no Conselho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q55",
+   "type": "any",
+   "description": "q55_Quantas entidades fizeram pedidos de inscrição junto a este Conselho em 2024 (De 1º de janeiro a 31 de dezembro de 2024)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_1",
+   "type": "any",
+   "description": "q56_1_entidades com pedidos iniciados em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_1_98",
+   "type": "any",
+   "description": "q56_1_98_Não sabe - entidades com pedidos iniciados em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_2",
+   "type": "any",
+   "description": "q56_2_entidades com pedidos iniciados em anos anteriores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q56_2_98",
+   "type": "any",
+   "description": "q56_2_98_Não sabe - entidades com pedidos iniciados em anos anteriores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q57",
+   "type": "any",
+   "description": "q57_Quando a solicitação da entidade é deferida, o CMAS comunica e envia a documentação ao órgão gestor municipal para cadastramento da entidade no CNEAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_1",
+   "type": "any",
+   "description": "q58_1_Falta de documentação_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_2",
+   "type": "any",
+   "description": "q58_2_As entidades não ofertam serviços de Assistência Social_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_3",
+   "type": "any",
+   "description": "q58_3_As ofertas não estão em conformidade_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_99",
+   "type": "any",
+   "description": "q58_99_Outros_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_0",
+   "type": "any",
+   "description": "q58_0_Não houve indeferimentos_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_99_1",
+   "type": "any",
+   "description": "q58_99_1_Outros_Quais?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q59",
+   "type": "any",
+   "description": "q59_O CMAS possui instância recursal para interposição de recurso por parte da entidade em caso de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60",
+   "type": "any",
+   "description": "q60_Quantos cancelamentos foram realizados em 2024 (De 1º de janeiro a 31 de dezembro de 2024)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q60_98",
+   "type": "any",
+   "description": "q60_98_Não sabe",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q61",
+   "type": "any",
+   "description": "q61_Quando o CMAS cancela a inscrição da entidade, envia a Resolução de cancelamento para o órgão gestor municipal solicitar a exclusão da entidade nos cadastros CNEAS e CadSUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q62",
+   "type": "any",
+   "description": "q62_Quanto tempo, em média, leva do momento que a entidade ou OSC faz o pedido de inscrição até o seu deferimento/indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q62_98",
+   "type": "any",
+   "description": "q62_98_Não sabe",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q63",
+   "type": "any",
+   "description": "q63_O Conselho acompanha e fiscaliza a execução das parcerias entre a gestão local e as entidades de assistência social (MROSC, Art_60)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q64",
+   "type": "any",
+   "description": "q64_Qual o tempo de mandato das(os) Conselheiras(os) desse Conselho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q65",
+   "type": "any",
+   "description": "q65_Quantas vezes cada Conselheira(o) pode ser reconduzida(o) (por igual período ao mandato)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q66",
+   "type": "any",
+   "description": "q66_A(O) Presidente e Vice-presidente do Conselho são eleitas(os) em reunião plenária do Conselho?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q67",
+   "type": "any",
+   "description": "q67_Há alternância na presidência entre as(os) representantes do governo e as(os) representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q68",
+   "type": "any",
+   "description": "q68_As(Os) representantes da sociedade civil no Conselho são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69_1",
+   "type": "any",
+   "description": "q69_1_A(O) própria(o) usuária(o)_Para o segmento de usuárias(os), quem tem direito a voto no processo de eleição dos representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69_2",
+   "type": "any",
+   "description": "q69_2_As(Os) representantes e organizações de usuárias(os)_Para o segmento de usuárias(os), quem tem direito a voto no processo de eleição dos representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69_0",
+   "type": "any",
+   "description": "q69_0_Este Conselho não possui representantes de usuárias(os)_Para o segmento de usuárias(os), quem tem direito a voto no processo de eleição dos representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_1",
+   "type": "any",
+   "description": "q70_1_Beneficiárias(os) do Programa Bolsa Família_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_2",
+   "type": "any",
+   "description": "q70_2_Beneficiária(o) ou família de beneficiárias(os) do BPC – Benefício de Prestação Continuada_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_3",
+   "type": "any",
+   "description": "q70_3_Usuária(o) de serviços socioassistenciais de Proteção Social Básica_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_4",
+   "type": "any",
+   "description": "q70_4_Usuária(o) de serviços socioassistenciais de Proteção Social Especial_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_5",
+   "type": "any",
+   "description": "q70_5_Representante de associação comunitária ou de moradores_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_6",
+   "type": "any",
+   "description": "q70_6_Representante de fórum ou coletivo de usuárias(os)_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_99",
+   "type": "any",
+   "description": "q70_99_Outros_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_99_1",
+   "type": "any",
+   "description": "q70_99_1_Outros_Quais?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_1",
+   "type": "any",
+   "description": "q71_1_Representante de sindicato de trabalhadoras(es)_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_2",
+   "type": "any",
+   "description": "q71_2_Representante de conselho de classe profissional (CRESS, CFP, outros conselhos de classe)_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_3",
+   "type": "any",
+   "description": "q71_3_Representante de associação, fórum ou coletivo de trabalhadores_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_4",
+   "type": "any",
+   "description": "q71_4_A(O) própria(o) trabalhador(a) do SUAS, sem vinculação a nenhum coletivo_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_99",
+   "type": "any",
+   "description": "q71_99_Outros_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_0",
+   "type": "any",
+   "description": "q71_0_Este Conselho não possui representantes de trabalhadoras(es)_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_99_1",
+   "type": "any",
+   "description": "q71_99_1_Outros_Quais?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_1_1",
+   "type": "any",
+   "description": "q72_1_1_Conselheiras(os) Representantes do governo - TITULARES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_1_2",
+   "type": "any",
+   "description": "q72_1_2_Conselheiras(os) Representantes do governo - SUPLENTES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_1_3",
+   "type": "any",
+   "description": "q72_1_3_Conselheiras(os) Representantes do governo - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_2_1",
+   "type": "any",
+   "description": "q72_2_1_Conselheiras(os) Representantes da Sociedade Civil -TITULARES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_2_2",
+   "type": "any",
+   "description": "q72_2_2_Conselheiras(os) Representantes da Sociedade Civil - SUPLENTES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q72_2_3",
+   "type": "any",
+   "description": "q72_2_3_Conselheiras(os) Representantes da Sociedade Civil -TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_1_1",
+   "type": "any",
+   "description": "q73_1_1_Conselheiras(os) da Sociedade Civil representantes das(os) Trabalhadoras(es) -TITULARES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_1_2",
+   "type": "any",
+   "description": "q73_1_2_Conselheiras(os) da Sociedade Civil representantes das(os) Trabalhadoras(es) - SUPLENTES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_1_3",
+   "type": "any",
+   "description": "q73_1_3_Conselheiras(os) da Sociedade Civil representantes das(os) Trabalhadoras(es) - TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_2_1",
+   "type": "any",
+   "description": "q73_2_1_Conselheiras(os) da Sociedade Civil representantes das(os) Usuárias(os): TITULARES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_2_2",
+   "type": "any",
+   "description": "q73_2_2_Conselheiras(os) da Sociedade Civil representantes das(os) Usuárias(os): SUPLENTES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_2_3",
+   "type": "any",
+   "description": "q73_2_3_Conselheiras(os) da Sociedade Civil representantes das(os) Usuárias(os): TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_3_1",
+   "type": "any",
+   "description": "q73_3_1_Conselheiras(os) da Sociedade Civil representantes das Entidades: TITULARES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_3_2",
+   "type": "any",
+   "description": "q73_3_2_Conselheiras(os) da Sociedade Civil representantes das Entidades: SUPLENTES",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q73_3_3",
+   "type": "any",
+   "description": "q73_3_3_Conselheiras(os) da Sociedade Civil representantes das Entidades: TOTAL",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Região",
+   "type": "any",
+   "description": "Região",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "UF",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Q_incompleto",
+   "type": "any",
+   "description": "Q_incompleto",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q1_velha",
+   "type": "any",
+   "description": "q1_Informe o ano de publicação da Lei que criou o Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q2_velha",
+   "type": "any",
+   "description": "q2_Houve alteração da Lei original por alguma Lei posteriormente aprovada?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q3_velha",
+   "type": "any",
+   "description": "q3_Caso sim, informe o ano da Lei que alterou a Lei original de criação do Conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q4_velha",
+   "type": "any",
+   "description": "q4_Esse conselho possui regimento interno?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q5_velha",
+   "type": "any",
+   "description": "q5_Caso sim, informe o ano da última atualização do Regimento:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_1_velha",
+   "type": "any",
+   "description": "q6_1_Atribuições da Secretaria Executiva_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_2_velha",
+   "type": "any",
+   "description": "q6_2_Composição do conselho_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_3_velha",
+   "type": "any",
+   "description": "q6_3_Processo de eleição para representes da sociedade civil_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_4_velha",
+   "type": "any",
+   "description": "q6_4_Comissões permanentes_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_5_velha",
+   "type": "any",
+   "description": "q6_5_Competências do conselho_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_6_velha",
+   "type": "any",
+   "description": "q6_6_Funcionamento do conselho_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q6_7_velha",
+   "type": "any",
+   "description": "q6_7_Quórum para realização das reuniões e para votação das pautas_Indique os itens que constam no regimento interno deste conselho:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q8_velha",
+   "type": "any",
+   "description": "q8_No prédio em que se localiza o Conselho funcionam outras instituições ou unidades?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_1_velha",
+   "type": "any",
+   "description": "q9_1_Secretaria de Assistência Social ou congênere_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_2_velha",
+   "type": "any",
+   "description": "q9_2_Outra unidade administrativa (Sede de Prefeitura, Sede de Governo, Administração Regional, etc)_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_3_velha",
+   "type": "any",
+   "description": "q9_3_CRAS – Centro de Referência de Assistência Social_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_4_velha",
+   "type": "any",
+   "description": "q9_4_CREAS – Centro de Referência Especializado de Assistência Social_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_5_velha",
+   "type": "any",
+   "description": "q9_5_Outra unidade pública de serviços da Assistência Social_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_6_velha",
+   "type": "any",
+   "description": "q9_6_Unidade de Saúde_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_7_velha",
+   "type": "any",
+   "description": "q9_7_Escola_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_8_velha",
+   "type": "any",
+   "description": "q9_8_Associação Comunitária_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_9_velha",
+   "type": "any",
+   "description": "q9_9_Entidade ou Organização da Sociedade Civil_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_10_velha",
+   "type": "any",
+   "description": "q9_10_Conselho Tutelar_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_11_velha",
+   "type": "any",
+   "description": "q9_11_Outros Conselhos_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q9_99_velha",
+   "type": "any",
+   "description": "q9_99_Outros_Indique quais outras instituições ou unidades funcionam no prédio em que se localiza o Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q14_velha",
+   "type": "any",
+   "description": "q14_O Conselho possui Secretaria Executiva (unidade de apoio para seu funcionamento)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q15_velha",
+   "type": "any",
+   "description": "q15_O (a) Secretário (a) Executivo (a) trabalha exclusivamente no Conselho de Assistência Social?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_1_velha",
+   "type": "any",
+   "description": "q16_1_Quantidade de funcionárias(os) exclusivas(os) da Secretaria Executiva do Conselho de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q16_2_velha",
+   "type": "any",
+   "description": "q16_2_Quantidade de funcionárias(os) não exclusivas(os) da Secretaria Executiva do Conselho de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_0_velha",
+   "type": "any",
+   "description": "q23_0_Não é publicizado_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_1_velha",
+   "type": "any",
+   "description": "q23_1_Fica no Conselho em local de livre acesso para a população usuária_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_2_velha",
+   "type": "any",
+   "description": "q23_2_Enviado às(aos) Conselheiras(os) e/ou suas entidades_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_3_velha",
+   "type": "any",
+   "description": "q23_3_Enviado às entidades de Assistência Social que não estão representadas no conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_4_velha",
+   "type": "any",
+   "description": "q23_4_Enviado às(aos) representantes e organizações de usuárias(os) que não estão representadas no conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_5_velha",
+   "type": "any",
+   "description": "q23_5_Enviado às organizações e entidades de trabalhadoras(es) do setor que não estão representadas no conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_6_velha",
+   "type": "any",
+   "description": "q23_6_Disponibilizado no site do Conselho_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q23_7_velha",
+   "type": "any",
+   "description": "q23_7_Em Boletins produzidos pela área de assistência social_De que forma o calendário de reuniões ordinárias do Conselho é publicizado (torna-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_0_velha",
+   "type": "any",
+   "description": "q25_0_Não são publicizadas_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_1_velha",
+   "type": "any",
+   "description": "q25_1_Ficam no Conselho em local de livre acesso para a população usuária_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_2_velha",
+   "type": "any",
+   "description": "q25_2_São enviadas às(aos) Conselheiras(os) e/ou suas entidades_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_3_velha",
+   "type": "any",
+   "description": "q25_3_São enviadas às entidades de Assistência Social que não estão representadas no conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_4_velha",
+   "type": "any",
+   "description": "q25_4_São enviadas às(aos) representantes e organizações de usuárias(os) que não estão representadas no conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_5_velha",
+   "type": "any",
+   "description": "q25_5_São enviadas às organizações e entidades de trabalhadoras(es) do setor que não estão representadas no conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_6_velha",
+   "type": "any",
+   "description": "q25_6_Disponibilizadas no site do Conselho_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q25_7_velha",
+   "type": "any",
+   "description": "q25_7_Em Boletins produzidos pela área de assistência social_De que forma as atas do Conselho são publicizadas (tornam-se de conhecimento para a sociedade)?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_0_velha",
+   "type": "any",
+   "description": "q27_0_Não há mecanismos de comunicação_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_1_velha",
+   "type": "any",
+   "description": "q27_1_O Conselho divulga e disponibiliza seus contatos (e-mail/ telefone/WhatsApp) para o público_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_2_velha",
+   "type": "any",
+   "description": "q27_2_O Conselho tem página nas redes sociais (Facebook, blog etc.)_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_3_velha",
+   "type": "any",
+   "description": "q27_3_O Conselho tem canal de recebimento de denúncias_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_4_velha",
+   "type": "any",
+   "description": "q27_4_O Conselho divulga ações e temas discutidos pelo Conselho nos equipamentos da Assistência Social_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q27_99_velha",
+   "type": "any",
+   "description": "q27_99_Outros_O Conselho possui algum meio/canal/mecanismo de comunicação com as(os) usuárias(os) do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_1_velha",
+   "type": "any",
+   "description": "q28_1_O Conselho convida usuárias(os), além das(os) conselheiras(os), para a participação nas reuniões plenárias_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_2_velha",
+   "type": "any",
+   "description": "q28_2_Estimula a formação de coletivo/comitê de usuárias(os) (por ex. Fórum Municipal de Usuárias/os)_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_3_velha",
+   "type": "any",
+   "description": "q28_3_Realiza reuniões ampliadas em diferentes locais do município/estado_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_4_velha",
+   "type": "any",
+   "description": "q28_4_Desenvolve ações junto aos equipamentos da política de assistência para estimular a participação dos usuários_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_99_velha",
+   "type": "any",
+   "description": "q28_99_Sim, outros_O Conselho desenvolve alguma das seguintes atividades para estimular a participação dos usuários do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q28_0_velha",
+   "type": "any",
+   "description": "q28_0_Não desenvolve",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q48_velha",
+   "type": "any",
+   "description": "q48_O conselho fiscaliza os serviços, programas, projetos e benefícios socioassistenciais do SUAS?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q49_velha",
+   "type": "any",
+   "description": "q49_Se sim, informe como a fiscalização é realizada:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_1_velha",
+   "type": "any",
+   "description": "q58_1_Falta de documentação_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_2_velha",
+   "type": "any",
+   "description": "q58_2_As entidades não ofertam serviços de Assistência Social_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_3_velha",
+   "type": "any",
+   "description": "q58_3_As ofertas não estão em conformidade_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_99_velha",
+   "type": "any",
+   "description": "q58_99_Outros_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q58_0_velha",
+   "type": "any",
+   "description": "q58_0_Não houve indeferimentos_Quais os principais motivos de indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69_1_velha",
+   "type": "any",
+   "description": "q69_1_A(O) própria(o) usuária(o)_Para o segmento de usuárias(os), quem tem direito a voto no processo de eleição dos representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69_2_velha",
+   "type": "any",
+   "description": "q69_2_As(Os) representantes e organizações de usuárias(os)_Para o segmento de usuárias(os), quem tem direito a voto no processo de eleição dos representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q69_0_velha",
+   "type": "any",
+   "description": "q69_0_Este Conselho não possui representantes de usuárias(os)_Para o segmento de usuárias(os), quem tem direito a voto no processo de eleição dos representantes da sociedade civil?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_1_velha",
+   "type": "any",
+   "description": "q70_1_Beneficiárias(os) do Programa Bolsa Família_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_2_velha",
+   "type": "any",
+   "description": "q70_2_Beneficiária(o) ou família de beneficiárias(os) do BPC – Benefício de Prestação Continuada_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_3_velha",
+   "type": "any",
+   "description": "q70_3_Usuária(o) de serviços socioassistenciais de Proteção Social Básica_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_4_velha",
+   "type": "any",
+   "description": "q70_4_Usuária(o) de serviços socioassistenciais de Proteção Social Especial_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_5_velha",
+   "type": "any",
+   "description": "q70_5_Representante de associação comunitária ou de moradores_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_6_velha",
+   "type": "any",
+   "description": "q70_6_Representante de fórum ou coletivo de usuárias(os)_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q70_99_velha",
+   "type": "any",
+   "description": "q70_99_Outros_Na atual composição do Conselho, as(os) representantes de usuárias(os) ou organização de usuárias(os) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_1_velha",
+   "type": "any",
+   "description": "q71_1_Representante de sindicato de trabalhadoras(es)_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_2_velha",
+   "type": "any",
+   "description": "q71_2_Representante de conselho de classe profissional (CRESS, CFP, outros conselhos de classe)_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_3_velha",
+   "type": "any",
+   "description": "q71_3_Representante de associação, fórum ou coletivo de trabalhadores_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_4_velha",
+   "type": "any",
+   "description": "q71_4_A(O) própria(o) trabalhador(a) do SUAS, sem vinculação a nenhum coletivo_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_99_velha",
+   "type": "any",
+   "description": "q71_99_Outros_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "q71_0_velha",
+   "type": "any",
+   "description": "q71_0_Este Conselho não possui representantes de trabalhadoras(es)_Na atual composição do Conselho, as(os) representantes de trabalhadoras(es) são:",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d1",
+   "type": "any",
+   "description": "d1_Ano da Lei Municipal de regulamentação do SUAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d3",
+   "type": "any",
+   "description": "d3_Caso sim, informe o ano da Lei que alterou a Lei original de criação do Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d5",
+   "type": "any",
+   "description": "q5_Caso sim, informe o ano da última atualização do Regimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_exclusivas",
+   "type": "any",
+   "description": "d11_Total de salas de uso exclusivo do Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_exclusivas_categoria",
+   "type": "any",
+   "description": "Total de salas de uso exclusivo do Conselho - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_compartilhadas",
+   "type": "any",
+   "description": "d11_Total de salas de uso compartilhado do Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_compartilhadas_categoria",
+   "type": "any",
+   "description": "Total de salas de uso compartilhado do Conselho - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_total",
+   "type": "any",
+   "description": "d11_Total de salas de uso do Conselho - Exclusivas e Compartilhadas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_total_categoria",
+   "type": "any",
+   "description": "d11_Total de salas de uso do Conselho - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d11_7",
+   "type": "any",
+   "description": "d11_Quantidade de banheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d13_exclusivos_categoria",
+   "type": "any",
+   "description": "d13_Total de computadores exclusivos do Conselho - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d13_compartilhados_categoria",
+   "type": "any",
+   "description": "d13_Total de computadores compartilhados do Conselho - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d16_1",
+   "type": "any",
+   "description": "d16_1_funcionárias(os) exclusivas(os) da Secretaria Executiva do Conselho de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d16_2",
+   "type": "any",
+   "description": "d16_2_funcionárias(os) não exclusivas(os) da Secretaria Executiva do Conselho de Assistência Social",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d17",
+   "type": "any",
+   "description": "d17_Total de horas por semana que o Conselho encontra-se em funcionamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d24",
+   "type": "any",
+   "description": "d24_Considerando todas as reuniões plenárias do Conselho (ordinárias e extraordinárias), quantas reuniões foram realizadas no ano de 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d42",
+   "type": "any",
+   "description": "d42_Em 2024, quantas reuniões da CIB o conselho de assistência social acompanhou?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d46_1",
+   "type": "any",
+   "description": "d46_1_Conselheiros titulares representando o COEGEMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d46_2",
+   "type": "any",
+   "description": "d46_2_Conselheiros suplentes representando o COEGEMAS",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d50_1",
+   "type": "any",
+   "description": "d50_1_Visitas foram realizadas às entidades da rede socioassistencial em 2024, em unidades públicas",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d50_2",
+   "type": "any",
+   "description": "d50_2_Total de visitas foram realizadas às entidades da rede socioassistencial em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d50_3",
+   "type": "any",
+   "description": "d50_3_Total de visitas foram realizadas às entidades da rede socioassistencial em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d54",
+   "type": "any",
+   "description": "d54_Total de entidades ou OSC que possuem INSCRIÇÃO no Conselho",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d55",
+   "type": "any",
+   "description": "d55_Total de entidades que fizeram pedidos de inscrição junto a este Conselho em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_1",
+   "type": "any",
+   "description": "d56_1_Total de entidades com pedidos deferidos iniciados em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d56_2",
+   "type": "any",
+   "description": "d56_2_Total de entidades com pedidos deferidos iniciados em anos anteriores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d60",
+   "type": "any",
+   "description": "d60_Total de cancelamentos de inscrição realizados em 2024",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d62",
+   "type": "any",
+   "description": "Quanto tempo, em média, leva do momento que a entidade ou OSC faz o pedido de inscrição até o seu deferimento/indeferimento?",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_1_1",
+   "type": "any",
+   "description": "d72_1_1_Total de conselheiros titulares Representantes do governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_1_2",
+   "type": "any",
+   "description": "d72_1_2_Total de conselheiros suplentes Representantes do governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_1_3",
+   "type": "any",
+   "description": "d72_1_3_Total de conselheiros Representantes do governo",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_2_1",
+   "type": "any",
+   "description": "d72_2_1_Total de conselheiros titulares Representantes da sociedade civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_2_2",
+   "type": "any",
+   "description": "d72_2_2_Total de conselheiros suplentes Representantes da sociedade civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_2_3",
+   "type": "any",
+   "description": "d72_2_3_Total de conselheiros Representantes da sociedade civil",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_total_titulares",
+   "type": "any",
+   "description": "d72_Total conselheiros titulares",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_total_titulares_categoria",
+   "type": "any",
+   "description": "d72_Total conselheiros titulares - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_total_suplentes",
+   "type": "any",
+   "description": "d72_Total conselheiros suplentes",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_total_suplentes_categoria",
+   "type": "any",
+   "description": "d72_Total conselheiros suplentes - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_total",
+   "type": "any",
+   "description": "d72_Total conselheiros",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d72_total_categoria",
+   "type": "any",
+   "description": "d72_Total conselheiros - Categoria",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_1_1",
+   "type": "any",
+   "description": "d73_1_1_Total de conselheiros titulares trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_1_2",
+   "type": "any",
+   "description": "d73_1_2_Total de conselheiros suplentes trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_1_3",
+   "type": "any",
+   "description": "d73_1_3_Total de conselheiros trabalhadores",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_2_1",
+   "type": "any",
+   "description": "d73_2_1_Total de conselheiros titulares usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_2_2",
+   "type": "any",
+   "description": "d73_2_2_Total de conselheiros suplente susuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_2_3",
+   "type": "any",
+   "description": "d73_2_3_Total de conselheiros usuários",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_3_1",
+   "type": "any",
+   "description": "d73_3_1_Total de conselheiros titulares entidades",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_3_2",
+   "type": "any",
+   "description": "d73_3_2_Total de conselheiros suplente entidades",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "d73_3_3",
+   "type": "any",
+   "description": "d73_3_3_Total de conselheiros entidades",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "045e2c3d-86af-4a01-ac3e-898d54827218",
+   "dictionary_name": "Conselho Municipal Dicionario de variaveis.xlsx",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/7343b5c4-36ac-4947-be60-b56fd7228618/resource/045e2c3d-86af-4a01-ac3e-898d54827218/download/censo_suas_2024_conselho_municipal_dicionario_de_variaveis.xlsx",
+   "sha256": "01afe50dceca0b55729df5955c5bbf6a2c71a18c022887caae651da8215fdcdd",
+   "reader": "xlsx",
+   "part": "Dados Gerais",
+   "link_method": "header"
+  }
+ }
+}

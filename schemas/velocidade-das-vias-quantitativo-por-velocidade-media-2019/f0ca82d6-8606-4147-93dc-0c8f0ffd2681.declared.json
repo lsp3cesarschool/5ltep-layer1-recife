@@ -1,0 +1,68 @@
+{
+ "fields": [
+  {
+   "name": "equipamento",
+   "type": "string",
+   "description": "código do Equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "tipo",
+   "type": "string",
+   "description": "Tipo de quipamento [Allowed values, as declared: Lombada, Fotossensor]",
+   "constraints": {
+    "maxLength": 20
+   },
+   "declaredType": "Char",
+   "declaredSize": 20
+  },
+  {
+   "name": "logradouro",
+   "type": "string",
+   "description": "endereço onde está localizado o Equipamento",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "velocidade_via",
+   "type": "number",
+   "description": "Velocidade Regulamentada no Trecho",
+   "declaredType": "Num",
+   "declaredSize": 3
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Latitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "Coordenadas geográficas em graus decimais - Longitude",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "d95bb877-c0f8-4ecc-b04b-6a89a5be1d54",
+   "dictionary_name": "Dicionário de Dados - Equipamento de Monitoramento 2019",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/437f9092-fe1b-4d48-a2e7-ce472b668ef1/resource/d95bb877-c0f8-4ecc-b04b-6a89a5be1d54/download/dicionario-de-dados-equipamento-de-monitoramento-2019.json",
+   "sha256": "93a5a8d4555edad3c707b15451b6d269f35ff0688cf685c3b7a53c5ed6a01f9c",
+   "reader": "json",
+   "part": "metadados.campos",
+   "link_method": "header"
+  }
+ }
+}

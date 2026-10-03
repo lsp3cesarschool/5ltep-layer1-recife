@@ -1,0 +1,425 @@
+{
+ "fields": [
+  {
+   "name": "NU_ANO_CENSO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "ID_GESTOR",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "NU_MES",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_ANO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_IDADE_REFERENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_IDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_SEXO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_COR_RACA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_NACIONALIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_PAIS_ORIGEM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF_NASC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO_NASC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_NECESSIDADE_ESPECIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_BAIXA_VISAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_CEGUEIRA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_AUDITIVA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_FISICA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_INTELECTUAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SURDEZ",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SURDOCEGUEIRA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DEF_MULTIPLA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_AUTISMO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_SUPERDOTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_ESCOLARIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_ENSINO_MEDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_AREA_CURSO_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_CURSO_1",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_LICENCIATURA_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_ANO_CONCLUSAO_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_IES_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_IES_1",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_AREA_CURSO_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_CURSO_2",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "IN_LICENCIATURA_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "NU_ANO_CONCLUSAO_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_IES_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_IES_2",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIALIZACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MESTRADO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_DOUTORADO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_POS_NENHUM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_CRECHE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_PRE_ESCOLA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_ANOS_INICIAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_ANOS_FINAIS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_ENS_MEDIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_EJA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_ED_ESPECIAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_ED_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_CAMPO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_AMBIENTAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_DIR_HUMANOS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_DIV_SEXUAL",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_DIR_ADOLESC",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_AFRO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_GESTAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_OUTROS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_ESPECIFICO_NENHUM",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CARGO_GESTOR",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_ACESSO_CARGO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_TIPO_CONTRATACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_ENTIDADE",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_REGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MESORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MICRORREGIAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_UF",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_MUNICIPIO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "CO_DISTRITO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_DEPENDENCIA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CATEGORIA_ESCOLA_PRIVADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_CONVENIADA_PP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_CONVENIO_PODER_PUBLICO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_EMP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_ONG",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIV_ONG_OSCIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_OSCIP",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIND",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_SIST_S",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_MANT_ESCOLA_PRIVADA_S_FINS",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_REGULAMENTACAO",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "TP_LOCALIZACAO_DIFERENCIADA",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "IN_EDUCACAO_INDIGENA",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}
