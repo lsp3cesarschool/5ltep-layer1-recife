@@ -1,0 +1,235 @@
+{
+ "fields": [
+  {
+   "name": "areatotalconstruida",
+   "type": "any",
+   "description": "Área Total Construída do empreendimento (apenas nos processos de licenciamento urbanístico)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "assunto",
+   "type": "any",
+   "description": "Assunto ao qual se refere a licença. Pode ser Aprovação de Projeto Inicial, Licença de Instalação, Licença Sanitária, ...",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "bairro",
+   "type": "any",
+   "description": "Bairro do empreendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "categoria_empreendimento",
+   "type": "any",
+   "description": "Indica o categoria do empreendimento. Se uma atividade econômica, ou uma obra",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "cnpj",
+   "type": "any",
+   "description": "CPF ou CNPJ do requerente",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "data_conclusao",
+   "type": "date",
+   "declaredType": "Data de conclusão do processo de licenciamento"
+  },
+  {
+   "name": "data_emissao_licenca",
+   "type": "date",
+   "declaredType": "Data de emissão da licença"
+  },
+  {
+   "name": "data_entrada",
+   "type": "date",
+   "declaredType": "Data de entrada do processo de licenciamento"
+  },
+  {
+   "name": "data_validade_licenca",
+   "type": "date",
+   "declaredType": "Data de validade da licença emitida"
+  },
+  {
+   "name": "data_pagamento",
+   "type": "date",
+   "declaredType": "Data do pagamento da licença"
+  },
+  {
+   "name": "dsqfl",
+   "type": "any",
+   "description": "Código da localização geográfica, no seguinte formato: D.SSSS.QQQ.FF.LLLL. Onde D=Distrito, SSSS=Setor, QQQ=Quadra, FF=Face de Quadra e LLLL=código do lote",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "empreendimento_de_impacto",
+   "type": "any",
+   "description": "Indica se o empreendimento é de impacto (apenas nos processos urbanísticos) Endereço do empreendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "endereco_empreendimento",
+   "type": "any",
+   "description": "Endereço do empreendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "inscricao_mercantil",
+   "type": "any",
+   "description": "Código da inscrição da empresa, MEI ou profissional autônomo, no Cadastro Mercantil da Prefeitura do Recife",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "licenciamento_ambiental",
+   "type": "any",
+   "description": "Situação do Licenciamento ambiental (não se aplica, vigente, expirado, em tramitação, ...)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "licenciamento_sanitario",
+   "type": "any",
+   "description": "Situação do licenciamento urbanístico (não se aplica, vigente, expirado, em tramitação, ...)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "licenciamento_urbanistico",
+   "type": "any",
+   "description": "Situação do licenciamento sanitário (não se aplica, vigente, expirado, em tramitação, ...)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "razao_social",
+   "type": "any",
+   "description": "Nome ou razão social do empreendedor informado no processo de licenciamento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "razao_social_mercantil",
+   "type": "any",
+   "description": "Nome ou razão social do empreendedor extraído do Cadastro Mercantil de Contribuintes",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "num_licenca",
+   "type": "any",
+   "description": "Número da licença concedida (nos processos 100% digitais, corresponde ao mesmo número do processo de licenciamento)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "num_processo",
+   "type": "number",
+   "declaredType": "Número do processo de licenciamento"
+  },
+  {
+   "name": "porte_empreendimento",
+   "type": "any",
+   "description": "Porte do empreendimento sob o ponto de vista do impacto ambiental (apenas para os processos de licenciamento ambiental)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "potencial_empreendimento",
+   "type": "any",
+   "description": "Potencial poluidor do empreendimento sob o ponto de vista do impacto ambiental (apenas para os processos de licenciamento ambiental)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "processo_automatizado",
+   "type": "any",
+   "description": "Indicador se processo é 100% digital (Sim/Não)",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "situacao_processo",
+   "type": "any",
+   "description": "Situação do processo, podendo ser: Em tramitação, Deferido, Indeferido, Em exigência, Cancelado, Solicitado, ...",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "tipo_mercantil",
+   "type": "any",
+   "description": "Caso o requerente exerça uma atividade econômica, este campo indica o Tipo do Empreendimento, podendo ser: Autônomo, MEI, Empresa Convencional, ...",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "tipo_processo",
+   "type": "any",
+   "description": "Tipo do processo, podendo ser: Licenciamento, Alvará, Reforma, Legalização, Condicionado, Definitivo, ....",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "tipo_proc_licenciamento",
+   "type": "any",
+   "description": "Tipo do processo de licenciamento, podendo ser: Ambiental, Sanitário ou Urbanístico",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "uso_imovel",
+   "type": "any",
+   "description": "Tipo de utilização do imóvel vinculado ao empreendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "valor_taxa",
+   "type": "number",
+   "declaredType": "Valor da taxa de licenciamento"
+  },
+  {
+   "name": "latitude",
+   "type": "any",
+   "description": "Latitude do local do empreendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "longitude",
+   "type": "any",
+   "description": "Longitude do local do empreendimento",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "46451d7a-412b-40ad-b8d7-31932d6a2c8c",
+   "dictionary_name": "Metadados do Licenciamento Ambiental",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/46451d7a-412b-40ad-b8d7-31932d6a2c8c/download/metadados-do-licenciamento-ambiental.pdf",
+   "sha256": "fc2c40cd501ed76072b7d81a1e47e6a3c167b1bba43a3cf8a899132fbb0d7bf2",
+   "oracle": {
+    "recall": 0.9697,
+    "precision": 1.0,
+    "exact_match": 0.9697,
+    "levenshtein": 0.9909,
+    "missing_from_pdf": [
+     "valor_pago"
+    ],
+    "not_in_file": []
+   }
+  }
+ }
+}

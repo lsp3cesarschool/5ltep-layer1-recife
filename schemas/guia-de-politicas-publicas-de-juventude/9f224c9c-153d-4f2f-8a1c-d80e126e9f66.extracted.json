@@ -1,0 +1,142 @@
+{
+ "fields": [
+  {
+   "name": "programa",
+   "type": "string",
+   "description": "nome da ação oferecida pela respectiva Secretaria da Prefeitura do Recife",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "descricao",
+   "type": "string",
+   "description": "Detalhamento sobre o programa/ação",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "secretaria_responsavel",
+   "type": "string",
+   "description": "órgão da Prefeitura do Recife que desenvolve a ação",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "telefones_contato",
+   "type": "string",
+   "description": "números de telefone para contato",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "description": "email para contato",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "endereço",
+   "type": "string",
+   "description": "logradouro onde pode ser encontrada a ação/serviço da Prefeitura da Cidade do Recife",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "description": "bairro da cidade do Recife onde está localizada a ação/serviço",
+   "constraints": {
+    "maxLength": 30
+   },
+   "declaredType": "Char",
+   "declaredSize": 30
+  },
+  {
+   "name": "complemento",
+   "type": "string",
+   "description": "complemento do endereço",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "direito1",
+   "type": "string",
+   "description": "até o direito11 direitos do Estatuto da Juventude aos quais estão relacionadas ações/serviços da Prefeitura do ReCchifaer",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "latitude",
+   "type": "number",
+   "description": "coordenada geográfica do endereço das ações/serviços da Prefeitura do Recife",
+   "declaredType": "Num",
+   "declaredSize": 20
+  },
+  {
+   "name": "longitude",
+   "type": "number",
+   "description": "coordenada geográfica do endereço das ações/serviços da Prefeitura do Recife",
+   "declaredType": "Num",
+   "declaredSize": 20
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "llm",
+   "dictionary_id": "3e2df04e-ffae-4927-9216-6fbead95ef2d",
+   "dictionary_name": "Dicionário de Dados do Guia de Políticas Públicas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/978b9625-d2ef-4b60-8287-9f65f9ac9b19/resource/3e2df04e-ffae-4927-9216-6fbead95ef2d/download/dicionario-de-dados-do-guia-de-politicas-publicas.pdf",
+   "sha256": "cced878514d31459988ba5109ee93eb76821cc98249f4e262646342c27679c97",
+   "oracle": {
+    "recall": 0.5238,
+    "precision": 1.0,
+    "exact_match": 0.4762,
+    "levenshtein": 0.9358,
+    "missing_from_pdf": [
+     "direito10",
+     "direito11",
+     "direito2",
+     "direito3",
+     "direito4",
+     "direito5",
+     "direito6",
+     "direito7",
+     "direito8",
+     "direito9"
+    ],
+    "not_in_file": []
+   },
+   "model": "qwen3:8b",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "prompt_version": "v1",
+   "ollama_version": "0.35.0"
+  }
+ }
+}

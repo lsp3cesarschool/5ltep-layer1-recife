@@ -1,0 +1,227 @@
+{
+ "fields": [
+  {
+   "name": "comissaolicitacao",
+   "type": "number",
+   "description": "Nome do grupo formado por servidores especializados para conduzir todas as etapas do processo licitatório",
+   "declaredType": "Num",
+   "declaredSize": 2
+  },
+  {
+   "name": "ano_processolicitatorio",
+   "type": "number",
+   "description": "Ano de criação do processo licitatório",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "num_lote",
+   "type": "number",
+   "description": "Número do lote de materiais e serviços",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "modalidadeprocessolicitatorio",
+   "type": "string",
+   "description": "Forma que será conduzida o processo licitatório baseada na legislação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "num_processolicitatorio",
+   "type": "number",
+   "description": "Número sequencial do processo licitatório na comissão de licitação específica no ano",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "numerolicitacaomodalidade",
+   "type": "number",
+   "description": "Número sequencial do processo licitatório na comissão de licitação específica no ano e de acordo com a modalidade",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "anolicitacaomodalidade",
+   "type": "number",
+   "description": "Ano do processo licitatório na comissão de licitação específica no ano e de acordo com a modalidade",
+   "declaredType": "Num",
+   "declaredSize": 4
+  },
+  {
+   "name": "orgao_licitante",
+   "type": "string",
+   "description": "Órgão municipal responsável pelo processo licitatório",
+   "constraints": {
+    "maxLength": 200
+   },
+   "declaredType": "Char",
+   "declaredSize": 200
+  },
+  {
+   "name": "objeto",
+   "type": "string",
+   "description": "Descrição do objetivo do processo licitatório tanto de conteúdo quanto de objetivo",
+   "constraints": {
+    "maxLength": 1000
+   },
+   "declaredType": "Char",
+   "declaredSize": 1000
+  },
+  {
+   "name": "cnpj_contratado",
+   "type": "string",
+   "description": "CNPJ do fornecedor contratado",
+   "constraints": {
+    "maxLength": 14
+   },
+   "declaredType": "Char",
+   "declaredSize": 14
+  },
+  {
+   "name": "cpf_contratado",
+   "type": "string",
+   "description": "CPF do fornecedor contratado",
+   "constraints": {
+    "maxLength": 11
+   },
+   "declaredType": "Char",
+   "declaredSize": 11
+  },
+  {
+   "name": "razao_nomecontratado",
+   "type": "string",
+   "description": "Razão social ou nome do fornecedor contratado",
+   "constraints": {
+    "maxLength": 120
+   },
+   "declaredType": "Char",
+   "declaredSize": 120
+  },
+  {
+   "name": "logradouro_endcontratado",
+   "type": "string",
+   "description": "Logradouro do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "num_endcontratado",
+   "type": "string",
+   "description": "Número do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 9
+   },
+   "declaredType": "Char",
+   "declaredSize": 9
+  },
+  {
+   "name": "comp_endcontratado",
+   "type": "string",
+   "description": "Complemento do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 21
+   },
+   "declaredType": "Char",
+   "declaredSize": 21
+  },
+  {
+   "name": "bairro_endcontratado",
+   "type": "string",
+   "description": "Bairro do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 60
+   },
+   "declaredType": "Char",
+   "declaredSize": 60
+  },
+  {
+   "name": "cidade_endcontratado",
+   "type": "string",
+   "description": "Cidade do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 100
+   },
+   "declaredType": "Char",
+   "declaredSize": 100
+  },
+  {
+   "name": "uf_endcontratado",
+   "type": "string",
+   "description": "Estado do endereço do fornecedor contratado",
+   "constraints": {
+    "maxLength": 2
+   },
+   "declaredType": "Char",
+   "declaredSize": 2
+  },
+  {
+   "name": "valor_total_estimado",
+   "type": "number",
+   "description": "Valor total estimado do processo licitatório baseado em pesquisas de preços definidas na lei",
+   "declaredType": "Num"
+  },
+  {
+   "name": "valor_total_homologado",
+   "type": "number",
+   "description": "Valor total homologado do resultante do processo licitatório",
+   "declaredType": "Num"
+  },
+  {
+   "name": "valor_licitacao_lote",
+   "type": "number",
+   "description": "Valor homologado do lote de materiais ou serviços",
+   "declaredType": "Num"
+  },
+  {
+   "name": "data_abertura_proposta",
+   "type": "date",
+   "description": "Data de recebimento das propostas dos fornecedores participantes do processo licitatório contendo os preços e demais condições solicitadas no edital",
+   "declaredType": "Data",
+   "declaredSize": 10
+  },
+  {
+   "name": "data_ultimafaseprocesso",
+   "type": "date",
+   "description": "Data da última fase do processo",
+   "declaredType": "Data",
+   "declaredSize": 10
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "30e76f99-3ba3-4ace-a2b4-029d4eb9d02c",
+   "dictionary_name": "Dicionário de Dados - Licitações Concluídas",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/e30eb7ea-a35d-4510-a0dd-1387e5459e64/resource/30e76f99-3ba3-4ace-a2b4-029d4eb9d02c/download/dicionario-de-dados-licitacoes-concluidas.pdf",
+   "sha256": "a4e50576a033954259b649818121dffb3d5cffe7eace16f9271db6c00d4d8283",
+   "oracle": {
+    "recall": 0.8261,
+    "precision": 0.8261,
+    "exact_match": 0.8261,
+    "levenshtein": 0.9693,
+    "missing_from_pdf": [
+     "comissao_licitacao",
+     "data_aberturaproposta",
+     "numero_lote",
+     "valor_totalhomologadolicitacao"
+    ],
+    "not_in_file": [
+     "comissaolicitacao",
+     "data_abertura_proposta",
+     "num_lote",
+     "valor_total_homologado"
+    ]
+   }
+  }
+ }
+}
