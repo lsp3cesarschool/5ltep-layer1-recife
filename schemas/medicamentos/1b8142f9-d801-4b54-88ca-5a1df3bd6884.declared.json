@@ -92,7 +92,7 @@
    "sha256": "f478063ee5d0f6272e2eb47572ddba35ace05aafc8ac0b310c3000b66b1d79e3",
    "reader": "json",
    "part": "metadados.recursos",
-   "link_method": "single"
+   "link_method": "header"
   }
  }
 }
