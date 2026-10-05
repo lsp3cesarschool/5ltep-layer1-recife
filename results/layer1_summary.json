@@ -5,8 +5,8 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-03T17:44:33+00:00",
- "census_at": "2026-10-03T14:26:47+00:00",
+ "generated_at": "2026-10-05T12:10:35+00:00",
+ "census_at": "2026-10-05T10:45:39+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -19,7 +19,8 @@
   "extraction_prompt_version": "v1",
   "pdf_reader_version": "v2",
   "zip_documents_sample": 50,
-  "copies_once": 1
+  "zip_stop_at_sample": 0,
+  "copies_once": 0
  },
  "environment": {
   "python": "3.11.16"
@@ -36,19 +37,19 @@
   }
  },
  "tables": {
-  "total": 1077,
+  "total": 1076,
   "by_level": {
-   "0": 94,
+   "0": 93,
    "1": 3,
    "2": 160,
    "3": 452,
    "4": 368
   },
   "validated": 1076,
-  "validation_coverage": 0.9991,
-  "errors": 1,
+  "validation_coverage": 1.0,
+  "errors": 0,
   "queue_remaining": 0,
-  "declared_gb": 43.2,
+  "declared_gb": 42.77,
   "size_unknown": 0,
   "by_format": {
    "csv": {
@@ -57,8 +58,8 @@
     "size_unknown": 0
    },
    "zip": {
-    "files": 61,
-    "gb": 19.14,
+    "files": 60,
+    "gb": 18.72,
     "size_unknown": 0
    },
    "ods": {
@@ -114,19 +115,15 @@
   "last_observed_at": "2026-10-03T17:43:58+00:00"
  },
  "coverage": {
-  "files": 1077,
+  "files": 1076,
   "read": 1076,
   "empty": 0,
   "not_tabular": 0,
   "too_large": 0,
-  "not_downloaded": 1,
+  "not_downloaded": 0,
   "pending": 0,
-  "not_downloaded_by_reason": {
-   "other": 1
-  },
-  "not_downloaded_by_host": {
-   "other · dados.recife.pe.gov.br": 1
-  },
+  "not_downloaded_by_reason": {},
+  "not_downloaded_by_host": {},
   "read_without_schema": 96,
   "checked": 980,
   "conform": 414,
@@ -136,7 +133,7 @@
   "fail_only_cells": 129
  },
  "not_tables": {
-  "count": 12,
+  "count": 13,
   "resources": [
    {
     "dataset": "area-urbana",
@@ -194,6 +191,12 @@
    },
    {
     "dataset": "pedidos-ao-portal-da-transparencia",
+    "id": "bb5501f3-8de4-4c15-89de-e3c370bd5e04",
+    "name": "Anexos dos Pedidos de Acesso à Informação 2018",
+    "contents": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_"
+   },
+   {
+    "dataset": "pedidos-ao-portal-da-transparencia",
     "id": "ce284c6a-40e5-4728-8ada-ff6e9002ccac",
     "name": "Anexos 2021 - Parte I",
     "contents": "zip without tables (first entries: ['2021000020034010012/2021000020034010012_doc_1.pdf', '2021000020034010012/desktop.ini', '2021000030060010137/2021000030060010137_doc_1.pdf', '2021000030060010137/20"
@@ -228,8 +231,8 @@
  },
  "network": {
   "total": {
-   "files": 1077,
-   "failed_files": 1,
+   "files": 1076,
+   "failed_files": 0,
    "gb": 42.77,
    "minutes": 149.2,
    "end_to_end_mb_s": 4.78,
@@ -243,8 +246,8 @@
   },
   "by_host": {
    "dados.recife.pe.gov.br": {
-    "files": 1077,
-    "failed_files": 1,
+    "files": 1076,
+    "failed_files": 0,
     "gb": 42.77,
     "minutes": 149.2,
     "end_to_end_mb_s": 4.78,
@@ -284,10 +287,9 @@
   "links": {
    "tables": 1089,
    "by_method": {
-    "header": 602,
+    "header": 706,
     "none": 275,
-    "name": 172,
-    "single": 23,
+    "name": 91,
     "declared-id": 17
    },
    "fields_listed_in_description": 0
@@ -341,6 +343,8 @@
    "of_files": 112,
    "datasets": 15,
    "gb": 16.68,
+   "identical": 170,
+   "different": 2,
    "results_copied": 0
   },
   "files": {
@@ -360,7 +364,7 @@
    "zips_with_several_headers": 52,
    "with_columns_without_name": 37,
    "not_tabular": 0,
-   "not_tables": 12,
+   "not_tables": 13,
    "formats": {
     "csv": 1035,
     "xlsx": 15,
@@ -369,9 +373,7 @@
     "ods": 3,
     "xls": 33
    },
-   "unreachable_by_reason": {
-    "other": 1
-   }
+   "unreachable_by_reason": {}
   },
   "pdf_extraction": {
    "pdf_dictionaries_linked": 18,
@@ -380,27 +382,27 @@
     "suggested": 17,
     "extracted": 1
    },
-   "with_similar_names": 2,
+   "with_similar_names": 3,
    "deterministic": {
     "with_oracle": 18,
-    "recall": 0.6493,
-    "precision": 0.7082,
-    "exact_match": 0.6432,
-    "levenshtein": 0.7587
+    "recall": 0.7231,
+    "precision": 0.775,
+    "exact_match": 0.7169,
+    "levenshtein": 0.8249
    },
    "llm": {
     "with_oracle": 8,
-    "recall": 0.3953,
-    "precision": 0.4215,
-    "exact_match": 0.3893,
-    "levenshtein": 0.6372
+    "recall": 0.4808,
+    "precision": 0.5285,
+    "exact_match": 0.4332,
+    "levenshtein": 0.665
    }
   },
   "delivery": {
-   "probed_at": "2026-10-03T14:26:47+00:00",
+   "probed_at": "2026-10-05T10:45:39+00:00",
    "hosts": {
     "dados.recife.pe.gov.br": {
-     "linked": 1077,
+     "linked": 1076,
      "files": 1076,
      "served_by": [
       "ckan-storage-download.app.emprel.gov.br"
@@ -1517,7 +1519,7 @@
   {
    "name": "pedidos-ao-portal-da-transparencia",
    "level": 0,
-   "tables": 61,
+   "tables": 60,
    "verifiable": 15,
    "conformant": 15,
    "l1_rate": 1.0

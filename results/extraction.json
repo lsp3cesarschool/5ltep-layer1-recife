@@ -7,14 +7,15 @@
   ],
   "outcome": "suggested",
   "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 5,
+   "fields": 6,
    "oracle": {
     "available": true,
     "header_columns": 5,
-    "extracted": 5,
+    "extracted": 6,
     "recall": 0.4,
-    "precision": 0.4,
+    "precision": 0.3333,
     "exact_match": 0.4,
     "levenshtein": 0.5846,
     "missing_from_pdf": [
@@ -23,14 +24,16 @@
      "tipo"
     ],
     "not_in_file": [
+     "Acidentes",
      "data_acidente",
      "envolvido",
      "tipo_acidente"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:27+00:00",
+  "at": "2026-10-05T11:02:31+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
@@ -56,9 +59,10 @@
      "envolvido",
      "tipo_acidente"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    },
-   "seconds": 80.6,
+   "seconds": 71.0,
    "pdf_chars": 438,
    "pieces": 1
   },
@@ -78,6 +82,7 @@
   ],
   "outcome": "suggested",
   "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 7,
    "oracle": {
@@ -109,10 +114,11 @@
      "logradouro_nomeResumido",
      "logradouro_nomeoficial"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:27+00:00",
+  "at": "2026-10-05T11:02:32+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
@@ -149,9 +155,10 @@
      "logradouro_nomeResumidoNome",
      "logradouro_nomeoficial"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    },
-   "seconds": 146.2,
+   "seconds": 127.9,
    "pdf_chars": 1364,
    "pieces": 1
   },
@@ -173,6 +180,7 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 36,
    "oracle": {
@@ -252,10 +260,14 @@
      "tipo_valorvenal",
      "tipo_via"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {
+     "concatenacao": "dsqf",
+     "logradouro_codigo": "codlogradouro"
+    }
    }
   },
-  "at": "2026-10-03T14:27:29+00:00",
+  "at": "2026-10-05T11:02:33+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
@@ -342,9 +354,14 @@
      "tipo_valorvenal",
      "tipo_via"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {
+     "concatenacao": "dsqf",
+     "Face de Quadra": "face",
+     "logradouro_codigo": "codlogradouro"
+    }
    },
-   "seconds": 725.0,
+   "seconds": 555.8,
    "pdf_chars": 3276,
    "pieces": 1
   },
@@ -395,6 +412,7 @@
   ],
   "outcome": "suggested",
   "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 4,
    "oracle": {
@@ -413,10 +431,11 @@
     ],
     "similar_names": {
      "vias_principais": "via_principal"
-    }
+    },
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:30+00:00",
+  "at": "2026-10-05T11:02:34+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
@@ -440,9 +459,10 @@
     ],
     "similar_names": {
      "vias_principais": "via_principal"
-    }
+    },
+    "by_position": {}
    },
-   "seconds": 58.5,
+   "seconds": 49.5,
    "pdf_chars": 392,
    "pieces": 1
   },
@@ -460,91 +480,26 @@
    "a72e7175-8fcd-40bd-82ef-056a621a6165",
    "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859"
   ],
-  "outcome": "suggested",
-  "stage": "llm",
+  "outcome": "extracted",
+  "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 20,
    "oracle": {
     "available": true,
-    "header_columns": 10,
+    "header_columns": 20,
     "extracted": 20,
-    "recall": 0.5,
-    "precision": 0.25,
-    "exact_match": 0.5,
-    "levenshtein": 0.7595,
-    "missing_from_pdf": [
-     "num_apostilamento",
-     "num_contrato",
-     "situacao_apostilamento",
-     "tipo_apostilamento",
-     "valor_apostilamento"
-    ],
-    "not_in_file": [
-     "anocontrato",
-     "bairroendcontratado",
-     "cidadeendcontratado",
-     "complementoendcontratado",
-     "datafimvigencia",
-     "datainiciovigencia",
-     "estadoendcontratado",
-     "logradouroendcontratado",
-     "numerocontrato",
-     "numeroendcontratado",
-     "origemcontrato",
-     "sequencialcompra",
-     "situacaocontrato",
-     "valorcontrato1",
-     "valorcontrato2"
-    ],
-    "similar_names": {}
+    "recall": 1.0,
+    "precision": 1.0,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": [],
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:30+00:00",
-  "llm": {
-   "model": "qwen3:8b",
-   "model_source": "benchmark",
-   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
-   "ollama_version": "0.35.0",
-   "prompt_version": "v1",
-   "fields": 20,
-   "oracle": {
-    "available": true,
-    "header_columns": 10,
-    "extracted": 20,
-    "recall": 0.5,
-    "precision": 0.25,
-    "exact_match": 0.5,
-    "levenshtein": 0.7595,
-    "missing_from_pdf": [
-     "num_apostilamento",
-     "num_contrato",
-     "situacao_apostilamento",
-     "tipo_apostilamento",
-     "valor_apostilamento"
-    ],
-    "not_in_file": [
-     "anocontrato",
-     "bairroendcontratado",
-     "cidadeendcontratado",
-     "complementoendcontratado",
-     "datafimvigencia",
-     "datainiciovigencia",
-     "estadoendcontratado",
-     "logradouroendcontratado",
-     "numerocontrato",
-     "numeroendcontratado",
-     "origemcontrato",
-     "sequencialcompra",
-     "situacaocontrato",
-     "valorcontrato1",
-     "valorcontrato2"
-    ],
-    "similar_names": {}
-   },
-   "seconds": 334.0,
-   "pdf_chars": 1905,
-   "pieces": 1
-  },
+  "at": "2026-10-05T11:02:35+00:00",
   "fields": [
    "numerocontrato",
    "anocontrato",
@@ -576,6 +531,7 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 12,
    "oracle": {
@@ -592,10 +548,13 @@
     "not_in_file": [
      "numerocontrato"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {
+     "numerocontrato": "num_contrato"
+    }
    }
   },
-  "at": "2026-10-03T14:27:31+00:00",
+  "at": "2026-10-05T11:02:36+00:00",
   "fields": [
    "numerocontrato",
    "orgaocontratante",
@@ -617,25 +576,30 @@
   "linked_resources": [
    "dbd00afd-dc42-4643-babc-923ed694f154"
   ],
-  "outcome": "extracted",
+  "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 12,
+   "fields": 13,
    "oracle": {
     "available": true,
     "header_columns": 12,
-    "extracted": 12,
+    "extracted": 13,
     "recall": 1.0,
-    "precision": 1.0,
+    "precision": 0.9231,
     "exact_match": 1.0,
     "levenshtein": 1.0,
     "missing_from_pdf": [],
-    "not_in_file": [],
-    "similar_names": {}
+    "not_in_file": [
+     "Inexigibilidade"
+    ],
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:32+00:00",
+  "at": "2026-10-05T11:02:37+00:00",
   "fields": [
+   "Inexigibilidade",
    "num_dispensa",
    "situacao_dispensa",
    "unidade",
@@ -658,6 +622,7 @@
   ],
   "outcome": "suggested",
   "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 10,
    "oracle": {
@@ -685,10 +650,11 @@
     "not_in_file": [
      "eCchifaer"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:33+00:00",
+  "at": "2026-10-05T11:02:38+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
@@ -717,9 +683,10 @@
      "direito9"
     ],
     "not_in_file": [],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    },
-   "seconds": 181.9,
+   "seconds": 146.7,
    "pdf_chars": 1057,
    "pieces": 1
   },
@@ -745,25 +712,26 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 31,
+   "fields": 32,
    "oracle": {
     "available": true,
     "header_columns": 33,
-    "extracted": 31,
-    "recall": 0.9394,
+    "extracted": 32,
+    "recall": 0.9697,
     "precision": 1.0,
-    "exact_match": 0.9394,
-    "levenshtein": 0.9817,
+    "exact_match": 0.9697,
+    "levenshtein": 0.9909,
     "missing_from_pdf": [
-     "endereco_empreendimento",
      "valor_pago"
     ],
     "not_in_file": [],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:34+00:00",
+  "at": "2026-10-05T11:02:39+00:00",
   "fields": [
    "areatotalconstruida",
    "assunto",
@@ -777,6 +745,7 @@
    "data_pagamento",
    "dsqfl",
    "empreendimento_de_impacto",
+   "endereco_empreendimento",
    "inscricao_mercantil",
    "licenciamento_ambiental",
    "licenciamento_sanitario",
@@ -806,25 +775,26 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 31,
+   "fields": 32,
    "oracle": {
     "available": true,
     "header_columns": 33,
-    "extracted": 31,
-    "recall": 0.9394,
+    "extracted": 32,
+    "recall": 0.9697,
     "precision": 1.0,
-    "exact_match": 0.9394,
-    "levenshtein": 0.9817,
+    "exact_match": 0.9697,
+    "levenshtein": 0.9909,
     "missing_from_pdf": [
-     "endereco_empreendimento",
      "valor_pago"
     ],
     "not_in_file": [],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:35+00:00",
+  "at": "2026-10-05T11:02:40+00:00",
   "fields": [
    "areatotalconstruida",
    "assunto",
@@ -838,6 +808,7 @@
    "data_pagamento",
    "dsqfl",
    "empreendimento_de_impacto",
+   "endereco_empreendimento",
    "inscricao_mercantil",
    "licenciamento_ambiental",
    "licenciamento_sanitario",
@@ -867,25 +838,26 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 31,
+   "fields": 32,
    "oracle": {
     "available": true,
     "header_columns": 33,
-    "extracted": 31,
-    "recall": 0.9394,
+    "extracted": 32,
+    "recall": 0.9697,
     "precision": 1.0,
-    "exact_match": 0.9394,
-    "levenshtein": 0.9817,
+    "exact_match": 0.9697,
+    "levenshtein": 0.9909,
     "missing_from_pdf": [
-     "endereco_empreendimento",
      "valor_pago"
     ],
     "not_in_file": [],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:36+00:00",
+  "at": "2026-10-05T11:02:41+00:00",
   "fields": [
    "areatotalconstruida",
    "assunto",
@@ -899,6 +871,7 @@
    "data_pagamento",
    "dsqfl",
    "empreendimento_de_impacto",
+   "endereco_empreendimento",
    "inscricao_mercantil",
    "licenciamento_ambiental",
    "licenciamento_sanitario",
@@ -928,6 +901,7 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 23,
    "oracle": {
@@ -953,10 +927,13 @@
     "similar_names": {
      "comissaolicitacao": "comissao_licitacao",
      "data_abertura_proposta": "data_aberturaproposta"
+    },
+    "by_position": {
+     "valor_total_homologado": "valor_totalhomologadolicitacao"
     }
    }
   },
-  "at": "2026-10-03T14:27:38+00:00",
+  "at": "2026-10-05T11:02:43+00:00",
   "fields": [
    "comissaolicitacao",
    "ano_processolicitatorio",
@@ -991,6 +968,7 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 10,
    "oracle": {
@@ -1007,10 +985,13 @@
     "not_in_file": [
      "valorestimado"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {
+     "valorestimado": "valor_estipulado"
+    }
    }
   },
-  "at": "2026-10-03T14:27:39+00:00",
+  "at": "2026-10-05T11:02:44+00:00",
   "fields": [
    "comissaolicitacao",
    "anoprocessolicitatorio",
@@ -1046,89 +1027,89 @@
   ],
   "outcome": "suggested",
   "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 0,
+   "fields": 35,
    "oracle": {
     "available": true,
-    "header_columns": 35,
-    "extracted": 0,
-    "recall": 0.0,
-    "precision": 0.0,
-    "exact_match": 0.0,
-    "levenshtein": 0.0,
+    "header_columns": 38,
+    "extracted": 35,
+    "recall": 0.7368,
+    "precision": 0.8,
+    "exact_match": 0.7368,
+    "levenshtein": 0.9227,
     "missing_from_pdf": [
-     "Anexo_resposta_2o_recurso",
      "anexo_resposta",
      "anexo_resposta_1o_recurso",
-     "ano",
-     "arquivo_1o_recurso",
-     "arquivo_2o_recurso",
-     "arquivo_pedido",
-     "bairro_solicitante",
-     "cidade_solicitante",
+     "anexo_resposta_2o_recurso",
+     "data_criacao",
+     "data_criacao_1o_recurso",
+     "data_criacao_2o_recurso",
+     "data_resposta_1o_recurso",
+     "data_resposta_2o_recurso",
+     "informacoes_pessoais",
+     "numero_recurso"
+    ],
+    "not_in_file": [
+     "Recurso",
+     "arquivos_resposta_1o_recurso",
+     "arquivos_resposta_2o_recurso",
+     "arquivos_resposta_pedido",
      "data_pedido",
      "data_resp_1o_recurso",
-     "data_resp_2o_recurso",
-     "data_resposta",
-     "descricao",
-     "descricao_1o_recurso",
-     "descricao_2o_recurso",
-     "escolaridade_solicitante",
-     "motivo_pedido",
-     "numero",
-     "numero_recurso",
-     "orgao_1o_recurso",
-     "orgao_2o_recurso",
-     "orgao_resposta",
-     "orgao_solicitacao",
-     "pais_solicitante",
-     "profissao_solicitante",
-     "resposta",
-     "resposta_1o_recurso",
-     "resposta_2o_recurso",
-     "sexo_solicitante",
-     "situacao_1o_recurso",
-     "situacao_2o_recurso",
-     "situacao_pedido",
-     "situacao_resposta",
-     "uf_solicitante"
+     "data_resp_2o_recurso"
     ],
-    "not_in_file": [],
-    "similar_names": {}
+    "similar_names": {
+     "data_resp_1o_recurso": "data_resposta_1o_recurso",
+     "data_resp_2o_recurso": "data_resposta_2o_recurso"
+    },
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:40+00:00",
+  "at": "2026-10-05T11:02:45+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
    "ollama_version": "0.35.0",
    "prompt_version": "v1",
-   "fields": 36,
+   "fields": 35,
    "oracle": {
     "available": true,
-    "header_columns": 35,
-    "extracted": 36,
-    "recall": 0.8857,
-    "precision": 0.8611,
-    "exact_match": 0.8857,
-    "levenshtein": 0.9664,
+    "header_columns": 38,
+    "extracted": 35,
+    "recall": 0.7368,
+    "precision": 0.8,
+    "exact_match": 0.7368,
+    "levenshtein": 0.9227,
     "missing_from_pdf": [
-     "Anexo_resposta_2o_recurso",
      "anexo_resposta",
      "anexo_resposta_1o_recurso",
+     "anexo_resposta_2o_recurso",
+     "data_criacao",
+     "data_criacao_1o_recurso",
+     "data_criacao_2o_recurso",
+     "data_resposta_1o_recurso",
+     "data_resposta_2o_recurso",
+     "informacoes_pessoais",
      "numero_recurso"
     ],
     "not_in_file": [
      "Recurso",
-     "Respondido, indeferido, em análise, em processamento ou direcionado a outro",
      "arquivos_resposta_1o_recurso",
      "arquivos_resposta_2o_recurso",
-     "arquivos_resposta_pedido"
+     "arquivos_resposta_pedido",
+     "data_pedido",
+     "data_resp_1o_recurso",
+     "data_resp_2o_recurso"
     ],
-    "similar_names": {}
+    "similar_names": {
+     "data_resp_1o_recurso": "data_resposta_1o_recurso",
+     "data_resp_2o_recurso": "data_resposta_2o_recurso"
+    },
+    "by_position": {}
    },
-   "seconds": 752.8,
+   "seconds": 523.9,
    "pdf_chars": 3292,
    "pieces": 1
   },
@@ -1137,7 +1118,6 @@
    "ano",
    "data_pedido",
    "Recurso",
-   "Respondido, indeferido, em análise, em processamento ou direcionado a outro",
    "situacao_pedido",
    "orgao_solicitacao",
    "descricao",
@@ -1178,7 +1158,8 @@
    "b7c0476a-f252-4be6-b28a-f9b372d9e824"
   ],
   "outcome": "suggested",
-  "stage": "deterministic",
+  "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
    "fields": 1,
    "oracle": {
@@ -1242,38 +1223,29 @@
      "zona_residencia"
     ],
     "not_in_file": [],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:41+00:00",
+  "at": "2026-10-05T11:02:46+00:00",
   "llm": {
    "model": "qwen3:8b",
    "model_source": "benchmark",
    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
    "ollama_version": "0.35.0",
    "prompt_version": "v1",
-   "fields": 0,
+   "fields": 51,
    "oracle": {
     "available": true,
     "header_columns": 51,
-    "extracted": 0,
-    "recall": 0.0,
-    "precision": 0.0,
+    "extracted": 51,
+    "recall": 0.3333,
+    "precision": 0.3333,
     "exact_match": 0.0,
-    "levenshtein": 0.0,
+    "levenshtein": 0.0256,
     "missing_from_pdf": [
-     "bairro_escola",
-     "bairro_residencia",
-     "bairro_trabalho",
-     "cep_escola",
-     "cep_residencia",
-     "cep_trabalho",
-     "cidade_escola",
-     "cidade_residencia",
-     "cidade_trabalho",
      "detalhe_mobilidade",
      "escola_filho",
-     "faixa_etaria",
      "freq_aula",
      "freq_local_trabalho",
      "horario_fim_aula",
@@ -1282,17 +1254,12 @@
      "horario_inicio_trabalho",
      "internet_celular",
      "local_saida_trab",
-     "logradouro_escola",
-     "logradouro_residencia",
-     "logradouro_trabalho",
      "meio_transporte_trab",
      "meios_transporte_filhos",
      "mobilidade_reduzida",
      "nivel_estudo",
      "nome_instituicao_ensino",
      "origem_ida_aula",
-     "origem_trabalho",
-     "outras_escolas",
      "outros_aula",
      "pesquisado_estuda",
      "possui_filho_escola",
@@ -1300,7 +1267,6 @@
      "quant_filhos",
      "renda",
      "resp_pesquisa_matricula",
-     "sexo",
      "terminal_aula",
      "terminal_int_trabalho",
      "trabalha",
@@ -1313,13 +1279,137 @@
      "utiliza_integracao_aula",
      "utiliza_terminal_int_trabalho"
     ],
-    "not_in_file": [],
-    "similar_names": {}
+    "not_in_file": [
+     "CASO:",
+     "COM QUAL FREQUÊNCIA VOCÊ VAI PARA A AULA A PARTIR DESTE LOCAL DE ORIGEM?",
+     "COM QUAL FREQUÊNCIA VOCÊ VAI PARA O TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?",
+     "DE ONDE VOCÊ SAI PARA IR AO TRABALHO?",
+     "DE ONDE VOCÊ SAI PARA IR À AULA?",
+     "HORÁRIO DE FIM DAS AULAS",
+     "HORÁRIO DE FIM DO TRABALHO",
+     "HORÁRIO DE INÍCIO DAS AULAS",
+     "HORÁRIO DE INÍCIO DO TRABALHO",
+     "INDIQUE O TERMINAL (AULA) NO CAMINHO PARA A AULA?",
+     "INDIQUE O TERMINAL (TRABALHO) NO CAMINHO PARA O TRABALHO?",
+     "MOBILIDADE REDUZIDA OU DIFICULDADE DE LOCOMOÇÃO?",
+     "ORIGEM PARA A AULA",
+     "POSSUI CELULAR COM ACESSO À INTERNET?",
+     "POSSUI FILHO EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?",
+     "QUAIS OS MEIOS DE TRANSPORTE OS SEUS FILHOS UTILIZAM PARA IR A ESCOLA?",
+     "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM ATÉ O TRABALHO?",
+     "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM PARA A AULA?",
+     "QUAL ESCOLA SEUS FILHOS ESTUDAM?",
+     "QUAL O NOME DA INSTITUIÇÃO DE ENSINO?",
+     "QUAL O NÍVEL DA SUA ATIVIDADE DE ESTUDO?",
+     "QUAL O TURNO DAS SUAS AULAS?",
+     "QUAL O TURNO DO SEU TRABALHO?",
+     "QUAL SUA PROFISSÃO?",
+     "QUANTOS FILHOS",
+     "RENDA (SALÁRIO MÍNIMO)",
+     "VOCÊ ESTUDA?",
+     "VOCÊ JÁ RESPONDEU ESTA PESQUISA PARA A MATRÍCULA DE SEU FILHO?",
+     "VOCÊ TRABALHA?",
+     "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA A AULA?",
+     "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA O TRABALHO?",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (AULA)",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (ESCOLA)",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (TRABALHO)"
+    ],
+    "similar_names": {
+     "QUANTOS FILHOS": "quant_filhos"
+    },
+    "by_position": {
+     "RENDA (SALÁRIO MÍNIMO)": "renda",
+     "MOBILIDADE REDUZIDA OU DIFICULDADE DE LOCOMOÇÃO?": "mobilidade_reduzida",
+     "CASO:": "detalhe_mobilidade",
+     "POSSUI CELULAR COM ACESSO À INTERNET?": "internet_celular",
+     "POSSUI FILHO EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?": "possui_filho_escola",
+     "QUAIS OS MEIOS DE TRANSPORTE OS SEUS FILHOS UTILIZAM PARA IR A ESCOLA?": "meios_transporte_filhos",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (ESCOLA)": "utiliza_app_taxi_escola",
+     "VOCÊ JÁ RESPONDEU ESTA PESQUISA PARA A MATRÍCULA DE SEU FILHO?": "resp_pesquisa_matricula",
+     "QUAL ESCOLA SEUS FILHOS ESTUDAM?": "escola_filho",
+     "QUAL SUA PROFISSÃO?": "profissao",
+     "VOCÊ TRABALHA?": "trabalha",
+     "QUAL O TURNO DO SEU TRABALHO?": "turno_trabalho",
+     "HORÁRIO DE FIM DO TRABALHO": "horario_fim_trabalho",
+     "HORÁRIO DE INÍCIO DO TRABALHO": "horario_inicio_trabalho",
+     "DE ONDE VOCÊ SAI PARA IR AO TRABALHO?": "local_saida_trab",
+     "COM QUAL FREQUÊNCIA VOCÊ VAI PARA O TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?": "freq_local_trabalho",
+     "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM ATÉ O TRABALHO?": "meio_transporte_trab",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (TRABALHO)": "utiliza_app_taxi_trabalho",
+     "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA O TRABALHO?": "utiliza_terminal_int_trabalho",
+     "INDIQUE O TERMINAL (TRABALHO) NO CAMINHO PARA O TRABALHO?": "terminal_int_trabalho",
+     "VOCÊ ESTUDA?": "pesquisado_estuda",
+     "QUAL O TURNO DAS SUAS AULAS?": "turno_aula",
+     "QUAL O NÍVEL DA SUA ATIVIDADE DE ESTUDO?": "nivel_estudo",
+     "QUAL O NOME DA INSTITUIÇÃO DE ENSINO?": "nome_instituicao_ensino",
+     "HORÁRIO DE FIM DAS AULAS": "horario_fim_aula",
+     "HORÁRIO DE INÍCIO DAS AULAS": "horario_inicio_aula",
+     "DE ONDE VOCÊ SAI PARA IR À AULA?": "origem_ida_aula",
+     "ORIGEM PARA A AULA": "outros_aula",
+     "COM QUAL FREQUÊNCIA VOCÊ VAI PARA A AULA A PARTIR DESTE LOCAL DE ORIGEM?": "freq_aula",
+     "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM PARA A AULA?": "transporte_aula",
+     "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (AULA)": "utiliza_app_taxi_aula",
+     "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA A AULA?": "utiliza_integracao_aula",
+     "INDIQUE O TERMINAL (AULA) NO CAMINHO PARA A AULA?": "terminal_aula"
+    }
    },
-   "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=1800)"
+   "seconds": 1463.1,
+   "pdf_chars": 10851,
+   "pieces": 1
   },
   "fields": [
-   "SEXO"
+   "SEXO",
+   "FAIXA ETÁRIA",
+   "RENDA (SALÁRIO MÍNIMO)",
+   "MOBILIDADE REDUZIDA OU DIFICULDADE DE LOCOMOÇÃO?",
+   "CASO:",
+   "POSSUI CELULAR COM ACESSO À INTERNET?",
+   "CEP (RESIDÊNCIA)",
+   "CIDADE (RESIDÊNCIA)",
+   "BAIRRO (RESIDÊNCIA)",
+   "LOGRADOURO (RESIDÊNCIA)",
+   "POSSUI FILHO EM ESCOLA DE ENSINO FUNDAMENTAL OU MÉDIO?",
+   "QUANTOS FILHOS",
+   "QUAIS OS MEIOS DE TRANSPORTE OS SEUS FILHOS UTILIZAM PARA IR A ESCOLA?",
+   "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (ESCOLA)",
+   "VOCÊ JÁ RESPONDEU ESTA PESQUISA PARA A MATRÍCULA DE SEU FILHO?",
+   "QUAL ESCOLA SEUS FILHOS ESTUDAM?",
+   "OUTRAS ESCOLAS",
+   "QUAL SUA PROFISSÃO?",
+   "VOCÊ TRABALHA?",
+   "CEP (TRABALHO)",
+   "CIDADE (TRABALHO)",
+   "BAIRRO (TRABALHO)",
+   "LOGRADOURO (TRABALHO)",
+   "QUAL O TURNO DO SEU TRABALHO?",
+   "HORÁRIO DE FIM DO TRABALHO",
+   "HORÁRIO DE INÍCIO DO TRABALHO",
+   "DE ONDE VOCÊ SAI PARA IR AO TRABALHO?",
+   "ORIGEM TRABALHO",
+   "COM QUAL FREQUÊNCIA VOCÊ VAI PARA O TRABALHO A PARTIR DESTE LOCAL DE ORIGEM?",
+   "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM ATÉ O TRABALHO?",
+   "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (TRABALHO)",
+   "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA O TRABALHO?",
+   "INDIQUE O TERMINAL (TRABALHO) NO CAMINHO PARA O TRABALHO?",
+   "VOCÊ ESTUDA?",
+   "CEP (ESCOLA)",
+   "CIDADE (ESCOLA)",
+   "BAIRRO (ESCOLA)",
+   "LOGRADOURO (ESCOLA)",
+   "QUAL O TURNO DAS SUAS AULAS?",
+   "QUAL O NÍVEL DA SUA ATIVIDADE DE ESTUDO?",
+   "QUAL O NOME DA INSTITUIÇÃO DE ENSINO?",
+   "HORÁRIO DE FIM DAS AULAS",
+   "HORÁRIO DE INÍCIO DAS AULAS",
+   "DE ONDE VOCÊ SAI PARA IR À AULA?",
+   "ORIGEM PARA A AULA",
+   "COM QUAL FREQUÊNCIA VOCÊ VAI PARA A AULA A PARTIR DESTE LOCAL DE ORIGEM?",
+   "QUAIS OS MEIOS DE TRANSPORTE VOCÊ GERALMENTE UTILIZA PARA ESTA VIAGEM PARA A AULA?",
+   "VOCÊ UTILIZA APLICATIVOS DE CELULAR PARA SOLICITAR O TAXI? (AULA)",
+   "VOCÊ UTILIZA ALGUM TERMINAL DE INTEGRAÇÃO NO CAMINHO PARA A AULA?",
+   "INDIQUE O TERMINAL (AULA) NO CAMINHO PARA A AULA?",
+   "ZONA_RESIDÊNCIA"
   ]
  },
  "436ea9a3-2a5b-4f73-b53b-ce5f2a9ee96f": {
@@ -1329,8 +1419,35 @@
    "dc31b3eb-1340-4ea6-8979-223a0d62a79d"
   ],
   "outcome": "suggested",
-  "stage": "deterministic",
+  "stage": "llm",
+  "reader_version": "v2",
   "deterministic": {
+   "fields": 13,
+   "oracle": {
+    "available": true,
+    "header_columns": 10,
+    "extracted": 13,
+    "recall": 1.0,
+    "precision": 0.7692,
+    "exact_match": 1.0,
+    "levenshtein": 1.0,
+    "missing_from_pdf": [],
+    "not_in_file": [
+     "Inexigibilidade",
+     "data_de_empenho_contrato",
+     "local_de_execucao"
+    ],
+    "similar_names": {},
+    "by_position": {}
+   }
+  },
+  "at": "2026-10-05T11:02:48+00:00",
+  "llm": {
+   "model": "qwen3:8b",
+   "model_source": "benchmark",
+   "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+   "ollama_version": "0.35.0",
+   "prompt_version": "v1",
    "fields": 12,
    "oracle": {
     "available": true,
@@ -1345,10 +1462,13 @@
      "data_de_empenho_contrato",
      "local_de_execucao"
     ],
-    "similar_names": {}
-   }
+    "similar_names": {},
+    "by_position": {}
+   },
+   "seconds": 171.6,
+   "pdf_chars": 1573,
+   "pieces": 1
   },
-  "at": "2026-10-03T14:27:43+00:00",
   "fields": [
    "num_dispensa",
    "situacao_dispensa",
@@ -1372,25 +1492,29 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 12,
+   "fields": 13,
    "oracle": {
     "available": true,
     "header_columns": 11,
-    "extracted": 12,
+    "extracted": 13,
     "recall": 1.0,
-    "precision": 0.9167,
+    "precision": 0.8462,
     "exact_match": 0.9091,
     "levenshtein": 0.9943,
     "missing_from_pdf": [],
     "not_in_file": [
+     "Inexigibilidade",
      "arquivo_situacao"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:45+00:00",
+  "at": "2026-10-05T11:02:49+00:00",
   "fields": [
+   "Inexigibilidade",
    "num_dispensa",
    "situacao_dispensa",
    "unidade",
@@ -1413,25 +1537,29 @@
   ],
   "outcome": "suggested",
   "stage": "deterministic",
+  "reader_version": "v2",
   "deterministic": {
-   "fields": 12,
+   "fields": 13,
    "oracle": {
     "available": true,
     "header_columns": 11,
-    "extracted": 12,
+    "extracted": 13,
     "recall": 1.0,
-    "precision": 0.9167,
+    "precision": 0.8462,
     "exact_match": 1.0,
     "levenshtein": 1.0,
     "missing_from_pdf": [],
     "not_in_file": [
+     "Inexigibilidade",
      "arquivo_situacao"
     ],
-    "similar_names": {}
+    "similar_names": {},
+    "by_position": {}
    }
   },
-  "at": "2026-10-03T14:27:48+00:00",
+  "at": "2026-10-05T11:02:50+00:00",
   "fields": [
+   "Inexigibilidade",
    "num_dispensa",
    "situacao_dispensa",
    "unidade",

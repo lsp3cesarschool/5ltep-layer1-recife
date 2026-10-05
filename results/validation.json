@@ -81332,7 +81332,7 @@
  },
  "bb5501f3-8de4-4c15-89de-e3c370bd5e04": {
   "dataset": "pedidos-ao-portal-da-transparencia",
-  "checked_at": "2026-10-03T16:38:42+00:00",
+  "checked_at": "2026-10-05T12:09:53+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -81341,9 +81341,11 @@
    "size": 428153936
   },
   "host": "dados.recife.pe.gov.br",
-  "status": "error",
-  "error": "ProtocolError: (…, IncompleteRead(23063560 bytes read, 405090376 more expected))",
-  "reason": "new"
+  "status": "not-tabular",
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['ANEXOS 2018/2018_7376_18_0_R.pdf', 'ANEXOS 2018/2018_7370_71_2_R.pdf', 'ANEXOS 2018/2018_7496_85_16_R.pdf', 'ANEXOS 2018/2018_7864_241_0_R.pdf', 'ANEXOS 2018/2018_7948_252_0_R.pdf'])",
+  "validated_at": "2026-10-05T12:09:53+00:00",
+  "reason": "error"
  },
  "cef78b5c-ae44-4c5e-805f-681322e3007e": {
   "dataset": "pedidos-ao-portal-da-transparencia",
