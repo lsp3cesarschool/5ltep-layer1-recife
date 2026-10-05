@@ -1,0 +1,390 @@
+{
+ "fields": [
+  {
+   "name": "concatenacao",
+   "type": "string",
+   "description": "É a concatenação de Distrito Fiscal , Setor Censitário, Quadra Viária e Face.",
+   "constraints": {
+    "maxLength": 11
+   },
+   "declaredType": "Char",
+   "declaredSize": 11
+  },
+  {
+   "name": "distrito",
+   "type": "number",
+   "description": "Distrito Fiscal é uma unidade territorial de coleta fiscal com limites físicos em área e é nesta região geográfica que os setores censitários estão distribuídos.",
+   "declaredType": "Num",
+   "declaredSize": 1
+  },
+  {
+   "name": "setor",
+   "type": "number",
+   "description": "Setor Censitário é unidade territorial de coleta das operações censitárias e é nesta região geográfica , com limites físicos em áreas que estão distribuídas as quadras. Os Setores Censitários são definidos de acordo com o número de domicílios.",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "quadra",
+   "type": "number",
+   "description": "Quadra Viária é uma unidade territorial com limites físicos em área e que é formada de uma ou mais de faces. É uma área que contém vários lotes.",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "face",
+   "type": "number",
+   "description": "Face de Quadra é o segmento contínuo entre duas vias de circulação (ex.: rua, avenida...) ou entre duas mudanças de direção do logradouro.É a posição onde o lote se encontra em relação a quadra.",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "logradouro_codigo",
+   "type": "number",
+   "description": "Código do Logradouro que identifica as Vias de Circulação do espaço urbano do Recife. Logradouro é um termo que designa qualquer espaço público reconhecido pela administração de um município",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "cep",
+   "type": "number",
+   "description": "Código do endereçamento postal para a face de quadra em um determinado logradouro",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "bairro_codigo",
+   "type": "number",
+   "description": "Código do Bairro que identifica unicamente a região.Bairro é uma comunidade ou região dentro de uma cidade ou município.",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "bairro_nome",
+   "type": "string",
+   "description": "Nome do Bairro.",
+   "constraints": {
+    "maxLength": 150
+   },
+   "declaredType": "Char",
+   "declaredSize": 150
+  },
+  {
+   "name": "tipo_via",
+   "type": "string",
+   "description": "Tipo de Via de Circulação",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "tipo_valorvenal",
+   "type": "string",
+   "description": "Tipo do valor venal Lote",
+   "constraints": {
+    "maxLength": 3
+   },
+   "declaredType": "Char",
+   "declaredSize": 3
+  },
+  {
+   "name": "iluminacao_codigo",
+   "type": "number",
+   "description": "Código de Iluminação Pública",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "iluminacao_nome",
+   "type": "string",
+   "description": "Nome de Iluminação Pública",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "pavimentacao_codigo",
+   "type": "number",
+   "description": "Código de Pavimentação",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "pavimentacao_nome",
+   "type": "string",
+   "description": "Nome de Pavimentação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "emplacamento_codigo",
+   "type": "number",
+   "description": "Código informativo de emplacamento de identificação de vias de circulação",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "emplacamento_nome",
+   "type": "string",
+   "description": "Nome informativo de emplacamento de identificação de vias de criculação",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "coleta_codigo",
+   "type": "number",
+   "description": "Código identificação de tipo de coleta de lixo",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "coleta_nome",
+   "type": "string",
+   "description": "Nome de tipo de coleta de lixo",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "arborizacao_codigo",
+   "type": "number",
+   "description": "Código de identificação de arborização",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "arborizacao_nome",
+   "type": "string",
+   "description": "Descrição de arborização",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "redeagua_codigo",
+   "type": "number",
+   "description": "Código informativo de rede de água",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "redeagua_nome",
+   "type": "string",
+   "description": "Nome informativo de rede de água",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "limpeza_codigo",
+   "type": "number",
+   "description": "Código de identificação de tipo de limpeza",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "limpeza_nome",
+   "type": "string",
+   "description": "Nome do tipo de limpeza",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "esgoto_codigo",
+   "type": "number",
+   "description": "Código identificativo de rede de esgoto",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "esgoto_nome",
+   "type": "string",
+   "description": "Nome identificativo de rede de esgoto",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "redetelefone_codigo",
+   "type": "number",
+   "description": "Código identificativo de rede telefônica",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "redetelefone_nome",
+   "type": "string",
+   "description": "Nome identificativo de rede telefônica",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "guia_sarjeta_codigo",
+   "type": "number",
+   "description": "Código indicativo de Guia e Sarjeta",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "guia_sarjeta_nome",
+   "type": "string",
+   "description": "Nome indicativo de Guia e Sarjeta",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "galeriapluvial_codigo",
+   "type": "number",
+   "description": "Código identificativo de galeria pluvial",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "galeriapluvial_nome",
+   "type": "string",
+   "description": "Nome identificativo de galeria pluvial",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "redeeletrica_codigo",
+   "type": "number",
+   "description": "Código identificativo de rede elétrica",
+   "declaredType": "Num",
+   "declaredSize": 10
+  },
+  {
+   "name": "redeeletrica_nome",
+   "type": "string",
+   "description": "Nome identificativo de rede elétrica",
+   "constraints": {
+    "maxLength": 50
+   },
+   "declaredType": "Char",
+   "declaredSize": 50
+  },
+  {
+   "name": "geometry",
+   "type": "any",
+   "description": "Dados Geométricos da Face de Quadra",
+   "declaredType": "Geometry",
+   "mappingNote": "geometry: not checked"
+  }
+ ],
+ "x5ltep": {
+  "status": "suggested",
+  "source": {
+   "kind": "pdf",
+   "stage": "deterministic",
+   "dictionary_id": "59ffe79c-dc6f-4e01-84e2-946bea78d0f5",
+   "dictionary_name": "Dicionario de dados de Face de Quadra",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/1702c764-ec7a-4ef0-9861-8acd0e40c819/resource/59ffe79c-dc6f-4e01-84e2-946bea78d0f5/download/dicionario-de-dados-de-face-de-quadra.pdf",
+   "sha256": "2a8aec8c09e91897829c9f97b85b209f3221a04c07f7e611377b76d7a6ede9ce",
+   "oracle": {
+    "recall": 0.1282,
+    "precision": 0.1389,
+    "exact_match": 0.1282,
+    "levenshtein": 0.4894,
+    "missing_from_pdf": [
+     "cod_emplacamento",
+     "codarborizacao",
+     "codbairro",
+     "codcoleta",
+     "codgaleriapluviais",
+     "codguiasesarjetas",
+     "codiluminacao",
+     "codlimpezaurbana",
+     "codlogradouro",
+     "codpavimentacao",
+     "codredeagua",
+     "codredeeletrica",
+     "codredesgoto",
+     "codredetelefonica",
+     "desc_emplacamento",
+     "descarborizacao",
+     "desccoleta",
+     "descgaleriapluviais",
+     "descguiasesarjetas",
+     "desciluminacao",
+     "desclimpezaurbana",
+     "descpavimentacao",
+     "descredeagua",
+     "descredeeletrica",
+     "descredesgoto",
+     "descredetelefonica",
+     "dsqf",
+     "municipio",
+     "nome_logradouro_completo",
+     "nome_logradouro_concatenado",
+     "nome_oficial_logradouro",
+     "nomebairro",
+     "uf",
+     "valor_v0"
+    ],
+    "not_in_file": [
+     "arborizacao_codigo",
+     "arborizacao_nome",
+     "bairro_codigo",
+     "bairro_nome",
+     "coleta_codigo",
+     "coleta_nome",
+     "concatenacao",
+     "emplacamento_codigo",
+     "emplacamento_nome",
+     "esgoto_codigo",
+     "esgoto_nome",
+     "galeriapluvial_codigo",
+     "galeriapluvial_nome",
+     "geometry",
+     "guia_sarjeta_codigo",
+     "guia_sarjeta_nome",
+     "iluminacao_codigo",
+     "iluminacao_nome",
+     "limpeza_codigo",
+     "limpeza_nome",
+     "logradouro_codigo",
+     "pavimentacao_codigo",
+     "pavimentacao_nome",
+     "redeagua_codigo",
+     "redeagua_nome",
+     "redeeletrica_codigo",
+     "redeeletrica_nome",
+     "redetelefone_codigo",
+     "redetelefone_nome",
+     "tipo_valorvenal",
+     "tipo_via"
+    ]
+   }
+  }
+ }
+}

@@ -121,18 +121,19 @@
   "source": {
    "kind": "pdf",
    "stage": "deterministic",
-   "dictionary_id": "44072699-94a7-4280-9462-b80ddd052b30",
+   "dictionary_id": "52625e8b-198e-47cf-bf3c-ccfbb3cc7265",
    "dictionary_name": "Dicionário de Dados - Processos de Aquisições de Bens e Serviços - COVID19",
-   "url": "https://dados.recife.pe.gov.br:443/dataset/e98a1225-a33f-486e-b3cc-196c7457f1d9/resource/44072699-94a7-4280-9462-b80ddd052b30/download/dicionario-de-dados-processos-de-aquisicoes-de-bens-e-servicos-covid19.pdf",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/599b6a5c-e8ff-41ea-8f48-5d916179ee25/resource/52625e8b-198e-47cf-bf3c-ccfbb3cc7265/download/dicionario-de-dados-processos-de-aquisicoes-de-bens-e-servicos-covid19.pdf",
    "sha256": "7afde6efab2828a625e41d551a4486c79ff04a445f3a49323e3c1dc458d2c25d",
    "oracle": {
     "recall": 1.0,
-    "precision": 0.9231,
+    "precision": 0.8462,
     "exact_match": 1.0,
     "levenshtein": 1.0,
     "missing_from_pdf": [],
     "not_in_file": [
-     "Inexigibilidade"
+     "Inexigibilidade",
+     "arquivo_situacao"
     ]
    }
   }
