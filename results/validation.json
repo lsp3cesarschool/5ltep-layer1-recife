@@ -52010,9 +52010,9 @@
  },
  "a72e7175-8fcd-40bd-82ef-056a621a6165": {
   "dataset": "contratos",
-  "checked_at": "2026-10-03T16:07:35+00:00",
-  "schema_kind": "datastore",
-  "schema_fingerprint": "462e94b2d6639bab",
+  "checked_at": "2026-10-12T11:30:42+00:00",
+  "schema_kind": "extracted",
+  "schema_fingerprint": "adb81f7e9a413057",
   "ckan": {
    "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/a72e7175-8fcd-40bd-82ef-056a621a6165/download/contratos.csv",
    "last_modified": "2026-03-02T14:28:58.147563",
@@ -52020,20 +52020,24 @@
   },
   "host": "dados.recife.pe.gov.br",
   "timing": {
-   "first_byte_s": 0.81,
-   "download_s": 2.36,
-   "network_s": 1.54
+   "first_byte_s": 3.39,
+   "download_s": 5.7,
+   "network_s": 2.3
   },
   "first_seen": "2026-10-03T16:07:35+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T16:07:35+00:00",
-  "seconds": 2.9,
+  "validated_at": "2026-10-12T11:30:42+00:00",
+  "seconds": 6.7,
   "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
   "bytes": 3675647,
   "kind": "csv",
@@ -52121,7 +52125,7 @@
    "valorcontrato2",
    "situacaocontrato"
   ],
-  "reason": "new"
+  "reason": "schema"
  },
  "145f5c46-10ea-4c02-ba26-21333ded8ae9": {
   "dataset": "contratos",
@@ -52214,9 +52218,9 @@
  },
  "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859": {
   "dataset": "contratos",
-  "checked_at": "2026-10-03T16:07:38+00:00",
-  "schema_kind": "datastore",
-  "schema_fingerprint": "e5c94888d140d3d9",
+  "checked_at": "2026-10-12T11:30:43+00:00",
+  "schema_kind": "extracted",
+  "schema_fingerprint": "adb81f7e9a413057",
   "ckan": {
    "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/acb67bb7-7cdb-4ffc-96ab-7aeedd13e859/download/apostilamento-dos-contratos.csv",
    "last_modified": "2026-03-02T14:29:15.409424",
@@ -52224,20 +52228,24 @@
   },
   "host": "dados.recife.pe.gov.br",
   "timing": {
-   "first_byte_s": 1.19,
-   "download_s": 1.39,
-   "network_s": 0.2
+   "first_byte_s": 0.92,
+   "download_s": 1.13,
+   "network_s": 0.21
   },
   "first_seen": "2026-10-03T16:07:38+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T16:07:38+00:00",
-  "seconds": 1.5,
+  "validated_at": "2026-10-12T11:30:43+00:00",
+  "seconds": 1.3,
   "sha256": "49eefd42185ffd97c789e9de92ff9d7441660cf9ef7bbc2d85f74c3da7c6c826",
   "bytes": 755638,
   "kind": "csv",
@@ -52265,17 +52273,39 @@
     "csv"
    ],
    "conformance": {
-    "declared_fields": 10,
-    "missing": [],
-    "undeclared": [],
+    "declared_fields": 20,
+    "missing": [
+     "anocontrato",
+     "bairroendcontratado",
+     "cidadeendcontratado",
+     "complementoendcontratado",
+     "datafimvigencia",
+     "datainiciovigencia",
+     "estadoendcontratado",
+     "logradouroendcontratado",
+     "numerocontrato",
+     "numeroendcontratado",
+     "origemcontrato",
+     "sequencialcompra",
+     "situacaocontrato",
+     "valorcontrato1",
+     "valorcontrato2"
+    ],
+    "undeclared": [
+     "num_apostilamento",
+     "num_contrato",
+     "situacao_apostilamento",
+     "tipo_apostilamento",
+     "valor_apostilamento"
+    ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 22350,
+    "cells_checked": 11175,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
     "inferred_formats": {},
-    "pass": true
+    "pass": false
    }
   },
   "header": [
@@ -52290,7 +52320,7 @@
    "valor_apostilamento",
    "situacao_apostilamento"
   ],
-  "reason": "new"
+  "reason": "schema"
  },
  "e016ea66-8bd1-4aec-bda1-afafa56017ed": {
   "dataset": "contratos-de-gestao",
