@@ -1,1 +1,14 @@
-[]
+[
+ {
+  "id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+  "dataset": "contratos",
+  "reason": "schema",
+  "since": "2026-10-03T16:07:35+00:00"
+ },
+ {
+  "id": "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859",
+  "dataset": "contratos",
+  "reason": "schema",
+  "since": "2026-10-03T16:07:38+00:00"
+ }
+]

@@ -4,7 +4,7 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-05T10:45:39+00:00",
+ "generated_at": "2026-10-12T11:13:15+00:00",
  "datasets": [
   {
    "name": "abrigos-temporarios-disponiveis",
@@ -39047,7 +39047,7 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-10-05T10:45:39+00:00",
+  "probed_at": "2026-10-12T11:13:15+00:00",
   "by_host": {
    "dados.recife.pe.gov.br": [
     {
