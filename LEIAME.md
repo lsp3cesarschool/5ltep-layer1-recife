@@ -1,4 +1,4 @@
-# 5LTEP-L1 · Instância Recife (experimento de controle)
+# 5LTEP-L1 · Instância Recife (aplicação em outro contexto)
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/tests.yml) [![Camada 1](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1-recife%2Fmain%2Fdocs%2Fdata%2Fstatus.pt.json)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/layer1.yml) [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.svg)](LICENSE)
 
@@ -6,7 +6,7 @@
 
 **A Camada 1 (contratos estruturais) do 5L-TEP aplicada ao portal de dados abertos da Prefeitura do
 Recife: uma segunda instância de [5ltep-layer1](https://github.com/lsp3cesarschool/5ltep-layer1),
-montada pelo autor como caso de controle do estudo do IBAMA, num portal municipal.**
+montada pelo autor como aplicação do mesmo sistema em outro contexto, num portal municipal.**
 
 | Recurso | O que você encontra |
 |---|---|
@@ -14,7 +14,7 @@ montada pelo autor como caso de controle do estudo do IBAMA, num portal municipa
 | 🔀 **Deriva de esquema** | [![issues de deriva](https://img.shields.io/github/issues/lsp3cesarschool/5ltep-layer1-recife/layer1?label=issues%20de%20deriva&color=0366d6)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/issues?q=is%3Aissue+label%3Alayer1) |
 | 🧑‍⚖️ **Esquemas sugeridos** | [pull requests](https://github.com/lsp3cesarschool/5ltep-layer1-recife/pulls?q=is%3Apr+schemas+suggested) com esquemas extraídos de dicionários em PDF, aguardando uma pessoa |
 | 🏛️ **Instância principal** | [5ltep-layer1](https://github.com/lsp3cesarschool/5ltep-layer1): IBAMA, e a documentação completa |
-| 🔁 **Outro controle** | [5ltep-layer1-aneel](https://github.com/lsp3cesarschool/5ltep-layer1-aneel): o portal da ANEEL |
+| 🔁 **Outra aplicação** | [5ltep-layer1-aneel](https://github.com/lsp3cesarschool/5ltep-layer1-aneel): o portal da ANEEL |
 
 > **Situação: demonstração de pesquisa.** Este repositório não é operado, afiliado nem endossado pela
 > Prefeitura do Recife nem pela EMPREL; ele só lê os dados abertos da cidade. Mostra que a ferramenta
@@ -29,7 +29,9 @@ confiar num arquivo, o que ele deveria conter e se contém. Esta instância lê 
 portal publica, liga cada um aos arquivos que descreve e verifica cada CSV publicado contra o seu
 esquema, semana após semana.
 
-## Por que um experimento de controle
+## Por que aplicar o sistema em outro contexto
+
+Esta instância demonstra a reutilização do mesmo sistema em outro contexto e permite avaliar os limites dessa transferência.
 
 A ferramenta da Camada 1 foi construída sobre o portal do IBAMA, um órgão federal. O Recife é um
 município, com outra equipe, outros hábitos e outro modelo de documentação. Este repositório roda **o
@@ -58,8 +60,8 @@ Conforme observado ao montar esta instância (01/10/2026); o painel tem os núme
 | `portal.json` | `portal_url` = `https://dados.recife.pe.gov.br` |
 | `README.md`, `LEIAME.md`, `CITATION.cff` | este texto e a citação deste repositório |
 
-Todo o resto é o código de `5ltep-layer1` no commit `8bddff6`
-([8bddff6b86a1ca9b60c2e6cd7a23a3e9d7fbe0b3](https://github.com/lsp3cesarschool/5ltep-layer1/commit/8bddff6b86a1ca9b60c2e6cd7a23a3e9d7fbe0b3)).
+Todo o resto é o código de `5ltep-layer1` no commit `273d079`
+([273d0794e8ea20b98e89fb980908b6f217f9f768](https://github.com/lsp3cesarschool/5ltep-layer1/commit/273d0794e8ea20b98e89fb980908b6f217f9f768)).
 
 ## Rodando, e adaptando de novo
 
