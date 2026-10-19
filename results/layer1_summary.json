@@ -5,8 +5,8 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-12T11:31:20+00:00",
- "census_at": "2026-10-12T11:13:15+00:00",
+ "generated_at": "2026-10-19T09:31:51+00:00",
+ "census_at": "2026-10-19T09:13:07+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -37,15 +37,15 @@
   }
  },
  "tables": {
-  "total": 1076,
+  "total": 1078,
   "by_level": {
    "0": 93,
    "1": 3,
    "2": 160,
    "3": 453,
-   "4": 367
+   "4": 369
   },
-  "validated": 1076,
+  "validated": 1078,
   "validation_coverage": 1.0,
   "errors": 0,
   "queue_remaining": 0,
@@ -53,7 +53,7 @@
   "size_unknown": 0,
   "by_format": {
    "csv": {
-    "files": 1008,
+    "files": 1010,
     "gb": 24.06,
     "size_unknown": 0
    },
@@ -82,20 +82,20 @@
   "queue_largest": []
  },
  "schema_sources": {
-  "datastore": 202,
-  "declared": 775,
+  "datastore": 201,
+  "declared": 778,
   "extracted": 3
  },
  "conformance_by_source": {
   "datastore": {
-   "verifiable": 202,
-   "conformant": 182,
-   "l1_rate": 0.901
+   "verifiable": 201,
+   "conformant": 181,
+   "l1_rate": 0.9005
   },
   "declared": {
-   "verifiable": 775,
-   "conformant": 231,
-   "l1_rate": 0.2981
+   "verifiable": 778,
+   "conformant": 234,
+   "l1_rate": 0.3008
   },
   "extracted": {
    "verifiable": 3,
@@ -103,20 +103,20 @@
    "l1_rate": 0.0
   }
  },
- "verifiable": 980,
- "conformant": 413,
- "l1_rate": 0.4214,
+ "verifiable": 982,
+ "conformant": 415,
+ "l1_rate": 0.4226,
  "l1_pass": false,
  "drift": {
   "observed": 0,
-  "declared": 0,
-  "files_with_baseline": 1070,
+  "declared": 1,
+  "files_with_baseline": 1073,
   "first_baseline_at": "2026-10-03T15:47:02+00:00",
-  "last_observed_at": "2026-10-12T11:30:43+00:00"
+  "last_observed_at": "2026-10-19T09:31:10+00:00"
  },
  "coverage": {
-  "files": 1076,
-  "read": 1076,
+  "files": 1078,
+  "read": 1078,
   "empty": 0,
   "not_tabular": 0,
   "too_large": 0,
@@ -125,8 +125,8 @@
   "not_downloaded_by_reason": {},
   "not_downloaded_by_host": {},
   "read_without_schema": 96,
-  "checked": 980,
-  "conform": 413,
+  "checked": 982,
+  "conform": 415,
   "fail_missing_fields": 297,
   "fail_undeclared_columns": 413,
   "fail_cells_over_limit": 367,
@@ -231,30 +231,30 @@
  },
  "network": {
   "total": {
-   "files": 1076,
+   "files": 1078,
    "failed_files": 0,
    "gb": 42.77,
-   "minutes": 149.2,
-   "end_to_end_mb_s": 4.78,
+   "minutes": 149.4,
+   "end_to_end_mb_s": 4.77,
    "zip_download_mb_s": 11.31,
    "first_byte_s_median": 1.27,
    "network_share": 0.379,
-   "network_mb_s": 12.61,
+   "network_mb_s": 12.6,
    "request_failures": {
     "HTTP 503": 34
    }
   },
   "by_host": {
    "dados.recife.pe.gov.br": {
-    "files": 1076,
+    "files": 1078,
     "failed_files": 0,
     "gb": 42.77,
-    "minutes": 149.2,
-    "end_to_end_mb_s": 4.78,
+    "minutes": 149.4,
+    "end_to_end_mb_s": 4.77,
     "zip_download_mb_s": 11.31,
     "first_byte_s_median": 1.27,
     "network_share": 0.379,
-    "network_mb_s": 12.61,
+    "network_mb_s": 12.6,
     "request_failures": {
      "HTTP 503": 34
     }
@@ -279,25 +279,25 @@
    },
    "pdf_link_not_a_pdf": 0,
    "unreachable": 0,
-   "orphans": 149,
+   "orphans": 148,
    "declaring_resource_ids": 294,
-   "broken_declared_links": 290,
+   "broken_declared_links": 289,
    "naming_another_dataset": 50
   },
   "links": {
-   "tables": 1089,
+   "tables": 1091,
    "by_method": {
     "header": 706,
-    "none": 275,
+    "none": 274,
     "name": 91,
-    "declared-id": 17
+    "declared-id": 20
    },
    "fields_listed_in_description": 0
   },
   "types": {
-   "fields_declared": 15024,
+   "fields_declared": 15028,
    "distinct_spellings": 26,
-   "fields_with_recognised_type": 0.6495,
+   "fields_with_recognised_type": 0.6496,
    "unrecognised_spellings": [
     "",
     "NUMEBR",
@@ -307,28 +307,28 @@
    "top_spellings": {
     "Num": 7331,
     "": 5253,
-    "Char": 1606,
+    "Char": 1608,
     "CHAR": 226,
     "NUMBER": 132,
     "char": 78,
     "DATETIME": 62,
-    "Date": 50,
+    "Date": 49,
     "date": 49,
     "Number": 41,
     "String": 39,
     "Data": 38,
-    "Integer": 28,
+    "Integer": 31,
     "num": 21,
     "Json": 17
    },
-   "date_fields": 218,
-   "date_fields_with_declared_format": 0.0367
+   "date_fields": 217,
+   "date_fields_with_declared_format": 0.0369
   },
   "files_vs_dictionaries": {
-   "checked": 980,
+   "checked": 982,
    "with_declared_fields_missing": 297,
    "with_undeclared_columns": 413,
-   "with_spelling_differences": 134,
+   "with_spelling_differences": 137,
    "with_similar_names": 170,
    "similar_names": 316,
    "declared_fields_missing": 2472,
@@ -348,14 +348,14 @@
    "results_copied": 0
   },
   "files": {
-   "validated": 1076,
+   "validated": 1078,
    "encodings": {
-    "utf-8": 1010,
+    "utf-8": 1012,
     "cp1252": 35,
     "utf-8-sig": 2
    },
    "delimiters": {
-    ";": 1015,
+    ";": 1017,
     ",": 26,
     "\t": 6
    },
@@ -366,7 +366,7 @@
    "not_tabular": 0,
    "not_tables": 13,
    "formats": {
-    "csv": 1035,
+    "csv": 1037,
     "xlsx": 15,
     "json": 9,
     "xml": 13,
@@ -399,11 +399,11 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-10-12T11:13:15+00:00",
+   "probed_at": "2026-10-19T09:13:07+00:00",
    "hosts": {
     "dados.recife.pe.gov.br": {
-     "linked": 1076,
-     "files": 1076,
+     "linked": 1078,
+     "files": 1078,
      "served_by": [
       "ckan-storage-download.app.emprel.gov.br"
      ],
@@ -414,13 +414,13 @@
      "range": "ignored",
      "with_etag": 0,
      "with_last_modified": 0,
-     "without_validator": 1076,
+     "without_validator": 1078,
      "without_length": 0,
-     "of": 1076,
-     "generic_type": 1076,
-     "typed": 1076,
+     "of": 1078,
+     "generic_type": 1078,
+     "typed": 1078,
      "content_types": {
-      "application/octet-stream": 1076
+      "application/octet-stream": 1078
      },
      "broken_links": 0,
      "redirect_loops": 0
@@ -436,14 +436,14 @@
     {
      "id": "validators",
      "host": "dados.recife.pe.gov.br",
-     "n": 1076,
-     "of": 1076
+     "n": 1078,
+     "of": 1078
     },
     {
      "id": "media-type",
      "host": "dados.recife.pe.gov.br",
-     "n": 1076,
-     "of": 1076,
+     "n": 1078,
+     "of": 1078,
      "types": [
       "application/octet-stream"
      ]
@@ -911,10 +911,10 @@
   {
    "name": "conecta-recife",
    "level": 3,
-   "tables": 2,
-   "verifiable": 2,
-   "conformant": 1,
-   "l1_rate": 0.5
+   "tables": 4,
+   "verifiable": 4,
+   "conformant": 3,
+   "l1_rate": 0.75
   },
   {
    "name": "conjuntos-habitacionais",
