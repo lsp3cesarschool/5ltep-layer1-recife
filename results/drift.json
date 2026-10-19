@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "id": "4a3897b6100096a4",
+  "kind": "declared",
+  "schema_kind": "datastore",
+  "dataset": "conecta-recife",
+  "resource_id": "6e5b6c56-c02e-4d3d-a308-99f47e7ccf69",
+  "resource_name": null,
+  "changes": {
+   "fields_removed": [
+    "codigo",
+    "ano_mes",
+    "nome_unidade",
+    "bairro",
+    "regiao",
+    "rpa",
+    "circuito",
+    "qtd_acesso"
+   ],
+   "schema_removed": true
+  }
+ }
+]

@@ -4,7 +4,7 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-12T11:13:15+00:00",
+ "generated_at": "2026-10-19T09:13:07+00:00",
  "datasets": [
   {
    "name": "abrigos-temporarios-disponiveis",
@@ -13037,8 +13037,8 @@
    "title": "Conecta Recife Wifi",
    "organization": "Emprel",
    "url": "https://dados.recife.pe.gov.br/dataset/conecta-recife",
-   "metadata_modified": "2026-09-15T13:33:31.878608",
-   "resources_total": 4,
+   "metadata_modified": "2026-10-16T19:11:10.504945",
+   "resources_total": 6,
    "dictionaries": [
     {
      "id": "699f6f20-ca05-4df7-88ec-415eabea4026",
@@ -13077,13 +13077,13 @@
      ]
     },
     {
-     "id": "c898c598-7f79-4234-822d-5198ca03d653",
-     "name": "Metadados dos acessos ao Conecta Recife",
+     "id": "84f36c5e-8ba2-4e12-92fa-96727681c833",
+     "name": "Metadados do Registro de Acessos ao Conecta WIFI",
      "format": "JSON",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/c898c598-7f79-4234-822d-5198ca03d653/download/metadados-dos-acessos-ao-conecta-recife.json",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/84f36c5e-8ba2-4e12-92fa-96727681c833/download/metadados-registros-acessos-conecta-wifi.json",
      "kind": "machine",
-     "sha256": "c0d37369d10796fa08bd2e358e0cb48d4bc6314763abf4b004b790885dbd288d",
-     "bytes": 1841,
+     "sha256": "f30024c75c696fdeac29aad6394568b877ad8502810fa3e50a63d335645f0713",
+     "bytes": 3611,
      "readable": true,
      "reader": "json",
      "error": null,
@@ -13091,25 +13091,26 @@
      "parts": [
       {
        "label": "metadados.campos",
-       "fields": 3
+       "fields": 7
       }
      ],
      "declared_resource_ids": [
-      "3631ff70-9398-4497-841d-9ef1ef26e350",
-      "178bbe55-ec57-4464-998e-ead830dc830f"
+      "ef74f73d-706d-435e-9c56-119a81c595d0",
+      "3c65b47b-696c-46d2-a6b9-59d0e9ec923a",
+      "ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7"
      ],
      "type_spellings": {
-      "Date": 1,
-      "Char": 2
+      "Integer": 3,
+      "Char": 4
      },
      "unmapped_types": [],
      "fields_untyped": 0,
-     "date_fields": 1,
+     "date_fields": 0,
      "date_fields_with_format": 0,
-     "linked_resources": [],
-     "broken_declared_links": [
-      "3631ff70-9398-4497-841d-9ef1ef26e350",
-      "178bbe55-ec57-4464-998e-ead830dc830f"
+     "linked_resources": [
+      "3c65b47b-696c-46d2-a6b9-59d0e9ec923a",
+      "ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7",
+      "ef74f73d-706d-435e-9c56-119a81c595d0"
      ]
     }
    ],
@@ -13137,20 +13138,69 @@
      "level": 3
     },
     {
-     "id": "6e5b6c56-c02e-4d3d-a308-99f47e7ccf69",
-     "name": "Registro de Acessos do Conecta Wi-fi - Agosto 2026",
+     "id": "ef74f73d-706d-435e-9c56-119a81c595d0",
+     "name": "Registro de Acessos do Conecta WIFI - 2024",
      "format": "CSV",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/6e5b6c56-c02e-4d3d-a308-99f47e7ccf69/download/conecta_wifi_acessos_2026-08.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/ef74f73d-706d-435e-9c56-119a81c595d0/download/conecta_wifi_acessos_2024.csv",
      "candidate": "csv",
-     "last_modified": "2026-09-15T13:33:31.848050",
-     "size": 29999,
+     "last_modified": "2026-10-15T16:41:44.506924",
+     "size": 193561,
      "attached": false,
      "datastore": {
-      "fields": 8,
+      "fields": 7,
       "typed": true
      },
      "described": 0,
-     "link": null,
+     "link": {
+      "dictionary": "84f36c5e-8ba2-4e12-92fa-96727681c833",
+      "part": 0,
+      "method": "declared-id",
+      "score": 1.0
+     },
+     "level": 3
+    },
+    {
+     "id": "3c65b47b-696c-46d2-a6b9-59d0e9ec923a",
+     "name": "Registro de Acessos do Conecta WIFI - 2025",
+     "format": "CSV",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/3c65b47b-696c-46d2-a6b9-59d0e9ec923a/download/conecta_wifi_acessos_2025.csv",
+     "candidate": "csv",
+     "last_modified": "2026-10-15T16:47:46.279871",
+     "size": 319962,
+     "attached": false,
+     "datastore": {
+      "fields": 7,
+      "typed": true
+     },
+     "described": 0,
+     "link": {
+      "dictionary": "84f36c5e-8ba2-4e12-92fa-96727681c833",
+      "part": 0,
+      "method": "declared-id",
+      "score": 1.0
+     },
+     "level": 3
+    },
+    {
+     "id": "ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7",
+     "name": "Registro de Acessos do Conecta WIFI - 2026",
+     "format": "CSV",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7/download/conecta_wifi_acessos_2026.csv",
+     "candidate": "csv",
+     "last_modified": "2026-10-15T17:08:12.821345",
+     "size": 268351,
+     "attached": false,
+     "datastore": {
+      "fields": 7,
+      "typed": true
+     },
+     "described": 0,
+     "link": {
+      "dictionary": "84f36c5e-8ba2-4e12-92fa-96727681c833",
+      "part": 0,
+      "method": "declared-id",
+      "score": 1.0
+     },
      "level": 3
     }
    ],
@@ -19677,9 +19727,9 @@
   {
    "name": "licenciamento-ambiental",
    "title": "Licenciamento Ambiental",
-   "organization": "Secretaria de Meio Ambiente e Sustentabilidade",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/licenciamento-ambiental",
-   "metadata_modified": "2026-06-17T11:58:42.548491",
+   "metadata_modified": "2026-10-15T12:15:31.382822",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -19726,7 +19776,7 @@
    "title": "Licenciamento Sanitário",
    "organization": "Secretaria de Saúde",
    "url": "https://dados.recife.pe.gov.br/dataset/licenciamento-sanitario",
-   "metadata_modified": "2026-06-17T11:59:37.053223",
+   "metadata_modified": "2026-10-14T14:44:45.750219",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -19771,9 +19821,9 @@
   {
    "name": "licenciamento-urbanistico",
    "title": "Licenciamento Urbanístico",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/licenciamento-urbanistico",
-   "metadata_modified": "2026-06-17T11:59:59.062103",
+   "metadata_modified": "2026-10-14T14:46:47.175528",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -39047,7 +39097,7 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-10-12T11:13:15+00:00",
+  "probed_at": "2026-10-19T09:13:07+00:00",
   "by_host": {
    "dados.recife.pe.gov.br": [
     {

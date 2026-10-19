@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "ano_mes",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "nome_unidade",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "bairro",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "regiao",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "rpa",
+   "type": "number",
+   "declaredType": "numeric"
+  },
+  {
+   "name": "circuito",
+   "type": "string",
+   "declaredType": "text"
+  },
+  {
+   "name": "qtd_acessos",
+   "type": "number",
+   "declaredType": "numeric"
+  }
+ ],
+ "x5ltep": {
+  "status": "datastore",
+  "source": {
+   "kind": "datastore"
+  }
+ }
+}

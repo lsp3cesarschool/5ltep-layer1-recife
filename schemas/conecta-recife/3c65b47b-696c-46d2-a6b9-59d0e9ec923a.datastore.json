@@ -1,14 +1,9 @@
 {
  "fields": [
   {
-   "name": "codigo",
+   "name": "ano_mes",
    "type": "number",
    "declaredType": "numeric"
-  },
-  {
-   "name": "ano_mes",
-   "type": "string",
-   "declaredType": "text"
   },
   {
    "name": "nome_unidade",
@@ -32,11 +27,11 @@
   },
   {
    "name": "circuito",
-   "type": "string",
-   "declaredType": "text"
+   "type": "number",
+   "declaredType": "numeric"
   },
   {
-   "name": "qtd_acesso",
+   "name": "qtd_acessos",
    "type": "number",
    "declaredType": "numeric"
   }

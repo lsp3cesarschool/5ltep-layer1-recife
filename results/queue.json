@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "id": "ef74f73d-706d-435e-9c56-119a81c595d0",
+  "dataset": "conecta-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3c65b47b-696c-46d2-a6b9-59d0e9ec923a",
+  "dataset": "conecta-recife",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7",
+  "dataset": "conecta-recife",
+  "reason": "new",
+  "since": ""
+ }
+]
