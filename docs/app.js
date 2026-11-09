@@ -5,6 +5,7 @@
 
 const I18N = {
   en: {
+    cupim: "← CUPIM platform",
     back: "← Back to the repository", eyebrow: "5L-TEP · Layer 1 · Structural Contracts", loading: "Loading…",
     run: "Run Layer 1 now ↗", issues: "Drift issues ↗", prs: "Suggested schemas ↗",
     maturity_h: "Schema maturity", findings_h: "Documentation findings", datasets_h: "Datasets",
@@ -120,6 +121,7 @@ const I18N = {
     footer: "Method: {m}. Summary for Layer 5:",
   },
   pt: {
+    cupim: "← Plataforma CUPIM",
     back: "← Voltar ao repositório", eyebrow: "5L-TEP · Camada 1 · Contratos Estruturais", loading: "Carregando…",
     run: "Rodar a Camada 1 agora ↗", issues: "Issues de deriva ↗", prs: "Esquemas sugeridos ↗",
     maturity_h: "Maturidade do esquema", findings_h: "Achados de documentação", datasets_h: "Conjuntos de dados",
@@ -266,6 +268,7 @@ function repo() {
 }
 
 function translatePage() {
+  document.getElementById("cupim-link").href = `https://5ltep-cupim.github.io/?lang=${LANG}`;
   document.documentElement.lang = LANG === "pt" ? "pt-BR" : "en";
   document.querySelectorAll("[data-i18n]").forEach((n) => { n.textContent = t(n.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((n) => { n.placeholder = t(n.dataset.i18nPlaceholder); });

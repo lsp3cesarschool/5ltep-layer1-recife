@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/tests.yml) [![Camada 1](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1-recife%2Fmain%2Fdocs%2Fdata%2Fstatus.pt.json)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/layer1.yml) [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.svg)](LICENSE)
 
-[English](README.md) · **Português**
+[← Plataforma CUPIM](https://5ltep-cupim.github.io/?lang=pt) · [English](README.md) · **Português**
 
 **A Camada 1 (contratos estruturais) do 5L-TEP aplicada ao portal de dados abertos da Prefeitura do
 Recife: uma segunda instância de [5ltep-layer1](https://github.com/lsp3cesarschool/5ltep-layer1),

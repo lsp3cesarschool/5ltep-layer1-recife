@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/tests.yml) [![Layer 1](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1-recife%2Fmain%2Fdocs%2Fdata%2Fstatus.json)](https://github.com/lsp3cesarschool/5ltep-layer1-recife/actions/workflows/layer1.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**English** · [Português](LEIAME.md)
+[← CUPIM platform](https://5ltep-cupim.github.io/?lang=en) · **English** · [Português](LEIAME.md)
 
 **5L-TEP Layer 1 (structural contracts) applied to the open data portal of the City of Recife, Brazil:
 a second instance of [5ltep-layer1](https://github.com/lsp3cesarschool/5ltep-layer1), set up by the
