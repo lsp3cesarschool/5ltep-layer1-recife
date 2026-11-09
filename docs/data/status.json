@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
  "label": "Layer 1",
- "message": "running · 452 files left to check",
- "color": "blue"
+ "message": "done 2026-11-09 · 415/982 files conform",
+ "color": "brightgreen"
 }
