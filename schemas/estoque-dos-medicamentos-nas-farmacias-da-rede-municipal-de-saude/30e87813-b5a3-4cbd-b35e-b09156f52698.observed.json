@@ -13,7 +13,7 @@
   {
    "name": "classe",
    "type": "string",
-   "sampleEmptyShare": 0.3308
+   "sampleEmptyShare": 0.3344
   },
   {
    "name": "apresentacao",
@@ -38,7 +38,7 @@
   {
    "name": "cadum",
    "type": "integer",
-   "sampleEmptyShare": 0.0462
+   "sampleEmptyShare": 0.048
   },
   {
    "name": "quantidade",
@@ -48,8 +48,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T16:17:47+00:00",
-  "sha256": "0f11978e495e811dc836b86dc18102a1bb8061b05ea296380c5a21ade9b9d7de",
+  "observed_at": "2026-11-09T12:37:11+00:00",
+  "sha256": "de47bd94825289d7fe98ec87a3ec063899e633ddd311e9902d4a7220efd31f61",
   "encoding": "utf-8",
   "delimiter": ",",
   "sample_rows": 5000,

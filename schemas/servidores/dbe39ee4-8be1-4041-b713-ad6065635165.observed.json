@@ -138,7 +138,7 @@
   {
    "name": "dslserdesligamento",
    "type": "string",
-   "sampleEmptyShare": 0.9622
+   "sampleEmptyShare": 0.9374
   },
   {
    "name": "aslserjornadamensal",
@@ -148,7 +148,7 @@
   {
    "name": "esalseinstrucao",
    "type": "string",
-   "sampleEmptyShare": 0.0058
+   "sampleEmptyShare": 0.006
   },
   {
    "name": "esalsegenero",
@@ -178,8 +178,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T17:23:12+00:00",
-  "sha256": "dfbb0f8d9b73a7e44999db50add17550cf30dd35e13a3c560b48b20d810e43a8",
+  "observed_at": "2026-11-09T13:11:06+00:00",
+  "sha256": "1f73b49c5973a0840e58c20867f2a4b05739dfd346a099fd3bff458286f18e1a",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

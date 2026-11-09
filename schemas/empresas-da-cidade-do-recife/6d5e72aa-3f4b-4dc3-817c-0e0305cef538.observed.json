@@ -13,7 +13,7 @@
   {
    "name": "nome_fantasia",
    "type": "string",
-   "sampleEmptyShare": 0.159
+   "sampleEmptyShare": 0.148
   },
   {
    "name": "cod_logradouro",
@@ -28,12 +28,12 @@
   {
    "name": "numero_residencia",
    "type": "string",
-   "sampleEmptyShare": 0.8004
+   "sampleEmptyShare": 0.798
   },
   {
    "name": "numero_lote",
    "type": "integer",
-   "sampleEmptyShare": 0.1676
+   "sampleEmptyShare": 0.1714
   },
   {
    "name": "cod_bairro",
@@ -132,8 +132,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T16:17:37+00:00",
-  "sha256": "c9c9234af5d3f456de7284780d75959421df18f446ce82f8211d755c5b36ae94",
+  "observed_at": "2026-11-09T12:36:55+00:00",
+  "sha256": "397bbed50a7b4cdf5c1dfe599d983182749541e9170517c481a8c04b19c3ac54",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

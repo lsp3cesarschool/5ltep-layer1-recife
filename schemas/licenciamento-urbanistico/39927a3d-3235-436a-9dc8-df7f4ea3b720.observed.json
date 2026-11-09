@@ -25,7 +25,7 @@
   {
    "name": "cnpj",
    "type": "string",
-   "sampleEmptyShare": 0.1496
+   "sampleEmptyShare": 0.1504
   },
   {
    "name": "data_conclusao",
@@ -37,7 +37,7 @@
    "name": "data_emissao_licenca",
    "type": "date",
    "format": "%Y-%m-%d",
-   "sampleEmptyShare": 0.7936
+   "sampleEmptyShare": 0.794
   },
   {
    "name": "data_entrada",
@@ -49,13 +49,13 @@
    "name": "data_pagamento",
    "type": "date",
    "format": "%Y-%m-%d",
-   "sampleEmptyShare": 0.6166
+   "sampleEmptyShare": 0.6162
   },
   {
    "name": "data_validade_licenca",
    "type": "date",
    "format": "%Y-%m-%d",
-   "sampleEmptyShare": 0.7936
+   "sampleEmptyShare": 0.794
   },
   {
    "name": "dsqfl",
@@ -71,7 +71,7 @@
    "falseValues": [
     "Não"
    ],
-   "sampleEmptyShare": 0.8568
+   "sampleEmptyShare": 0.8562
   },
   {
    "name": "endereco_empreendimento",
@@ -81,37 +81,37 @@
   {
    "name": "inscricao_mercantil",
    "type": "integer",
-   "sampleEmptyShare": 0.1496
+   "sampleEmptyShare": 0.1504
   },
   {
    "name": "licenciamento_ambiental",
    "type": "string",
-   "sampleEmptyShare": 0.0274
+   "sampleEmptyShare": 0.0276
   },
   {
    "name": "licenciamento_sanitario",
    "type": "string",
-   "sampleEmptyShare": 0.0274
+   "sampleEmptyShare": 0.0276
   },
   {
    "name": "licenciamento_urbanistico",
    "type": "string",
-   "sampleEmptyShare": 0.0274
+   "sampleEmptyShare": 0.0276
   },
   {
    "name": "razao_social",
    "type": "string",
-   "sampleEmptyShare": 0.1496
+   "sampleEmptyShare": 0.1504
   },
   {
    "name": "razao_social_mercantil",
    "type": "string",
-   "sampleEmptyShare": 0.1496
+   "sampleEmptyShare": 0.1504
   },
   {
    "name": "num_licenca",
    "type": "integer",
-   "sampleEmptyShare": 0.7368
+   "sampleEmptyShare": 0.7372
   },
   {
    "name": "num_processo",
@@ -141,7 +141,7 @@
   {
    "name": "tipo_mercantil",
    "type": "string",
-   "sampleEmptyShare": 0.028
+   "sampleEmptyShare": 0.0282
   },
   {
    "name": "tipo_processo",
@@ -156,35 +156,35 @@
   {
    "name": "uso_imovel",
    "type": "string",
-   "sampleEmptyShare": 0.0654
+   "sampleEmptyShare": 0.075
   },
   {
    "name": "valor_taxa",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.6166
+   "sampleEmptyShare": 0.6162
   },
   {
    "name": "valor_pago",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.6166
+   "sampleEmptyShare": 0.6162
   },
   {
    "name": "latitude",
    "type": "number",
-   "sampleEmptyShare": 0.1208
+   "sampleEmptyShare": 0.121
   },
   {
    "name": "longitude",
    "type": "number",
-   "sampleEmptyShare": 0.1208
+   "sampleEmptyShare": 0.121
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T16:26:50+00:00",
-  "sha256": "84b8ccd45940383373f21a1aadd06a27a515b12269ad951eaf907e56fc37c43c",
+  "observed_at": "2026-11-09T13:10:35+00:00",
+  "sha256": "d98f34b5cc15f3147a3461cb746e1454ab9f98958d3e74c2bae48102527ea950",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

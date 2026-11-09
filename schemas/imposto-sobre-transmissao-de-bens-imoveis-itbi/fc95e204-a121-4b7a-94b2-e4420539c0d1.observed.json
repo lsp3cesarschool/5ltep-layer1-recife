@@ -13,7 +13,7 @@
   {
    "name": "complemento",
    "type": "string",
-   "sampleEmptyShare": 0.0844
+   "sampleEmptyShare": 0.0822
   },
   {
    "name": "valor_avaliacao",
@@ -104,12 +104,12 @@
   {
    "name": "latitude",
    "type": "number",
-   "sampleEmptyShare": 0.3448
+   "sampleEmptyShare": 0.3578
   },
   {
    "name": "longitude",
    "type": "number",
-   "sampleEmptyShare": 0.3448
+   "sampleEmptyShare": 0.3578
   },
   {
    "name": "ano",
@@ -119,8 +119,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T16:25:51+00:00",
-  "sha256": "f190cf51283401b86d13abf9c948b2f691deee7ccf1bfa5591756a4034f4e4c6",
+  "observed_at": "2026-11-09T12:55:34+00:00",
+  "sha256": "dbc931e7aad7b712705908da7aee317ed3f7d37d3801abe7d84293570563460d",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

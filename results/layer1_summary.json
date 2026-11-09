@@ -5,8 +5,8 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-19T09:31:51+00:00",
- "census_at": "2026-10-19T09:13:07+00:00",
+ "generated_at": "2026-11-09T16:05:25+00:00",
+ "census_at": "2026-11-09T12:04:10+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -23,7 +23,7 @@
   "copies_once": 0
  },
  "environment": {
-  "python": "3.11.17"
+  "python": "3.11.18"
  },
  "datasets": {
   "total": 223,
@@ -31,8 +31,8 @@
   "by_level": {
    "0": 22,
    "1": 3,
-   "2": 40,
-   "3": 82,
+   "2": 41,
+   "3": 81,
    "4": 56
   }
  },
@@ -41,20 +41,20 @@
   "by_level": {
    "0": 93,
    "1": 3,
-   "2": 160,
-   "3": 453,
+   "2": 161,
+   "3": 452,
    "4": 369
   },
-  "validated": 1078,
-  "validation_coverage": 1.0,
-  "errors": 0,
-  "queue_remaining": 0,
-  "declared_gb": 42.77,
+  "validated": 1077,
+  "validation_coverage": 0.9991,
+  "errors": 1,
+  "queue_remaining": 452,
+  "declared_gb": 42.83,
   "size_unknown": 0,
   "by_format": {
    "csv": {
     "files": 1010,
-    "gb": 24.06,
+    "gb": 24.11,
     "size_unknown": 0
    },
    "zip": {
@@ -78,8 +78,34 @@
     "size_unknown": 0
    }
   },
-  "queue_gb": 0.0,
-  "queue_largest": []
+  "queue_gb": 11.74,
+  "queue_largest": [
+   {
+    "id": "5a6bca94-854e-4dba-8e61-012a2a3ce249",
+    "name": "Relação das pessoas vacinadas - Covid-19",
+    "gb": 0.77
+   },
+   {
+    "id": "da5378f5-81a7-4792-a718-e0bbfa03f586",
+    "name": "2017 - Quantitativo das Vias por Velocidade Média",
+    "gb": 0.22
+   },
+   {
+    "id": "f11bc729-a1da-4bde-880f-82f455993fcd",
+    "name": "2016 - Quantitativo das Vias por Velocidade Média",
+    "gb": 0.22
+   },
+   {
+    "id": "3fa3f7b1-a829-4733-9a41-c1650a3e02a5",
+    "name": "Registro das infrações de Trânsito - 2019",
+    "gb": 0.2
+   },
+   {
+    "id": "d8ee485a-d1c7-4eda-9caa-e82f58afd590",
+    "name": "Registro de Infrações de Transito - 2018",
+    "gb": 0.2
+   }
+  ]
  },
  "schema_sources": {
   "datastore": 201,
@@ -109,24 +135,28 @@
  "l1_pass": false,
  "drift": {
   "observed": 0,
-  "declared": 1,
-  "files_with_baseline": 1073,
-  "first_baseline_at": "2026-10-03T15:47:02+00:00",
-  "last_observed_at": "2026-10-19T09:31:10+00:00"
+  "declared": 2,
+  "files_with_baseline": 1072,
+  "first_baseline_at": "2026-10-03T16:07:23+00:00",
+  "last_observed_at": "2026-11-09T16:04:47+00:00"
  },
  "coverage": {
   "files": 1078,
-  "read": 1078,
+  "read": 1077,
   "empty": 0,
   "not_tabular": 0,
   "too_large": 0,
-  "not_downloaded": 0,
+  "not_downloaded": 1,
   "pending": 0,
-  "not_downloaded_by_reason": {},
-  "not_downloaded_by_host": {},
+  "not_downloaded_by_reason": {
+   "other": 1
+  },
+  "not_downloaded_by_host": {
+   "other · dados.recife.pe.gov.br": 1
+  },
   "read_without_schema": 96,
-  "checked": 982,
-  "conform": 415,
+  "checked": 981,
+  "conform": 414,
   "fail_missing_fields": 297,
   "fail_undeclared_columns": 413,
   "fail_cells_over_limit": 367,
@@ -232,31 +262,31 @@
  "network": {
   "total": {
    "files": 1078,
-   "failed_files": 0,
-   "gb": 42.77,
-   "minutes": 149.4,
-   "end_to_end_mb_s": 4.77,
-   "zip_download_mb_s": 11.31,
-   "first_byte_s_median": 1.27,
-   "network_share": 0.379,
-   "network_mb_s": 12.6,
+   "failed_files": 1,
+   "gb": 42.67,
+   "minutes": 279.3,
+   "end_to_end_mb_s": 2.55,
+   "zip_download_mb_s": 10.17,
+   "first_byte_s_median": 0.83,
+   "network_share": 0.778,
+   "network_mb_s": 3.27,
    "request_failures": {
-    "HTTP 503": 34
+    "HTTP 503": 5
    }
   },
   "by_host": {
    "dados.recife.pe.gov.br": {
     "files": 1078,
-    "failed_files": 0,
-    "gb": 42.77,
-    "minutes": 149.4,
-    "end_to_end_mb_s": 4.77,
-    "zip_download_mb_s": 11.31,
-    "first_byte_s_median": 1.27,
-    "network_share": 0.379,
-    "network_mb_s": 12.6,
+    "failed_files": 1,
+    "gb": 42.67,
+    "minutes": 279.3,
+    "end_to_end_mb_s": 2.55,
+    "zip_download_mb_s": 10.17,
+    "first_byte_s_median": 0.83,
+    "network_share": 0.778,
+    "network_mb_s": 3.27,
     "request_failures": {
-     "HTTP 503": 34
+     "HTTP 503": 5
     }
    }
   }
@@ -325,7 +355,7 @@
    "date_fields_with_declared_format": 0.0369
   },
   "files_vs_dictionaries": {
-   "checked": 982,
+   "checked": 981,
    "with_declared_fields_missing": 297,
    "with_undeclared_columns": 413,
    "with_spelling_differences": 137,
@@ -348,14 +378,14 @@
    "results_copied": 0
   },
   "files": {
-   "validated": 1078,
+   "validated": 1077,
    "encodings": {
-    "utf-8": 1012,
+    "utf-8": 1011,
     "cp1252": 35,
     "utf-8-sig": 2
    },
    "delimiters": {
-    ";": 1017,
+    ";": 1016,
     ",": 26,
     "\t": 6
    },
@@ -366,14 +396,16 @@
    "not_tabular": 0,
    "not_tables": 13,
    "formats": {
-    "csv": 1037,
+    "csv": 1036,
     "xlsx": 15,
     "json": 9,
     "xml": 13,
     "ods": 3,
     "xls": 33
    },
-   "unreachable_by_reason": {}
+   "unreachable_by_reason": {
+    "other": 1
+   }
   },
   "pdf_extraction": {
    "pdf_dictionaries_linked": 18,
@@ -399,11 +431,11 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-10-19T09:13:07+00:00",
+   "probed_at": "2026-11-09T12:04:10+00:00",
    "hosts": {
     "dados.recife.pe.gov.br": {
      "linked": 1078,
-     "files": 1078,
+     "files": 1077,
      "served_by": [
       "ckan-storage-download.app.emprel.gov.br"
      ],
@@ -414,13 +446,13 @@
      "range": "ignored",
      "with_etag": 0,
      "with_last_modified": 0,
-     "without_validator": 1078,
+     "without_validator": 1077,
      "without_length": 0,
-     "of": 1078,
-     "generic_type": 1078,
-     "typed": 1078,
+     "of": 1077,
+     "generic_type": 1077,
+     "typed": 1077,
      "content_types": {
-      "application/octet-stream": 1078
+      "application/octet-stream": 1077
      },
      "broken_links": 0,
      "redirect_loops": 0
@@ -436,14 +468,14 @@
     {
      "id": "validators",
      "host": "dados.recife.pe.gov.br",
-     "n": 1078,
-     "of": 1078
+     "n": 1077,
+     "of": 1077
     },
     {
      "id": "media-type",
      "host": "dados.recife.pe.gov.br",
-     "n": 1078,
-     "of": 1078,
+     "n": 1077,
+     "of": 1077,
      "types": [
       "application/octet-stream"
      ]
@@ -1118,7 +1150,7 @@
   },
   {
    "name": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
-   "level": 3,
+   "level": 2,
    "tables": 8,
    "verifiable": 8,
    "conformant": 0,
