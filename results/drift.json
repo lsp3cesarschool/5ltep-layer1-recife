@@ -19,5 +19,27 @@
    ],
    "schema_removed": true
   }
+ },
+ {
+  "id": "47bf29c2aaf231e3",
+  "kind": "declared",
+  "schema_kind": "datastore",
+  "dataset": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+  "resource_id": "537f0b95-4eb7-4912-9d7c-32caf9fd68ac",
+  "resource_name": null,
+  "changes": {
+   "fields_removed": [
+    "distrito",
+    "unidade",
+    "classe",
+    "apresentacao",
+    "tipo_produto",
+    "codigo_produto",
+    "produto",
+    "cadum",
+    "quantidade"
+   ],
+   "schema_removed": true
+  }
  }
 ]

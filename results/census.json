@@ -4,7 +4,7 @@
   "name": "Recife",
   "title": "Recife open data portal (Dados Recife)"
  },
- "generated_at": "2026-10-19T09:13:07+00:00",
+ "generated_at": "2026-11-09T12:04:10+00:00",
  "datasets": [
   {
    "name": "abrigos-temporarios-disponiveis",
@@ -13037,7 +13037,7 @@
    "title": "Conecta Recife Wifi",
    "organization": "Emprel",
    "url": "https://dados.recife.pe.gov.br/dataset/conecta-recife",
-   "metadata_modified": "2026-10-16T19:11:10.504945",
+   "metadata_modified": "2026-11-04T10:58:59.267242",
    "resources_total": 6,
    "dictionaries": [
     {
@@ -13138,13 +13138,13 @@
      "level": 3
     },
     {
-     "id": "ef74f73d-706d-435e-9c56-119a81c595d0",
-     "name": "Registro de Acessos do Conecta WIFI - 2024",
+     "id": "ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7",
+     "name": "Registro de Acessos do Conecta WIFI - 2026",
      "format": "CSV",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/ef74f73d-706d-435e-9c56-119a81c595d0/download/conecta_wifi_acessos_2024.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7/download/conecta_wifi_acessos_2026.csv",
      "candidate": "csv",
-     "last_modified": "2026-10-15T16:41:44.506924",
-     "size": 193561,
+     "last_modified": "2026-11-04T10:58:59.241891",
+     "size": 298775,
      "attached": false,
      "datastore": {
       "fields": 7,
@@ -13182,13 +13182,13 @@
      "level": 3
     },
     {
-     "id": "ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7",
-     "name": "Registro de Acessos do Conecta WIFI - 2026",
+     "id": "ef74f73d-706d-435e-9c56-119a81c595d0",
+     "name": "Registro de Acessos do Conecta WIFI - 2024",
      "format": "CSV",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/ce1b7a1b-d24e-412b-9e3b-6405b62b7ba7/download/conecta_wifi_acessos_2026.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68/resource/ef74f73d-706d-435e-9c56-119a81c595d0/download/conecta_wifi_acessos_2024.csv",
      "candidate": "csv",
-     "last_modified": "2026-10-15T17:08:12.821345",
-     "size": 268351,
+     "last_modified": "2026-10-15T16:41:44.506924",
+     "size": 193561,
      "attached": false,
      "datastore": {
       "fields": 7,
@@ -16792,7 +16792,7 @@
    "title": "Empresas da Cidade do Recife",
    "organization": "Secretaria de Finanças",
    "url": "https://dados.recife.pe.gov.br/dataset/empresas-da-cidade-do-recife",
-   "metadata_modified": "2026-10-03T02:06:25.355813",
+   "metadata_modified": "2026-11-03T02:05:05.664328",
    "resources_total": 3,
    "dictionaries": [
     {
@@ -16844,8 +16844,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/3442510c-c85a-4271-bd2d-49cdff392459/resource/e080550e-7238-444b-a821-8f5acfd82df2/download/empresasinativender.csv",
      "candidate": "csv",
-     "last_modified": "2026-10-03T02:06:25.327751",
-     "size": 114593449,
+     "last_modified": "2026-11-03T02:05:05.643737",
+     "size": 115181288,
      "attached": false,
      "datastore": {
       "fields": 22,
@@ -16866,8 +16866,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/3442510c-c85a-4271-bd2d-49cdff392459/resource/6d5e72aa-3f4b-4dc3-817c-0e0305cef538/download/empresasativender.csv",
      "candidate": "csv",
-     "last_modified": "2026-10-03T02:06:16.946874",
-     "size": 122541277,
+     "last_modified": "2026-11-03T02:05:02.615697",
+     "size": 124167791,
      "attached": false,
      "datastore": {
       "fields": 22,
@@ -17397,7 +17397,7 @@
    "title": "Estoque dos medicamentos nas farmácias da Rede Municipal de Saúde",
    "organization": "Secretaria de Saúde",
    "url": "https://dados.recife.pe.gov.br/dataset/estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
-   "metadata_modified": "2026-04-28T10:00:59.467490",
+   "metadata_modified": "2026-11-09T10:02:36.486449",
    "resources_total": 9,
    "dictionaries": [
     {
@@ -17453,13 +17453,10 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/537f0b95-4eb7-4912-9d7c-32caf9fd68ac/download/medicamentos_distrito01.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:35.006648",
-     "size": 559665,
+     "last_modified": "2026-11-09T10:02:24.269935",
+     "size": 569374,
      "attached": false,
-     "datastore": {
-      "fields": 9,
-      "typed": true
-     },
+     "datastore": null,
      "described": 0,
      "link": {
       "dictionary": "7925291c-4876-49e0-9ff6-d19a1cbcc4ca",
@@ -17467,7 +17464,7 @@
       "method": "header",
       "score": 0.5
      },
-     "level": 3
+     "level": 2
     },
     {
      "id": "30e87813-b5a3-4cbd-b35e-b09156f52698",
@@ -17475,8 +17472,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/30e87813-b5a3-4cbd-b35e-b09156f52698/download/medicamentos_distrito02.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:39.786766",
-     "size": 658500,
+     "last_modified": "2026-11-09T10:02:25.842185",
+     "size": 663068,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17497,8 +17494,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/832ae42d-0163-45e8-82c1-a4e00a5ec1b6/download/medicamentos_distrito03.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:42.048403",
-     "size": 539884,
+     "last_modified": "2026-11-09T10:02:27.942355",
+     "size": 548559,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17519,8 +17516,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/a4d419a8-4355-4ae9-b116-9cc35b914f50/download/medicamentos_distrito04.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:45.912251",
-     "size": 697949,
+     "last_modified": "2026-11-09T10:02:29.711752",
+     "size": 702390,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17541,8 +17538,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/77040c32-2a39-4416-ba93-5c7386b46dcb/download/medicamentos_distrito05.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:48.373746",
-     "size": 768688,
+     "last_modified": "2026-11-09T10:02:31.448076",
+     "size": 781370,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17563,8 +17560,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/ac869f94-a655-4388-871b-9957b0a642a4/download/medicamentos_distrito06.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:53.988700",
-     "size": 547552,
+     "last_modified": "2026-11-09T10:02:32.844382",
+     "size": 552013,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17585,8 +17582,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/97109f18-a189-4084-acaf-b3aff6e65d51/download/medicamentos_distrito07.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:56.065798",
-     "size": 717432,
+     "last_modified": "2026-11-09T10:02:34.539104",
+     "size": 723432,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17607,8 +17604,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37/resource/2e411ebc-0bef-4e03-ae34-2b792b5468c2/download/medicamentos_distrito08.csv",
      "candidate": "csv",
-     "last_modified": "2026-04-28T10:00:59.456682",
-     "size": 798547,
+     "last_modified": "2026-11-09T10:02:36.475333",
+     "size": 810465,
      "attached": false,
      "datastore": {
       "fields": 9,
@@ -17624,7 +17621,7 @@
      "level": 3
     }
    ],
-   "level": 3
+   "level": 2
   },
   {
    "name": "faixas-e-corredores-de-onibus",
@@ -18679,7 +18676,7 @@
   {
    "name": "imoveis-especiais-de-preservacao-ieps",
    "title": "Imóveis Especiais de Preservação - IEPs",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/imoveis-especiais-de-preservacao-ieps",
    "metadata_modified": "2026-03-02T14:45:05.644640",
    "resources_total": 3,
@@ -18716,7 +18713,7 @@
   {
    "name": "imovel-de-protecao-de-area-verde-ipav",
    "title": "Imóvel de Proteção de Área Verde (IPAV)",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/imovel-de-protecao-de-area-verde-ipav",
    "metadata_modified": "2026-03-02T14:45:07.397475",
    "resources_total": 1,
@@ -18729,7 +18726,7 @@
    "title": "Imposto Predial e Territorial Urbano (IPTU)",
    "organization": "Secretaria de Finanças",
    "url": "https://dados.recife.pe.gov.br/dataset/imposto-predial-e-territorial-urbano-iptu",
-   "metadata_modified": "2026-10-03T02:06:02.371179",
+   "metadata_modified": "2026-11-03T02:04:58.114766",
    "resources_total": 23,
    "dictionaries": [
     {
@@ -18792,8 +18789,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/4a82b8b9-66a1-441c-aece-dfdf1dbbf994/resource/9a847338-92a6-4b74-b3e8-c8f8b57aff2d/download/iptu_2026.csv",
      "candidate": "csv",
-     "last_modified": "2026-10-03T02:06:02.159732",
-     "size": 128498052,
+     "last_modified": "2026-11-03T02:04:58.006642",
+     "size": 128444783,
      "attached": false,
      "datastore": {
       "fields": 34,
@@ -19275,7 +19272,7 @@
    "title": "Imposto sobre Transmissão de Bens Imóveis (ITBI)",
    "organization": "Secretaria de Finanças",
    "url": "https://dados.recife.pe.gov.br/dataset/imposto-sobre-transmissao-de-bens-imoveis-itbi",
-   "metadata_modified": "2026-10-03T02:06:11.594039",
+   "metadata_modified": "2026-11-03T02:05:00.759391",
    "resources_total": 13,
    "dictionaries": [
     {
@@ -19328,8 +19325,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/ae32808e-ab98-4fe4-bacf-a72b2ac14551/resource/fc95e204-a121-4b7a-94b2-e4420539c0d1/download/itbi_2026.csv",
      "candidate": "csv",
-     "last_modified": "2026-10-03T02:06:11.462192",
-     "size": 2947186,
+     "last_modified": "2026-11-03T02:05:00.698813",
+     "size": 3211008,
      "attached": false,
      "datastore": {
       "fields": 22,
@@ -19729,7 +19726,7 @@
    "title": "Licenciamento Ambiental",
    "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/licenciamento-ambiental",
-   "metadata_modified": "2026-10-15T12:15:31.382822",
+   "metadata_modified": "2026-10-27T14:41:15.106945",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -19752,8 +19749,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
      "candidate": "csv",
-     "last_modified": "2026-06-17T11:58:42.491963",
-     "size": 40534357,
+     "last_modified": "2026-10-27T14:41:15.092244",
+     "size": 35973674,
      "attached": false,
      "datastore": {
       "fields": 33,
@@ -19776,7 +19773,7 @@
    "title": "Licenciamento Sanitário",
    "organization": "Secretaria de Saúde",
    "url": "https://dados.recife.pe.gov.br/dataset/licenciamento-sanitario",
-   "metadata_modified": "2026-10-14T14:44:45.750219",
+   "metadata_modified": "2026-10-27T14:46:01.989832",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -19799,8 +19796,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/8535916b-588f-4006-bb1a-5d9c587a92d7/resource/d09900c8-14f2-4dc4-a128-b73a514ec791/download/licenciamento_sanitario.csv",
      "candidate": "csv",
-     "last_modified": "2026-06-17T11:59:37.044766",
-     "size": 20811805,
+     "last_modified": "2026-10-27T14:46:01.970636",
+     "size": 22455669,
      "attached": false,
      "datastore": {
       "fields": 33,
@@ -19823,7 +19820,7 @@
    "title": "Licenciamento Urbanístico",
    "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/licenciamento-urbanistico",
-   "metadata_modified": "2026-10-14T14:46:47.175528",
+   "metadata_modified": "2026-10-27T14:56:17.359273",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -19846,8 +19843,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/f79dbcdf-ec99-4f4c-9b84-b33175c35528/resource/39927a3d-3235-436a-9dc8-df7f4ea3b720/download/licenciamento_urbanistico.csv",
      "candidate": "csv",
-     "last_modified": "2026-06-17T11:59:59.053000",
-     "size": 74234215,
+     "last_modified": "2026-10-27T14:56:17.342232",
+     "size": 64958357,
      "attached": false,
      "datastore": {
       "fields": 33,
@@ -20767,7 +20764,7 @@
   {
    "name": "mapas-de-limites-e-divisoes-territoriais",
    "title": "Mapas de limites e divisões territoriais",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/mapas-de-limites-e-divisoes-territoriais",
    "metadata_modified": "2026-03-02T15:27:38.287374",
    "resources_total": 4,
@@ -20945,7 +20942,7 @@
   {
    "name": "monitoramento-da-politica-urbana-e-plano-diretor",
    "title": "Monitoramento da política urbana e Plano Diretor",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/monitoramento-da-politica-urbana-e-plano-diretor",
    "metadata_modified": "2026-02-27T12:22:33.922196",
    "resources_total": 0,
@@ -21713,7 +21710,7 @@
   {
    "name": "outorga-onerosa-do-direito-de-construir",
    "title": "Outorga onerosa do direito de construir",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/outorga-onerosa-do-direito-de-construir",
    "metadata_modified": "2026-03-04T12:26:43.954698",
    "resources_total": 1,
@@ -23735,7 +23732,7 @@
   {
    "name": "perimetro-do-porto-digital",
    "title": "Perímetro do Porto Digital",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/perimetro-do-porto-digital",
    "metadata_modified": "2026-03-04T13:09:17.170526",
    "resources_total": 2,
@@ -24032,7 +24029,7 @@
   {
    "name": "pesquisa-origem-destino",
    "title": "Pesquisa Origem Destino 2016",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/pesquisa-origem-destino",
    "metadata_modified": "2026-03-04T13:10:53.542733",
    "resources_total": 2,
@@ -27156,7 +27153,7 @@
    "title": "Registro de Atendimentos da Defesa Civil",
    "organization": "Secretaria Executiva de Defesa Civil ",
    "url": "https://dados.recife.pe.gov.br/dataset/registro-de-atendimentos-da-defesa-civil",
-   "metadata_modified": "2026-03-06T18:22:38.429237",
+   "metadata_modified": "2026-10-19T12:21:47.286872",
    "resources_total": 24,
    "dictionaries": [],
    "tables": [
@@ -31480,7 +31477,7 @@
    "title": "Serviço de Atendimento Móvel de Urgência - SAMU 2026",
    "organization": "Secretaria de Saúde",
    "url": "https://dados.recife.pe.gov.br/dataset/servico-de-atendimento-movel-de-urgencia-samu-2026",
-   "metadata_modified": "2026-09-01T16:43:43.670917",
+   "metadata_modified": "2026-11-06T18:39:32.125665",
    "resources_total": 2,
    "dictionaries": [
     {
@@ -31524,8 +31521,8 @@
      "format": "CSV",
      "url": "https://dados.recife.pe.gov.br:443/dataset/dca76666-842e-48cb-b005-6670d7212b46/resource/d6f586c3-34c5-4414-9804-6fdfbd75c7db/download/solicitacoes-de-atendimento-2026.csv",
      "candidate": "csv",
-     "last_modified": "2026-09-01T16:43:43.658129",
-     "size": 20797707,
+     "last_modified": "2026-11-06T18:39:32.106687",
+     "size": 26014850,
      "attached": false,
      "datastore": {
       "fields": 12,
@@ -31617,7 +31614,7 @@
    "title": "Servidores",
    "organization": "Secretaria de Administração e Gestão de Pessoas",
    "url": "https://dados.recife.pe.gov.br/dataset/servidores",
-   "metadata_modified": "2026-06-26T20:51:51.102565",
+   "metadata_modified": "2026-10-29T19:48:14.592025",
    "resources_total": 15,
    "dictionaries": [
     {
@@ -31684,12 +31681,12 @@
    "tables": [
     {
      "id": "dbe39ee4-8be1-4041-b713-ad6065635165",
-     "name": "2026 - Relação dos Servidores e salários da Prefeitura do Recife",
+     "name": "2026 - Relação dos Servidores e Salários da Prefeitura do Recife",
      "format": "CSV",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/4af3f483-53f6-4e5a-91c4-8d486449e183/resource/dbe39ee4-8be1-4041-b713-ad6065635165/download/-2026-relacao-dos-servidores-e-salarios-da-prefeitura-do-recife.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/4af3f483-53f6-4e5a-91c4-8d486449e183/resource/dbe39ee4-8be1-4041-b713-ad6065635165/download/2026-relacao-dos-servidores-e-salarios-da-prefeitura-do-recife.csv",
      "candidate": "csv",
-     "last_modified": "2026-06-26T20:51:51.077948",
-     "size": 85495256,
+     "last_modified": "2026-10-29T19:48:14.514947",
+     "size": 143682308,
      "attached": false,
      "datastore": {
       "fields": 34,
@@ -39087,7 +39084,7 @@
   {
    "name": "zoneamento",
    "title": "Zoneamento - Plano Diretor",
-   "organization": "Secretaria de Política Urbana e Licenciamento",
+   "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
    "url": "https://dados.recife.pe.gov.br/dataset/zoneamento",
    "metadata_modified": "2026-03-05T17:34:16.555574",
    "resources_total": 9,
@@ -39097,7 +39094,7 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-10-19T09:13:07+00:00",
+  "probed_at": "2026-11-09T12:04:10+00:00",
   "by_host": {
    "dados.recife.pe.gov.br": [
     {
